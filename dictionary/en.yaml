@@ -1,0 +1,33 @@
+# Particles :
+á:
+  type: particle
+  description: |
+    verb(modifier verb), verb(modified verb) => verb(a verb phrase)
+    number(quantifier), verb(modified verb) => verb(the verb happening some number of times)
+e:
+  type: particle
+  description: |
+    noun(modifier noun), noun(modified noun) => noun(a noun phrase)
+    number(quantifier), noun(modified noun) => noun(some number of the nouns)
+i:
+  type: particle
+  description: |
+    noun(subject), verb(verb) => number(verb with subject attached)
+lí:
+  type: particle
+  description: |
+    noun(object), verb(verb) => verb(verb with object attached)
+óli:
+  type: particle
+  description: |
+    number(digit), number(digit) => number(first digit followed by the second digit)
+vu:
+  type: particle
+  description: |
+    number(digit), number(digit) => number(first digit followed by the second digit zero padded)
+zulu:
+  type: particle
+  description: |
+    number(digit), number(quantifier) => number(the digit repeated some number of times)
+
+# Leaves :
