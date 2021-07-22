@@ -1,0 +1,4 @@
+node_modules
+
+# Bundles are generated with webpack.
+web/res/wp_*
