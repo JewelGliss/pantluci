@@ -135,5 +135,17 @@ function parseSentences(text) {
 	return sentences;
 }
 
+// Turn apostrophes into accents
+function toneMarking(str) {
+    str = str.replaceAll("’","'");
+
+    for (var i = 0; i < v.length / 2; i++) {
+      str = str.replaceAll(v[i] + "'", v[i + v.length / 2])
+    }
+
+	return str;
+}
+
 module.exports.segmenter = segmenter;
 module.exports.parseSentences = parseSentences;
+module.exports.toneMarking = toneMarking;

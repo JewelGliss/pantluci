@@ -1,9 +1,14 @@
-const { segmenter, parseSentences } = require('../src/parser.js');
+const { segmenter, parseSentences, toneMarking } = require('../src/parser.js');
 const dictionary = require('../../dictionary/en.yaml');
 
 // Triggered at page loading or when input is updated.
 export function parse() {
-    let text = $('#input_textarea').val().trim();
+    let text = $('#input_textarea').val();
+    
+    text = toneMarking(text);
+    $('#input_textarea').val(text);
+
+    text = text.trim();
 
     if (text == '') {
         $('#parse-result-tree').html(`Type some text to parse.`);
