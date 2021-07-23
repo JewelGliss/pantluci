@@ -79,14 +79,6 @@ function segmenter(str) {
 }
 
 // Transform an array of valid hýyban words into a tree.
-//
-// Strategy :
-// - particle : push its index into a queue
-// - other : pop value from queue and store it in the word objects.
-//
-// After going through all words in order, pop (in reverse order) the words from
-// the list and push them as a child of their parent, or in the sentences array
-// if it have no parent.
 function parseSentences(text) {
 	// Turn all words into objects.
 	for(i in text) {
