@@ -1,33 +1,291 @@
 # Particles :
 á:
   type: particle
-  description: |
+  short: verb phrase generator
+  long: |
     verb(modifier verb), verb(modified verb) => verb(a verb phrase)
     number(quantifier), verb(modified verb) => verb(the verb happening some number of times)
 e:
   type: particle
-  description: |
+  short: noun phrase generator
+  long: |
     noun(modifier noun), noun(modified noun) => noun(a noun phrase)
     number(quantifier), noun(modified noun) => noun(some number of the nouns)
 i:
   type: particle
-  description: |
+  short: subject attacher
+  long: |
     noun(subject), verb(verb) => number(verb with subject attached)
 lí:
   type: particle
-  description: |
+  short: object attacher
+  long: |
     noun(object), verb(verb) => verb(verb with object attached)
 óli:
   type: particle
-  description: |
+  short: long digit binder
+  long: |
     number(digit), number(digit) => number(first digit followed by the second digit)
-vu:
+va:
   type: particle
-  description: |
+  short: short digit binder
+  long: |
     number(digit), number(digit) => number(first digit followed by the second digit zero padded)
 zulu:
   type: particle
-  description: |
+  short: digit repeater
+  long: |
     number(digit), number(quantifier) => number(the digit repeated some number of times)
-
+kán:
+  type: particle
+  short: and
+  long: |
+    DETAILS TBD
+qýyn:
+  type: particle
+  short: or
+  long: |
+    DETAILS TBD
+réen:
+  type: particle
+  short: xor
+  long: |
+    DETAILS TBD
 # Leaves :
+# Primary Colors :
+buú:
+  type: noun
+  short: cyan
+  long: |
+    something that is cyan, cmyk(100,0,0,0)
+haá:
+  type: noun
+  short: magenta
+  long: |
+    something that is magenta, cmyk(0,100,0,0)
+tée:
+  type: noun
+  short: yellow
+  long: |
+    something that is yellow, cmyk(0,0,100,0)
+xoón:
+  type: noun
+  short: black
+  long: |
+    something that is black, cmyk(0,0,0,100)
+# Secondary Colors :
+lií:
+  type: noun
+  short: periwinkle
+  long: |
+    something that is periwinkle, cmyk(50,50,0,0)
+mén:
+  type: noun
+  short: mint
+  long: |
+    something that is mint, cmyk(50,0,50,0)
+beén:
+  type: noun
+  short: teal
+  long: |
+    something that is teal, cmyk(50,0,0,50)
+boón:
+  type: noun
+  short: salmon
+  long: |
+    something that is salmon, cmyk(0,50,50,0)
+búun:
+  type: noun
+  short: eggplant
+  long: |
+    something that is eggplant, cmyk(0,50,0,50)
+faán:
+  type: noun
+  short: drab
+  long: |
+    something that is drab, cmyk(0,0,50,50)
+# Color Adjacent Terms :
+fuúpuún:
+  type: noun
+  short: iridescent
+  long: |
+    something that is iridescent, color depends on the angle
+háa:
+  type: noun
+  short: shiny
+  long: |
+    something that is shiny, reflective
+kúun:
+  type: noun
+  short: flat
+  long: |
+    something that is flatly colored, all the same color and shade
+lólúu:
+  type: noun
+  short: textured
+  long: |
+    something that is visually textured
+páa:
+  type: noun
+  short: matte
+  long: |
+    something that is matte
+púngaán:
+  type: noun
+  short: with subsurface scattering
+  long: |
+    something that has visual subsurface scattering
+qúu:
+  type: noun
+  short: glowing
+  long: |
+    something that emits light
+tíi:
+  type: noun
+  short: white
+  long: |
+    something that is white, lacking pigment/color
+výsaán:
+  type: noun
+  short: see through
+  long: |
+    something that is translucent, transparent
+xifoón:
+  type: noun
+  short: glow in the dark
+  long: |
+    something that is phosphorescent, absorbing light to emit it later
+# numbers :
+odé:
+  type: noun
+  short: zero
+  long: |
+    lim 1/x as x=>∞
+juni:
+  type: noun
+  short: one
+  long: |
+    one
+du o:
+  type: number
+  short: two
+  long: |
+    two
+tire:
+  type: noun
+  short: three
+  long: |
+    three
+kitá:
+  type: noun
+  short: four
+  long: |
+    four
+kika:
+  type: noun
+  short: five
+  long: |
+    five
+# time :
+píni:
+  type: noun
+  short: was
+  long: |
+    something in the past
+keren:
+  type: noun
+  short: is
+  long: |
+    something in the present
+hungiín:
+  type: noun
+  short: will
+  long: |
+    something in the future
+# shapes :
+roón:
+  type: noun
+  short: pattern
+  long: |
+    a set of objects that follow a pattern
+dóo:
+  type: noun
+  short: line
+  long: |
+    Something linear, thin, long
+piín:
+  type: noun
+  short: point
+  long: |
+    a point, something taking only a single location
+# food :
+náan:
+  type: noun
+  short: bread
+  long: |
+    any variety of 
+# pronouns :
+mi:
+  type: noun
+  short: we
+  long: |
+    first person pronoun
+nín:
+  type: noun
+  short: you
+  long: |
+    second person pronoun
+mé:
+  type: noun
+  short: this, that
+  long: |
+    a specific thing
+cónhe:
+  type: noun
+  short: something
+  long: |
+    something, anything
+# languages :
+hýyban:
+  type: noun
+  short: hýyban
+  long: |
+    This language
+lóceban:
+  type: noun
+  short: lojban
+  long: |
+    any of the many dialects and reforms of the Lojban language
+tókipóna:
+  type: noun
+  short: toki pona
+  long: |
+    any of the many dialects and styles of toki pona
+# ataxonometric animals :
+# taxonometric animals :
+jíi:
+  type: noun
+  short: frog
+  long: |
+    any animal of the order anura
+ýy:
+  type: noun
+  short: spider
+  long: |
+    any animal of the clade arachnomorpha
+# verbs :
+jan:
+  type: verb
+  short: move
+  long: |
+    to change positions
+ciín:
+  type: verb
+  short: use
+  long: |
+    to use
+dan:
+  type: verb
+  short: modify
+  long: |
+    to destructively make/edit, to change something in a way that is difficult to undo
