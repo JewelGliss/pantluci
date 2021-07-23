@@ -1,4 +1,4 @@
-const words = require('../../dictionary/en.yaml');
+const dictionary = require('../../dictionary/en.yaml');
 
 // Valid consonants list.
 const c = 'bcdfghjklmnpqrstvwxz ';
@@ -67,11 +67,69 @@ function segmenter(str) {
 			weight = 0;
 		}
 	}
-	console.log(weight);
+
 	if (weight > 0) {
 		return { err: `'${words[words.length - 1]}' is an incomplete word`};
 	}
+
+	// remove leftover empty word.
+	words.pop();
+
 	return words;
 }
 
+// Transform an array of valid hýyban words into a tree.
+//
+// Strategy :
+// - particle : push its index into a queue
+// - other : pop value from queue and store it in the word objects.
+//
+// After going through all words in order, pop (in reverse order) the words from
+// the list and push them as a child of their parent, or in the sentences array
+// if it have no parent.
+function parseSentences(text) {
+	// Turn all words into objects.
+	for(i in text) {
+		text[i] = { word: text[i].trim() };
+	}
+
+	// First pass.	
+	let indexQueue = [];
+
+	for(i in text) {
+		// Makes sure all words have an empty children array for second pass.
+		text[i].children = [];
+
+		// If length is 0 then this word doesn't have a parent.
+		// It is thus the start of a new sentence.
+		if(indexQueue.length > 0) {
+			text[i].parent = indexQueue.shift();
+		}
+
+		if(dictionary[text[i].word] != undefined && dictionary[text[i].word].type == 'particle') {
+			indexQueue.push(i);
+			indexQueue.push(i);
+		}
+	}
+
+	// Second reverse pass.
+	let sentences = [];
+	while(text.length > 0) {
+		let word = text.pop();
+
+		if (word.parent == undefined) {
+			// No parent = start of sentence. We add it at the start of the
+			// sentence array since we're iterating in reverse order.
+			sentences.unshift(word);
+		} else {
+			// Parent = argument of a particle. Reverse order = inserting at
+			// start of children array.
+			text[word.parent].children.unshift(word);
+		}
+	}
+
+	return sentences;
+}
+
 module.exports.segmenter = segmenter;
+module.exports.parseSentences = parseSentences;
