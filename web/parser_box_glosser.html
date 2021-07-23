@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">window["_gaUserPrefs"] = { ioo: function () { return true; } }</script>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<title>hýyban parser</title>
+	<link type="text/css" href="./res/layout.css" rel="stylesheet">
+	<link rel="icon" href="./../images/favicon.ico">
+	<link href="./res/bootstrap.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./res/bootstrap.js"></script>
+	<script src="./res/wp_parser.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<h3>hýyban parser <small>frontend by uilym
+						(adapted for hýyban by mia) </small></h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
+				<form>
+					<fieldset>
+						<textarea id="input_textarea" rows="5"
+							placeholder='Type any hýyban text here.'
+							style="width: 100%;" spellcheck="false"></textarea>         
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div id="result-row" class="span12">
+				<legend>Result <small><span id="time-label"></span></small></legend>
+				<ul class="nav nav-tabs">
+					<li class="active"><a id="parse-result-tree-tab" href="#parse-result-tree" data-toggle="tab">Parse tree</a></li>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div id="parse-result-tree" class="tab-pane active in fade"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script>
+	// parse on page reload
+	bundle.parse();
+
+	$('#input_textarea').bind("keyup", function (e) {
+        bundle.parse();
+    });
+</script>
+
+</html>

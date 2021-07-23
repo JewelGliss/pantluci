@@ -2,7 +2,9 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: { },
+  entry: {
+    parser: './webpack/parser.js',
+  },
   output: {
     library: 'bundle',
     filename: 'wp_[name].js',

@@ -1,0 +1,12 @@
+body,
+textarea {
+	font-family: sans-serif !important;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#parse-result-boxes {
+	padding-bottom: 200px;
+}
