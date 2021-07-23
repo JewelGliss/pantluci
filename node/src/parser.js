@@ -112,6 +112,10 @@ function parseSentences(text) {
 		}
 	}
 
+	if(indexQueue.length > 0) {
+		return { err: `incomplete sentence`};
+	}
+
 	// Second reverse pass.
 	let sentences = [];
 	while(text.length > 0) {
