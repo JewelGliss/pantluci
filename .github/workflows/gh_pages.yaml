@@ -1,0 +1,38 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [master]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Install NPM dependencies
+        run: |
+          cd node
+          npm install
+          cd ..
+
+      - name: Build JS bundles
+        run: |
+          cd node
+          npm run build
+          cd ..
+
+      - name: Commit changes to gh-pages
+        run: |
+          rm -f .gitignore
+          echo "node_modules" > .gitignore
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git checkout -b tmp/gh-pages
+          git add -A
+          git commit -m "Update GitHub pages"
+          git push origin tmp/gh-pages:gh-pages --force
