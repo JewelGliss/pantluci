@@ -288,11 +288,36 @@ jíi:
   short: frog
   long: |
     any animal of the order anura
+jaán:
+  type: noun
+  short: salamander
+  long: |
+    any animal of the clade caudata
+mýn:
+  type: noun
+  short: lizard
+  long: |
+    any animal of the order squamata
+jin:
+  type: noun
+  short: snake
+  long: |
+    any animal of the order ophidia
+weé:
+  type: noun
+  short: turtle
+  long: |
+    any animal of the clade pantestudines
 ýy:
   type: noun
   short: spider
   long: |
     any animal of the clade arachnomorpha
+konrúu:
+  type: noun
+  short: centipede, milipede
+  long: |
+    any animal of the subphylum myriapoda
 # verbs :
 jan:
   type: verb
