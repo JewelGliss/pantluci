@@ -202,6 +202,26 @@ hungiín:
   short: will
   long: |
     something in the future
+de:
+  type: noun
+  short: day
+  long: |
+    the time between one midnight and the next
+píde:
+  type: noun
+  short: yesterday
+  long: |
+    the most recent completed time between one midnight and the next
+kede:
+  type: noun
+  short: is
+  long: |
+    the currently ongoing time between one midnight and the next
+hunde:
+  type: noun
+  short: tomorow
+  long: |
+    the next time between one midnight and the next after the current one
 # shapes :
 roón:
   type: noun
