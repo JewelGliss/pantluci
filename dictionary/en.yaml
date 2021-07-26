@@ -289,3 +289,14 @@ dan:
   short: modify
   long: |
     to destructively make/edit, to change something in a way that is difficult to undo
+# special :
+la:
+  type: special
+  short: not
+  long: |
+    Used with e, á, or similar words to negate phrases, or on its own as a negative reaction.
+síi:
+  type: verb
+  short: really
+  long: |
+    Used with e, á, or similar words to emphasize phrases, or on its own as a positive reaction.
