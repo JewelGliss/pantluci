@@ -334,6 +334,11 @@ dan:
   short: modify
   long: |
     to destructively make/edit, to change something in a way that is difficult to undo
+di:
+  type: verb
+  short: equals
+  long: |
+    to equal, be the same thing as
 # special :
 la:
   type: special
