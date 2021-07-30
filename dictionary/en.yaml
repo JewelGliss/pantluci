@@ -51,6 +51,11 @@ réen:
   short: xor
   long: |
     DETAILS TBD
+páli:
+  type: particle
+  short: relative clause attacher
+  long: |
+    verb(modifier verb), noun(modified noun) => noun(a noun which fulfils the verb)
 # Leaves :
 # Primary Colors :
 buú:
