@@ -286,8 +286,40 @@ tókipóna:
   short: toki pona
   long: |
     any of the many dialects and styles of toki pona
-# ataxonometric animals :
-# taxonometric animals :
+# scenery :
+dómo:
+  type: noun
+  short: home
+  long: |
+    house, home, residence, nest, den
+# materials :
+gón:
+  type: noun
+  short: air
+  long: |
+    wind, air, breathable gas
+# ataxonometric life :
+kála:
+  type: noun
+  short: fish
+  long: |
+    fully aquatic life that uses primarily swimming
+kási:
+  type: noun
+  short: plant
+  long: |
+    plant
+kíli:
+  type: noun
+  short: fruit
+  long: |
+    fruit
+zógo:
+  type: noun
+  short: fungus
+  long: |
+    mushroom, fungus
+# taxonometric life :
 jíi:
   type: noun
   short: frog
@@ -324,6 +356,11 @@ konrúu:
   long: |
     any animal of the subphylum myriapoda
 # verbs :
+káma:
+  type: verb
+  short: become 
+  long: |
+    to become, start to, begin, but not to arrive
 jan:
   type: verb
   short: move
@@ -345,6 +382,11 @@ di:
   long: |
     to equal, be the same thing as
 # special :
+séme:
+  type: special
+  short: what
+  long: |
+    something that I want you to tell me more about
 la:
   type: special
   short: not
