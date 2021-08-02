@@ -1,404 +1,333 @@
 # Particles :
-á:
-  type: particle
-  short: verb phrase generator
-  long: |
-    verb(modifier verb), verb(modified verb) => verb(a verb phrase)
-    number(quantifier), verb(modified verb) => verb(the verb happening some number of times)
 e:
   type: particle
-  short: noun phrase generator
+  short: leaf phrase generator
   long: |
-    noun(modifier noun), noun(modified noun) => noun(a noun phrase)
-    number(quantifier), noun(modified noun) => noun(some number of the nouns)
+    modifier, modified => content phrase
+    quantifier, leaf => quantified leaf
 i:
   type: particle
   short: agent attacher
   long: |
-    noun(agent), verb(verb) => number(verb with agent attached)
+    agent, leaf => leaf with agent attached
 lí:
   type: particle
   short: patient attacher
   long: |
-    noun(patient), verb(verb) => verb(verb with patient attached)
+    patient, leaf => leaf with patient attached
 jií:
   type: particle
   short: dative attacher
   long: |
-    noun(dative), verb(verb) => verb(verb with dative attached)
-óli:
-  type: particle
-  short: long digit binder
-  long: |
-    number(digit), number(digit) => number(first digit followed by the second digit)
-va:
-  type: particle
-  short: short digit binder
-  long: |
-    number(digit), number(digit) => number(first digit followed by the second digit zero padded)
-zulu:
-  type: particle
-  short: digit repeater
-  long: |
-    number(digit), number(quantifier) => number(the digit repeated some number of times)
-kán:
-  type: particle
-  short: and
-  long: |
-    DETAILS TBD
-qýyn:
-  type: particle
-  short: or
-  long: |
-    DETAILS TBD
-réen:
-  type: particle
-  short: xor
-  long: |
-    DETAILS TBD
-páli:
-  type: particle
-  short: relative clause attacher
-  long: |
-    verb(modifier verb), noun(modified noun) => noun(a noun which fulfils the verb)
+    dative, leaf => leaf with dative attached
 # Leaves :
 # Primary Colors :
 buú:
-  type: noun
+  type: leaf
   short: cyan
   long: |
     something that is cyan, cmyk(100,0,0,0)
 haá:
-  type: noun
+  type: leaf
   short: magenta
   long: |
     something that is magenta, cmyk(0,100,0,0)
 tée:
-  type: noun
+  type: leaf
   short: yellow
   long: |
     something that is yellow, cmyk(0,0,100,0)
 xoón:
-  type: noun
+  type: leaf
   short: black
   long: |
     something that is black, cmyk(0,0,0,100)
 # Secondary Colors :
 lií:
-  type: noun
+  type: leaf
   short: periwinkle
   long: |
     something that is periwinkle, cmyk(50,50,0,0)
 mén:
-  type: noun
+  type: leaf
   short: mint
   long: |
     something that is mint, cmyk(50,0,50,0)
 beén:
-  type: noun
+  type: leaf
   short: teal
   long: |
     something that is teal, cmyk(50,0,0,50)
 boón:
-  type: noun
+  type: leaf
   short: salmon
   long: |
     something that is salmon, cmyk(0,50,50,0)
 búun:
-  type: noun
+  type: leaf
   short: eggplant
   long: |
     something that is eggplant, cmyk(0,50,0,50)
 faán:
-  type: noun
+  type: leaf
   short: drab
   long: |
     something that is drab, cmyk(0,0,50,50)
 # Color Adjacent Terms :
 fuúpuún:
-  type: noun
+  type: leaf
   short: iridescent
   long: |
     something that is iridescent, color depends on the angle
 háa:
-  type: noun
+  type: leaf
   short: shiny
   long: |
     something that is shiny, reflective
 kúun:
-  type: noun
+  type: leaf
   short: flat
   long: |
     something that is flatly colored, all the same color and shade
 lólúu:
-  type: noun
+  type: leaf
   short: textured
   long: |
     something that is visually textured
 páa:
-  type: noun
+  type: leaf
   short: matte
   long: |
     something that is matte
 púngaán:
-  type: noun
+  type: leaf
   short: with subsurface scattering
   long: |
     something that has visual subsurface scattering
 qúu:
-  type: noun
+  type: leaf
   short: glowing
   long: |
     something that emits light
 tíi:
-  type: noun
+  type: leaf
   short: white
   long: |
     something that is white, lacking pigment/color
 výsaán:
-  type: noun
+  type: leaf
   short: see through
   long: |
     something that is translucent, transparent
 xifoón:
-  type: noun
+  type: leaf
   short: glow in the dark
   long: |
     something that is phosphorescent, absorbing light to emit it later
 # numbers :
-odé:
-  type: noun
-  short: zero
-  long: |
-    lim 1/x as x=>∞
-juni:
-  type: noun
-  short: one
-  long: |
-    one
-du o:
-  type: number
-  short: two
-  long: |
-    two
-tire:
-  type: noun
-  short: three
-  long: |
-    three
-kitá:
-  type: noun
-  short: four
-  long: |
-    four
-kika:
-  type: noun
-  short: five
-  long: |
-    five
 # time :
 píni:
-  type: noun
+  type: leaf
   short: was
   long: |
     something in the past
 keren:
-  type: noun
+  type: leaf
   short: is
   long: |
     something in the present
 hungiín:
-  type: noun
+  type: leaf
   short: will
   long: |
     something in the future
 de:
-  type: noun
+  type: leaf
   short: day
   long: |
     the time between one midnight and the next
 píde:
-  type: noun
+  type: leaf
   short: yesterday
   long: |
     the most recent completed time between one midnight and the next
 kede:
-  type: noun
+  type: leaf
   short: is
   long: |
     the currently ongoing time between one midnight and the next
 hunde:
-  type: noun
+  type: leaf
   short: tomorow
   long: |
     the next time between one midnight and the next after the current one
 # shapes :
 roón:
-  type: noun
+  type: leaf
   short: pattern
   long: |
     a set of objects that follow a pattern
 dóo:
-  type: noun
+  type: leaf
   short: line
   long: |
     Something linear, thin, long
 piín:
-  type: noun
+  type: leaf
   short: point
   long: |
     a point, something taking only a single location
 # food :
 náan:
-  type: noun
+  type: leaf
   short: bread
   long: |
     any variety of 
 # pronouns :
 mi:
-  type: noun
+  type: leaf
   short: we
   long: |
     first person pronoun
 nín:
-  type: noun
+  type: leaf
   short: you
   long: |
     second person pronoun
 mé:
-  type: noun
+  type: leaf
   short: this, that
   long: |
     a specific thing
 cónhe:
-  type: noun
+  type: leaf
   short: something
   long: |
     something, anything
 # languages :
 hýyban:
-  type: noun
+  type: leaf
   short: hýyban
   long: |
     This language
 lóceban:
-  type: noun
+  type: leaf
   short: lojban
   long: |
     any of the many dialects and reforms of the Lojban language
 tókipóna:
-  type: noun
+  type: leaf
   short: toki pona
   long: |
     any of the many dialects and styles of toki pona
 # scenery :
 dómo:
-  type: noun
+  type: leaf
   short: home
   long: |
     house, home, residence, nest, den
 # materials :
 gón:
-  type: noun
+  type: leaf
   short: air
   long: |
     wind, air, breathable gas
 # ataxonometric life :
 kála:
-  type: noun
+  type: leaf
   short: fish
   long: |
     fully aquatic life that uses primarily swimming
 kási:
-  type: noun
+  type: leaf
   short: plant
   long: |
     plant
 kíli:
-  type: noun
+  type: leaf
   short: fruit
   long: |
     fruit
 zógo:
-  type: noun
+  type: leaf
   short: fungus
   long: |
     mushroom, fungus
 # taxonometric life :
 jíi:
-  type: noun
+  type: leaf
   short: frog
   long: |
     any animal of the order anura
 jaán:
-  type: noun
+  type: leaf
   short: salamander
   long: |
     any animal of the clade caudata
 mýn:
-  type: noun
+  type: leaf
   short: lizard
   long: |
     any animal of the order squamata
 jin:
-  type: noun
+  type: leaf
   short: snake
   long: |
     any animal of the order ophidia
 weé:
-  type: noun
+  type: leaf
   short: turtle
   long: |
     any animal of the clade pantestudines
 ýy:
-  type: noun
+  type: leaf
   short: spider
   long: |
     any animal of the clade arachnomorpha
 konrúu:
-  type: noun
+  type: leaf
   short: centipede, milipede
   long: |
     any animal of the subphylum myriapoda
 # verbs :
 káma:
-  type: verb
+  type: leaf
   short: become 
   long: |
     to become, start to, begin, but not to arrive
 jan:
-  type: verb
+  type: leaf
   short: move
   long: |
     to change positions
 ciín:
-  type: verb
+  type: leaf
   short: use
   long: |
     to use
 dan:
-  type: verb
+  type: leaf
   short: modify
   long: |
     to destructively make/edit, to change something in a way that is difficult to undo
 di:
-  type: verb
+  type: leaf
   short: equals
   long: |
     to equal, be the same thing as
 # special :
 séme:
-  type: special
+  type: leaf
   short: what
   long: |
     something that I want you to tell me more about
 la:
-  type: special
+  type: leaf
   short: not
   long: |
     Used with e, á, or similar words to negate phrases, or on its own as a negative reaction.
 síi:
-  type: verb
+  type: leaf
   short: really
   long: |
     Used with e, á, or similar words to emphasize phrases, or on its own as a positive reaction.
