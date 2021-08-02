@@ -13,14 +13,19 @@ e:
     number(quantifier), noun(modified noun) => noun(some number of the nouns)
 i:
   type: particle
-  short: subject attacher
+  short: agent attacher
   long: |
-    noun(subject), verb(verb) => number(verb with subject attached)
+    noun(agent), verb(verb) => number(verb with agent attached)
 lí:
   type: particle
-  short: object attacher
+  short: patient attacher
   long: |
-    noun(object), verb(verb) => verb(verb with object attached)
+    noun(patient), verb(verb) => verb(verb with patient attached)
+jií:
+  type: particle
+  short: dative attacher
+  long: |
+    noun(dative), verb(verb) => verb(verb with dative attached)
 óli:
   type: particle
   short: long digit binder
