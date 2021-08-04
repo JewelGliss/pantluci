@@ -8,7 +8,7 @@ export function parse() {
     text = toneMarking(text);
     $('#input_textarea').val(text);
 
-    text = text.trim();
+    text = text.trim().toLowerCase();
 
     if (text == '') {
         $('#parse-result-tree').html(`Type some text to parse.`);
