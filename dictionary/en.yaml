@@ -204,6 +204,11 @@ cónhe:
   short: something
   long: |
     something, anything
+jáa:
+  type: leaf
+  short: you!
+  long: |
+    second person pronoun and command marker
 # languages :
 hýyban:
   type: leaf
