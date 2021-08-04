@@ -237,7 +237,12 @@ kála:
   type: leaf
   short: fish
   long: |
-    fully aquatic life that uses primarily swimming
+    life that uses primarily swimming as locomotion, to swim
+feé:
+  type: leaf
+  short: really
+  long: |
+    life that uses primarily flying as locomotion, to fly
 kási:
   type: leaf
   short: plant
@@ -254,6 +259,11 @@ zógo:
   long: |
     mushroom, fungus
 # taxonometric life :
+tygií:
+  type: leaf
+  short: bird
+  long: |
+    any animal of the clade avialae
 jíi:
   type: leaf
   short: frog
@@ -320,14 +330,45 @@ séme:
   type: leaf
   short: what
   long: |
-    something that I want you to tell me more about
+    what is this thing?
 la:
   type: leaf
   short: not
   long: |
-    Used with e, á, or similar words to negate phrases, or on its own as a negative reaction.
+    used with e to negate phrases, or on its own as a negative reaction
 síi:
   type: leaf
   short: really
   long: |
-    Used with e, á, or similar words to emphasize phrases, or on its own as a positive reaction.
+    used with e to emphasize phrases, or on its own as a positive reaction
+# misc :
+reén:
+  type: leaf
+  short: rain
+  long: |
+    rain, to rain, water falls from clouds
+xiló:
+  type: leaf
+  short: declair
+  long: |
+    to make something is true by stating it
+daá:
+  type: leaf
+  short: greet
+  long: |
+    to welcome or greet
+wán:
+  type: leaf
+  short: individual
+  long: |
+    a single individual, quantified as tho it has an "each" on it
+boró:
+  type: leaf
+  short: able
+  long: |
+    to be able to, to have the possibility of
+xuma:
+  type: leaf
+  short: yes/no?
+  long: |
+    is there something?
