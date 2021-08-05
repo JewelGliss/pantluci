@@ -347,6 +347,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+zúno:
+  type: leaf
+  short: sun
+  long: |
+    sun, star
 reén:
   type: leaf
   short: rain
