@@ -377,3 +377,24 @@ xuma:
   short: yes/no?
   long: |
     is there something?
+# direction :
+utáa:
+  type: leaf
+  short: north
+  long: |
+    to the north
+timyý:
+  type: leaf
+  short: east
+  long: |
+    to the east
+seláan:
+  type: leaf
+  short: south
+  long: |
+    to the south
+pára:
+  type: leaf
+  short: west
+  long: |
+    to the west
