@@ -352,6 +352,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+kymytí:
+  type: leaf
+  short: argue
+  long: |
+    argue, debate
 roqy:
   type: leaf
   short: strong
