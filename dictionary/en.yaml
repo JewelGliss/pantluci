@@ -20,6 +20,11 @@ jií:
   short: dative attacher
   long: |
     dative, leaf => leaf with dative attached
+cí i:
+  type: particle
+  short: interrogative multiple choice question constructor
+  long: |
+    leaf, leaf => mutiple choice question
 # Leaves :
 # Primary Colors :
 buú:
