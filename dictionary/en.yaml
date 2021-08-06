@@ -347,6 +347,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+sagó:
+  type: leaf
+  short: answer
+  long: |
+    reply, response, answer, solution (to a problem)
 zúno:
   type: leaf
   short: sun
