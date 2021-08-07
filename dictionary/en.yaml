@@ -357,6 +357,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+jisolan:
+  type: leaf
+  short: insolating
+  long: |
+    something that prevents energy from passing through
 kápa:
   type: leaf
   short: cloak
