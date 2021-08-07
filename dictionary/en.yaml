@@ -352,6 +352,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+oha:
+  type: leaf
+  short: next
+  long: |
+    next, after, upcoming, then, following in a sequence
 kymytí:
   type: leaf
   short: argue
