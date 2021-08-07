@@ -352,6 +352,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+tóoru:
+  type: leaf
+  short: pass
+  long: |
+    to go by, over, or through
 oha:
   type: leaf
   short: next
