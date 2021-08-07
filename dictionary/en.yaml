@@ -352,6 +352,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+kápa:
+  type: leaf
+  short: cloak
+  long: |
+    long sleeveless overcoat, cloak, cape
 áan:
   type: leaf
   short: wear
