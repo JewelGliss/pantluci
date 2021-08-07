@@ -357,6 +357,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+pura:
+  type: leaf
+  short: travel
+  long: |
+    to travel, roam, wander
 jisolan:
   type: leaf
   short: insolating
