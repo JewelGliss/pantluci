@@ -209,6 +209,11 @@ cónhe:
   short: something
   long: |
     something, anything
+á:
+  type: leaf
+  short: doer
+  long: |
+    someone that does something
 jáa:
   type: leaf
   short: you!
