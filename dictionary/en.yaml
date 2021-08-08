@@ -248,6 +248,11 @@ gón:
   long: |
     wind, air, breathable gas
 # ataxonometric life :
+byn:
+  type: leaf
+  short: jumper
+  long: |
+    life that uses primarily jumping as locomotion, to jumping
 kála:
   type: leaf
   short: fish
