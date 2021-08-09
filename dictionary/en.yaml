@@ -387,6 +387,11 @@ tóoru:
   short: pass
   long: |
     to go by, over, or through
+mín:
+  type: leaf
+  short: increase
+  long: |
+    increasing in amount or intensity
 oha:
   type: leaf
   short: next
