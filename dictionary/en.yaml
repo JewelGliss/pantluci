@@ -362,6 +362,11 @@ síi:
   long: |
     used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
+nugo:
+  type: leaf
+  short: wrap
+  long: |
+    to enclose or coil around with cloth
 pura:
   type: leaf
   short: travel
