@@ -402,6 +402,11 @@ oha:
   short: next
   long: |
     next, after, upcoming, then, following in a sequence
+hali:
+  type: leaf
+  short: remove
+  long: |
+    to remove, to take away, to take off
 kymytí:
   type: leaf
   short: argue
