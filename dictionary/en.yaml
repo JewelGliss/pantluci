@@ -432,6 +432,11 @@ zúno:
   short: sun
   long: |
     sun, star
+cubá:
+  type: leaf
+  short: try
+  long: |
+    to try; to attempt to do.
 reén:
   type: leaf
   short: rain
