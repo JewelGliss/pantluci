@@ -457,6 +457,11 @@ xuma:
   short: yes/no?
   long: |
     is there something?
+sibá:
+  type: leaf
+  short: cause
+  long: |
+    a cause, source, or reason for something
 # direction :
 utáa:
   type: leaf
