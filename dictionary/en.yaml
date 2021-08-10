@@ -417,11 +417,16 @@ roqy:
   short: strong
   long: |
     capable of exerting power, potency or influence
+cóo u:
+  type: leaf
+  short: most
+  long: |
+    most, in excess of all others
 duú:
   type: leaf
   short: more
   long: |
-    more, in excess of the others
+    more, in excess of others
 sagó:
   type: leaf
   short: answer
