@@ -487,6 +487,16 @@ boza:
   short: understand
   long: |
     to grasp the meaning and/or implications of
+kafé:
+  type: leaf
+  short: coffee
+  long: |
+    coffee drink
+caá:
+  type: leaf
+  short: tea
+  long: |
+    boiled dried leaves drink
 # direction :
 utáa:
   type: leaf
