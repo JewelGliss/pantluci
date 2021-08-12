@@ -477,6 +477,11 @@ sibá:
   short: cause
   long: |
     a cause, source, or reason for something
+boza:
+  type: leaf
+  short: understand
+  long: |
+    to grasp the meaning and/or implications of
 # direction :
 utáa:
   type: leaf
