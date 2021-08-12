@@ -472,6 +472,11 @@ xuma:
   short: yes/no?
   long: |
     is there something?
+voré:
+  type: leaf
+  short: want
+  long: |
+    to want, desire, need
 sibá:
   type: leaf
   short: cause
