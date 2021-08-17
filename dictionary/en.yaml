@@ -19,12 +19,17 @@ jií:
   type: particle
   short: dative attacher
   long: |
-    dative, leaf => leaf with dative attached
+    dative, leaf => leaf with benificiary attached
 cí i:
   type: particle
   short: interrogative multiple choice question constructor
   long: |
     leaf, leaf => mutiple choice question
+gen:
+  type: particle
+  short: gentive phrase constructor
+  long: |
+    gentive, leaf => leaf with possessor attached 
 # Leaves :
 # Primary Colors :
 buú:
