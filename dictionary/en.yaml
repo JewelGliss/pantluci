@@ -391,7 +391,7 @@ xuda:
   type: leaf
   short: plan
   long: |
-   project, projected course, plan?
+   project, projected course, plan
 morí:
   type: leaf
   short: die
@@ -414,7 +414,7 @@ salín:
    to create out of nothing, to harmlessly edit or construct
 tikón:
   type: leaf
-  short: make
+  short: opine
   long: |
    opinion, opine
 cyýdá:
