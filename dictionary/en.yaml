@@ -382,6 +382,51 @@ jisolan:
   short: insolating
   long: |
     something that prevents energy from passing through
+tígo:
+  type: leaf
+  short: say
+  long: |
+    say, utter; mention; talk, speak
+xuda:
+  type: leaf
+  short: plan
+  long: |
+   project, projected course, plan?
+morí:
+  type: leaf
+  short: die
+  long: |
+   die, stop living, death, kill
+rójen:
+  type: leaf
+  short: born
+  long: |
+   birth, be born
+naá:
+  type: leaf
+  short: get
+  long: |
+   to take, hold, seize, capture, obtain
+salín:
+  type: leaf
+  short: make
+  long: |
+   to create out of nothing, to harmlessly edit or construct
+tikón:
+  type: leaf
+  short: make
+  long: |
+   opinion, opine
+cyýdá:
+  type: leaf
+  short: time
+  long: |
+   the inevitable passing of events from future to present then past, a measurement of a quantity of time, a numerical indication of a length of time, free time, leisure, spare time
+haza:
+  type: leaf
+  short: see
+  long: |
+   perceive with the eyes
 kápa:
   type: leaf
   short: cloak
