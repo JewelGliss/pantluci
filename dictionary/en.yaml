@@ -422,6 +422,56 @@ cyýdá:
   short: time
   long: |
    the inevitable passing of events from future to present then past, a measurement of a quantity of time, a numerical indication of a length of time, free time, leisure, spare time
+sána:
+  type: leaf
+  short: year
+  long: |
+    time it takes for the Earth to complete one revolution around the Sun
+káan:
+  type: leaf
+  short: look
+  long: |
+    to look, intentionally try to see, watch, read, observe
+laán:
+  type: leaf
+  short: way
+  long: |
+    path, way, method
+jáan:
+  type: leaf
+  short: give
+  long: |
+    transfer the possession of something to someone else
+wodo:
+  type: leaf
+  short: work
+  long: |
+    work, function, able to perform a specific task
+ola:
+  type: leaf
+  short: life
+  long: |
+    existence, life, health, livelihood, exist, alive, healthy, cured
+lysá:
+  type: leaf
+  short: let
+  long: |
+    let, allow, give up, give way
+fin:
+  type: leaf
+  short: let
+  long: |
+    be conscious of something, perceive, feel physically or emotionally
+suroó:
+  type: leaf
+  short: let
+  long: |
+    request an answer, question
+sín:
+  type: leaf
+  short: new
+  long: |
+    new, fresh, renew, renovate, freshen
 haza:
   type: leaf
   short: see
