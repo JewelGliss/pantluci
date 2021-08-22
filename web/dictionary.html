@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">window["_gaUserPrefs"] = { ioo: function () { return true; } }</script>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<title>Hýyban dictionary</title>
+	<link rel="icon" href="./../images/icon.ico">
+	<link href="./res/bootstrap.css" rel="stylesheet">
+	<link type="text/css" href="./res/layout.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./res/bootstrap.js"></script>
+	<script src="./res/wp_dictionary.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Hýyban dictionary <small id="words-count"></small></h1>
+
+		<form class="row">
+			<span id="search-reset" class="btn span2">Clear search</span>
+			<input type="text"
+				placeholder="Search Hýyban words, words in definitions, @type and #tags ..."
+				class="span9 input-medium"
+				id="search"
+				style="padding: 4px 14px; height: revert;"
+			>
+		</form>
+		
+
+		<div id="dictionary"></div>
+	</div>
+
+</body>
+
+<script>
+	let word_count = bundle.count_word_types();
+
+	$('#words-count').html(`(${word_count.particles} particles, ${word_count.roots} roots, ${word_count.phrases} phrases)`);
+
+	function update() {
+		let search = $('#search').val();
+		let filters = search.split(' ');
+		$('#dictionary').html(bundle.html_dictionary(filters));
+
+		$('.dictionary-tag').click((event) => {
+			$('#search').val(`#${event.currentTarget.innerHTML}`);
+			update();
+		});
+
+		$('.dictionary-family').click((event) => {
+			$('#search').val(`@${event.currentTarget.innerHTML}`);
+			update();
+		});
+
+		$('.dictionary-word-link').click((event) => {
+			$('#search').val(`${event.currentTarget.innerHTML}`);
+			update();
+		});
+
+		$('.dictionary-ea').click((event) => {
+			$('#search').val(`sea`);
+			update();
+		});
+
+		$('.dictionary-e').click((event) => {
+			$('#search').val(`se`);
+			update();
+		});
+
+		window.scrollTo(0, 0);
+	}
+
+	update();
+
+	$('#search').bind("keyup", (e) => {
+		update();
+	});	
+
+	$('#search-reset').click((e) => {
+		$('#search').val('');
+		update();
+	});	
+</script>
+
+</html>
