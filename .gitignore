@@ -2,3 +2,6 @@ node_modules
 
 # Bundles are generated with webpack.
 web/res/wp_*
+
+# Ignore built book
+book/book
