@@ -4,6 +4,7 @@ module.exports = {
   mode: 'development',
   entry: {
     parser: './webpack/parser.js',
+    dictionary: './webpack/dictionary.js',
   },
   output: {
     library: 'bundle',
