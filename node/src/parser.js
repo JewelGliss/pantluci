@@ -13,7 +13,7 @@ const v = 'aeiouyáéíóúý';
 const vw = '111000111000';
 
 // Building a map of the weight for all possible syllable forms.
-let s = {"_":2};
+let s = {"_____":2};
 for (var i = 0; i < c.length; i++) {
 	for (var j = 0; j < v.length / 2; j++) {
 		s[c[i] + v[j]] = parseInt(cw[i]) + parseInt(vw[j]);
@@ -51,9 +51,6 @@ function segmenter(str) {
 		str = str.replaceAll('.' + v[i], v[i]);
 	}
 	str = str.replaceAll('.n.', 'n.');
-	str = str.replaceAll('_', '._.');
-	str = str.replaceAll('..', '.');
-	str = str.replaceAll('..', '.');
 	str = str.slice(0, -1);
 	str = str.replaceAll('?', ' ');
 	str = str.split('.');
