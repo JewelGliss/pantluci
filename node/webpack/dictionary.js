@@ -25,7 +25,7 @@ function html_word_entry(word, entry) {
 	var output = `<div class="dictionary-entry well well-small"><h3>`;
 
 	if (entry.type == 'phrase') {
-		parser.segmenter(word).forEach((part) => {
+		Array.from(parser.segmenter(word)).forEach((part) => {
 			if (ignored.includes(part[0])) {
 				output += `${part} `;
 			} else {
