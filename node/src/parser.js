@@ -51,9 +51,11 @@ function segmenter(str) {
 		str = str.replaceAll('.' + v[i], v[i]);
 	}
 	str = str.replaceAll('.n.', 'n.');
+	str = str.replaceAll('_', '._.');
 	while(str.indexOf("..") !== -1){
 		str = str.replaceAll('..', '.');
 	}
+	str = str.replaceAll('_._', '__');
 	str = str.slice(0, -1);
 	str = str.replaceAll('?', ' ');
 	str = str.split('.');
