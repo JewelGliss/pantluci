@@ -26,7 +26,7 @@ function html_word_entry(word, entry) {
 
 	if (entry.type == 'phrase') {
 		Array.from(parser.segmenter(word)).forEach((part) => {
-			if (ignored.includes(part[0])) {
+			if (part.includes('_')) {
 				output += `${part} `;
 			} else {
 				output += `<a href="#" class="dictionary-word-link">${part}</a> `;
@@ -60,7 +60,7 @@ function html_word_entry(word, entry) {
 
 			list.forEach((word) => {
 				console.log(word,ignored.includes(word));
-				if (ignored.includes(word)) {
+				if (word.includes('_')) {
 					out += `${word} `;
 				} else {
 					out += `<a href="#" class="dictionary-word-link">${word}</a> `;
