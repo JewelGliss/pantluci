@@ -1,7 +1,7 @@
 const { dictionary_en: dictionary, compare_words } = require('../src/dictionary');
 const parser = require('../src/parser');
 
-const ignored = [  ];
+const ignored = [ '_____' ];
 
 const words_sorted = Object.keys(dictionary).filter((word) => !ignored.includes(word)).sort(compare_words);
 
