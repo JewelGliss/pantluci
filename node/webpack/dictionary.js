@@ -59,7 +59,7 @@ function html_word_entry(word, entry) {
 			//let list = p1.split(' ');
 
 			list.forEach((word) => {
-				console.log(word,ignored.includes(word))
+				console.log(word,ignored.includes(word));
 				if (ignored.includes(word)) {
 					out += `${word} `;
 				} else {
