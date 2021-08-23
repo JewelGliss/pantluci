@@ -1,40 +1,40 @@
 # Phrases :
-e ______ sagó:
+e _____ sagó:
   type: phrase
   short: indirect question constructor
   long: |
     extracts an answer from the embeded question
-e píde ______:
+e píde _____:
   type: phrase
   short: hesternal tense marker
   long: |
     the embeded clause happens yesterday
-e kede ______:
+e kede _____:
   type: phrase
   short: hodiernal tense marker
   long: |
     the embeded clause happens today
-e hunde ______:
+e hunde _____:
   type: phrase
   short: crastinal tense marker
   long: |
     the embeded clause happens tomorrow
-e píni ______:
+e píni _____:
   type: phrase
   short: past tense marker
   long: |
     the embeded clause happens in the past
-e keren ______:
+e keren _____:
   type: phrase
   short: present tense marker
   long: |
     the embeded clause happens in the present
-e hungiín ______:
+e hungiín _____:
   type: phrase
   short: future tense marker
   long: |
     the embeded clause happens in the future
-e ______ mé:
+e _____ mé:
   type: phrase
   short: definite marker
   long: |
