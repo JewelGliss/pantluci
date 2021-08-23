@@ -13,7 +13,7 @@ const v = 'aeiouyáéíóúý';
 const vw = '111000111000';
 
 // Building a map of the weight for all possible syllable forms.
-let s = {};
+let s = {"_":2};
 for (var i = 0; i < c.length; i++) {
 	for (var j = 0; j < v.length / 2; j++) {
 		s[c[i] + v[j]] = parseInt(cw[i]) + parseInt(vw[j]);
