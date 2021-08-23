@@ -59,7 +59,7 @@ function html_word_entry(word, entry) {
 			//let list = p1.split(' ');
 
 			list.forEach((word) => {
-				if (ignored.includes(word[0])) {
+				if (ignored.includes(word)) {
 					out += `${word} `;
 				} else {
 					out += `<a href="#" class="dictionary-word-link">${word}</a> `;
