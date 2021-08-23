@@ -4,7 +4,7 @@ e _____ sagó:
   short: indirect question constructor
   long: |
     extracts an answer from the embeded question
- e píde _____:
+e píde _____:
   type: phrase
   short: hesternal tense marker
   long: |
@@ -19,7 +19,7 @@ e hunde _____:
   short: crastinal tense marker
   long: |
     the embeded clause happens tomorrow
- e píni _____:
+e píni _____:
   type: phrase
   short: past tense marker
   long: |
