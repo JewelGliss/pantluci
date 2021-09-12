@@ -11,16 +11,40 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="./res/bootstrap.js"></script>
 	<script src="./res/wp_dictionary.js"></script>
+	<style>
+		@font-face {
+			font-family: Duployan;
+			src: url(../fonts/Duployan-Regular.otf) format("opentype");
+		}
+		.Dupl {
+			font-family: Duployan, sans-serif;
+			width: auto;
+			height: auto;
+			margin: auto;
+			position: absolute;
+			top: 50%;
+			left: -10px;
+			transform: translate(-100%, 0);
+			font-size: 36px;
+		}
+		.well{
+			position:relative;
+		}
+		p{
+			width:
+		}
+	</style>
 </head>
 
 <body>
 	<div class="container">
-		<h1>Hýyban dictionary <small id="words-count"></small></h1>
+		<h1>Hýyban dictionary <small id="words-count"></small><small style="font-size: 12px;"> <a href="https://en.wikipedia.org/wiki/Duployan_shorthand">Duployan</a>
+		font by <a href="https://github.com/dscorbett">Dscorbett</a></small></h1>
 
 		<form class="row">
 			<span id="search-reset" class="btn span2">Clear search</span>
 			<input type="text"
-				placeholder="Search Hýyban words, words in definitions, @type and #tags ..."
+				placeholder="Search Hýyban words, words in definitions, @type ..."
 				class="span9 input-medium"
 				id="search"
 				style="padding: 4px 14px; height: revert;"
