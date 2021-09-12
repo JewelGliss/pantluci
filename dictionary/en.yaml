@@ -659,3 +659,148 @@ pára:
   short: west
   long: |
     to the west
+nobe:
+  type: leaf
+  short: fast
+  long: |
+    quick, fast, rapid
+zan:
+  type: leaf
+  short: tooth
+  long: |
+   anatomical tooth
+doka:
+  type: leaf
+  short: doctor
+  long: |
+    medical assistant, doctor, someone educated on and practicing medicine
+hée:
+  type: leaf
+  short: boss
+  long: |
+    boss, person in command, person who directly oversees work being done, director
+kíri:
+  type: leaf
+  short: letter
+  long: |
+    writing, letter (message), font, script
+múta:
+  type: leaf
+  short: urinate
+  long: |
+   pee, urine, urinate
+rysúja:
+  type: leaf
+  short: russia
+  long: |
+   the nation of russia
+paná:
+  type: leaf
+  short: towards
+  long: |
+   face, turn to, address, speak to
+bybu:
+  type: leaf
+  short: b
+  long: |
+    refers to a previous leaf beginning with the letter b
+cabu:
+  type: leaf
+  short: c
+  long: |
+    refers to a previous leaf beginning with the letter c
+dybu:
+  type: leaf
+  short: d
+  long: |
+    refers to a previous leaf beginning with the letter d
+fabu:
+  type: leaf
+  short: f
+  long: |
+    refers to a previous leaf beginning with the letter f
+gybu:
+  type: leaf
+  short: g
+  long: |
+    refers to a previous leaf beginning with the letter g
+habu:
+  type: leaf
+  short: h
+  long: |
+    refers to a previous leaf beginning with the letter h
+jabu:
+  type: leaf
+  short: j
+  long: |
+    refers to a previous leaf beginning with the letter j
+kabu:
+  type: leaf
+  short: k
+  long: |
+    refers to a previous leaf beginning with the letter k
+lybu:
+  type: leaf
+  short: l
+  long: |
+    refers to a previous leaf beginning with the letter l
+mybu:
+  type: leaf
+  short: m
+  long: |
+    refers to a previous leaf beginning with the letter m
+nybu:
+  type: leaf
+  short: n
+  long: |
+    refers to a previous leaf beginning with the letter n
+pabu:
+  type: leaf
+  short: p
+  long: |
+    refers to a previous leaf beginning with the letter p
+qybu:
+  type: leaf
+  short: q
+  long: |
+    refers to a previous leaf beginning with the letter q
+rybu:
+  type: leaf
+  short: r
+  long: |
+    refers to a previous leaf beginning with the letter r
+sabu:
+  type: leaf
+  short: s
+  long: |
+    refers to a previous leaf beginning with the letter s
+tabu:
+  type: leaf
+  short: t
+  long: |
+    refers to a previous leaf beginning with the letter t
+vybu:
+  type: leaf
+  short: v
+  long: |
+    refers to a previous leaf beginning with the letter v
+wybu:
+  type: leaf
+  short: w
+  long: |
+    refers to a previous leaf beginning with the letter w
+xabu:
+  type: leaf
+  short: x
+  long: |
+    refers to a previous leaf beginning with the letter x
+zybu:
+  type: leaf
+  short: z
+  long: |
+    refers to a previous leaf beginning with the letter z
+ybu:
+  type: leaf
+  short: z
+  long: |
+    refers to a previous leaf beginning with the letter " "
