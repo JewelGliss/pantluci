@@ -1,4 +1,9 @@
 # Phrases :
+e nobe kíri:
+  type: phrase
+  short: duployan script
+  long: |
+    duployan shorthand, or duployan stenography
 e _____ sagó:
   type: phrase
   short: indirect question constructor
