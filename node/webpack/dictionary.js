@@ -1,4 +1,4 @@
-const { dictionary_en: dictionary, compare_words } = require('../src/dictionary');
+const { dictionary_en: dictionary, compare_words, dupl_converter } = require('../src/dictionary');
 const parser = require('../src/parser');
 
 const ignored = [ '_____','______' ];
@@ -47,8 +47,12 @@ function html_word_entry(word, entry) {
 			output += `<span class="btn btn-mini btn-info dictionary-tag">${e}</span> `;
 		});
 	}
-
+	
 	output += `</h3>`;
+
+	output += `<div class="Dupl">`
+	output += dupl_converter(`${word}`)
+	output += `</div>`;
 
 	let paragraphs = entry.long.split(/(\r\n|\r|\n){2,}/);
 	paragraphs.forEach((p) => {
