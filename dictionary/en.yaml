@@ -299,7 +299,7 @@ gón:
   long: |
     wind, air, breathable gas
 # ataxonometric life :
-byn:
+býn:
   type: leaf
   short: jumper
   long: |
@@ -376,7 +376,7 @@ káma:
   short: become 
   long: |
     to become, start to, begin, but not to arrive
-jan:
+ján:
   type: leaf
   short: move
   long: |
@@ -704,107 +704,107 @@ paná:
   short: towards
   long: |
    face, turn to, address, speak to
-bybu:
+byn:
   type: leaf
   short: b
   long: |
     refers to a previous leaf beginning with the letter b
-cabu:
+can:
   type: leaf
   short: c
   long: |
     refers to a previous leaf beginning with the letter c
-dybu:
+dyn:
   type: leaf
   short: d
   long: |
     refers to a previous leaf beginning with the letter d
-fabu:
+fan:
   type: leaf
   short: f
   long: |
     refers to a previous leaf beginning with the letter f
-gybu:
+gyn:
   type: leaf
   short: g
   long: |
     refers to a previous leaf beginning with the letter g
-habu:
+han:
   type: leaf
   short: h
   long: |
     refers to a previous leaf beginning with the letter h
-jabu:
+jan:
   type: leaf
   short: j
   long: |
     refers to a previous leaf beginning with the letter j
-kabu:
+kan:
   type: leaf
   short: k
   long: |
     refers to a previous leaf beginning with the letter k
-lybu:
+lyn:
   type: leaf
   short: l
   long: |
     refers to a previous leaf beginning with the letter l
-mybu:
+myn:
   type: leaf
   short: m
   long: |
     refers to a previous leaf beginning with the letter m
-nybu:
+nyn:
   type: leaf
   short: n
   long: |
     refers to a previous leaf beginning with the letter n
-pabu:
+pan:
   type: leaf
   short: p
   long: |
     refers to a previous leaf beginning with the letter p
-qybu:
+qyn:
   type: leaf
   short: q
   long: |
     refers to a previous leaf beginning with the letter q
-rybu:
+ryn:
   type: leaf
   short: r
   long: |
     refers to a previous leaf beginning with the letter r
-sabu:
+san:
   type: leaf
   short: s
   long: |
     refers to a previous leaf beginning with the letter s
-tabu:
+tan:
   type: leaf
   short: t
   long: |
     refers to a previous leaf beginning with the letter t
-vybu:
+vyn:
   type: leaf
   short: v
   long: |
     refers to a previous leaf beginning with the letter v
-wybu:
+wyn:
   type: leaf
   short: w
   long: |
     refers to a previous leaf beginning with the letter w
-xabu:
+xan:
   type: leaf
   short: x
   long: |
     refers to a previous leaf beginning with the letter x
-zybu:
+zyn:
   type: leaf
   short: z
   long: |
     refers to a previous leaf beginning with the letter z
-ybu:
+yn:
   type: leaf
   short: z
   long: |
