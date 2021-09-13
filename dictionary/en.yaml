@@ -806,6 +806,6 @@ zyn:
     refers to a previous leaf beginning with the letter z
 yn:
   type: leaf
-  short: z
+  short: " "
   long: |
     refers to a previous leaf beginning with the letter " "
