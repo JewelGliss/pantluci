@@ -809,3 +809,58 @@ yn:
   short: " "
   long: |
     refers to a previous leaf beginning with the letter " "
+jynta:
+  type: leaf
+  short: friend
+  long: |
+   close friend with who you feel you can share anything with
+fíta:
+  type: leaf
+  short: debate
+  long: |
+   debate for the sake of discussion
+kífe:
+  type: leaf
+  short: argue
+  long: |
+   debate for the sake convincing the other parties
+hídíi:
+  type: leaf
+  short: back-up
+  long: |
+   reserve, spare, substitute for when the original doesn’t work
+loká:
+  type: leaf
+  short: logic
+  long: |
+   an internally consistent and rigorously defined set of rules
+ban:
+  type: leaf
+  short: language
+  long: |
+   communication who’s production and understanding is able to be learned to fluency
+e loká ban:
+  type: phrase
+  short: loglang
+  long: |
+   language meant to be unambiguous and internally consistent
+e salín ban:
+  type: phrase
+  short: conlang
+  long: |
+   language intentionally created and designed
+e hídíi ban:
+  type: phrase
+  short: auxlang
+  long: |
+   language meant for communication between people who do not share a first language
+pí e:
+  type: leaf
+  short: esoteric
+  long: |
+   strange without being random
+e pí e ban:
+  type: phrase
+  short: experimental language
+  long: |
+   a language designed to subvert some standard expectation of language
