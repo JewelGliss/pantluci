@@ -864,3 +864,43 @@ e pí e ban:
   short: experimental language
   long: |
    a language designed to subvert some standard expectation of language
+múrén:
+  type: leaf
+  short: fascinating
+  long: |
+   charming, bewitching, engaging, bewildering
+taqý:
+  type: leaf
+  short: prejudice
+  long: |
+   resentment, prejudice, damnation, predetermined ill-will
+sá o:
+  type: leaf
+  short: disappear
+  long: |
+   crumble away, vanish, disappear
+doci:
+  type: leaf
+  short: disappear
+  long: |
+   older or more senior sibling
+osi:
+  type: leaf
+  short: disappear
+  long: |
+   younger or less senior sibling
+an:
+  type: particle
+  short: name descriptor
+  long: |
+   leaf, name => named leaf
+gan:
+  type: leaf
+  short: go
+  long: |
+   to go, walk, leave
+da:
+  type: leaf
+  short: person
+  long: |
+   socially intelligent or sentient being
