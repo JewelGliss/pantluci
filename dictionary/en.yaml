@@ -881,12 +881,12 @@ sá o:
    crumble away, vanish, disappear
 doci:
   type: leaf
-  short: disappear
+  short: older sibling
   long: |
    older or more senior sibling
 osi:
   type: leaf
-  short: disappear
+  short: younger sibling
   long: |
    younger or less senior sibling
 an:
