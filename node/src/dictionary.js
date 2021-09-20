@@ -1,6 +1,6 @@
 module.exports.dictionary_en = require('../../dictionary/en.yaml');
 
-const alphabet = 'aábcdeéfghiíjklmnoópqrstuúvwxyýz';
+const alphabet = 'aábcdeéfghiíjklmnoópqrstuúvwxyýz ';
 
 let symbol_indices = {};
 
@@ -11,6 +11,12 @@ for (i = 0; i < alphabet.length; i++) {
 console.log({symbol_indices});
 
 function compare_words(x, y) {
+	if ("aáeéiíoóuúyý".includes(x.charAt(0))){
+		x=" "+x
+	}
+	if ("aáeéiíoóuúyý".includes(y.charAt(0))){
+		y=" "+y
+	}
     if (x == y) {
         return 0;
     }
