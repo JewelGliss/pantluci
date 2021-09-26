@@ -904,3 +904,8 @@ da:
   short: person
   long: |
    socially intelligent or sentient being
+hare:
+  type: leaf
+  short: harem
+  long: |
+   a group of someone's lovers (may be one person if part of a couple, no one if single, or more than one person in a polyamorous relationship)
