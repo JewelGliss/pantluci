@@ -888,7 +888,11 @@ osi:
   type: leaf
   short: younger sibling
   long: |
-   younger or less senior sibling
+    younger or less senior sibling
+    
+    Lí gen {púra} {mi} {osi}
+    
+    My little sibling is cute.
 an:
   type: particle
   short: name descriptor
@@ -912,7 +916,7 @@ hare:
     
     E {xuma} i {nín} lí lí {voré} {nín} gen {mi} {hare}
     
-    do you want to be part of my harem?
+    Do you want to be part of my harem?
 púra:
   type: leaf
   short: cute
