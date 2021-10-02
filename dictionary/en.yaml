@@ -124,6 +124,10 @@ búun:
   short: eggplant
   long: |
     something that is eggplant, cmyk(0,50,0,50)
+    
+    Lí e e {kísa} {pululún} {búun} {káma}
+    
+    Ripe plums turn purple.
 faán:
   type: leaf
   short: drab
@@ -927,3 +931,13 @@ húpari:
   short: hoodie
   long: |
     hooded jacket or sweatshirt
+kísa:
+  type: leaf
+  short: done
+  long: |
+    ripe, mature, cooked, fed up
+pululún:
+  type: leaf
+  short: plum
+  long: |
+    any fruit of a prunus domestica
