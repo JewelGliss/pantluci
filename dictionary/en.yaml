@@ -1,4 +1,24 @@
 # Phrases :
+e loká ban:
+  type: phrase
+  short: loglang
+  long: |
+   language meant to be unambiguous and internally consistent
+e salín ban:
+  type: phrase
+  short: conlang
+  long: |
+   language intentionally created and designed
+e hídíi ban:
+  type: phrase
+  short: auxlang
+  long: |
+   language meant for communication between people who do not share a first language
+e pí e ban:
+  type: phrase
+  short: experimental language
+  long: |
+   a language designed to subvert some standard expectation of language
 e nobe kíri:
   type: phrase
   short: shorthand
@@ -44,6 +64,22 @@ e _____ mé:
   short: definite marker
   long: |
     the embeded clause is identifiable in the given context
+# Prefixes :
+an:
+  type: prefix
+  short: name descriptor
+  long: |
+   converts a word to a name
+la:
+  type: prefix
+  short: not
+  long: |
+    used to negate a clause
+síi:
+  type: prefix
+  short: really
+  long: |
+    used to emphasize a clause
 # Particles :
 e:
   type: particle
@@ -73,9 +109,9 @@ cí i:
     leaf, leaf => mutiple choice question
 gen:
   type: particle
-  short: gentive phrase constructor
+  short: gentive attacher
   long: |
-    gentive, leaf => leaf with possessor attached 
+    gentive, leaf => leaf with possessor attached
 # Leaves :
 # Primary Colors :
 buú:
@@ -410,16 +446,6 @@ séme:
   short: what
   long: |
     what is this thing?
-la:
-  type: leaf
-  short: not
-  long: |
-    used with e to negate phrases, or on its own as a negative reaction
-síi:
-  type: leaf
-  short: really
-  long: |
-    used with e to emphasize phrases, or on its own as a positive reaction
 # misc :
 nugo:
   type: leaf
@@ -847,31 +873,11 @@ ban:
   short: language
   long: |
    communication who’s production and understanding is able to be learned to fluency
-e loká ban:
-  type: phrase
-  short: loglang
-  long: |
-   language meant to be unambiguous and internally consistent
-e salín ban:
-  type: phrase
-  short: conlang
-  long: |
-   language intentionally created and designed
-e hídíi ban:
-  type: phrase
-  short: auxlang
-  long: |
-   language meant for communication between people who do not share a first language
 pí e:
   type: leaf
   short: esoteric
   long: |
    strange without being random
-e pí e ban:
-  type: phrase
-  short: experimental language
-  long: |
-   a language designed to subvert some standard expectation of language
 múrén:
   type: leaf
   short: fascinating
@@ -901,11 +907,6 @@ osi:
     Lí gen {púra} {mi} {osi}
     
     My little sibling is cute.
-an:
-  type: particle
-  short: name descriptor
-  long: |
-   leaf, name => named leaf
 gan:
   type: leaf
   short: go

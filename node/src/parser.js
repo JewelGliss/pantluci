@@ -105,6 +105,10 @@ function parseSentences(text) {
 			text[i].parent = indexQueue.shift();
 		}
 
+		if(dictionary[text[i].word] != undefined && dictionary[text[i].word].type == 'prefix') {
+			indexQueue.push(i);
+		}
+
 		if(dictionary[text[i].word] != undefined && dictionary[text[i].word].type == 'particle') {
 			indexQueue.push(i);
 			indexQueue.push(i);
