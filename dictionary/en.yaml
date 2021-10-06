@@ -64,6 +64,11 @@ e _____ mé:
   short: definite marker
   long: |
     the embeded clause is identifiable in the given context
+xuma cí i _____ _____:
+  type: phrase
+  short: interrogative multiple choice question constructor
+  long: |
+    embeded clauses form an interogative or phrase
 # Prefixes :
 an:
   type: prefix
@@ -80,6 +85,16 @@ síi:
   short: really
   long: |
     used to emphasize a clause
+qon:
+  type: prefix
+  short: dummy word
+  long: |
+    used to prevent phrases from forming
+xuma:
+  type: prefix
+  short: yes/no?
+  long: |
+    used to question a clause
 # Particles :
 e:
   type: particle
@@ -104,9 +119,9 @@ jií:
     dative, leaf => leaf with benificiary attached
 cí i:
   type: particle
-  short: interrogative multiple choice question constructor
+  short: option constructor
   long: |
-    leaf, leaf => mutiple choice question
+    leaf, leaf => leaf or leaf
 gen:
   type: particle
   short: gentive attacher
@@ -647,11 +662,6 @@ boró:
   short: able
   long: |
     to be able to, to have the possibility of
-xuma:
-  type: leaf
-  short: yes/no?
-  long: |
-    is there something?
 voré:
   type: leaf
   short: want
