@@ -1,6 +1,6 @@
 module.exports.dictionary_en = require('../../dictionary/en.yaml');
 
-const alphabet = 'aábcdeéfghiíjklmnoópqrstuúvwxyýz ';
+const alphabet = 'abcdefghıíȷklmnoprstuvwxyz ́'; //acute is final letter
 
 let symbol_indices = {};
 
@@ -11,10 +11,29 @@ for (i = 0; i < alphabet.length; i++) {
 console.log({symbol_indices});
 
 function compare_words(x, y) {
-	if ("aáeéiíoóuúyý".includes(x.charAt(0))){
+	
+	x=x.replaceAll("á","á")
+	x=x.replaceAll("é","é")
+	x=x.replaceAll("í","ı́")
+	x=x.replaceAll("ó","ó")
+	x=x.replaceAll("ú","ú")
+	x=x.replaceAll("ý","ý")
+	x=x.replaceAll("ṕ","ṕ")
+	x=x.replaceAll("ḱ","ḱ")
+	
+	y=y.replaceAll("á","á")
+	y=y.replaceAll("é","é")
+	y=y.replaceAll("í","ı́")
+	y=y.replaceAll("ó","ó")
+	y=y.replaceAll("ú","ú")
+	y=y.replaceAll("ý","ý")
+	y=y.replaceAll("ṕ","ṕ")
+	y=y.replaceAll("ḱ","ḱ")
+	
+	if ("aeıouy".includes(x.charAt(0))){
 		x=" "+x
 	}
-	if ("aáeéiíoóuúyý".includes(y.charAt(0))){
+	if ("aeıouy".includes(y.charAt(0))){
 		y=" "+y
 	}
     if (x == y) {
@@ -44,33 +63,36 @@ function dupl_converter(x) {
 	while(x.includes("__")){
 		x=x.replaceAll("__","_")
 	}
+    x=x.replaceAll("t́","t\u{1bC77}")
+	x=x.replaceAll("ṕ","p\u{1bC77}")
+	x=x.replaceAll("ḱ","k\u{1bC77}")
 	
-    x=x.replaceAll("aá","a\u{1bC76}")
-	x=x.replaceAll("eé","e\u{1bC76}")
-	x=x.replaceAll("ií","i\u{1bC76}")
-	x=x.replaceAll("oó","o\u{1bC76}")
-	x=x.replaceAll("uú","u\u{1bC76}")
-	x=x.replaceAll("yý","y\u{1bC76}")
+    x=x.replaceAll("aá","a\u{1bC76}")
+	x=x.replaceAll("eé","e\u{1bC76}")
+	x=x.replaceAll("ıı́","ı\u{1bC76}")
+	x=x.replaceAll("oó","o\u{1bC76}")
+	x=x.replaceAll("uú","u\u{1bC76}")
+	x=x.replaceAll("yý","y\u{1bC76}")
 
-	x=x.replaceAll("áa","a\u{1bC77}")
-	x=x.replaceAll("ée","e\u{1bC77}")
-	x=x.replaceAll("íi","i\u{1bC77}")
-	x=x.replaceAll("óo","o\u{1bC77}")
-	x=x.replaceAll("úu","u\u{1bC77}")
-	x=x.replaceAll("ýy","y\u{1bC77}")
+	x=x.replaceAll("áa","a\u{1bC77}")
+	x=x.replaceAll("ée","e\u{1bC77}")
+	x=x.replaceAll("ı́ı","ı\u{1bC77}")
+	x=x.replaceAll("óo","o\u{1bC77}")
+	x=x.replaceAll("úu","u\u{1bC77}")
+	x=x.replaceAll("ýy","y\u{1bC77}")
 
-	x=x.replaceAll("á","a\u{1bC74}")
-	x=x.replaceAll("é","e\u{1bC74}")
-	x=x.replaceAll("í","i\u{1bC74}")
-	x=x.replaceAll("ó","o\u{1bC74}")
-	x=x.replaceAll("ú","u\u{1bC74}")
-	x=x.replaceAll("ý","y\u{1bC74}")
+	x=x.replaceAll("á","a\u{1bC74}")
+	x=x.replaceAll("é","e\u{1bC74}")
+	x=x.replaceAll("ı́","ı\u{1bC74}")
+	x=x.replaceAll("ó","o\u{1bC74}")
+	x=x.replaceAll("ú","u\u{1bC74}")
+	x=x.replaceAll("ý","y\u{1bC74}")
 
 	x=x.replaceAll("a","\u{1BC41}\u{1BC71}")
 	x=x.replaceAll("y","\u{1BC57}\u{1BC71}")
 	x=x.replaceAll("e","\u{1BC41}\u{1BC46}\u{1BC71}")
 	x=x.replaceAll("o","\u{1BC42}\u{1BC46}\u{1BC71}")
-	x=x.replaceAll("i","\u{1BC41}\u{1BC51}\u{1BC71}")
+	x=x.replaceAll("ı","\u{1BC41}\u{1BC51}\u{1BC71}")
 	x=x.replaceAll("u","\u{1BC42}\u{1BC51}\u{1BC71}")
 	
 	x=x.replaceAll("\u{1BC42}","\u{1BC57}")
@@ -85,13 +107,12 @@ function dupl_converter(x) {
 	x=x.replaceAll("f","\u{1BC04}")
 	x=x.replaceAll("g","\u{1BC0A}")
 	x=x.replaceAll("h","\u{1BC33}")
-	x=x.replaceAll("j","\u{1BC3A}")
+	x=x.replaceAll("ȷ","\u{1BC3A}")
 	x=x.replaceAll("k","\u{1BC05}")
 	x=x.replaceAll("l","\u{1BC06}")
 	x=x.replaceAll("m","\u{1BC19}")
 	x=x.replaceAll("n","\u{1BC1A}")
 	x=x.replaceAll("p","\u{1BC02}")
-	x=x.replaceAll("q","\u{1BC27}")
 	x=x.replaceAll("r","\u{1BC0B}")
 	x=x.replaceAll("s","\u{1BC1C}")
 	x=x.replaceAll("t","\u{1BC03}")
@@ -116,3 +137,137 @@ function dupl_converter(x) {
 }
 
 module.exports.dupl_converter = dupl_converter;
+
+function ipa_converter(x) {
+	
+	x=x.replaceAll("_ _","_._")
+	
+	x=x.replaceAll(" a","ʔa")
+	x=x.replaceAll(" e","ʔe")
+	x=x.replaceAll(" i","ʔi")
+	x=x.replaceAll(" o","ʔo")
+	x=x.replaceAll(" u","ʔu")
+	x=x.replaceAll(" y","ʔy")
+	
+	x=x.replaceAll(" ","")
+	
+    x=x.replaceAll("aá","ä˨.ä˦.")
+	x=x.replaceAll("eé","ɛ˨.ɛ˦.")
+	x=x.replaceAll("ıı́","i˨.i˦.")
+	x=x.replaceAll("oó","o˨.o˦.")
+	x=x.replaceAll("uú","u˨.u˦.")
+	x=x.replaceAll("yý","ə˨.ə˦.")
+	
+    x=x.replaceAll("áa","ä˦.ä˨.")
+	x=x.replaceAll("ée","ɛ˦.ɛ˨.")
+	x=x.replaceAll("ı́ı","i˦.i˨.")
+	x=x.replaceAll("óo","o˦.o˨.")
+	x=x.replaceAll("úu","u˦.u˨.")
+	x=x.replaceAll("ýy","ə˦.ə˨.")
+
+    x=x.replaceAll("á","ä˦.")
+	x=x.replaceAll("é","ɛ˦.")
+	x=x.replaceAll("ı́","i˦.")
+	x=x.replaceAll("ó","o˦.")
+	x=x.replaceAll("ú","u˦.")
+	x=x.replaceAll("ý","ə˦.")
+	
+    x=x.replaceAll("a","ä?")
+	x=x.replaceAll("e","ɛ?")
+	x=x.replaceAll("ı","i?")
+	x=x.replaceAll("o","o?")
+	x=x.replaceAll("u","u?")
+	x=x.replaceAll("y","ə?")
+
+	x=x.replaceAll("?˦","˦")
+	x=x.replaceAll("?˨","˨")
+	x=x.replaceAll("?","˨.")
+	
+	x=x.replaceAll("n","n?")
+	
+    x=x.replaceAll("?ä","ä")
+	x=x.replaceAll("?ɛ","ɛ")
+	x=x.replaceAll("?i","i")
+	x=x.replaceAll("?o","o")
+	x=x.replaceAll("?u","u")
+	x=x.replaceAll("?ə","ə")
+	
+	x=x.replaceAll(".n?","n.")
+	
+	x=x.replaceAll("ṕ","pʼ")
+	x=x.replaceAll("t́","tʼ")
+	x=x.replaceAll("ḱ","kʼ")
+	x=x.replaceAll("c","ʃ")
+	x=x.replaceAll("h","ç")
+	x=x.replaceAll("r","ɾ")
+	x=x.replaceAll("ȷ","j")
+	
+	x=x.replaceAll("i˨.i˦","?")
+	x=x.replaceAll("ʔ?","ʔi˨.i˦")
+	x=x.replaceAll("l?","li˨.i˦")
+	x=x.replaceAll("s?","si˨.i˦")
+	x=x.replaceAll("?","ji˨˦")
+	
+	x=x.replaceAll("jɛ","ʒɛ")
+	x=x.replaceAll("ji","ʒi")
+	
+	x=x.replaceAll("gʒ","gj")
+	x=x.replaceAll("kʒ","kj")
+	x=x.replaceAll("kʼʒ","kʼj")
+	x=x.replaceAll("ʃʒ","ʃj")
+	x=x.replaceAll("pʒ","pj")
+	x=x.replaceAll("bʒ","bj")
+	
+	x=x.replaceAll("i˦.i˨","?")
+	x=x.replaceAll("ʔ?","ʔi˦.i˨")
+	x=x.replaceAll("l?","li˦.i˨")
+	x=x.replaceAll("s?","si˦.i˨")
+	x=x.replaceAll("?","jə˦˨")
+	
+	x=x.replaceAll("ä˨.ä˦","äɪ̯˨˦")
+	x=x.replaceAll("ä˦.ä˨","äʊ̯˦˨")
+	
+	x=x.replaceAll("ɛ˨.ɛ˦","ɛɪ̯˨˦")
+	
+	x=x.replaceAll("ʔi","ʔji")
+	
+	x=x.replaceAll("jʒ","ʒj")
+	x=x.replaceAll("ʒj","ʑj")
+	x=x.replaceAll("ʃj","ɕj")
+	x=x.replaceAll("tj","t͡ʃ")
+	x=x.replaceAll("tjʼ","t͡ʃʼ")
+	x=x.replaceAll("dj","d͡ʒ")
+	x=x.replaceAll("nj","ɲ")
+	
+	x=x.replaceAll("kj","cj")
+	x=x.replaceAll("kʼj","cʼj")
+	x=x.replaceAll("gj","ɟj")
+	
+	x=x.replaceAll("n.b","m.b")
+	x=x.replaceAll("n.g","ŋ.g")
+	x=x.replaceAll("n.p","m.p")
+	x=x.replaceAll("n.k","ŋ.k")
+	x=x.replaceAll("n.v","m.v")
+	x=x.replaceAll("n.f","m.f")
+	x=x.replaceAll("n.x","ŋ.x")
+	x=x.replaceAll("n.n","m.n")
+	x=x.replaceAll("n.w","ŋ.w")
+	x=x.replaceAll("n.ç","ɲ.ç")
+	x=x.replaceAll("n.j","ɲ.j")
+	x=x.replaceAll("n.c","ɲ.c")
+	x=x.replaceAll("n.ɟ","ɲ.ɟ")
+	
+	while(x.includes("__")){
+		x=x.replaceAll("__","_")
+	}
+	x=x.replaceAll("._"," _")
+	x=x.replaceAll("_.","_ ")
+	
+	x=x+"?"
+	x=x.replaceAll(".?","")
+	x=x.replaceAll("_?","_")
+	x=x.replaceAll("_","__")
+	return x
+}
+
+module.exports.ipa_converter = ipa_converter;

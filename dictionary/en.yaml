@@ -1,72 +1,84 @@
 # Phrases :
-e loká ban:
+e loká ban:
   type: phrase
   short: loglang
+  dupl: eloká ban
   long: |
    language meant to be unambiguous and internally consistent
-e salín ban:
+e salı́n ban:
   type: phrase
   short: conlang
+  dupl: esalı́ n ban
   long: |
    language intentionally created and designed
-e hídíi ban:
+e xı́dı́ı ban:
   type: phrase
   short: auxlang
+  dupl: exı́ dı́ıban
   long: |
    language meant for communication between people who do not share a first language
-e pí e ban:
+e pı́ e ban:
   type: phrase
   short: experimental language
+  dupl: epı́ eban
   long: |
    a language designed to subvert some standard expectation of language
-e nobe kíri:
+e nobe kı́rı:
   type: phrase
   short: shorthand
+  dupl: eno be kı́ rı
   long: |
     shorthand, stenography, writing fast enough to require special skills
-e _____ sagó:
+e _____ sagó:
   type: phrase
   short: indirect question constructor
   long: |
     extracts an answer from the embeded question
-e píde _____:
+e pı́de _____:
   type: phrase
   short: hesternal tense marker
+  dupl: epı́de _
   long: |
     the embeded clause happens yesterday
 e kede _____:
   type: phrase
   short: hodiernal tense marker
+  dupl: eke de _
   long: |
     the embeded clause happens today
 e hunde _____:
   type: phrase
   short: crastinal tense marker
+  dupl: ehu n de _
   long: |
     the embeded clause happens tomorrow
-e píni _____:
+e pı́nı _____:
   type: phrase
   short: past tense marker
+  dupl: epı́nı _
   long: |
     the embeded clause happens in the past
 e keren _____:
   type: phrase
   short: present tense marker
+  dupl: eke re n _
   long: |
     the embeded clause happens in the present
-e hungiín _____:
+e hungıı́n _____:
   type: phrase
   short: future tense marker
+  dupl: ehu n gıı́ n _
   long: |
     the embeded clause happens in the future
-e _____ mé:
+e _____ mé:
   type: phrase
   short: definite marker
   long: |
     the embeded clause is identifiable in the given context
-xuma cí i _____ _____:
+huma cı́ ı _____ _____:
   type: phrase
   short: interrogative multiple choice question constructor
+  dupl: hu macı́ı _ _
   long: |
     embeded clauses form an interogative or phrase
 # Prefixes :
@@ -80,19 +92,20 @@ la:
   short: not
   long: |
     used to negate a clause
-síi:
+sı́ı:
   type: prefix
   short: really
   long: |
     used to emphasize a clause
-qon:
+nı́ı:
   type: prefix
   short: dummy word
   long: |
     used to prevent phrases from forming
-xuma:
+huma:
   type: prefix
   short: yes/no?
+  dupl: hu ma
   long: |
     used to question a clause
 # Particles :
@@ -101,147 +114,155 @@ e:
   short: leaf phrase generator
   long: |
     modifier, modified => content phrase
-    quantifier, leaf => quantified leaf
-i:
+ı:
   type: particle
   short: agent attacher
   long: |
     agent, leaf => leaf with agent attached
-lí:
+lı́:
   type: particle
   short: patient attacher
   long: |
     patient, leaf => leaf with patient attached
-jií:
+ȷıı́:
   type: particle
   short: dative attacher
   long: |
     dative, leaf => leaf with benificiary attached
-cí i:
+cı́ ı:
   type: particle
   short: option constructor
+  dupl: cı́ı
   long: |
     leaf, leaf => leaf or leaf
 gen:
   type: particle
   short: gentive attacher
+  dupl: ge n
   long: |
     gentive, leaf => leaf with possessor attached
 # Leaves :
 # Primary Colors :
-buú:
+buú:
   type: leaf
   short: cyan
   long: |
     something that is cyan, cmyk(100,0,0,0)
-haá:
+haá:
   type: leaf
   short: magenta
   long: |
     something that is magenta, cmyk(0,100,0,0)
-tée:
+tée:
   type: leaf
   short: yellow
   long: |
     something that is yellow, cmyk(0,0,100,0)
-xoón:
+xoón:
   type: leaf
   short: black
   long: |
     something that is black, cmyk(0,0,0,100)
 # Secondary Colors :
-lií:
+lıı́:
   type: leaf
   short: periwinkle
   long: |
     something that is periwinkle, cmyk(50,50,0,0)
-mén:
+mén:
   type: leaf
   short: mint
   long: |
     something that is mint, cmyk(50,0,50,0)
-beén:
+beén:
   type: leaf
   short: teal
+  dupl: beé n
   long: |
     something that is teal, cmyk(50,0,0,50)
-boón:
+boón:
   type: leaf
   short: salmon
+  dupl: boó n
   long: |
     something that is salmon, cmyk(0,50,50,0)
-búun:
+búun:
   type: leaf
   short: eggplant
   long: |
     something that is eggplant, cmyk(0,50,0,50)
     
-    Lí e e {kísa} {pululún} {búun} {káma}
+    Lı́ e e {kı́sa} {pululún} {búun} {káma}
     
     Ripe plums turn purple.
-faán:
+faán:
   type: leaf
   short: drab
   long: |
     something that is drab, cmyk(0,0,50,50)
 # Color Adjacent Terms :
-fuúpuún:
+fuúpuún:
   type: leaf
   short: iridescent
+  dupl: fuú puún
   long: |
     something that is iridescent, color depends on the angle
-háa:
+háa:
   type: leaf
   short: shiny
   long: |
     something that is shiny, reflective
-kúun:
+kúun:
   type: leaf
   short: flat
+  dupl: kúu n
   long: |
     something that is flatly colored, all the same color and shade
-lólúu:
+lólúu:
   type: leaf
   short: textured
+  dupl: ló lúu
   long: |
     something that is visually textured
-páa:
+páa:
   type: leaf
   short: matte
   long: |
     something that is matte
-púngaán:
+púngaán:
   type: leaf
   short: with subsurface scattering
+  dupl: pún gaán
   long: |
     something that has visual subsurface scattering
-qúu:
+ḱúun:
   type: leaf
   short: glowing
   long: |
     something that emits light
     
-    I i lí {zúno} {qúu} lí {sibá} {mi} e {haza} {boró}
+    ı ı lı́ {zúno} {ḱúun} lı́ {sıbá} {mı} e {haza} {boró}
     
     We can see because the sun shines.
-tíi:
+tı́ı:
   type: leaf
   short: white
   long: |
     something that is white, lacking pigment/color
-výsaán:
+výsaán:
   type: leaf
   short: see through
   long: |
     something that is translucent, transparent
-xifoón:
+xıfoón:
   type: leaf
   short: glow in the dark
+  dupl: xı foó n
   long: |
     something that is phosphorescent, absorbing light to emit it later
 # numbers :
 # time :
-píni:
+pı́nı:
   type: leaf
   short: was
   long: |
@@ -249,11 +270,13 @@ píni:
 keren:
   type: leaf
   short: is
+  dupl: ke re n
   long: |
     something in the present
-hungiín:
+hungıı́n:
   type: leaf
   short: will
+  dupl: hu n gıı́ n
   long: |
     something in the future
 de:
@@ -261,7 +284,7 @@ de:
   short: day
   long: |
     the time between one midnight and the next
-píde:
+pı́de:
   type: leaf
   short: yesterday
   long: |
@@ -269,178 +292,190 @@ píde:
 kede:
   type: leaf
   short: is
+  dupl: ke de
   long: |
     the currently ongoing time between one midnight and the next
 hunde:
   type: leaf
   short: tomorow
+  dupl: hu n de
   long: |
     the next time between one midnight and the next after the current one
 # shapes :
-roón:
+roón:
   type: leaf
   short: pattern
+  dupl: roó n
   long: |
     a set of objects that follow a pattern
-dóo:
+dóo:
   type: leaf
   short: line
   long: |
     Something linear, thin, long
-piín:
+pıı́n:
   type: leaf
   short: point
   long: |
     a point, something taking only a single location
 # food :
-náan:
+náan:
   type: leaf
   short: bread
   long: |
     any variety of 
 # pronouns :
-mi:
+mı:
   type: leaf
   short: we
   long: |
     first person pronoun
-nín:
+nı́n:
   type: leaf
   short: you
+  dupl: nı́ n
   long: |
     second person pronoun
-mé:
+mé:
   type: leaf
   short: this, that
   long: |
     a specific thing
-cónhe:
+cónhe:
   type: leaf
   short: something
+  dupl: có n he
   long: |
     something, anything
-á:
+á:
   type: leaf
   short: doer
   long: |
     someone that does something
-jáa:
+ȷáa:
   type: leaf
   short: you!
   long: |
     second person pronoun and command marker
 # languages :
-hýyban:
+hýyban:
   type: leaf
-  short: hýyban
+  short: hýyban
   long: |
     This language
-lócyban:
+lócyban:
   type: leaf
   short: lojban
+  dupl: ló cyban
   long: |
     any of the many dialects and reforms of the Lojban language
-tókipóna:
+tókıpóna:
   type: leaf
   short: toki pona
+  dupl: tó kı pó na
   long: |
     any of the many dialects and styles of toki pona
 # scenery :
-dómo:
+dómo:
   type: leaf
   short: home
   long: |
     house, home, residence, nest, den
 # materials :
-gón:
+gón:
   type: leaf
   short: air
+  dupl: gó n
   long: |
     wind, air, breathable gas
 # ataxonometric life :
-býn:
+býn:
   type: leaf
   short: jumper
   long: |
-    life that uses primarily jumping as locomotion, to jumping
-kála:
+    life that uses primarily jumping as locomotion, to jump
+kála:
   type: leaf
   short: fish
   long: |
     life that uses primarily swimming as locomotion, to swim
-feé:
+feé:
   type: leaf
   short: fly
   long: |
     life that uses primarily flying as locomotion, to fly
-kási:
+kásı:
   type: leaf
   short: plant
   long: |
     plant
-kíli:
+kı́lı:
   type: leaf
   short: fruit
+  dupl: kı́ lı
   long: |
     fruit
-zógo:
+zógo:
   type: leaf
   short: fungus
+  dupl: zó go
   long: |
     mushroom, fungus
 # taxonometric life :
-tygií:
+tygıı́:
   type: leaf
   short: bird
+  dupl: ty gıı́
   long: |
     any animal of the clade avialae
-jíi:
+ȷı́ı:
   type: leaf
   short: frog
   long: |
     any animal of the order anura
-jaán:
+ȷaán:
   type: leaf
   short: salamander
   long: |
     any animal of the clade caudata
-mýn:
+mýn:
   type: leaf
   short: lizard
   long: |
     any animal of the order squamata
-jin:
+ȷın:
   type: leaf
   short: snake
   long: |
     any animal of the order ophidia
-weé:
+weé:
   type: leaf
   short: turtle
   long: |
     any animal of the clade pantestudines
-ýy:
+ýy:
   type: leaf
   short: spider
   long: |
     any animal of the clade arachnomorpha
-konrúu:
+konrúu:
   type: leaf
   short: centipede, milipede
+  dupl: ko n rúu
   long: |
     any animal of the subphylum myriapoda
 # verbs :
-káma:
+káma:
   type: leaf
   short: become 
   long: |
     to become, start to, begin, but not to arrive
-ján:
+ȷán:
   type: leaf
   short: move
   long: |
     to change positions
-ciín:
+cıı́n:
   type: leaf
   short: use
   long: |
@@ -450,89 +485,99 @@ dan:
   short: modify
   long: |
     to destructively make/edit, to change something in a way that is difficult to undo
-di:
+dı:
   type: leaf
   short: equals
   long: |
     to equal, be the same thing as
 # special :
-séme:
+séme:
   type: leaf
   short: what
+  dupl: sé me
   long: |
     what is this thing?
 # misc :
 nugo:
   type: leaf
   short: wrap
+  dupl: nu go
   long: |
     to enclose or coil around with cloth
 pura:
   type: leaf
   short: travel
+  dupl: pu ra
   long: |
     to travel, roam, wander
-jisolan:
+ȷısolan:
   type: leaf
   short: insolating
+  dupl: ȷı so lan
   long: |
     something that prevents energy from passing through
-tígo:
+tı́go:
   type: leaf
   short: say
+  dupl: tı́ go
   long: |
     say, utter; mention; talk, speak
-xuda:
+huda:
   type: leaf
   short: plan
+  dupl: hu da
   long: |
    project, projected course, plan
-morí:
+morı́:
   type: leaf
   short: die
+  dupl: mo rı́
   long: |
    die, stop living, death, kill
-rójen:
+róȷen:
   type: leaf
   short: born
+  dupl: ró ȷe n
   long: |
    birth, be born
-naá:
+naá:
   type: leaf
   short: get
   long: |
    to take, hold, seize, capture, obtain
-salín:
+salı́n:
   type: leaf
   short: make
+  dupl: salı́ n
   long: |
    to create out of nothing, to harmlessly edit or construct
-tikón:
+tıkón:
   type: leaf
   short: opine
+  dupl: tı kó n
   long: |
    opinion, opine
-cyýdá:
+cyýdá:
   type: leaf
   short: time
   long: |
    the inevitable passing of events from future to present then past, a measurement of a quantity of time, a numerical indication of a length of time, free time, leisure, spare time
-sána:
+sána:
   type: leaf
   short: year
   long: |
     time it takes for the Earth to complete one revolution around the Sun
-káan:
+káan:
   type: leaf
   short: look
   long: |
     to look, intentionally try to see, watch, read, observe
-laán:
+laán:
   type: leaf
   short: way
   long: |
     path, way, method
-jáan:
+ȷáan:
   type: leaf
   short: give
   long: |
@@ -540,6 +585,7 @@ jáan:
 wodo:
   type: leaf
   short: work
+  dupl: wo do
   long: |
     work, function, able to perform a specific task
 ola:
@@ -547,22 +593,23 @@ ola:
   short: life
   long: |
     existence, life, health, livelihood, exist, alive, healthy, cured
-lysá:
+lysá:
   type: leaf
   short: let
   long: |
     let, allow, give up, give way
-fin:
+fın:
   type: leaf
   short: feel
   long: |
     be conscious of something, perceive, feel physically or emotionally
-suroó:
+suroó:
   type: leaf
   short: ask
+  dupl: su roó
   long: |
     request an answer, question
-sín:
+sı́n:
   type: leaf
   short: new
   long: |
@@ -572,24 +619,26 @@ haza:
   short: see
   long: |
    perceive with the eyes
-kápa:
+kápa:
   type: leaf
   short: cloak
   long: |
     long sleeveless overcoat, cloak, cape
-áan:
+áan:
   type: leaf
   short: wear
   long: |
     to have clothes on
-tóoru:
+tóoru:
   type: leaf
   short: pass
+  dupl: tóo ru
   long: |
     to go by, over, or through
-mín:
+mı́n:
   type: leaf
   short: increase
+  dupl: mı́ n
   long: |
     increasing in amount or intensity
 oha:
@@ -597,113 +646,123 @@ oha:
   short: next
   long: |
     next, after, upcoming, then, following in a sequence
-hali:
+halı:
   type: leaf
   short: remove
   long: |
     to remove, to take away, to take off
-kymytí:
+kymytı́:
   type: leaf
   short: argue
   long: |
     argue, debate
-roqy:
+rogy:
   type: leaf
   short: strong
   long: |
     capable of exerting power, potency or influence
-cóo u:
+cóo u:
   type: leaf
   short: most
+  dupl: cóou
   long: |
     most, in excess of all others
-duú:
+duú:
   type: leaf
   short: more
   long: |
     more, in excess of others
-sagó:
+sagó:
   type: leaf
   short: answer
   long: |
     reply, response, answer, solution (to a problem)
-zúno:
+zúno:
   type: leaf
   short: sun
   long: |
     sun, star
-cubá:
+cubá:
   type: leaf
   short: try
+  dupl: cu bá
   long: |
     to try; to attempt to do.
-reén:
+reén:
   type: leaf
   short: rain
+  dupl: reé n
   long: |
     rain, to rain, water falls from clouds
-xiló:
+xıló:
   type: leaf
   short: declair
+  dupl: xı ló
   long: |
     to make something is true by stating it
-daá:
+daá:
   type: leaf
   short: greet
   long: |
     to welcome or greet
-wán:
+wán:
   type: leaf
   short: individual
   long: |
     a single individual, quantified as tho it has an "each" on it
-boró:
+boró:
   type: leaf
   short: able
+  dupl: bo ró
   long: |
     to be able to, to have the possibility of
-voré:
+voré:
   type: leaf
   short: want
+  dupl: vo ré
   long: |
     to want, desire, need
-sibá:
+sıbá:
   type: leaf
   short: cause
+  dupl: sı bá
   long: |
     a cause, source, or reason for something
 boza:
   type: leaf
   short: understand
+  dupl: bo za
   long: |
     to grasp the meaning and/or implications of
-kafé:
+kafé:
   type: leaf
   short: coffee
   long: |
     coffee drink
-caá:
+caá:
   type: leaf
   short: tea
   long: |
     boiled dried leaves drink
 # direction :
-utáa:
+utáa:
   type: leaf
   short: north
   long: |
     to the north
-timyý:
+tımyý:
   type: leaf
   short: east
+  dupl: tı myý
   long: |
     to the east
-seláan:
+seláan:
   type: leaf
   short: south
+  dupl: se láan
   long: |
     to the south
-pára:
+pára:
   type: leaf
   short: west
   long: |
@@ -711,6 +770,7 @@ pára:
 nobe:
   type: leaf
   short: fast
+  dupl: no be 
   long: |
     quick, fast, rapid
 zan:
@@ -721,29 +781,33 @@ zan:
 doka:
   type: leaf
   short: doctor
+  dupl: do ka
   long: |
     medical assistant, doctor, someone educated on and practicing medicine
-hée:
+hée:
   type: leaf
   short: boss
   long: |
     boss, person in command, person who directly oversees work being done, director
-kíri:
+kı́rı:
   type: leaf
   short: letter
+  dupl: kı́ rı
   long: |
     writing, letter (message), font, script
-múta:
+múta:
   type: leaf
   short: urinate
+  dupl: mú ta
   long: |
    pee, urine, urinate
-rysúja:
+rysúȷa:
   type: leaf
   short: russia
+  dupl: rysú ȷa
   long: |
    the nation of russia
-paná:
+paná:
   type: leaf
   short: towards
   long: |
@@ -778,11 +842,11 @@ han:
   short: h
   long: |
     refers to a previous leaf beginning with the letter h
-jan:
+ȷan:
   type: leaf
-  short: j
+  short: ȷ
   long: |
-    refers to a previous leaf beginning with the letter j
+    refers to a previous leaf beginning with the letter ȷ
 kan:
   type: leaf
   short: k
@@ -808,11 +872,6 @@ pan:
   short: p
   long: |
     refers to a previous leaf beginning with the letter p
-qyn:
-  type: leaf
-  short: q
-  long: |
-    refers to a previous leaf beginning with the letter q
 ryn:
   type: leaf
   short: r
@@ -853,27 +912,31 @@ yn:
   short: " "
   long: |
     refers to a previous leaf beginning with the letter " "
-jynta:
+ȷynta:
   type: leaf
   short: friend
+  dupl: ȷyn ta
   long: |
    close friend with who you feel you can share anything with
-fíta:
+fı́ta:
   type: leaf
   short: debate
+  dupl: fı́ ta
   long: |
    debate for the sake of discussion
-kífe:
+kı́fe:
   type: leaf
   short: argue
+  dupl: kı́ fe
   long: |
    debate for the sake convincing the other parties
-hídíi:
+xı́dı́ı:
   type: leaf
   short: back-up
+  dupl: xı́ dı́ı
   long: |
    reserve, spare, substitute for when the original doesn’t work
-loká:
+loká:
   type: leaf
   short: logic
   long: |
@@ -883,38 +946,41 @@ ban:
   short: language
   long: |
    communication who’s production and understanding is able to be learned to fluency
-pí e:
+pı́ e:
   type: leaf
   short: esoteric
   long: |
    strange without being random
-múrén:
+múrén:
   type: leaf
   short: fascinating
+  dupl: mú ré n
   long: |
    charming, bewitching, engaging, bewildering
-taqý:
+tagý:
   type: leaf
   short: prejudice
   long: |
    resentment, prejudice, damnation, predetermined ill-will
-sá o:
+sá o:
   type: leaf
   short: disappear
+  dupl: sáo
   long: |
    crumble away, vanish, disappear
-doci:
+docı:
   type: leaf
   short: older sibling
+  dupl: do cı
   long: |
    older or more senior sibling
-osi:
+osı:
   type: leaf
   short: younger sibling
   long: |
     younger or less senior sibling
     
-    Lí gen {púra} {mi} {osi}
+    Lı́ gen {púra} {mı} {osı}
     
     My little sibling is cute.
 gan:
@@ -933,31 +999,35 @@ hare:
   long: |
     a group of someone's lovers (may be one person if part of a couple, no one if single, or more than one person in a polyamorous relationship)
     
-    E {xuma} i {nín} lí lí {voré} {nín} gen {mi} {hare}
+    E {huma} ı {nı́n} lı́ lı́ {voré} {nı́n} gen {mı} {hare}
     
     Do you want to be part of my harem?
-púra:
+púra:
   type: leaf
   short: cute
+  dupl: pú ra
   long: |
     free of significant flaws or consequential imperfections
-húpari:
+húparı:
   type: leaf
   short: hoodie
   long: |
     hooded jacket or sweatshirt
-kísa:
+kı́sa:
   type: leaf
   short: done
+  dupl: kı́ sa
   long: |
     ripe, mature, cooked, fed up
-pululún:
+pululún:
   type: leaf
   short: plum
+  dupl: pu lu lú n
   long: |
     any fruit of a prunus domestica
-ju osaá:
+ȷu osaá:
   type: leaf
   short: USA
+  dupl: ȷuo saá
   long: |
     The United States of America

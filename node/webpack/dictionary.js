@@ -1,4 +1,4 @@
-const { dictionary_en: dictionary, compare_words, dupl_converter } = require('../src/dictionary');
+const { dictionary_en: dictionary, compare_words, dupl_converter, ipa_converter } = require('../src/dictionary');
 const parser = require('../src/parser');
 
 const ignored = [ '_____','______' ];
@@ -38,7 +38,7 @@ function html_word_entry(word, entry) {
 		output += `${word}: `;
 	}
 
-	output += `<small>${entry.short}</small> `;
+	output += `<small>`+ipa_converter(`${word}`)+` - ${entry.short}</small> `;
 
 	output += `<span class="btn btn-mini btn-inverse dictionary-family">${entry.type}</span> `;
 
@@ -51,17 +51,22 @@ function html_word_entry(word, entry) {
 	output += `</h3>`;
 
 	output += `<div class="Dupl">`
-	output += dupl_converter(`${word}`)
+	
+	if (entry.dupl == undefined) {
+		output += dupl_converter(`${word}`)
+	}else{
+		output += dupl_converter(`${entry.dupl}`)
+		
+	}
 	output += `</div>`;
 
 	let paragraphs = entry.long.split(/(\r\n|\r|\n){2,}/);
 	paragraphs.forEach((p) => {
 		p = escapeHTML(p);
-		p = p.replace(/\{([a-zA-ZáéíóúýÁÉÍÓÚÝ ]+)\}/g, (match, p1) => {
+		p = p.replace(/\{([a-zA-Zȷı ́]+)\}/gu, (match, p1) => {
 			let out = '<em>';
-			let list = parser.segmenter(p1);
+			let list = parser.segmenter(p1.replaceAll("´","́"));
 			//let list = p1.split(' ');
-
 			list.forEach((word) => {
 				console.log(word,ignored.includes(word));
 				if (word.includes('_')) {

@@ -1,32 +1,32 @@
 const dictionary = require('../../dictionary/en.yaml');
 
 // Valid consonants list.
-const c = 'bcdfghjklmnpqrstvwxz ';
+const c = ['b','c','d','f','g','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','t','t́','v','w','x','z',' '];
 
 // Consonants weights.
-const cw = '101010001110110011011';
+const cw = '10101000011100100011011';
 
 // Valid vowels list.
-const v = 'aeiouyáéíóúý';
+const v = 'aeıouy';
 
 // Vowels weights.
-const vw = '111000111000';
+const vw = '111000';
 
 // Building a map of the weight for all possible syllable forms.
 let s = {"_____":2};
 for (var i = 0; i < c.length; i++) {
-	for (var j = 0; j < v.length / 2; j++) {
+	for (var j = 0; j < v.length; j++) {
 		s[c[i] + v[j]] = parseInt(cw[i]) + parseInt(vw[j]);
 		s[c[i] + v[j] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
 
-		s[c[i] + v[j + v.length / 2]] = parseInt(cw[i]) + parseInt(vw[j]);
-		s[c[i] + v[j + v.length / 2] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
+		s[c[i] + v[j]+"́"] = parseInt(cw[i]) + parseInt(vw[j]);
+		s[c[i] + v[j] + '́n'] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
 
-		s[c[i] + v[j] + v[j + v.length / 2]] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
-		s[c[i] + v[j] + v[j + v.length / 2] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 2;
+		s[c[i] + v[j] + v[j]+"́"] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
+		s[c[i] + v[j] + v[j] + '́n'] = parseInt(cw[i]) + parseInt(vw[j]) + 2;
 
-		s[c[i] + v[j + v.length / 2] + v[j]] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
-		s[c[i] + v[j + v.length / 2] + v[j] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 2;
+		s[c[i] + v[j]+"́" + v[j]] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
+		s[c[i] + v[j]+"́" + v[j] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 2;
 	}
 }
 
@@ -48,6 +48,7 @@ function segmenter(str) {
 	for (var i = 0; i < v.length; i++) {
 		str = str.replaceAll(v[i], v[i] + '.');
 	}
+	str = str.replaceAll('.́', '́.');
 	for (var i = 0; i < v.length; i++) {
 		str = str.replaceAll('.' + v[i], v[i]);
 	}
@@ -66,6 +67,7 @@ function segmenter(str) {
 	}
 	str = str.slice(0, -1);
 	str = str.replaceAll('?', ' ');
+	str = str.replaceAll('.́', '́.');
 	str = str.split('.');
 	let words = [ '' ];
 	weight = 0;
@@ -146,10 +148,17 @@ function parseSentences(text) {
 
 // Turn apostrophes into accents
 function toneMarking(str) {
+	str = str.replaceAll("́","'");
+    str = str.replaceAll("i","ı");
+    str = str.replaceAll("j","ȷ");
+    
     str = str.replaceAll("’","'");
+    str = str.replaceAll("p'","ṕ");
+    str = str.replaceAll("t'","t́");
+    str = str.replaceAll("k'","ḱ");
 
-    for (var i = 0; i < v.length / 2; i++) {
-      str = str.replaceAll(v[i] + "'", v[i + v.length / 2])
+    for (var i = 0; i < v.length; i++) {
+      str = str.replaceAll(v[i] + "'", v[i]+"́")
     }
 
 	return str;
