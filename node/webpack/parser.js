@@ -9,7 +9,7 @@ export function parse() {
     text = toneMarking(text);
     $('#input_textarea').val(text);
 
-    text = text.trim().toLowerCase();
+    text = text.trim().toLowerCase().replaceAll('i', 'ı').replaceAll('j', 'ȷ');
 
     if (text == '') {
         $('#parse-result-tree').html(`Type some text to parse.`);
