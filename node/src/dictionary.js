@@ -139,12 +139,12 @@ function dupl_converter(x) {
 module.exports.dupl_converter = dupl_converter;
 
 function ipa_converter(x) {
-	
+	x=" "+x
 	x=x.replaceAll("_ _","_._")
 	
 	x=x.replaceAll(" a","ʔa")
 	x=x.replaceAll(" e","ʔe")
-	x=x.replaceAll(" i","ʔi")
+	x=x.replaceAll(" ı","ʔı")
 	x=x.replaceAll(" o","ʔo")
 	x=x.replaceAll(" u","ʔu")
 	x=x.replaceAll(" y","ʔy")
