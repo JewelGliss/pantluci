@@ -119,7 +119,7 @@ e:
   short: agent attacher
   long: |
     agent, leaf => leaf with agent attached
-reé:
+reé:
   type: particle
   short: passive patient attacher
   long: |
