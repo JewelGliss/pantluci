@@ -1,5 +1,6 @@
 const { segmenter, parseSentences, toneMarking } = require('../src/parser.js');
 const dictionary = require('../../dictionary/en.yaml');
+const { ipa_converter } = require('../src/dictionary');
 
 // Triggered at page loading or when input is updated.
 export function parse() {
@@ -27,7 +28,8 @@ export function parse() {
         return;
     }
 
-    let output = "<ul>";
+	let output = `<small>`+ipa_converter(text)+`</small>`
+    output += "<ul>";
     sentences.forEach(sentence => {
         output += nodeToHtml(sentence);
     })
