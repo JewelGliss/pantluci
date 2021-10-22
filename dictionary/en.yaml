@@ -119,6 +119,11 @@ e:
   short: agent attacher
   long: |
     agent, leaf => leaf with agent attached
+reé:
+  type: particle
+  short: passive patient attacher
+  long: |
+    leaf, patient => patient attached which is attached to leaf
 lı́:
   type: particle
   short: patient attacher
