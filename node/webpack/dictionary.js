@@ -65,14 +65,14 @@ function html_word_entry(word, entry) {
 		p = escapeHTML(p);
 		p = p.replace(/\{([a-zA-Zȷı ́]+)\}/gu, (match, p1) => {
 			let out = '<em>';
-			let list = parser.segmenter(p1.replaceAll("´","́"));
+			let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́"));
 			//let list = p1.split(' ');
 			list.forEach((word) => {
 				console.log(word,ignored.includes(word));
 				if (word.includes('_')) {
-					out += `${word} `;
+					out += `${p1} `;
 				} else {
-					out += `<a href="#" class="dictionary-word-link">${word}</a> `;
+					out += `<a href="#" class="dictionary-word-link">${p1}</a> `;
 				}
 			});
 			out = out.slice(0, -1); 
