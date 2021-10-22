@@ -65,7 +65,7 @@ function html_word_entry(word, entry) {
 		p = escapeHTML(p);
 		p = p.replace(/\{([a-zA-Zȷı ́]+)\}/gu, (match, p1) => {
 			let out = '<em>';
-			let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́"));
+			let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́").replaceAll('i', 'ı').replaceAll('j', 'ȷ'));
 			//let list = p1.split(' ');
 			list.forEach((word) => {
 				console.log(word,ignored.includes(word));
