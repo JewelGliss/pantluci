@@ -25,6 +25,7 @@ function html_word_entry(word, entry) {
 	var output = `<div class="dictionary-entry well well-small"><h3>`;
 
 	if (entry.type == 'phrase') {
+		console.log(parser.segmenter(word))
 		Array.from(parser.segmenter(word)).forEach((part) => {
 			if (part.includes('_')) {
 				output += `${part} `;
@@ -68,7 +69,6 @@ function html_word_entry(word, entry) {
 			let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́").replaceAll('i', 'ı').replaceAll('j', 'ȷ'));
 			//let list = p1.split(' ');
 			list.forEach((word) => {
-				console.log(word,ignored.includes(word));
 				if (word.includes('_')) {
 					out += `${p1} `;
 				} else {

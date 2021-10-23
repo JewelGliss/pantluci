@@ -17,7 +17,7 @@ e xı́dı́ı ban:
   dupl: exı́ dı́ıban
   long: |
    language meant for communication between people who do not share a first language
-e pı́ e ban:
+e pı́e ban:
   type: phrase
   short: experimental language
   dupl: epı́ eban
@@ -75,7 +75,7 @@ e _____ mé:
   short: definite marker
   long: |
     the embeded clause is identifiable in the given context
-huma cı́ ı _____ _____:
+huma cı́ı _____ _____:
   type: phrase
   short: interrogative multiple choice question constructor
   dupl: hu macı́ı _ _
@@ -134,7 +134,7 @@ lı́:
   short: dative attacher
   long: |
     dative, leaf => leaf with benificiary attached
-cı́ ı:
+cı́ı:
   type: particle
   short: option constructor
   dupl: cı́ı
@@ -666,7 +666,7 @@ rogy:
   short: strong
   long: |
     capable of exerting power, potency or influence
-cóo u:
+cóou:
   type: leaf
   short: most
   dupl: cóou
@@ -951,7 +951,7 @@ ban:
   short: language
   long: |
    communication who’s production and understanding is able to be learned to fluency
-pı́ e:
+pı́e:
   type: leaf
   short: esoteric
   long: |
@@ -967,7 +967,7 @@ tagý:
   short: prejudice
   long: |
    resentment, prejudice, damnation, predetermined ill-will
-sá o:
+sáo:
   type: leaf
   short: disappear
   dupl: sáo
@@ -1030,7 +1030,7 @@ pululún:
   dupl: pu lu lú n
   long: |
     any fruit of a prunus domestica
-ȷu osaá:
+ȷuosaá:
   type: leaf
   short: USA
   dupl: ȷuo saá

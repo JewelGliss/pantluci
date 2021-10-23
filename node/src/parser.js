@@ -1,7 +1,7 @@
 const dictionary = require('../../dictionary/en.yaml');
 
 // Valid consonants list.
-const c = ['b','c','d','f','g','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','t','t́','v','w','x','z',' '];
+const c = ['b','c','d','f','g','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','t','t́','v','w','x','z',''];
 
 // Consonants weights.
 const cw = '10101000011100100011011';
@@ -32,19 +32,13 @@ for (var i = 0; i < c.length; i++) {
 
 // Takes a string as input and returns a list of words.
 function segmenter(str) {
-	str = ' ' + str + ' ';
 	str = str.replaceAll(' _',"._")
-	str = str.replaceAll(/\s/g, ' ');
-	for (var i = 0; i < c.length; i++) {
-		str = str.replaceAll('n' + c[i], 'n.' + c[i]);
-	}
-	for (var i = 0; i < c.length; i++) {
-		str = str.replaceAll('n' + c[i], 'n.' + c[i]);
-	}
-	for (var i = 0; i < v.length; i++) {
-		str = str.replaceAll(' ' + v[i], '?' + v[i]);
-	}
 	str = str.replaceAll(/\s/g, '');
+	for (var i = 0; i < c.length; i++) {
+		if(c[i]!=""){
+			str = str.replaceAll('n' + c[i], 'n.' + c[i]);
+		}
+	}
 	for (var i = 0; i < v.length; i++) {
 		str = str.replaceAll(v[i], v[i] + '.');
 	}
@@ -52,6 +46,7 @@ function segmenter(str) {
 	for (var i = 0; i < v.length; i++) {
 		str = str.replaceAll('.' + v[i], v[i]);
 	}
+	str+="."
 	str = str.replaceAll('.n.', 'n.');
 	str = str.replaceAll('._'," _")
 	str = str.replaceAll('_', '._.');
@@ -66,8 +61,16 @@ function segmenter(str) {
 		str = str.replaceAll('..', '.');
 	}
 	str = str.slice(0, -1);
-	str = str.replaceAll('?', ' ');
 	str = str.replaceAll('.́', '́.');
+	for (var i = 0; i < v.length; i++) {
+		for (var j = 0; j < v.length; j++) {
+			if(v[i]!=v[j]){
+				str = str.replaceAll(v[i]+v[j],v[i]+"."+v[j]);
+				str = str.replaceAll(v[i]+'́'+v[j],v[i]+'́.'+v[j]);
+			}
+		}
+	}
+	
 	str = str.split('.');
 	let words = [ '' ];
 	weight = 0;

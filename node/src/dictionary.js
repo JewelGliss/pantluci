@@ -139,15 +139,8 @@ function dupl_converter(x) {
 module.exports.dupl_converter = dupl_converter;
 
 function ipa_converter(x) {
-	x=" "+x
+	x="."+x
 	x=x.replaceAll("_ _","_._")
-	
-	x=x.replaceAll(" a","ʔa")
-	x=x.replaceAll(" e","ʔe")
-	x=x.replaceAll(" ı","ʔı")
-	x=x.replaceAll(" o","ʔo")
-	x=x.replaceAll(" u","ʔu")
-	x=x.replaceAll(" y","ʔy")
 	
 	x=x.replaceAll(" ","")
 	
@@ -193,6 +186,26 @@ function ipa_converter(x) {
 	x=x.replaceAll("?ə","ə")
 	
 	x=x.replaceAll(".n?","n.")
+	
+	x=x.replaceAll(".ä",".ʔä")
+	x=x.replaceAll(".ɛ",".ʔɛ")
+	x=x.replaceAll(".i",".ʔi")
+	x=x.replaceAll(".o",".ʔo")
+	x=x.replaceAll(".u",".ʔu")
+	x=x.replaceAll(".ə",".ʔə")
+	
+	x=x.replaceAll("ä˦.ʔä","ä˦.ä")
+	x=x.replaceAll("ä˨.ʔä","ä˨.ä")
+	x=x.replaceAll("ɛ˦.ʔɛ","ɛ˦.ɛ")
+	x=x.replaceAll("ɛ˨.ʔɛ","ɛ˨.ɛ")
+	x=x.replaceAll("i˦.ʔi","i˦.i")
+	x=x.replaceAll("i˨.ʔi","i˨.i")
+	x=x.replaceAll("o˦.ʔo","o˦.o")
+	x=x.replaceAll("o˨.ʔo","o˨.o")
+	x=x.replaceAll("u˦.ʔu","u˦.u")
+	x=x.replaceAll("u˨.ʔu","u˨.u")
+	x=x.replaceAll("ə˦.ʔə","ə˦.ə")
+	x=x.replaceAll("ə˨.ʔə","ə˨.ə")
 	
 	x=x.replaceAll("ṕ","pʼ")
 	x=x.replaceAll("t́","tʼ")
@@ -263,8 +276,9 @@ function ipa_converter(x) {
 	x=x.replaceAll("._"," _")
 	x=x.replaceAll("_.","_ ")
 	
-	x=x+"?"
+	x="?"+x+"?"
 	x=x.replaceAll(".?","")
+	x=x.replaceAll("?.","")
 	x=x.replaceAll("_?","_")
 	x=x.replaceAll("_","__")
 	return x
