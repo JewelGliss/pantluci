@@ -14,7 +14,7 @@ e salı́n ban:
 e xı́dı́ı ban:
   type: phrase
   short: auxlang
-  dupl: exı́ dı́ıban
+  dupl: exı́ dı́ı<69105>ban
   long: |
    language meant for communication between people who do not share a first language
 e pı́e ban:
@@ -37,7 +37,7 @@ e _____ sagó:
 e pı́de _____:
   type: phrase
   short: hesternal tense marker
-  dupl: epı́de _
+  dupl: epı́<69105>de _
   long: |
     the embeded clause happens yesterday
 e kede _____:
@@ -55,7 +55,7 @@ e hunde _____:
 e pı́nı _____:
   type: phrase
   short: past tense marker
-  dupl: epı́nı _
+  dupl: epı́<69105>nı _
   long: |
     the embeded clause happens in the past
 e keren _____:
@@ -243,6 +243,7 @@ púngaán:
 ḱúun:
   type: leaf
   short: glowing
+  dupl: ḱúu n
   long: |
     something that emits light
     
@@ -270,6 +271,7 @@ xıfoón:
 pı́nı:
   type: leaf
   short: was
+  dupl: pı́<69105>nı
   long: |
     something in the past
 keren:
@@ -292,6 +294,7 @@ de:
 pı́de:
   type: leaf
   short: yesterday
+  dupl: pı́<69105>de
   long: |
     the most recent completed time between one midnight and the next
 kede:
@@ -321,6 +324,7 @@ dóo:
 pıı́n:
   type: leaf
   short: point
+  dupl: pıı́<69105>n
   long: |
     a point, something taking only a single location
 # food :
@@ -451,6 +455,7 @@ mýn:
 ȷın:
   type: leaf
   short: snake
+  dupl: ȷı<69105>n
   long: |
     any animal of the order ophidia
 weé:
@@ -483,6 +488,7 @@ káma:
 cıı́n:
   type: leaf
   short: use
+  dupl: cıı́<69105>n
   long: |
     to use
 dan:
@@ -606,6 +612,7 @@ lysá:
 fın:
   type: leaf
   short: feel
+  dupl: fı n
   long: |
     be conscious of something, perceive, feel physically or emotionally
 suroó:
@@ -669,7 +676,7 @@ rogy:
 cóou:
   type: leaf
   short: most
-  dupl: cóou
+  dupl: cóo u
   long: |
     most, in excess of all others
 duú:
@@ -954,6 +961,7 @@ ban:
 pı́e:
   type: leaf
   short: esoteric
+  dupl: pı́ e
   long: |
    strange without being random
 múrén:
@@ -1033,6 +1041,6 @@ pululún:
 ȷuosaá:
   type: leaf
   short: USA
-  dupl: ȷuo saá
+  dupl: ȷu osaá
   long: |
     The United States of America
