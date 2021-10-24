@@ -123,7 +123,7 @@ reé:
   type: particle
   short: passive patient attacher
   long: |
-    leaf, patient => patient attached which is attached to leaf
+    leaf, patient => patient which has leaf as relative clause
 lı́:
   type: particle
   short: patient attacher
