@@ -133,6 +133,16 @@ function dupl_converter(x) {
 	
 	x=x.replaceAll("\u{1BC71}","")
 	
+	x=x.replaceAll("\u{1BC57}","\u{1BC57}<69105>")
+	x=x.replaceAll("<69105>","<69105>")
+	x=x.replaceAll("<69105>\u{1BC71}","\u{1BC71}<69105>")
+	x=x.replaceAll("<69105>\u{1BC74}","\u{1BC74}<69105>")
+	x=x.replaceAll("<69105>\u{1BC76}","\u{1BC76}<69105>")
+	x=x.replaceAll("<69105>\u{1BC77}","\u{1BC77}<69105>")
+	x=x.replaceAll("<69105>\u{1BC51}","\u{1BC52}")
+	x=x.replaceAll("<69105>\u{1BC46}","\u{1BC47}")
+	x=x.replaceAll("<69105>","")
+	
 	return x
 }
 
