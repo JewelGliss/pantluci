@@ -452,6 +452,11 @@ mýn:
   short: lizard
   long: |
     any animal of the order squamata
+máa:
+  type: leaf
+  short: cat
+  long: |
+    any animal of the subfamily felinae
 ȷın:
   type: leaf
   short: snake
