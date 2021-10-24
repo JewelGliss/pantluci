@@ -143,6 +143,8 @@ function dupl_converter(x) {
 	x=x.replaceAll("<69105>\u{1BC46}","\u{1BC46}<69105>")
 	x=x.replaceAll("\u{1BC51}<69105>","\u{1BC52}")
 	x=x.replaceAll("\u{1BC46}<69105>","\u{1BC47}")
+	x=x.replaceAll("\u{1BC52}<69105>","\u{1BC51}")
+	x=x.replaceAll("\u{1BC47}<69105>","\u{1BC46}")
 	x=x.replaceAll("<69105>","")
 	
 	return x
