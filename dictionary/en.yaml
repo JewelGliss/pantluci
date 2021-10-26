@@ -1059,3 +1059,8 @@ hakı:
   short: flag
   long: |
     a cloth that represents a community
+ódo:
+  type: leaf
+  short: eat
+  long: |
+    consume, ingest
