@@ -82,6 +82,11 @@ huma cı́ı _____ _____:
   long: |
     embeded clauses form an interogative or phrase
 # Prefixes :
+sókale:
+  type: prefix
+  short: non-assertive description
+  long: |
+   refers to a concept by its typical description regardless of its truth value (also used for nonce loans or terms)
 an:
   type: prefix
   short: name descriptor
