@@ -33,7 +33,7 @@ for (var i = 0; i < c.length; i++) {
 // Takes a string as input and returns a list of words.
 function segmenter(str) {
 	str = str.replaceAll(' _',"._")
-	str = str.replaceAll(/\s/g, '.');
+	str = str.replaceAll(/\s/g, '..');
 	for (var i = 0; i < c.length; i++) {
 		if(c[i]!=""){
 			str = str.replaceAll('n' + c[i], 'n.' + c[i]);
