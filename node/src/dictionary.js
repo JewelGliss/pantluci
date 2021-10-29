@@ -156,6 +156,8 @@ function ipa_converter(x) {
 	x="."+x
 	x=x.replaceAll("_ _","_._")
 	
+	x=x.replaceAll("\n","\n ")
+	
 	x=x.replaceAll(" a","ʔa")
 	x=x.replaceAll(" e","ʔe")
 	x=x.replaceAll(" ı","ʔı")
