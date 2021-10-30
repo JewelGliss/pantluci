@@ -1119,3 +1119,18 @@ bóna:
   short: good
   long: |
     Favourable, pleasant, or desirable
+púun:
+  type: leaf
+  short: minute
+  long: |
+    60 seconds
+óry:
+  type: leaf
+  short: hour
+  long: |
+    60 minutes
+sekon:
+  type: leaf
+  short: second
+  long: |
+    SI unit of time
