@@ -317,6 +317,8 @@ function ipa_converter(x) {
 	x=x.replaceAll("?.","")
 	x=x.replaceAll("_?","_")
 	x=x.replaceAll("_","__")
+	
+	x=x.replaceAll("tʒ","t͡ʃ")
 	return x
 }
 
