@@ -1064,3 +1064,43 @@ ódo:
   short: eat
   long: |
     consume, ingest
+ṕan:
+  type: leaf
+  short: placeholder
+  long: |
+    Refers to the nearest para-grammatical information in the information stream. Can refer to an image, quote, gesture, or something else.
+pará:
+  type: prefix
+  short: para-
+  long: |
+    Conceptually orthogonal to
+un:
+  type: prefix
+  short: un-
+  long: |
+    Conceptually opposite to
+sáma:
+  type: leaf
+  short: like
+  long: |
+    Similar, alike
+kalu:
+  type: particle
+  short: if
+  long: |
+    leaf, leaf => supposing that the first leaf is true, the second is asserted
+run:
+  type: leaf
+  short: place
+  long: |
+    location, position
+hunneé:
+  type: leaf
+  short: collective
+  long: |
+    Society of organisms in which it is typical for organisms to care for each other's offspring, have overlapping generations of adults, and not all organisms have the desire to reproduce. This may include some groups of ants, bees, humans, mole-rats, parasitic shrimp, termites, and wasps
+bóna:
+  type: leaf
+  short: good
+  long: |
+    Favourable, pleasant, or desirable
