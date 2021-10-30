@@ -728,10 +728,25 @@ daá:
   long: |
     to welcome or greet
 wán:
-  type: leaf
-  short: individual
+  type: prefix
+  short: one
   long: |
-    a single individual, quantified as tho it has an "each" on it
+    numeral one, 1
+dı́ı:
+  type: prefix
+  short: two
+  long: |
+    numeral two, 2
+tıı́:
+  type: prefix
+  short: three
+  long: |
+    numeral three, 3
+fı́ı:
+  type: prefix
+  short: zero
+  long: |
+    numeral zero, 0
 boró:
   type: leaf
   short: able
