@@ -727,6 +727,11 @@ daá:
   short: greet
   long: |
     to welcome or greet
+ȷéro:
+  type: prefix
+  short: zero
+  long: |
+    numeral zero, 0
 wán:
   type: prefix
   short: one
@@ -744,9 +749,34 @@ tıı́:
     numeral three, 3
 fı́ı:
   type: prefix
-  short: zero
+  short: four
   long: |
-    numeral zero, 0
+    numeral four, 4
+dón:
+  type: prefix
+  short: five
+  long: |
+    numeral five, 5
+ceé:
+  type: prefix
+  short: six
+  long: |
+    numeral six, 6
+sı́byn:
+  type: prefix
+  short: seven
+  long: |
+    numeral seven, 7
+wyru:
+  type: prefix
+  short: eight
+  long: |
+    numeral eight, 8
+sı́wa:
+  type: prefix
+  short: nine
+  long: |
+    numeral nine, 9
 boró:
   type: leaf
   short: able
