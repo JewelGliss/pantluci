@@ -139,11 +139,6 @@ lı́:
   short: patient attacher
   long: |
     patient, leaf => leaf with patient attached
-ȷıı́:
-  type: particle
-  short: dative attacher
-  long: |
-    dative, leaf => leaf with benificiary attached
 cı́ı:
   type: particle
   short: option constructor
