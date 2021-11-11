@@ -10,22 +10,45 @@ words_sorted.forEach((word) => (dictionary[word].without_spaces = word.replaceAl
 export function count_word_types() {
 	let roots = 0;
 	let particles = 0;
+	let prefixes = 0;
 	let phrases = 0;
 
 	words_sorted.forEach((w) => {
 		if (dictionary[w].type == 'phrase') phrases++;
 		else if (dictionary[w].type == 'particle') particles++;
+		else if (dictionary[w].type == 'prefix') prefixes++;
 		else roots++;
 	});
 
-	return { roots, particles, phrases };
+	return { roots, prefixes, particles, phrases };
+}
+
+export function count_letters() {
+	let letters={'total':0}
+
+	words_sorted.forEach((w) => {
+		for (var i = 0; i < w.length; i++) {
+			if(" _".indexOf(w.charAt(i)) == -1){
+				if (!letters.hasOwnProperty(w.charAt(i))){
+					letters[w.charAt(i)]=0
+				}
+				letters[w.charAt(i)]++;
+				letters['total']++;
+			}
+			//console.log(w.charAt(i));
+		}
+	});
+	for(var letter in letters){
+		console.log(letter, Math.round(letters[letter]/letters['total']*1000)/10)
+	}
+	return letters;
 }
 
 function html_word_entry(word, entry) {
 	var output = `<div class="dictionary-entry well well-small"><h3>`;
 
 	if (entry.type == 'phrase') {
-		console.log(parser.segmenter(word))
+		//console.log(parser.segmenter(word))
 		Array.from(parser.segmenter(word)).forEach((part) => {
 			if (part.includes('_')) {
 				output += `${part} `;

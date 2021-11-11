@@ -1,10 +1,10 @@
 const dictionary = require('../../dictionary/en.yaml');
 
 // Valid consonants list.
-const c = ['b','c','d','f','g','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','t','t́','v','w','x','z',''];
+const c = ['b','b́','c','d','d́','f','g','ǵ','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','t','t́','v','w','x','z',''];
 
 // Consonants weights.
-const cw = '10101000011100100011011';
+const cw = '11011011000011100100011011';
 
 // Valid vowels list.
 const v = 'aeıouy';
@@ -71,6 +71,7 @@ function segmenter(str) {
 		}
 	}
 	
+	//console.log(str)
 	str = str.split('.');
 	let words = [ '' ];
 	weight = 0;
@@ -159,6 +160,19 @@ function toneMarking(str) {
     str = str.replaceAll("p'","ṕ");
     str = str.replaceAll("t'","t́");
     str = str.replaceAll("k'","ḱ");
+    str = str.replaceAll("b'","b́");
+    str = str.replaceAll("d'","d́");
+    str = str.replaceAll("g'","ǵ");
+	
+	str=str.replaceAll("á","á")
+	str=str.replaceAll("é","é")
+	str=str.replaceAll("í","ı́")
+	str=str.replaceAll("ó","ó")
+	str=str.replaceAll("ú","ú")
+	str=str.replaceAll("ý","ý")
+	str=str.replaceAll("ṕ","ṕ")
+	str=str.replaceAll("ḱ","ḱ")
+	str=str.replaceAll("ǵ","ǵ")
 
     for (var i = 0; i < v.length; i++) {
       str = str.replaceAll(v[i] + "'", v[i]+"́")

@@ -37,7 +37,9 @@
 		.well:hover .Dupl {
 			display: inline;
 		}
-
+		#words-count{
+			font-size: 18px;
+		}
 	</style>
 </head>
 
@@ -63,9 +65,10 @@
 </body>
 
 <script>
+	console.log(bundle.count_letters());
 	let word_count = bundle.count_word_types();
 
-	$('#words-count').html(`(${word_count.particles} particles, ${word_count.roots} roots, ${word_count.phrases} phrases)`);
+	$('#words-count').html(`(${word_count.particles} particles, ${word_count.prefixes} prefixes, ${word_count.roots} roots, ${word_count.phrases} phrases)`);
 
 	function update() {
 		let search = $('#search').val();
