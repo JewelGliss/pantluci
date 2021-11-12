@@ -29,7 +29,7 @@ export function count_letters() {
 	words_sorted.forEach((w) => {
 		w=w.replaceAll("ṕ","P").replaceAll("t́","T").replaceAll("ḱ","K").replaceAll("b́","B").replaceAll("d́","D").replaceAll("ǵ","G");
 		for (var i = 0; i < w.length; i++) {
-			if(" _".indexOf(w.charAt(i)) == -1){
+			if(" _aeıouy".indexOf(w.charAt(i)) == -1){
 				if (!letters.hasOwnProperty(w.charAt(i))){
 					letters[w.charAt(i)]=0
 				}
