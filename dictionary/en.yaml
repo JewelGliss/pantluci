@@ -145,7 +145,7 @@ cı́ı:
   dupl: cı́ı
   long: |
     leaf, leaf => leaf or leaf
-gen:
+keé:
   type: particle
   short: gentive attacher
   dupl: ge n
@@ -1048,7 +1048,7 @@ osı:
   long: |
     younger or less senior sibling
     
-    {Lı́} {gen} {púra} {mı} {osı}
+    {Lı́} {keé} {púra} {mı} {osı}
     
     My little sibling is cute.
 gan:
@@ -1067,7 +1067,7 @@ hare:
   long: |
     a group of someone's lovers (may be one person if part of a couple, no one if single, or more than one person in a polyamorous relationship)
     
-    {Huma} {ı} {nı́n} {lı́} {lı́} {voré} {nı́n} gen {mı} {hare}
+    {Huma} {ı} {nı́n} {lı́} {lı́} {voré} {nı́n} {keé} {mı} {hare}
     
     Do you want to be part of my harem?
 púra:
