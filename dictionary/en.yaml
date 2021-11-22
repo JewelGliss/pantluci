@@ -1178,46 +1178,46 @@ cıȷa:
   type: leaf
   short: midnight
   long: |
-    twelve o'clock at night, 00:00
+    twelve o'clock at night
     
     forms lexical phrase times when the tail of numbers
     
     {Tıı́} {cıȷa}
-        
-    3am, 03:00
+    
+    3am
 mytı́n:
   type: leaf
   short: 6am
   long: |
-    six o'clock in the morning, 06:00
+    six o'clock in the morning
     
     forms lexical phrase times when the tail of numbers
     
     {Dón} {mytı́n}
-        
-    11am, 11:00
+    
+    11am
 nun:
   type: leaf
   short: noon
   long: |
-    twelve o'clock in the morning, 12:00
-     
+    twelve o'clock in the morning
+    
     forms lexical phrase times when the tail of numbers
     
     {Fı́ı} {nun}
-        
-    4pm, 16:00
+    
+    4pm
 ráan:
   type: leaf
   short: 6pm
   long: |
-    six o'clock at night, 18:00
-     
+    six o'clock at night
+    
     forms lexical phrase times when the tail of numbers
     
     {Dı́ı} {ráan}
-        
-    8pm, 20:00
+    
+    8pm
 t́áa:
   type: prefix
   short: all
@@ -1228,9 +1228,9 @@ fýyré:
   short: before
   long: |
      something that precedes something else in some ordered list
-     
+    
     forms lexical phrase ordinals with numbers
     
-    {Kee'} {ȷéro} _____ {fýyré}
-        
+    {Keé} {ȷéro} _____ {fýyré}
+    
     first _____, 0th _____(with 0 indexing)
