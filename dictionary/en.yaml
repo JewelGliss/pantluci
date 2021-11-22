@@ -1180,7 +1180,7 @@ cıȷa:
   long: |
     twelve o'clock at night, 00:00
     
-    forms lexical phrase times when the tail of numbers:
+    forms lexical phrase times when the tail of numbers
     
     {Tıı́} {cıȷa}
         
@@ -1191,7 +1191,7 @@ mytı́n:
   long: |
     six o'clock in the morning, 06:00
     
-    forms lexical phrase times when the tail of numbers:
+    forms lexical phrase times when the tail of numbers
     
     {Dón} {mytı́n}
         
@@ -1202,7 +1202,7 @@ nun:
   long: |
     twelve o'clock in the morning, 12:00
      
-    forms lexical phrase times when the tail of numbers:
+    forms lexical phrase times when the tail of numbers
     
     {Fı́ı} {nun}
         
@@ -1213,7 +1213,7 @@ ráan:
   long: |
     six o'clock at night, 18:00
      
-    forms lexical phrase times when the tail of numbers:
+    forms lexical phrase times when the tail of numbers
     
     {Dı́ı} {ráan}
         
@@ -1229,7 +1229,7 @@ fýyré:
   long: |
      something that precedes something else in some ordered list
      
-    forms lexical phrase ordinals with numbers:
+    forms lexical phrase ordinals with numbers
     
     {Kee'} {ȷéro} _____ {fýyré}
         
