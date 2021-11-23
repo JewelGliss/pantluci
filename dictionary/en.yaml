@@ -1234,3 +1234,23 @@ fýyré:
     {Keé} {ȷéro} _____ {fýyré}
     
     first _____, 0th _____(with 0 indexing)
+b́eé:
+  type: leaf
+  short: carry
+  long: |
+    lift, hold, and move as a single event
+d́an:
+  type: leaf
+  short: right
+  long: |
+    rightward, to the right, the right side
+b́usuǵu:
+  type: leaf
+  short: night
+  long: |
+    the time after which normal activity ceases, and in which most are asleep
+ǵucá:
+  type: leaf
+  short: food
+  long: |
+    food, nutrition, meal, dish
