@@ -321,6 +321,8 @@ function ipa_converter(x) {
 	x=x.replaceAll("n.c","ɲ.c")
 	x=x.replaceAll("n.ɟ","ɲ.ɟ")
 	x=x.replaceAll("n.ʄ","ɲ.ʄ")
+	x=x.replaceAll("n.ɓ","m.ɓ")
+	x=x.replaceAll("n.ɠ","ŋ.ɠ")
 	
 	while(x.includes("__")){
 		x=x.replaceAll("__","_")
