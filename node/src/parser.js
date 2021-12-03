@@ -163,7 +163,7 @@ function toneMarking(str) {
     str = str.replaceAll("b'","b́");
     str = str.replaceAll("d'","d́");
     str = str.replaceAll("g'","ǵ");
-    str = str.replaceAll("s''","ś");
+    str = str.replaceAll("s'","ś");
 	
 	str=str.replaceAll("á","á")
 	str=str.replaceAll("é","é")
