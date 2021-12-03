@@ -1,10 +1,10 @@
 const dictionary = require('../../dictionary/en.yaml');
 
 // Valid consonants list.
-const c = ['b','b́','c','d','d́','f','g','ǵ','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','t','t́','v','w','x','z',''];
+const c = ['b','b́','c','d','d́','f','g','ǵ','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','ś','t','t́','v','w','x','z',''];
 
 // Consonants weights.
-const cw = '11011011000011100100011011';
+const cw = '110110110000111001000011011';
 
 // Valid vowels list.
 const v = 'aeıouy';
@@ -163,6 +163,7 @@ function toneMarking(str) {
     str = str.replaceAll("b'","b́");
     str = str.replaceAll("d'","d́");
     str = str.replaceAll("g'","ǵ");
+    str = str.replaceAll("s''","ś");
 	
 	str=str.replaceAll("á","á")
 	str=str.replaceAll("é","é")
@@ -173,6 +174,7 @@ function toneMarking(str) {
 	str=str.replaceAll("ṕ","ṕ")
 	str=str.replaceAll("ḱ","ḱ")
 	str=str.replaceAll("ǵ","ǵ")
+	str=str.replaceAll("ś","ś")
 
     for (var i = 0; i < v.length; i++) {
       str = str.replaceAll(v[i] + "'", v[i]+"́")
