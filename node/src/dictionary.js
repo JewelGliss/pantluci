@@ -21,6 +21,7 @@ function compare_words(x, y) {
 	x=x.replaceAll("ṕ","ṕ")
 	x=x.replaceAll("ḱ","ḱ")
 	x=x.replaceAll("ǵ","ǵ")
+	x=x.replaceAll("ś","ś")
 	
 	y=y.replaceAll("á","á")
 	y=y.replaceAll("é","é")
@@ -31,6 +32,7 @@ function compare_words(x, y) {
 	y=y.replaceAll("ṕ","ṕ")
 	y=y.replaceAll("ḱ","ḱ")
 	y=y.replaceAll("ǵ","ǵ")
+	y=y.replaceAll("ś","ś")
 	
 	if ("aeıouy".includes(x.charAt(0))){
 		x=" "+x
@@ -68,6 +70,8 @@ function dupl_converter(x) {
 	x=x.replaceAll("ṕ","p\u{1bC77}")
     x=x.replaceAll("t́","t\u{1bC77}")
 	x=x.replaceAll("ḱ","k\u{1bC77}")
+	
+	x=x.replaceAll("ś","s\u{1bC77}")
 	
     x=x.replaceAll("b́","b\u{1bC77}")
 	x=x.replaceAll("d́","d\u{1bC77}")
@@ -255,6 +259,7 @@ function ipa_converter(x) {
 	x=x.replaceAll("ṕ","pʼ")
 	x=x.replaceAll("t́","tʼ")
 	x=x.replaceAll("ḱ","kʼ")
+	x=x.replaceAll("ś","ɬ")
 	x=x.replaceAll("b́","ɓ")
 	x=x.replaceAll("d́","ɗ")
 	x=x.replaceAll("ǵ","ɠ")
@@ -268,7 +273,7 @@ function ipa_converter(x) {
 	//i˨.i˦/ is realized as [jiː˨˦] unless it follows /ʔ/, /pʼ/, /z/, /s/, /x/, /ɾ/, /l/, or /w/.
 	//i˨.i˦/ is realized as [iː˨˨˦] when follows /ʔ/, /pʼ/, /z/, /s/, /x/, /ɾ/, /l/, or /w/.
 	x=x.replaceAll("i˨.i˦","?")
-	var whenFollowing=['ʔ','pʼ','z','s','x','ɾ','l','w']
+	var whenFollowing=['ʔ','pʼ','z','s','ɬ','x','ɾ','l','w']
 	for (var i = 0; i < whenFollowing.length; i++) {
 		x=x.replaceAll(whenFollowing[i]+"?",whenFollowing[i]+"iː˨˨˦")
 	}
