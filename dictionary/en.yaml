@@ -1383,3 +1383,88 @@ gun:
   short: rock
   long: |
     rock, stone, gravel, frozen soil, anything hard and from the ground
+todıı́:
+  type: leaf
+  short: poison
+  long: |
+    any fluid possible but not safe to drink
+cágu:
+  type: leaf
+  short: drink
+  long: |
+    any fluid possible and safe to drink
+tánu:
+  type: leaf
+  short: head
+  long: |
+    head, brain, metaphorically mass of collected knowledge
+láan:
+  type: leaf
+  short: mud
+  long: |
+    wet sand, swampy soil, muck, mud, moist sediment
+sócıȷa:
+  type: leaf
+  short: god(des)
+  long: |
+    god, goddess, deity, focus of worship, to worship
+xoe:
+  type: leaf
+  short: blood
+  long: |
+    blood, liquid that runs inside the body and maintains life
+śatoáan:
+  type: leaf
+  short: king
+  long: |
+    chieftain, king, a ruler of unquestionable authority
+śánu:
+  type: leaf
+  short: tide
+  long: |
+    periodic change of the sea level, to fill something with a fluid temporarily
+śıro:
+  type: leaf
+  short: slide
+  long: |
+     to slip, slide, glide
+śáa:
+  type: leaf
+  short: hand
+  long: |
+     tip of a grasping appendage
+śın:
+  type: leaf
+  short: lake
+  long: |
+     landlocked body of freshwater
+śádın:
+  type: leaf
+  short: latin
+  long: |
+     ancient rome (and descendants of what was roman)
+śıı́n:
+  type: leaf
+  short: pet
+  long: |
+     owned animal, pet, livestock
+śuı:
+  type: leaf
+  short: spoon
+  long: |
+     handheld bowled utensil
+sıpa:
+  type: leaf
+  short: grey
+  long: |
+     desaturated, not bright, and not dark
+śuúvan:
+  type: leaf
+  short: platform
+  long: |
+     stage, platform
+śuún:
+  type: leaf
+  short: shrub
+  long: |
+     bush, shrub, brushwood, a mass of sticks
