@@ -511,10 +511,9 @@ dı:
   long: |
     to equal, be the same thing as
 # special :
-séme:
+owo:
   type: leaf
   short: what
-  dupl: sé me
   long: |
     what is this thing?
 # misc :
