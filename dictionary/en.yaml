@@ -1581,3 +1581,18 @@ hánée:
   short: rope
   long: |
     rope, coil, yarn
+śuxan:
+  type: leaf
+  short: noise
+  long: |
+    noise, randomness, mess, static
+paráa:
+  type: leaf
+  short: word
+  long: |
+    word, morpheme, lexeme, unit of language
+xynde:
+  type: leaf
+  short: trade
+  long: |
+    agents exchange patients
