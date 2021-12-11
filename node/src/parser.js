@@ -4,7 +4,7 @@ const dictionary = require('../../dictionary/en.yaml');
 const c = ['b','b́','c','d','d́','f','g','ǵ','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','ś','t','t́','v','w','x','z',''];
 
 // Consonants weights.
-const cw = '110110110000111001000011011';
+const cw = '110110110000111001000010011';
 
 // Valid vowels list.
 const v = 'aeıouy';
