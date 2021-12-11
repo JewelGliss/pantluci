@@ -85,6 +85,7 @@ huma cı́ı _____ _____:
 sókale:
   type: prefix
   short: non-assertive description
+  dupl: só kale
   long: |
    refers to a concept by its typical description regardless of its truth value (also used for nonce loans or terms)
 an:
@@ -632,6 +633,7 @@ suroó:
 sı́n:
   type: leaf
   short: new
+  dupl: sı́ n
   long: |
     new, fresh, renew, renovate, freshen
 haza:
@@ -728,6 +730,7 @@ daá:
 ȷéro:
   type: prefix
   short: zero
+  dupl: ȷé ro
   long: |
     numeral zero, 0
 wán:
@@ -753,6 +756,7 @@ fı́ı:
 dón:
   type: prefix
   short: five
+  dupl: dó n
   long: |
     numeral five, 5
 ceé:
@@ -763,6 +767,7 @@ ceé:
 sı́byn:
   type: prefix
   short: seven
+  dupl: sı́ byn
   long: |
     numeral seven, 7
 wyru:
@@ -773,6 +778,7 @@ wyru:
 sı́wa:
   type: prefix
   short: nine
+  dupl: sı́ wa
   long: |
     numeral nine, 9
 boró:
@@ -1031,7 +1037,7 @@ tagý:
 sáo:
   type: leaf
   short: disappear
-  dupl: sáo
+  dupl: sá o
   long: |
    crumble away, vanish, disappear
 docı:
@@ -1135,16 +1141,19 @@ kalu:
 run:
   type: leaf
   short: place
+  dupl: ru n
   long: |
     location, position
 hunneé:
   type: leaf
   short: collective
+  dupl: hun n eé
   long: |
     Society of organisms in which it is typical for organisms to care for each other's offspring, have overlapping generations of adults, and not all organisms have the desire to reproduce. This may include some groups of ants, bees, humans, mole-rats, parasitic shrimp, termites, and wasps
 bóna:
   type: leaf
   short: good
+  dupl: bó na
   long: |
     Favourable, pleasant, or desirable
 púun:
@@ -1160,6 +1169,7 @@ óry:
 sekon:
   type: leaf
   short: second
+  dupl: se ko n
   long: |
     SI unit of time
 ýly:
@@ -1175,6 +1185,7 @@ ýly:
 cıȷa:
   type: leaf
   short: midnight
+  dupl: cı ȷa
   long: |
     twelve o'clock at night
     
@@ -1186,6 +1197,7 @@ cıȷa:
 mytı́n:
   type: leaf
   short: 6am
+  dupl: mytı́ n
   long: |
     six o'clock in the morning
     
@@ -1197,6 +1209,7 @@ mytı́n:
 nun:
   type: leaf
   short: noon
+  dupl: nu n
   long: |
     twelve o'clock in the morning
     
@@ -1245,16 +1258,19 @@ d́an:
 b́usuǵu:
   type: leaf
   short: night
+  dupl: b́u su ǵu
   long: |
     the time after which normal activity ceases, and in which most are asleep
 ǵucá:
   type: leaf
   short: food
+  dupl: ǵu cá
   long: |
     food, nutrition, meal, dish
 múd́a:
   type: leaf
   short: time-span
+  dupl: mú d́a
   long: |
     term, period of time, span of time
 d́ée:
@@ -1265,6 +1281,7 @@ d́ée:
 túunb́en:
   type: leaf
   short: new
+  dupl: túu n b́e n
   long: |
     new
 paḱáa:
@@ -1275,11 +1292,13 @@ paḱáa:
 t́óovy:
   type: leaf
   short: brick
+  dupl: t́óo vy
   long: |
     brick, block, ingot, to seal up, to seal
 ḱuȷedı́ı:
   type: leaf
   short: star
+  dupl: ḱu ȷe dı́ı
   long: |
     stellar celestial body
 ḱoxonı:
@@ -1290,6 +1309,7 @@ ḱoxonı:
 b́on:
   type: leaf
   short: good deed
+  dupl: b́o n
   long: |
     good deed, charity, meritorious act
 ḱylýn:
@@ -1300,21 +1320,25 @@ ḱylýn:
 táḱın:
   type: leaf
   short: money
+  dupl: táḱı n
   long: |
     something that can be used to trade for a wide array of goods and services
 b́ólon:
   type: leaf
   short: big cat
+  dupl: b́ó lo n
   long: |
     any organism of the subfamily pantherinae
 ḱoṕauú:
   type: leaf
   short: prepared
+  dupl: ḱo ṕa uú
   long: |
     to be prepared, preparations
 d́óon:
   type: leaf
   short: ear
+  dupl: d́óo n
   long: |
     body part used to hear
 hyb́e:
@@ -1330,6 +1354,7 @@ b́úun:
 kı́tı́:
   type: leaf
   short: cat
+  dupl: kı́ tı́
   long: |
     any member of the genus felis
 śan:
@@ -1355,11 +1380,13 @@ sı́ȷı́ı:
 sıva:
   type: leaf
   short: run
+  dupl: sı va
   long: |
     perform a predefined sequence of events
 kıca:
   type: leaf
   short: attach
+  dupl: kı ca
   long: |
     to attach together, unify, or fuse
 salı:
@@ -1370,6 +1397,7 @@ salı:
 xexe:
   type: leaf
   short: grudge
+  dupl: xe xe
   long: |
     to write someone off as a lost cause not worth attempting to reconcile with
 palan:
@@ -1385,6 +1413,7 @@ gun:
 todıı́:
   type: leaf
   short: poison
+  dupl: to dıı́
   long: |
     any fluid possible but not safe to drink
 cágu:
@@ -1405,16 +1434,19 @@ láan:
 sócıȷa:
   type: leaf
   short: god(des)
+  dupl: só cı ȷa
   long: |
     god, goddess, deity, focus of worship, to worship
 xoe:
   type: leaf
   short: blood
+  dupl: xo e
   long: |
     blood, liquid that runs inside the body and maintains life
 śatoáan:
   type: leaf
   short: king
+  dupl: śato áan
   long: |
     chieftain, king, a ruler of unquestionable authority
 śánu:
@@ -1425,6 +1457,7 @@ śánu:
 śıro:
   type: leaf
   short: slide
+  dupl: śı ro
   long: |
      to slip, slide, glide
 śáa:
@@ -1435,31 +1468,37 @@ śáa:
 śın:
   type: leaf
   short: lake
+  dupl: śı n
   long: |
      landlocked body of freshwater
 śádın:
   type: leaf
   short: latin
+  dupl: śádı n
   long: |
      ancient rome (and descendants of what was roman)
 śıı́n:
   type: leaf
   short: pet
+  dupl: śıı́ n
   long: |
      owned animal, pet, livestock
 śuı:
   type: leaf
   short: spoon
+  dupl: śu ı
   long: |
      handheld bowled utensil
 sıpa:
   type: leaf
   short: grey
+  dupl: sı pa
   long: |
      desaturated, not bright, and not dark
 śuúvan:
   type: leaf
   short: platform
+  dupl: śuú van
   long: |
      stage, platform
 śuún:
