@@ -530,10 +530,10 @@ pura:
   dupl: pu ra
   long: |
     to travel, roam, wander
-ȷısolan:
+cısolan:
   type: leaf
   short: insolating
-  dupl: ȷı so lan
+  dupl: cı so lan
   long: |
     something that prevents energy from passing through
 tı́go:
@@ -727,10 +727,10 @@ daá:
   short: greet
   long: |
     to welcome or greet
-ȷéro:
+céro:
   type: prefix
   short: zero
-  dupl: ȷé ro
+  dupl: cé ro
   long: |
     numeral zero, 0
 wán:
@@ -1242,7 +1242,7 @@ fýyré:
     
     forms lexical phrase ordinals with numbers
     
-    {Keé} {ȷéro} _____ {fýyré}
+    {Keé} {céro} _____ {fýyré}
     
     first _____, 0th _____(with 0 indexing)
 b́eé:
@@ -1295,10 +1295,10 @@ t́óovy:
   dupl: t́óo vy
   long: |
     brick, block, ingot, to seal up, to seal
-ḱuȷedı́ı:
+ḱucedı́ı:
   type: leaf
   short: star
-  dupl: ḱu ȷe dı́ı
+  dupl: ḱu ce dı́ı
   long: |
     stellar celestial body
 ḱoxonı:

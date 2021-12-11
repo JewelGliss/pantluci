@@ -16,17 +16,23 @@ const vw = '111000';
 let s = {"_____":2};
 for (var i = 0; i < c.length; i++) {
 	for (var j = 0; j < v.length; j++) {
-		s[c[i] + v[j]] = parseInt(cw[i]) + parseInt(vw[j]);
-		s[c[i] + v[j] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
+		var extra=0;
+		console.log(c[i] + v[j])
+		if(["ȷı","ȷe","wu","wo"].includes(c[i] + v[j])){
+			extra++;
+		}
+		console.log(extra)
+		s[c[i] + v[j]] = parseInt(cw[i]) + parseInt(vw[j]) + extra;
+		s[c[i] + v[j] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 1 + extra;
 
-		s[c[i] + v[j]+"́"] = parseInt(cw[i]) + parseInt(vw[j]);
-		s[c[i] + v[j] + '́n'] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
+		s[c[i] + v[j]+"́"] = parseInt(cw[i]) + parseInt(vw[j]) + extra;
+		s[c[i] + v[j] + '́n'] = parseInt(cw[i]) + parseInt(vw[j]) + 1 + extra;
 
-		s[c[i] + v[j] + v[j]+"́"] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
-		s[c[i] + v[j] + v[j] + '́n'] = parseInt(cw[i]) + parseInt(vw[j]) + 2;
+		s[c[i] + v[j] + v[j]+"́"] = parseInt(cw[i]) + parseInt(vw[j]) + 1 + extra;
+		s[c[i] + v[j] + v[j] + '́n'] = parseInt(cw[i]) + parseInt(vw[j]) + 2 + extra;
 
 		s[c[i] + v[j]+"́" + v[j]] = parseInt(cw[i]) + parseInt(vw[j]) + 1;
-		s[c[i] + v[j]+"́" + v[j] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 2;
+		s[c[i] + v[j]+"́" + v[j] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 2 + extra;
 	}
 }
 
