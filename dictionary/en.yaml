@@ -1576,11 +1576,6 @@ nóǵo:
   short: sleep
   long: |
     sleep, rest, be unconscious
-nóǵo:
-  type: leaf
-  short: sleep
-  long: |
-    sleep, rest, be unconscious
 hánée:
   type: leaf
   short: rope
