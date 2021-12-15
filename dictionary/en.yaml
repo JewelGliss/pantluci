@@ -152,64 +152,61 @@ keé:
   long: |
     gentive, leaf => leaf with possessor attached
 # Leaves :
-# Primary Colors :
-buú:
+xúnre:
   type: leaf
-  short: cyan
+  short: red
   long: |
-    something that is cyan, cmyk(100,0,0,0)
-haá:
+    something that is red/crimson/ruddy
+tónga:
   type: leaf
-  short: magenta
+  short: note
   long: |
-    something that is magenta, cmyk(0,100,0,0)
-tée:
+    note, frequncey
+túnba:
   type: leaf
-  short: yellow
+  short: sibling
   long: |
-    something that is yellow, cmyk(0,0,100,0)
-xoón:
+    is a sibling of roghly equal status
+súnla:
   type: leaf
-  short: black
+  short: wool
   long: |
-    something that is black, cmyk(0,0,0,100)
-# Secondary Colors :
-lıı́:
+    tight curly hair of an animal
+súnga:
   type: leaf
-  short: periwinkle
+  short: garlic
   long: |
-    something that is periwinkle, cmyk(50,50,0,0)
-mén:
+    garlic
+púnlı:
   type: leaf
-  short: mint
+  short: swell
   long: |
-    something that is mint, cmyk(50,0,50,0)
-beén:
+    the extruding part of a protrusion
+kúnra:
   type: leaf
-  short: teal
-  dupl: beé n
+  short: mineral
   long: |
-    something that is teal, cmyk(50,0,0,50)
-boón:
+    mineral, ore, metal
+cúnmı:
   type: leaf
-  short: salmon
-  dupl: boó n
+  short: grain
   long: |
-    something that is salmon, cmyk(0,50,50,0)
-búun:
+    some quantity of grain
+cóndı:
   type: leaf
-  short: eggplant
+  short: deep
   long: |
-    something that is eggplant, cmyk(0,50,0,50)
-    
-    {Lı́} {e} {e} {kı́sa} {pululún} {búun} {káma}
-    
-    Ripe plums turn purple.
-faán:
+    deep, large hole
+kónve:
   type: leaf
-  short: drab
+  short: convex
   long: |
-    something that is drab, cmyk(0,0,50,50)
+    curves outwards
+súmne:
+  type: leaf
+  short: smell
+  long: |
+    smells/scents, one who smells
 # Color Adjacent Terms :
 fuúpuún:
   type: leaf
