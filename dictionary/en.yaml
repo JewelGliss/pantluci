@@ -1608,3 +1608,18 @@ cúnba:
   short: bug
   long: |
     bug, members of arthropoda
+molaá:
+  type: leaf
+  short: reward
+  long: |
+    reward, an experience or state of being caused as a reward, or to cause said state of being or experience
+more:
+  type: leaf
+  short: simple
+  long: |
+    minimal in certain features
+muni:
+  type: leaf
+  short: intuit
+  long: |
+    intuit, intuition, to feel, to think, to predict
