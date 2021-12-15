@@ -1593,3 +1593,18 @@ xynde:
   short: trade
   long: |
     agents exchange patients
+cútıı́:
+  type: leaf
+  short: shoe
+  long: |
+    shoe, boot, sandal, foot covering/protection
+kúntı:
+  type: leaf
+  short: empty
+  long: |
+    empty, vacuum, hollow
+cúnba:
+  type: leaf
+  short: bug
+  long: |
+    bug, members of arthropoda
