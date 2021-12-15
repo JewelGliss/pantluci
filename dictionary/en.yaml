@@ -1618,7 +1618,7 @@ more:
   short: simple
   long: |
     minimal in certain features
-muni:
+munı:
   type: leaf
   short: intuit
   long: |
