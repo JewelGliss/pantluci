@@ -1623,3 +1623,73 @@ munı:
   short: intuit
   long: |
     intuit, intuition, to feel, to think, to predict
+maá:
+  type: leaf
+  short: month
+  long: |
+    month
+neé:
+  type: leaf
+  short: like
+  long: |
+    to like, enjoy, be please by
+oó:
+  type: leaf
+  short: complain
+  long: |
+    complaint, to complain, oy, oi
+záa:
+  type: leaf
+  short: approve
+  long: |
+    approve, approval
+géen:
+  type: leaf
+  short: dog
+  long: |
+    organism of the genus canis
+daán:
+  type: leaf
+  short: hit
+  long: |
+    hit, strike
+céen:
+  type: leaf
+  short: morning
+  long: |
+    morning, the time of day where things begin to happen
+méen:
+  type: leaf
+  short: measure
+  long: |
+    measure, check, look at something quantitatively
+múun:
+  type: leaf
+  short: meaning
+  long: |
+    meaning, interpretation
+núun:
+  type: leaf
+  short: event
+  long: |
+    state, process, achievement, activity
+dúun:
+  type: leaf
+  short: fact
+  long: |
+    fact, truth
+súun:
+  type: leaf
+  short: leaf
+  long: |
+    point on a tree and all descendant nodes. this includes and is mainly used for referring to grammatical structures
+gúun:
+  type: leaf
+  short: mass
+  long: |
+    aggregate mass
+ȷéen:
+  type: leaf
+  short: army
+  long: |
+    army, military
