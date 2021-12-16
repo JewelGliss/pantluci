@@ -291,6 +291,8 @@ function ipa_converter(x) {
 	x=x.replaceAll("ä˦.ä˨","äu̯˦˨")
 	//ɛ˨.ɛ˦/ is realized as [ɛi̯˨˦].
 	x=x.replaceAll("ɛ˨.ɛ˦","ɛi̯˨˦")
+	//o˨.o˦/ is realized as [oi̯˨˦].
+	x=x.replaceAll("o˨.o˦","oi̯˨˦")
 	//[tj] is realized as [t͡ʃ].
 	x=x.replaceAll("tj","t͡ʃ")
 	//[tʼj] is realized as [t͡ʃʼ].
