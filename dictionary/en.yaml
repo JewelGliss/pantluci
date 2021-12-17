@@ -438,22 +438,22 @@ tygıı́:
   short: bird
   dupl: ty gıı́
   long: |
-    any animal of the clade avialae
+    bird, warm blooded egg laying animals that lack snouts
 ȷı́ı:
   type: leaf
   short: frog
   long: |
-    any animal of the order anura
+    smooth skinned semi aquatic life that uses jumping as a form of locomotion
 ȷaán:
   type: leaf
   short: salamander
   long: |
-    any animal of the clade caudata
+    smooth skinned semi aquatic life with slender bodies, a tail, and legs
 mýn:
   type: leaf
   short: lizard
   long: |
-    any animal of the order squamata
+    scaled life with slender bodies, a tail, and legs
 máa:
   type: leaf
   short: cat-like
@@ -464,23 +464,23 @@ máa:
   short: snake
   dupl: ȷı<69105>n
   long: |
-    any animal of the order ophidia
+    scaled life with slender bodies, a tail, no legs
 weé:
   type: leaf
   short: turtle
   long: |
-    any animal of the clade pantestudines
+    life with a tough outer shell that it uses for defense
 ýy:
   type: leaf
   short: spider
   long: |
-    any animal of the clade arachnomorpha
+    eight legged life
 konrúu:
   type: leaf
   short: centipede, milipede
   dupl: ko n rúu
   long: |
-    any animal of the subphylum myriapoda
+    life with at least ten legs
 # verbs :
 káma:
   type: leaf
@@ -1325,7 +1325,7 @@ b́ólon:
   short: big cat
   dupl: b́ó lo n
   long: |
-    any organism of the subfamily pantherinae
+    relatively large predator that thrives nocturnally though can still function during the day and are extremely flexible
 ḱoṕauú:
   type: leaf
   short: prepared
@@ -1342,7 +1342,7 @@ hyb́e:
   type: leaf
   short: wild cat
   long: |
-    any organism of the subfamily felinae, excluding felis catus
+    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably not make a good pet
 b́úun:
   type: leaf
   short: tuber
@@ -1353,7 +1353,7 @@ kı́tı́:
   short: cat
   dupl: kı́ tı́
   long: |
-    any member of the genus felis
+    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably make a good pet
 śan:
   type: leaf
   short: jump
@@ -1607,7 +1607,7 @@ cúnba:
   type: leaf
   short: bug
   long: |
-    bug, members of arthropoda
+    life with an exoskeleton
 molaá:
   type: leaf
   short: reward
@@ -1647,7 +1647,7 @@ géen:
   type: leaf
   short: dog
   long: |
-    organism of the genus canis
+    preditor known for its trainability and loyalty
 daán:
   type: leaf
   short: hit
@@ -1693,3 +1693,8 @@ gúun:
   short: army
   long: |
     army, military
+kóove:
+  type: leaf
+  short: monkey
+  long: |
+    monkey, live birth giving arboreal warm blooded life
