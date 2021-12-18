@@ -196,7 +196,7 @@ cóndı:
   type: leaf
   short: deep
   long: |
-    deep, large hole
+    deep, deep hole
 kónve:
   type: leaf
   short: convex
@@ -1552,7 +1552,7 @@ xáfa:
   type: leaf
   short: hole
   long: |
-    dent, breach, or hole that's not supposed to be there
+    dent, breach, shallow hole
 mıı́:
   type: leaf
   short: hollow
@@ -1698,3 +1698,38 @@ kóove:
   short: monkey
   long: |
     monkey, live birth giving arboreal warm blooded life
+bóo:
+  type: leaf
+  short: stick
+  long: |
+    staff, stick-like or long cylindrical item: pointer, pole, rod, etc
+noruú:
+  type: leaf
+  short: ride 
+  long: |
+    ride, transportation based around sitting
+ȷáno:
+  type: leaf
+  short: toy
+  long: |
+    ring, torus, donut
+gaá:
+  type: leaf
+  short: toy
+  long: |
+    toy, plaything
+máan:
+  type: leaf
+  short: milk
+  long: |
+    milk, to extract milk
+buru:
+  type: leaf
+  short: hunt
+  long: |
+    chase down prey
+cya:
+  type: leaf
+  short: play
+  long: |
+    act in a manner such to have fun, play
