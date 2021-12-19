@@ -1739,8 +1739,8 @@ rúo:
   long: |
     cold, low in temperature, ice
 áa:
-  type: leaf
-  short: prefix
+  type: prefix
+  short: extra-
   long: |
     past, beyond, extra
 saá:
