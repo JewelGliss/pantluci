@@ -1733,3 +1733,43 @@ cya:
   short: play
   long: |
     act in a manner such to have fun, play
+rúo:
+  type: leaf
+  short: cold
+  long: |
+    cold, low in temperature, ice
+áa:
+  type: leaf
+  short: prefix
+  long: |
+    past, beyond, extra
+saá:
+  type: leaf
+  short: skin
+  long: |
+    skin, bark, shell, outer surface
+áa saá:
+  type: phrase
+  short: outside
+  long: |
+    outside, outdoors
+tázo:
+  type: leaf
+  short: contrast
+  long: |
+    different, contrast, but, however
+sélı:
+  type: leaf
+  short: hot
+  long: |
+    hot, high in temperature, fire
+cıson:
+  type: leaf
+  short: child
+  long: |
+    descendant, scion, heir
+cákı:
+  type: leaf
+  short: chess
+  long: |
+    chess, fairy chess, shogi
