@@ -148,9 +148,9 @@ cı́ı:
     leaf, leaf => leaf or leaf
 keé:
   type: particle
-  short: gentive attacher
+  short: genitive attacher
   long: |
-    gentive, leaf => leaf with possessor attached
+    genitive, leaf => leaf with possessor attached
 # Leaves :
 xúnre:
   type: leaf
@@ -1740,7 +1740,7 @@ rúo:
     cold, low in temperature, ice
 áa:
   type: prefix
-  short: extra-
+  short: beyond-
   long: |
     past, beyond, extra
 saá:
@@ -1773,3 +1773,18 @@ cákı:
   short: chess
   long: |
     chess, fairy chess, shogi
+d́áan:
+  type: leaf
+  short: weave
+  long: |
+    Interlace material, knit, weave, plait hair
+ókolo:
+  type: leaf
+  short: around
+  long: |
+     the area around/in the neighborhood of something
+okysona:
+  type: leaf
+  short: occasional
+  long: |
+     occurring or appearing irregularly from time to time, but not often
