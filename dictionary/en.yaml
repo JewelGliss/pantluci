@@ -148,65 +148,68 @@ cı́ı:
     leaf, leaf => leaf or leaf
 keé:
   type: particle
-  short: genitive attacher
+  short: gentive attacher
   long: |
-    genitive, leaf => leaf with possessor attached
+    gentive, leaf => leaf with possessor attached
 # Leaves :
-xúnre:
+# Primary Colors :
+buú:
   type: leaf
-  short: red
+  short: cyan
   long: |
-    something that is red/crimson/ruddy
-tónga:
+    something that is cyan, cmyk(100,0,0,0)
+haá:
   type: leaf
-  short: note
+  short: magenta
   long: |
-    note, frequncey
-túnba:
+    something that is magenta, cmyk(0,100,0,0)
+tée:
   type: leaf
-  short: sibling
+  short: yellow
   long: |
-    is a sibling of roghly equal status
-súnla:
+    something that is yellow, cmyk(0,0,100,0)
+xoón:
   type: leaf
-  short: wool
+  short: black
   long: |
-    tight curly hair of an animal
-súnga:
+    something that is black, cmyk(0,0,0,100)
+# Secondary Colors :
+lıı́:
   type: leaf
-  short: garlic
+  short: periwinkle
   long: |
-    garlic
-púnlı:
+    something that is periwinkle, cmyk(50,50,0,0)
+mén:
   type: leaf
-  short: swell
+  short: mint
   long: |
-    the extruding part of a protrusion
-kúnra:
+    something that is mint, cmyk(50,0,50,0)
+beén:
   type: leaf
-  short: mineral
+  short: teal
+  dupl: beé n
   long: |
-    mineral, ore, metal
-cúnmı:
+    something that is teal, cmyk(50,0,0,50)
+boón:
   type: leaf
-  short: grain
+  short: salmon
+  dupl: boó n
   long: |
-    some quantity of grain
-cóndı:
+    something that is salmon, cmyk(0,50,50,0)
+búun:
   type: leaf
-  short: deep
+  short: eggplant
   long: |
-    deep, deep hole
-kónve:
+    something that is eggplant, cmyk(0,50,0,50)
+    
+    {Lı́} {e} {e} {kı́sa} {pululún} {búun} {káma}
+    
+    Ripe plums turn purple.
+faán:
   type: leaf
-  short: convex
+  short: drab
   long: |
-    curves outwards
-súmne:
-  type: leaf
-  short: smell
-  long: |
-    smells/scents, one who smells
+    something that is drab, cmyk(0,0,50,50)
 # Color Adjacent Terms :
 fuúpuún:
   type: leaf
@@ -438,22 +441,22 @@ tygıı́:
   short: bird
   dupl: ty gıı́
   long: |
-    bird, warm blooded egg laying animals that lack snouts
+    any animal of the clade avialae
 ȷı́ı:
   type: leaf
   short: frog
   long: |
-    smooth skinned semi aquatic life that uses jumping as a form of locomotion
+    any animal of the order anura
 ȷaán:
   type: leaf
   short: salamander
   long: |
-    smooth skinned semi aquatic life with slender bodies, a tail, and legs
+    any animal of the clade caudata
 mýn:
   type: leaf
   short: lizard
   long: |
-    scaled life with slender bodies, a tail, and legs
+    any animal of the order squamata
 máa:
   type: leaf
   short: cat-like
@@ -464,23 +467,23 @@ máa:
   short: snake
   dupl: ȷı<69105>n
   long: |
-    scaled life with slender bodies, a tail, no legs
+    any animal of the order ophidia
 weé:
   type: leaf
   short: turtle
   long: |
-    life with a tough outer shell that it uses for defense
+    any animal of the clade pantestudines
 ýy:
   type: leaf
   short: spider
   long: |
-    eight legged life
+    any animal of the clade arachnomorpha
 konrúu:
   type: leaf
   short: centipede, milipede
   dupl: ko n rúu
   long: |
-    life with at least ten legs
+    any animal of the subphylum myriapoda
 # verbs :
 káma:
   type: leaf
@@ -1064,7 +1067,7 @@ da:
    socially intelligent or sentient being
 hare:
   type: leaf
-  short: love
+  short: harem
   long: |
     a group of someone's lovers (may be one person if part of a couple, no one if single, or more than one person in a polyamorous relationship)
     
@@ -1325,7 +1328,7 @@ b́ólon:
   short: big cat
   dupl: b́ó lo n
   long: |
-    relatively large predator that thrives nocturnally though can still function during the day and are extremely flexible
+    any organism of the subfamily pantherinae
 ḱoṕauú:
   type: leaf
   short: prepared
@@ -1342,7 +1345,7 @@ hyb́e:
   type: leaf
   short: wild cat
   long: |
-    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably not make a good pet
+    any organism of the subfamily felinae, excluding felis catus
 b́úun:
   type: leaf
   short: tuber
@@ -1353,7 +1356,7 @@ kı́tı́:
   short: cat
   dupl: kı́ tı́
   long: |
-    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably make a good pet
+    any member of the genus felis
 śan:
   type: leaf
   short: jump
@@ -1552,7 +1555,7 @@ xáfa:
   type: leaf
   short: hole
   long: |
-    dent, breach, shallow hole
+    dent, breach, or hole that's not supposed to be there
 mıı́:
   type: leaf
   short: hollow
@@ -1578,213 +1581,13 @@ hánée:
   short: rope
   long: |
     rope, coil, yarn
-śuxan:
+fala:
   type: leaf
-  short: noise
+  short: error
   long: |
-    noise, randomness, mess, static
-paráa:
+     mistake, error, discrepancy, flaw
+funxıı́n:
   type: leaf
-  short: word
+  short: distract
   long: |
-    word, morpheme, lexeme, unit of language
-xynde:
-  type: leaf
-  short: trade
-  long: |
-    agents exchange patients
-cútıı́:
-  type: leaf
-  short: shoe
-  long: |
-    shoe, boot, sandal, foot covering/protection
-kúntı:
-  type: leaf
-  short: empty
-  long: |
-    empty, vacuum, hollow
-cúnba:
-  type: leaf
-  short: bug
-  long: |
-    life with an exoskeleton
-molaá:
-  type: leaf
-  short: reward
-  long: |
-    reward, an experience or state of being caused as a reward, or to cause said state of being or experience
-more:
-  type: leaf
-  short: simple
-  long: |
-    minimal in certain features
-munı:
-  type: leaf
-  short: intuit
-  long: |
-    intuit, intuition, to feel, to think, to predict
-maá:
-  type: leaf
-  short: month
-  long: |
-    month
-neé:
-  type: leaf
-  short: like
-  long: |
-    to like, enjoy, be please by
-oó:
-  type: leaf
-  short: complain
-  long: |
-    complaint, to complain, oy, oi
-záa:
-  type: leaf
-  short: approve
-  long: |
-    approve, approval
-géen:
-  type: leaf
-  short: dog
-  long: |
-    preditor known for its trainability and loyalty
-daán:
-  type: leaf
-  short: hit
-  long: |
-    hit, strike
-céen:
-  type: leaf
-  short: morning
-  long: |
-    morning, the time of day where things begin to happen
-méen:
-  type: leaf
-  short: measure
-  long: |
-    measure, check, look at something quantitatively
-múun:
-  type: leaf
-  short: meaning
-  long: |
-    meaning, interpretation
-núun:
-  type: leaf
-  short: event
-  long: |
-    state, process, achievement, activity
-dúun:
-  type: leaf
-  short: fact
-  long: |
-    fact, truth
-súun:
-  type: leaf
-  short: leaf
-  long: |
-    point on a tree and all descendant nodes. this includes and is mainly used for referring to grammatical structures
-gúun:
-  type: leaf
-  short: mass
-  long: |
-    aggregate mass
-ȷéen:
-  type: leaf
-  short: army
-  long: |
-    army, military
-kóove:
-  type: leaf
-  short: monkey
-  long: |
-    monkey, live birth giving arboreal warm blooded life
-bóo:
-  type: leaf
-  short: stick
-  long: |
-    staff, stick-like or long cylindrical item: pointer, pole, rod, etc
-noruú:
-  type: leaf
-  short: ride 
-  long: |
-    ride, transportation based around sitting
-ȷáno:
-  type: leaf
-  short: ring
-  long: |
-    ring, torus, donut
-gaá:
-  type: leaf
-  short: toy
-  long: |
-    toy, plaything
-máan:
-  type: leaf
-  short: milk
-  long: |
-    milk, to extract milk
-buru:
-  type: leaf
-  short: hunt
-  long: |
-    chase down prey
-cya:
-  type: leaf
-  short: play
-  long: |
-    act in a manner such to have fun, play
-rúo:
-  type: leaf
-  short: cold
-  long: |
-    cold, low in temperature, ice
-áa:
-  type: prefix
-  short: beyond-
-  long: |
-    past, beyond, extra
-saá:
-  type: leaf
-  short: skin
-  long: |
-    skin, bark, shell, outer surface
-áa saá:
-  type: phrase
-  short: outside
-  long: |
-    outside, outdoors
-tázo:
-  type: leaf
-  short: contrast
-  long: |
-    different, contrast, but, however
-sélı:
-  type: leaf
-  short: fire
-  long: |
-    hot, high in temperature, fire
-cıson:
-  type: leaf
-  short: child
-  long: |
-    descendant, scion, heir
-cákı:
-  type: leaf
-  short: chess
-  long: |
-    chess, fairy chess, shogi
-d́áan:
-  type: leaf
-  short: weave
-  long: |
-    Interlace material, knit, weave, plait hair
-ókolo:
-  type: leaf
-  short: around
-  long: |
-     the area around/in the neighborhood of something
-okysona:
-  type: leaf
-  short: occasional
-  long: |
-     occurring or appearing irregularly from time to time, but not often
+     distract, trouble, worry

@@ -313,6 +313,39 @@ function ipa_converter(x) {
 	x=x.replaceAll("ɠj","ʄj")
 	//[kʼj] is realized as [cç].
 	x=x.replaceAll("kʼj","cç")
+	//implosives are devoiced in high or falling tone syllables.
+	x=x.replaceAll("ɓä˦","ɓ̥ä˦")
+	x=x.replaceAll("ɗä˦","ɗ̥ä˦")
+	x=x.replaceAll("ɠä˦","ɠ̊ä˦")
+	
+	x=x.replaceAll("ɓɛ˦","ɓ̥ɛ˦")
+	x=x.replaceAll("ɗɛ˦","ɗ̥ɛ˦")
+	x=x.replaceAll("ɠɛ˦","ɠ̊ɛ˦")
+	
+	x=x.replaceAll("ɓi˦","ɓ̥i˦")
+	x=x.replaceAll("ɗi˦","ɗ̥i˦")
+	x=x.replaceAll("ɠi˦","ɠ̊i˦")
+	
+	x=x.replaceAll("ɓo˦","ɓ̥o˦")
+	x=x.replaceAll("ɗo˦","ɗ̥o˦")
+	x=x.replaceAll("ɠo˦","ɠ̊o˦")
+	
+	x=x.replaceAll("ɓu˦","ɓ̥u˦")
+	x=x.replaceAll("ɗu˦","ɗ̥u˦")
+	x=x.replaceAll("ɠu˦","ɠ̊u˦")
+	
+	x=x.replaceAll("ɓə˦","ɓ̥ə˦")
+	x=x.replaceAll("ɗə˦","ɗ̥ə˦")
+	x=x.replaceAll("ɠə˦","ɠ̊ə˦")
+	
+	x=x.replaceAll("ɓjə˦","ɓ̥jə˦")
+	x=x.replaceAll("ɗjə˦","ɗ̥jə˦")
+	x=x.replaceAll("ʄjə˦","ʄ̊jə˦")
+	
+	x=x.replaceAll("ɓäu̯˦","ɓ̥äu̯˦")
+	x=x.replaceAll("ɗäu̯˦","ɗ̥äu̯˦")
+	x=x.replaceAll("ɠäu̯˦","ɠ̊äu̯˦")
+	
 	//assimilated and dissimilated
 	x=x.replaceAll("n.b","m.b")
 	x=x.replaceAll("n.g","ŋ.g")
