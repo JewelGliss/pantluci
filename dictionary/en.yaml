@@ -1798,3 +1798,43 @@ funxıı́n:
   short: distract
   long: |
      distract, trouble, worry
+cı́be:
+  type: leaf
+  short: bear
+  long: |
+     massive predatory animal that is not primarily a predator
+cıtıı́:
+  type: leaf
+  short: concentrate
+  long: |
+     concentrate, focus, concentration
+pápa:
+  type: leaf
+  short: parent
+  long: |
+     parent, mother, father
+cúde:
+  type: leaf
+  short: should
+  long: |
+     ought to, obligated to, expected to
+suȷýáan:
+  type: leaf
+  short: sergeant
+  long: |
+     military sergeant
+áa suȷýáan:
+  type: phrase
+  short: sergeant major
+  long: |
+     military sergeant major or equivalent rank
+owe:
+  type: leaf
+  short: above
+  long: |
+     above, over, the area higher than something
+lı́ śatoáan morı́:
+  type: phrase
+  short: checkmate
+  long: |
+     said when winning chess
