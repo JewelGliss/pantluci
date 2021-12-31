@@ -1838,3 +1838,78 @@ lı́ śatoáan morı́:
   short: checkmate
   long: |
      said when winning chess
+kórydu:
+  type: leaf
+  short: far
+  long: |
+    somewhere far, distant, remote
+ȷáman:
+  type: leaf
+  short: bad
+  long: |
+    bad, wicked, evil, ill-natured, malicious
+kélo:
+  type: leaf
+  short: body
+  long: |
+    body, physical structure of a living human or animal, shape or form of some object
+ósa:
+  type: leaf
+  short: part
+  long: |
+    part, fraction of a whole, distinct element of something larger, piece, partial
+doron:
+  type: leaf
+  short: kind
+  long: |
+    type, kind, variety, sort, genre
+okoa:
+  type: leaf
+  short: different
+  long: |
+    different, separate, unrelated, another
+uno:
+  type: prefix
+  short: some
+  long: |
+    some, a few
+mútı́ı:
+  type: prefix
+  short: many
+  long: |
+    a lot of, many, much
+bógo:
+  type: prefix
+  short: some
+  long: |
+    little, not much, few, not many
+lowen:
+  type: leaf
+  short: big
+  long: |
+    big, large
+kıra:
+  type: leaf
+  short: small
+  long: |
+    small, mini, tiny
+pynsá:
+  type: leaf
+  short: think
+  long: |
+    to think about, to think of, to have in mind
+ȷopınıı́:
+  type: leaf
+  short: opine
+  long: |
+    to have an opinion, opine, opinion
+kub́ú:
+  type: leaf
+  short: word
+  long: |
+    word or bit of vocabulary, message, statement, utterance, lyric, etc
+tıı́n:
+  type: leaf
+  short: real
+  long: |
+    real, true, actual
