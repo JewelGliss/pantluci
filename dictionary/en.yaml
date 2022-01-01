@@ -1913,3 +1913,13 @@ tıı́n:
   short: real
   long: |
     real, true, actual
+vuxe:
+  type: leaf
+  short: virtual
+  long: |
+    virtual, simulated, faux
+ȷána:
+  type: leaf
+  short: onion
+  long: |
+    a shortened, compressed, underground stem of a plant
