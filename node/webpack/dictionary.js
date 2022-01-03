@@ -147,8 +147,8 @@ export function html_dictionary(filters) {
 					!(
 						word.includes(filter) ||
 						dictionary[word].without_spaces.includes(filter) ||
-						dictionary[word].short.toLowerCase().includes(filter) ||
-						dictionary[word].long.toLowerCase().includes(filter)
+						parser.toneMarking(dictionary[word].short.toLowerCase()).includes(filter) ||
+						parser.toneMarking(dictionary[word].long.toLowerCase()).includes(filter)
 					)
 				) {
 					return;
