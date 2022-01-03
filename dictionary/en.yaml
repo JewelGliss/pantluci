@@ -1938,8 +1938,3 @@ xongo:
   short: angry
   long: |
     anger, wrath, rage
-xongo:
-  type: prefix
-  short: angry
-  long: |
-    anger, wrath, rage
