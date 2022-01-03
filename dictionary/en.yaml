@@ -1923,3 +1923,23 @@ vuxe:
   short: onion
   long: |
     a shortened, compressed, underground stem of a plant
+doó:
+  type: prefix
+  short: o’
+  long: |
+    grammatically does acts like {nı́ı} but denotes the tail is the intended listener
+posen:
+  type: leaf
+  short: chartreuse
+  long: |
+    green, yellow, chartreuse, lime green
+xongo:
+  type: prefix
+  short: angry
+  long: |
+    anger, wrath, rage
+xongo:
+  type: prefix
+  short: angry
+  long: |
+    anger, wrath, rage
