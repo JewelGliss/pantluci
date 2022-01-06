@@ -1938,3 +1938,8 @@ xongo:
   short: angry
   long: |
     anger, wrath, rage
+cúı:
+  type: prefix
+  short: not X, but also no unX
+  long: |
+    conceptually between a clause and its opposite
