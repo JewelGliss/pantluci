@@ -1943,3 +1943,33 @@ cúı:
   short: not X, but also no unX
   long: |
     conceptually between a clause and its opposite
+ve:
+  type: prefix
+  short: passive voice
+  long: |
+    passiveises the clause, swapping the semantics of agents and patients
+ulo:
+  type: leaf
+  short: snow
+  long: |
+    virtual, simulated, faux
+kata:
+  type: leaf
+  short: card
+  long: |
+    card, playing card, debit card, credit card, computer tab
+pélı:
+  type: leaf
+  short: game
+  long: |
+    game, sports match, structured play
+óo:
+  type: leaf
+  short: egg
+  long: |
+    egg, soft bodied filled solid object
+ydo:
+  type: leaf
+  short: car
+  long: |
+    car, automobile, any motor vehicle
