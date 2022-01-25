@@ -102,7 +102,7 @@
 		<p><b>Hýyban</b> (<i>/çə˦.ə˨.bä˨n/</i>) is an <a href="https://en.wikipedia.org/wiki/Experimental_language">experimental</a>
 		<a href="https://en.wikipedia.org/wiki/Constructed_language">constructed
         	language</a> designed to explore the bounds of what a human-usable language can be by using a
-		<a href="https://en.wikipedia.org/wiki/Breadth-first_search">breadth-first</a> 
+		<a href="https://en.wikipedia.org/wiki/Breadth-first_search">breadth-first</a> inspired
 		grammar which appears in few if any natural or constructed languages.
 		To make up for the unfamiliarity, it uses a largely simple grammar that 
 		attempts to minimize the number of things a speaker or listener needs to think about.
@@ -110,7 +110,7 @@
 		potential breadth-first languages inspired by <a href="https://xkcd.com/2407/">xkcd 2407</a>.
 		It uses a modified consonant inventory from unrelated language sketches from December 2020, a
 		vowel inventory copied from <a href="https://en.wikipedia.org/wiki/Lojban">Lojban</a>, a tone system copied from
-		<a href="https://en.wikipedia.org/wiki/L%C3%A1adan">Láadan</a>, and the grammar system is heavily inspired by
+		<a href="https://en.wikipedia.org/wiki/L%C3%A1adan">Láadan</a>, and a grammar system inspired by
 		<a href="https://en.wikipedia.org/wiki/Toki_Pona">toki pona</a>.
         </p>
 		<p>Hýyban is intended to explore many linguistic theories that claim some form of fundamental
@@ -375,20 +375,20 @@
             <li>Particles always accept exactly two arguments, prefixes always accept exactly one argument, and leaves never accept any arguments.</li>
             <li>Words are assigned as a <a href="https://en.wikipedia.org/wiki/Dependency_grammar">tail</a> to the <u><b style="font-size:20px;">oldest</b></u> unfilled argument slot.</li>
             <li>A sentence with remaining unfilled slots is grammatically incorrect until all the slots are filled at which point the sentence becomes finished.</li>
+            <li>Only nouns may fill a noun slot, and only verbs may fill a verb slot.</li>
         </ul>
 		<h3 id="Semantics">Semantics</h3>
 		<p>Hýyban was designed so that the majority of the grammatical weight lies on the vocabulary. As a result, while the syntax of Hýyban is
 		very straightforward, its semantics are less so. Sentences can be analyzed as recursively simplifying, with the final result being asserted 
-		as contextually significant. In more simple terms, a sentence like <i>I nı́n suroó</i> may be translated as either "You ask." or
-		"question that you posed" This is important when considering embedded clauses like in <i>I mı lı́ ı sagó nı́n suroó</i> which may be translated as
-		"I reply to you asking a question." or "I answer your question."</p>
+		as contextually significant. This means that clauses are not asserted and are considered hypthetical unless
+		they are at the topmost level of the sentence, or the tail of <i>vúro</i>, a prefix used solely for this purpose.</p>
 		<p>A rough approximation of prepositons in many languages can be constructed using <i>e</i> with a complicated clause as the
 		first argument. For example <i>I mı e lı́ tı́go hýyban cıı́n</i> could be translated as "I speak using Hýyban." or "I (using Hýyban)ly speak." Or,
-		<i>I mı e keé ódo dómo run</i> could be translated as "I eat at home." or "I (location of home)ly eat." This rough structure is also used for
+		<i>E keé ı ódo dómo mı run</i> could be translated as "I eat at home." or "(location of home)ly I eat." This rough structure is also used for
 		ordinals, <i>Keé wán da fýyré</i> could mean "The second person." or "The person of one before."
 		</p>
 		<h3 id="Prefixes">Prefixes</h3>
-		<p>Hýyban prefixes are not true prefixes, instead, they take a single argument and convert it into another semantic concept.</p>
+		<p>Hýyban prefixes are not true prefixes, instead, they take a single argument and convert it into another semantic concept. This is far from a complete list.</p>
 		<p><b>ceé</b> - 6 of the clause</p>
 		<p><b>dı́ı</b> - 2 of the clause</p>
 		<p><b>dón</b> - 5 of the clause</p>
@@ -409,21 +409,33 @@
 		<p><b>un</b> - converts a clause into a semantically opposite meaning</p>
 		<h3 id="Particles">Particles</h3>
 		<p>Hýyban particles are very similar to its prefixes, but they take two arguments instead of one.</p>
+		<br>
+		<p>the following take two clauses of the same type and return that type:</p>
 		<p><b>cı́ı</b> - the first clause and/or the second clause</p>
-		<p><b>keé</b> - attaches the first clause as an associate to the second</p>
-		<p><b>ȷaá</b> - attaches the second clause with the agentive case to the second</p>
-		<p><b>kalu</b> - the second clause, supposing the first clause is true</p>
-		<p><b>lı́</b> - attaches the first clause with the patientive case to the second</p>
-		<p><b>reé</b> - attaches the second clause with the patientive case to the first</p>
 		<p><b>e</b> - attaches the first clause as a modifier to the second</p>
+		<br>
+		<p>the following take one noun and one clause of any type and return the type of the second clause:</p>
+		<p><b>keé</b> - attaches the first clause as an associate to the second</p>
+		<br>
+		<p>the following take one verb and one noun and return either depending on what is expected:</p>
+		<p><b>ȷaá</b> - attaches the second clause with the agentive case to the second</p>
+		<p><b>reé</b> - attaches the second clause with the patientive case to the first</p>
+		<br>
+		<p>the following take one noun and one verb and return either depending on what is expected:</p>
+		<p><b>lı́</b> - attaches the first clause with the patientive case to the second</p>
 		<p><b>ı</b> - attaches the first clause with the agentive case to the second</p>
+		<br>
+		<p>the following take one noun and one clause of any type and return the type of the second clause:</p>
+		<p><b>kalu</b> - the second clause, supposing the first clause is true</p>
+		<br>
 		<p>When one of the case particles (<i>ȷaá</i>, <i>lı́</i>, <i>reé</i>, or <i>ı</i>) are placed in the second slot of
 		a case particle, they can be analyzed as currying their first argument into the nested particle.
 		This can be prevented with nı́ı.</p>
 
 		<p>note that the agentive case can represent the <a href="https://en.wikipedia.org/wiki/Thematic_relation"> thematic relation</a>
 		agent, stimulus, or force. While the patientive case can represent the experiencer, theme, or patient. This means that some words
-		(such as káan (look at) vs haza (see)) may have nearly the same meaning but with the agent and patient flipped relative to each other.</p>
+		(such as káan (look at) vs haza (see)) may have nearly the same meaning but with the agent and patient flipped relative to each other.
+		The prefix <i>ve</i> serves roughly the same purpose as this form of lexical distinction.</p>
 		
 		<h2 id="Vocabulary">Vocabulary</h2>
 		<p>Particles and prefixes are a closed class of words, while leaves and lexical phrases are an open class of words.</p>
@@ -500,7 +512,7 @@
 		<p id="note6">6 Its important to note that in this phrase mé is a modifier and not a part of the <a href="#Phrases">lexical phrases</a> e _ mé.
 		The diffrence being that mé as a modifier means that the speaker has as specific instance of the concept in mind. While
 		the lexical phrase e _ mé implies that the listener should have a specific instance in mind.</p>
-		<p id="note7">7 ȷaá is used here in order to bring focus to the cold and rain, whereas the outside is basically implied so its less important.</p>
+		<p id="note7">7 <i>ȷaá</i> is used here instead of <i>ı</i> in order to bring focus to the cold and rain, whereas the outside is basically implied so its less important.</p>
 		<p id="note8">8 Note this example of currying, the outsided is doing both raining and cold as part of the same clause.</p>
 		<p id="note9">9 This is a lexical phrases meaning something along the lines of "outside" or "the great outdoors".</p>
 		<br>
@@ -590,10 +602,10 @@
 		<br>
 		
 		
-		<p>Jaá e ı keé d́áan reé e sélı ókolo keé an okysona lı́ myn hare suzı e fı́ta cákı mé</p>
+		<p>Jaá e ı keé d́áan reé e sélı ókolo keé an okysona lı́ myn hare suzı e fı́ta núu mé cákı</p>
 		<div style="width: 100%;float:left;">
 			<div class="diagram"> &nbsp; Jaá &nbsp; <br> &nbsp; rearranged agent &nbsp; <br>
-				<div class="diagram"> &nbsp; e &nbsp; <br> &nbsp; leaf phrase &nbsp; <br>
+				<div class="diagram" style="background-color:#ff9999;"> &nbsp; e &nbsp; <br> &nbsp; leaf phrase &nbsp; <br>
 					<div class="fakeDiagram">
 					<div class="diagram"> &nbsp; keé &nbsp; <br> &nbsp; genitive &nbsp; <br>
 						<div class="diagram"> &nbsp; sélı &nbsp; <br> &nbsp; fire &nbsp; </div>
@@ -603,10 +615,12 @@
 					<div class="diagram"> &nbsp; d́áan &nbsp; <br> &nbsp; weave &nbsp; </div>
 					</div>
 					<br>weaving by the fire
+					<br>
+					<br>this is currently ungramatical,<br>will be fixed once i figure out how
         		</div>
         		<div class="diagram"> &nbsp; ı &nbsp; <br> &nbsp; agent &nbsp; <br>
 					<div class="diagram"> &nbsp; reé<sup><a href="#note16">16</a></sup>&nbsp; <br> &nbsp; rearranged patient &nbsp; <br>
-						<div class="diagram"> &nbsp; keé &nbsp; <br> &nbsp; rearranged patient &nbsp; <br>
+						<div class="diagram"> &nbsp; keé &nbsp; <br> &nbsp; genitive &nbsp; <br>
 							<div class="diagram"> &nbsp; myn &nbsp; <br> &nbsp; &nbsp; &nbsp; M &nbsp; &nbsp; &nbsp; </div>
 							<div class="diagram"> &nbsp; hare &nbsp; <br> &nbsp; &nbsp; &nbsp; love &nbsp; &nbsp; &nbsp; </div>
 							<br>M's love
@@ -621,8 +635,10 @@
 						<div class="diagram"> &nbsp; okysona &nbsp; <br> &nbsp; occasional &nbsp; </div>
 						<div class="diagram"> &nbsp; lı́ &nbsp; <br> &nbsp; patient &nbsp; <br>
 							<div class="fakeDiagram">
-							<div class="diagram"> &nbsp; e &nbsp; <br> &nbsp; (leaf phrase) &nbsp; <br> &nbsp; <b>the</b> &nbsp; <br>
-								<div class="diagram"> &nbsp; cákı &nbsp; <br> &nbsp; chess &nbsp; <br> &nbsp; </div>
+							<div class="diagram"> &nbsp; e<sup><a href="#note16">18</a></sup> &nbsp; <br> &nbsp; (leaf phrase) &nbsp; <br> &nbsp; <b>the</b> &nbsp; <br>
+								<div class="diagram"> &nbsp; núu &nbsp; <br> &nbsp; event &nbsp;<br>
+									<div class="diagram"> &nbsp; cákı &nbsp; <br> &nbsp; chess &nbsp;</div>
+								</div>
 								<div class="diagram Lexphrase"> &nbsp; mé &nbsp; <br> &nbsp; (this) &nbsp; <br> &nbsp; <b>the</b> &nbsp; </div>
 							</div>
 							<div class="diagram"> &nbsp; fı́ta &nbsp; <br> &nbsp; debate &nbsp; </div>
@@ -637,13 +653,14 @@
         	</div>
         </div>
 		<p>&nbsp;</p>
-		<p id="note16">16 Note that because this is the first argument of ı that it does NOT curry the arguments into  ı.</p>
+		<p id="note16">16 Note that because this is the first argument of <i>ı</i> that it does NOT curry the arguments into <i>ı</i>.</p>
 		<p id="note17">17 Note that this e does not block the currying here from happening.</p>
+		<p id="note18">18 Note that <i>e núu mé cákı</i> and <i>núu e cákı mé</i> are practically equivalent here.</p>
 		<br>
 		<br>
 		
 		
-		<p>I an lı́ musa lı́ tı́go gón ı ȷáa d́óon</p>
+		<p>I an lı́ musa zoó tı́go lı́ gón ı ȷáa d́óon</p>
 		<div style="width: 100%;float:left;">
 			<div class="diagram"> &nbsp; I &nbsp; <br> &nbsp; agent &nbsp; <br>
 				<div class="diagram"> &nbsp; an &nbsp; <br> &nbsp; name &nbsp; <br>
@@ -652,14 +669,17 @@
 				</div>
 				<div class="diagram"> &nbsp; lı́ &nbsp; <br> &nbsp; patient &nbsp; <br>
 					<div class="fakeDiagram">
-					<div class="diagram"> &nbsp; lı́ &nbsp; <br> &nbsp; patient &nbsp; <br>
-						<div class="diagram"> &nbsp; gón &nbsp; <br> &nbsp; air &nbsp; </div>
-						<div class="diagram"> &nbsp; ı &nbsp; <br> &nbsp; agent &nbsp; <br>
-							<div class="diagram"> &nbsp; ȷáa &nbsp; <br> &nbsp; you! &nbsp; </div>
-							<div class="diagram"> &nbsp; d́óon &nbsp; <br> &nbsp; ear &nbsp; </div>
-							<br>listen!
+					<div class="diagram"> &nbsp; zoó &nbsp; <br> &nbsp; quote &nbsp; <br>
+						<div class="diagram"> &nbsp; lı́ &nbsp; <br> &nbsp; patient &nbsp; <br>
+							<div class="diagram"> &nbsp; gón &nbsp; <br> &nbsp; air &nbsp; </div>
+							<div class="diagram"> &nbsp; ı &nbsp; <br> &nbsp; agent &nbsp; <br>
+								<div class="diagram"> &nbsp; ȷáa &nbsp; <br> &nbsp; you! &nbsp; </div>
+								<div class="diagram"> &nbsp; d́óon &nbsp; <br> &nbsp; ear &nbsp; </div>
+								<br>listen!
+							</div>
+							<br>listen to the wind!
 						</div>
-						<br>listen to the wind!
+						<br>"listen to the wind!"
 					</div>
 					<div class="diagram"> &nbsp; tı́go &nbsp; <br> &nbsp; say &nbsp; </div>
 					</div>
@@ -672,6 +692,7 @@
 		<br>
 		<br>
 		
+		<p style="background-color:#ff9999"> THE BELOW IS NOT YET UPDATED</p>
 		
 		<p>Jaá sı́ı jaá fala li’ myn e voré i la ı sıbá lı́ myn funxıı́n keé ı myn cıson e fin fala mé</p>
 		<div style="width: 100%;float:left;">
