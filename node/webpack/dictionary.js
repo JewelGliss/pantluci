@@ -63,7 +63,7 @@ function html_word_entry(word, entry) {
 		output += `${word}: `;
 	}
 
-	output += `<small>`+ipa_converter(`${word}`)+` - ${entry.short}</small> `;
+	output += `<small>`+ipa_converter(`${word}`)+`</small> `;
 
 	output += `<span class="btn btn-mini btn-inverse dictionary-family">${entry.type}</span> `;
 
@@ -84,30 +84,59 @@ function html_word_entry(word, entry) {
 		
 	}
 	output += `</div>`;
+	
+	let paragraphs="";
+	if (entry.longN != undefined) {
+		output += `<b>noun</b><small> - ${entry.shortN}</small> `;
+		paragraphs = entry.longN.split(/(\r\n|\r|\n){2,}/);
+		paragraphs.forEach((p) => {
+			p = escapeHTML(p);
+			p = p.replace(/\{([a-zA-Zȷı ́]+)\}/gu, (match, p1) => {
+				let out = '<em>';
+				let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́").replaceAll('i', 'ı').replaceAll('j', 'ȷ'));
+				//let list = p1.split(' ');
+				list.forEach((word) => {
+					if (word.includes('_')) {
+						out += `${p1} `;
+					} else {
+						out += `<a href="#" class="dictionary-word-link">${p1}</a> `;
+					}
+				});
+				out = out.slice(0, -1); 
+				out += '</em>';
 
-	let paragraphs = entry.long.split(/(\r\n|\r|\n){2,}/);
-	paragraphs.forEach((p) => {
-		p = escapeHTML(p);
-		p = p.replace(/\{([a-zA-Zȷı ́]+)\}/gu, (match, p1) => {
-			let out = '<em>';
-			let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́").replaceAll('i', 'ı').replaceAll('j', 'ȷ'));
-			//let list = p1.split(' ');
-			list.forEach((word) => {
-				if (word.includes('_')) {
-					out += `${p1} `;
-				} else {
-					out += `<a href="#" class="dictionary-word-link">${p1}</a> `;
-				}
+				return out;
 			});
-			out = out.slice(0, -1); 
-			out += '</em>';
-
-			return out;
+	
+			output += `<p>${p}</p>`;
 		});
+	}
+	
+	if (entry.longV != undefined) {
+		output += `<b>verb</b><small> - ${entry.shortV}</small> `;
+		paragraphs = entry.longV.split(/(\r\n|\r|\n){2,}/);
+		paragraphs.forEach((p) => {
+			p = escapeHTML(p);
+			p = p.replace(/\{([a-zA-Zȷı ́]+)\}/gu, (match, p1) => {
+				let out = '<em>';
+				let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́").replaceAll('i', 'ı').replaceAll('j', 'ȷ'));
+				//let list = p1.split(' ');
+				list.forEach((word) => {
+					if (word.includes('_')) {
+						out += `${p1} `;
+					} else {
+						out += `<a href="#" class="dictionary-word-link">${p1}</a> `;
+					}
+				});
+				out = out.slice(0, -1); 
+				out += '</em>';
+	
+				return out;
+			});
 
-		output += `<p>${p}</p>`;
-	});
-
+			output += `<p>${p}</p>`;
+		});
+	}
 	output += `</div>`;
 	return output;
 }

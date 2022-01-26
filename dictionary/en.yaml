@@ -1,1189 +1,196 @@
-# Phrases :
-e loká ban:
-  type: phrase
-  short: loglang
-  dupl: eloká ban
-  long: |
-   language meant to be unambiguous and internally consistent
-e salı́n ban:
-  type: phrase
-  short: conlang
-  dupl: esalı́ n ban
-  long: |
-   language intentionally created and designed
-e xı́dı́ı ban:
-  type: phrase
-  short: auxlang
-  dupl: exı́ dı́ı<69105>ban
-  long: |
-   language meant for communication between people who do not share a first language
-e pı́e ban:
-  type: phrase
-  short: experimental language
-  dupl: epı́ eban
-  long: |
-   a language designed to subvert some standard expectation of language
-e nobe kı́rı:
-  type: phrase
-  short: shorthand
-  dupl: eno be kı́ rı
-  long: |
-    shorthand, stenography, writing fast enough to require special skills
-e _____ sagó:
-  type: phrase
-  short: indirect question constructor
-  long: |
-    extracts an answer from the embeded question
-e pı́de _____:
-  type: phrase
-  short: hesternal tense marker
-  dupl: epı́<69105>de _
-  long: |
-    the embeded clause happens yesterday
-e kede _____:
-  type: phrase
-  short: hodiernal tense marker
-  dupl: eke de _
-  long: |
-    the embeded clause happens today
-e hunde _____:
-  type: phrase
-  short: crastinal tense marker
-  dupl: ehu n de _
-  long: |
-    the embeded clause happens tomorrow
-e pı́nı _____:
-  type: phrase
-  short: past tense marker
-  dupl: epı́<69105>nı _
-  long: |
-    the embeded clause happens in the past
-e keren _____:
-  type: phrase
-  short: present tense marker
-  dupl: eke re n _
-  long: |
-    the embeded clause happens in the present
-e hungıı́n _____:
-  type: phrase
-  short: future tense marker
-  dupl: ehu n gıı́ n _
-  long: |
-    the embeded clause happens in the future
-e _____ mé:
-  type: phrase
-  short: definite marker
-  long: |
-    the embeded clause is identifiable in the given context
-huma cı́ı _____ _____:
-  type: phrase
-  short: interrogative multiple choice question constructor
-  dupl: hu macı́ı _ _
-  long: |
-    embeded clauses form an interogative or phrase
-# Prefixes :
-sókale:
-  type: prefix
-  short: non-assertive description
-  dupl: só kale
-  long: |
-   refers to a concept by its typical description regardless of its truth value (also used for nonce loans or terms)
-an:
-  type: prefix
-  short: name descriptor
-  long: |
-   converts a word to a name
-la:
-  type: prefix
-  short: not
-  long: |
-    used to negate a clause
-sı́ı:
-  type: prefix
-  short: really
-  long: |
-    used to emphasize a clause
-nı́ı:
-  type: prefix
-  short: dummy word
-  long: |
-    used to prevent phrases from forming
-huma:
-  type: prefix
-  short: yes/no?
-  dupl: hu ma
-  long: |
-    used to question a clause
-# Particles :
-e:
-  type: particle
-  short: leaf phrase generator
-  long: |
-    modifier, modified => content phrase
-ı:
-  type: particle
-  short: agent attacher
-  long: |
-    agent, leaf => leaf with agent attached
-ȷaá:
-  type: particle
-  short: passive agent attacher
-  long: |
-    leaf, agent => agent which has leaf as relative clause
-reé:
-  type: particle
-  short: passive patient attacher
-  long: |
-    leaf, patient => patient which has leaf as relative clause
-lı́:
-  type: particle
-  short: patient attacher
-  long: |
-    patient, leaf => leaf with patient attached
-cı́ı:
-  type: particle
-  short: option constructor
-  dupl: cı́ı
-  long: |
-    leaf, leaf => leaf or leaf
-keé:
-  type: particle
-  short: genitive attacher
-  long: |
-    genitive, leaf => leaf with possessor attached
-# Leaves :
-xúnre:
-  type: leaf
-  short: red
-  long: |
-    something that is red/crimson/ruddy
-tónga:
-  type: leaf
-  short: note
-  long: |
-    note, frequncey
-túnba:
-  type: leaf
-  short: sibling
-  long: |
-    is a sibling of roghly equal status
-súnla:
-  type: leaf
-  short: wool
-  long: |
-    tight curly hair of an animal
-súnga:
-  type: leaf
-  short: garlic
-  long: |
-    garlic
-púnlı:
-  type: leaf
-  short: swell
-  long: |
-    the extruding part of a protrusion
-kúnra:
-  type: leaf
-  short: mineral
-  long: |
-    mineral, ore, metal
-cúnmı:
-  type: leaf
-  short: grain
-  long: |
-    some quantity of grain
-cóndı:
-  type: leaf
-  short: deep
-  long: |
-    deep, deep hole
-kónve:
-  type: leaf
-  short: convex
-  long: |
-    curves outwards
-súmne:
-  type: leaf
-  short: smell
-  long: |
-    smells/scents, one who smells
-# Color Adjacent Terms :
-fuúpuún:
-  type: leaf
-  short: iridescent
-  dupl: fuú puún
-  long: |
-    something that is iridescent, color depends on the angle
-háa:
-  type: leaf
-  short: shiny
-  long: |
-    something that is shiny, reflective
-kúun:
-  type: leaf
-  short: flat
-  dupl: kúu n
-  long: |
-    something that is flatly colored, all the same color and shade
-lólúu:
-  type: leaf
-  short: textured
-  dupl: ló lúu
-  long: |
-    something that is visually textured
-páa:
-  type: leaf
-  short: matte
-  long: |
-    something that is matte
-púngaán:
-  type: leaf
-  short: with subsurface scattering
-  dupl: pún gaán
-  long: |
-    something that has visual subsurface scattering
-ḱúun:
-  type: leaf
-  short: glowing
-  dupl: ḱúu n
-  long: |
-    something that emits light
-    
-    {I} {ı} {lı́} {zúno} {ḱúun} lı́ {sıbá} {mı} e {haza} {boró}
-    
-    We can see because the sun shines.
-tı́ı:
-  type: leaf
-  short: white
-  long: |
-    something that is white, lacking pigment/color
-výsaán:
-  type: leaf
-  short: see through
-  long: |
-    something that is translucent, transparent
-xıfoón:
-  type: leaf
-  short: glow in the dark
-  dupl: xı foó n
-  long: |
-    something that is phosphorescent, absorbing light to emit it later
-# numbers :
-# time :
-pı́nı:
-  type: leaf
-  short: was
-  dupl: pı́<69105>nı
-  long: |
-    something in the past
-keren:
-  type: leaf
-  short: is
-  dupl: ke re n
-  long: |
-    something in the present
-hungıı́n:
-  type: leaf
-  short: will
-  dupl: hu n gıı́ n
-  long: |
-    something in the future
-de:
-  type: leaf
-  short: day
-  long: |
-    the time between one midnight and the next
-pı́de:
-  type: leaf
-  short: yesterday
-  dupl: pı́<69105>de
-  long: |
-    the most recent completed time between one midnight and the next
-kede:
-  type: leaf
-  short: is
-  dupl: ke de
-  long: |
-    the currently ongoing time between one midnight and the next
-hunde:
-  type: leaf
-  short: tomorow
-  dupl: hu n de
-  long: |
-    the next time between one midnight and the next after the current one
-# shapes :
-roón:
-  type: leaf
-  short: pattern
-  dupl: roó n
-  long: |
-    a set of objects that follow a pattern
-dóo:
-  type: leaf
-  short: line
-  long: |
-    Something linear, thin, long
-pıı́n:
-  type: leaf
-  short: point
-  dupl: pıı́<69105>n
-  long: |
-    a point, something taking only a single location
-# food :
-náan:
-  type: leaf
-  short: bread
-  long: |
-    any variety of 
-# pronouns :
-mı:
-  type: leaf
-  short: we
-  long: |
-    first person pronoun
-nı́n:
-  type: leaf
-  short: you
-  dupl: nı́ n
-  long: |
-    second person pronoun
-mé:
-  type: leaf
-  short: this, that
-  long: |
-    a specific thing
-cónhe:
-  type: leaf
-  short: something
-  dupl: có n he
-  long: |
-    something, anything
-á:
-  type: leaf
-  short: doer
-  long: |
-    someone that does something
-ȷáa:
-  type: leaf
-  short: you!
-  long: |
-    second person pronoun and command marker
-# languages :
-hýyban:
-  type: leaf
-  short: hýyban
-  long: |
-    This language
-lócyban:
-  type: leaf
-  short: lojban
-  dupl: ló cyban
-  long: |
-    any of the many dialects and reforms of the Lojban language
-tókıpóna:
-  type: leaf
-  short: toki pona
-  dupl: tó kı pó na
-  long: |
-    any of the many dialects and styles of toki pona
-# scenery :
-dómo:
-  type: leaf
-  short: home
-  long: |
-    house, home, residence, nest, den
-# materials :
-gón:
-  type: leaf
-  short: air
-  dupl: gó n
-  long: |
-    wind, air, breathable gas
-# ataxonometric life :
-býn:
-  type: leaf
-  short: jumper
-  long: |
-    life that uses primarily jumping as locomotion, to jump
-kála:
-  type: leaf
-  short: fish
-  long: |
-    life that uses primarily swimming as locomotion, to swim
-feé:
-  type: leaf
-  short: fly
-  long: |
-    life that uses primarily flying as locomotion, to fly
-kásı:
-  type: leaf
-  short: plant
-  long: |
-    plant
-kı́lı:
-  type: leaf
-  short: fruit
-  dupl: kı́ lı
-  long: |
-    fruit
-zógo:
-  type: leaf
-  short: fungus
-  dupl: zó go
-  long: |
-    mushroom, fungus
-# taxonometric life :
-tygıı́:
-  type: leaf
-  short: bird
-  dupl: ty gıı́
-  long: |
-    bird, warm blooded egg laying animals that lack snouts
-ȷı́ı:
-  type: leaf
-  short: frog
-  long: |
-    smooth skinned semi aquatic life that uses jumping as a form of locomotion
-ȷaán:
-  type: leaf
-  short: salamander
-  long: |
-    smooth skinned semi aquatic life with slender bodies, a tail, and legs
-mýn:
-  type: leaf
-  short: lizard
-  long: |
-    scaled life with slender bodies, a tail, and legs
-máa:
-  type: leaf
-  short: cat-like
-  long: |
-    to behave similar to a feline, or one who does so (includes some people, dragons, cats, etc)
-ȷın:
-  type: leaf
-  short: snake
-  dupl: ȷı<69105>n
-  long: |
-    scaled life with slender bodies, a tail, no legs
-weé:
-  type: leaf
-  short: turtle
-  long: |
-    life with a tough outer shell that it uses for defense
-ýy:
-  type: leaf
-  short: spider
-  long: |
-    eight legged life
-konrúu:
-  type: leaf
-  short: centipede, milipede
-  dupl: ko n rúu
-  long: |
-    life with at least ten legs
-# verbs :
-káma:
-  type: leaf
-  short: become 
-  long: |
-    to become, start to, begin, but not to arrive
-ȷán:
-  type: leaf
-  short: move
-  long: |
-    to change positions
-cıı́n:
-  type: leaf
-  short: use
-  dupl: cıı́<69105>n
-  long: |
-    to use
-dan:
-  type: leaf
-  short: modify
-  long: |
-    to destructively make/edit, to change something in a way that is difficult to undo
-dı:
-  type: leaf
-  short: equals
-  long: |
-    to equal, be the same thing as
-# special :
-owo:
-  type: leaf
-  short: what
-  long: |
-    what is this thing?
-# misc :
-nugo:
-  type: leaf
-  short: wrap
-  dupl: nu go
-  long: |
-    to enclose or coil around with cloth
-pura:
-  type: leaf
-  short: travel
-  dupl: pu ra
-  long: |
-    to travel, roam, wander
-cısolan:
-  type: leaf
-  short: insolating
-  dupl: cı so lan
-  long: |
-    something that prevents energy from passing through
-tı́go:
-  type: leaf
-  short: say
-  dupl: tı́ go
-  long: |
-    say, utter; mention; talk, speak
-huda:
-  type: leaf
-  short: plan
-  dupl: hu da
-  long: |
-   project, projected course, plan
-morı́:
-  type: leaf
-  short: die
-  dupl: mo rı́
-  long: |
-   die, stop living, death, kill
-róȷen:
-  type: leaf
-  short: born
-  dupl: ró ȷe n
-  long: |
-   birth, be born
-naá:
-  type: leaf
-  short: get
-  long: |
-   to take, hold, seize, capture, obtain
-salı́n:
-  type: leaf
-  short: make
-  dupl: salı́ n
-  long: |
-   to create out of nothing, to harmlessly edit or construct
-tıkón:
-  type: leaf
-  short: opine
-  dupl: tı kó n
-  long: |
-   opinion, opine
-cyýdá:
-  type: leaf
-  short: time
-  long: |
-   the inevitable passing of events from future to present then past, a measurement of a quantity of time, a numerical indication of a length of time, free time, leisure, spare time
-sána:
-  type: leaf
-  short: year
-  long: |
-    time it takes for the Earth to complete one revolution around the Sun
-káan:
-  type: leaf
-  short: look
-  long: |
-    to look, intentionally try to see, watch, read, observe
-laán:
-  type: leaf
-  short: way
-  long: |
-    path, way, method
-ȷáan:
-  type: leaf
-  short: give
-  long: |
-    transfer the possession of something to someone else
-wodo:
-  type: leaf
-  short: work
-  dupl: wo do
-  long: |
-    work, function, able to perform a specific task
-ola:
-  type: leaf
-  short: life
-  long: |
-    existence, life, health, livelihood, exist, alive, healthy, cured
-lysá:
-  type: leaf
-  short: let
-  long: |
-    let, allow, give up, give way
-fın:
-  type: leaf
-  short: feel
-  dupl: fı n
-  long: |
-    be conscious of something, perceive, feel physically or emotionally
-suroó:
-  type: leaf
-  short: ask
-  dupl: su roó
-  long: |
-    request an answer, question
-sı́n:
-  type: leaf
-  short: new
-  dupl: sı́ n
-  long: |
-    new, fresh, renew, renovate, freshen
-haza:
-  type: leaf
-  short: see
-  long: |
-   perceive with the eyes
-kápa:
-  type: leaf
-  short: cloak
-  long: |
-    long sleeveless overcoat, cloak, cape
-áan:
-  type: leaf
-  short: wear
-  long: |
-    to have clothes on
-tóoru:
-  type: leaf
-  short: pass
-  dupl: tóo ru
-  long: |
-    to go by, over, or through
-mı́n:
-  type: leaf
-  short: increase
-  dupl: mı́ n
-  long: |
-    increasing in amount or intensity
-oha:
-  type: leaf
-  short: next
-  long: |
-    next, after, upcoming, then, following in a sequence
-halı:
-  type: leaf
-  short: remove
-  long: |
-    to remove, to take away, to take off
-kymytı́:
-  type: leaf
-  short: argue
-  long: |
-    argue, debate
-rogy:
-  type: leaf
-  short: strong
-  long: |
-    capable of exerting power, potency or influence
-cóou:
-  type: leaf
-  short: most
-  dupl: cóo u
-  long: |
-    most, in excess of all others
-duú:
-  type: leaf
-  short: more
-  long: |
-    more, in excess of others
-sagó:
-  type: leaf
-  short: answer
-  long: |
-    reply, response, answer, solution (to a problem)
-zúno:
-  type: leaf
-  short: sun
-  long: |
-    sun, star
-cubá:
-  type: leaf
-  short: try
-  dupl: cu bá
-  long: |
-    to try; to attempt to do.
-reén:
-  type: leaf
-  short: rain
-  dupl: reé n
-  long: |
-    rain, to rain, water falls from clouds
-xıló:
-  type: leaf
-  short: declair
-  dupl: xı ló
-  long: |
-    to make something is true by stating it
-daá:
-  type: leaf
-  short: greet
-  long: |
-    to welcome or greet
-céro:
-  type: prefix
-  short: zero
-  dupl: cé ro
-  long: |
-    numeral zero, 0
-wán:
-  type: prefix
-  short: one
-  long: |
-    numeral one, 1
-dı́ı:
-  type: prefix
-  short: two
-  long: |
-    numeral two, 2
-tıı́:
-  type: prefix
-  short: three
-  long: |
-    numeral three, 3
-fı́ı:
-  type: prefix
-  short: four
-  long: |
-    numeral four, 4
-dón:
-  type: prefix
-  short: five
-  dupl: dó n
-  long: |
-    numeral five, 5
-ceé:
-  type: prefix
-  short: six
-  long: |
-    numeral six, 6
-sı́byn:
-  type: prefix
-  short: seven
-  dupl: sı́ byn
-  long: |
-    numeral seven, 7
-wyru:
-  type: prefix
-  short: eight
-  long: |
-    numeral eight, 8
-sı́wa:
-  type: prefix
-  short: nine
-  dupl: sı́ wa
-  long: |
-    numeral nine, 9
-boró:
-  type: leaf
-  short: able
-  dupl: bo ró
-  long: |
-    to be able to, to have the possibility of
-voré:
-  type: leaf
-  short: want
-  dupl: vo ré
-  long: |
-    to want, desire, need
-sıbá:
-  type: leaf
-  short: cause
-  dupl: sı bá
-  long: |
-    a cause, source, or reason for something
-boza:
-  type: leaf
-  short: understand
-  dupl: bo za
-  long: |
-    to grasp the meaning and/or implications of
-kafé:
-  type: leaf
-  short: coffee
-  long: |
-    coffee drink
-caá:
-  type: leaf
-  short: tea
-  long: |
-    boiled dried leaves drink
-# direction :
-utáa:
-  type: leaf
-  short: north
-  long: |
-    to the north
-tımyý:
-  type: leaf
-  short: east
-  dupl: tı myý
-  long: |
-    to the east
-seláan:
-  type: leaf
-  short: south
-  dupl: se láan
-  long: |
-    to the south
-pára:
-  type: leaf
-  short: west
-  long: |
-    to the west
-nobe:
-  type: leaf
-  short: fast
-  dupl: no be 
-  long: |
-    quick, fast, rapid
-zan:
-  type: leaf
-  short: tooth
-  long: |
-   anatomical tooth
-doka:
-  type: leaf
-  short: doctor
-  dupl: do ka
-  long: |
-    medical assistant, doctor, someone educated on and practicing medicine
-hée:
-  type: leaf
-  short: boss
-  long: |
-    boss, person in command, person who directly oversees work being done, director
-kı́rı:
-  type: leaf
-  short: letter
-  dupl: kı́ rı
-  long: |
-    writing, letter (message), font, script
-múta:
-  type: leaf
-  short: urinate
-  dupl: mú ta
-  long: |
-   pee, urine, urinate
-rysúȷa:
-  type: leaf
-  short: russia
-  dupl: rysú ȷa
-  long: |
-   the nation of russia
-paná:
-  type: leaf
-  short: towards
-  long: |
-   face, turn to, address, speak to
-byn:
-  type: leaf
-  short: b
-  long: |
-    refers to a previous leaf beginning with the letter b
-can:
-  type: leaf
-  short: c
-  long: |
-    refers to a previous leaf beginning with the letter c
-dyn:
-  type: leaf
-  short: d
-  long: |
-    refers to a previous leaf beginning with the letter d
-fan:
-  type: leaf
-  short: f
-  long: |
-    refers to a previous leaf beginning with the letter f
-gyn:
-  type: leaf
-  short: g
-  long: |
-    refers to a previous leaf beginning with the letter g
-han:
-  type: leaf
-  short: h
-  long: |
-    refers to a previous leaf beginning with the letter h
-ȷan:
-  type: leaf
-  short: ȷ
-  long: |
-    refers to a previous leaf beginning with the letter ȷ
-kan:
-  type: leaf
-  short: k
-  long: |
-    refers to a previous leaf beginning with the letter k
-lyn:
-  type: leaf
-  short: l
-  long: |
-    refers to a previous leaf beginning with the letter l
-myn:
-  type: leaf
-  short: m
-  long: |
-    refers to a previous leaf beginning with the letter m
-nyn:
-  type: leaf
-  short: n
-  long: |
-    refers to a previous leaf beginning with the letter n
-pan:
-  type: leaf
-  short: p
-  long: |
-    refers to a previous leaf beginning with the letter p
-ryn:
-  type: leaf
-  short: r
-  long: |
-    refers to a previous leaf beginning with the letter r
-san:
-  type: leaf
-  short: s
-  long: |
-    refers to a previous leaf beginning with the letter s
-tan:
-  type: leaf
-  short: t
-  long: |
-    refers to a previous leaf beginning with the letter t
-vyn:
-  type: leaf
-  short: v
-  long: |
-    refers to a previous leaf beginning with the letter v
-wyn:
-  type: leaf
-  short: w
-  long: |
-    refers to a previous leaf beginning with the letter w
-xan:
-  type: leaf
-  short: x
-  long: |
-    refers to a previous leaf beginning with the letter x
-zyn:
-  type: leaf
-  short: z
-  long: |
-    refers to a previous leaf beginning with the letter z
-yn:
-  type: leaf
-  short: " "
-  long: |
-    refers to a previous leaf beginning with the letter " "
-ȷynta:
-  type: leaf
-  short: friend
-  dupl: ȷyn ta
-  long: |
-   close friend with who you feel you can share anything with
-fı́ta:
-  type: leaf
-  short: debate
-  dupl: fı́ ta
-  long: |
-   debate for the sake of discussion
-kı́fe:
-  type: leaf
-  short: argue
-  dupl: kı́ fe
-  long: |
-   debate for the sake convincing the other parties
-xı́dı́ı:
-  type: leaf
-  short: back-up
-  dupl: xı́ dı́ı
-  long: |
-   reserve, spare, substitute for when the original doesn’t work
-loká:
-  type: leaf
-  short: logic
-  long: |
-   an internally consistent and rigorously defined set of rules
 ban:
   type: leaf
-  short: language
-  long: |
+  shortN: language
+  shortV: speak
+  longN: |
    communication who’s production and understanding is able to be learned to fluency
-pı́e:
+  longV: |
+   (agent) uses language (patient)
+boró:
   type: leaf
-  short: esoteric
-  dupl: pı́ e
-  long: |
-   strange without being random
-múrén:
+  shortN: ablity
+  shortV: able
+  dupl: bo ró
+  longN: |
+    ability, capablity
+  longV: |
+    to be able to, to have the possibility of
+boza:
   type: leaf
-  short: fascinating
-  dupl: mú ré n
-  long: |
-   charming, bewitching, engaging, bewildering
-tagý:
-  type: leaf
-  short: prejudice
-  long: |
-   resentment, prejudice, damnation, predetermined ill-will
-sáo:
-  type: leaf
-  short: disappear
-  dupl: sá o
-  long: |
-   crumble away, vanish, disappear
-docı:
-  type: leaf
-  short: older sibling
-  dupl: do cı
-  long: |
-   older or more senior sibling
-osı:
-  type: leaf
-  short: younger sibling
-  long: |
-    younger or less senior sibling
-    
-    {Lı́} {keé} {púra} {mı} {osı}
-    
-    My little sibling is cute.
-gan:
-  type: leaf
-  short: go
-  long: |
-   to go, walk, leave
-da:
-  type: leaf
-  short: person
-  long: |
-   socially intelligent or sentient being
-hare:
-  type: leaf
-  short: love
-  long: |
-    a group of someone's lovers (may be one person if part of a couple, no one if single, or more than one person in a polyamorous relationship)
-    
-    {Huma} {ı} {nı́n} {lı́} {lı́} {voré} {nı́n} {keé} {mı} {hare}
-    
-    Do you want to be part of my harem?
-púra:
-  type: leaf
-  short: cute
-  dupl: pú ra
-  long: |
-    free of significant flaws or consequential imperfections
-húparı:
-  type: leaf
-  short: hoodie
-  long: |
-    hooded jacket or sweatshirt
-kı́sa:
-  type: leaf
-  short: done
-  dupl: kı́ sa
-  long: |
-    ripe, mature, cooked, fed up
-pululún:
-  type: leaf
-  short: plum
-  dupl: pu lu lú n
-  long: |
-    any fruit of a prunus domestica
-ȷuosaá:
-  type: leaf
-  short: USA
-  dupl: ȷu osaá
-  long: |
-    The United States of America
-hakı:
-  type: leaf
-  short: flag
-  long: |
-    a cloth that represents a community
-ódo:
-  type: leaf
-  short: eat
-  long: |
-    consume, ingest
-ṕan:
-  type: leaf
-  short: placeholder
-  long: |
-    Refers to the nearest para-grammatical information in the information stream. Can refer to an image, quote, gesture, or something else.
-pará:
+  shortN: understand
+  shortV: understand
+  dupl: bo za
+  longN: |
+    to grasp the meaning and/or implications of
+  longV: |
+    to grasp the meaning and/or implications of
+bógo:
   type: prefix
-  short: para-
-  long: |
-    Conceptually orthogonal to
-un:
-  type: prefix
-  short: un-
-  long: |
-    Conceptually opposite to
-sáma:
-  type: leaf
-  short: like
-  long: |
-    Similar, alike
-kalu:
-  type: particle
-  short: if
-  long: |
-    leaf, leaf => supposing that the first leaf is true, the second is asserted
-run:
-  type: leaf
-  short: place
-  dupl: ru n
-  long: |
-    location, position
-hunneé:
-  type: leaf
-  short: collective
-  dupl: hun n eé
-  long: |
-    Society of organisms in which it is typical for organisms to care for each other's offspring, have overlapping generations of adults, and not all organisms have the desire to reproduce. This may include some groups of ants, bees, humans, mole-rats, parasitic shrimp, termites, and wasps
+  shortN: some
+  shortV: some
+  dupl: bó go
+  longN: |
+    little, not much, few, not many
+  longV: |
+    little, not much, few, not many
 bóna:
   type: leaf
-  short: good
+  shortN: good
+  shortV: good
   dupl: bó na
-  long: |
+  longN: |
     Favourable, pleasant, or desirable
-púun:
+  longV: |
+    Favourable, pleasant, or desirable
+bóo:
   type: leaf
-  short: minute
-  long: |
-    60 seconds
-óry:
+  shortN: stick
+  shortV: stick
+  longN: |
+    staff, stick-like or long cylindrical item: pointer, pole, rod, etc
+  longV: |
+    staff, stick-like or long cylindrical item: pointer, pole, rod, etc
+buru:
   type: leaf
-  short: hour
-  long: |
-    60 minutes
-sekon:
+  shortN: hunt
+  shortV: hunt
+  dupl: bu ru
+  longN: |
+    chase down prey
+  longV: |
+    chase down prey
+byn:
   type: leaf
-  short: second
-  dupl: se ko n
-  long: |
-    SI unit of time
-ýly:
+  shortN: b
+  shortV: b
+  longN: |
+    refers to a previous leaf beginning with the letter b
+  longV: |
+    refers to a previous leaf beginning with the letter b
+býn:
   type: leaf
-  short: intelligence
-  long: |
-    intellect, intelligent, smart
-ȷane:
+  shortN: jumper
+  shortV: jumper
+  longN: |
+    life that uses primarily jumping as locomotion, to jump
+  longV: |
+    life that uses primarily jumping as locomotion, to jump
+b́eé:
   type: leaf
-  short: the internet
-  long: |
-    the set of relatively predictable distinctive behaviors found within the internet, internet culture, the internet as a “place”
+  shortN: carry
+  shortV: carry
+  longN: |
+    lift, hold, and move as a single event
+  longV: |
+    lift, hold, and move as a single event
+b́on:
+  type: leaf
+  shortN: good deed
+  shortV: good deed
+  dupl: b́o n
+  longN: |
+    good deed, charity, meritorious act
+  longV: |
+    good deed, charity, meritorious act
+b́ólon:
+  type: leaf
+  shortN: big cat
+  shortV: big cat
+  dupl: b́ó lo n
+  longN: |
+    relatively large predator that thrives nocturnally though can still function during the day and are extremely flexible
+  longV: |
+    relatively large predator that thrives nocturnally though can still function during the day and are extremely flexible
+b́usuǵu:
+  type: leaf
+  shortN: night
+  shortV: night
+  dupl: b́u su ǵu
+  longN: |
+    the time after which normal activity ceases, and in which most are asleep
+  longV: |
+    the time after which normal activity ceases, and in which most are asleep
+b́úun:
+  type: leaf
+  shortN: tuber
+  shortV: tuber
+  longN: |
+    a fleshy, thickened underground stem of a plant, usually containing stored starch
+  longV: |
+    a fleshy, thickened underground stem of a plant, usually containing stored starch
+caá:
+  type: leaf
+  shortN: tea
+  shortV: tea
+  longN: |
+    boiled dried leaves drink
+  longV: |
+    boiled dried leaves drink
+can:
+  type: leaf
+  shortN: c
+  shortV: c
+  longN: |
+    refers to a previous leaf beginning with the letter c
+  longV: |
+    refers to a previous leaf beginning with the letter c
+cágu:
+  type: leaf
+  shortN: drink
+  shortV: drink
+  longN: |
+    any fluid possible and safe to drink
+  longV: |
+    any fluid possible and safe to drink
+cákı:
+  type: leaf
+  shortN: chess
+  shortV: chess
+  longN: |
+    chess, fairy chess, shogi
+  longV: |
+    chess, fairy chess, shogi
+ceé:
+  type: prefix
+  shortN: six
+  shortV: six
+  longN: |
+    numeral six, 6
+  longV: |
+    numeral six, 6
+céen:
+  type: leaf
+  shortN: morning
+  shortV: morning
+  dupl: cée n
+  longN: |
+    morning, the time of day where things begin to happen
+  longV: |
+    morning, the time of day where things begin to happen
+céro:
+  type: prefix
+  shortN: zero
+  shortV: zero
+  dupl: cé ro
+  longN: |
+    numeral zero, 0
+  longV: |
+    numeral zero, 0
+cıı́n:
+  type: leaf
+  shortN: use
+  shortV: use
+  dupl: cıı́<69105>n
+  longN: |
+    to use
+  longV: |
+    to use
 cıȷa:
   type: leaf
-  short: midnight
-  dupl: cı ȷa
-  long: |
+  shortN: midnight
+  shortV: midnight
+  dupl: cı<69105>ȷa
+  longN: |
     twelve o'clock at night
     
     forms lexical phrase times when the tail of numbers
@@ -1191,50 +198,408 @@ cıȷa:
     {Tıı́} {cıȷa}
     
     3am
-mytı́n:
-  type: leaf
-  short: 6am
-  dupl: mytı́ n
-  long: |
-    six o'clock in the morning
+  longV: |
+    twelve o'clock at night
     
     forms lexical phrase times when the tail of numbers
     
-    {Dón} {mytı́n}
+    {Tıı́} {cıȷa}
     
-    11am
-nun:
+    3am
+cısolan:
   type: leaf
-  short: noon
-  dupl: nu n
-  long: |
-    twelve o'clock in the morning
-    
-    forms lexical phrase times when the tail of numbers
-    
-    {Fı́ı} {nun}
-    
-    4pm
-ráan:
+  shortN: insolating
+  shortV: insolating
+  dupl: cı so lan
+  longN: |
+    something that prevents energy from passing through
+  longV: |
+    something that prevents energy from passing through
+cıson:
   type: leaf
-  short: 6pm
-  long: |
-    six o'clock at night
-    
-    forms lexical phrase times when the tail of numbers
-    
-    {Dı́ı} {ráan}
-    
-    8pm
-t́áa:
+  shortN: child
+  shortV: child
+  dupl: cı so n
+  longN: |
+    descendant, scion, heir
+  longV: |
+    descendant, scion, heir
+cıtıı́:
+  type: leaf
+  shortN: concentrate
+  shortV: concentrate
+  dupl: cı<69105>tıı́
+  longN: |
+     concentrate, focus, concentration
+  longV: |
+     concentrate, focus, concentration
+cı́be:
+  type: leaf
+  shortN: bear
+  shortV: bear
+  dupl: cı́ be
+  longN: |
+     massive predatory animal that is not primarily a predator
+  longV: |
+     massive predatory animal that is not primarily a predator
+cı́ı:
+  type: particle
+  shortN: option constructor
+  shortV: option constructor
+  dupl: cı́ı
+  longN: |
+    leaf, leaf => leaf or leaf
+  longV: |
+    leaf, leaf => leaf or leaf
+cóndı:
+  type: leaf
+  shortN: deep
+  shortV: deep
+  dupl: có n dı
+  longN: |
+    deep, deep hole
+  longV: |
+    deep, deep hole
+cónhe:
+  type: leaf
+  shortN: something
+  shortV: something
+  dupl: có n he
+  longN: |
+    something, anything
+  longV: |
+    something, anything
+cóou:
+  type: leaf
+  shortN: most
+  shortV: most
+  dupl: cóo u
+  longN: |
+    most, in excess of all others
+  longV: |
+    most, in excess of all others
+cubá:
+  type: leaf
+  shortN: try
+  shortV: try
+  dupl: cu bá
+  longN: |
+    to try; to attempt to do.
+  longV: |
+    to try; to attempt to do.
+cúde:
+  type: leaf
+  shortN: should
+  shortV: should
+  longN: |
+     ought to, obligated to, expected to
+  longV: |
+     ought to, obligated to, expected to
+cúı:
   type: prefix
-  short: all
-  long: |
-    all, every
+  shortN: not X, but also no unX
+  shortV: not X, but also no unX
+  dupl: cú ı
+  longN: |
+    conceptually between a clause and its opposite
+  longV: |
+    conceptually between a clause and its opposite
+cúnba:
+  type: leaf
+  shortN: bug
+  shortV: bug
+  dupl: cún ba
+  longN: |
+    life with an exoskeleton
+  longV: |
+    life with an exoskeleton
+cúnmı:
+  type: leaf
+  shortN: grain
+  shortV: grain
+  longN: |
+    some quantity of grain
+  longV: |
+    some quantity of grain
+cútıı́:
+  type: leaf
+  shortN: shoe
+  shortV: shoe
+  longN: |
+    shoe, boot, sandal, foot covering/protection
+  longV: |
+    shoe, boot, sandal, foot covering/protection
+cya:
+  type: leaf
+  shortN: play
+  shortV: play
+  longN: |
+    act in a manner such to have fun, play
+  longV: |
+    act in a manner such to have fun, play
+cyýdá:
+  type: leaf
+  shortN: time
+  shortV: time
+  longN: |
+   the inevitable passing of events from future to present then past, a measurement of a quantity of time, a numerical indication of a length of time, free time, leisure, spare time
+  longV: |
+   the inevitable passing of events from future to present then past, a measurement of a quantity of time, a numerical indication of a length of time, free time, leisure, spare time
+daán:
+  type: leaf
+  shortN: hit
+  shortV: hit
+  longN: |
+    hit, strike
+  longV: |
+    hit, strike
+daá:
+  type: leaf
+  shortN: greet
+  shortV: greet
+  longN: |
+    to welcome or greet
+  longV: |
+    to welcome or greet
+dan:
+  type: leaf
+  shortN: modify
+  shortV: modify
+  longN: |
+    to destructively make/edit, to change something in a way that is difficult to undo
+  longV: |
+    to destructively make/edit, to change something in a way that is difficult to undo
+da:
+  type: leaf
+  shortN: person
+  shortV: person
+  longN: |
+   socially intelligent or sentient being
+  longV: |
+   socially intelligent or sentient being
+de:
+  type: leaf
+  shortN: day
+  shortV: day
+  longN: |
+    the time between one midnight and the next
+  longV: |
+    the time between one midnight and the next
+dı:
+  type: leaf
+  shortN: equals
+  shortV: equals
+  longN: |
+    to equal, be the same thing as
+  longV: |
+    to equal, be the same thing as
+dı́ı:
+  type: prefix
+  shortN: two
+  shortV: two
+  longN: |
+    numeral two, 2
+  longV: |
+    numeral two, 2
+docı:
+  type: leaf
+  shortN: older sibling
+  shortV: older sibling
+  dupl: do cı
+  longN: |
+   older or more senior sibling
+  longV: |
+   older or more senior sibling
+doka:
+  type: leaf
+  shortN: doctor
+  shortV: doctor
+  dupl: do ka
+  longN: |
+    medical assistant, doctor, someone educated on and practicing medicine
+  longV: |
+    medical assistant, doctor, someone educated on and practicing medicine
+doó:
+  type: prefix
+  shortN: o’
+  shortV: o’
+  longN: |
+    grammatically does acts like {nı́ı} but denotes the tail is the intended listener
+  longV: |
+    grammatically does acts like {nı́ı} but denotes the tail is the intended listener
+doron:
+  type: leaf
+  shortN: kind
+  shortV: kind
+  dupl: do ro n
+  longN: |
+    type, kind, variety, sort, genre
+  longV: |
+    type, kind, variety, sort, genre
+dómo:
+  type: leaf
+  shortN: home
+  shortV: home
+  longN: |
+    house, home, residence, nest, den
+  longV: |
+    house, home, residence, nest, den
+dón:
+  type: prefix
+  shortN: five
+  shortV: five
+  dupl: dó n
+  longN: |
+    numeral five, 5
+  longV: |
+    numeral five, 5
+dóo:
+  type: leaf
+  shortN: line
+  shortV: line
+  longN: |
+    Something linear, thin, long
+  longV: |
+    Something linear, thin, long
+duú:
+  type: leaf
+  shortN: more
+  shortV: more
+  longN: |
+    more, in excess of others
+  longV: |
+    more, in excess of others
+dúun:
+  type: leaf
+  shortN: fact
+  shortV: fact
+  dupl: dúu n
+  longN: |
+    fact, truth
+  longV: |
+    fact, truth
+dyn:
+  type: leaf
+  shortN: d
+  shortV: d
+  longN: |
+    refers to a previous leaf beginning with the letter d
+  longV: |
+    refers to a previous leaf beginning with the letter d
+d́an:
+  type: leaf
+  shortN: right
+  shortV: right
+  longN: |
+    rightward, to the right, the right side
+  longV: |
+    rightward, to the right, the right side
+d́áan:
+  type: leaf
+  shortN: weave
+  shortV: weave
+  longN: |
+    Interlace material, knit, weave, plait hair
+  longV: |
+    Interlace material, knit, weave, plait hair
+d́ée:
+  type: leaf
+  shortN: run
+  shortV: run
+  longN: |
+    to run
+  longV: |
+    to run
+d́óon:
+  type: leaf
+  shortN: ear
+  shortV: ear
+  dupl: d́óo n
+  longN: |
+    body part used to hear
+  longV: |
+    body part used to hear
+fala:
+  type: leaf
+  shortN: error
+  shortV: error
+  longN: |
+     mistake, error, discrepancy, flaw
+  longV: |
+     mistake, error, discrepancy, flaw
+fan:
+  type: leaf
+  shortN: f
+  shortV: f
+  longN: |
+    refers to a previous leaf beginning with the letter f
+  longV: |
+    refers to a previous leaf beginning with the letter f
+fále:
+  type: leaf
+  shortN: chip/chrisp
+  shortV: chip/chrisp
+  longN: |
+    thin crispy food, chip/chrisp
+  longV: |
+    thin crispy food, chip/chrisp
+feé:
+  type: leaf
+  shortN: fly
+  shortV: fly
+  longN: |
+    life that uses primarily flying as locomotion, to fly
+  longV: |
+    life that uses primarily flying as locomotion, to fly
+fın:
+  type: leaf
+  shortN: feel
+  shortV: feel
+  dupl: fı n
+  longN: |
+    be conscious of something, perceive, feel physically or emotionally
+  longV: |
+    be conscious of something, perceive, feel physically or emotionally
+fı́ı:
+  type: prefix
+  shortN: four
+  shortV: four
+  longN: |
+    numeral four, 4
+  longV: |
+    numeral four, 4
+fı́ta:
+  type: leaf
+  shortN: debate
+  shortV: debate
+  dupl: fı́ ta
+  longN: |
+   debate for the sake of discussion
+  longV: |
+   debate for the sake of discussion
+funxıı́n:
+  type: leaf
+  shortN: distract
+  shortV: distract
+  dupl: fu n xıı́ n
+  longN: |
+     distract, trouble, worry
+  longV: |
+     distract, trouble, worry
+fuúpuún:
+  type: leaf
+  shortN: iridescent
+  shortV: iridescent
+  dupl: fuú puún
+  longN: |
+    something that is iridescent, color depends on the angle
+  longV: |
+    something that is iridescent, color depends on the angle
 fýyré:
   type: leaf
-  short: before
-  long: |
+  shortN: before
+  shortV: before
+  longN: |
     something that precedes something else in some ordered list
     
     forms lexical phrase ordinals with numbers
@@ -1242,734 +607,2528 @@ fýyré:
     {Keé} {céro} _____ {fýyré}
     
     first _____, 0th _____(with 0 indexing)
-b́eé:
+  longV: |
+    something that precedes something else in some ordered list
+    
+    forms lexical phrase ordinals with numbers
+    
+    {Keé} {céro} _____ {fýyré}
+    
+    first _____, 0th _____(with 0 indexing)
+gaá:
   type: leaf
-  short: carry
-  long: |
-    lift, hold, and move as a single event
-d́an:
+  shortN: toy
+  shortV: toy
+  longN: |
+    toy, plaything
+  longV: |
+    toy, plaything
+gan:
   type: leaf
-  short: right
-  long: |
-    rightward, to the right, the right side
-b́usuǵu:
+  shortN: go
+  shortV: go
+  longN: |
+   to go, walk, leave
+  longV: |
+   to go, walk, leave
+géen:
   type: leaf
-  short: night
-  dupl: b́u su ǵu
-  long: |
-    the time after which normal activity ceases, and in which most are asleep
-ǵucá:
+  shortN: dog
+  shortV: dog
+  dupl: gée n
+  longN: |
+    preditor known for its trainability and loyalty
+  longV: |
+    preditor known for its trainability and loyalty
+gón:
   type: leaf
-  short: food
-  dupl: ǵu cá
-  long: |
-    food, nutrition, meal, dish
-múd́a:
-  type: leaf
-  short: time-span
-  dupl: mú d́a
-  long: |
-    term, period of time, span of time
-d́ée:
-  type: leaf
-  short: run
-  long: |
-    to run
-túunb́en:
-  type: leaf
-  short: new
-  dupl: túu n b́e n
-  long: |
-    new
-paḱáa:
-  type: leaf
-  short: orange
-  long: |
-    fruit from a tree of the citrus genus
-t́óovy:
-  type: leaf
-  short: brick
-  dupl: t́óo vy
-  long: |
-    brick, block, ingot, to seal up, to seal
-ḱucedı́ı:
-  type: leaf
-  short: star
-  dupl: ḱu ce dı́ı
-  long: |
-    stellar celestial body
-ḱoxonı:
-  type: leaf
-  short: mosquito
-  long: |
-    sanguivores of the order diptera
-b́on:
-  type: leaf
-  short: good deed
-  dupl: b́o n
-  long: |
-    good deed, charity, meritorious act
-ḱylýn:
-  type: leaf
-  short: tongue
-  long: |
-    mouth tentacle
-táḱın:
-  type: leaf
-  short: money
-  dupl: táḱı n
-  long: |
-    something that can be used to trade for a wide array of goods and services
-b́ólon:
-  type: leaf
-  short: big cat
-  dupl: b́ó lo n
-  long: |
-    relatively large predator that thrives nocturnally though can still function during the day and are extremely flexible
-ḱoṕauú:
-  type: leaf
-  short: prepared
-  dupl: ḱo ṕa uú
-  long: |
-    to be prepared, preparations
-d́óon:
-  type: leaf
-  short: ear
-  dupl: d́óo n
-  long: |
-    body part used to hear
-hyb́e:
-  type: leaf
-  short: wild cat
-  long: |
-    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably not make a good pet
-b́úun:
-  type: leaf
-  short: tuber
-  long: |
-    a fleshy, thickened underground stem of a plant, usually containing stored starch
-kı́tı́:
-  type: leaf
-  short: cat
-  dupl: kı́ tı́
-  long: |
-    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably make a good pet
-śan:
-  type: leaf
-  short: jump
-  long: |
-    to jump, rapid upward motion that requires far more effort than {býn}
-táśı:
-  type: leaf
-  short: land
-  long: |
-    land, ground, earth, dirt, soil, terrain, field, region, country
-śýdan:
-  type: leaf
-  short: wide
-  long: |
-    wide, broad, extensive
-sı́ȷı́ı:
-  type: leaf
-  short: flirt
-  long: |
-    to tease or joke in a way where all involved parties enjoy it. may be sexual, romantic, or surrealist. also, one who does this habitually
-sıva:
-  type: leaf
-  short: run
-  dupl: sı va
-  long: |
-    perform a predefined sequence of events
-kıca:
-  type: leaf
-  short: attach
-  dupl: kı ca
-  long: |
-    to attach together, unify, or fuse
-salı:
-  type: leaf
-  short: touch
-  long: |
-    to barely contact, potentially metaphorically, ie “barely touch upon” an idea
-xexe:
-  type: leaf
-  short: grudge
-  dupl: xe xe
-  long: |
-    to write someone off as a lost cause not worth attempting to reconcile with
-palan:
-  type: leaf
-  short: annoying
-  long: |
-    someone who often makes things up, a fraud, a habitual liar
+  shortN: air
+  shortV: air
+  dupl: gó n
+  longN: |
+    wind, air, breathable gas
+  longV: |
+    wind, air, breathable gas
 gun:
   type: leaf
-  short: rock
-  long: |
+  shortN: rock
+  shortV: rock
+  longN: |
     rock, stone, gravel, frozen soil, anything hard and from the ground
-todıı́:
+  longV: |
+    rock, stone, gravel, frozen soil, anything hard and from the ground
+gúun:
   type: leaf
-  short: poison
-  dupl: to dıı́
-  long: |
-    any fluid possible but not safe to drink
-cágu:
+  shortN: mass
+  shortV: mass
+  longN: |
+    aggregate mass
+  longV: |
+    aggregate mass
+gyn:
   type: leaf
-  short: drink
-  long: |
-    any fluid possible and safe to drink
-tánu:
+  shortN: g
+  shortV: g
+  longN: |
+    refers to a previous leaf beginning with the letter g
+  longV: |
+    refers to a previous leaf beginning with the letter g
+ǵucá:
   type: leaf
-  short: head
-  long: |
-    head, brain, metaphorically mass of collected knowledge
-láan:
+  shortN: food
+  shortV: food
+  dupl: ǵu cá
+  longN: |
+    food, nutrition, meal, dish
+  longV: |
+    food, nutrition, meal, dish
+hakı:
   type: leaf
-  short: mud
-  long: |
-    wet sand, swampy soil, muck, mud, moist sediment
-sócıȷa:
+  shortN: flag
+  shortV: flag
+  longN: |
+    a cloth that represents a community
+  longV: |
+    a cloth that represents a community
+halı:
   type: leaf
-  short: god(des)
-  dupl: só cı ȷa
-  long: |
-    god, goddess, deity, focus of worship, to worship
-xoe:
+  shortN: remove
+  shortV: remove
+  longN: |
+    to remove, to take away, to take off
+  longV: |
+    to remove, to take away, to take off
+han:
   type: leaf
-  short: blood
-  dupl: xo e
-  long: |
-    blood, liquid that runs inside the body and maintains life
-śatoáan:
+  shortN: h
+  shortV: h
+  longN: |
+    refers to a previous leaf beginning with the letter h
+  longV: |
+    refers to a previous leaf beginning with the letter h
+hare:
   type: leaf
-  short: king
-  dupl: śato áan
-  long: |
-    chieftain, king, a ruler of unquestionable authority
-śánu:
+  shortN: love
+  shortV: love
+  longN: |
+    a group of someone's lovers (may be one person if part of a couple, no one if single, or more than one person in a polyamorous relationship)
+    
+    {Huma} {ı} {nı́n} {lı́} {lı́} {voré} {nı́n} {keé} {mı} {hare}
+    
+    Do you want to be part of my harem?
+  longV: |
+    a group of someone's lovers (may be one person if part of a couple, no one if single, or more than one person in a polyamorous relationship)
+    
+    {Huma} {ı} {nı́n} {lı́} {lı́} {voré} {nı́n} {keé} {mı} {hare}
+    
+    Do you want to be part of my harem?
+haza:
   type: leaf
-  short: tide
-  long: |
-    periodic change of the sea level, to fill something with a fluid temporarily
-śıro:
+  shortN: see
+  shortV: see
+  longN: |
+   perceive with the eyes
+  longV: |
+   perceive with the eyes
+háa:
   type: leaf
-  short: slide
-  dupl: śı ro
-  long: |
-     to slip, slide, glide
-śáa:
-  type: leaf
-  short: hand
-  long: |
-     tip of a grasping appendage
-śın:
-  type: leaf
-  short: lake
-  dupl: śı n
-  long: |
-     landlocked body of freshwater
-śádın:
-  type: leaf
-  short: latin
-  dupl: śádı n
-  long: |
-     ancient rome (and descendants of what was roman)
-śıı́n:
-  type: leaf
-  short: pet
-  dupl: śıı́ n
-  long: |
-     owned animal, pet, livestock
-śuı:
-  type: leaf
-  short: spoon
-  dupl: śu ı
-  long: |
-     handheld bowled utensil
-sıpa:
-  type: leaf
-  short: grey
-  dupl: sı pa
-  long: |
-     desaturated, not bright, and not dark
-śuúvan:
-  type: leaf
-  short: platform
-  dupl: śuú van
-  long: |
-     stage, platform
-śuún:
-  type: leaf
-  short: shrub
-  long: |
-     bush, shrub, brushwood, a mass of sticks
-howaá:
-  type: leaf
-  short: calm
-  long: |
-    calm, relaxed, slow breathing, or ome who is
-unéen:
-  type: leaf
-  short: page
-  long: |
-    paper, page, book, web page
-t́aga:
-  type: leaf
-  short: worry
-  long: |
-    to worry about, fret over, object of concern
-otóo:
-  type: leaf
-  short: race
-  long: |
-    to compete over speed
-sáa:
-  type: leaf
-  short: family
-  long: |
-    family, clan
-fále:
-  type: leaf
-  short: chip/chrisp
-  long: |
-    thin crispy food, chip/chrisp
-raán:
-  type: leaf
-  short: plank
-  long: |
-    long rectangular prism, beam, plank, board
-kukaḱı́:
-  type: leaf
-  short: praise
-  long: |
-    praise, to say something good about someone
-kı́ṕa:
-  type: leaf
-  short: sinew
-  long: |
-    sinew, tendon
-xáfa:
-  type: leaf
-  short: hole
-  long: |
-    dent, breach, shallow hole
-mıı́:
-  type: leaf
-  short: hollow
-  long: |
-    hollow, empty, either physically or emotionally
-sáka:
-  type: leaf
-  short: win
-  long: |
-    finish, conclude, success, win
-nóva:
-  type: leaf
-  short: water
-  long: |
-    water, h20, the material with which ice is made
-nóǵo:
-  type: leaf
-  short: sleep
-  long: |
-    sleep, rest, be unconscious
+  shortN: shiny
+  shortV: shiny
+  longN: |
+    something that is shiny, reflective
+  longV: |
+    something that is shiny, reflective
 hánée:
   type: leaf
-  short: rope
-  long: |
+  shortN: rope
+  shortV: rope
+  longN: |
     rope, coil, yarn
-śuxan:
+  longV: |
+    rope, coil, yarn
+hée:
   type: leaf
-  short: noise
-  long: |
-    noise, randomness, mess, static
-paráa:
+  shortN: boss
+  shortV: boss
+  longN: |
+    boss, person in command, person who directly oversees work being done, director
+  longV: |
+    boss, person in command, person who directly oversees work being done, director
+howaá:
   type: leaf
-  short: word
-  long: |
-    word, morpheme, lexeme, unit of language
-xynde:
+  shortN: calm
+  shortV: calm
+  dupl: ho waá
+  longN: |
+    calm, relaxed, slow breathing, or ome who is
+  longV: |
+    calm, relaxed, slow breathing, or ome who is
+huda:
   type: leaf
-  short: trade
-  long: |
-    agents exchange patients
-cútıı́:
+  shortN: plan
+  shortV: plan
+  dupl: hu da
+  longN: |
+   project, projected course, plan
+  longV: |
+   project, projected course, plan
+huma cı́ı _____ _____:
+  type: phrase
+  shortN: interrogative multiple choice question constructor
+  shortV: interrogative multiple choice question constructor
+  dupl: hu macı́ı _ _
+  longN: |
+    embeded clauses form an interogative or phrase
+  longV: |
+    embeded clauses form an interogative or phrase
+huma:
+  type: prefix
+  shortN: yes/no?
+  shortV: yes/no?
+  dupl: hu ma
+  longN: |
+    used to question a clause
+  longV: |
+    used to question a clause
+hunde:
   type: leaf
-  short: shoe
-  long: |
-    shoe, boot, sandal, foot covering/protection
+  shortN: tomorow
+  shortV: tomorow
+  dupl: hu n de
+  longN: |
+    the next time between one midnight and the next after the current one
+  longV: |
+    the next time between one midnight and the next after the current one
+hungıı́n:
+  type: leaf
+  shortN: will
+  shortV: will
+  dupl: hu n gıı́ n
+  longN: |
+    something in the future
+  longV: |
+    something in the future
+hunneé:
+  type: leaf
+  shortN: collective
+  shortV: collective
+  dupl: hu n neé
+  longN: |
+    Society of organisms in which it is typical for organisms to care for each other's offspring, have overlapping generations of adults, and not all organisms have the desire to reproduce. This may include some groups of ants, bees, humans, mole-rats, parasitic shrimp, termites, and wasps
+  longV: |
+    Society of organisms in which it is typical for organisms to care for each other's offspring, have overlapping generations of adults, and not all organisms have the desire to reproduce. This may include some groups of ants, bees, humans, mole-rats, parasitic shrimp, termites, and wasps
+húparı:
+  type: leaf
+  shortN: hoodie
+  shortV: hoodie
+  longN: |
+    hooded jacket or sweatshirt
+  longV: |
+    hooded jacket or sweatshirt
+hyb́e:
+  type: leaf
+  shortN: wild cat
+  shortV: wild cat
+  longN: |
+    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably not make a good pet
+  longV: |
+    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably not make a good pet
+hýyban:
+  type: leaf
+  shortN: hýyban
+  shortV: hýyban
+  longN: |
+    This language
+  longV: |
+    This language
+ȷaán:
+  type: leaf
+  shortN: salamander
+  shortV: salamander
+  longN: |
+    smooth skinned semi aquatic life with slender bodies, a tail, and legs
+  longV: |
+    smooth skinned semi aquatic life with slender bodies, a tail, and legs
+ȷaá:
+  type: particle
+  shortN: passive agent attacher
+  shortV: passive agent attacher
+  longN: |
+    leaf, agent => agent which has leaf as relative clause
+  longV: |
+    leaf, agent => agent which has leaf as relative clause
+ȷane:
+  type: leaf
+  shortN: the internet
+  shortV: the internet
+  longN: |
+    the set of relatively predictable distinctive behaviors found within the internet, internet culture, the internet as a “place”
+  longV: |
+    the set of relatively predictable distinctive behaviors found within the internet, internet culture, the internet as a “place”
+ȷan:
+  type: leaf
+  shortN: ȷ
+  shortV: ȷ
+  longN: |
+    refers to a previous leaf beginning with the letter ȷ
+  longV: |
+    refers to a previous leaf beginning with the letter ȷ
+ȷáan:
+  type: leaf
+  shortN: give
+  shortV: give
+  longN: |
+    transfer the possession of something to someone else
+  longV: |
+    transfer the possession of something to someone else
+ȷáa:
+  type: leaf
+  shortN: you!
+  shortV: you!
+  longN: |
+    second person pronoun and command marker
+  longV: |
+    second person pronoun and command marker
+ȷáman:
+  type: leaf
+  shortN: bad
+  shortV: bad
+  longN: |
+    bad, wicked, evil, ill-natured, malicious
+  longV: |
+    bad, wicked, evil, ill-natured, malicious
+ȷána:
+  type: leaf
+  shortN: onion
+  shortV: onion
+  longN: |
+    a shortened, compressed, underground stem of a plant
+  longV: |
+    a shortened, compressed, underground stem of a plant
+ȷáno:
+  type: leaf
+  shortN: ring
+  shortV: ring
+  longN: |
+    ring, torus, donut
+  longV: |
+    ring, torus, donut
+ȷán:
+  type: leaf
+  shortN: move
+  shortV: move
+  longN: |
+    to change positions
+  longV: |
+    to change positions
+ȷéen:
+  type: leaf
+  shortN: army
+  shortV: army
+  dupl: ȷée n
+  longN: |
+    army, military
+  longV: |
+    army, military
+ȷın:
+  type: leaf
+  shortN: snake
+  shortV: snake
+  dupl: ȷı<69105>n
+  longN: |
+    scaled life with slender bodies, a tail, no legs
+  longV: |
+    scaled life with slender bodies, a tail, no legs
+ȷı́ı:
+  type: leaf
+  shortN: frog
+  shortV: frog
+  longN: |
+    smooth skinned semi aquatic life that uses jumping as a form of locomotion
+  longV: |
+    smooth skinned semi aquatic life that uses jumping as a form of locomotion
+ȷopınıı́:
+  type: leaf
+  shortN: opine
+  shortV: opine
+  dupl: ȷo pı nıı́
+  longN: |
+    to have an opinion, opine, opinion
+  longV: |
+    to have an opinion, opine, opinion
+ȷuosaá:
+  type: leaf
+  shortN: USA
+  shortV: USA
+  dupl: ȷu osaá
+  longN: |
+    The United States of America
+  longV: |
+    The United States of America
+ȷynta:
+  type: leaf
+  shortN: friend
+  shortV: friend
+  dupl: ȷyn ta
+  longN: |
+   close friend with who you feel you can share anything with
+  longV: |
+   close friend with who you feel you can share anything with
+kafé:
+  type: leaf
+  shortN: coffee
+  shortV: coffee
+  longN: |
+    coffee drink
+  longV: |
+    coffee drink
+kalu:
+  type: particle
+  shortN: if
+  shortV: if
+  dupl: ka lu
+  longN: |
+    leaf, leaf => supposing that the first leaf is true, the second is asserted
+  longV: |
+    leaf, leaf => supposing that the first leaf is true, the second is asserted
+kan:
+  type: leaf
+  shortN: k
+  shortV: k
+  longN: |
+    refers to a previous leaf beginning with the letter k
+  longV: |
+    refers to a previous leaf beginning with the letter k
+kata:
+  type: leaf
+  shortN: card
+  shortV: card
+  longN: |
+    card, playing card, debit card, credit card, computer tab
+  longV: |
+    card, playing card, debit card, credit card, computer tab
+káan:
+  type: leaf
+  shortN: look
+  shortV: look
+  longN: |
+    to look, intentionally try to see, watch, read, observe
+  longV: |
+    to look, intentionally try to see, watch, read, observe
+kála:
+  type: leaf
+  shortN: fish
+  shortV: fish
+  longN: |
+    life that uses primarily swimming as locomotion, to swim
+  longV: |
+    life that uses primarily swimming as locomotion, to swim
+káma:
+  type: leaf
+  shortN: become 
+  shortV: become 
+  longN: |
+    to become, start to, begin, but not to arrive
+  longV: |
+    to become, start to, begin, but not to arrive
+kápa:
+  type: leaf
+  shortN: cloak
+  shortV: cloak
+  longN: |
+    long sleeveless overcoat, cloak, cape
+  longV: |
+    long sleeveless overcoat, cloak, cape
+kásı:
+  type: leaf
+  shortN: plant
+  shortV: plant
+  longN: |
+    plant
+  longV: |
+    plant
+kede:
+  type: leaf
+  shortN: is
+  shortV: is
+  dupl: ke de
+  longN: |
+    the currently ongoing time between one midnight and the next
+  longV: |
+    the currently ongoing time between one midnight and the next
+keé:
+  type: particle
+  shortN: genitive attacher
+  shortV: genitive attacher
+  longN: |
+    genitive, leaf => leaf with possessor attached
+  longV: |
+    genitive, leaf => leaf with possessor attached
+keren:
+  type: leaf
+  shortN: is
+  shortV: is
+  dupl: ke re n
+  longN: |
+    something in the present
+  longV: |
+    something in the present
+kélo:
+  type: leaf
+  shortN: body
+  shortV: body
+  dupl: ké lo
+  longN: |
+    body, physical structure of a living human or animal, shape or form of some object
+  longV: |
+    body, physical structure of a living human or animal, shape or form of some object
+kıca:
+  type: leaf
+  shortN: attach
+  shortV: attach
+  dupl: kı ca
+  longN: |
+    to attach together, unify, or fuse
+  longV: |
+    to attach together, unify, or fuse
+kıra:
+  type: leaf
+  shortN: small
+  shortV: small
+  dupl: kı ra
+  longN: |
+    small, mini, tiny
+  longV: |
+    small, mini, tiny
+kı́fe:
+  type: leaf
+  shortN: argue
+  shortV: argue
+  dupl: kı́ fe
+  longN: |
+   debate for the sake convincing the other parties
+  longV: |
+   debate for the sake convincing the other parties
+kı́lı:
+  type: leaf
+  shortN: fruit
+  shortV: fruit
+  dupl: kı́ lı
+  longN: |
+    fruit
+  longV: |
+    fruit
+kı́ṕa:
+  type: leaf
+  shortN: sinew
+  shortV: sinew
+  dupl: kı́ ṕa
+  longN: |
+    sinew, tendon
+  longV: |
+    sinew, tendon
+kı́rı:
+  type: leaf
+  shortN: letter
+  shortV: letter
+  dupl: kı́ rı
+  longN: |
+    writing, letter (message), font, script
+  longV: |
+    writing, letter (message), font, script
+kı́sa:
+  type: leaf
+  shortN: done
+  shortV: done
+  dupl: kı́ sa
+  longN: |
+    ripe, mature, cooked, fed up
+  longV: |
+    ripe, mature, cooked, fed up
+kı́tı́:
+  type: leaf
+  shortN: cat
+  shortV: cat
+  dupl: kı́ tı́
+  longN: |
+    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably make a good pet
+  longV: |
+    relatively small predator that thrives nocturnally though can still function during the day and are extremely flexible and would arguably make a good pet
+konrúu:
+  type: leaf
+  shortN: centipede, milipede
+  shortV: centipede, milipede
+  dupl: ko n rúu
+  longN: |
+    life with at least ten legs
+  longV: |
+    life with at least ten legs
+kónve:
+  type: leaf
+  shortN: convex
+  shortV: convex
+  dupl: kó n ve
+  longN: |
+    curves outwards
+  longV: |
+    curves outwards
+kóove:
+  type: leaf
+  shortN: monkey
+  shortV: monkey
+  dupl: kóo ve
+  longN: |
+    monkey, live birth giving arboreal warm blooded life
+  longV: |
+    monkey, live birth giving arboreal warm blooded life
+kórydu:
+  type: leaf
+  shortN: far
+  shortV: far
+  longN: |
+    somewhere far, distant, remote
+  longV: |
+    somewhere far, distant, remote
+kub́ú:
+  type: leaf
+  shortN: word
+  shortV: word
+  dupl: ku b́ú
+  longN: |
+    word or bit of vocabulary, message, statement, utterance, lyric, etc
+  longV: |
+    word or bit of vocabulary, message, statement, utterance, lyric, etc
+kukaḱı́:
+  type: leaf
+  shortN: praise
+  shortV: praise
+  dupl: ku kaḱı́
+  longN: |
+    praise, to say something good about someone
+  longV: |
+    praise, to say something good about someone
+kúnra:
+  type: leaf
+  shortN: mineral
+  shortV: mineral
+  dupl: kún ra
+  longN: |
+    mineral, ore, metal
+  longV: |
+    mineral, ore, metal
 kúntı:
   type: leaf
-  short: empty
-  long: |
+  shortN: empty
+  shortV: empty
+  dupl: kún tı
+  longN: |
     empty, vacuum, hollow
-cúnba:
+  longV: |
+    empty, vacuum, hollow
+kúun:
   type: leaf
-  short: bug
-  long: |
-    life with an exoskeleton
+  shortN: flat
+  shortV: flat
+  dupl: kúu n
+  longN: |
+    something that is flatly colored, all the same color and shade
+  longV: |
+    something that is flatly colored, all the same color and shade
+kymytı́:
+  type: leaf
+  shortN: argue
+  shortV: argue
+  longN: |
+    argue, debate
+  longV: |
+    argue, debate
+ḱoṕauú:
+  type: leaf
+  shortN: prepared
+  shortV: prepared
+  dupl: ḱo ṕa uú
+  longN: |
+    to be prepared, preparations
+  longV: |
+    to be prepared, preparations
+ḱoxonı:
+  type: leaf
+  shortN: mosquito
+  shortV: mosquito
+  longN: |
+    sanguivores of the order diptera
+  longV: |
+    sanguivores of the order diptera
+ḱucedı́ı:
+  type: leaf
+  shortN: star
+  shortV: star
+  dupl: ḱu ce dı́ı
+  longN: |
+    stellar celestial body
+  longV: |
+    stellar celestial body
+ḱúun:
+  type: leaf
+  shortN: glowing
+  shortV: glowing
+  dupl: ḱúu n
+  longN: |
+    something that emits light
+    
+    {I} {ı} {lı́} {zúno} {ḱúun} lı́ {sıbá} {mı} e {haza} {boró}
+    
+    We can see because the sun shines.
+  longV: |
+    something that emits light
+    
+    {I} {ı} {lı́} {zúno} {ḱúun} lı́ {sıbá} {mı} e {haza} {boró}
+    
+    We can see because the sun shines.
+ḱylýn:
+  type: leaf
+  shortN: tongue
+  shortV: tongue
+  dupl: ḱy lý n
+  longN: |
+    mouth tentacle
+  longV: |
+    mouth tentacle
+laán:
+  type: leaf
+  shortN: way
+  shortV: way
+  longN: |
+    path, way, method
+  longV: |
+    path, way, method
+la:
+  type: prefix
+  shortN: not
+  shortV: not
+  longN: |
+    used to negate a clause
+  longV: |
+    used to negate a clause
+láan:
+  type: leaf
+  shortN: mud
+  shortV: mud
+  longN: |
+    wet sand, swampy soil, muck, mud, moist sediment
+  longV: |
+    wet sand, swampy soil, muck, mud, moist sediment
+lı́ śatoáan morı́:
+  type: phrase
+  shortN: checkmate
+  shortV: checkmate
+  dupl: lı́ śato áanmo rı́
+  longN: |
+     said when winning chess
+  longV: |
+     said when winning chess
+lı́:
+  type: particle
+  shortN: patient attacher
+  shortV: patient attacher
+  longN: |
+    patient, leaf => leaf with patient attached
+  longV: |
+    patient, leaf => leaf with patient attached
+loká:
+  type: leaf
+  shortN: logic
+  shortV: logic
+  longN: |
+   an internally consistent and rigorously defined set of rules
+  longV: |
+   an internally consistent and rigorously defined set of rules
+lowen:
+  type: leaf
+  shortN: big
+  shortV: big
+  dupl: lo we n
+  longN: |
+    big, large
+  longV: |
+    big, large
+lócyban:
+  type: leaf
+  shortN: lojban
+  shortV: lojban
+  dupl: ló cyban
+  longN: |
+    any of the many dialects and reforms of the Lojban language
+  longV: |
+    any of the many dialects and reforms of the Lojban language
+lólúu:
+  type: leaf
+  shortN: textured
+  shortV: textured
+  dupl: ló lúu
+  longN: |
+    something that is visually textured
+  longV: |
+    something that is visually textured
+lyn:
+  type: leaf
+  shortN: l
+  shortV: l
+  longN: |
+    refers to a previous leaf beginning with the letter l
+  longV: |
+    refers to a previous leaf beginning with the letter l
+lysá:
+  type: leaf
+  shortN: let
+  shortV: let
+  longN: |
+    let, allow, give up, give way
+  longV: |
+    let, allow, give up, give way
+maá:
+  type: leaf
+  shortN: month
+  shortV: month
+  longN: |
+    month
+  longV: |
+    month
+máan:
+  type: leaf
+  shortN: milk
+  shortV: milk
+  longN: |
+    milk, to extract milk
+  longV: |
+    milk, to extract milk
+máa:
+  type: leaf
+  shortN: cat-like
+  shortV: cat-like
+  longN: |
+    to behave similar to a feline, or one who does so (includes some people, dragons, cats, etc)
+  longV: |
+    to behave similar to a feline, or one who does so (includes some people, dragons, cats, etc)
+méen:
+  type: leaf
+  shortN: measure
+  shortV: measure
+  longN: |
+    measure, check, look at something quantitatively
+  longV: |
+    measure, check, look at something quantitatively
+mé:
+  type: leaf
+  shortN: this, that
+  shortV: this, that
+  longN: |
+    a specific thing
+  longV: |
+    a specific thing
+mıı́:
+  type: leaf
+  shortN: hollow
+  shortV: hollow
+  longN: |
+    hollow, empty, either physically or emotionally
+  longV: |
+    hollow, empty, either physically or emotionally
+mı:
+  type: leaf
+  shortN: we
+  shortV: we
+  longN: |
+    first person pronoun
+  longV: |
+    first person pronoun
+mı́n:
+  type: leaf
+  shortN: increase
+  shortV: increase
+  dupl: mı́ n
+  longN: |
+    increasing in amount or intensity
+  longV: |
+    increasing in amount or intensity
 molaá:
   type: leaf
-  short: reward
-  long: |
+  shortN: reward
+  shortV: reward
+  dupl: mo laá
+  longN: |
+    reward, an experience or state of being caused as a reward, or to cause said state of being or experience
+  longV: |
     reward, an experience or state of being caused as a reward, or to cause said state of being or experience
 more:
   type: leaf
-  short: simple
-  long: |
+  shortN: simple
+  shortV: simple
+  dupl: mo re
+  longN: |
     minimal in certain features
+  longV: |
+    minimal in certain features
+morı́:
+  type: leaf
+  shortN: die
+  shortV: die
+  dupl: mo rı́
+  longN: |
+   die, stop living, death, kill
+  longV: |
+   die, stop living, death, kill
 munı:
   type: leaf
-  short: intuit
-  long: |
+  shortN: intuit
+  shortV: intuit
+  dupl: mu nı
+  longN: |
     intuit, intuition, to feel, to think, to predict
-maá:
+  longV: |
+    intuit, intuition, to feel, to think, to predict
+múd́a:
   type: leaf
-  short: month
-  long: |
-    month
-neé:
+  shortN: time-span
+  shortV: time-span
+  dupl: mú d́a
+  longN: |
+    term, period of time, span of time
+  longV: |
+    term, period of time, span of time
+múrén:
   type: leaf
-  short: like
-  long: |
-    to like, enjoy, be please by
-oó:
+  shortN: fascinating
+  shortV: fascinating
+  dupl: mú ré n
+  longN: |
+   charming, bewitching, engaging, bewildering
+  longV: |
+   charming, bewitching, engaging, bewildering
+múta:
   type: leaf
-  short: complain
-  long: |
-    complaint, to complain, oy, oi
-záa:
-  type: leaf
-  short: approve
-  long: |
-    approve, approval
-géen:
-  type: leaf
-  short: dog
-  long: |
-    preditor known for its trainability and loyalty
-daán:
-  type: leaf
-  short: hit
-  long: |
-    hit, strike
-céen:
-  type: leaf
-  short: morning
-  long: |
-    morning, the time of day where things begin to happen
-méen:
-  type: leaf
-  short: measure
-  long: |
-    measure, check, look at something quantitatively
-múun:
-  type: leaf
-  short: meaning
-  long: |
-    meaning, interpretation
-núun:
-  type: leaf
-  short: event
-  long: |
-    state, process, achievement, activity
-dúun:
-  type: leaf
-  short: fact
-  long: |
-    fact, truth
-súun:
-  type: leaf
-  short: leaf
-  long: |
-    point on a tree and all descendant nodes. this includes and is mainly used for referring to grammatical structures
-gúun:
-  type: leaf
-  short: mass
-  long: |
-    aggregate mass
-ȷéen:
-  type: leaf
-  short: army
-  long: |
-    army, military
-kóove:
-  type: leaf
-  short: monkey
-  long: |
-    monkey, live birth giving arboreal warm blooded life
-bóo:
-  type: leaf
-  short: stick
-  long: |
-    staff, stick-like or long cylindrical item: pointer, pole, rod, etc
-noruú:
-  type: leaf
-  short: ride 
-  long: |
-    ride, transportation based around sitting
-ȷáno:
-  type: leaf
-  short: ring
-  long: |
-    ring, torus, donut
-gaá:
-  type: leaf
-  short: toy
-  long: |
-    toy, plaything
-máan:
-  type: leaf
-  short: milk
-  long: |
-    milk, to extract milk
-buru:
-  type: leaf
-  short: hunt
-  long: |
-    chase down prey
-cya:
-  type: leaf
-  short: play
-  long: |
-    act in a manner such to have fun, play
-rúo:
-  type: leaf
-  short: cold
-  long: |
-    cold, low in temperature, ice
-áa:
-  type: prefix
-  short: beyond-
-  long: |
-    past, beyond, extra
-saá:
-  type: leaf
-  short: skin
-  long: |
-    skin, bark, shell, outer surface
-áa saá:
-  type: phrase
-  short: outside
-  long: |
-    outside, outdoors
-tázo:
-  type: leaf
-  short: contrast
-  long: |
-    different, contrast, but, however
-sélı:
-  type: leaf
-  short: fire
-  long: |
-    hot, high in temperature, fire
-cıson:
-  type: leaf
-  short: child
-  long: |
-    descendant, scion, heir
-cákı:
-  type: leaf
-  short: chess
-  long: |
-    chess, fairy chess, shogi
-d́áan:
-  type: leaf
-  short: weave
-  long: |
-    Interlace material, knit, weave, plait hair
-ókolo:
-  type: leaf
-  short: around
-  long: |
-     the area around/in the neighborhood of something
-okysona:
-  type: leaf
-  short: occasional
-  long: |
-     occurring or appearing irregularly from time to time, but not often
-fala:
-  type: leaf
-  short: error
-  long: |
-     mistake, error, discrepancy, flaw
-funxıı́n:
-  type: leaf
-  short: distract
-  long: |
-     distract, trouble, worry
-cı́be:
-  type: leaf
-  short: bear
-  long: |
-     massive predatory animal that is not primarily a predator
-cıtıı́:
-  type: leaf
-  short: concentrate
-  long: |
-     concentrate, focus, concentration
-pápa:
-  type: leaf
-  short: parent
-  long: |
-     parent, mother, father
-cúde:
-  type: leaf
-  short: should
-  long: |
-     ought to, obligated to, expected to
-suȷýáan:
-  type: leaf
-  short: sergeant
-  long: |
-     military sergeant
-áa suȷýáan:
-  type: phrase
-  short: sergeant major
-  long: |
-     military sergeant major or equivalent rank
-owe:
-  type: leaf
-  short: above
-  long: |
-     above, over, the area higher than something
-lı́ śatoáan morı́:
-  type: phrase
-  short: checkmate
-  long: |
-     said when winning chess
-kórydu:
-  type: leaf
-  short: far
-  long: |
-    somewhere far, distant, remote
-ȷáman:
-  type: leaf
-  short: bad
-  long: |
-    bad, wicked, evil, ill-natured, malicious
-kélo:
-  type: leaf
-  short: body
-  long: |
-    body, physical structure of a living human or animal, shape or form of some object
-ósa:
-  type: leaf
-  short: part
-  long: |
-    part, fraction of a whole, distinct element of something larger, piece, partial
-doron:
-  type: leaf
-  short: kind
-  long: |
-    type, kind, variety, sort, genre
-okoa:
-  type: leaf
-  short: different
-  long: |
-    different, separate, unrelated, another
-uno:
-  type: prefix
-  short: some
-  long: |
-    some, a few
+  shortN: urinate
+  shortV: urinate
+  dupl: mú ta
+  longN: |
+   pee, urine, urinate
+  longV: |
+   pee, urine, urinate
 mútı́ı:
   type: prefix
-  short: many
-  long: |
+  shortN: many
+  shortV: many
+  dupl: mú tı́ı
+  longN: |
     a lot of, many, much
-bógo:
+  longV: |
+    a lot of, many, much
+múun:
+  type: leaf
+  shortN: meaning
+  shortV: meaning
+  dupl: múu n
+  longN: |
+    meaning, interpretation
+  longV: |
+    meaning, interpretation
+myn:
+  type: leaf
+  shortN: m
+  shortV: m
+  longN: |
+    refers to a previous leaf beginning with the letter m
+  longV: |
+    refers to a previous leaf beginning with the letter m
+mytı́n:
+  type: leaf
+  shortN: 6am
+  shortV: 6am
+  dupl: mytı́ n
+  longN: |
+    six o'clock in the morning
+    
+    forms lexical phrase times when the tail of numbers
+    
+    {Dón} {mytı́n}
+    
+    11am
+  longV: |
+    six o'clock in the morning
+    
+    forms lexical phrase times when the tail of numbers
+    
+    {Dón} {mytı́n}
+    
+    11am
+mýn:
+  type: leaf
+  shortN: lizard
+  shortV: lizard
+  longN: |
+    scaled life with slender bodies, a tail, and legs
+  longV: |
+    scaled life with slender bodies, a tail, and legs
+naá:
+  type: leaf
+  shortN: get
+  shortV: get
+  longN: |
+   to take, hold, seize, capture, obtain
+  longV: |
+   to take, hold, seize, capture, obtain
+náan:
+  type: leaf
+  shortN: bread
+  shortV: bread
+  longN: |
+    any variety of 
+  longV: |
+    any variety of 
+neé:
+  type: leaf
+  shortN: like
+  shortV: like
+  longN: |
+    to like, enjoy, be please by
+  longV: |
+    to like, enjoy, be please by
+nı́ı:
   type: prefix
-  short: some
-  long: |
-    little, not much, few, not many
-lowen:
+  shortN: dummy word
+  shortV: dummy word
+  longN: |
+    used to prevent phrases from forming
+  longV: |
+    used to prevent phrases from forming
+nı́n:
   type: leaf
-  short: big
-  long: |
-    big, large
-kıra:
+  shortN: you
+  shortV: you
+  dupl: nı́ n
+  longN: |
+    second person pronoun
+  longV: |
+    second person pronoun
+nobe:
   type: leaf
-  short: small
-  long: |
-    small, mini, tiny
-pynsá:
+  shortN: fast
+  shortV: fast
+  dupl: no be 
+  longN: |
+    quick, fast, rapid
+  longV: |
+    quick, fast, rapid
+noruú:
   type: leaf
-  short: think
-  long: |
-    to think about, to think of, to have in mind
-ȷopınıı́:
+  shortN: ride
+  shortV: ride
+  dupl: no ruú
+  longN: |
+    ride, transportation based around sitting
+  longV: |
+    ride, transportation based around sitting
+nóǵo:
   type: leaf
-  short: opine
-  long: |
-    to have an opinion, opine, opinion
-kub́ú:
+  shortN: sleep
+  shortV: sleep
+  dupl: nó ǵo
+  longN: |
+    sleep, rest, be unconscious
+  longV: |
+    sleep, rest, be unconscious
+nóva:
   type: leaf
-  short: word
-  long: |
-    word or bit of vocabulary, message, statement, utterance, lyric, etc
-tıı́n:
+  shortN: water
+  shortV: water
+  longN: |
+    water, h20, the material with which ice is made
+  longV: |
+    water, h20, the material with which ice is made
+nugo:
   type: leaf
-  short: real
-  long: |
-    real, true, actual
-vuxe:
+  shortN: wrap
+  shortV: wrap
+  dupl: nu go
+  longN: |
+    to enclose or coil around with cloth
+  longV: |
+    to enclose or coil around with cloth
+nun:
   type: leaf
-  short: virtual
-  long: |
-    virtual, simulated, faux
-ȷána:
+  shortN: noon
+  shortV: noon
+  dupl: nu n
+  longN: |
+    twelve o'clock in the morning
+    
+    forms lexical phrase times when the tail of numbers
+    
+    {Fı́ı} {nun}
+    
+    4pm
+  longV: |
+    twelve o'clock in the morning
+    
+    forms lexical phrase times when the tail of numbers
+    
+    {Fı́ı} {nun}
+    
+    4pm
+núun:
   type: leaf
-  short: onion
-  long: |
-    a shortened, compressed, underground stem of a plant
-doó:
+  shortN: event
+  shortV: event
+  dupl: núu n
+  longN: |
+    state, process, achievement, activity
+  longV: |
+    state, process, achievement, activity
+nyn:
+  type: leaf
+  shortN: n
+  shortV: n
+  longN: |
+    refers to a previous leaf beginning with the letter n
+  longV: |
+    refers to a previous leaf beginning with the letter n
+paḱáa:
+  type: leaf
+  shortN: orange
+  shortV: orange
+  longN: |
+    fruit from a tree of the citrus genus
+  longV: |
+    fruit from a tree of the citrus genus
+palan:
+  type: leaf
+  shortN: annoying
+  shortV: annoying
+  longN: |
+    someone who often makes things up, a fraud, a habitual liar
+  longV: |
+    someone who often makes things up, a fraud, a habitual liar
+paná:
+  type: leaf
+  shortN: towards
+  shortV: towards
+  longN: |
+   face, turn to, address, speak to
+  longV: |
+   face, turn to, address, speak to
+pan:
+  type: leaf
+  shortN: p
+  shortV: p
+  longN: |
+    refers to a previous leaf beginning with the letter p
+  longV: |
+    refers to a previous leaf beginning with the letter p
+paráa:
+  type: leaf
+  shortN: word
+  shortV: word
+  longN: |
+    word, morpheme, lexeme, unit of language
+  longV: |
+    word, morpheme, lexeme, unit of language
+pará:
   type: prefix
-  short: o’
-  long: |
-    grammatically does acts like {nı́ı} but denotes the tail is the intended listener
-posen:
+  shortN: para-
+  shortV: para-
+  longN: |
+    Conceptually orthogonal to
+  longV: |
+    Conceptually orthogonal to
+páa:
   type: leaf
-  short: chartreuse
-  long: |
-    green, yellow, chartreuse, lime green
-xongo:
-  type: prefix
-  short: angry
-  long: |
-    anger, wrath, rage
-cúı:
-  type: prefix
-  short: not X, but also no unX
-  long: |
-    conceptually between a clause and its opposite
-ve:
-  type: prefix
-  short: passive voice
-  long: |
-    passiveises the clause, swapping the semantics of agents and patients
-ulo:
+  shortN: matte
+  shortV: matte
+  longN: |
+    something that is matte
+  longV: |
+    something that is matte
+pápa:
   type: leaf
-  short: snow
-  long: |
-    virtual, simulated, faux
-kata:
+  shortN: parent
+  shortV: parent
+  longN: |
+     parent, mother, father
+  longV: |
+     parent, mother, father
+pára:
   type: leaf
-  short: card
-  long: |
-    card, playing card, debit card, credit card, computer tab
+  shortN: west
+  shortV: west
+  longN: |
+    to the west
+  longV: |
+    to the west
 pélı:
   type: leaf
-  short: game
-  long: |
+  shortN: game
+  shortV: game
+  dupl: pé lı
+  longN: |
     game, sports match, structured play
+  longV: |
+    game, sports match, structured play
+pıı́n:
+  type: leaf
+  shortN: point
+  shortV: point
+  dupl: pıı́<69105>n
+  longN: |
+    a point, something taking only a single location
+  longV: |
+    a point, something taking only a single location
+pı́de:
+  type: leaf
+  shortN: yesterday
+  shortV: yesterday
+  dupl: pı́<69105>de
+  longN: |
+    the most recent completed time between one midnight and the next
+  longV: |
+    the most recent completed time between one midnight and the next
+pı́e:
+  type: leaf
+  shortN: esoteric
+  shortV: esoteric
+  dupl: pı́ e
+  longN: |
+   strange without being random
+  longV: |
+   strange without being random
+pı́nı:
+  type: leaf
+  shortN: was
+  shortV: was
+  dupl: pı́<69105>nı
+  longN: |
+    something in the past
+  longV: |
+    something in the past
+posen:
+  type: leaf
+  shortN: chartreuse
+  shortV: chartreuse
+  dupl: po se n
+  longN: |
+    green, yellow, chartreuse, lime green
+  longV: |
+    green, yellow, chartreuse, lime green
+pululún:
+  type: leaf
+  shortN: plum
+  shortV: plum
+  dupl: pu lu lú n
+  longN: |
+    any fruit of a prunus domestica
+  longV: |
+    any fruit of a prunus domestica
+pura:
+  type: leaf
+  shortN: travel
+  shortV: travel
+  dupl: pu ra
+  longN: |
+    to travel, roam, wander
+  longV: |
+    to travel, roam, wander
+púngaán:
+  type: leaf
+  shortN: with subsurface scattering
+  shortV: with subsurface scattering
+  dupl: pún gaán
+  longN: |
+    something that has visual subsurface scattering
+  longV: |
+    something that has visual subsurface scattering
+púnlı:
+  type: leaf
+  shortN: swell
+  shortV: swell
+  dupl: pún lı
+  longN: |
+    the extruding part of a protrusion
+  longV: |
+    the extruding part of a protrusion
+púra:
+  type: leaf
+  shortN: cute
+  shortV: cute
+  dupl: pú ra
+  longN: |
+    free of significant flaws or consequential imperfections
+  longV: |
+    free of significant flaws or consequential imperfections
+púun:
+  type: leaf
+  shortN: minute
+  shortV: minute
+  longN: |
+    60 seconds
+  longV: |
+    60 seconds
+pynsá:
+  type: leaf
+  shortN: think
+  shortV: think
+  dupl: pyn sá
+  longN: |
+    to think about, to think of, to have in mind
+  longV: |
+    to think about, to think of, to have in mind
+ṕan:
+  type: leaf
+  shortN: placeholder
+  shortV: placeholder
+  longN: |
+    Refers to the nearest para-grammatical information in the information stream. Can refer to an image, quote, gesture, or something else.
+  longV: |
+    Refers to the nearest para-grammatical information in the information stream. Can refer to an image, quote, gesture, or something else.
+raán:
+  type: leaf
+  shortN: plank
+  shortV: plank
+  longN: |
+    long rectangular prism, beam, plank, board
+  longV: |
+    long rectangular prism, beam, plank, board
+ráan:
+  type: leaf
+  shortN: 6pm
+  shortV: 6pm
+  longN: |
+    six o'clock at night
+    
+    forms lexical phrase times when the tail of numbers
+    
+    {Dı́ı} {ráan}
+    
+    8pm
+  longV: |
+    six o'clock at night
+    
+    forms lexical phrase times when the tail of numbers
+    
+    {Dı́ı} {ráan}
+    
+    8pm
+reén:
+  type: leaf
+  shortN: rain
+  shortV: rain
+  dupl: reé n
+  longN: |
+    rain, to rain, water falls from clouds
+  longV: |
+    rain, to rain, water falls from clouds
+reé:
+  type: particle
+  shortN: passive patient attacher
+  shortV: passive patient attacher
+  longN: |
+    leaf, patient => patient which has leaf as relative clause
+  longV: |
+    leaf, patient => patient which has leaf as relative clause
+rogy:
+  type: leaf
+  shortN: strong
+  shortV: strong
+  longN: |
+    capable of exerting power, potency or influence
+  longV: |
+    capable of exerting power, potency or influence
+roón:
+  type: leaf
+  shortN: pattern
+  shortV: pattern
+  dupl: roó n
+  longN: |
+    a set of objects that follow a pattern
+  longV: |
+    a set of objects that follow a pattern
+róȷen:
+  type: leaf
+  shortN: born
+  shortV: born
+  dupl: ró ȷe n
+  longN: |
+   birth, be born
+  longV: |
+   birth, be born
+run:
+  type: leaf
+  shortN: place
+  shortV: place
+  dupl: ru n
+  longN: |
+    location, position
+  longV: |
+    location, position
+rúo:
+  type: leaf
+  shortN: cold
+  shortV: cold
+  dupl: rú o
+  longN: |
+    cold, low in temperature, ice
+  longV: |
+    cold, low in temperature, ice
+ryn:
+  type: leaf
+  shortN: r
+  shortV: r
+  longN: |
+    refers to a previous leaf beginning with the letter r
+  longV: |
+    refers to a previous leaf beginning with the letter r
+rysúȷa:
+  type: leaf
+  shortN: russia
+  shortV: russia
+  dupl: rysú ȷa
+  longN: |
+   the nation of russia
+  longV: |
+   the nation of russia
+saá:
+  type: leaf
+  shortN: skin
+  shortV: skin
+  longN: |
+    skin, bark, shell, outer surface
+  longV: |
+    skin, bark, shell, outer surface
+sagó:
+  type: leaf
+  shortN: answer
+  shortV: answer
+  longN: |
+    reply, response, answer, solution (to a problem)
+  longV: |
+    reply, response, answer, solution (to a problem)
+salı:
+  type: leaf
+  shortN: touch
+  shortV: touch
+  longN: |
+    to barely contact, potentially metaphorically, ie “barely touch upon” an idea
+  longV: |
+    to barely contact, potentially metaphorically, ie “barely touch upon” an idea
+salı́n:
+  type: leaf
+  shortN: make
+  shortV: make
+  dupl: salı́ n
+  longN: |
+   to create out of nothing, to harmlessly edit or construct
+  longV: |
+   to create out of nothing, to harmlessly edit or construct
+san:
+  type: leaf
+  shortN: s
+  shortV: s
+  longN: |
+    refers to a previous leaf beginning with the letter s
+  longV: |
+    refers to a previous leaf beginning with the letter s
+sáa:
+  type: leaf
+  shortN: family
+  shortV: family
+  longN: |
+    family, clan
+  longV: |
+    family, clan
+sáka:
+  type: leaf
+  shortN: win
+  shortV: win
+  longN: |
+    finish, conclude, success, win
+  longV: |
+    finish, conclude, success, win
+sáma:
+  type: leaf
+  shortN: like
+  shortV: like
+  longN: |
+    Similar, alike
+  longV: |
+    Similar, alike
+sána:
+  type: leaf
+  shortN: year
+  shortV: year
+  longN: |
+    time it takes for the Earth to complete one revolution around the Sun
+  longV: |
+    time it takes for the Earth to complete one revolution around the Sun
+sáo:
+  type: leaf
+  shortN: disappear
+  shortV: disappear
+  dupl: sá o
+  longN: |
+   crumble away, vanish, disappear
+  longV: |
+   crumble away, vanish, disappear
+sekon:
+  type: leaf
+  shortN: second
+  shortV: second
+  dupl: se ko n
+  longN: |
+    SI unit of time
+  longV: |
+    SI unit of time
+seláan:
+  type: leaf
+  shortN: south
+  shortV: south
+  dupl: se láan
+  longN: |
+    to the south
+  longV: |
+    to the south
+sélı:
+  type: leaf
+  shortN: fire
+  shortV: fire
+  dupl: sé lı
+  longN: |
+    hot, high in temperature, fire
+  longV: |
+    hot, high in temperature, fire
+sıbá:
+  type: leaf
+  shortN: cause
+  shortV: cause
+  dupl: sı bá
+  longN: |
+    a cause, source, or reason for something
+  longV: |
+    a cause, source, or reason for something
+sıpa:
+  type: leaf
+  shortN: grey
+  shortV: grey
+  dupl: sı pa
+  longN: |
+     desaturated, not bright, and not dark
+  longV: |
+     desaturated, not bright, and not dark
+sıva:
+  type: leaf
+  shortN: run
+  shortV: run
+  dupl: sı va
+  longN: |
+    perform a predefined sequence of events
+  longV: |
+    perform a predefined sequence of events
+sı́byn:
+  type: prefix
+  shortN: seven
+  shortV: seven
+  dupl: sı́ byn
+  longN: |
+    numeral seven, 7
+  longV: |
+    numeral seven, 7
+sı́ı:
+  type: prefix
+  shortN: really
+  shortV: really
+  longN: |
+    used to emphasize a clause
+  longV: |
+    used to emphasize a clause
+sı́ȷı́ı:
+  type: leaf
+  shortN: flirt
+  shortV: flirt
+  longN: |
+    to tease or joke in a way where all involved parties enjoy it. may be sexual, romantic, or surrealist. also, one who does this habitually
+  longV: |
+    to tease or joke in a way where all involved parties enjoy it. may be sexual, romantic, or surrealist. also, one who does this habitually
+sı́n:
+  type: leaf
+  shortN: new
+  shortV: new
+  dupl: sı́ n
+  longN: |
+    new, fresh, renew, renovate, freshen
+  longV: |
+    new, fresh, renew, renovate, freshen
+sı́wa:
+  type: prefix
+  shortN: nine
+  shortV: nine
+  dupl: sı́ wa
+  longN: |
+    numeral nine, 9
+  longV: |
+    numeral nine, 9
+sócıȷa:
+  type: leaf
+  shortN: god(des)
+  shortV: god(des)
+  dupl: só cı ȷa
+  longN: |
+    god, goddess, deity, focus of worship, to worship
+  longV: |
+    god, goddess, deity, focus of worship, to worship
+sókale:
+  type: prefix
+  shortN: non-assertive description
+  shortV: non-assertive description
+  dupl: só ka le
+  longN: |
+   refers to a concept by its typical description regardless of its truth value (also used for nonce loans or terms)
+  longV: |
+   refers to a concept by its typical description regardless of its truth value (also used for nonce loans or terms)
+suȷýáan:
+  type: leaf
+  shortN: sergeant
+  shortV: sergeant
+  dupl: su ȷý áan
+  longN: |
+     military sergeant
+  longV: |
+     military sergeant
+suroó:
+  type: leaf
+  shortN: ask
+  shortV: ask
+  dupl: su roó
+  longN: |
+    request an answer, question
+  longV: |
+    request an answer, question
+súnga:
+  type: leaf
+  shortN: garlic
+  shortV: garlic
+  dupl: sún ga
+  longN: |
+    garlic
+  longV: |
+    garlic
+súnla:
+  type: leaf
+  shortN: wool
+  shortV: wool
+  dupl: sún la
+  longN: |
+    tight curly hair of an animal
+  longV: |
+    tight curly hair of an animal
+súnme:
+  type: leaf
+  shortN: smell
+  shortV: smell
+  dupl: súnme
+  longN: |
+    smells/scents, one who smells
+  longV: |
+    smells/scents, one who smells
+súun:
+  type: leaf
+  shortN: leaf
+  shortV: leaf
+  longN: |
+    point on a tree and all descendant nodes. this includes and is mainly used for referring to grammatical structures
+  longV: |
+    point on a tree and all descendant nodes. this includes and is mainly used for referring to grammatical structures
+śan:
+  type: leaf
+  shortN: jump
+  shortV: jump
+  longN: |
+    to jump, rapid upward motion that requires far more effort than {býn}
+  longV: |
+    to jump, rapid upward motion that requires far more effort than {býn}
+śatoáan:
+  type: leaf
+  shortN: king
+  shortV: king
+  dupl: śato áan
+  longN: |
+    chieftain, king, a ruler of unquestionable authority
+  longV: |
+    chieftain, king, a ruler of unquestionable authority
+śáa:
+  type: leaf
+  shortN: hand
+  shortV: hand
+  longN: |
+     tip of a grasping appendage
+  longV: |
+     tip of a grasping appendage
+śádın:
+  type: leaf
+  shortN: latin
+  shortV: latin
+  dupl: śádı n
+  longN: |
+     ancient rome (and descendants of what was roman)
+  longV: |
+     ancient rome (and descendants of what was roman)
+śánu:
+  type: leaf
+  shortN: tide
+  shortV: tide
+  longN: |
+    periodic change of the sea level, to fill something with a fluid temporarily
+  longV: |
+    periodic change of the sea level, to fill something with a fluid temporarily
+śıı́n:
+  type: leaf
+  shortN: pet
+  shortV: pet
+  dupl: śıı́ n
+  longN: |
+     owned animal, pet, livestock
+  longV: |
+     owned animal, pet, livestock
+śın:
+  type: leaf
+  shortN: lake
+  shortV: lake
+  dupl: śı n
+  longN: |
+     landlocked body of freshwater
+  longV: |
+     landlocked body of freshwater
+śıro:
+  type: leaf
+  shortN: slide
+  shortV: slide
+  dupl: śı ro
+  longN: |
+     to slip, slide, glide
+  longV: |
+     to slip, slide, glide
+śuı:
+  type: leaf
+  shortN: spoon
+  shortV: spoon
+  dupl: śu ı
+  longN: |
+     handheld bowled utensil
+  longV: |
+     handheld bowled utensil
+śuún:
+  type: leaf
+  shortN: shrub
+  shortV: shrub
+  longN: |
+     bush, shrub, brushwood, a mass of sticks
+  longV: |
+     bush, shrub, brushwood, a mass of sticks
+śuúvan:
+  type: leaf
+  shortN: platform
+  shortV: platform
+  dupl: śuú van
+  longN: |
+     stage, platform
+  longV: |
+     stage, platform
+śuxan:
+  type: leaf
+  shortN: noise
+  shortV: noise
+  dupl: śu xan
+  longN: |
+    noise, randomness, mess, static
+  longV: |
+    noise, randomness, mess, static
+śýdan:
+  type: leaf
+  shortN: wide
+  shortV: wide
+  longN: |
+    wide, broad, extensive
+  longV: |
+    wide, broad, extensive
+tagý:
+  type: leaf
+  shortN: prejudice
+  shortV: prejudice
+  longN: |
+   resentment, prejudice, damnation, predetermined ill-will
+  longV: |
+   resentment, prejudice, damnation, predetermined ill-will
+tan:
+  type: leaf
+  shortN: t
+  shortV: t
+  longN: |
+    refers to a previous leaf beginning with the letter t
+  longV: |
+    refers to a previous leaf beginning with the letter t
+táḱın:
+  type: leaf
+  shortN: money
+  shortV: money
+  dupl: táḱı n
+  longN: |
+    something that can be used to trade for a wide array of goods and services
+  longV: |
+    something that can be used to trade for a wide array of goods and services
+tánu:
+  type: leaf
+  shortN: head
+  shortV: head
+  longN: |
+    head, brain, metaphorically mass of collected knowledge
+  longV: |
+    head, brain, metaphorically mass of collected knowledge
+táśı:
+  type: leaf
+  shortN: land
+  shortV: land
+  longN: |
+    land, ground, earth, dirt, soil, terrain, field, region, country
+  longV: |
+    land, ground, earth, dirt, soil, terrain, field, region, country
+tázo:
+  type: leaf
+  shortN: contrast
+  shortV: contrast
+  longN: |
+    different, contrast, but, however
+  longV: |
+    different, contrast, but, however
+tıı́n:
+  type: leaf
+  shortN: real
+  shortV: real
+  dupl: tıı́ n
+  longN: |
+    real, true, actual
+  longV: |
+    real, true, actual
+tıı́:
+  type: prefix
+  shortN: three
+  shortV: three
+  longN: |
+    numeral three, 3
+  longV: |
+    numeral three, 3
+tıkón:
+  type: leaf
+  shortN: opine
+  shortV: opine
+  dupl: tı kó n
+  longN: |
+   opinion, opine
+  longV: |
+   opinion, opine
+tımyý:
+  type: leaf
+  shortN: east
+  shortV: east
+  dupl: tı myý
+  longN: |
+    to the east
+  longV: |
+    to the east
+tı́go:
+  type: leaf
+  shortN: say
+  shortV: say
+  dupl: tı́ go
+  longN: |
+    say, utter; mention; talk, speak
+  longV: |
+    say, utter; mention; talk, speak
+tı́ı:
+  type: leaf
+  shortN: white
+  shortV: white
+  longN: |
+    something that is white, lacking pigment/color
+  longV: |
+    something that is white, lacking pigment/color
+todıı́:
+  type: leaf
+  shortN: poison
+  shortV: poison
+  dupl: to dıı́
+  longN: |
+    any fluid possible but not safe to drink
+  longV: |
+    any fluid possible but not safe to drink
+tókıpóna:
+  type: leaf
+  shortN: toki pona
+  shortV: toki pona
+  dupl: tó kı pó na
+  longN: |
+    any of the many dialects and styles of toki pona
+  longV: |
+    any of the many dialects and styles of toki pona
+tónga:
+  type: leaf
+  shortN: note
+  shortV: note
+  dupl: tó n ga
+  longN: |
+    note, frequncey
+  longV: |
+    note, frequncey
+tóoru:
+  type: leaf
+  shortN: pass
+  shortV: pass
+  dupl: tóo ru
+  longN: |
+    to go by, over, or through
+  longV: |
+    to go by, over, or through
+túnba:
+  type: leaf
+  shortN: sibling
+  shortV: sibling
+  dupl: tú n ba
+  longN: |
+    is a sibling of roghly equal status
+  longV: |
+    is a sibling of roghly equal status
+túunb́en:
+  type: leaf
+  shortN: new
+  shortV: new
+  dupl: túu n b́e n
+  longN: |
+    new
+  longV: |
+    new
+tygıı́:
+  type: leaf
+  shortN: bird
+  shortV: bird
+  dupl: ty gıı́
+  longN: |
+    bird, warm blooded egg laying animals that lack snouts
+  longV: |
+    bird, warm blooded egg laying animals that lack snouts
+t́aga:
+  type: leaf
+  shortN: worry
+  shortV: worry
+  longN: |
+    to worry about, fret over, object of concern
+  longV: |
+    to worry about, fret over, object of concern
+t́áa:
+  type: prefix
+  shortN: all
+  shortV: all
+  longN: |
+    all, every
+  longV: |
+    all, every
+t́óovy:
+  type: leaf
+  shortN: brick
+  shortV: brick
+  dupl: t́óo vy
+  longN: |
+    brick, block, ingot, to seal up, to seal
+  longV: |
+    brick, block, ingot, to seal up, to seal
+ve:
+  type: prefix
+  shortN: passive voice
+  shortV: passive voice
+  longN: |
+    passiveises the clause, swapping the semantics of agents and patients
+  longV: |
+    passiveises the clause, swapping the semantics of agents and patients
+voré:
+  type: leaf
+  shortN: want
+  shortV: want
+  dupl: vo ré
+  longN: |
+    to want, desire, need
+  longV: |
+    to want, desire, need
+vuxe:
+  type: leaf
+  shortN: virtual
+  shortV: virtual
+  dupl: vu xe
+  longN: |
+    virtual, simulated, faux
+  longV: |
+    virtual, simulated, faux
+vyn:
+  type: leaf
+  shortN: v
+  shortV: v
+  longN: |
+    refers to a previous leaf beginning with the letter v
+  longV: |
+    refers to a previous leaf beginning with the letter v
+výsaán:
+  type: leaf
+  shortN: see through
+  shortV: see through
+  longN: |
+    something that is translucent, transparent
+  longV: |
+    something that is translucent, transparent
+wán:
+  type: prefix
+  shortN: one
+  shortV: one
+  longN: |
+    numeral one, 1
+  longV: |
+    numeral one, 1
+weé:
+  type: leaf
+  shortN: turtle
+  shortV: turtle
+  longN: |
+    life with a tough outer shell that it uses for defense
+  longV: |
+    life with a tough outer shell that it uses for defense
+wodo:
+  type: leaf
+  shortN: work
+  shortV: work
+  dupl: wo do
+  longN: |
+    work, function, able to perform a specific task
+  longV: |
+    work, function, able to perform a specific task
+wyn:
+  type: leaf
+  shortN: w
+  shortV: w
+  longN: |
+    refers to a previous leaf beginning with the letter w
+  longV: |
+    refers to a previous leaf beginning with the letter w
+wyru:
+  type: prefix
+  shortN: eight
+  shortV: eight
+  longN: |
+    numeral eight, 8
+  longV: |
+    numeral eight, 8
+xan:
+  type: leaf
+  shortN: x
+  shortV: x
+  longN: |
+    refers to a previous leaf beginning with the letter x
+  longV: |
+    refers to a previous leaf beginning with the letter x
+xáfa:
+  type: leaf
+  shortN: hole
+  shortV: hole
+  longN: |
+    dent, breach, shallow hole
+  longV: |
+    dent, breach, shallow hole
+xexe:
+  type: leaf
+  shortN: grudge
+  shortV: grudge
+  dupl: xe xe
+  longN: |
+    to write someone off as a lost cause not worth attempting to reconcile with
+  longV: |
+    to write someone off as a lost cause not worth attempting to reconcile with
+xıfoón:
+  type: leaf
+  shortN: glow in the dark
+  shortV: glow in the dark
+  dupl: xı foó n
+  longN: |
+    something that is phosphorescent, absorbing light to emit it later
+  longV: |
+    something that is phosphorescent, absorbing light to emit it later
+xıló:
+  type: leaf
+  shortN: declair
+  shortV: declair
+  dupl: xı ló
+  longN: |
+    to make something is true by stating it
+  longV: |
+    to make something is true by stating it
+xı́dı́ı:
+  type: leaf
+  shortN: back-up
+  shortV: back-up
+  dupl: xı́ dı́ı
+  longN: |
+   reserve, spare, substitute for when the original doesn’t work
+  longV: |
+   reserve, spare, substitute for when the original doesn’t work
+xoe:
+  type: leaf
+  shortN: blood
+  shortV: blood
+  dupl: xo e
+  longN: |
+    blood, liquid that runs inside the body and maintains life
+  longV: |
+    blood, liquid that runs inside the body and maintains life
+xongo:
+  type: prefix
+  shortN: angry
+  shortV: angry
+  dupl: xon go
+  longN: |
+    anger, wrath, rage
+  longV: |
+    anger, wrath, rage
+xúnre:
+  type: leaf
+  shortN: red
+  shortV: red
+  dupl: xú n re
+  longN: |
+    something that is red/crimson/ruddy
+  longV: |
+    something that is red/crimson/ruddy
+xynde:
+  type: leaf
+  shortN: trade
+  shortV: trade
+  dupl: xyn de
+  longN: |
+    agents exchange patients
+  longV: |
+    agents exchange patients
+zan:
+  type: leaf
+  shortN: tooth
+  shortV: tooth
+  longN: |
+   anatomical tooth
+  longV: |
+   anatomical tooth
+záa:
+  type: leaf
+  shortN: approve
+  shortV: approve
+  longN: |
+    approve, approval
+  longV: |
+    approve, approval
+zógo:
+  type: leaf
+  shortN: fungus
+  shortV: fungus
+  dupl: zó go
+  longN: |
+    mushroom, fungus
+  longV: |
+    mushroom, fungus
+zúno:
+  type: leaf
+  shortN: sun
+  shortV: sun
+  longN: |
+    sun, star
+  longV: |
+    sun, star
+zyn:
+  type: leaf
+  shortN: z
+  shortV: z
+  longN: |
+    refers to a previous leaf beginning with the letter z
+  longV: |
+    refers to a previous leaf beginning with the letter z
+an:
+  type: prefix
+  shortN: name descriptor
+  shortV: name descriptor
+  longN: |
+   converts a word to a name
+  longV: |
+   converts a word to a name
+áan:
+  type: leaf
+  shortN: wear
+  shortV: wear
+  longN: |
+    to have clothes on
+  longV: |
+    to have clothes on
+áa saá:
+  type: phrase
+  shortN: outside
+  shortV: outside
+  longN: |
+    outside, outdoors
+  longV: |
+    outside, outdoors
+áa suȷýáan:
+  type: phrase
+  shortN: sergeant major
+  shortV: sergeant major
+  dupl: áa su ȷý áan
+  longN: |
+     military sergeant major or equivalent rank
+  longV: |
+     military sergeant major or equivalent rank
+áa:
+  type: prefix
+  shortN: beyond-
+  shortV: beyond-
+  longN: |
+    past, beyond, extra
+  longV: |
+    past, beyond, extra
+á:
+  type: leaf
+  shortN: doer
+  shortV: doer
+  longN: |
+    someone that does something
+  longV: |
+    someone that does something
+e hunde _____:
+  type: phrase
+  shortN: crastinal tense marker
+  shortV: crastinal tense marker
+  dupl: ehu n de _
+  longN: |
+    the embeded clause happens tomorrow
+  longV: |
+    the embeded clause happens tomorrow
+e hungıı́n _____:
+  type: phrase
+  shortN: future tense marker
+  shortV: future tense marker
+  dupl: ehu n gıı́ n _
+  longN: |
+    the embeded clause happens in the future
+  longV: |
+    the embeded clause happens in the future
+e kede _____:
+  type: phrase
+  shortN: hodiernal tense marker
+  shortV: hodiernal tense marker
+  dupl: eke de _
+  longN: |
+    the embeded clause happens today
+  longV: |
+    the embeded clause happens today
+e keren _____:
+  type: phrase
+  shortN: present tense marker
+  shortV: present tense marker
+  dupl: eke re n _
+  longN: |
+    the embeded clause happens in the present
+  longV: |
+    the embeded clause happens in the present
+e loká ban:
+  type: phrase
+  shortN: loglang
+  shortV: loglang
+  dupl: eloká ban
+  longN: |
+   language meant to be unambiguous and internally consistent
+  longV: |
+   language meant to be unambiguous and internally consistent
+e nobe kı́rı:
+  type: phrase
+  shortN: shorthand
+  shortV: shorthand
+  dupl: eno be kı́ rı
+  longN: |
+    shorthand, stenography, writing fast enough to require special skills
+  longV: |
+    shorthand, stenography, writing fast enough to require special skills
+e pı́de _____:
+  type: phrase
+  shortN: hesternal tense marker
+  shortV: hesternal tense marker
+  dupl: epı́<69105>de _
+  longN: |
+    the embeded clause happens yesterday
+  longV: |
+    the embeded clause happens yesterday
+e pı́e ban:
+  type: phrase
+  shortN: experimental language
+  shortV: experimental language
+  dupl: epı́ eban
+  longN: |
+   a language designed to subvert some standard expectation of language
+  longV: |
+   a language designed to subvert some standard expectation of language
+e pı́nı _____:
+  type: phrase
+  shortN: past tense marker
+  shortV: past tense marker
+  dupl: epı́<69105>nı _
+  longN: |
+    the embeded clause happens in the past
+  longV: |
+    the embeded clause happens in the past
+e salı́n ban:
+  type: phrase
+  shortN: conlang
+  shortV: conlang
+  dupl: esalı́ n ban
+  longN: |
+   language intentionally created and designed
+  longV: |
+   language intentionally created and designed
+e xı́dı́ı ban:
+  type: phrase
+  shortN: auxlang
+  shortV: auxlang
+  dupl: exı́ dı́ı<69105>ban
+  longN: |
+   language meant for communication between people who do not share a first language
+  longV: |
+   language meant for communication between people who do not share a first language
+e _____ mé:
+  type: phrase
+  shortN: definite marker
+  shortV: definite marker
+  longN: |
+    the embeded clause is identifiable in the given context
+  longV: |
+    the embeded clause is identifiable in the given context
+e _____ sagó:
+  type: phrase
+  shortN: indirect question constructor
+  shortV: indirect question constructor
+  longN: |
+    extracts an answer from the embeded question
+  longV: |
+    extracts an answer from the embeded question
+e:
+  type: particle
+  shortN: leaf phrase generator
+  shortV: leaf phrase generator
+  longN: |
+    modifier, modified => content phrase
+  longV: |
+    modifier, modified => content phrase
+ı:
+  type: particle
+  shortN: agent attacher
+  shortV: agent attacher
+  longN: |
+    agent, leaf => leaf with agent attached
+  longV: |
+    agent, leaf => leaf with agent attached
+oha:
+  type: leaf
+  shortN: next
+  shortV: next
+  longN: |
+    next, after, upcoming, then, following in a sequence
+  longV: |
+    next, after, upcoming, then, following in a sequence
+okoa:
+  type: leaf
+  shortN: different
+  shortV: different
+  longN: |
+    different, separate, unrelated, another
+  longV: |
+    different, separate, unrelated, another
+okysona:
+  type: leaf
+  shortN: occasional
+  shortV: occasional
+  dupl: okyso na
+  longN: |
+     occurring or appearing irregularly from time to time, but not often
+  longV: |
+     occurring or appearing irregularly from time to time, but not often
+ola:
+  type: leaf
+  shortN: life
+  shortV: life
+  longN: |
+    existence, life, health, livelihood, exist, alive, healthy, cured
+  longV: |
+    existence, life, health, livelihood, exist, alive, healthy, cured
+oó:
+  type: leaf
+  shortN: complain
+  shortV: complain
+  longN: |
+    complaint, to complain, oy, oi
+  longV: |
+    complaint, to complain, oy, oi
+osı:
+  type: leaf
+  shortN: younger sibling
+  shortV: younger sibling
+  longN: |
+    younger or less senior sibling
+    
+    {Lı́} {keé} {púra} {mı} {osı}
+    
+    My little sibling is cute.
+  longV: |
+    younger or less senior sibling
+    
+    {Lı́} {keé} {púra} {mı} {osı}
+    
+    My little sibling is cute.
+otóo:
+  type: leaf
+  shortN: race
+  shortV: race
+  longN: |
+    to compete over speed
+  longV: |
+    to compete over speed
+owe:
+  type: leaf
+  shortN: above
+  shortV: above
+  longN: |
+     above, over, the area higher than something
+  longV: |
+     above, over, the area higher than something
+owo:
+  type: leaf
+  shortN: what
+  shortV: what
+  longN: |
+    what is this thing?
+  longV: |
+    what is this thing?
+ódo:
+  type: leaf
+  shortN: eat
+  shortV: eat
+  longN: |
+    consume, ingest
+  longV: |
+    consume, ingest
+ókolo:
+  type: leaf
+  shortN: around
+  shortV: around
+  dupl: óko lo
+  longN: |
+     the area around/in the neighborhood of something
+  longV: |
+     the area around/in the neighborhood of something
 óo:
   type: leaf
-  short: egg
-  long: |
+  shortN: egg
+  shortV: egg
+  longN: |
     egg, soft bodied filled solid object
+  longV: |
+    egg, soft bodied filled solid object
+óry:
+  type: leaf
+  shortN: hour
+  shortV: hour
+  longN: |
+    60 minutes
+  longV: |
+    60 minutes
+ósa:
+  type: leaf
+  shortN: part
+  shortV: part
+  longN: |
+    part, fraction of a whole, distinct element of something larger, piece, partial
+  longV: |
+    part, fraction of a whole, distinct element of something larger, piece, partial
+ulo:
+  type: leaf
+  shortN: snow
+  shortV: snow
+  longN: |
+    virtual, simulated, faux
+  longV: |
+    virtual, simulated, faux
+unéen:
+  type: leaf
+  shortN: page
+  shortV: page
+  dupl: unée n
+  longN: |
+    paper, page, book, web page
+  longV: |
+    paper, page, book, web page
+uno:
+  type: prefix
+  shortN: some
+  shortV: some
+  longN: |
+    some, a few
+  longV: |
+    some, a few
+un:
+  type: prefix
+  shortN: un-
+  shortV: un-
+  longN: |
+    Conceptually opposite to
+  longV: |
+    Conceptually opposite to
+utáa:
+  type: leaf
+  shortN: north
+  shortV: north
+  longN: |
+    to the north
+  longV: |
+    to the north
 ydo:
   type: leaf
-  short: car
-  long: |
+  shortN: car
+  shortV: car
+  longN: |
     car, automobile, any motor vehicle
+  longV: |
+    car, automobile, any motor vehicle
+yn:
+  type: leaf
+  shortN: " "
+  shortV: " "
+  longN: |
+    refers to a previous leaf beginning with the letter " "
+  longV: |
+    refers to a previous leaf beginning with the letter " "
+ýly:
+  type: leaf
+  shortN: intelligence
+  shortV: intelligence
+  longN: |
+    intellect, intelligent, smart
+  longV: |
+    intellect, intelligent, smart
+ýy:
+  type: leaf
+  shortN: spider
+  shortV: spider
+  longN: |
+    eight legged life
+  longV: |
+    eight legged life
