@@ -86,6 +86,32 @@ function html_word_entry(word, entry) {
 	output += `</div>`;
 	
 	let paragraphs="";
+	if (entry.longV != undefined) {
+		output += `<b>verb</b><small> - ${entry.shortV}</small> `;
+		paragraphs = entry.longV.split(/(\r\n|\r|\n){2,}/);
+		paragraphs.forEach((p) => {
+			p = escapeHTML(p);
+			p = p.replace(/\{([a-zA-Zȷı ́]+)\}/gu, (match, p1) => {
+				let out = '<em>';
+				let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́").replaceAll('i', 'ı').replaceAll('j', 'ȷ'));
+				//let list = p1.split(' ');
+				list.forEach((word) => {
+					if (word.includes('_')) {
+						out += `${p1} `;
+					} else {
+						out += `<a href="#" class="dictionary-word-link">${p1}</a> `;
+					}
+				});
+				out = out.slice(0, -1); 
+				out += '</em>';
+	
+				return out;
+			});
+
+			output += `<p>${p}</p>`;
+		});
+	}
+	
 	if (entry.longN != undefined) {
 		output += `<b>noun</b><small> - ${entry.shortN}</small> `;
 		paragraphs = entry.longN.split(/(\r\n|\r|\n){2,}/);
@@ -112,31 +138,6 @@ function html_word_entry(word, entry) {
 		});
 	}
 	
-	if (entry.longV != undefined) {
-		output += `<b>verb</b><small> - ${entry.shortV}</small> `;
-		paragraphs = entry.longV.split(/(\r\n|\r|\n){2,}/);
-		paragraphs.forEach((p) => {
-			p = escapeHTML(p);
-			p = p.replace(/\{([a-zA-Zȷı ́]+)\}/gu, (match, p1) => {
-				let out = '<em>';
-				let list = parser.segmenter(p1.toLowerCase().replaceAll("´","́").replaceAll('i', 'ı').replaceAll('j', 'ȷ'));
-				//let list = p1.split(' ');
-				list.forEach((word) => {
-					if (word.includes('_')) {
-						out += `${p1} `;
-					} else {
-						out += `<a href="#" class="dictionary-word-link">${p1}</a> `;
-					}
-				});
-				out = out.slice(0, -1); 
-				out += '</em>';
-	
-				return out;
-			});
-
-			output += `<p>${p}</p>`;
-		});
-	}
 	output += `</div>`;
 	return output;
 }
@@ -176,8 +177,10 @@ export function html_dictionary(filters) {
 					!(
 						word.includes(filter) ||
 						dictionary[word].without_spaces.includes(filter) ||
-						parser.toneMarking(dictionary[word].short.toLowerCase()).includes(filter) ||
-						parser.toneMarking(dictionary[word].long.toLowerCase()).includes(filter)
+						parser.toneMarking(dictionary[word].shortN.toLowerCase()).includes(filter) ||
+						parser.toneMarking(dictionary[word].longN.toLowerCase()).includes(filter) ||
+						parser.toneMarking(dictionary[word].shortV.toLowerCase()).includes(filter) ||
+						parser.toneMarking(dictionary[word].longV.toLowerCase()).includes(filter)
 					)
 				) {
 					return;
