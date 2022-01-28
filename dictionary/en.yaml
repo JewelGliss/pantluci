@@ -14,7 +14,7 @@ boró:
   longN: |
     ability, capablity
   longV: |
-    to be able to, to have the possibility of
+    (agent) is able to (patient), there is a possibility of (patient)
 boza:
   type: leaf
   shortN: understand
@@ -23,16 +23,16 @@ boza:
   longN: |
     to grasp the meaning and/or implications of
   longV: |
-    to grasp the meaning and/or implications of
+    (agent) grasps the meaning and/or implications of (patient)
 bógo:
   type: prefix
   shortN: some
-  shortV: some
+  shortV: a few times
   dupl: bó go
   longN: |
-    little, not much, few, not many
+    little, not much, few, not many (noun)
   longV: |
-    little, not much, few, not many
+    (verb) happens a few times
 bóna:
   type: leaf
   shortN: good
@@ -64,9 +64,9 @@ byn:
   shortN: b
   shortV: b
   longN: |
-    refers to a previous leaf beginning with the letter b
+    refers to a previous noun beginning with the letter b
   longV: |
-    refers to a previous leaf beginning with the letter b
+    refers to a previous verb beginning with the letter b
 býn:
   type: leaf
   shortN: jumper
@@ -74,7 +74,7 @@ býn:
   longN: |
     life that uses primarily jumping as locomotion, to jump
   longV: |
-    life that uses primarily jumping as locomotion, to jump
+    (agent) jump, (patient) jumps incedentally
 b́eé:
   type: leaf
   shortN: carry
@@ -131,9 +131,9 @@ can:
   shortN: c
   shortV: c
   longN: |
-    refers to a previous leaf beginning with the letter c
+    refers to a previous noun beginning with the letter c
   longV: |
-    refers to a previous leaf beginning with the letter c
+    refers to a previous verb beginning with the letter c
 cágu:
   type: leaf
   shortN: drink
@@ -248,9 +248,9 @@ cı́ı:
   shortV: option constructor
   dupl: cı́ı
   longN: |
-    leaf, leaf => leaf or leaf
+    noun 1, noun 2 => noun 1 or noun 2
   longV: |
-    leaf, leaf => leaf or leaf
+    verb 1, verb 2 => verb 1 or verb 2
 cóndı:
   type: leaf
   shortN: deep
@@ -754,6 +754,11 @@ hée:
     boss, person in command, person who directly oversees work being done, director
   longV: |
     boss, person in command, person who directly oversees work being done, director
+hı́lo:
+  type: prefix
+  shortN: tool
+  longN: |
+    tool used to do (verb)
 howaá:
   type: leaf
   shortN: calm
@@ -805,9 +810,9 @@ hungıı́n:
   shortV: will
   dupl: hu n gıı́ n
   longN: |
-    something in the future
+    noun that once will be the clause
   longV: |
-    something in the future
+    verb happens in the future
 hunneé:
   type: leaf
   shortN: collective
@@ -1070,9 +1075,9 @@ keren:
   shortV: is
   dupl: ke re n
   longN: |
-    something in the present
+    noun that curreintly is was the clause
   longV: |
-    something in the present
+    verb happens in the present
 kélo:
   type: leaf
   shortN: body
@@ -1801,14 +1806,14 @@ pı́e:
   longV: |
    strange without being random
 pı́nı:
-  type: leaf
+  type: prefix
   shortN: was
   shortV: was
   dupl: pı́<69105>nı
   longN: |
-    something in the past
+    noun that once was the clause
   longV: |
-    something in the past
+    verb happened in the past
 posen:
   type: leaf
   shortN: chartreuse
@@ -2815,15 +2820,6 @@ e hunde _____:
     the embeded clause happens tomorrow
   longV: |
     the embeded clause happens tomorrow
-e hungıı́n _____:
-  type: phrase
-  shortN: future tense marker
-  shortV: future tense marker
-  dupl: ehu n gıı́ n _
-  longN: |
-    the embeded clause happens in the future
-  longV: |
-    the embeded clause happens in the future
 e kede _____:
   type: phrase
   shortN: hodiernal tense marker
@@ -2833,15 +2829,6 @@ e kede _____:
     the embeded clause happens today
   longV: |
     the embeded clause happens today
-e keren _____:
-  type: phrase
-  shortN: present tense marker
-  shortV: present tense marker
-  dupl: eke re n _
-  longN: |
-    the embeded clause happens in the present
-  longV: |
-    the embeded clause happens in the present
 e loká ban:
   type: phrase
   shortN: loglang
@@ -2878,15 +2865,6 @@ e pı́e ban:
    a language designed to subvert some standard expectation of language
   longV: |
    a language designed to subvert some standard expectation of language
-e pı́nı _____:
-  type: phrase
-  shortN: past tense marker
-  shortV: past tense marker
-  dupl: epı́<69105>nı _
-  longN: |
-    the embeded clause happens in the past
-  longV: |
-    the embeded clause happens in the past
 e salı́n ban:
   type: phrase
   shortN: conlang
