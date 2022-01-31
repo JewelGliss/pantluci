@@ -1,6 +1,6 @@
 module.exports.dictionary_en = require('../../dictionary/en.yaml');
 
-const alphabet = 'abcdefghıȷklmnoprstuvwxyz ́'; //acute is final letter
+const alphabet = 'abcdefghıȷklmnopqrstuvwxyz ́'; //acute is final letter
 
 let symbol_indices = {};
 
@@ -19,9 +19,7 @@ function compare_words(x, y) {
 	x=x.replaceAll("ú","ú")
 	x=x.replaceAll("ý","ý")
 	x=x.replaceAll("ṕ","ṕ")
-	x=x.replaceAll("ḱ","ḱ")
-	x=x.replaceAll("ǵ","ǵ")
-	x=x.replaceAll("ś","ś")
+	x=x.replaceAll("ŕ","ŕ")
 	
 	y=y.replaceAll("á","á")
 	y=y.replaceAll("é","é")
@@ -30,14 +28,12 @@ function compare_words(x, y) {
 	y=y.replaceAll("ú","ú")
 	y=y.replaceAll("ý","ý")
 	y=y.replaceAll("ṕ","ṕ")
-	y=y.replaceAll("ḱ","ḱ")
-	y=y.replaceAll("ǵ","ǵ")
-	y=y.replaceAll("ś","ś")
+	y=y.replaceAll("ŕ","ŕ")
 	
-	if ("aeıouy".includes(x.charAt(0))){
+	if ("aeıouvy".includes(x.charAt(0))){
 		x=" "+x
 	}
-	if ("aeıouy".includes(y.charAt(0))){
+	if ("aeıouvy".includes(y.charAt(0))){
 		y=" "+y
 	}
     if (x == y) {
@@ -68,20 +64,19 @@ function dupl_converter(x) {
 		x=x.replaceAll("__","_")
 	}
 	x=x.replaceAll("ṕ","p\u{1bC77}")
-    x=x.replaceAll("t́","t\u{1bC77}")
-	x=x.replaceAll("ḱ","k\u{1bC77}")
+	x=x.replaceAll("z","t\u{1bC77}")
+	x=x.replaceAll("q","k\u{1bC77}")
 	
-	x=x.replaceAll("ś","s\u{1bC77}")
+	x=x.replaceAll("ŕ","r\u{1bC77}")
 	
     x=x.replaceAll("b́","b\u{1bC77}")
-	x=x.replaceAll("d́","d\u{1bC77}")
-	x=x.replaceAll("ǵ","g\u{1bC77}")
 	
     x=x.replaceAll("aá","a\u{1bC76}")
 	x=x.replaceAll("eé","e\u{1bC76}")
 	x=x.replaceAll("ıı́","ı\u{1bC76}")
 	x=x.replaceAll("oó","o\u{1bC76}")
 	x=x.replaceAll("uú","u\u{1bC76}")
+	x=x.replaceAll("vv́","u\u{1bC76}")
 	x=x.replaceAll("yý","y\u{1bC76}")
 
 	x=x.replaceAll("áa","a\u{1bC77}")
@@ -89,6 +84,7 @@ function dupl_converter(x) {
 	x=x.replaceAll("ı́ı","ı\u{1bC77}")
 	x=x.replaceAll("óo","o\u{1bC77}")
 	x=x.replaceAll("úu","u\u{1bC77}")
+	x=x.replaceAll("v́v","u\u{1bC77}")
 	x=x.replaceAll("ýy","y\u{1bC77}")
 
 	x=x.replaceAll("á","a\u{1bC74}")
@@ -96,6 +92,7 @@ function dupl_converter(x) {
 	x=x.replaceAll("ı́","ı\u{1bC74}")
 	x=x.replaceAll("ó","o\u{1bC74}")
 	x=x.replaceAll("ú","u\u{1bC74}")
+	x=x.replaceAll("v́","u\u{1bC74}")
 	x=x.replaceAll("ý","y\u{1bC74}")
 
 	x=x.replaceAll("a","\u{1BC41}\u{1BC71}")
@@ -104,6 +101,7 @@ function dupl_converter(x) {
 	x=x.replaceAll("o","\u{1BC42}\u{1BC46}\u{1BC71}")
 	x=x.replaceAll("ı","\u{1BC41}\u{1BC51}\u{1BC71}")
 	x=x.replaceAll("u","\u{1BC42}\u{1BC51}\u{1BC71}")
+	x=x.replaceAll("v","\u{1BC41}\u{1BC41}\u{1BC71}")
 	
 	x=x.replaceAll("\u{1BC42}","\u{1BC57}")
 
@@ -129,7 +127,6 @@ function dupl_converter(x) {
 	x=x.replaceAll("v","\u{1BC09}")
 	x=x.replaceAll("w","\u{1BC3C}")
 	x=x.replaceAll("x","\u{1BC31}")
-	x=x.replaceAll("z","\u{1BC2A}")
 
 	x=x.replaceAll("\u{1BC46}\u{1BC76}","\u{1BC76}\u{1BC46}")
 	x=x.replaceAll("\u{1BC46}\u{1BC77}","\u{1BC77}\u{1BC46}")
@@ -176,6 +173,7 @@ function ipa_converter(x) {
 	x=x.replaceAll(" ı",".ʔı")
 	x=x.replaceAll(" o",".ʔo")
 	x=x.replaceAll(" u",".ʔu")
+	x=x.replaceAll(" v",".ʔv")
 	x=x.replaceAll(" y",".ʔy")
 	
 	x=x.replaceAll(" ","")
@@ -185,6 +183,8 @@ function ipa_converter(x) {
 	x=x.replaceAll("ıı́","i˨.i˦.")
 	x=x.replaceAll("oó","o˨.o˦.")
 	x=x.replaceAll("uú","u˨.u˦.")
+	x=x.replaceAll("uú","u˨.u˦.")
+	x=x.replaceAll("vv́","ʏ˨.ʏ˦.")
 	x=x.replaceAll("yý","ə˨.ə˦.")
 	
     x=x.replaceAll("áa","ä˦.ä˨.")
@@ -192,6 +192,7 @@ function ipa_converter(x) {
 	x=x.replaceAll("ı́ı","i˦.i˨.")
 	x=x.replaceAll("óo","o˦.o˨.")
 	x=x.replaceAll("úu","u˦.u˨.")
+	x=x.replaceAll("v́v","ʏ˦.ʏ˨.")
 	x=x.replaceAll("ýy","ə˦.ə˨.")
 
     x=x.replaceAll("á","ä˦.")
@@ -199,6 +200,7 @@ function ipa_converter(x) {
 	x=x.replaceAll("ı́","i˦.")
 	x=x.replaceAll("ó","o˦.")
 	x=x.replaceAll("ú","u˦.")
+	x=x.replaceAll("v́","ʏ˦.")
 	x=x.replaceAll("ý","ə˦.")
 	
     x=x.replaceAll("a","ä?")
@@ -206,11 +208,13 @@ function ipa_converter(x) {
 	x=x.replaceAll("ı","i?")
 	x=x.replaceAll("o","o?")
 	x=x.replaceAll("u","u?")
+	x=x.replaceAll("v","ʏ?")
 	x=x.replaceAll("y","ə?")
 
 	x=x.replaceAll("?˦","˦")
 	x=x.replaceAll("?˨","˨")
 	x=x.replaceAll("?","˨.")
+	x=x.replaceAll("ʏ","y")
 	
 	x=x.replaceAll("n","n?")
 	
@@ -219,6 +223,7 @@ function ipa_converter(x) {
 	x=x.replaceAll("?i","i")
 	x=x.replaceAll("?o","o")
 	x=x.replaceAll("?u","u")
+	x=x.replaceAll("?y","y")
 	x=x.replaceAll("?ə","ə")
 	
 	x=x.replaceAll(".n?","n.")
@@ -228,6 +233,7 @@ function ipa_converter(x) {
 	x=x.replaceAll(".i",".ʔi")
 	x=x.replaceAll(".o",".ʔo")
 	x=x.replaceAll(".u",".ʔu")
+	x=x.replaceAll(".y",".ʔy")
 	x=x.replaceAll(".ə",".ʔə")
 	
 	x=x.replaceAll("ä˦.ʔä","ä˦.ä")
@@ -240,6 +246,8 @@ function ipa_converter(x) {
 	x=x.replaceAll("o˨.ʔo","o˨.o")
 	x=x.replaceAll("u˦.ʔu","u˦.u")
 	x=x.replaceAll("u˨.ʔu","u˨.u")
+	x=x.replaceAll("y˦.ʔy","y˦.y")
+	x=x.replaceAll("y˨.ʔy","y˨.y")
 	x=x.replaceAll("ə˦.ʔə","ə˦.ə")
 	x=x.replaceAll("ə˨.ʔə","ə˨.ə")
 	
@@ -253,34 +261,36 @@ function ipa_converter(x) {
 	x=x.replaceAll("o˨.o˨","o˨.ʔo˨")
 	x=x.replaceAll("u˦.u˦","u˦.ʔu˦")
 	x=x.replaceAll("u˨.u˨","u˨.ʔu˨")
+	x=x.replaceAll("y˦.y˦","y˦.ʔy˦")
+	x=x.replaceAll("y˨.y˨","y˨.ʔy˨")
 	x=x.replaceAll("ə˦.ə˦","ə˦.ʔə˦")
 	x=x.replaceAll("ə˨.ə˨","ə˨.ʔə˨")
 	
 	x=x.replaceAll("ṕ","pʼ")
-	x=x.replaceAll("t́","tʼ")
-	x=x.replaceAll("ḱ","kʼ")
-	x=x.replaceAll("ś","ɬ")
-	x=x.replaceAll("b́","ɓ")
+	x=x.replaceAll("z","tʼ")
+	x=x.replaceAll("q","kʼ")
+	x=x.replaceAll("x","ɬ")
 	x=x.replaceAll("d́","ɗ")
-	x=x.replaceAll("ǵ","ɠ")
+	x=x.replaceAll("ŕ","ʀ")
 	x=x.replaceAll("c","ʃ")
 	x=x.replaceAll("h","ç")
 	x=x.replaceAll("r","ɾ")
 	x=x.replaceAll("ȷ","j")
-	//j/ is realized as [ʒ] before /i/ or /ɛ/.
+	//j/ is realized as [ʒ] before /i/, /ɛ/, or /y/.
 	x=x.replaceAll("jɛ","ʒɛ")
 	x=x.replaceAll("ji","ʒi")
-	//i˨.i˦/ is realized as [jiː˨˦] unless it follows /ʔ/, /pʼ/, /z/, /s/, /x/, /ɾ/, /l/, or /w/.
-	//i˨.i˦/ is realized as [iː˨˨˦] when follows /ʔ/, /pʼ/, /z/, /s/, /x/, /ɾ/, /l/, or /w/.
+	x=x.replaceAll("jy","ʒy")
+	//i˨.i˦/ is realized as [jiː˨˦] unless it follows /ʔ/, /pʼ/, /z/, /s/, /ʀ/, /ɾ/, /l/, or /w/.
+	//i˨.i˦/ is realized as [iː˨˨˦] when follows /ʔ/, /pʼ/, /z/, /s/, /ʀ/, /ɾ/, /l/, or /w/.
 	x=x.replaceAll("i˨.i˦","?")
-	var whenFollowing=['ʔ','pʼ','z','s','ɬ','x','ɾ','l','w']
+	var whenFollowing=['ʔ','pʼ','z','s','ɬ','ʀ','ɾ','l','w']
 	for (var i = 0; i < whenFollowing.length; i++) {
 		x=x.replaceAll(whenFollowing[i]+"?",whenFollowing[i]+"iː˨˨˦")
 	}
 	x=x.replaceAll("?","ji˨˦")
-	//i˦.i˨/ is realized as [jə˦˨] unless it follows /ʔ/, /ɾ/, or /l/.
+	//i˦.i˨/ is realized as [jə˦˨] unless it follows /ʔ/, /ɾ/, /ʀ/, or /l/.
 	x=x.replaceAll("i˦.i˨","?")
-	var whenFollowing=["ʔ","ɾ","l"]
+	var whenFollowing=["ʔ","ɾ","ʀ","l"]
 	for (var i = 0; i < whenFollowing.length; i++) {
 		x=x.replaceAll(whenFollowing[i]+"?",whenFollowing[i]+"i˦.i˨")
 	}
@@ -307,44 +317,38 @@ function ipa_converter(x) {
 	x=x.replaceAll("ʒj","ʑj")
 	//[ʃ] is realized as [ɕ] before [j].
 	x=x.replaceAll("ʃj","ɕj")
-	//k/, /g/ and /ɠ/ is pronounced as palatal before [j].
+	//k/, and /g/ is pronounced as palatal before [j].
 	x=x.replaceAll("kj","cj")
 	x=x.replaceAll("gj","ɟj")
-	x=x.replaceAll("ɠj","ʄj")
 	//[kʼj] is realized as [cç].
 	x=x.replaceAll("kʼj","cç")
 	//implosives are devoiced in high or falling tone syllables.
 	x=x.replaceAll("ɓä˦","ɓ̥ä˦")
 	x=x.replaceAll("ɗä˦","ɗ̥ä˦")
-	x=x.replaceAll("ɠä˦","ɠ̊ä˦")
 	
 	x=x.replaceAll("ɓɛ˦","ɓ̥ɛ˦")
 	x=x.replaceAll("ɗɛ˦","ɗ̥ɛ˦")
-	x=x.replaceAll("ɠɛ˦","ɠ̊ɛ˦")
 	
 	x=x.replaceAll("ɓi˦","ɓ̥i˦")
 	x=x.replaceAll("ɗi˦","ɗ̥i˦")
-	x=x.replaceAll("ɠi˦","ɠ̊i˦")
 	
 	x=x.replaceAll("ɓo˦","ɓ̥o˦")
 	x=x.replaceAll("ɗo˦","ɗ̥o˦")
-	x=x.replaceAll("ɠo˦","ɠ̊o˦")
 	
 	x=x.replaceAll("ɓu˦","ɓ̥u˦")
 	x=x.replaceAll("ɗu˦","ɗ̥u˦")
-	x=x.replaceAll("ɠu˦","ɠ̊u˦")
+	
+	x=x.replaceAll("ɓy˦","ɓ̥y˦")
+	x=x.replaceAll("ɗy˦","ɗ̥y˦")
 	
 	x=x.replaceAll("ɓə˦","ɓ̥ə˦")
 	x=x.replaceAll("ɗə˦","ɗ̥ə˦")
-	x=x.replaceAll("ɠə˦","ɠ̊ə˦")
 	
 	x=x.replaceAll("ɓjə˦","ɓ̥jə˦")
 	x=x.replaceAll("ɗjə˦","ɗ̥jə˦")
-	x=x.replaceAll("ʄjə˦","ʄ̊jə˦")
 	
 	x=x.replaceAll("ɓäu̯˦","ɓ̥äu̯˦")
 	x=x.replaceAll("ɗäu̯˦","ɗ̥äu̯˦")
-	x=x.replaceAll("ɠäu̯˦","ɠ̊äu̯˦")
 	
 	//assimilated and dissimilated
 	x=x.replaceAll("n.b","m.b")
@@ -359,10 +363,8 @@ function ipa_converter(x) {
 	x=x.replaceAll("n.ç","ɲ.ç")
 	x=x.replaceAll("n.j","ɲ.j")
 	x=x.replaceAll("n.c","ɲ.c")
-	x=x.replaceAll("n.ɟ","ɲ.ɟ")
-	x=x.replaceAll("n.ʄ","ɲ.ʄ")
 	x=x.replaceAll("n.ɓ","m.ɓ")
-	x=x.replaceAll("n.ɠ","ŋ.ɠ")
+	x=x.replaceAll("n.ʀ","ŋ.ʀ")
 	
 	while(x.includes("__")){
 		x=x.replaceAll("__","_")

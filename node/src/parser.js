@@ -1,27 +1,26 @@
 const dictionary = require('../../dictionary/en.yaml');
 
 // Valid consonants list.
-const c = ['b','b́','c','d','d́','f','g','ǵ','h','ȷ','k','ḱ','l','m','n','p','ṕ','r','s','ś','t','t́','v','w','x','z',''];
-
+const c = ['b','c','d','d́','f','g','h','ȷ','k','l','m','n','p','ṕ',"q",'r','ŕ','s','t','w','x','z',''];
 // Consonants weights.
-const cw = '110110110000111001000010011';
+const cw = '10110100011100011000001';
 
 // Valid vowels list.
-const v = 'aeıouy';
+const v = 'aeıouvy';
 
 // Vowels weights.
-const vw = '111000';
+const vw = '1110010';
 
 // Building a map of the weight for all possible syllable forms.
 let s = {"_____":2};
 for (var i = 0; i < c.length; i++) {
 	for (var j = 0; j < v.length; j++) {
 		var extra=0;
-		console.log(c[i] + v[j])
-		if(["ȷı","ȷe","wu","wo"].includes(c[i] + v[j])){
+		//console.log(c[i] + v[j])
+		if(["ȷı","ȷe","ȷv","wu","wo"].includes(c[i] + v[j])){
 			extra++;
 		}
-		console.log(extra)
+		//console.log(extra)
 		s[c[i] + v[j]] = parseInt(cw[i]) + parseInt(vw[j]) + extra;
 		s[c[i] + v[j] + 'n'] = parseInt(cw[i]) + parseInt(vw[j]) + 1 + extra;
 
@@ -164,12 +163,8 @@ function toneMarking(str) {
     
     str = str.replaceAll("’","'");
     str = str.replaceAll("p'","ṕ");
-    str = str.replaceAll("t'","t́");
-    str = str.replaceAll("k'","ḱ");
-    str = str.replaceAll("b'","b́");
     str = str.replaceAll("d'","d́");
-    str = str.replaceAll("g'","ǵ");
-    str = str.replaceAll("s'","ś");
+    str = str.replaceAll("r'","ŕ");
 	
 	str=str.replaceAll("á","á")
 	str=str.replaceAll("é","é")
@@ -178,10 +173,7 @@ function toneMarking(str) {
 	str=str.replaceAll("ú","ú")
 	str=str.replaceAll("ý","ý")
 	str=str.replaceAll("ṕ","ṕ")
-	str=str.replaceAll("ḱ","ḱ")
-	str=str.replaceAll("ǵ","ǵ")
-	str=str.replaceAll("ś","ś")
-
+	str=str.replaceAll("ŕ","ŕ")
     for (var i = 0; i < v.length; i++) {
       str = str.replaceAll(v[i] + "'", v[i]+"́")
     }

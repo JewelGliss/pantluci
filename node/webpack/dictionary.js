@@ -27,9 +27,9 @@ export function count_letters() {
 	let letters={'total':0}
 
 	words_sorted.forEach((w) => {
-		w=w.replaceAll("ṕ","P").replaceAll("t́","T").replaceAll("ḱ","K").replaceAll("b́","B").replaceAll("d́","D").replaceAll("ǵ","G").replaceAll("ś","S");
+		w=w.replaceAll("ṕ","P").replaceAll("t́","T").replaceAll("ḱ","K").replaceAll("b́","B").replaceAll("d́","D").replaceAll("ǵ","G").replaceAll("ś","S").replaceAll("ŕ","R");
 		for (var i = 0; i < w.length; i++) {
-			if(" _áeıouy".indexOf(w.charAt(i)) == -1){
+			if(" _áeıouvy".indexOf(w.charAt(i)) == -1){
 				if (!letters.hasOwnProperty(w.charAt(i))){
 					letters[w.charAt(i)]=0
 				}
@@ -47,7 +47,6 @@ export function count_letters() {
 
 function html_word_entry(word, entry) {
 	var output = `<div class="dictionary-entry well well-small"><h3>`;
-
 	if (entry.type == 'phrase') {
 		//console.log(parser.segmenter(word))
 		Array.from(parser.segmenter(word)).forEach((part) => {
