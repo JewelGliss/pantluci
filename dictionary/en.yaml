@@ -2539,6 +2539,11 @@ tygıı́:
     bird, warm blooded egg laying animals that lack snouts
   longV: |
     bird, warm blooded egg laying animals that lack snouts
+waga:
+  type: leaf
+  shortN: beef
+  longN: |
+    beef, steak, cow flesh
 wan:
   type: leaf
   shortN: w
