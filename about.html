@@ -7,18 +7,6 @@
     <link rel="icon" href="https://bakrehu.github.io/hyyban/images/icon.ico">
     <link href="./web/res/bootstrap.css" rel="stylesheet">
 	<style>
-		@font-face {
-			font-family: Duployan;
-			src: url(fonts/Duployan-Regular.otf) format("opentype");
-		}
-		.Dupl {
-			font-family: Duployan, sans-serif;
-			width: auto;
-			line-height:30px;
-			margin: auto;
-			font-size: 24px;
-			z-index: 10000;
-		}
 		body {
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		}
@@ -67,31 +55,6 @@
 			font-size: 1.37em;
 			line-height: 1.6;
 			color: #000;
-		}
-		.diagram{
-			text-align: center;
-			border-width:2px;
-			margin: 1px;
-			border-style: solid;
-			font-family: "Comfortaa" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-style: 24px;
-			line-height: 24px
-			display: block;
-			float: left;
-		}
-		.fakeDiagram{
-			text-align: center;
-			border-width:0px;
-			margin: 0px;
-			border-style: solid;
-			font-family: "Comfortaa" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-style: 24px;
-			line-height: 24px
-			display: block;
-			float: left;
-		}
-		.Lexphrase{
-			border-style: dashed;
 		}
 	</style>
 </head>
@@ -263,6 +226,7 @@
 		<p>The same vowel may not occur on both sides of a glottal stop word-internally.</p>
 		<p>The same vowel may not occur on both sides of a nasal stop followed by a glottal stop word-internally.</p>
 		<p>/n/ may not occur word-initially.</p>
+		<p>/n.ʔ/ is realized as [.n].</p>
 		<p>/i˨.i˦/ is realized as [jiː˨˦] unless it follows /ʔ/, /pʼ/, /z/, /s/, /ʀ/ /l/, or /v/.</p>
 		<p>/i˨.i˦/ is realized as [iː˨˨˦] when follows /ʔ/, /pʼ/, /z/, /s/, /ʀ/, /l/, or /v/.</p>
 		<p>/i˦.i˨/ is realized as [jə˦˨] unless it follows /ʔ/, /r/, /ʀ/, or /l/.</p>
@@ -284,7 +248,7 @@
 		<h2 id="Writing">Writing systems</h2>
 		<p>Hýyban is written using the Latin script. With capitalization only on the first letter of every sentence.
 		The word "e" may be written as a dot (‧), otherwise punctuation does not appear.
-		The acute accent may be written as an apostrophe following the letter its attached to. "ı" and "ȷ" may be written as 
+		The acute accent may be written as an apostrophe following the letter it's attached to. "ı" and "ȷ" may be written as 
 		"i" and "j" respectively if needed. The acute accent is considered its own letter.</p>
 		
 		<h2 id="Grammar">Grammar</h2>
@@ -296,7 +260,7 @@
         </p>
         <ul>
             <li>"eén" is a contraction of "eé e".</li>
-            <li>"eé" is a contractin of "e e".</li>
+            <li>"eé" is a contraction of "e e".</li>
             <li>"e" always requires exactly two arguments and other words never accept any arguments.</li>
             <li>Words are fill the <u><b style="font-size:20px;">oldest</b></u> unfilled argument slot.</li>
             <li>Only certain combinations of word types may legally fill the slots of an "e".</li>
@@ -304,15 +268,16 @@
 		
 		
 		<h3 id="SyntacticCategories">Syntactic category combinations</h3>
-		<p>Lexical items may be conjunctions, adverbs, nouns, or verbs.</p>
-		<p>Below are possible combinations of types the aruments of "e" may be, followed by "↦", the type it acts as, ":", and a description of the semantics.</p>
+		<p>Lexical items may be adverbs, conjunctions, nouns, or verbs.</p>
+		<p>Below are possible combinations of types the arguments of "e" may be, followed by "↦", the type it acts as, ":", and a description of the semantics.</p>
 		<p>noun, verb ↦ noun: noun which does verb.</p>
 		<p>verb (must be transitive), noun ↦ verb: verb is done to noun.</p>
 		<p>conjunction, any type ↦ CP: used in the following rule.</p>
 		<p>any type, CP (must contain the same type) ↦ the same type: conjoins two of the same types.</p>
 		<p>verb, verb ↦ verb: both verbs are part of one holistic event.</p>
-		<p>verb, adverb ↦ verb: verbs happens in an adverb manner.</p>
-		<p>adverb, adverb ↦ adverb: 1st adverb is true in a 2nd adverb manner.</p>
+		<p>verb, adverb ↦ verb: verbs happens in a manner described by the adverb.</p>
+		<p>adverb, adverb ↦ adverb: 1st adverb is true in a manner described by the 2nd adverb.</p>
+		<p>noun, noun ↦ noun: normally not gramatical, but it is the most common form of multi word lexical items.</p>
 		<p style="background-color:#F99">This is a WIP list and doesnt have anything like numerals defined</p>
 		
 		<h2 id="Vocabulary">Vocabulary</h2>
@@ -321,7 +286,8 @@
 		consideration and are often passed over entirely. The semantic domains of the borrowed word are also mostly carried over with a small level of 
 		modification to remove any wholly disconnected polysemy and to simply appease the desires of whoever is loaning the word.</p>
 		<h3 id="Phrases">Lexical phrases</h3>
-		<p>Lexical items in Hýyban are not necicarily a single root, and may instead consist of any syntactically valid (ignoring types) contruction.</p>
+		<p>Lexical items in Hýyban are not necessarily a single root, and may instead consist of any syntactically valid (ignoring types)
+		construction. These multi word lexical items may also have empty spots in their defintions that must be filled when used.</p>
 		<h3 id="Names">Names and loans</h3>
 		<p>Loan words, including proper nouns, are typically converted to Hýyban's morphology one of two ways:</p>
         <ul>
@@ -340,10 +306,15 @@
             <li>if diphthongs are comprised of vowels sharing a weight they may become dual tones inheriting their first vowel and rising or lowering depending on the vowel height change of the diphthong (ai =&gt; aá)</li>
             <li>it is preferable to drop a syllable than to gain one unless dropping a syllable would result in a single syllable word</li>
             <li>low tone may be treated as default with dual tones being used to transcribe vowel length, or high tone to transcribe stress</li>
-            <li>phonemes less common in Hýyban are preferred to more common ones if the word being borrowed has multiple valid pronunciations in the orginal language</li>
+            <li>phonemes less common in Hýyban are preferred to more common ones if the word being borrowed has multiple valid pronunciations in the original language</li>
             <li>unvoiced consonant clusters may become ejectives, and voiced consonant clusters may become implosives</li>
         </ul>
 		<h3 id="Lesson1">Introduction examples</h3>
+		<p>Generally a good way to learn a language is to understand the basics, use that basic understanding to learn some vocabulary,
+		and as soon as possible start learning via immersion. This language is intentionally designed so that it is difficult to explain
+		using tradtional structures, so this document attempts to mirror that learning structure in an attempt at documenting the language.
+		So far this document has covered the the basics, the following section indroduces a handfull of vocabulary, then a section uses
+		that introductory vocab to teach new words through immersion.</p>
 		<table style="text-align: left;">
 			<tbody>
 				<tr style="text-align: center;">
@@ -354,8 +325,20 @@
 				</tr>
 				<tr>
 					<td>húnre</td>
-					<td>çu˦n.ʀɛ˨</td>
+					<td>çu˦ɴ.ʀɛ˨</td>
 					<td>is red/crimson/ruddy</td>
+					<td>verb</td>
+				</tr>
+				<tr>
+					<td>ı́n</td>
+					<td>ʔi˦n</td>
+					<td>you, y'all</td>
+					<td>noun</td>
+				</tr>
+				<tr>
+					<td>ı́n</td>
+					<td>ʔi˦n</td>
+					<td>your, y'all's</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -363,6 +346,12 @@
 					<td>ki˦.ti˦</td>
 					<td>cat, pettable feline</td>
 					<td>noun</td>
+				</tr>
+				<tr>
+					<td>laá</td>
+					<td>läi̯˨˦</td>
+					<td>like, enjoy, be please by</td>
+					<td>t.verb</td>
 				</tr>
 				<tr>
 					<td>lowen</td>
@@ -389,24 +378,6 @@
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>neé</td>
-					<td>nɛi̯˨˦</td>
-					<td>like, enjoy, be please by</td>
-					<td>t.verb</td>
-				</tr>
-				<tr>
-					<td>nı́n</td>
-					<td>ni˦n</td>
-					<td>you, y'all</td>
-					<td>noun</td>
-				</tr>
-				<tr>
-					<td>nı́n</td>
-					<td>ni˦n</td>
-					<td>your, y'all's</td>
-					<td>verb</td>
-				</tr>
-				<tr>
 					<td>púra</td>
 					<td>pu˨.ʀä˨</td>
 					<td>is cute, cuddlable, kind</td>
@@ -414,33 +385,288 @@
 				</tr>
 			</tbody>
 		</table>
+		<p>(Number, definiteness, and other factors are not specified by default in Hýyban,
+		even though the english translation is forced to mark them.)</p>
 		
 		<p>E mı lowen - I am big</p>
-		<p>E nı́n púra - you are cute</p>
+		<p>E ı́n púra - You are cute</p>
 		<p>E kı́tı́ húnre - A cat is red</p>
-		<p>E nı́n mı - you are mine</p>
-		<p>E kı́tı́ nı́n - A cat is yours</p>
-		
-		<p>E mı e neé kı́tı́ - I like a cat</p>
-		<p>E kı́tı́ e neé nı́n - A cat likes you</p>
-		<p>E nı́n e neé mı - You like me</p>
-		
-		<p>E mı e neé e kı́tı́ mé - I like this cat</p>
-		<p>E nı́n e neé e kı́tı́ lowen - You like a big cat</p>
-		
-		<p>Eé lowen kı́tı́ mı - My cat is big</p>
-		<p>Eé húnre kı́tı́ nı́n - Your cat is red</p>
-		<p>Eé mı kı́tı́ mé - This cat is mine</p>
-		<p>Eé nı́n kı́tı́ húnre - A red cat is yours</p>
-		<p>Eé mı kı́tı́ lowen - A big cat is mine</p>
-		
-		<p>Eén kı́tı́ mı neé nı́n - My cat likes you</p>
-		<p>Eén kı́tı́ lowen neé mı - A big cat likes me</p>
-		
-		<p>Eén kı́tı́ húnre neé e kı́tı́ lowen - A red cat likes a big cat</p>
+		<p>E ı́n mı - you are mine</p>
+		<p>E kı́tı́ ı́n - A cat is yours</p>
+		<p>Remeber that <i>e</i> requires exactly two arguments and behaves diffrently depending on the types of those arguments. 
+		In the examples above, those types are a noun followed by a verb, and that means that the noun is doing the verb.</p>
 		<br>
-		<p id="note5"><b>5</b> Number, definiteness, and other factors are not specified by default in Hýyban,
-		even though the english translation is forced to mark them.</p>
+		<p>E mı e laá kı́tı́ - I like a cat</p>
+		<p>E kı́tı́ e laá ı́n - A cat likes you</p>
+		<p>E ı́n e laá mı - You like me</p>
+		<p>Here you can see how <i>e</i> can be an argument for another <i>e</i>. in these examples the first <i>e</i> functions
+		the same as in previous sentences. While the second one has a verb followed by a noun, and as a result acts as a verb
+		done to the noun.</p>
+		<br>
+		<p>E mı e laá e kı́tı́ mé - I like this cat</p>
+		<p>E ı́n e laá e kı́tı́ lowen - You like a big cat</p>
+		<p>These are nearly identical to the previous block, but this time the second noun is also doing a verb. This is very similar
+		to how adjectives work in english.</p>
+		<br>
+		<p>Eé lowen kı́tı́ mı - My cat is big</p>
+		<p>Eé húnre kı́tı́ ı́n - Your cat is red</p>
+		<p>Eé mı kı́tı́ mé - This cat is mine</p>
+		<p>Eé ı́n kı́tı́ húnre - A red cat is yours</p>
+		<p>Eé mı kı́tı́ lowen - A big cat is mine</p>
+		<p>Remember that <i>eé</i> is a contraction of <i>e e</i>. Also keep in mind that words fill the <b>oldest</b> avaiable argument,
+		so the word order may be diffrent from what you are used to.</p>
+		<br>
+		<p>Eén kı́tı́ mı laá ı́n - My cat likes you</p>
+		<p>Eén kı́tı́ lowen laá mı - A big cat likes me</p>
+		<p>This is the same as above but with a transitive verb.</p>
+		<br>
+		<p>Eén kı́tı́ húnre laá e kı́tı́ lowen - A red cat likes a big cat</p>
+		<p>Finally, bring everything together</p>
+		<br>
+		<table style="text-align: left;">
+			<tbody>
+				<tr style="text-align: center;">
+					<th>word</th>
+					<th>IPA</th>
+					<th>meaning</th>
+					<th>type</th>
+				</tr>
+				<tr>
+					<td>bóo</td>
+					<td>bo˦.o˨</td>
+					<td>staff, stick-like or long cylindrical item: pointer, pole, pencil, rod, etc</td>
+					<td>noun</td>
+				</tr>
+				<tr>
+					<td>cágu</td>
+					<td>ʃä˦.gu˨</td>
+					<td>drink, eat without utensils</td>
+					<td>t.verb</td>
+				</tr>
+				<tr>
+					<td>doó</td>
+					<td>doi̯˨˦</td>
+					<td>is the intended listener</td>
+					<td>verb</td>
+				</tr>
+				<tr>
+					<td>ȷáan</td>
+					<td>ʒäu̯˦˨n</td>
+					<td>give, transfer possession (temporary or permanent)</td>
+					<td>t.verb</td>
+				</tr>
+				<tr>
+					<td>owo</td>
+					<td>ʔo˨.ʙo˨</td>
+					<td>what is?, interogative marker</td>
+					<td>verb</td>
+				</tr>
+				<tr>
+					<td>qúun</td>
+					<td>kʼu˦.u˨n</td>
+					<td>emit light, glow</td>
+					<td>verb</td>
+				</tr>
+				<tr>
+					<td>qylýn</td>
+					<td>kʼə˨.lə˦n</td>
+					<td>tongue, mandibles, mouth manipulator</td>
+					<td>noun</td>
+				</tr>
+				<tr>
+					<td>sı́n</td>
+					<td>si˦n</td>
+					<td>renew, renovate, freshen</td>
+					<td>t.verb</td>
+				</tr>
+				<tr>
+					<td>sı́n</td>
+					<td>si˦n</td>
+					<td>is new, fresh</td>
+					<td>verb</td>
+				</tr>
+				<tr>
+					<td>xıı́n</td>
+					<td>ɬiː˨˨˦n</td>
+					<td>owned animal, pet, livestock</td>
+					<td>noun</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>examples go here</p>
+		<br>
+		<table style="text-align: left;">
+			<tbody>
+				<tr style="text-align: center;">
+					<th>word</th>
+					<th>IPA</th>
+					<th>meaning</th>
+					<th>type</th>
+				</tr>
+				<tr>
+					<td>bozó</td>
+					<td>bo˨.ro˦</td>
+					<td>staff, stick-like or long cylindrical item: pointer, pole, pencil, rod, etc</td>
+					<td>t.verb</td>
+				</tr>
+				<tr>
+					<td>b́eé</td>
+					<td>ɓɛi̯˨˦</td>
+					<td>lift, hold, and move as a single event, carry</td>
+					<td>t.verb</td>
+				</tr>
+				<tr>
+					<td>cıı́n</td>
+					<td>ɕji˨˦n</td>
+					<td>use</td>
+					<td>t.verb</td>
+				</tr>
+				<tr>
+					<td>d́ée</td>
+					<td>ɗ̥ɛ˦.ɛ˨</td>
+					<td>run, move quickly under ones own power</td>
+					<td>verb</td>
+				</tr>
+				<tr>
+					<td>hat́a</td>
+					<td>çä˨.tʼä˨</td>
+					<td>perceive with the eyes</td>
+					<td>t.verb</td>
+				</tr>
+				<tr>
+					<td>ńuú</td>
+					<td>ŋu˨.u˦</td>
+					<td>state, process, event, activity</td>
+					<td>noun</td>
+				</tr>
+				<tr>
+					<td>e ńuú (verb)</td>
+					<td>ʔɛ˨ ŋu˨.u˦ (verb)</td>
+					<td>the event described by the verb</td>
+					<td>noun</td>
+				</tr>
+				<tr>
+					<td>sı́ı</td>
+					<td>sjə˦˨</td>
+					<td>really, very</td>
+					<td>adverb</td>
+				</tr>
+				<tr>
+					<td>sı́ı</td>
+					<td>sjə˦˨</td>
+					<td>is litteral, genuine, bona-fide</td>
+					<td>verb</td>
+				</tr>
+				<tr>
+					<td>vaga</td>
+					<td>vä˨.gä˨</td>
+					<td>beef, steak, bovine flesh</td>
+					<td>noun</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>examples go here</p>
+		<!---<br>
+		<table style="text-align: left;">
+			<tbody>
+				<tr style="text-align: center;">
+					<th>word</th>
+					<th>IPA</th>
+					<th>meaning</th>
+					<th>type</th>
+				</tr>
+				<tr>
+					<td>ze</td>
+					<td>rɛ˨</td>
+					<td>zero, 0</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>cézo</td>
+					<td>ʃɛ˦.ro˨</td>
+					<td>two zeros, 00</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>coóráa</td>
+					<td>ʃoi̯˨˦.ʀäu̯˦˨</td>
+					<td>three zeros, 000</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>ván</td>
+					<td>vä˦n</td>
+					<td>one, 1</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>dı́ı</td>
+					<td>d͡ʒə˦˨</td>
+					<td>two, 2</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>tıı́</td>
+					<td>t͡ʃi˨˦</td>
+					<td>three, 3</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>fı́ı</td>
+					<td>fjə˦˨</td>
+					<td>four, 4</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>dón</td>
+					<td>do˦n</td>
+					<td>five, 5</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>ceé</td>
+					<td>ʃɛi̯˨˦</td>
+					<td>six, 6</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>sı́byn</td>
+					<td>si˦.bə˨n</td>
+					<td>seven, 7</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>fazu</td>
+					<td>fä˨.ru˨</td>
+					<td>eight, 8</td>
+					<td>numeral</td>
+				</tr>
+				<tr>
+					<td>sı́va</td>
+					<td>si˦.vä˨</td>
+					<td>nine, 9</td>
+					<td>numeral</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>To construct a number, imagine writing it out using the words instead of the digits, and replacing <i>ze ze ze</i> with
+		<i>coóráa</i> and <i>ze ze</i> with <i>cézo</i>. Then starting from the right and working leftwards, attach both numbers to
+		an <i>e</i>, repeat that step until you are left with a single note. That entire construct is your number.</p>
+		<p>
+		1 - ván
+		<br>
+		12 - e ván dı́ı
+		<br>
+		100 - e ván cézo
+		<br>
+		102 - e ván e ze dı́ı
+		<br>
+		1000 - e ván coóráa
+		<br>
+		1002 - e ván e cézo dı́ı
+		<br>
+		102000 - eén ván ze dı́ı coóráa  
+		</p>--->
 	</div>
 	
 
