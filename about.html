@@ -270,8 +270,9 @@
 		<h3 id="SyntacticCategories">Syntactic category combinations</h3>
 		<p>Lexical items may be adverbs, conjunctions, nouns, or verbs.</p>
 		<p>Below are possible combinations of types the arguments of "e" may be, followed by "↦", the type it acts as, ":", and a description of the semantics.</p>
-		<p>noun, verb ↦ noun: noun which experiences verb.</p>
-		<p>verb noun ↦ verb: verb is done by noun.</p>
+		<p>noun, verb ↦ noun: noun which is the subject of verb.</p>
+		<p>verb noun ↦ verb: verb which has noun as object.</p>
+		<p>(if unspecified the object can be assumed to be the cause/agent)</p>
 		<p>conjunction, any type ↦ CP: used in the following rule.</p>
 		<p>any type, CP (must contain the same type) ↦ the same type: conjoins two of the same types.</p>
 		<p>verb, verb ↦ verb: both verbs are part of one holistic event.</p>
@@ -326,7 +327,7 @@
 				<tr>
 					<td>húnre</td>
 					<td>çu˦ɴ.ʀɛ˨</td>
-					<td>is red/crimson/ruddy</td>
+					<td>subject is red/crimson/ruddy</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -338,7 +339,7 @@
 				<tr>
 					<td>ı́n</td>
 					<td>ʔi˦n</td>
-					<td>your, y'all's</td>
+					<td>subject is your, y'all's</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -350,19 +351,19 @@
 				<tr>
 					<td>laá</td>
 					<td>läi̯˨˦</td>
-					<td>liked, enjoyed, please</td>
+					<td>subject likes, enjoyes, is pleased by object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>lowen</td>
 					<td>lo˨.ʙɛ˨n</td>
-					<td>is big, large</td>
+					<td>subject is big, large</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>mé</td>
 					<td>mɛ˦</td>
-					<td>is identifiable by context</td>
+					<td>subject is identifiable by context given by object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -374,13 +375,13 @@
 				<tr>
 					<td>mı</td>
 					<td>mi˨</td>
-					<td>my, our (exclusive)</td>
+					<td>subject is mine, our (exclusive)</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>púra</td>
 					<td>pu˨.ʀä˨</td>
-					<td>is cute, cuddlable, kind</td>
+					<td>subject is cute, cuddlable, kind</td>
 					<td>verb</td>
 				</tr>
 			</tbody>
@@ -440,31 +441,31 @@
 				<tr>
 					<td>cágu</td>
 					<td>ʃä˦.gu˨</td>
-					<td>drunken (not intoxicated), eaten without utensils</td>
+					<td>subject is drunken (not intoxicated), eaten without utensils</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>doó</td>
 					<td>doi̯˨˦</td>
-					<td>is the intended listener</td>
+					<td>subject is the listener intended by object (default the speaker)</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>ȷáan</td>
 					<td>ʒäu̯˦˨n</td>
-					<td>given away, changes possession (temporary or permanent)</td>
+					<td>subject is given away, changes possession (temporary or permanent)</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>owo</td>
 					<td>ʔo˨.ʙo˨</td>
-					<td>what is?, interogative marker</td>
+					<td>subject is what?, interogative marker, asked by object (default speaker)</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>qúun</td>
 					<td>kʼu˦.u˨n</td>
-					<td>emit light, glow</td>
+					<td>subject emits light, glows</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -476,13 +477,13 @@
 				<tr>
 					<td>sı́n</td>
 					<td>si˦n</td>
-					<td>is new, fresh</td>
+					<td>subject is new, fresh</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>ulı́</td>
 					<td>ulı́</td>
-					<td>is not the one most obvious by context, is diffrent</td>
+					<td>subject is not the one most obvious by context, is diffrent</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -493,7 +494,9 @@
 				</tr>
 			</tbody>
 		</table>
-		<p>examples go here</p>
+		<p>Eé owo bóo qúun - what is this glowing stick?</p>
+		<p>Eé doó e mı xıı́n sı́n - I'm talking to you my new pet</p>
+		<p>e mı e cágu eé ulı́ xıı́n lowen - I ate a diffrent large livestock</p>
 		<br>
 		<table style="text-align: left;">
 			<tbody>
@@ -512,25 +515,25 @@
 				<tr>
 					<td>b́eé</td>
 					<td>ɓɛi̯˨˦</td>
-					<td>lifted, held, and moved as a single event, carried</td>
+					<td>subject is lifted, held, and moved as a single event, carried</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>cıı́n</td>
 					<td>ɕji˨˦n</td>
-					<td>used</td>
+					<td>subject uses object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>d́ée</td>
 					<td>ɗ̥ɛ˦.ɛ˨</td>
-					<td>run, move quickly under ones own power</td>
+					<td>subject runs, move quickly under ones own power</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>hat́a</td>
 					<td>çä˨.tʼä˨</td>
-					<td>perceived with the eyes, seen, visible</td>
+					<td>subject perceives with the eyes, sees object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -554,7 +557,7 @@
 				<tr>
 					<td>sı́ı</td>
 					<td>sjə˦˨</td>
-					<td>is litteral, genuine, bona-fide</td>
+					<td>subject is litteral, genuine, bona-fide as confirmed by object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -590,19 +593,19 @@
 				<tr>
 					<td>di</td>
 					<td>di˨</td>
-					<td>equal, is the same as</td>
+					<td>subject is equal to, is the same as object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>hazen</td>
 					<td>çä˨.rɛ˨n</td>
-					<td>loved, mutually wants good things to happen to each other, trusted to feel the same way</td>
+					<td>subject loves, mutually wants good things to happen to each other, trusted to feel the same way with object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>hıfoón</td>
 					<td>çi˨.foi̯˨˦n</td>
-					<td>is glow in the dark, phosphorescent, absorbs light to emit it later</td>
+					<td>subject is glow in the dark, phosphorescent, absorbs light to emit it later</td>
 					<td>verb</td>
 				</tr>
 				<tr>
@@ -626,13 +629,13 @@
 				<tr>
 					<td>la</td>
 					<td>lä˨</td>
-					<td>not</td>
+					<td>subject is not object (by default acts as just negation)</td>
 					<td>verb</td>
 				</tr>
 				<tr>
 					<td>paná</td>
 					<td>pä˨.nä˦</td>
-					<td>faced, adressed, turned to</td>
+					<td>subject faces, adresses, is turned to object</td>
 					<td>verb</td>
 				</tr>
 			</tbody>
