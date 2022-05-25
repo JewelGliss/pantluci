@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Orthography Helper</title>
+    <link type="text/css" href="./web/res/layout.css" rel="stylesheet">
+    <link rel="icon" href="./images/icon.ico">
+    <link href="./web/res/bootstrap.css" rel="stylesheet">
+	<style>
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		h1 {
+			font-size: 2.06em;
+			margin-bottom: 0.25em;
+			padding: 0;
+			font-family: 'Linux Libertine','Georgia','Times',serif;
+			line-height: 1.3;
+			border-bottom: 1px solid #a2a9b1;
+			font-weight: normal;
+			color: #000;
+		}
+		h2 {
+			font-size: 1.71em;
+			font-family: 'Linux Libertine','Georgia','Times',serif;
+			line-height: 1.3;
+			font-weight: normal;
+			color: #000;
+			border-bottom: 1px solid #a2a9b1;
+		}
+		.container{
+			width:auto;
+			max-width:940px;
+		}
+		.row{
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Orthography Helper</h1>
+		<h2 id="Hooyba">Hoóba</h2>
+		<div class="row">
+			<div class="span12">
+				<form>
+					<fieldset>
+						<textarea id="hooyba_textarea" rows="5"
+							placeholder='Type any Hoóba text here.'
+							style="width: 100%;" spellcheck="false"></textarea>         
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<p id="Hooyba_Ascii">Ascii Friendly: </h3>
+		<p id="Hooyba_Clean">Cleaned: </h3>
+		<p id="Hooyba_Phoneme">Phonemes: </h3>
+		<p id="Hooyba_Real">Realization: </h3>
+		
+		<h2 id="Peeeeccaa">Pë̇ċȧ</h2>
+		<div class="row">
+			<div class="span12">
+				<form>
+					<fieldset>
+						<textarea id="peeeeccaa_textarea" rows="5"
+							placeholder='Type any Pë̇ċȧ text here.'
+							style="width: 100%;" spellcheck="false"></textarea>         
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<p id="Peeeeccaa_Ascii">Ascii Friendly: </h3>
+		<p id="Peeeeccaa_Clean">Cleaned: </h3>
+		<p id="Peeeeccaa_Phoneme">Phonemes: </h3>
+		<p id="Peeeeccaa_Real">Realization: </h3>
+	</div>
+	<script>
+	document.getElementById('hooyba_textarea').addEventListener('keyup', e => {
+		var text = document.getElementById('hooyba_textarea').value;
+		text=text.replaceAll("´","y");
+		text=text.replaceAll("'","y");
+		text=text.replaceAll("‘","y");
+		text=text.replaceAll("’","y");
+		text=text.replaceAll("‛","y");
+		text=text.replaceAll("ȷ","j");
+		text=text.replaceAll("ı","i");
+		text=text.replaceAll("Á","Ay");
+		text=text.replaceAll("É","Ey");
+		text=text.replaceAll("Í","Iy");
+		text=text.replaceAll("Ó","Oy");
+		text=text.replaceAll("Ú","Uy");
+		text=text.replaceAll("Ń","Ny");
+		text=text.replaceAll("á","ay");
+		text=text.replaceAll("é","ey");
+		text=text.replaceAll("í","iy");
+		text=text.replaceAll("ó","oy");
+		text=text.replaceAll("ú","uy");
+		text=text.replaceAll("ń","ny");
+		text=text.replaceAll("ń","ny");
+		text=text.replaceAll("́","y");
+		document.getElementById('Hooyba_Ascii').textContent = "Ascii Friendly: "+text;
+		text=text.replaceAll("Ay","Á");
+		text=text.replaceAll("Ey","É");
+		text=text.replaceAll("Iy","Í");
+		text=text.replaceAll("Oy","Ó");
+		text=text.replaceAll("Uy","Ú");
+		text=text.replaceAll("Ny","Ń");
+		text=text.replaceAll("ay","á");
+		text=text.replaceAll("ey","é");
+		text=text.replaceAll("iy","í");
+		text=text.replaceAll("oy","ó");
+		text=text.replaceAll("uy","ú");
+		text=text.replaceAll("ny","ń");
+		text=text.replaceAll("ny","ń");
+		text=text.replaceAll("y","́");
+		text=text.replaceAll("j","ȷ");
+		text=text.replaceAll("i","ı");
+		document.getElementById('Hooyba_Clean').textContent = "Cleaned: "+text;
+		text=text.toLowerCase()
+		text=text.replaceAll("j","ȷ");
+		text=text.replaceAll("i","ı");//to deal with the new lowercase ones
+		text=text.replaceAll("ń","ŋ");
+		text=text.replaceAll("p","pʰ");
+		text=text.replaceAll("t","tʰ");
+		text=text.replaceAll("k","kʰ");
+		text=text.replaceAll("t́","tʼ");
+		text=text.replaceAll("q","kʼ");
+		text=text.replaceAll("b́","ɓ");
+		text=text.replaceAll("d́","ɗ");
+		text=text.replaceAll("w","ʙ");
+		text=text.replaceAll("r","ʀ");//ordering matters
+		text=text.replaceAll("z","r");
+		text=text.replaceAll("c","ʃ");
+		text=text.replaceAll("h","ç");
+		text=text.replaceAll("x","ɬ");
+		text=text.replaceAll("́","˦");
+		text=text.replaceAll("á","ʔä˦");
+		text=text.replaceAll("é","ʔɛ˦");
+		text=text.replaceAll("í","i˦");
+		text=text.replaceAll("ó","o˦");
+		text=text.replaceAll("ú","u˦");
+		text=text.replaceAll("a","ʔä˨");
+		text=text.replaceAll("e","ʔɛ˨");
+		text=text.replaceAll("i","ʔi˨");
+		text=text.replaceAll("o","ʔo˨");
+		text=text.replaceAll("u","ʔu˨");
+		text=text.replaceAll("˨˦","˦");//get rid of conflicts
+		text=text.replaceAll("ä˦ʔä","ä˦ä").replaceAll("ä˨ʔä","ä˨ä");
+		text=text.replaceAll("ɛ˦ʔɛ","ɛ˦ɛ").replaceAll("ɛ˨ʔɛ","ɛ˨ɛ");
+		text=text.replaceAll("i˦ʔi","i˦i").replaceAll("i˨ʔi","i˨i");
+		text=text.replaceAll("o˦ʔo","o˦o").replaceAll("o˨ʔo","o˨o");
+		text=text.replaceAll("u˦ʔu","u˦u").replaceAll("u˨ʔu","u˨u");
+		//document.getElementById('Hooyba_Phoneme').textContent = "Phonemes: "+text;
+		//document.getElementById('Hooyba_Real').textContent = "Realization: "+text;
+		
+		})
+	document.getElementById('peeeeccaa_textarea').addEventListener('keyup', e => {
+		var text = document.getElementById('peeeeccaa_textarea').value;
+		text=text.replaceAll("Ċ","Cc");
+		text=text.replaceAll("ċ","cc");
+		text=text.replaceAll("Ė","Ee");
+		text=text.replaceAll("ė","ee");
+		text=text.replaceAll("Ȧ","Aa");
+		text=text.replaceAll("ȧ","aa");
+		text=text.replaceAll("Ṗ","Pp");
+		text=text.replaceAll("ṗ","pp");
+		text=text.replaceAll("Ë","Eee");
+		text=text.replaceAll("ë","eee");
+		text=text.replaceAll("Ä","Aaa");
+		text=text.replaceAll("ä","aaa");
+		text=text.replaceAll("̈","̇̇");
+		text=text.replaceAll("¨","̇̇");
+		text=text.replaceAll("˙","̇");
+		text=text.replaceAll("Ċ","Cc");
+		text=text.replaceAll("Ė","Ee");
+		text=text.replaceAll("Ȧ","Aa");
+		text=text.replaceAll("Ṗ","Pp");
+		while(text.indexOf("ċ")>-1){
+		text=text.replaceAll("ċ","cc");
+		}
+		while(text.indexOf("ė")>-1){
+		text=text.replaceAll("ė","ee");
+		}
+		while(text.indexOf("ȧ")>-1){
+		text=text.replaceAll("ȧ","aa");
+		}
+		while(text.indexOf("ṗ")>-1){
+		text=text.replaceAll("ṗ","pp");
+		}
+		document.getElementById('Peeeeccaa_Ascii').textContent = "Ascii Friendly: "+text;
+		while(text.indexOf("cc")>-1){
+		text=text.replace("cc","ċ");
+			while(text.indexOf("ċc")>-1){
+				text=text.replace("ċc","cċ");
+			}
+		}
+		while(text.indexOf("ee")>-1){
+		text=text.replace("ee","ė");
+			while(text.indexOf("ėe")>-1){
+				text=text.replace("ėe","eė");
+			}
+		}
+		while(text.indexOf("aa")>-1){
+		text=text.replace("aa","ȧ");
+			while(text.indexOf("ȧa")>-1){
+				text=text.replace("ȧa","aȧ");
+			}
+		}
+		while(text.indexOf("pp")>-1){
+		text=text.replace("pp","ṗ");
+			while(text.indexOf("ṗp")>-1){
+				text=text.replace("ṗp","pṗ");
+			}
+		}
+		while(text.indexOf("Cc")>-1){
+		text=text.replace("Cc","Ċ");
+			while(text.indexOf("Ċc")>-1){
+				text=text.replace("Ċc","Cċ");
+			}
+		}
+		while(text.indexOf("Ee")>-1){
+		text=text.replace("Ee","Ė");
+			while(text.indexOf("Ėe")>-1){
+				text=text.replace("Ėe","Eė");
+			}
+		}
+		while(text.indexOf("Aa")>-1){
+		text=text.replace("Aa","Ȧ");
+			while(text.indexOf("Ȧa")>-1){
+				text=text.replace("Ȧa","Aȧ");
+			}
+		}
+		while(text.indexOf("Pp")>-1){
+		text=text.replace("Pp","Ṗ");
+			while(text.indexOf("Ṗp")>-1){
+				text=text.replace("Ṗp","Pṗ");
+			}
+		}
+		while(text.indexOf("̇̇")>-1){
+		text=text.replace("̇̇","̈");
+			while(text.indexOf("̇̈")>-1){
+				text=text.replace("̇̈","̈̇");
+			}
+		}
+		text=text.replaceAll("Ë","Ë");
+		text=text.replaceAll("ë","ë");
+		text=text.replaceAll("Ä","Ä");
+		text=text.replaceAll("ä","ä");
+		text=text.replaceAll("Ċ","Ċ");
+		text=text.replaceAll("ċ","ċ");
+		text=text.replaceAll("Ė","Ė");
+		text=text.replaceAll("ė","ė");
+		text=text.replaceAll("Ȧ","Ȧ");
+		text=text.replaceAll("ȧ","ȧ");
+		text=text.replaceAll("Ṗ","Ṗ");
+		text=text.replaceAll("ṗ","ṗ");
+		document.getElementById('Peeeeccaa_Clean').textContent = "Cleaned: "+text;
+		//document.getElementById('Peeeeccaa_Phoneme').textContent = "Phonemes: "+text;
+		//document.getElementById('Peeeeccaa_Real').textContent = "Realization: "+text;
+		
+		})
+	</script>
+
+</body>
+
+</html>
