@@ -32,7 +32,7 @@ jobs:
         run: |
           cd ./bins
           curl -o ./linkcheck.zip -sSL https://github.com/Michael-F-Bryan/mdbook-linkcheck/releases/download/v0.7.6/mdbook-linkcheck.x86_64-unknown-linux-gnu.zip
-          unzip lintcheck.zip
+          unzip linkcheck.zip
 
       - name: Install mdbook-regex-replacer
         if: steps.cache-rust.outputs.cache-hit != 'true'
