@@ -228,6 +228,7 @@
 		<ul>
 			<li>the final syllable may not be the same as the penultimate syllalbe</li>
 			<li>the final syllable may not contain a long vowel</li>
+			<li>the first syllable may not be the same as the second syllalbe</li>
 			<li>the first syllable may not contain a long stop</li>
 			<li>stress rests on the first syllable</li>
 			<li>The same vowel may not occur on both sides of a glottal stop word-internally.</li>
@@ -259,8 +260,12 @@
         <ul>
             <li>Sentence breaks always requires exactly two arguments and other words never accept any arguments.</li>
             <li>To create a sentenc break:
-			<ul><li>if the preceeding word ends in a short vowel, lengthen it</li>
-			<li>if the preceeding word ends in a long vowel, shorten it and reduplicate the final syllable</li></ul></li>
+				<ul>
+					<li>if the preceeding word ends in a short vowel, lengthen it</li>
+					<li>if the preceeding word ends in a long vowel, preduplicate the first syllable of the following word</li>
+					<li>if the the previous two options have already been done, undo them and reduplicate the final syllable</li>
+				</ul>
+			</li>
             <li>Words are fill the <u><b style="font-size:20px;">oldest</b></u> unfilled argument slot.</li>
             <li>Only certain combinations of word types may legally fill the slots of a sentence break.</li>
         </ul>
@@ -460,11 +465,11 @@
 	</div>
 		
 	<div class="printBlock">
-		<p>Soso suhri citi mi - My cat is big</p>
-		<p>Soso hunere citi vu - Your cat is red</p>
-		<p>Soso mı citi ni - This cat is mine</p>
-		<p>Soso vu citi hunere - A red cat is yours</p>
-		<p>Soso mı citi suhri - A big cat is mine</p>
+		<p>Soh suhsuhri citi mi - My cat is big</p>
+		<p>Soh huhunere citi vu - Your cat is red</p>
+		<p>Soh mimi citi ni - This cat is mine</p>
+		<p>Soh vuvu citi hunere - A red cat is yours</p>
+		<p>Soh mimi citi suhri - A big cat is mine</p>
 		<p>Keep in mind that words fill the
 		<b>oldest</b> available argument, so the word order may be different from what you might expect.</p>
 	</div>
@@ -480,73 +485,84 @@
 		<p>Finally, bringing everything together</p>
 		<p>Sosoh citi hunere tetsih citi suhri - A big cat likes a red cat</p>
 	</div>
-	<p style="background-color:#Faa;text-align:center;font-size:300%;padding:20px;">Unupdated below</p>
+	
 	<div class="printBlock">
 		<table style="text-align: left;">
 			<tbody>
 				<tr style="text-align: center;">
 					<th>word</th>
+					<th>from</th>
 					<th>IPA</th>
 					<th>meaning</th>
 					<th>type</th>
 				</tr>
 				<tr>
-					<td>bóo</td>
-					<td>bo˦.o˨</td>
+					<td>boo</td>
+					<td>棒 (jpn)</td>
+					<td>bo.ʔo</td>
 					<td>staff, stick-like or long cylindrical item: pointer, pole, pencil, rod, etc</td>
 					<td>noun</td>
 				</tr>
 				<tr>
-					<td>cágu</td>
-					<td>ʃä˦.gu˨</td>
+					<td>xagu</td>
+					<td>unkown</td>
+					<td>ɕä.gu</td>
 					<td>subject is drunk(not intoxicated), eaten without utensils</td>
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>doó</td>
-					<td>doi̯˨˦</td>
+					<td>doje</td>
+					<td>doi (jbo)</td>
+					<td>do.je</td>
 					<td>subject is the listener intended by object (default the speaker)</td>
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>ȷénu</td>
-					<td>ʒɛ˦.nu</td>
+					<td>givi</td>
+					<td>givim (tpi)</td>
+					<td>gi.wi</td>
 					<td>subject is given away, changes possession (temporary or permanent)</td>
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>paná</td>
-					<td>pʰä˨.nä˦</td>
+					<td>pana</td>
+					<td>unkown</td>
+					<td>pʰä.nä</td>
 					<td>subject faces, adresses, is turned to object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>táva</td>
-					<td>tä˦.vä˨</td>
+					<td>tava</td>
+					<td>tawa (tok)</td>
+					<td>tä.wä</td>
 					<td>subject goes towards object</td>
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>qúnu</td>
-					<td>kʼu˦.nu˨</td>
+					<td>qunu</td>
+					<td>unkown</td>
+					<td>ɟu.nu</td>
 					<td>subject emits light, glows</td>
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>pı́e</td>
+					<td>pie</td>
+					<td><a href="https://esolangs.org/wiki/Piet">Piet</a></td>
 					<td>pi˦.ʔɛ˨</td>
 					<td>subject is esoteric, unusual, strange without being random</td>
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>olı́</td>
-					<td>ʔo.li˦</td>
+					<td>eri</td>
+					<td>eile (gle)</td>
+					<td>ʔɛ.ɹi</td>
 					<td>subject is not the one most obvious by context, is different</td>
 					<td>verb</td>
 				</tr>
 				<tr>
-					<td>xını́</td>
-					<td>ɬi˨.ni˦</td>
+					<td>xihtsa</td>
+					<td>łį́į́ʼtsaʼii (nav)</td>
+					<td>ɕiː.t͡sä</td>
 					<td>owned animal, pet, livestock</td>
 					<td>noun</td>
 				</tr>
@@ -555,29 +571,30 @@
 	</div>
 		
 	<div class="printBlock">
-		<p>An pı́e bóo qúnu - A glowing stick is strange</p>
-		<p>A na nolı́ cágu mı xını́ lowe - I ate a different large livestock</p>
+		<p>Soh pipie boo qunu - A glowing stick is strange</p>
+		<p>Sosoh eeri xagu mi xihtsa suhri - I ate a different large livestock</p>
 		<p>These senteces dont introduce any new concepts except for a few words.</p>
 	</div>
 		
 	<div class="printBlock">
-		<p>An púra kı́tı́ doó - you, cat, are cute</p>
+		<p>Soh pupura citi doje - you, cat, are cute</p>
 		<p>There is no actual second person pronoun in this sentence, but due to the fact that you are saying the cat is cute to the cat,
 		it is most convient to translate it that way.</p>
 	</div>
 		
 	<div class="printBlock">
-		<p>A bóon ȷánun mın paná vu - I to you give a stick</p>
-		<p>A na bóon ȷánu mı táva vu - I give you a stick</p>
+		<p>Soh booh givih mih pana vu - I to you give a stick</p>
+		<p>Soso booh givi mi tava vu - I give you a stick</p>
 		<p>These two sentences mean very similar things, but a distinction is made between where the stick is going to
 		(but may not actually end up) and where the stick ends up (but may not be inteded). In other words <i>paná</i> concerns
 		a propery of the object, the place it is sending to, and <i>táva</i> concerns a propery of the subject, the direction it is going.</p>
 	</div>
 		
 	<div class="printBlock">
-		<p>A mın távan xını́ mú - I go to that livestock</p>
+		<p>Soh mih tavah xihtsa ni - I go to that livestock</p>
 	</div>
 		
+	<p style="background-color:#Faa;text-align:center;font-size:300%;padding:20px;">Unupdated below</p>
 	<div class="printBlock">
 		<table style="text-align: left;">
 			<tbody>
