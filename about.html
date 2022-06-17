@@ -76,7 +76,7 @@
 		}
 		.container{
 			width:auto;
-			max-width:940px;
+			max-width:8.5in;
 		}
 		.shorten:first-line {
 			line-height:1.2em !important;
@@ -89,6 +89,39 @@
 		}
 		table{
 			margin:0px;
+		}
+		
+		table tbody tr:first-child :not(.showTop) {
+			border-top-width: 0px;
+			border-top-style:hidden;
+		}
+		table tbody tr  :not(.showLeft):first-child {
+			border-left-width: 0px;
+			border-left-style:hidden;
+		}
+		table tbody tr:last-child :not(.showBottom) {
+			border-bottom-width: 0px;
+			border-bottom-style:hidden;
+		}
+		table tbody tr :not(.showRight):last-child {
+			border-right-width: 0px;
+			border-right-style:hidden;
+		}
+		table, th, tr, .Unused{
+			background-color:transparent;
+		}
+		table a{
+			color:black;
+			font-weight:normal;
+		}
+		.gloss{
+			width:auto;
+			font-weight:bolder;
+		}
+		.gloss tbody tr:first-child{
+			font-weight:normal;
+			border-bottom-width: 0px;
+			border-bottom-style:hidden;
 		}
 	</style>
 </head>
@@ -110,7 +143,8 @@
 		vowel inventory copied from <a href="https://en.wikipedia.org/wiki/Lojban">Lojban</a>, a tone system copied from
 		<a href="https://en.wikipedia.org/wiki/L%C3%A1adan">Láadan</a>, and a grammar system heavily inspired by
 		<a href="https://en.wikipedia.org/wiki/Toki_Pona">toki pona</a>. By early 2022 most of these influences were largely
-		obscured by revisions to the language.
+		obscured by revisions to the language. By mid June 2022 the main particle used in the language being really repretive
+		became a larger and larger problem forcing a redo of the phonology in order to allow for less repetive form.
         </p>
 		<p>Tsohci is intended to explore many linguistic theories that claim some form of fundamental
 		or underlying genetic language or grammar. This language violates most if not all of their proposed
@@ -125,7 +159,7 @@
 		<h2 id="Phonology">Phonology</h2>
 		<h3 id="Inventory">Inventory</h3>
 		<div class="printBlock;margin:0px;">
-		<table style="text-align: center;width:70%;float:left;display">
+		<table style="text-align: center;width:auto;">
 			<tbody>
 				<tr>
 					<th colspan="2"></th>
@@ -135,6 +169,18 @@
 					<th><a href="https://en.wikipedia.org/wiki/Dorsal_consonant" title="Dorsal consonant">Velar</a></th>
 					<th><a href="https://en.wikipedia.org/wiki/Glottal_consonant" title="Glottal consonant">Glottal</a></th>
 				</tr>
+				
+				<tr style="visibility: collapse;height:0px;">
+					<td class="Unused"> &nbsp; </td>
+					<td class="Unused"> &nbsp; </td>
+					<td class="Unused"> &nbsp; </td>
+					<td class="Unused"> &nbsp; </td>
+					<td class="Unused"> &nbsp; </td>
+					<td class="Unused"> &nbsp; </td>
+					<td class="Unused"> &nbsp; </td>
+					<td class="Unused"> &nbsp; </td>
+				</tr>
+				
 				<tr>
 					<th colspan="2"><a href="https://en.wikipedia.org/wiki/Sonorant" title="Lateral"><div class="shorten">Son<wbr>orant</div></a></th>
 					<td>w~v ⟨v⟩</td>
@@ -152,7 +198,7 @@
 					<td class="Unused"></td>
 				</tr>
 				<tr>
-					<th><a href="https://en.wikipedia.org/wiki/Gemination" title="Gemination"><small>long</small></a></th>
+					<th class="showLeft"><a href="https://en.wikipedia.org/wiki/Gemination" title="Gemination"><small>long</small></a></th>
 					<td>pː ⟨pp⟩</td>
 					<td>tː ⟨tt⟩</td>
 					<td colspan="2">cː ⟨cc⟩</td>
@@ -160,7 +206,7 @@
 					<td class="Unused"></td>
 				</tr>
 				<tr>
-					<th><small><a href="https://en.wikipedia.org/wiki/Voice_(phonetics)" title="Voice">voiced</a></small></th>
+					<th class="showLeft"><small><a href="https://en.wikipedia.org/wiki/Voice_(phonetics)" title="Voice">voiced</a></small></th>
 					<td>b</td>
 					<td>d</td>
 					<td colspan="2">ɟ ⟨q⟩</td>
@@ -168,7 +214,7 @@
 					<td rowspan="2">(ʔ)<sup><a href="#note1">1</a></sup></td>
 				</tr>
 				<tr>
-					<th><a href="https://en.wikipedia.org/wiki/Aspirated_consonant" title="Aspiration"><div class="shorten"><small>asp<wbr>irated</small></div></a></th>
+					<th class="showLeft"><a href="https://en.wikipedia.org/wiki/Aspirated_consonant" title="Aspiration"><div class="shorten"><small>asp<wbr>irated</small></div></a></th>
 					<td>pʰ ⟨p⟩</td>
 					<td>tʰ ⟨t⟩</td>
 					<td colspan="2">cʰ ⟨c⟩</td>
@@ -185,14 +231,14 @@
 					<th colspan="2"><a href="https://en.wikipedia.org/wiki/Affricate" title="Affricate">Affricate</a></th>
 					<td class="Unused"></td>
 					<td>t͡s ⟨ts⟩</td>
-					<td class="Unused"></td>
-					<td class="Unused"></td>
+					<td colspan="2" class="Unused"></td>
 					<td class="Unused"></td>
 					<td class="Unused"></td>
 				</tr>
 			</tbody>
 		</table>
-		<table style="text-align: center;width:30%;float:left;display">
+		<p id="note1"><b>1</b> The glottal stop may be analyzed as a null onset.</p>
+		<table style="text-align: center;width:auto;">
 			<tbody>
 				<tr>
 					<th></th>
@@ -216,9 +262,6 @@
 			</tbody>
 		</table>
 		
-		<div class="printBlock" style="float:left;margin:0px;">
-		<p id="note1"><b>1</b> The glottal stop may be analyzed as a null onset.</p>
-		</div>
 	</div>
 		
 	<div class="printBlock" style="width:100%;display:block;">
@@ -263,7 +306,7 @@
 				<ul>
 					<li>if the preceeding word ends in a short vowel, lengthen it</li>
 					<li>if the preceeding word ends in a long vowel, preduplicate the first syllable of the following word</li>
-					<li>if the the previous two options have already been done, undo them and reduplicate the final syllable</li>
+					<li>if the the previous two options have already been done, undo them and reduplicate the final syllable of the previous word</li>
 				</ul>
 			</li>
             <li>Words are fill the <u><b style="font-size:20px;">oldest</b></u> unfilled argument slot.</li>
@@ -432,14 +475,140 @@
 		even though the english translation may be forced to mark them.)</p>
 	</div>
 		
+		<div class="printBlock">
+			<p>Soh citi suhri - A cat is big</p>
+			<table class="gloss">
+				<tbody>
+					<tr>
+						<td>So</td>
+						<td>-h</td>
+						<td>citi</td>
+						<td>suhri</td>
+					</tr>
+					<tr>
+						<td>[filler]</td>
+						<td style="font-variant: small-caps;">np</td>
+						<td>cat</td>
+						<td>large</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="printBlock">
+			<p>Soh mi suhri - I am big</p>
+			<table class="gloss">
+				<tbody>
+					<tr>
+						<td>So</td>
+						<td>-h</td>
+						<td>mi</td>
+						<td>suhri</td>
+					</tr>
+					<tr>
+						<td>[filler]</td>
+						<td style="font-variant: small-caps;">np</td>
+						<td>1</td>
+						<td>large</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="printBlock">
+			<p>Soh citi vu - A cat is yours</p>
+			<table class="gloss">
+				<tbody>
+					<tr>
+						<td>So</td>
+						<td>-h</td>
+						<td>citi</td>
+						<td>vu</td>
+					</tr>
+					<tr>
+						<td>[filler]</td>
+						<td style="font-variant: small-caps;">np</td>
+						<td>cat</td>
+						<td style="font-variant: small-caps;">2p</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="printBlock">
+			<p>Soh vu pura - You are cute</p>
+			<table class="gloss">
+				<tbody>
+					<tr>
+						<td>So</td>
+						<td>-h</td>
+						<td>vu</td>
+						<td>pura</td>
+					</tr>
+					<tr>
+						<td>[filler]</td>
+						<td style="font-variant: small-caps;">np</td>
+						<td>2</td>
+						<td>cute</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="printBlock">
+			<p>Soh citi hunere - A cat is red</p>
+			<table class="gloss">
+				<tbody>
+					<tr>
+						<td>So</td>
+						<td>-h</td>
+						<td>citi</td>
+						<td>hunere</td>
+					</tr>
+					<tr>
+						<td>[filler]</td>
+						<td style="font-variant: small-caps;">np</td>
+						<td>cat</td>
+						<td>red</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="printBlock">
+			<p>Soh vu mı - You are mine</p>
+			<table class="gloss">
+				<tbody>
+					<tr>
+						<td>So</td>
+						<td>-h</td>
+						<td>citi</td>
+						<td>vu</td>
+					</tr>
+					<tr>
+						<td>[filler]</td>
+						<td style="font-variant: small-caps;">np</td>
+						<td>cat</td>
+						<td style="font-variant: small-caps;">2p</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="printBlock">
+			<p>Soh citi ni - The cat is this here/This is the cat</p>
+			<table class="gloss">
+				<tbody>
+					<tr>
+						<td>So</td>
+						<td>-h</td>
+						<td>citi</td>
+						<td>this</td>
+					</tr>
+					<tr>
+						<td>[filler]</td>
+						<td style="font-variant: small-caps;">np</td>
+						<td>cat</td>
+						<td style="font-variant: small-caps;">2p</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	<div class="printBlock">
-		<p>Soh citi suhri - A cat is big</p>
-		<p>Soh mi suhri - I am big</p>
-		<p>Soh citi vu - A cat is yours</p>
-		<p>Soh vu pura - You are cute</p>
-		<p>Soh citi hunere - A cat is red</p>
-		<p>Soh vu mı - you are mine</p>
-		<p>Soh citi mú - The cat is this here</p>
 		<p>Remeber that sentence breaks requires exactly two arguments and behaves differently depending on the types of those arguments. 
 		In the examples above, those types are a noun followed by a verb, and which means the noun with the verb attached as a relative clause.
 		Since the top level of these sentences are noun, the sentences assert that the described noun exist. In other words the first sentence
@@ -449,8 +618,74 @@
 		
 	<div class="printBlock">
 		<p>Soh mih tetsi citi - A cat likes me</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>mi</td>
+					<td>-h</td>
+					<td>tetsi</td>
+					<td>citi</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>1</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>liked</td>
+					<td>cat</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>Soh citih tetsi vu - You like a cat</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>citi</td>
+					<td>-h</td>
+					<td>tetsi</td>
+					<td>vu</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>cat</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>liked</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>Soh vuh tetsi mi - I like you</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>vu</td>
+					<td>-h</td>
+					<td>tetsi</td>
+					<td>mi</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>2</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>liked</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>Here you can see how a sentence break can be an argument for another sentence break. in these examples the first
 		sentence break functions the same as in previous sentences. While the second one has a verb followed by a noun, and as a result acts as
 		a verb with the noun incorporated. In other words the first sentence might be more accurately translated as "A me that is cat-liked
@@ -459,31 +694,269 @@
 		
 	<div class="printBlock">
 		<p>Soh mih tetsih citi ni - This cat likes me</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>mi</td>
+					<td>-h</td>
+					<td>tetsi</td>
+					<td>-h</td>
+					<td>citi</td>
+					<td>ni</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>1</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>liked</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>cat</td>
+					<td>this</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>Soh vuh tetsih citi suhri - A big cat like you</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>vu</td>
+					<td>-h</td>
+					<td>tetsi</td>
+					<td>-h</td>
+					<td>citi</td>
+					<td>suhri</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>2</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>liked</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>cat</td>
+					<td>big</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>These are nearly identical to the previous block, but this time the second noun is also experiencing a verb. This is
 		very similar to how adjectives work in english.</p>
 	</div>
 		
 	<div class="printBlock">
 		<p>Soh suhsuhri citi mi - My cat is big</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>suh-</td>
+					<td>suhri</td>
+					<td>citi</td>
+					<td>mi</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>big</td>
+					<td>cat</td>
+					<td style="font-variant: small-caps;">1p</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>Soh huhunere citi vu - Your cat is red</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>hu-</td>
+					<td>hunere</td>
+					<td>citi</td>
+					<td>vu</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>red</td>
+					<td>cat</td>
+					<td style="font-variant: small-caps;">2p</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>Soh mimi citi ni - This cat is mine</p>
-		<p>Soh vuvu citi hunere - A red cat is yours</p>
-		<p>Soh mimi citi suhri - A big cat is mine</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>mi-</td>
+					<td>mi</td>
+					<td>citi</td>
+					<td>ni</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">1p</td>
+					<td>cat</td>
+					<td>this</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
+		<p>Soh vuvu citi hunere - A red cat is yours/You have a red cat</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>vu-</td>
+					<td>vu</td>
+					<td>citi</td>
+					<td>hunere</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">2p</td>
+					<td>cat</td>
+					<td>red</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
+		<p>Soh mimi citi suhri - A big cat is mine/I have a big cat</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>mi-</td>
+					<td>mi</td>
+					<td>citi</td>
+					<td>suhri</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">1p</td>
+					<td>cat</td>
+					<td>big</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>Keep in mind that words fill the
 		<b>oldest</b> available argument, so the word order may be different from what you might expect.</p>
 	</div>
 		
 	<div class="printBlock">
-		<p>Sosoh citi mi tetsi vu - You like my cat</p>
-		<p>Sosoh citi suhri tetsi mi - I like a big cat</p>
-		<p>Here you can see the clitic form of <i>a</i> rendered as a prefix of the following word rather than a suffix of the preceeding
-		one, otherwise this is the same as above but with a transitive verb.</p>
+		<p>Soso citi mi tetsi vu - You like my cat</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td colspan="3">-so</td>
+					<td>citi</td>
+					<td>mi</td>
+					<td>tetsi</td>
+					<td>vu</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>cat</td>
+					<td>1p</td>
+					<td>liked</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
+		<p>Soso citi suhri tetsi mi - I like a big cat</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td colspan="3">-so</td>
+					<td>citi</td>
+					<td>suhri</td>
+					<td>tetsi</td>
+					<td>mi</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>cat</td>
+					<td>big</td>
+					<td>liked</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
+		<p>Here you can see the reduplicated form of the sentence break following a word,
+		otherwise this is the same as above but with a transitive verb.</p>
 	</div>
 		
 	<div class="printBlock">
 		<p>Finally, bringing everything together</p>
-		<p>Sosoh citi hunere tetsih citi suhri - A big cat likes a red cat</p>
+	</div>
+	<div class="printBlock">
+		<p>Soso citi hunere tetsih citi suhri - A big cat likes a red cat</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td colspan="3">-so</td>
+					<td>citi</td>
+					<td>hunere</td>
+					<td>tetsi</td>
+					<td>-h</td>
+					<td>citi</td>
+					<td>suhri</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>cat</td>
+					<td>red</td>
+					<td>liked</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>cat</td>
+					<td>big</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 	
 	<div class="printBlock">
@@ -572,19 +1045,151 @@
 		
 	<div class="printBlock">
 		<p>Soh pipie boo qunu - A glowing stick is strange</p>
-		<p>Sosoh eeri xagu mi xihtsa suhri - I ate a different large livestock</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>pi-</td>
+					<td>pie</td>
+					<td>boo</td>
+					<td>qunu</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>strange</td>
+					<td>stick</td>
+					<td>glowing</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="printBlock">
+		<p>Sosoh eri xagu mi xihtsa suhri - I ate a different large livestock</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td colspan="3">-so</td>
+					<td>-h</td>
+					<td>eri</td>
+					<td>xagu</td>
+					<td>mi</td>
+					<td>xihtsa</td>
+					<td>suhri</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>diffrent</td>
+					<td>eat</td>
+					<td>1</td>
+					<td>animal</td>
+					<td>big</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="printBlock">
 		<p>These senteces dont introduce any new concepts except for a few words.</p>
 	</div>
-		
+	
 	<div class="printBlock">
 		<p>Soh pupura citi doje - you, cat, are cute</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>pu-</td>
+					<td>pura</td>
+					<td>citi</td>
+					<td>doje</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>cute</td>
+					<td>cat</td>
+					<td>O'</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>There is no actual second person pronoun in this sentence, but due to the fact that you are saying the cat is cute to the cat,
 		it is most convient to translate it that way.</p>
 	</div>
 		
 	<div class="printBlock">
 		<p>Soh booh givih mih pana vu - I to you give a stick</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>boo</td>
+					<td>-h</td>
+					<td>givi</td>
+					<td>-h</td>
+					<td>mi</td>
+					<td>-h</td>
+					<td>pana</td>
+					<td>vu</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>stick</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>give</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>1</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>towards</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>Soso booh givi mi tava vu - I give you a stick</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td colspan="3">-so</td>
+					<td>boo</td>
+					<td>-h</td>
+					<td>givi</td>
+					<td>mi</td>
+					<td>tava</td>
+					<td>vu</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>stick</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>give</td>
+					<td>1</td>
+					<td>towards</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 		<p>These two sentences mean very similar things, but a distinction is made between where the stick is going to
 		(but may not actually end up) and where the stick ends up (but may not be inteded). In other words <i>paná</i> concerns
 		a propery of the object, the place it is sending to, and <i>táva</i> concerns a propery of the subject, the direction it is going.</p>
@@ -592,6 +1197,32 @@
 		
 	<div class="printBlock">
 		<p>Soh mih tavah xihtsa ni - I go to that livestock</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>So</td>
+					<td>-h</td>
+					<td>mi</td>
+					<td>-h</td>
+					<td>tava</td>
+					<td>-h</td>
+					<td>xihtsa</td>
+					<td>ni</td>
+				</tr>
+				<tr>
+					<td>[filler]</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>1</td>
+					<td style="font-variant: small-caps;">vp</td>
+					<td>towards</td>
+					<td style="font-variant: small-caps;">np</td>
+					<td>animal</td>
+					<td>this</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="printBlock">
 	</div>
 		
 	<p style="background-color:#Faa;text-align:center;font-size:300%;padding:20px;">Unupdated below</p>
