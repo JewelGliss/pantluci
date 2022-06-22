@@ -6,8 +6,36 @@
     <link rel="icon" href="./images/icon.ico">
     <link href="./web/res/bootstrap.css" rel="stylesheet">
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Sans+TC&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Viet&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tagalog&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gurmukhi&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&display=swap');
+		
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Cuneiform&display=swap');
 		body {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family:'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans Tamil', 'Noto Sans Arabic', 'Noto Sans Tai Viet',
+			'Noto Sans Thai', 'Noto Sans Devanagari', 'Noto Sans Tagalog', 'Noto Sans Malayalam', 'Noto Sans Telugu', 'Noto Sans Hebrew', 'Noto Sans Kannada',
+			'Noto Sans Oriya', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Bengali', 'Noto Sans Sinhala', 'Noto Sans Myanmar', 'Noto Sans Georgian',
+			'Noto Sans Gothic', 'Noto Sans Cuneiform', "Helvetica Neue", Helvetica, Arial, sans-serif!important;
 		}
 		table {
 			text-align: center;
@@ -23,15 +51,13 @@
 			margin-bottom: 20px;
 			overflow: hidden;
 		}
+		td {
+			border: 1px solid #a2a9b1;
+		}
 		th {
 			background-color: #eaecf0;
 			border: 1px solid #a2a9b1;
-			padding: 0.2em 0.4em;
 			font-weight: bold;
-		}
-		td {
-			border: 1px solid #a2a9b1;
-			padding: 0.2em 0.4em;
 		}
 		.Unused {
 			background-color: #a2a9b1;
@@ -71,7 +97,26 @@
 				color: #000;
 			}
 			.printBlock{
-				page-break-inside: avoid;
+			}
+			.pageBreak{
+				break-after: page;
+			}
+			html, body {
+				height: 100%;
+			}
+			.titleBlock {
+				height: 100%;
+				margin:0px;
+			}
+			.titleBlock:before {
+				content: '';
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+			.titleBlock span {
+				display: inline-block;
+				padding-top:0px;
 			}
 		}
 		.container{
@@ -87,19 +132,40 @@
 			line-height:300% !important;
 			overflow: hidden;
 		}
-		table{
+		table, table :not(.nothing){
 			margin:0px;
+			border-collapse: separate;
+			border-right-width: 0px;
+			border-right-style:hidden;
+			border-bottom-width: 0px;
+			border-bottom-style:hidden;
 		}
 		
-		table tbody tr:first-child :not(.showTop) {
+		table, tr{
+			border-width: 0px;
+			border-style:hidden;
+		}
+		thead tr:first-child :not(.showTop) {
 			border-top-width: 0px;
 			border-top-style:hidden;
 		}
-		table tbody tr  :not(.showLeft):first-child {
+		thead tr :not(.showLeft):first-child {
 			border-left-width: 0px;
 			border-left-style:hidden;
 		}
-		table tbody tr:last-child :not(.showBottom) {
+		thead tr :not(.showRight):last-child {
+			border-right-width: 0px;
+			border-right-style:hidden;
+		}
+		:not(#Dictionary) > table tbody tr:first-child :not(.showTop) {
+			border-top-width: 0px;
+			border-top-style:hidden;
+		}
+		table tbody tr :not(.showLeft):first-child {
+			border-left-width: 0px;
+			border-left-style:hidden;
+		}
+		:not(#Dictionary) > table tbody tr:last-child :not(.showBottom) {
 			border-bottom-width: 0px;
 			border-bottom-style:hidden;
 		}
@@ -123,11 +189,394 @@
 			border-bottom-width: 0px;
 			border-bottom-style:hidden;
 		}
+		
+		.titleBlock{
+			text-align:center;
+			font-size:160px;
+			line-height:25px;
+			border-style:hidden;
+			margin-bottom:0px;
+		}
+		.titleBlock small{
+			color:black;
+		} 
+		.titleBlock span{
+			padding-top:50px;
+			display:block;
+		}
+		.printBlock{
+			width:auto;
+			max-width:8.5in;
+			margin:auto;
+		}
+		
+		@media print {
+			.titleBlock span {
+				display: inline-block;
+				padding-top:0px;
+			}
+		}
+		h2{
+			font-size: 2.06em;
+			margin-bottom: 0.25em;
+			padding: 0;
+			font-family: 'Linux Libertine','Georgia','Times',serif;
+			line-height: 1.3;
+			border-bottom: 1px solid #a2a9b1;
+			font-weight: normal;
+			color: #000;
+		}
+		h3{
+			font-size: 1.71em;
+			font-family: 'Linux Libertine','Georgia','Times',serif;
+			line-height: 1.3;
+			font-weight: normal;
+			color: #000;
+			border-bottom: 1px solid #a2a9b1;
+		}
+		h4{
+			font-weight: bold;
+			font-size: 1.37em;
+			line-height: 1.6;
+			color: #000;
+		}
+		pre{
+			color: #000;
+			background-color: transparent;
+			border-width: 0px;
+			border-style:hidden;
+		}
+		#Dictionary h3{
+			display:block;
+			border-width: 0px;
+			border-style:hidden;
+			margin:0px;
+			width:100%;
+			text-align:center;
+			font-size:400%;
+		}
+		/* this does nothing and they didnt have the decency to put a warning lable on this */
+		#Dictionary table, thead, tbody, tr, h3{
+			break-before: avoid-page;
+			break-after: avoid-page;
+			page-break-before: avoid;
+			page-break-after: avoid;
+		}
+		thead, h3, tr{
+			break-inside: avoid-page;
+		}
+
+
+		/* hacky fix */
+		#Dictionary h3 {
+			page-break-inside: avoid;
+		}
+		#Dictionary h3::after {
+			content: "";
+			display: block;
+			height: 1em;
+			margin-bottom: -1em;
+		}
 	</style>
 </head>
+
 <body>
-    <div class="container">
+	<h1 class="titleBlock">
+		<span>
+			Tsohci<small> 0.6</small><br>
+			<span style="margin-top:-45px;padding-top:0px;">
+				<small>An esoteric human language</small>
+			</span>
+		</span>
+	</h1>
 	
+	<div class="pageBreak" style="margin-top:-20px;"></div>
+	<div class="printBlock">
+<pre>
+1. Introduction
+	1.1 What is Tsohci?
+	1.2 What is this book?
+	1.3 What is each chapter?
+	1.4 book's conventions
+	    1.4.1 typographic
+	    1.4.2 there will be redudancy
+	1.5 Acknowledgements
+	1.6 legal
+	1.7 captions
+2. an overview (very most basics, all repeated in more detail in later chapters)
+   2.1 phoneme level (orthography, phonology, not allophony or morphology)
+   2.2 word level (just nouns, verbs)
+   2.3 sentence level (???)
+3. grammar
+   3.1 syntax
+   3.2 word classes
+4. lexical phrases
+   4.1 no empty slots
+   4.2 with empty slots
+   4.3 produtive
+5. names
+   5.1 quick refrence
+   5.2 phonology (allophony)
+   5.3 orthography
+	   5.3.1 alphabet
+	   5.3.2 when glottal stop is written
+   5.4 morphology
+6. pronouns
+   6.1 letters
+7. conjunctions
+8. prepostions (or lack thereof)
+    8.1 spacial verbs
+9. numbers
+10. adverbs
+11. tenses
+12. top level clasues
+13. questions
+14. commands
+15. dialog
+16. irregularity (some words have special preduplicated forms, ni, mi,vu)
+17. phrase book
+18. long sample text
+19. dictionary
+</pre>
+	</div>
+	
+	<div class="pageBreak" style="margin-top:-20px;"></div>
+	
+	<div class="printBlock" class="Introduction">
+		<h2>Introduction</h2>
+	</div>
+	<div class="printBlock">
+		<h3>What is Tsohci?</h3>
+		<pre>
+explain the concept of the universal grammar
+explain the syntax tree theories
+explain the phrasal theories
+explain how this lang fails to follow these
+disclaimer about quality level
+history of the lang
+		</pre>
+	</div>
+	
+	<div class="printBlock">
+		<h3>Acknowledgements</h3>
+		<pre>
+mention communities (LLL, roljbohu'e, Freinds of the Schwa)
+people (Cesia, Mia)
+conlangs direct (Lojban, toki pona, Láadan)
+conlang indirect (Piet, Fith, Chirp (RomajiMiltonAmulo), Mi (phunanon))
+		</pre>
+	</div>
+	
+	<div class="printBlock">
+		<h3>Legal bits</h3>
+		<pre>
+copyleft
+no intentional similarities
+		</pre>
+	</div>
+	
+	<div class="pageBreak" style="margin-top:-20px;"></div>
+	
+	<div class="printBlock"  id="Dictionary">
+		<h2>Dictionary</h2>
+		<pre>is english alphabetical order, describe this
+special notes Piet
+use ⥽ for reduplcating</pre>
+		<h3>A</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>akka</td><td>ਅੱਗ<sup>pan</sup></td><td>ʔä.kːä</td><td>fire, flame, ember, anything hot enough to cause a flame</td><td>noun</td></tr>
+				<tr><td>akku</td><td>அக்கு<sup>tam</sup></td><td>ʔä.kːɯ</td><td>subject is not the one most obvious by context, is different</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>B</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>baja</td><td>ᜊᜌᜈ᜔<sup>tgl</sup></td><td>bä.jä</td><td>nation, community, ingroup</td><td>noun</td></tr>
+				<tr><td>boo</td><td>棒<sup>jpn</sup></td><td>bo.ʔo</td><td>staff, stick-like or long cylindrical item: pointer, pole, pencil, rod, etc</td><td>noun</td></tr>
+				<tr><td>buhdo</td><td>不得<sup>cmn</sup></td><td>buː.do</td><td>parent, mother, father</td><td>noun</td></tr>
+			</tbody>
+		</table>
+		<h3>C</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>citi</td><td>kitty<sup>eng</sup></td><td>cʰi˦.tʰi˦</td><td>cat, pettable feline</td><td>noun</td></tr>
+			</tbody>
+		</table>
+		<h3>D</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>doje</td><td>doi<sup>jbo</sup></td><td>do.jɛ</td><td>subject is the listener intended by object (default the speaker)</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>E</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>(e)ni</td><td>e&nbsp;ni<sup>tok</sup></td><td>(ʔɛ.)ni</td><td>subject is identifiable by context given by object</td><td>verb</td></tr>
+				<tr><td>eri</td><td>eile<sup>gle</sup></td><td>ʔɛ.ɹi</td><td>subject is not the one most obvious by context, is different</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>G</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>givi</td><td>givim<sup>tpi</sup></td><td>gɪ.wi</td><td>subject is given away, changes possession (temporary or permanent)</td><td>verb</td></tr>
+				<tr><td>gera</td><td>ბგერა<sup>kat</sup></td><td>gɛ.ɹä</td><td>sound, vibrations heard by the ear</td><td>noun</td></tr>
+			</tbody>
+		</table>
+		<h3>H</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>hunere</td><td>xunre<sup>jbo</sup></td><td>çɯ.nɛ.ɹɛ</td><td>subject is red/crimson/ruddy</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>I</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+			</tbody>
+		</table>
+		<h3>J</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>jna</td><td>జ్ఞా<sup>tel*</sup></td><td>jn̩.ʔä</td><td>bug, glitch, crash, error</td><td>noun</td></tr>
+				<tr><td>joi</td><td>ꪥꪮꪥꫂ<sup>twh</sup></td><td>jo.ʔi</td><td>subject is dripping, leaking, drooling</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>K</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>kita</td><td>كِتَاب‎<sup>ara</sup></td><td>kʰɪ.tʰä</td><td>book, structured writing, note, document, contract</td><td>noun</td></tr>
+			</tbody>
+		</table>
+		<h3>M</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>mai</td><td>baíxi<sup>myp</sup></td><td>mä.ʔi</td><td>parent, mother, father</td><td>noun</td></tr>
+				<tr><td>makkaba</td><td>مَكْتَبَة<sup>ara</sup></td><td>mä.kːä.bä</td><td>library, bookstore, bookcase, collection of books</td><td>noun</td></tr>
+				<tr><td>mara</td><td>മഴ<sup>mal</sup></td><td>mä.ɹä</td><td>rain, a large amount of something</td><td>noun</td></tr>
+				<tr><td>mikka</td><td>مِكْتَاب‎<sup>ara</sup></td><td>mi.kːä</td><td>keyboard, typewritter</td><td>noun</td></tr>
+				<tr><td>misu</td><td>水<sup>jpn</sup></td><td>mi.sɯ</td><td>subject is identifiable by context given by object</td><td>verb</td></tr>
+				<tr><td>mehtta</td><td>เมตตา<sup>tha</sup></td><td>mɛː.tːä</td><td>mercy, kindness, empathy, compassion</td><td>noun</td></tr>
+				<tr><td>mohta</td><td>𐌼𐍉𐍄𐌰<sup>got</sup></td><td>moː.tʰä</td><td>tax, price, tribute, cost</td><td>noun</td></tr>
+			</tbody>
+		</table>
+		<h3>N</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td rowspan="2">nha(ji)</td><td rowspan="2">nya<sup>yuf</sup><br>nyáji<sup>yuf</sup></td><td rowspan="2">ɲä(.ʑi)</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
+				<tr><td class="showLeft">subject is mine, our (exclusive)</td><td>verb</td></tr>
+				<tr><td rowspan="2">nha(ji)</td><td rowspan="2">nya<sup>yuf</sup><br>nyáji<sup>yuf</sup></td><td rowspan="2">ɲä(.ʑi)</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
+				<tr><td class="showLeft">subject is mine, our (exclusive)</td><td>verb</td></tr>
+				<tr><td>(e)ni</td><td>e ni<sup>tok</sup></td><td>(ʔɛ.)ni</td><td>subject is identifiable by context given by object</td><td>verb</td></tr>
+				<tr><td>nka</td><td>અંક<sup>guj</sup></td><td>n̩.kʰä</td><td>number, count, amount</td><td>noun</td></tr>
+			</tbody>
+		</table>
+		<h3>O</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+			</tbody>
+		</table>
+		<h3>P</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>pana</td><td>פָּנָה<sup>heb</sup></td><td>pʰä.nä</td><td>subject faces, adresses, is turned to object</td><td>verb</td></tr>
+				<tr><td>pie</td><td><a href="https://esolangs.org/wiki/Piet">Piet</a><sup>*</sup></td><td>pi˦.ʔɛ˨</td><td>subject is esoteric, unusual, strange without being random</td><td>verb</td></tr>
+				<tr><td>puka</td><td>පුක<sup>sin</sup></td><td>pʰu.kʰä</td><td>buttox, rear, behind</td><td>noun</td></tr>
+				<tr><td>pura</td><td>pure<sup>eng</sup></td><td>pʰu.ɹä</td><td>subject is cute, cuddlable, kind</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>Q</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>qunu˨</td><td>ŋuː˦˨<sup>*</sup><br>kʼu˦.u˨n<sup>*</sup><br>kʼu˦.nu˨<sup>*</sup></td><td>ɟɯ.nɯ</td><td>subject emits light, glows</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>R</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>ronu</td><td>lo&nbsp;nu<sup>jbo</sup></td><td>ɹo.nu</td><td>state, process, event, activity</td><td>noun</td></tr>
+				<tr><td>ruhci</td><td>luk<sup>tpi</sup><br>looky<sup>eng</sup></td><td>ɹuː.ci</td><td>subject perceives with the eyes, sees object</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>S</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>setsa</td><td>စကြ<sup>mya</sup></td><td>sɛ.t͡sä</td><td>circle, round object</td><td>noun</td></tr>
+				<tr><td>suhri</td><td>suuri<sup>fin</sup></td><td>sɯː.ɹi</td><td>subject is big, large</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>T</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>tata</td><td>ಠ_ಠ<sup>kan*</sup></td><td>tʰä.tʰä</td><td>subject is frowned upon, discouraged, disapproved by object</td><td>verb</td></tr>
+				<tr><td>tatta</td><td>ঠাট্টা<sup>ben</sup></td><td>tʰä.tːä</td><td>joke, humor, concept that causes laughter</td><td>noun</td></tr>
+				<tr><td>tava</td><td>tawa<sup>tok</sup></td><td>tʰä.wä</td><td>subject goes towards object</td><td>verb</td></tr>
+				<tr><td>tehira</td><td>תהילה<sup>heb</sup></td><td>tʰɛ.çi.ɹä</td><td>glory, praise, adoration</td><td>noun</td></tr>
+				<tr><td>tetsi</td><td>tetszik<sup>hun</sup></td><td>tʰɛ.t͡si</td><td>subject is liked, enjoyed, is pleasing</td><td>verb</td></tr>
+				<tr><td>tsohci</td><td>t͡soki<sup>*</sup></td><td>t͡soː.ci</td><td>the language described by this book and related offshoots</td><td>noun</td></tr>
+			</tbody>
+		</table>
+		<h3>U</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>uronho</td><td>ଉଲଙ୍ଗ<sup>ori</sup></td><td>ʔɯ.ɹo.ɲo</td><td>subject is naked, uncovered, unprotected</td><td>verb</td></tr>
+				<tr><td>utsava</td><td>उत्सव<sup>hin</sup></td><td>ʔɯ.t͡sä.wä</td><td>party, cerimony, festival, festivity</td><td>noun</td></tr>
+				<tr><td rowspan="2">(u)vu</td><td rowspan="2">vous<sup>fra</sup><br>uwu<sup>*</sup></td><td rowspan="2">(ʔɯ.)wu</td><td>you, y'all</td><td>noun</td></tr>
+				<tr><td class="showLeft">subject is your, y'all's</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>V</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td rowspan="2">vehro</td><td rowspan="2">vero<sup>lat</sup></td><td rowspan="2">wɛː.ɹo</td><td>really, very</td><td>adverb</td></tr>
+				<tr><td class="showLeft">subject is litteral, genuine, bona-fide as confirmed by object</td><td>verb</td></tr>
+				<tr><td>veme</td><td>veme<sup>spa</sup></td><td>wɛ.mɛ</td><td>you, y'all (imperative)</td><td>noun</td></tr>
+				<tr><td>vivn</td><td>우연<sup>kor</sup></td><td>wi.wn̩</td><td>probability, chance, likelyhood</td><td>noun</td></tr>
+				<tr><td rowspan="2">(u)vu</td><td rowspan="2">vous<sup>fra</sup><br>uwu<sup>*</sup></td><td rowspan="2">(ʔɯ.)wu</td><td>you, y'all</td><td>noun</td></tr>
+				<tr><td class="showLeft">subject is your, y'all's</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>X</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>xattu</td><td>𒅘<sup>akk</sup></td><td>ɕä.tːɯ</td><td>subject is drunk(not intoxicated), eaten without utensils</td><td>verb</td></tr>
+			</tbody>
+		</table>
+		<h3>Lexical Phrases</h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>⥽&nbsp;ronu&nbsp;(embeded sentence)</td><td>the event described by the sentence</td><td>noun</td></tr>
+			</tbody>
+		</table>
+	
+	<div class="pageBreak" style="margin-top:-20px;"></div>
+	
+	
+	
+	
+	<br><br><br>
+	<p style="background-color:#Faa;text-align:center;font-size:300%;padding:20px;">Unupdated below</p>
 	<div class="printBlock">
 		<h1>What is Tsohci?</h1>
 		<p><b>Tsohci</b> ([t͡soː.ci]) is an <a href="https://en.wikipedia.org/wiki/Experimental_language">experimental</a>
@@ -146,6 +595,7 @@
 		obscured by revisions to the language. By mid June 2022 the main particle used in the language being really repretive
 		became a larger and larger problem forcing a redo of the phonology in order to allow for less repetive form.
         </p>
+		<p>It went through the names Hýyban, Hoóban, Hoóba, and now Tsohci</p>
 		<p>Tsohci is intended to explore many linguistic theories that claim some form of fundamental
 		or underlying genetic language or grammar. This language violates most if not all of their proposed
 		systems, so if it can be learned to fluency then those theories are likely false. However, Tsohci is a hobby project at best
@@ -186,7 +636,7 @@
 					<td>w~v ⟨v⟩</td>
 					<td>ɹ~l ⟨r⟩</td>
 					<td colspan="2">j~ʒ ⟨j⟩</td>
-					<td>(v~w) ⟨v⟩</td>
+					<td>(w~v) ⟨v⟩</td>
 					<td class="Unused"></td>
 				</tr>
 				<tr>
@@ -211,14 +661,14 @@
 					<td>d</td>
 					<td colspan="2">ɟ ⟨q⟩</td>
 					<td>ɡ</td>
-					<td rowspan="2">(ʔ)<sup><a href="#note1">1</a></sup></td>
+					<td rowspan="2">ʔ<sup><a href="#note1">1</a></sup> ⟨ꞌ⟩</td>
 				</tr>
 				<tr>
 					<th class="showLeft"><a href="https://en.wikipedia.org/wiki/Aspirated_consonant" title="Aspiration"><div class="shorten"><small>asp<wbr>irated</small></div></a></th>
 					<td>pʰ ⟨p⟩</td>
 					<td>tʰ ⟨t⟩</td>
 					<td colspan="2">cʰ ⟨c⟩</td>
-					<td>kʰ ⟨k⟩</td>
+					<td class="showRight">kʰ ⟨k⟩</td>
 				</tr>
 				<tr>
 					<th colspan="2"><a href="https://en.wikipedia.org/wiki/Fricative_consonant" title="Fricative"><div class="shorten">Fric<wbr>ative</div></a></th>
@@ -259,9 +709,14 @@
 					<th><a href="https://en.wikipedia.org/wiki/Open_vowel" title="Open vowel">Open</a></th>
 					<td colspan="2">ä ⟨a⟩ äː ⟨ah⟩</td>
 				</tr>
+				<tr>
+					<th><a href="https://en.wikipedia.org/wiki/Syllabic_consonant" title="Syllabic consonant">Other</a></th>
+					<td colspan="2">n̩ ⟨n⟩ n̩ː ⟨nn⟩</td>
+				</tr>
 			</tbody>
 		</table>
 		
+	</div>
 	</div>
 		
 	<div class="printBlock" style="width:100%;display:block;">
@@ -274,6 +729,8 @@
 			<li>the first syllable may not be the same as the second syllalbe</li>
 			<li>the first syllable may not contain a long stop</li>
 			<li>stress rests on the first syllable</li>
+			<li>words (except so) may not be one syllable</li>
+			<li>/n̩/ is not allowed to be the vowel of a syllable with a nasal onset</li>
 			<li>The same vowel may not occur on both sides of a glottal stop word-internally.</li>
 		</ul>
 	</div>
@@ -282,7 +739,7 @@
 		<h3 id="Allophony">Allophony</h3>
 		<p>/i/ is realized as [ɪ] after velars.</p>
 		<p>/ɯ/ is realized as [u] after labials.</p>
-		<p>/j~ʒ/ is realized as [ʑ] before [j].</p>
+		<p>/j~ʒ/ is realized as [ʑ] before [i].</p>
 	</div>
 		
 	<div class="printBlock">
@@ -1207,7 +1664,6 @@
 	<div class="printBlock">
 	</div>
 		
-	<p style="background-color:#Faa;text-align:center;font-size:300%;padding:20px;">Unupdated below</p>
 	<div class="printBlock">
 		<table style="text-align: left;">
 			<tbody>
