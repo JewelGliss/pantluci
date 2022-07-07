@@ -159,6 +159,8 @@
 				color: #000;
 			}
 			.printBlock{
+				break-inside:avoid;
+				page-break-inside:avoid;
 			}
 			.pageBreak{
 				break-after: page;
@@ -355,8 +357,13 @@
 		#Dictionary tbody tr td{
 			text-align:center;
 		}
-		#Dictionary tbody tr td:nth-child(4), .showLeft{
+		#Dictionary tbody tr td:nth-child(4),#Dictionary .showLeft{
 			text-align:left !important;
+		}
+		#Dictionary hr{
+			border-top-color:#CFCFCF;
+			margin-top:3px;
+			margin-bottom:3px;
 		}
 		td,th{
 			border-left-width:0px;
@@ -368,9 +375,9 @@
 <body>
 	<h1 class="titleBlock">
 		<span>
-			Tsohci<small> 0.6</small><br>
+			TITLE<small> 0.1</small><br>
 			<span style="margin-top:-45px;padding-top:0px;">
-				<small>An esoteric human language</small>
+				<small>A Collection of Constructed Languages</small>
 			</span>
 		</span>
 	</h1>
@@ -378,49 +385,29 @@
 	<div class="pageBreak" style="margin-top:-20px;"></div>
 	<div class="printBlock">
 <pre>
-
+3book
 ✔️ - means chapter name finalized not that the chapter is done
 1. Introduction ✔️
-   1.1 What is Tsohci? ✔️
-   1.2 What is This Book? ✔️
+   1.1 What is This Book? ✔️
+   1.2 What is Each Language? ✔️
    1.3 What is in Each Chapter? ✔️
    1.4 Conventions Used in This Book ✔️
    1.5 Acknowledgements ✔️
    1.6 Legal Bits ✔️
    1.7 caption translations
-2. Tsohcian Text at a Glance ✔️
-   2.1 Tsohcian Alphabet ✔️
-   2.2 Tsohcian Words ✔️
-   2.3 Tsohcian Sentences ✔️
-3. Structure of the Language ✔️
-   3.1 syntax
-   3.2 word classes
-4. Lexical Phrases ✔️
-   4.1 no empty slots
-   4.1 Abstractions
-5. Making Words ✔️
-   5.1 quick reference
-   5.2 phonology (allophony)
-   5.3 orthography
-       5.3.1 alphabet
-       5.3.2 when glottal stop is written
-   5.4 morphology
-6. nouns
-   6.1 pronouns
-   6.2 letters? Ci(bu) (C includes nh ts and ꞌ) or maybe diffrent V for each C
-7. verbs
-   7.1 prepositions (or lack thereof)/spatial verbs
-8. conjuctions
-9. numbers
-10. adverbs
-11. tenses
-12. top level clasues
-13. questions
-14. commands
-15. dialogue
-16. phrase book
-17. long sample text
-18. dictionary
+2. Tsohci ✔️
+   2.1 Highlights of Tsohci ✔️
+   2.2 Tsohcian Orthography ✔️
+   2.3 Tsohcian Phonology ✔️
+   2.4 Tsohcian Morphology ✔️
+   2.5 Tsohcian Words ✔️
+   2.6 Tsohcian Phrases ✔️
+   2.7 Tsohcian Sentences ✔️
+   2.8 Tsohcian Sample Text ✔️
+   2.9 Tsohcian Dictionary ✔️
+
+arithmographic
+logography with diacritics
 </pre>
 	</div>
 	
@@ -430,7 +417,12 @@
 		<h2>Introduction</h2>
 	</div>
 	<div class="printBlock">
-		<h3>What is Tsohci?</h3>
+		<h3>What is This Book?</h3>
+		<pre>
+		</pre>
+	</div>
+	<div class="printBlock">
+		<h3>What is Each Language?</h3>
 		<pre>
 explain the concept of the universal grammar
 explain the syntax tree theories
@@ -440,11 +432,6 @@ explain how this lang fails to follow these
 - other interpretations can support litteraly anything and therefore mean nothing
 disclaimer about quality level
 history of the lang
-		</pre>
-	</div>
-	<div class="printBlock">
-		<h3>What is This Book?</h3>
-		<pre>
 		</pre>
 	</div>
 	<div class="printBlock">
@@ -501,12 +488,27 @@ no intentional similarities
 	</div>
 	
 	<div class="pageBreak"></div>
+	<h1 class="titleBlock">
+		<span>
+			Tsohci<small> 0.6</small><br>
+			<span style="margin-top:-45px;padding-top:0px;">
+				<small>An esoteric human language</small>
+			</span>
+		</span>
+	</h1>
+	<div class="pageBreak"></div>
 	
-	<div class="printBlock" class="Introduction">
-		<h2>Tsohcian Text at a Glance</h2>
+	<div class="printBlock">
+		<h2>Highlights of Tsohci</h2>
+		<pre>
+esoteric syntax
+simple grammar
+cute phonaesthetics
+global etymologies
+		</pre>
 	</div>
 	<div class="printBlock" class="Introduction">
-		<h3>Tsohcian Alphabet</h3>
+		<h2>Tsohcian Orthography</h2>
 		<p>the english examples in this section are approximations at best and biased towards american english</p>
 		<table>
 			<tbody>
@@ -542,44 +544,11 @@ no intentional similarities
 		<p>⟨n⟩ can be either a consonant or a vowel like in casual english's pronounciation of and as 'n</p>
 		<p>⟨nn⟩ is a long version of ⟨n⟩ that only appears as a vowel</p>
 		<p>⟨ꞌ⟩ is unwritten in most circumstances and can be assumed if a vowel doesnt have a consonant imediately before it</p>
+		<p>Punctuation is unused, but the first letter of each sentence is capitalized</p>
 	</div>
 	
 	<div class="printBlock">
-		<h3>Tsohcian Words</h3>
-		<pre>
-word types
-morphology
-iregularity
-		</pre>
-	</div>
-	
-	<div class="printBlock">
-		<h3>Tsohcian Sentences</h3>
-		<pre>
-concept of breaks
-words always fill the oldest break first
-		</pre>
-	</div>
-	
-	<div class="pageBreak"></div>
-	
-	<div class="printBlock" class="Introduction">
-		<h2>Structure of the Language</h2>
-	</div>
-	
-	<div class="pageBreak"></div>
-	
-	<div class="printBlock" class="Introduction">
-		<h2>Lexical Phrases</h2>
-	</div>
-	
-	<div class="pageBreak"></div>
-	
-	<div class="printBlock" class="Introduction">
-		<h2>Making Words</h2>
-	</div>
-	<div class="printBlock">
-		<h3>phonology</h3>
+		<h2>Tsohcian Phonology</h2>
 		<div style="overflow:hidden">
 		<table style="text-align: center;width:65%;float:left;">
 			<tbody>
@@ -685,17 +654,14 @@ words always fill the oldest break first
 			</tbody>
 		</table>
 		</div>
-	</div>
-	<div class="printBlock">
-		<h3>allophony</h3>
 		<p>/ʔ/ may be analyzed as a null onset.</p>
 		<p>/i/ is realized as [ɪ] after velars.</p>
 		<p>/ɯ/ is realized as [u] after labials.</p>
 		<p>/j/ is realized as [ʑ] before [i].</p>
-		<pre>extensively describe all phonemes</pre>
 	</div>
+	
 	<div class="printBlock">
-		<h3>morphology</h3>
+		<h2>Tsohcian Morphology</h2>
 		<p>Syllables in Tsohci are of the form CV, i.e. consonant followed by vowel that is either long or short. Words may be
 		any combination of syllables with the following restrictions:</p>
 		<ul>
@@ -710,10 +676,38 @@ words always fill the oldest break first
 		</ul>
 	</div>
 	
+	<div class="printBlock">
+		<h2>Tsohcian Words</h2>
+		<pre>
+word types
+morphology
+iregularity
+		</pre>
+	</div>
+	
+	<div class="printBlock" class="Introduction">
+		<h2>Tsohcian Phrases</h2>
+		<pre>
+		</pre>
+	</div>
+	
+	<div class="printBlock">
+		<h2>Tsohcian Sentences</h2>
+		<pre>
+concept of breaks
+words always fill the oldest break first
+		</pre>
+	</div>
 	<div class="pageBreak"></div>
 	
+	<div class="printBlock">
+		<h2>Tsohcian Sample Text</h2>
+		<pre>
+		</pre>
+	</div>
+	
 	<div class="printBlock"  id="Dictionary">
-		<h2>Dictionary</h2>
+		<h2>Tsohcian Dictionary</h2>
 		<p>This dictionary is based on the english alphabet. This means that nh and ts are not treated as their own letters and ꞌ is ignored unless it is written.</p>
 		<p>Some entries are marked with * to denote that they have a special note which can be found at the end of the chapter.</p>
 		<pre>use ⥽ for reduplcating</pre>
@@ -724,10 +718,10 @@ words always fill the oldest break first
 				<tr><td>ahni</td><td>ᎠᏂ<sup>chr</sup></td><td>ʔäː.ni</td><td>small fruit, berry</td><td>noun</td></tr>
 				<tr><td>akka</td><td>ਅੱਗ<sup>pan</sup></td><td>ʔä.kːä</td><td>fire, flame, ember, anything hot enough to cause a flame</td><td>noun</td></tr>
 				<tr><td>akku</td><td>அக்கு<sup>tam</sup></td><td>ʔä.kːɯ</td><td>subject is not the one most obvious by context, is different</td><td>verb</td></tr>
-				<tr><td rowspan="2">(a)ra</td><td rowspan="2">la<sup>*</sup><br>ala<sup>tok</sup></td><td rowspan="2">(ʔä.)ɹä</td><td>not</td><td>adverb</td></tr>
+				<tr><td rowspan="2">(a)ra</td><td rowspan="2">la<sup>*</sup><hr>ala<sup>tok</sup></td><td rowspan="2">(ʔä.)ɹä</td><td>not</td><td>adverb</td></tr>
 				<tr><td class="showLeft">subject is not what the subject descibes, falsely described as confirmed by object</td><td>verb</td></tr>
 				<tr><td>(a)ru</td><td>আৰু<sup>asm</sup></td><td>(ʔä.)ɹɯ</td><td>and</td><td>conjunction</td></tr>
-				<tr><td>(a)vi</td><td>vì<sup>ist</sup><br>avi<sup>ist</sup></td><td>(ʔä.)wi</td><td>subject is had, held, carried, contained, owned by object</td><td>verb</td></tr>
+				<tr><td>(a)vi</td><td>vì<sup>ist</sup><hr>avi<sup>ist</sup></td><td>(ʔä.)wi</td><td>subject is had, held, carried, contained, owned by object</td><td>verb</td></tr>
 			</tbody>
 		</table>
 		<h3>B</h3>
@@ -736,7 +730,6 @@ words always fill the oldest break first
 			<tbody>
 				<tr><td>baja</td><td>ᜊᜌᜈ᜔<sup>tgl</sup></td><td>bä.jä</td><td>nation, community, ingroup</td><td>noun</td></tr>
 				<tr><td>boo</td><td>棒<sup>jpn</sup></td><td>bo.ʔo</td><td>staff, stick-like or long cylindrical item: pointer, pole, pencil, rod, etc</td><td>noun</td></tr>
-				<tr><td>buhdo</td><td>不得<sup>cmn</sup></td><td>buː.do</td><td>parent, mother, father</td><td>noun</td></tr>
 			</tbody>
 		</table>
 		<h3>C</h3>
@@ -752,20 +745,20 @@ words always fill the oldest break first
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td>de/du</td><td>de<sup>fra</sup><br>du<sup>fra</sup></td><td>dɛ/dɯ</td><td>subject is from, of object</td><td>verb</td></tr>
-				<tr><td>i/di</td><td>i<sup>swe</sup><br>di<sup>mse</sup></td><td>ʔi/di</td><td>subject is in, on object</td><td>verb</td></tr>
+				<tr><td>de/du</td><td>de<sup>fra</sup><hr>du<sup>fra</sup></td><td>dɛ/dɯ</td><td>subject is from, of object</td><td>verb</td></tr>
+				<tr><td>i/di</td><td>i<sup>swe</sup><hr>di<sup>mse</sup></td><td>ʔi/di</td><td>subject is in, on object</td><td>verb</td></tr>
 				<tr><td>doje</td><td>doi<sup>jbo</sup></td><td>do.jɛ</td><td>subject is the listener intended by object (default the speaker)</td><td>verb</td></tr>
-				<tr><td>de/du</td><td>de<sup>fra</sup><br>du<sup>fra</sup></td><td>dɛ/dɯ</td><td>subject is from, of object</td><td>verb</td></tr>
+				<tr><td>de/du</td><td>de<sup>fra</sup><hr>du<sup>fra</sup></td><td>dɛ/dɯ</td><td>subject is from, of object</td><td>verb</td></tr>
 			</tbody>
 		</table>
 		<h3>E</h3>
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td>e(tte)</td><td>était<sup>fra</sup><br>es<sup>fra</sup></td><td>ʔɛ(.tːɛ)</td><td>subject is equal, equivalent to, is the same as object</td><td>verb</td></tr>
+				<tr><td>e(tte)</td><td>était<sup>fra</sup><hr>es<sup>fra</sup></td><td>ʔɛ(.tːɛ)</td><td>subject is equal, equivalent to, is the same as object</td><td>verb</td></tr>
 				<tr><td>(e)ni</td><td>e&nbsp;ni<sup>tok</sup></td><td>(ʔɛ.)ni</td><td>subject is identifiable by context given by object</td><td>verb</td></tr>
 				<tr><td>eri</td><td>eile<sup>gle</sup></td><td>ʔɛ.ɹi</td><td>subject is not the one most obvious by context, is different</td><td>verb</td></tr>
-				<tr><td>e(tte)</td><td>était<sup>fra</sup><br>es<sup>fra</sup></td><td>ʔɛ(.tːɛ)</td><td>subject is equal, equivalent to, is the same as object</td><td>verb</td></tr>
+				<tr><td>e(tte)</td><td>était<sup>fra</sup><hr>es<sup>fra</sup></td><td>ʔɛ(.tːɛ)</td><td>subject is equal, equivalent to, is the same as object</td><td>verb</td></tr>
 			</tbody>
 		</table>
 		<h3>G</h3>
@@ -790,7 +783,7 @@ words always fill the oldest break first
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td>i/di</td><td>i<sup>swe</sup><br>di<sup>mse</sup></td><td>ʔi/di</td><td>subject is in, on object</td><td>verb</td></tr>
+				<tr><td>i/di</td><td>i<sup>swe</sup><hr>di<sup>mse</sup></td><td>ʔi/di</td><td>subject is in, on object</td><td>verb</td></tr>
 			</tbody>
 		</table>
 		<h3>J</h3>
@@ -829,12 +822,12 @@ words always fill the oldest break first
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td rowspan="2">nha(ji)</td><td rowspan="2">nya<sup>yuf</sup><br>nyáji<sup>yuf</sup></td><td rowspan="2">ɲä(.ʑi)</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
+				<tr><td rowspan="2">nha(ji)</td><td rowspan="2">nya<sup>yuf</sup><hr>nyáji<sup>yuf</sup></td><td rowspan="2">ɲä(.ʑi)</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is mine, our (exclusive)</td><td>verb</td></tr>
-				<tr><td rowspan="2">nha(ji)</td><td rowspan="2">nya<sup>yuf</sup><br>nyáji<sup>yuf</sup></td><td rowspan="2">ɲä(.ʑi)</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
+				<tr><td rowspan="2">nha(ji)</td><td rowspan="2">nya<sup>yuf</sup><hr>nyáji<sup>yuf</sup></td><td rowspan="2">ɲä(.ʑi)</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is mine, our (exclusive)</td><td>verb</td></tr>
 				<tr><td>(e)ni</td><td>e ni<sup>tok</sup></td><td>(ʔɛ.)ni</td><td>subject is identifiable by context given by object</td><td>verb</td></tr>
-				<tr><td>nka</td><td>અંક<sup>guj</sup></td><td>n̩.kʰä</td><td>number, count, amount</td><td>noun</td></tr>
+				<tr><td>nka</td><td>અંક<sup>guj</sup></td><td>ʔn̩.kʰä</td><td>number, count, amount</td><td>noun</td></tr>
 			</tbody>
 		</table>
 		<h3>O</h3>
@@ -842,6 +835,7 @@ words always fill the oldest break first
 			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 			</tbody>
+				<tr><td>odoto</td><td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Taito_1.svg" alt="otodo" style="display:inline;height:1em;margin-top:-.15em;"><sup>jpn</sup></td><td>ʔo.do.tʰo</td><td>subject is extreme, outlandish, an outlier</td><td>verb</td></tr>
 		</table>
 		<h3>P</h3>
 		<table style="text-align: left;">
@@ -849,7 +843,7 @@ words always fill the oldest break first
 			<tbody>
 				<tr><td>pana</td><td>פָּנָה<sup>heb</sup></td><td>pʰä.nä</td><td>subject faces, adresses, is turned to object</td><td>verb</td></tr>
 				<tr><td>patsa</td><td>పచ్చ<sup>tel</sup></td><td>pʰä.t͡sä</td><td>subject is leaf colored, somewhere from green to yellow, chartreuse</td><td>verb</td></tr>
-				<tr><td>pie</td><td><a href="https://esolangs.org/wiki/Piet">Piet</a><sup>*</sup></td><td>pi˦.ʔɛ˨</td><td>subject is esoteric, unusual, strange without being random</td><td>verb</td></tr>
+				<tr><td>pie</td><td><a href="https://esolangs.org/wiki/Piet">Piet</a><sup>*</sup></td><td>pʰi˦.ʔɛ˨</td><td>subject is esoteric, unusual, strange without being random</td><td>verb</td></tr>
 				<tr><td>puka</td><td>පුක<sup>sin</sup></td><td>pʰu.kʰä</td><td>buttox, rear, behind</td><td>noun</td></tr>
 				<tr><td>pura</td><td>pure<sup>eng</sup></td><td>pʰu.ɹä</td><td>subject is cute, cuddlable, kind</td><td>verb</td></tr>
 			</tbody>
@@ -858,20 +852,20 @@ words always fill the oldest break first
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td>qunu</td><td>ŋuː˦˨<sup>*</sup><br>kʼu˦.u˨n<sup>*</sup><br>kʼu˦.nu˨<sup>*</sup></td><td>ɟɯ.nɯ</td><td>subject emits light, glows</td><td>verb</td></tr>
+				<tr><td>qunu</td><td>ŋuː˦˨<sup>*</sup><hr>kʼu˦.u˨n<sup>*</sup><hr>kʼu˦.nu˨<sup>*</sup></td><td>ɟɯ.nɯ</td><td>subject emits light, glows</td><td>verb</td></tr>
 			</tbody>
 		</table>
 		<h3>R</h3>
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td rowspan="2">(a)ra</td><td rowspan="2">la<sup>*</sup><br>ala<sup>tok</sup></td><td rowspan="2">(ʔä.)ɹä</td><td>not</td><td>adverb</td></tr>
+				<tr><td rowspan="2">(a)ra</td><td rowspan="2">la<sup>*</sup><hr>ala<sup>tok</sup></td><td rowspan="2">(ʔä.)ɹä</td><td>not</td><td>adverb</td></tr>
 				<tr><td class="showLeft">subject is not what the subject descibes, falsely described as confirmed by object</td><td>verb</td></tr>
 				<tr><td>retsu</td><td>let's<sup>eng</sup></td><td>ɹɛ.t͡sɯ</td><td>us (inclusive, imperative)</td><td>noun</td></tr>
 				<tr><td>rihra</td><td>Lila<sup>deu</sup></td><td>ɹiː.ɹä</td><td>subject is light purple</td><td>verb</td></tr>
 				<tr><td>ronu</td><td>lo&nbsp;nu<sup>jbo</sup></td><td>ɹo.nɯ</td><td>state, process, event, activity</td><td>noun</td></tr>
 				<tr><td>(a)ru</td><td>আৰু<sup>asm</sup></td><td>(ʔä.)ɹɯ</td><td>and</td><td>conjunction</td></tr>
-				<tr><td>ruhci</td><td>luk<sup>tpi</sup><br>looky<sup>eng</sup></td><td>ɹuː.ci</td><td>subject perceives with the eyes, sees object</td><td>verb</td></tr>
+				<tr><td>ruhci</td><td>luk<sup>tpi</sup><hr>looky<sup>eng</sup></td><td>ɹuː.ci</td><td>subject perceives with the eyes, sees object</td><td>verb</td></tr>
 			</tbody>
 		</table>
 		<h3>S</h3>
@@ -890,8 +884,8 @@ words always fill the oldest break first
 				<tr><td>tahta</td><td>ಠ_ಠ<sup>kan*</sup></td><td>tʰäː.tʰä</td><td>subject is frowned upon, discouraged, disapproved by object</td><td>verb</td></tr>
 				<tr><td>tahto</td><td>*ta-tou<sup>PPn*</sup></td><td>tʰäː.tʰo</td><td>us (inclusive)</td><td>noun</td></tr>
 				<tr><td>tatta</td><td>ঠাট্টা<sup>ben</sup></td><td>tʰä.tːä</td><td>joke, humor, concept that causes laughter</td><td>noun</td></tr>
-				<tr><td>ta(va)</td><td>to<sup>eng</sup><br>tawa<sup>tok</sup></td><td>tʰä(.wä)</td><td>subject goes towards object</td><td>verb</td></tr>
-				<tr><td>ta(va)</td><td>to<sup>eng</sup><br>tawa<sup>tok</sup></td><td>tʰä(.wä)</td><td>subject goes towards object</td><td>verb</td></tr>
+				<tr><td>ta(va)</td><td>to<sup>eng</sup><hr>tawa<sup>tok</sup></td><td>tʰä(.wä)</td><td>subject goes towards object</td><td>verb</td></tr>
+				<tr><td>ta(va)</td><td>to<sup>eng</sup><hr>tawa<sup>tok</sup></td><td>tʰä(.wä)</td><td>subject goes towards object</td><td>verb</td></tr>
 				<tr><td>tehira</td><td>תהילה<sup>heb</sup></td><td>tʰɛ.çi.ɹä</td><td>glory, praise, adoration</td><td>noun</td></tr>
 				<tr><td>tetsi</td><td>tetszik<sup>hun</sup></td><td>tʰɛ.t͡si</td><td>subject is liked, enjoyed, is pleasing</td><td>verb</td></tr>
 				<tr><td>tsabo</td><td>ꓞꓽ ꓐꓳꓺ<sup>lis</sup></td><td>t͡sä.bo</td><td>subject is salted, salty</td><td>verb</td></tr>
@@ -904,7 +898,7 @@ words always fill the oldest break first
 			<tbody>
 				<tr><td>uronho</td><td>ଉଲଙ୍ଗ<sup>ori</sup></td><td>ʔɯ.ɹo.ɲo</td><td>subject is naked, uncovered, unprotected</td><td>verb</td></tr>
 				<tr><td>utsava</td><td>उत्सव<sup>hin</sup></td><td>ʔɯ.t͡sä.wä</td><td>party, cerimony, festival, festivity</td><td>noun</td></tr>
-				<tr><td rowspan="2">(u)vu</td><td rowspan="2">vous<sup>fra</sup><br>uwu<sup>*</sup></td><td rowspan="2">(ʔɯ.)wu</td><td>you, y'all</td><td>noun</td></tr>
+				<tr><td rowspan="2">(u)vu</td><td rowspan="2">vous<sup>fra</sup><hr>uwu<sup>*</sup></td><td rowspan="2">(ʔɯ.)wu</td><td>you, y'all</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is your, y'all's</td><td>verb</td></tr>
 			</tbody>
 		</table>
@@ -916,9 +910,9 @@ words always fill the oldest break first
 				<tr><td class="showLeft">subject is litteral, genuine, bona-fide as confirmed by object</td><td>verb</td></tr>
 				<tr><td>veme</td><td>veme<sup>spa</sup></td><td>wɛ.mɛ</td><td>you, y'all (imperative)</td><td>noun</td></tr>
 				<tr><td>vevu</td><td>lewd<sup>eng</sup></td><td>wɛ.wu</td><td>subject is sexually casual, suggestive</td><td>verb</td></tr>
-				<tr><td>(a)vi</td><td>vi<sup>ist</sup><br>avi<sup>ist</sup></td><td>(ʔä.)wi</td><td>subject is had, held, carried, contained, owned by object</td><td>verb</td></tr>
+				<tr><td>(a)vi</td><td>vì<sup>ist</sup><hr>avi<sup>ist</sup></td><td>(ʔä.)wi</td><td>subject is had, held, carried, contained, owned by object</td><td>verb</td></tr>
 				<tr><td>vivn</td><td>우연<sup>kor</sup></td><td>wi.wn̩</td><td>probability, chance, likelyhood</td><td>noun</td></tr>
-				<tr><td rowspan="2">(u)vu</td><td rowspan="2">vous<sup>fra</sup><br>uwu<sup>*</sup></td><td rowspan="2">(ʔɯ.)wu</td><td>you, y'all</td><td>noun</td></tr>
+				<tr><td rowspan="2">(u)vu</td><td rowspan="2">vous<sup>fra</sup><hr>uwu<sup>*</sup></td><td rowspan="2">(ʔɯ.)wu</td><td>you, y'all</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is your, y'all's</td><td>verb</td></tr>
 			</tbody>
 		</table>
@@ -934,9 +928,9 @@ words always fill the oldest break first
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td>⥽&nbsp;kn(mo)&nbsp;(noun)</td><td>verb happens in a manner alike to how the noun behaves</td><td>adverb</td></tr>
-				<tr><td>⥽&nbsp;ronu&nbsp;(embeded sentence)</td><td>the event described by the sentence</td><td>noun</td></tr>
-				<tr><td>⥽&nbsp;vivn&nbsp;(embeded sentence)</td><td>the chance that the event described by the sentence happens</td><td>noun</td></tr>
+				<tr><td>⥽&nbsp;kn(mo)&nbsp;(noun)</td><td style="text-align:left">verb happens in a manner alike to how the noun behaves</td><td>adverb</td></tr>
+				<tr><td>⥽&nbsp;ronu&nbsp;(embeded sentence)</td><td style="text-align:left">the event described by the sentence</td><td>noun</td></tr>
+				<tr><td>⥽&nbsp;vivn&nbsp;(embeded sentence)</td><td style="text-align:left">the chance that the event described by the sentence happens</td><td>noun</td></tr>
 			</tbody>
 		</table>
 	</div>
