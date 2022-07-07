@@ -355,8 +355,12 @@
 		#Dictionary tbody tr td{
 			text-align:center;
 		}
-		#Dictionary tbody tr td:nth-child(4){
-			text-align:left;
+		#Dictionary tbody tr td:nth-child(4), .showLeft{
+			text-align:left !important;
+		}
+		td,th{
+			border-left-width:0px;
+			border-color:#CFCFCF
 		}
 	</style>
 </head>
@@ -506,7 +510,7 @@ no intentional similarities
 		<p>the english examples in this section are approximations at best and biased towards american english</p>
 		<table>
 			<tbody>
-				<tr><th>letter</th><th>ipa</th><th>description</th><th>english approximation</th></tr>
+				<tr><th>letter</th><th>IPA</th><th>description</th><th>english approximation</th></tr>
 				<tr><td>a</td><td>ä</td><td>open vowel</td><td>w<b>a</b>tch</td></tr>
 				<tr><td>b</td><td>b</td><td>voiced labial plosive</td><td><b>b</b>ath</td></tr>
 				<tr><td>c</td><td>cʰ</td><td>aspirated palatal plosive</td><td><b>k</b>ey</td></tr>
@@ -653,7 +657,7 @@ words always fill the oldest break first
 				</tr>
 			</tbody>
 		</table>
-		<table style="text-align: center;width:35%;float:left">
+		<table style="text-align: center;width:35%;float:left;border-left-width:1px;border-left-style:solid;border-left-color:#CFCFCF;">
 			<tbody>
 				<tr>
 					<th class="showLeft"></th>
