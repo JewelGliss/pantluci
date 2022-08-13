@@ -75,13 +75,14 @@
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Grantha&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Grantha&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mongolian&display=swap');
 		:root {			
 			--sans-font: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans Bengali', 'Noto Sans Malayalam',
 			'Noto Sans Thai', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Kannada', 'Noto Sans Armenian', 'Noto Sans Georgian', 'Noto Sans Khmer', 
 			'Noto Sans Sinhala', 'Noto Sans Gujarati', 'Noto Sans Lao', 'Noto Sans Hebrew', 'Noto Sans Myanmar', 'Noto Sans Telugu', 'Noto Sans Gurmukhi',
 			'Noto Sans Balinese', 'Noto Sans Grantha',
 				'Noto Sans Tagalog', 'Noto Sans Oriya', 'Noto Sans Gothic', 'Noto Sans Javanese', 'Noto Sans Thaana', 'Noto Sans Cherokee',  'Noto Sans Arabic',
-			'Noto Sans Tai Viet', 'Noto Sans Lisu', 'Noto Sans Cuneiform',
+			'Noto Sans Tai Viet', 'Noto Sans Lisu', 'Noto Sans Cuneiform', 'Noto Sans Mongolian',
 				'Noto Serif Nyiakeng Puachue Hmong', 'Noto Serif Ethiopic',  'Noto Serif Tibetan', 'Noto Serif Yezidi', 'Noto Serif Tangut', 'Noto Serif Dogra',
 			'Noto Serif Ahom',
 			sans-serif;
@@ -369,6 +370,25 @@
 		.gloss{
 			margin-top:-10px;
 			margin-bottom:5px;
+		}
+		.mnc{
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			transform: rotate(90deg);
+			display:inline-block;
+			padding-top:7.5px;
+			padding-bottom:7.5px;
+			margin-right:-10px;
+		}
+		@media print {
+			.mnc {
+				font-size:1.25em;
+				padding-top:5px;
+				padding-bottom:5px;
+				margin-right:-5px !important;
+			}
 		}
 	</style>
 </head>
@@ -1137,9 +1157,120 @@ words always fill the oldest break first
 		</table>
 	</div>
 	
-	<div class="printBlock"  id="Dictionary">
+	<div class="printBlock" id="Dictionary">
 		<h2>Pantlucian Dictionary</h2>
 		<p>Some entries are marked with * to denote that they have a special note which can be found at the end of the chapter.</p>
+		<h3>numbers maybe<small>(seperate while in consideration)</small></h3>
+		<table style="text-align: left;">
+			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<tbody>
+				<tr><td>una</td><td>*h₁óyneh₂<sup>PIE*</sup></td><td>ub.a</td><td>there is one, 1 of the subject</td><td>verb</td></tr>
+				<tr><td>lua</td><td>deus<sup>fro</sup></td><td>du.a</td><td>there is two, 2 of the subject</td><td>verb</td></tr>
+				<tr><td>tlua</td><td>trois<sup>fra</sup></td><td>t͡ʃɹu.a</td><td>there is three, 3 of the subject</td><td>verb</td></tr>
+				<tr><td>catla</td><td>quatre<sup>fra</sup></td><td>ka.t͡ʃɹa</td><td>there is four, 4 of the subject</td><td>verb</td></tr>
+				<tr><td>cinca</td><td>quīnque<sup>lat</sup></td><td>ciŋ.ka</td><td>there is five, 5 of the subject</td><td>verb</td></tr>
+				<tr><td>tuaci</td><td>*swéḱs<sup>PIE*</sup></td><td>tu.a.ci</td><td>there is six, 6 of the subject</td><td>verb</td></tr>
+				<tr><td>tatan</td><td>septem<sup>lat</sup></td><td>ta.tab</td><td>there is seven, 7 of the subject</td><td>verb</td></tr>
+				<tr><td>cutu</td><td>*h₁oḱtṓw<sup>PIE*</sup></td><td>ku.tu</td><td>there is eight, 8 of the subject</td><td>verb</td></tr>
+				<tr><td>naun</td><td>*h₁néwn̥<sup>PIE*</sup></td><td>ba.ub</td><td>there is nine, 9 of the subject</td><td>verb</td></tr>
+				<tr><td>lacan</td><td>decem<sup>lat</sup></td><td>da.kab</td><td>there is ten, 10 of the subject</td><td>verb</td></tr>
+				<tr><td>untla</td><td>onze<sup>fro</sup></td><td>un.t͡ʃɹa</td><td>there is eleven, 11 of the subject</td><td>verb</td></tr>
+				<tr><td>lulatlin</td><td>duodecim<sup>lat</sup></td><td>du.da.t͡ʃɹib</td><td>there is twelve, 12 of the subject</td><td>verb</td></tr>
+				<tr><td>tlala</td><td>treze<sup>fro</sup></td><td>t͡ʃɹa.da</td><td>there is thirteen, 13 of the subject</td><td>verb</td></tr>
+				<tr><td>catu</td><td>quatorze<sup>fra</sup></td><td>ka.tu</td><td>there is fourteen, 14 of the subject</td><td>verb</td></tr>
+				<tr><td>cinla</td><td>quinze<sup>frm</sup></td><td>cin.da</td><td>there is fifteen, 15 of the subject</td><td>verb</td></tr>
+				<tr><td>tala</td><td>seze<sup>frm</sup></td><td>ta.da</td><td>there is sixteen, 16 of the subject</td><td>verb</td></tr>
+				<tr><td>lita</td><td>dix-sept<sup>fra</sup></td><td>di.ta</td><td>there is seventeen, 17 of the subject</td><td>verb</td></tr>
+				<tr><td>lilui</td><td>dix-huit<sup>fra</sup></td><td>di.du.i</td><td>there is eightteen, 18 of the subject</td><td>verb</td></tr>
+				<tr><td>linlu</td><td>dix-neuf<sup>fra</sup></td><td>din.du</td><td>there is nineteen, 19 of the subject</td><td>verb</td></tr>
+				<tr><td>nitlinti</td><td>viginti<sup>lat</sup></td><td>bi.t͡ʃɹin.ti</td><td>there is twenty, 20 of the subject</td><td>verb</td></tr>
+				<tr><td>nantun</td><td>vingt-et-un<sup>fra</sup></td><td>ban.tun</td><td>there is twenty-one, 21 of the subject</td><td>verb</td></tr>
+				<tr><td>nantlu</td><td>vingt-deux<sup>fra</sup></td><td>ban.t͡ʃɹu</td><td>there is twenty-two, 22 of the subject</td><td>verb</td></tr>
+				<tr><td>nantlua</td><td>vingt-trois<sup>fra</sup></td><td>ban.t͡ʃɹu.a</td><td>there is twenty-three, 23 of the subject</td><td>verb</td></tr>
+				<tr><td>nanca</td><td>vingt-quatre<sup>fra</sup></td><td>baŋ.ka</td><td>there is twenty-four, 24 of the subject</td><td>verb</td></tr>
+				<tr><td>nantan</td><td>vingt-cinq<sup>fra</sup></td><td>ban.tab</td><td>there is twenty-five, 25 of the subject</td><td>verb</td></tr>
+				<tr><td>nanti</td><td>vingt-six<sup>fra</sup></td><td>ban.ti</td><td>there is twenty-six, 26 of the subject</td><td>verb</td></tr>
+				<tr><td>nanta</td><td>vingt-sept<sup>fra</sup></td><td>ban.ta</td><td>there is twenty-seven, 27 of the subject</td><td>verb</td></tr>
+				<tr><td>nantui</td><td>vingt-huit<sup>fra</sup></td><td>ban.tu.i</td><td>there is twenty-eight, 28 of the subject</td><td>verb</td></tr>
+				<tr><td>nannu</td><td>vingt-neuf<sup>fra</sup></td><td>bam.bu</td><td>there is twebty-nine, 29 of the subject</td><td>verb</td></tr>
+				<tr><td>tlicinta</td><td>triginta<sup>lat</sup></td><td>t͡ʃɹi.cin.ta</td><td>there is thirty, 30 of the subject</td><td>verb</td></tr>
+				<tr><td>tlantun</td><td>trente-et-un<sup>fra</sup></td><td>t͡ʃɹan.tub</td><td>there is thirty-one, 31 of the subject</td><td>verb</td></tr>
+				<tr><td>tlantlu</td><td>trente-deux<sup>fra</sup></td><td>t͡ʃɹan.t͡ʃɹu</td><td>there is thirty-two, 32 of the subject</td><td>verb</td></tr>
+				<tr><td>tlantlua</td><td>trente-trois<sup>fra</sup></td><td>t͡ʃɹan.t͡ʃɹu.a</td><td>there is thirty-three, 33 of the subject</td><td>verb</td></tr>
+				<tr><td>tlanca</td><td>trente-quatre<sup>fra</sup></td><td>t͡ʃɹaŋ.ka</td><td>there is thirty-four, 34 of the subject</td><td>verb</td></tr>
+				<tr><td>tlantan</td><td>trente-cinq<sup>fra</sup></td><td>t͡ʃɹan.tab</td><td>there is thirty-five, 35 of the subject</td><td>verb</td></tr>
+				<tr><td>tlanti</td><td>trente-six<sup>fra</sup></td><td>t͡ʃɹan.ti</td><td>there is thirty-six, 36 of the subject</td><td>verb</td></tr>
+				<tr><td>tlanta</td><td>trente-sept<sup>fra</sup></td><td>t͡ʃɹan.ta</td><td>there is thirty-seven, 37 of the subject</td><td>verb</td></tr>
+				<tr><td>tlantui</td><td>trente-huit<sup>fra</sup></td><td>t͡ʃɹan.tu.i</td><td>there is thirty-eight, 38 of the subject</td><td>verb</td></tr>
+				<tr><td>tlannu</td><td>trente-neuf<sup>fra</sup></td><td>t͡ʃɹam.bu</td><td>there is thirty-nine, 39 of the subject</td><td>verb</td></tr>
+				<tr><td>calanta</td><td>quarante<sup>frm</sup></td><td>ka.dan.ta</td><td>there is fourty, 40 of the subject</td><td>verb</td></tr>
+				<tr><td>calantun</td><td>quarante-et-un<sup>fra</sup></td><td>ka.dan.tub</td><td>there is fourty-one, 41 of the subject</td><td>verb</td></tr>
+				<tr><td>calantlu</td><td>quarante-deux<sup>fra</sup></td><td>ka.dan.t͡ʃɹu</td><td>there is fourty-two, 42 of the subject</td><td>verb</td></tr>
+				<tr><td>calantlua</td><td>quarante-trois<sup>fra</sup></td><td>ka.dan.t͡ʃɹu.a</td><td>there is fourty-three, 43 of the subject</td><td>verb</td></tr>
+				<tr><td>calanca</td><td>quarante-quatre<sup>fra</sup></td><td>ka.daŋ.ka</td><td>there is fourty-four, 44 of the subject</td><td>verb</td></tr>
+				<tr><td>calantan</td><td>quarante-cinq<sup>fra</sup></td><td>ka.dan.tab</td><td>there is fourty-five, 45 of the subject</td><td>verb</td></tr>
+				<tr><td>calanti</td><td>quarante-six<sup>fra</sup></td><td>ka.dan.ti</td><td>there is fourty-six, 46 of the subject</td><td>verb</td></tr>
+				<tr><td>calanta</td><td>quarante-sept<sup>fra</sup></td><td>ka.dan.ta</td><td>there is fourty-seven, 47 of the subject</td><td>verb</td></tr>
+				<tr><td>calantui</td><td>quarante-huit<sup>fra</sup></td><td>ka.dan.tu.i</td><td>there is fourty-eight, 48 of the subject</td><td>verb</td></tr>
+				<tr><td>calannu</td><td>quarante-neuf<sup>fra</sup></td><td>ka.dam.bu</td><td>there is fourty-nine, 49 of the subject</td><td>verb</td></tr>
+				<tr><td>tancan</td><td>cinquante<sup>fra</sup></td><td>taŋ.kab</td><td>there is fifty, 50 of the subject</td><td>verb</td></tr>
+				<tr><td>tancantun</td><td>cinquante-et-un<sup>fra</sup></td><td>taŋ.kan.tub</td><td>there is fifty-one, 51 of the subject</td><td>verb</td></tr>
+				<tr><td>tancantlu</td><td>cinquante-deux<sup>fra</sup></td><td>taŋ.kan.t͡ʃɹu</td><td>there is fifty-two, 52 of the subject</td><td>verb</td></tr>
+				<tr><td>tancantlua</td><td>cinquante-trois<sup>fra</sup></td><td>taŋ.kan.t͡ʃɹu.a</td><td>there is fifty-three, 53 of the subject</td><td>verb</td></tr>
+				<tr><td>tancanca</td><td>cinquante-quatre<sup>fra</sup></td><td>taŋ.kaŋ.ka</td><td>there is fifty-four, 54 of the subject</td><td>verb</td></tr>
+				<tr><td>tancantan</td><td>cinquante-cinq<sup>fra</sup></td><td>taŋ.kan.tab</td><td>there is fifty-five, 55 of the subject</td><td>verb</td></tr>
+				<tr><td>tancanti</td><td>cinquante-six<sup>fra</sup></td><td>taŋ.kan.ti</td><td>there is fifty-six, 56 of the subject</td><td>verb</td></tr>
+				<tr><td>tancanta</td><td>cinquante-sept<sup>fra</sup></td><td>taŋ.kan.ta</td><td>there is fifty-seven, 57 of the subject</td><td>verb</td></tr>
+				<tr><td>tancantui</td><td>cinquante-huit<sup>fra</sup></td><td>taŋ.kan.tu.i</td><td>there is fifty-eight, 58 of the subject</td><td>verb</td></tr>
+				<tr><td>tancannu</td><td>cinquante-neuf<sup>fra</sup></td><td>taŋ.kam.bu</td><td>there is fifty-nine, 59 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatan</td><td>soixante<sup>fra</sup></td><td>tu.a.tan</td><td>there is sixty, 60 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatantun</td><td>soixante-et-un<sup>fra</sup></td><td>tu.a.tan.tub</td><td>there is sixty-one, 61 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatantlu</td><td>soixante-deux<sup>fra</sup></td><td>tu.a.tan.t͡ʃɹu</td><td>there is sixty-two, 62 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatantlua</td><td>soixante-trois<sup>fra</sup></td><td>tu.a.t͡ʃɹu.a</td><td>there is sixty-three, 63 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatanca</td><td>soixante-quatre<sup>fra</sup></td><td>tu.a.taŋ.ka</td><td>there is sixty-four, 64 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatantan</td><td>soixante-cinq<sup>fra</sup></td><td>tu.a.tan.tab</td><td>there is sixty-five, 65 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatanti</td><td>soixante-six<sup>fra</sup></td><td>tu.a.tan.ti</td><td>there is sixty-six, 66 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatanta</td><td>soixante-sept<sup>fra</sup></td><td>tu.a.tan.ta</td><td>there is sixty-seven, 67 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatantui</td><td>soixante-huit<sup>fra</sup></td><td>tu.a.tan.tu.i</td><td>there is sixty-eight, 68 of the subject</td><td>verb</td></tr>
+				<tr><td>tuatannu</td><td>soixante-neuf<sup>fra</sup></td><td>tu.a.tam.bu</td><td>there is sixty-nine, 69 of the subject</td><td>verb</td></tr>
+				<tr><td>tapan</td><td>septante<sup>fra</sup></td><td>ta.pab</td><td>there is seventy, 70 of the subject</td><td>verb</td></tr>
+				<tr><td>tapantun</td><td>septante-et-un<sup>fra</sup></td><td>ta.pan.tub</td><td>there is seventy-one, 71 of the subject</td><td>verb</td></tr>
+				<tr><td>tapantlu</td><td>septante-deux<sup>fra</sup></td><td>ta.pan.t͡ʃɹu</td><td>there is seventy-two, 72 of the subject</td><td>verb</td></tr>
+				<tr><td>tapantlua</td><td>septante-trois<sup>fra</sup></td><td>ta.pan.t͡ʃɹu.a</td><td>there is seventy-three, 73 of the subject</td><td>verb</td></tr>
+				<tr><td>tapanca</td><td>septante-quatre<sup>fra</sup></td><td>ta.paŋ.ka</td><td>there is seventy-four, 74 of the subject</td><td>verb</td></tr>
+				<tr><td>tapantan</td><td>septante-cinq<sup>fra</sup></td><td>ta.pan.tab</td><td>there is seventy-five, 75 of the subject</td><td>verb</td></tr>
+				<tr><td>tapanti</td><td>septante-six<sup>fra</sup></td><td>ta.pan.ti</td><td>there is seventy-six, 76 of the subject</td><td>verb</td></tr>
+				<tr><td>tapanta</td><td>septante-sept<sup>fra</sup></td><td>ta.pan.ta</td><td>there is seventy-seven, 77 of the subject</td><td>verb</td></tr>
+				<tr><td>tapantui</td><td>septante-huit<sup>fra</sup></td><td>ta.pan.tu.i</td><td>there is seventy-eight, 78 of the subject</td><td>verb</td></tr>
+				<tr><td>tapannu</td><td>septante-neuf<sup>fra</sup></td><td>ta.pam.bu</td><td>there is seventy-nine, 79 of the subject</td><td>verb</td></tr>
+				<tr><td>nitan</td><td>huitante<sup>fra</sup></td><td>bi.tab</td><td>there is eighty, 80 of the subject</td><td>verb</td></tr>
+				<tr><td>nitantun</td><td>huitante-et-un<sup>fra</sup></td><td>bi.tan.tub</td><td>there is eighty-one, 81 of the subject</td><td>verb</td></tr>
+				<tr><td>nitantlu</td><td>huitante-deux<sup>fra</sup></td><td>bi.tan.t͡ʃɹu</td><td>there is eighty-two, 82 of the subject</td><td>verb</td></tr>
+				<tr><td>nitantlua</td><td>huitante-trois<sup>fra</sup></td><td>bi.tan.t͡ʃɹu.a</td><td>there is eighty-three, 83 of the subject</td><td>verb</td></tr>
+				<tr><td>nitanca</td><td>huitante-quatre<sup>fra</sup></td><td>bi.taŋ.ka</td><td>there is eighty-four, 84 of the subject</td><td>verb</td></tr>
+				<tr><td>nitantan</td><td>huitante-cinq<sup>fra</sup></td><td>bi.tan.tab</td><td>there is eighty-five, 85 of the subject</td><td>verb</td></tr>
+				<tr><td>nitanti</td><td>huitante-six<sup>fra</sup></td><td>bi.tan.ti</td><td>there is eighty-six, 86 of the subject</td><td>verb</td></tr>
+				<tr><td>nitanta</td><td>huitante-sept<sup>fra</sup></td><td>bi.tan.ta</td><td>there is eighty-seven, 87 of the subject</td><td>verb</td></tr>
+				<tr><td>nitantui</td><td>huitante-huit<sup>fra</sup></td><td>bi.tan.tu.i</td><td>there is eighty-eight, 88 of the subject</td><td>verb</td></tr>
+				<tr><td>nitannu</td><td>huitante-neuf<sup>fra</sup></td><td>bi.tam.bu</td><td>there is eighty-nine, 89 of the subject</td><td>verb</td></tr>
+				<tr><td>nunan</td><td>nonante<sup>fra</sup></td><td>bu.bab</td><td>there is ninety, 90 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantun</td><td>nonante-et-un<sup>fra</sup></td><td>bu.ban.tun</td><td>there is ninety-one, 91 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantlu</td><td>nonante-deux<sup>fra</sup></td><td>bu.ban.t͡ʃɹu</td><td>there is ninety-two, 92 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantlua</td><td>nonante-trois<sup>fra</sup></td><td>bu.ban.t͡ʃɹu.a</td><td>there is ninety-three, 93 of the subject</td><td>verb</td></tr>
+				<tr><td>nunanca</td><td>nonante-quatre<sup>fra</sup></td><td>bu.baŋ.ka</td><td>there is ninety-fou, 94 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantan</td><td>nonante-cinq<sup>fra</sup></td><td>bu.ban.tan</td><td>there is ninety-five, 95 of the subject</td><td>verb</td></tr>
+				<tr><td>nunanti</td><td>nonante-six<sup>fra</sup></td><td>bu.ban.ti</td><td>there is ninety-six, 96 of the subject</td><td>verb</td></tr>
+				<tr><td>nunanta</td><td>nonante-sept<sup>fra</sup></td><td>bu.ban.ta</td><td>there is ninety-seven, 97 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantui</td><td>nonante-huit<sup>fra</sup></td><td>bu.ban.tu.i</td><td>there is ninety-eight, 98 of the subject</td><td>verb</td></tr>
+				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>bu.bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>
+				
+				<tr><td>unlli</td><td>hundred<sup>eng</sup></td><td>un.dɹi</td><td>one hundred, 100 of something</td><td>noun</td></tr>
+				<tr><td>tunan</td><td><span class="mnc">ᡨᡠᠮᡝᠨ</span><sup>mnc</sup></td><td>tu.bab</td><td>ten thousand, 10,000 of something</td><td>noun</td></tr>
+				<tr><td>niliun</td><td>milione<sup>ita</sup></td><td>bi.di.ub</td><td>one million, 1,000,000 of something</td><td>noun</td></tr>
+				<tr><td>unlliliun</td><td>unlli<sup>*</sup><hr>niliun<sup>*</sup></td><td>un.dɹi.di.ub</td><td>one hundred million, 100,000,000 of something</td><td>noun</td></tr>
+			</tbody>
+		</table>
+		
 		
 		<h3>A</h3>
 		<table style="text-align: left;">
@@ -1319,6 +1450,89 @@ words always fill the oldest break first
 		esoteric languages studied by Pantluci's creater who mispronounced it as [pʰi:.ʔɛtʰ] for far too long.</p>
 		<p><b>tatu</b> from *ta-tou, a word from proto-polynesian which doesnt have an offical language code.</p>
 	</div>
+<script>
+//this works but is really dumb, figure out a better way
+var tables = document.getElementById("Dictionary").children;
+var widthResolution=100;
+for (var i = 0; i < tables.length; i++) {
+	if(tables[i].nodeName=="TABLE"){
+		var rows = tables[i].tBodies[0].children;
+		for (var j = 0; j < rows.length; j++) {
+			var td = rows[j].children;
+			for (var k = 0; k < td.length; k++) {
+				td[k].style.whiteSpace="nowrap";
+			}
+			for (var k = 0; k < td.length; k++) {
+				td[k].style.fontSize="1em";
+			}
+			for (var k = 0; k < td.length; k++) {
+				var RAM=td[k].innerHTML;
+				td[k].innerHTML="";
+				var span = document.createElement('span')
+				span.innerHTML = RAM;
+				span.style.display = "inline-block";
+				td[k].appendChild(span);
+
+			}
+		}
+	}
+}
+var basewidth=0;
+var widthInc=1;
+function shrink(){
+var anyShrink=false
+var targetWidth = document.getElementById("Dictionary").clientWidth;
+for (var i = 0; i < tables.length; i++) {
+	if(tables[i].nodeName=="TABLE"){
+		var rows = tables[i].tBodies[0].children;
+		for (var j = 0; j < rows.length; j++) {
+			var td = rows[j].children;
+			var widthCheck=basewidth;
+			for (var k = 0; k < td.length; k++) {
+				var spans = td[k].children;
+				for (var l = 0; l < spans.length; l++) {
+					//console.log(spans[l],spans,l,spans[l].clientWidth,widthCheck)
+					widthCheck=spans[l].clientWidth+widthCheck;
+				}	
+			}
+			if(widthCheck>targetWidth){
+			console.log(j,rows[j],widthCheck,targetWidth)
+				for (var k = 0; k < td.length; k++) {
+					td[k].style.fontSize=((Number(td[k].style.fontSize.slice(0, -2))*widthResolution-1)/widthResolution).toString()+"em";
+				}
+				anyShrink=true;
+			}
+		}
+	}
+}
+if(anyShrink){
+	setTimeout(shrink, 1);
+}else{
+	
+var doinc=false;
+for (var i = 0; i < tables.length; i++) {
+	if(tables[i].nodeName=="TABLE"){
+		var rows = tables[i].tBodies[0].children;
+		for (var j = 0; j < rows.length; j++) {
+			var td = rows[j].children;
+			var widthCheck=basewidth;
+			if(rows[j].clientWidth>targetWidth){
+				doinc=true;
+			}
+		}
+	}
+}
+if(doinc){
+basewidth=basewidth+widthInc;
+	setTimeout(shrink, 1);
+}else{
+	setTimeout(shrink, 10000);
+
+}
+}
+}
+shrink()
+</script>
 	
 	<div class="pageBreak"></div>
 	
