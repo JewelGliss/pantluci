@@ -6,6 +6,14 @@
     <link rel="icon" href="./images/icon.ico">
     <link href="./web/res/bootstrap.css" rel="stylesheet">
 	<style>
+		@font-face {
+			font-family: PantluciSans;
+			src: url(fonts/pantluci_sans.otf);
+		}
+		@font-face {
+			font-family: PantluciSerif;
+			src: url(fonts/pantluci_serif.otf);
+		}
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
@@ -95,6 +103,7 @@
 				'Noto Sans Tagalog', 'Noto Sans Oriya', 'Noto Sans Gothic', 'Noto Sans Javanese', 'Noto Sans Thaana', 'Noto Sans Cherokee',  'Noto Sans Arabic',
 			'Noto Sans Tai Viet', 'Noto Sans Lisu', 'Noto Sans Cuneiform',
 			serif;
+			--pantluci-font:PantluciSans;
 		}
 		body {
 			font-family:var(--sans-font) !important;
@@ -182,6 +191,9 @@
 			.titleBlock span {
 				display: inline-block;
 				padding-top:0px;
+			}
+			:root {			
+				--pantluci-font:PantluciSerif;
 			}
 		}
 		.container{
@@ -390,6 +402,11 @@
 				margin-right:-5px !important;
 			}
 		}
+		
+		#notARealID #Dictionary tbody tr td:nth-child(1):not(.showLeft), .pantluci{
+			font-family:var(--pantluci-font) !important;
+			text-transform:capitalize;
+		}
 	</style>
 </head>
 
@@ -427,10 +444,9 @@
 6. conlangs as experiments
 7. Toki Pona ✔️
    2.1 Toki Pona Overview ✔️
-   2.2 Toki Pona's Phonology ✔️
-   2.3 Toki Pona's Grammar ✔️
-   2.4 Toki Pona Dictionary ✔️
-   2.5 Productivity in Toki Pona ✔️
+   2.2 Toki Pona's Grammar ✔️
+   2.3 Toki Pona Dictionary ✔️
+   2.4 Productivity in Toki Pona ✔️
 8. Pantluci ✔️
    2.1 Pantluci Overview ✔️
    2.2 Pantlucian Phonology ✔️
@@ -481,6 +497,12 @@ conlangs direct (Lojban, toki pona, Láadan)
 			The very first one I encountered is admittedly not a conlang in the traditional usage of the word is an esoteric programming language that not only
 			avoids using text but also operates using stack manipulation. This introduction of messing with assumed standards of language by using abnormal data
 			structures is probably what lead to my interest in a breadth-first language in the first place.
+	<br><span style="font-family:PantluciSans">tutu citi niilu puu plutli</span>
+	<br><span style="font-family:PantluciSans"> Tutu Citi Niilu Puu Plutli</span>
+	<br><span style="font-family:PantluciSerif"> Tutu Citi Niilu Puu Plutli</span>
+	<br><span>tutu citi niilu puu plutli</span>
+	<br><span style="font-family:PantluciSerif">tutu citi niilu puu plutli</span>
+	<br>T<span style="font-family:PantluciSans">utu</span>C<span style="font-family:PantluciSans">iti</span>N<span style="font-family:PantluciSans">iilu</span>P<span style="font-family:PantluciSans">uu</span>P<span style="font-family:PantluciSans">lutli</span>
 		</p>
 		<p>
 			From there I found my way to Frathwiki and discovered Fith and the concepts of arithmographic languages, breifscripts, and speedtalks.
@@ -520,6 +542,11 @@ Universals in phonology by Larry M. Hyman
 creoles being purely historical but pidgins having unique features
 similarities between how babies learn and ai (specifically in language learning)
 australian aboriginal langs potentially having diffrent requirments due to hearing issues
+tuki tiki in general
+lojban as a failed example
+natrualization of esperanto
+sign languages as natrual example of seperate island
+lingustic universals are just a map of the island
 		</pre>
 	</div>
 	
@@ -559,11 +586,16 @@ more concretely for any pair of non-identical concepts, some finite string can i
 		<h2>Toki Pona Overview</h2>
 		<pre>
 note that it's my idiolect
+content phrases
+can go at the end of phrases or sentences - prepostions
+en, li, e sota la family
+questions for jan sona pi toki pona
+is
+"jan pi ma lon telo" where lon is a preposition, allowed
+"mi pi esun suli li kama" allowed
+
 		</pre>
-	</div>
-		
-	<div class="printBlock">
-		<h2>Toki Pona's Phonology</h2>
+		<h3>Toki Pona's Phonology</h3>
 		<div style="overflow:hidden">
 		<table style="text-align: center;width:65%;float:left;">
 			<tbody>
@@ -702,7 +734,7 @@ note that it's my idiolect
 				<tr><td>ken</td><td>can, able, ability</td><td>contentive</td></tr>
 				<tr><td rowspan="2">kepeken</td><td>use</td><td>preposition</td></tr>
 				<tr><td class="showLeft">using</td><td style="text-align:center !important">contentive</td></tr>
-				<tr><td>kijetesantakalu*</td><td>raccoon, red panda, raccoon dog</td><td>contentive</td></tr>
+				<tr><td>kijetesantakalu*</td><td>raccoon, red panda, raccoon dog, racoon like animals</td><td>contentive</td></tr>
 				<tr><td>kili</td><td>fruit, vegetable, edible plant product</td><td>contentive</td></tr>
 				<tr><td>kin</td><td>as well, additionally, too</td><td>contentive</td></tr>
 				<tr><td>kipisi</td><td>part, section, cut, separate</td><td>contentive</td></tr>
@@ -895,11 +927,18 @@ note that it's my idiolect
 		<p><b>ona</b> is a pronoun but does not act like mi or sina, so it is more accurate to classify it as a contentive than a preposition.</p>
 	</div>
 	
+	<div class="printBlock">
+		<h2>Productivity in Toki Pona</h2>
+		<pre>
+		only producive class is names which one would expect are used to "cheat" the limited vocabuarly, but that is rare 
+		</pre>
+	</div>
+	
 	<!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ PANTLUCI START POINT ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
 	<div class="pageBreak"></div>
 	<h1 class="titleBlock">
 		<span>
-			Pantluci<small> 0.7</small><br>
+			Pantluci<small> 0.8</small><br>
 			<span style="margin-top:-30px;padding-top:0px;">
 				<small>an esoteric human language<br><img src="https://dummyimage.com/640x360/eee/aaa"></small>
 			</span>
@@ -929,6 +968,15 @@ note that it's my idiolect
 		the language expanded into a research project exploring esoteric languages in general, with the language relegated to an example.
 		Its phonology was once again scrapped and rebuilt with a focus on filling the same purpose as the grammar.
         </p>
+		<pre>
+minimal phonology
+The smallest claimed consonant inventory of any natrual language doculect is the Proto-Lakes Plain Language with a meer five (Clouse).
+If reconstructions are ignored, the smallest one is a tie between Iau, Kirikiri, and Rotokas with six (SOURCES).
+Either way this should be suffienct to show that while odd, Pantluci's consonant inventory is not unreasonable.
+Three vowel systems are common enough that they need no justification.
+Although the combination of a small consonant and small vowel inventory may seems strange, Pirahã shares this trait at eight consonants and three vowels (SOURCE).
+This reasonable but not impossible phonology is likely something that would never evolve natrually, as any mergers that would shrink an inventory to this point likely would destroy the lexicon to an irreprable state.
+</pre>
 		<p>It went through the names Hýyban ([çə˦.ə˨.bä˨n]), Hoóban ([çoi̯˨˦.bä˨n]), Hoóba ([çoi̯˨˦.bä˨]), Tsohci ([t͜soː.cʰi]), and now Pantluci</p>
 		<p>Pantluci is intended to explore many linguistic theories that claim some form of fundamental
 		or underlying genetic language or grammar and act as a language outside of the typical lingustic universals.
@@ -938,15 +986,10 @@ note that it's my idiolect
 		any way groundbreaking. It exists to be test the practicality of its weirdness, so no enforced standard of Pantluci will ever have official support,
 		and speakers will be encouraged to speak how they feel most comfortable.
         </p>
-		<pre>
-minimal phonology
-The smallest claimed consonant inventory of any natrual language doculect is the Proto-Lakes Plain Language with a meer five (Clouse).
-If reconstructions are ignored, the smallest one is a tie between Iau, Kirikiri, and Rotokas with six (SOURCES).
-Either way this should be suffienct to show that while odd, Pantluci's consonant inventory is not unreasonable.
-Three vowel systems are common enough that they need no justification.
-Although the combination of a small consonant and small vowel inventory may seems strange, Pirahã shares this trait at eight consonants and three vowels (SOURCE).
-This reasonable but not impossible phonology is likely something that would never evolve natrually, as any mergers that would shrink an inventory to this point likely would destroy the lexicon to an irreprable state.
-
+		<p>This description of the language will not fully explain or document the entiriety of the language, however it should prove as a suffienct
+		baseline to prove the viability of the language and potentially spark intrest.
+        </p>
+<pre>
 esoteric syntax
 simple grammar
 global etymologies
@@ -998,22 +1041,30 @@ global etymologies
 			</tbody>
 		</table>
 		</div>
+		<p>the same realization of a phoneme may not occur twice in a row.</p>
 		<p>/t/ may be realized as either [t] or [t͡ʃ] before /i/.</p>
-		<p>/t/ is realized as [t͡ʃ] before [ɹ].</p>
+		<p>/t/ is realized as [t͡ʃ] before [ɹ] or [ɹ̍].</p>
+		
 		<p>/k/ is realized as [c] before /i/.</p>
-		<p>/B/ is realized as [m] before consonants other than [ɹ] and [ʔ].</p>
-		<p>/B/ is realized as [b] after [m].</p>
-		<p>otherwise /B/ may be realized as either [m], [β] or [b].</p>
-		<p>[m] assimilates in place of articulation to the following consonant except [ʔ].</p>
-		<p>[ʔ] may be inserted word initially during careful speech to clarify that a preceding word final /B/ is a coda.</p>
-		<p>/D/ is realized as either [ɹ] or [l] after other consonants.</p>
-		<p>/D/ is realized as either [d] before [ɹ] or [l].</p>
-		<p>otherwise /D/ may be realized as either [d] or [l].</p>
+		
+		<p>/B/ may be realized as a coda when after a vowel.</p>
+		<p>/B/ is realized as [m] [m̩], or [β̩] before onsets.</p>
+		<p>otherwise /B/ may be realized as either [m], [m̩], [β], [β̩], or [b].</p>
+		<p>/B/ may not be realized as syllabic after a stressed vowel.</p>
+		<p>[m] and [m̩] assimilates in place of articulation to the following consonant.</p>
+		
+		<p>/D/ may be realized as a medial onset when before a vowel and after a consonant.</p>
+		<p>/D/ is realized as [ɹ], [ɹ̍], [l], or [l̩] after other consonants in the same syllable.</p>
+		<p>otherwise /D/ may be realized as either [d], [ɹ], [ɹ̍], [l], or [l̩].</p>
+		<p>/D/ may not be realized as syllabic before a vowel that would be stressed if /D/ was not syllabic.</p>
+		
 		<p>/a/ may be realized as either [a] or [ɑ].</p>
-		<p>/a/ may be reduceded to either [ə] or [ɐ] in unstressed syllables.</p>
-		<p>/i/ may be reduceded to [ɪ] in unstressed syllables.</p>
-		<p>/u/ may be reduceded to [ʊ] in unstressed syllables.</p>
-		<pre>explain reasoning for using upercase B/D</pre>
+		<p>/a/ may be reduced to either [ə] or [ɐ] in unstressed syllables.</p>
+		
+		<p>/i/ may be reduced to [ɪ] in unstressed syllables.</p>
+		
+		<p>/u/ may be reduced to [ʊ] in unstressed syllables.</p>
+		<p>/B/, and /D/ are written as capitals due to the wide range of potential variation.</p>
 	</div>
 	
 	<div class="printBlock" class="Introduction">
@@ -1025,30 +1076,47 @@ global etymologies
 				<tr><td>a</td><td>ə~a~ɑ</td><td>non-close vowel</td><td>c<b>u</b>p, c<b>a</b>p, c<b>o</b>p</td></tr>
 				<tr><td>c</td><td>k~c</td><td>voiceless dorsal plosive</td><td><b>c</b>ar, <b>k</b>ey</td></tr>
 				<tr><td>i</td><td>i~ɪ</td><td>front close vowel</td><td><b>ea</b>t, <b>i</b>t</td></tr>
-				<tr><td>l</td><td>d~ɹ~l</td><td>voiced coronal</td><td><b>d</b>ent, <b>r</b>ent, <b>l</b>ent</td></tr>
-				<tr><td>n</td><td>m~β~b</td><td>voiced labial</td><td><b>m</b>oat, <b>v</b>ote <b>b</b>oat</td></tr>
+				<tr><td>l</td><td>d~ɹ~ɹ̍~l~l̩</td><td>voiced coronal</td><td><b>d</b>ent, <b>r</b>ent, p<b>er</b>, <b>l</b>ent, bott<b>le</b></td></tr>
+				<tr><td>n</td><td>m~m̩~β~β̩~b</td><td>voiced labial</td><td><b>m</b>oat, rhyth<b>m</b> <b>v</b>ote, <b>vvv</b>, <b>b</b>oat</td></tr>
 				<tr><td>p</td><td>p</td><td>voiceless labial plosive</td><td><b>p</b>ound</td></tr>
 				<tr><td>t</td><td>t~t͡ʃ</td><td>voiceless alveolar plosive</td><td><b>t</b>alk, <b>ch</b>alk</td></tr>
 				<tr><td>u</td><td>u~ʊ</td><td>back close vowel</td><td>p<b>oo</b>l, p<b>u</b>ll</td></tr>
 			</tbody>
 		</table>
-		<p>The thought process behind these are fairly simple. Some of these only really one realistic option: p, t, a, i, and u.
+		<p>The thought process behind these spellings are fairly simple. Some of these only really one realistic option: p, t, a, i, and u.
 ⟨c⟩ is the simplist symbol that could be used for /k/.
-There is little point in having ⟨w⟩ without ⟨v⟩, ⟨v⟩ looks too much like ⟨u⟩, ⟨m⟩ is just a needlessly complicated ⟨n⟩ is weird, and ⟨n⟩ is simpler than ⟨b⟩, so ⟨n⟩ works best for /b/.
+There is little point in having ⟨w⟩ without ⟨v⟩, ⟨v⟩ looks too much like ⟨u⟩, ⟨m⟩ is just a needlessly complicated ⟨n⟩, and ⟨n⟩ is simpler than ⟨b⟩, so ⟨n⟩ works best for /b/.
 Finally, it would be weird to have ⟨r⟩ and contrast ⟨n⟩ in such a small inventory, and ⟨l⟩ is simpler than ⟨d⟩, so ⟨l⟩ works best for /d/.
 		</p>
-		<p>Punctuation is unused, but the first letter of each sentence is capitalized</p>
+		<pre>look at punctuation and capitalization
+		is unused, but the first letter of each sentence is capitalized?</p>
+		<pre>for fun alternate orthographies
+		arabic
+		armenian
+		a - ա
+		c - գ կ ք
+		i - ի
+		l - լ
+		n - 
+		p - 
+		t - 
+		u - 
+		pantluci - 
+		Bengali
+		</pre>
 	</div>
 	
 	<div class="printBlock">
 		<h2>Pantlucian Morphology</h2>
-		<p>Syllables in Pantluci are of the form (C)(d~ɹ~l)V(m~β~b), i.e. an optional consonant optionally followed by /d/ followed by a vowel, optionally followed by /b/.
-		Words may be any combination of syllables with the following restrictions:</p>
+		<p>Syllables in Pantluci are of the form (C)V, i.e. an optional consonant optionally followed by followed by a vowel or syllabic consonant.
+		Allophonic rules previously disccused then complicate this shape slightly. Words may be any combination of syllables with the following restrictions:</p>
 		<ul>
 			<li>the first syllable may not be the same as the second syllable</li>
 			<li>the second syllable may not both begin with a vowel and have the same vowel as the previous syllable</li>
-			<li>the first syllable of a word may not be just a vowel</li>
-			<li>if /B/ could legally be interpreted as either a coda or onset, it is an onset</li>
+			<li>the first syllable of a word must have a consonant unless it is followed by a syllable consisting of just a /B/</li>
+			<li>if /B/ should first be interpreted as an onset, then a coda of the preceeding syllable, then a nucleus</li>
+			<li>if /B/ may be pronounced as a nucleus when a coda to clairify that it is not on onset, but still behaves normally</li>
+			<li>if /D/ should first be interpreted as an intial onset, then a medial onset, then a nucleus</li>
 			<li>stress rests on the first syllable</li>
 		</ul>
 		<p>Words in Pantluci undergo a single morphological process in order to denote the gramatical structure of the sentence.
@@ -1075,7 +1143,6 @@ Finally, it would be weird to have ⟨r⟩ and contrast ⟨n⟩ in such a small 
 		<pre>
 word types
 morphology
-iregularity
 		</pre>
 	</div>
 	
@@ -1084,6 +1151,12 @@ iregularity
 		<p>Lexical items in Pantluci are not necessarily a single root, and may instead consist of any syntactically valid (ignoring types)
 		construction. These multi word lexical items may also have an equal number of empty spots in their construction and defintions that must be filled when used.</p>
 		<pre>
+		add compound system
+		four levels of producivity:
+		- normal gramar
+		- lexical phrases
+		- unevolvable compounding system - glue phonemes? nah - weaving phones together?
+		- new words
 		</pre>
 	</div>
 	
@@ -1178,7 +1251,7 @@ words always fill the oldest break first
 				<tr><td>cutu</td><td>*h₁oḱtṓw<sup>PIE*</sup></td><td>ku.tu</td><td>there is eight, 8 of the subject</td><td>verb</td></tr>
 				<tr><td>naun</td><td>*h₁néwn̥<sup>PIE*</sup></td><td>Ba.uB</td><td>there is nine, 9 of the subject</td><td>verb</td></tr>
 				<tr><td>lacan</td><td>decem<sup>lat</sup></td><td>Da.kaB</td><td>there is ten, 10 of the subject</td><td>verb</td></tr>
-				<tr><td>untla</td><td>onze<sup>fro</sup></td><td>(ʔ)un.t͡ʃɹa</td><td>there is eleven, 11 of the subject</td><td>verb</td></tr>
+				<!--<tr><td>untla</td><td>onze<sup>fro</sup></td><td>(ʔ)un.t͡ʃɹa</td><td>there is eleven, 11 of the subject</td><td>verb</td></tr>
 				<tr><td>lulatlin</td><td>duodecim<sup>lat</sup></td><td>Du.Da.t͡ʃɹiB</td><td>there is twelve, 12 of the subject</td><td>verb</td></tr>
 				<tr><td>tlala</td><td>treze<sup>fro</sup></td><td>t͡ʃɹa.Da</td><td>there is thirteen, 13 of the subject</td><td>verb</td></tr>
 				<tr><td>catu</td><td>quatorze<sup>fra</sup></td><td>ka.tu</td><td>there is fourteen, 14 of the subject</td><td>verb</td></tr>
@@ -1207,7 +1280,7 @@ words always fill the oldest break first
 				<tr><td>tlanta</td><td>trente-sept<sup>fra</sup></td><td>t͡ʃɹan.ta</td><td>there is thirty-seven, 37 of the subject</td><td>verb</td></tr>
 				<tr><td>tlantui</td><td>trente-huit<sup>fra</sup></td><td>t͡ʃɹan.tu.i</td><td>there is thirty-eight, 38 of the subject</td><td>verb</td></tr>
 				<tr><td>tlannu</td><td>trente-neuf<sup>fra</sup></td><td>t͡ʃɹam.bu</td><td>there is thirty-nine, 39 of the subject</td><td>verb</td></tr>
-				<tr><td>calanta</td><td>quarante<sup>frm</sup></td><td>ka.Dan.ta</td><td>there is fourty, 40 of the subject</td><td>verb</td></tr>
+				<tr><td>callacinta</td><td>quadraginta<sup>lat</sup></td><td>ka.Dan.ta</td><td>there is fourty, 40 of the subject</td><td>verb</td></tr>
 				<tr><td>calantun</td><td>quarante-et-un<sup>fra</sup></td><td>ka.Dan.tuB</td><td>there is fourty-one, 41 of the subject</td><td>verb</td></tr>
 				<tr><td>calantlu</td><td>quarante-deux<sup>fra</sup></td><td>ka.Dan.t͡ʃɹu</td><td>there is fourty-two, 42 of the subject</td><td>verb</td></tr>
 				<tr><td>calantlua</td><td>quarante-trois<sup>fra</sup></td><td>ka.Dan.t͡ʃɹu.a</td><td>there is fourty-three, 43 of the subject</td><td>verb</td></tr>
@@ -1261,12 +1334,12 @@ words always fill the oldest break first
 				<tr><td>nunantun</td><td>nonante-et-un<sup>fra</sup></td><td>Bu.Ban.tuB</td><td>there is ninety-one, 91 of the subject</td><td>verb</td></tr>
 				<tr><td>nunantlu</td><td>nonante-deux<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu</td><td>there is ninety-two, 92 of the subject</td><td>verb</td></tr>
 				<tr><td>nunantlua</td><td>nonante-trois<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu.a</td><td>there is ninety-three, 93 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanca</td><td>nonante-quatre<sup>fra</sup></td><td>Bu.Baŋ.ka</td><td>there is ninety-fou, 94 of the subject</td><td>verb</td></tr>
+				<tr><td>nunanca</td><td>nonante-quatre<sup>fra</sup></td><td>Bu.Baŋ.ka</td><td>there is ninety-four, 94 of the subject</td><td>verb</td></tr>
 				<tr><td>nunantan</td><td>nonante-cinq<sup>fra</sup></td><td>Bu.Ban.taB</td><td>there is ninety-five, 95 of the subject</td><td>verb</td></tr>
 				<tr><td>nunanti</td><td>nonante-six<sup>fra</sup></td><td>Bu.Ban.ti</td><td>there is ninety-six, 96 of the subject</td><td>verb</td></tr>
 				<tr><td>nunanta</td><td>nonante-sept<sup>fra</sup></td><td>Bu.Ban.ta</td><td>there is ninety-seven, 97 of the subject</td><td>verb</td></tr>
 				<tr><td>nunantui</td><td>nonante-huit<sup>fra</sup></td><td>Bu.Ban.tu.i</td><td>there is ninety-eight, 98 of the subject</td><td>verb</td></tr>
-				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>Bu.Bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>
+				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>Bu.Bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>-->
 				
 				<tr><td>unlli</td><td>hundred<sup>eng</sup></td><td>(ʔ)un.dɹi</td><td>one hundred, 100 of something</td><td>noun</td></tr>
 				<tr><td>tunan</td><td><span class="mnc">ᡨᡠᠮᡝᠨ</span><sup>mnc</sup></td><td>tu.BaB</td><td>ten thousand, 10,000 of something</td><td>noun</td></tr>
@@ -1353,8 +1426,37 @@ words always fill the oldest break first
 				<tr><td>tuli</td><td>suli<sup>tok</sup></td><td>tu.di</td><td>subject is big, large</td><td>verb</td></tr>
 				<tr><td>tun</td><td>som<sup>dan</sup></td><td>tub</td><td>subject is similar to, alike object</td><td>verb</td></tr>
 				<tr><td>tunpu</td><td>ツ゚ンプ<sup>ain</sup></td><td>tum.pu</td><td>room, compartment of space largely seperated from other rooms and the outside</td><td>noun</td></tr>
-				<tr><td>uci</td><td>հոգի<sup>xcl</sup></td><td>u.ci</td><td>person, alien, sapient being</td><td>noun</td></tr>
+				<tr><td>unci</td><td>հոգի<sup>xcl</sup></td><td>u.ci</td><td>person, alien, sapient being</td><td>noun</td></tr>
 				<tr><td>unli</td><td>xunre<sup>jbo</sup></td><td>un.di</td><td>subject is red/crimson/ruddy</td><td>verb</td></tr>
+				
+				<tr><td>nain</td><td>vibe<sup>eng</sup></td><td>un.di</td><td>conceptual motifs, atmosphere, quality</td><td>noun</td></tr>
+				<tr><td>paciu</td><td>facio<sup>lat</sup></td><td>un.di</td><td>subject is composed/made/consists of object</td><td>verb</td></tr>
+				<tr><td>tana</td><td>tawa<sup>tok</sup></td><td>un.di</td><td>subject moves/travels</td><td>verb</td></tr>
+				<tr><td>lanca</td><td>lenga<sup>oci</sup></td><td>un.di</td><td>tongue, mandibles, mouth manipulator</td><td>noun</td></tr>
+				<tr><td>napi</td><td>nape<sup>mri</sup></td><td>un.di</td><td>sinew, tendon, physical strength, muscle</td><td>noun</td></tr>
+				<tr><td>antu</td><td>anto<sup>pag</sup></td><td>un.di</td><td>nominal question, what thing</td><td>noun</td></tr>
+				<tr><td>laci</td><td>ܕܵܐܟ݂ܝܼ<sup>aii</sup></td><td>un.di</td><td>adverbial question, in what way</td><td>adverb</td></tr>
+				<tr><td>lunata</td><td>do&nbsp;what<sup>eng</sup></td><td>un.di</td><td>verbal question, what verb</td><td>verb</td></tr>
+				<tr><td>ancula</td><td>እንቁላል<sup>amh</sup></td><td>un.di</td><td>egg, container holding an embryo</td><td>noun</td></tr>
+				<tr><td>nanpa</td><td>nanpa<sup>tok</sup></td><td>un.di</td><td>number, id, version, count</td><td>noun</td></tr>
+				<tr><td>cancana</td><td>قَمْقَمَة<sup>ara</sup></td><td>un.di</td><td>subject grumbles, mumbles, mutters</td><td>verb</td></tr>
+				<tr><td>n</td><td>n<sup>tok</sup></td><td>m̩</td><td>umm, uhh, thinking noise</td><td>none</td></tr>
+				<tr><td>luti</td><td>roti<sup>abs</sup></td><td>un.di</td><td>bread, baked cereal based dough</td><td>noun</td></tr>
+				<tr><td>lapa</td><td>ལག་པ<sup>bod</sup></td><td>un.di</td><td>hand, tip of a grasping appendage</td><td>noun</td></tr>
+				<tr><td>plilu</td><td>ffriża<sup>mlt</sup></td><td>un.di</td><td>subject is cold, chilly, frigid</td><td>verb</td></tr>
+				<tr><td>nall</td><td>vorer<sup>lat</sup></td><td>un.di</td><td>subject is drunk(not intoxicated), eaten without utensils</td><td>verb</td></tr>
+				<tr><td>tupa</td><td>सूप<sup>san</sup></td><td>un.di</td><td>soup, broth, sauce</td><td>noun</td></tr>
+				<tr><td>cuatua</td><td>fish&nbsp;men<sup>*</sup></td><td>un.di</td><td>subject is imaginary, imaginined by object</td><td>verb</td></tr>
+				<tr><td>culna</td><td>ܩܘܪܡܐ<sup>syc</sup></td><td>un.di</td><td>torso, tree trunk, log, roughly cylindrical main body</td><td>noun</td></tr>
+				<tr><td>nuplu</td><td>nope&nbsp;rope<sup>eng</sup></td><td>un.di</td><td>snake, serpent, limbless predator</td><td>noun</td></tr>
+				<tr><td>inlu</td><td>ilo<sup>tok</sup></td><td>un.di</td><td>tool, machine, technology</td><td>noun</td></tr>
+				<tr><td>inta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
+				<tr><td>citacalu</td><td>kijetesantakalu<sup>tok</sup></td><td>un.di</td><td>raccoon, red panda, raccoon dog, racoon like animals</td><td>noun</td></tr>
+				<tr><td>inta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
+				<tr><td>tlna</td><td>జ్ఞా <sup>tel*</sup></td><td>un.di</td><td>bug, glitch, crash, error</td><td>noun</td></tr>
+				<tr><td>taci</td><td>탁<sup>kor</sup></td><td>un.di</td><td>subject is sticky, attractive (physcially), magnetic</td><td>verb</td></tr>
+				<tr><td>nuti</td><td>wuwojiti<sup>tok*</sup></td><td>un.di</td><td>rules, regulations</td><td>noun</td></tr>
+				
 			</tbody>
 		</table>
 				
@@ -1445,6 +1547,7 @@ words always fill the oldest break first
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
+				<tr><td>iinlu&nbsp;(embeded sentence)</td><td style="text-align:left">a tool for doing the event described by the sentence</td><td>noun</td></tr>
 				<tr><td>luunu&nbsp;(embeded sentence)</td><td style="text-align:left">the event described by the sentence</td><td>noun</td></tr>
 				<tr><td>taa&nbsp;(noun)</td><td style="text-align:left">verb happens towards the noun</td><td>adverb</td></tr>
 				<tr><td>tuun&nbsp;(noun)</td><td style="text-align:left">verb happens in a manner alike to how the noun behaves</td><td>adverb</td></tr>
@@ -1456,26 +1559,97 @@ words always fill the oldest break first
 	<div class="printBlock">
 		<h3>Notes</h3>
 		<p><b>catuna</b> from Kasona, a name that orginates from a clipping of kala sona from toki pona.</p>
+		<p><b>cuatua</b> from a the name of an imaginary race of fish cultists, but legally distinct from the D&D equivalent.</p>
 		<p><b>cunu</b> orginated in a randomly generated placeholder vocabulary for the first version of Pantluci, at the time it was transcribed qúu
 		as the languages morphology and orthography was updated, this word was kept to use as an example of the letter "q" even past the language having the letter.</p>
+		<p><b>cutu</b> from *h₁oḱtṓw, a word from proto-indo-european which does not have an offical language code.</p>
 		<p><b>nau</b> partially orginated from a non-random vocabulary for a previous version of Pantluci, at the time it was transcribed bóo, and was used to
 		demonstrate that version's naming system.</p>
+		<p><b>naun</b> from *h₁néwn̥, a word from proto-indo-european which does not have an offical language code.</p>
+		<p><b>nuti</b> from wuwojiti, a joke words in toki pona that is entriely illegal syllables.</p>
 		<p><b>pantluci</b> partially orginated from a random example word used to show how the language could use reduplication, however small modifications 
 		were made due to changes in phonology and in order to maintain a tradition of the language being named using its most unique features compared to the
 		previous version, finally it was updated when the phonology was shrunken in order to have each letter exactly once.</p>
 		<p><b>piati</b> from Piet, the name of an esoteric programming language designed to mimic the appearance of the works of Piet Mondrian. It was the first
 		esoteric languages studied by Pantluci's creater who mispronounced it as [pʰi:.ʔɛtʰ] for far too long.</p>
-		<p><b>tatu</b> from *ta-tou, a word from proto-polynesian which doesnt have an offical language code.</p>
+		<p><b>tatu</b> from *ta-tou, a word from proto-polynesian which does not have an offical language code.</p>
+		<p><b>tlna</b> from an iOS crash caused by the character జ్ఞా in febuary 2018. This character is read as [d͡ʒɲaː].</p>
+		<p><b>tuaci</b> from *swéḱs, a word from proto-indo-european which does not have an offical language code.</p>
+		<p><b>una</b> from *h₁óyneh₂, a word from proto-indo-european which does not have an offical language code.</p>
+		<p><b>unlliliun</b> from unlli and niliun, other words in Pantluci smashed together.</p>
 	</div>
 <script>
 function rom2ipa(word){
-	word=word.replaceAll("c","k").replaceAll("n","B").replaceAll("l","D")
+	var debug=0;
+	var RAM=word;
+	var options=[];
+	var C="ptcnl"
+	var V="aiunl"
+	for (var v = 0; v < V.length; v++) {
+		for (var c = 0; c < C.length; c++) {
+			options.push(C[c]+V[v])
+		}
+	}
+	for (var v = 0; v < V.length; v++) {
+		options.push(V[v])
+	}
+	for (var v = 0; v < V.length; v++) {
+		RAM=RAM.replaceAll(V[v],"."+V[v]+".")
+	}
+	for (var c = 0; c < C.length; c++) {
+		if(!V.includes(C[c])){
+			RAM=RAM.replaceAll(C[c],"."+C[c]+"!")
+		}
+	}
+	RAM=RAM.replaceAll("!.","").replaceAll("..",".")
+	for (var v = 0; v < V.length; v++) {
+		if(!C.includes(V[v])){
+			RAM=RAM.replaceAll("l."+V[v],"l"+V[v])
+			RAM=RAM.replaceAll(".n."+V[v],".n"+V[v])
+			RAM=RAM.replaceAll(V[v]+".n.",V[v]+"n.")
+		}
+	}
+	RAM=RAM.replaceAll("l.n.","ln.")
+	RAM=RAM.replaceAll(".l.l.",".ll.")
+	RAM=RAM.replace(".","ˈ")
+	
+	for (var v = 0; v < V.length; v++) {
+		RAM=RAM.replaceAll("n."+V[v]+".",".n"+V[v]+".")
+	}
+	//if(word=="nnllplnplnn"){
+	//	console.log(RAM)
+	//}
+	
+	for (var v = 0; v < V.length; v++) {
+		RAM=RAM.replaceAll("ˈ"+V[v]+".n","ˈ"+V[v]+"n.")
+	}
+	RAM=RAM.replaceAll("c","k").replaceAll("n","B").replaceAll("l","D").replace("ˈ",".").replaceAll("..",".")
+	///k/ is realized as [c] before /i/.
+	RAM=RAM.replaceAll("ki","ci")
+
+	///D/ is realized as [ɹ], [ɹ̍], [l], or [l̩] after other consonants.
+	///D/ is realized as [d] before [ɹ], [ɹ̍], [l], or [l̩].
+	///t/ is realized as [t͡ʃ] before [ɹ] or [ɹ̍].
+	RAM=RAM.replaceAll("pD","pɹ").replaceAll("tD","t͡ʃɹ").replaceAll("kD","kɹ").replaceAll("BD","Bɹ").replaceAll("DD","dɹ")
+	
+	//Syllabic.
+	RAM=RAM.replaceAll(".B.",".m̩.").replaceAll("pB","pm̩").replaceAll("tB","tm̩").replaceAll("kB","km̩").replaceAll("BB","bm̩").replaceAll("DB","Dm̩").replaceAll("ɹB","ɹm̩")
+	RAM=RAM.replaceAll(".D.",".ɹ̍.").replaceAll("pɹ.","pɹ̍.").replaceAll("t͡ʃɹ.","t͡ʃɹ̍.").replaceAll("kɹ.","kɹ̍.").replaceAll("Bɹ.","Bɹ̍.").replaceAll("dɹ.","dɹ̍.")
+	for (var v = 0; v < V.length; v++) {
+		RAM=RAM.replaceAll(".ɹ̍.D"+V[v],".dɹ"+V[v])
+	}
+	///B/ is realized as [m] [m̩], or [β̩] before onsets.
+	///B/ is realized as [b] after [m], [m̩], and [β̩] and before syllabic /B/.
+	//[m] and [m̩] assimilates in place of articulation to the following consonant.
+	RAM=RAM.replaceAll("m̩.p","m̩.p").replaceAll("m̩.t","n̩.t").replaceAll("m̩.k","ŋ̍.k").replaceAll("m̩.c","ɲ̩.c").replaceAll("m̩.B","m̩.b").replaceAll("m̩.D","n̩.D")
+	RAM=RAM.replaceAll("B.p","m.p").replaceAll("B.t","n.t").replaceAll("B.k","ŋ.k").replaceAll("B.c","ɲ.c").replaceAll("B.B","m.b").replaceAll("B.D","n.D").replaceAll("B.d","n.d")
+	/**word=word.replaceAll("c","k").replaceAll("n","B").replaceAll("l","D")
 	///k/ is realized as [c] before /i/.
 	word=word.replaceAll("ki","ci")
 	///D/ is realized as either [ɹ] or [l] after other consonants.
 	///D/ is realized as either [d] before [ɹ] or [l].
 	///t/ is realized as [t͡ʃ] before [ɹ].
-	word=word.replaceAll("pD","pɹ").replaceAll("tD","t͡ʃɹ").replaceAll("kD","kɹ").replaceAll("BD","Bɹ").replaceAll("DD","dɹ").replaceAll("BɹD","!m.dɹ")
+	word=word.replaceAll("pD","pɹ").replaceAll("tD","t͡ʃɹ").replaceAll("kD","kɹ").replaceAll("BD","Bɹ").replaceAll("DD","dɹ").replaceAll("BɹD","!n.dɹ")
 	///B/ is realized as [m] before consonants other than [ɹ] and [ʔ].
 	//[m] assimilates in place of articulation to the following consonant except [ʔ].
 	///B/ is realized as [b] after [m].
@@ -1487,9 +1661,13 @@ function rom2ipa(word){
 		word=word.replace(".B","B.")
 	}
 	word=word.slice(0,-1)
-	
-	return word;
+	**/
+	RAM=RAM.slice(1,-1)
+	return RAM;
 }
+var total=13;
+var countAbs={};
+var countRel={};
 var toSort = document.getElementById("toSort").tBodies[0].children;
 for (var j = 0; j < toSort.length; j++) {
 	var td = toSort[j].children;
@@ -1507,7 +1685,7 @@ for (var j = 0; j < toSort.length; j++) {
 		arr.sort();
 		if(arr[0]==td[0].innerHTML && !found && td2[0].className != "showLeft"){
 			if(arr[0]==arr[1]){
-				if(td[3].innerHTML==td[3].innerHTML){
+				if(td[3].innerHTML==td2[3].innerHTML){
 					console.log("duplicate:", arr[0],td[3].innerHTML)
 				}else{
 					console.log("conflict:", arr[0],td[3].innerHTML,td2[3].innerHTML)
@@ -1515,6 +1693,15 @@ for (var j = 0; j < toSort.length; j++) {
 			}else{
 				var row = document.getElementById("dict"+firstLetter).insertRow(i+1);
 				row.innerHTML=toSort[j].innerHTML
+				total++;
+				for (var l = 0; l < td[0].innerHTML.length; l++) {
+					if(!(td[0].innerHTML[l] in countAbs)){
+						countAbs[td[0].innerHTML[l]]=0
+						countRel[td[0].innerHTML[l]]=0
+					}
+					countAbs[td[0].innerHTML[l]]++
+					countRel[td[0].innerHTML[l]]=countRel[td[0].innerHTML[l]]+1/td[0].innerHTML.length
+				}
 			}
 			found=true;
 		}
@@ -1533,6 +1720,15 @@ for (var j = 0; j < toSort.length; j++) {
 	}
 }
 document.getElementById("toSort").innerHTML="";
+console.log(total,"words")
+console.log("countAbs")
+for (var key of Object.keys(Object.fromEntries(Object.entries(countAbs).sort(([,a],[,b]) => a-b)))) {
+    console.log(key, countAbs[key])
+}
+console.log("countRel")
+for (var key of Object.keys(Object.fromEntries(Object.entries(countRel).sort(([,a],[,b]) => a-b)))) {
+    console.log(key, countRel[key])
+}
 </script>
 	
 	<div class="pageBreak"></div>
@@ -1630,18 +1826,6 @@ document.getElementById("toSort").innerHTML="";
 					<td>rock, stone, gravel, frozen soil, anything hard and from the ground</td>
 					<td>noun</td>
 				</tr>
-				<tr>
-					<td>cıı́</td>
-					<td>ɕjiː˨˦</td>
-					<td>subject uses object either phyically such as a tool or metaphorically such as a method or philosphy</td>
-					<td>verb</td>
-				</tr>
-				<tr>
-					<td>d́ée</td>
-					<td>ɗ̥ɛ˦.ɛ˨</td>
-					<td>subject moves, travels</td>
-					<td>verb</td>
-				</tr>
 			</tbody>
 		</table>
 	</div>
@@ -1655,7 +1839,7 @@ document.getElementById("toSort").innerHTML="";
 	</div>
 		
 	<div class="printBlock">
-		<p>rember that if a verb's defintion doesnt specify the meaning of the object, it can be assumed to be the cause.</p>
+		<p>rember that if a verb's defintion does not specify the meaning of the object, it can be assumed to be the cause.</p>
 	</div>
 		
 	<div class="printBlock">
@@ -1679,12 +1863,6 @@ document.getElementById("toSort").innerHTML="";
 					<th>type</th>
 				</tr>
 				<tr>
-					<td>cónha</td>
-					<td>ʃo˦ɲ.ça˨</td>
-					<td>something</td>
-					<td>noun</td>
-				</tr>
-				<tr>
 					<td>haze</td>
 					<td>ça˨.rɛ˨</td>
 					<td>subject loves, mutually wants good things to happen to each other, trusted to feel the same way with object</td>
@@ -1695,12 +1873,6 @@ document.getElementById("toSort").innerHTML="";
 					<td>çi˨.fo˨.no˦</td>
 					<td>subject is glow in the dark, phosphorescent, absorbs light to emit it later</td>
 					<td>verb</td>
-				</tr>
-				<tr>
-					<td>qalá</td>
-					<td>kʼa˨.la˦</td>
-					<td>tongue, mandibles, mouth manipulator</td>
-					<td>noun</td>
 				</tr>
 			</tbody>
 		</table>
@@ -1737,18 +1909,6 @@ document.getElementById("toSort").innerHTML="";
 					<th>type</th>
 				</tr>
 				<tr>
-					<td>ba</td>
-					<td>ba˨</td>
-					<td>nominal question, what thing</td>
-					<td>noun</td>
-				</tr>
-				<tr>
-					<td>huzu</td>
-					<td>çu˨.ru˨</td>
-					<td>adverbial question, in what way</td>
-					<td>adverb</td>
-				</tr>
-				<tr>
 					<td>kafı́</td>
 					<td>kʰa˨.fi˦</td>
 					<td>coffee</td>
@@ -1765,12 +1925,6 @@ document.getElementById("toSort").innerHTML="";
 					<td>tʰi˨.ʃai̯˨˦</td>
 					<td>tea</td>
 					<td>noun</td>
-				</tr>
-				<tr>
-					<td>tıtıı́</td>
-					<td>tʰi˨.t͡ʃi˨˦</td>
-					<td>verbal question, what verb</td>
-					<td>verb</td>
 				</tr>
 				<tr>
 					<td>voré</td>
@@ -1888,18 +2042,6 @@ document.getElementById("toSort").innerHTML="";
 					<td>noun</td>
 				</tr>
 				<tr>
-					<td>para</td>
-					<td>pʰa˨.ʀa˨</td>
-					<td>conceptional othogonal to the verb</td>
-					<td>adverb</td>
-				</tr>
-				<tr>
-					<td>para</td>
-					<td>pʰa˨.ʀa˨</td>
-					<td>conceptually orthogonal</td>
-					<td>verb</td>
-				</tr>
-				<tr>
 					<td>fou</td>
 					<td>fo˨.ʔu˨</td>
 					<td>subject is new, fresh</td>
@@ -1909,12 +2051,6 @@ document.getElementById("toSort").innerHTML="";
 					<td>tatıı́</td>
 					<td>tʰa˨.t͡ʃi˨˦</td>
 					<td>item that is physical, material object</td>
-					<td>noun</td>
-				</tr>
-				<tr>
-					<td>vege</td>
-					<td>vɛ˨.gɛ˨</td>
-					<td>beef, steak, flesh of a hoofed grazing herbavore</td>
 					<td>noun</td>
 				</tr>
 			</tbody>
@@ -2143,12 +2279,6 @@ document.getElementById("toSort").innerHTML="";
 					<td>subject is resting, stopped, inactive</td>
 					<td>verb</td>
 				</tr>
-				<tr>
-					<td>zotı</td>
-					<td>ro˨.ti˨</td>
-					<td>bread, baked cereal based dough</td>
-					<td>noun</td>
-				</tr>
 			</tbody>
 		</table>
 	</div>
@@ -2181,22 +2311,10 @@ document.getElementById("toSort").innerHTML="";
 					<th>type</th>
 				</tr>
 				<tr>
-					<td>xúáa</td>
-					<td>ɬu˦.ʔau̯˦˨</td>
-					<td>hand, tip of a grasping appendage</td>
-					<td>noun</td>
-				</tr>
-				<tr>
 					<td>kóore</td>
 					<td>ko˦.o˨.ʀɛ˨</td>
 					<td>monkey, live birth giving arboreal warm blooded life</td>
 					<td>noun</td>
-				</tr>
-				<tr>
-					<td>fı́zu</td>
-					<td>fi˦.ru˨</td>
-					<td>subject is cold, chilly, frigid</td>
-					<td>verb</td>
 				</tr>
 				<tr>
 					<td>sélo</td>
