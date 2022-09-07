@@ -819,7 +819,7 @@ is
 			<thead><tr style="text-align: center;"><th>word</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td>o</td><td>separates a vocative from a command</td><td>particle</td></tr>
-				<tr><td>oko</td><td>eye</td><td>contentive</td></tr>
+				<tr><td>oko*</td><td>eye</td><td>contentive</td></tr>
 				<tr><td>olin</td><td>love</td><td>contentive</td></tr>
 				<tr><td>ona</td><td>third person pronoun</td><td>contentive*</td></tr>
 				<tr><td>open</td><td>turn on, activate, open</td><td>contentive</td></tr>
@@ -830,7 +830,7 @@ is
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td>pakala</td><td>break, ruin, destroy</td><td>contentive</td></tr>
+				<tr><td>pakala</td><td>break, ruin, destroy, damage</td><td>contentive</td></tr>
 				<tr><td>pali</td><td>work, make, do</td><td>contentive</td></tr>
 				<tr><td>palisa</td><td>rod, stick, inflexible long thing object</td><td>contentive</td></tr>
 				<tr><td>pan</td><td>bread, grain, grain-based food</td><td>contentive</td></tr>
@@ -924,6 +924,7 @@ is
 		<p><b>anu seme</b> is often described as an explicit grammatical rule rather than a lexicalized phrase.</p>
 		<p><b>kijetesantakalu</b> was originally an Apirl Fool's joke that gained actual usage.</p>
 		<p><b>nanpa</b> functions similarly to a preposition, but only occuring directly attached to a content phrase.</p>
+		<p><b>oko</b> is fading out of useage at the time of writing this, being replaced by lukin.</p>
 		<p><b>ona</b> is a pronoun but does not act like mi or sina, so it is more accurate to classify it as a contentive than a preposition.</p>
 	</div>
 	
@@ -1055,7 +1056,7 @@ global etymologies
 		
 		<p>/D/ may be realized as a medial onset when before a vowel and after a consonant.</p>
 		<p>/D/ is realized as [ɹ], [ɹ̍], [l], or [l̩] after other consonants in the same syllable.</p>
-		<p>otherwise /D/ may be realized as either [d], [ɹ], [ɹ̍], [l], or [l̩].</p>
+		<p>otherwise /D/ may be realized as either [d], [ɹ], [ɹ̍], [l], [l̩], or [z].</p>
 		<p>/D/ may not be realized as syllabic before a vowel that would be stressed if /D/ was not syllabic.</p>
 		
 		<p>/a/ may be realized as either [a] or [ɑ].</p>
@@ -1076,7 +1077,7 @@ global etymologies
 				<tr><td>a</td><td>ə~a~ɑ</td><td>non-close vowel</td><td>c<b>u</b>p, c<b>a</b>p, c<b>o</b>p</td></tr>
 				<tr><td>c</td><td>k~c</td><td>voiceless dorsal plosive</td><td><b>c</b>ar, <b>k</b>ey</td></tr>
 				<tr><td>i</td><td>i~ɪ</td><td>front close vowel</td><td><b>ea</b>t, <b>i</b>t</td></tr>
-				<tr><td>l</td><td>d~ɹ~ɹ̍~l~l̩</td><td>voiced coronal</td><td><b>d</b>ent, <b>r</b>ent, p<b>er</b>, <b>l</b>ent, bott<b>le</b></td></tr>
+				<tr><td>l</td><td>d~ɹ~ɹ̍~l~l̩~z</td><td>voiced coronal</td><td><b>d</b>ent, <b>r</b>ent, p<b>er</b>, <b>l</b>ent, bott<b>le</b>, <b>z</b>ap</td></tr>
 				<tr><td>n</td><td>m~m̩~β~β̩~b</td><td>voiced labial</td><td><b>m</b>oat, rhyth<b>m</b> <b>v</b>ote, <b>vvv</b>, <b>b</b>oat</td></tr>
 				<tr><td>p</td><td>p</td><td>voiceless labial plosive</td><td><b>p</b>ound</td></tr>
 				<tr><td>t</td><td>t~t͡ʃ</td><td>voiceless alveolar plosive</td><td><b>t</b>alk, <b>ch</b>alk</td></tr>
@@ -1155,8 +1156,16 @@ morphology
 		four levels of producivity:
 		- normal gramar
 		- lexical phrases
-		- unevolvable compounding system - glue phonemes? nah - weaving phones together?
+		- unevolvable compounding system - glue phonemes?
 		- new words
+		
+heres what im considering atm
+there is a distinction between root words and compounds
+root words (or in some cases their shortened/modifified forms) get glued together to form compounds, the glue is any syllable non word non word intially, finally, or imediately after another glue that has a syllabic consonant
+the probem is this means that theres an extra syllable added in whenever two roots get compounded
+unless by default roots drop their final vowel
+may either use full root or shortended form in compounding
+must end with a i or u
 		</pre>
 	</div>
 	
@@ -1260,7 +1269,9 @@ words always fill the oldest break first
 				<tr><td>lita</td><td>dix-sept<sup>fra</sup></td><td>Di.ta</td><td>there is seventeen, 17 of the subject</td><td>verb</td></tr>
 				<tr><td>lilui</td><td>dix-huit<sup>fra</sup></td><td>Di.Du.i</td><td>there is eightteen, 18 of the subject</td><td>verb</td></tr>
 				<tr><td>linlu</td><td>dix-neuf<sup>fra</sup></td><td>Din.Du</td><td>there is nineteen, 19 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>nitlinti</td><td>viginti<sup>lat</sup></td><td>Bi.t͡ʃɹin.ti</td><td>there is twenty, 20 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>nantun</td><td>vingt-et-un<sup>fra</sup></td><td>Ban.tun</td><td>there is twenty-one, 21 of the subject</td><td>verb</td></tr>
 				<tr><td>nantlu</td><td>vingt-deux<sup>fra</sup></td><td>Ban.t͡ʃɹu</td><td>there is twenty-two, 22 of the subject</td><td>verb</td></tr>
 				<tr><td>nantlua</td><td>vingt-trois<sup>fra</sup></td><td>Ban.t͡ʃɹu.a</td><td>there is twenty-three, 23 of the subject</td><td>verb</td></tr>
@@ -1270,7 +1281,9 @@ words always fill the oldest break first
 				<tr><td>nanta</td><td>vingt-sept<sup>fra</sup></td><td>Ban.ta</td><td>there is twenty-seven, 27 of the subject</td><td>verb</td></tr>
 				<tr><td>nantui</td><td>vingt-huit<sup>fra</sup></td><td>Ban.tu.i</td><td>there is twenty-eight, 28 of the subject</td><td>verb</td></tr>
 				<tr><td>nannu</td><td>vingt-neuf<sup>fra</sup></td><td>Bam.bu</td><td>there is twebty-nine, 29 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>tlicinta</td><td>triginta<sup>lat</sup></td><td>t͡ʃɹi.cin.ta</td><td>there is thirty, 30 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>tlantun</td><td>trente-et-un<sup>fra</sup></td><td>t͡ʃɹan.tuB</td><td>there is thirty-one, 31 of the subject</td><td>verb</td></tr>
 				<tr><td>tlantlu</td><td>trente-deux<sup>fra</sup></td><td>t͡ʃɹan.t͡ʃɹu</td><td>there is thirty-two, 32 of the subject</td><td>verb</td></tr>
 				<tr><td>tlantlua</td><td>trente-trois<sup>fra</sup></td><td>t͡ʃɹan.t͡ʃɹu.a</td><td>there is thirty-three, 33 of the subject</td><td>verb</td></tr>
@@ -1280,7 +1293,9 @@ words always fill the oldest break first
 				<tr><td>tlanta</td><td>trente-sept<sup>fra</sup></td><td>t͡ʃɹan.ta</td><td>there is thirty-seven, 37 of the subject</td><td>verb</td></tr>
 				<tr><td>tlantui</td><td>trente-huit<sup>fra</sup></td><td>t͡ʃɹan.tu.i</td><td>there is thirty-eight, 38 of the subject</td><td>verb</td></tr>
 				<tr><td>tlannu</td><td>trente-neuf<sup>fra</sup></td><td>t͡ʃɹam.bu</td><td>there is thirty-nine, 39 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>callacinta</td><td>quadraginta<sup>lat</sup></td><td>ka.Dan.ta</td><td>there is fourty, 40 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>calantun</td><td>quarante-et-un<sup>fra</sup></td><td>ka.Dan.tuB</td><td>there is fourty-one, 41 of the subject</td><td>verb</td></tr>
 				<tr><td>calantlu</td><td>quarante-deux<sup>fra</sup></td><td>ka.Dan.t͡ʃɹu</td><td>there is fourty-two, 42 of the subject</td><td>verb</td></tr>
 				<tr><td>calantlua</td><td>quarante-trois<sup>fra</sup></td><td>ka.Dan.t͡ʃɹu.a</td><td>there is fourty-three, 43 of the subject</td><td>verb</td></tr>
@@ -1290,7 +1305,9 @@ words always fill the oldest break first
 				<tr><td>calanta</td><td>quarante-sept<sup>fra</sup></td><td>ka.Dan.ta</td><td>there is fourty-seven, 47 of the subject</td><td>verb</td></tr>
 				<tr><td>calantui</td><td>quarante-huit<sup>fra</sup></td><td>ka.Dan.tu.i</td><td>there is fourty-eight, 48 of the subject</td><td>verb</td></tr>
 				<tr><td>calannu</td><td>quarante-neuf<sup>fra</sup></td><td>ka.Dam.bu</td><td>there is fourty-nine, 49 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>tancan</td><td>cinquante<sup>fra</sup></td><td>taŋ.kaB</td><td>there is fifty, 50 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>tancantun</td><td>cinquante-et-un<sup>fra</sup></td><td>taŋ.kan.tuB</td><td>there is fifty-one, 51 of the subject</td><td>verb</td></tr>
 				<tr><td>tancantlu</td><td>cinquante-deux<sup>fra</sup></td><td>taŋ.kan.t͡ʃɹu</td><td>there is fifty-two, 52 of the subject</td><td>verb</td></tr>
 				<tr><td>tancantlua</td><td>cinquante-trois<sup>fra</sup></td><td>taŋ.kan.t͡ʃɹu.a</td><td>there is fifty-three, 53 of the subject</td><td>verb</td></tr>
@@ -1300,7 +1317,9 @@ words always fill the oldest break first
 				<tr><td>tancanta</td><td>cinquante-sept<sup>fra</sup></td><td>taŋ.kan.ta</td><td>there is fifty-seven, 57 of the subject</td><td>verb</td></tr>
 				<tr><td>tancantui</td><td>cinquante-huit<sup>fra</sup></td><td>taŋ.kan.tu.i</td><td>there is fifty-eight, 58 of the subject</td><td>verb</td></tr>
 				<tr><td>tancannu</td><td>cinquante-neuf<sup>fra</sup></td><td>taŋ.kam.bu</td><td>there is fifty-nine, 59 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>tuatan</td><td>soixante<sup>fra</sup></td><td>tu.a.taB</td><td>there is sixty, 60 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>tuatantun</td><td>soixante-et-un<sup>fra</sup></td><td>tu.a.tan.tuB</td><td>there is sixty-one, 61 of the subject</td><td>verb</td></tr>
 				<tr><td>tuatantlu</td><td>soixante-deux<sup>fra</sup></td><td>tu.a.tan.t͡ʃɹu</td><td>there is sixty-two, 62 of the subject</td><td>verb</td></tr>
 				<tr><td>tuatantlua</td><td>soixante-trois<sup>fra</sup></td><td>tu.a.t͡ʃɹu.a</td><td>there is sixty-three, 63 of the subject</td><td>verb</td></tr>
@@ -1310,7 +1329,9 @@ words always fill the oldest break first
 				<tr><td>tuatanta</td><td>soixante-sept<sup>fra</sup></td><td>tu.a.tan.ta</td><td>there is sixty-seven, 67 of the subject</td><td>verb</td></tr>
 				<tr><td>tuatantui</td><td>soixante-huit<sup>fra</sup></td><td>tu.a.tan.tu.i</td><td>there is sixty-eight, 68 of the subject</td><td>verb</td></tr>
 				<tr><td>tuatannu</td><td>soixante-neuf<sup>fra</sup></td><td>tu.a.tam.bu</td><td>there is sixty-nine, 69 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>tapan</td><td>septante<sup>fra</sup></td><td>ta.paB</td><td>there is seventy, 70 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>tapantun</td><td>septante-et-un<sup>fra</sup></td><td>ta.pan.tuB</td><td>there is seventy-one, 71 of the subject</td><td>verb</td></tr>
 				<tr><td>tapantlu</td><td>septante-deux<sup>fra</sup></td><td>ta.pan.t͡ʃɹu</td><td>there is seventy-two, 72 of the subject</td><td>verb</td></tr>
 				<tr><td>tapantlua</td><td>septante-trois<sup>fra</sup></td><td>ta.pan.t͡ʃɹu.a</td><td>there is seventy-three, 73 of the subject</td><td>verb</td></tr>
@@ -1320,7 +1341,9 @@ words always fill the oldest break first
 				<tr><td>tapanta</td><td>septante-sept<sup>fra</sup></td><td>ta.pan.ta</td><td>there is seventy-seven, 77 of the subject</td><td>verb</td></tr>
 				<tr><td>tapantui</td><td>septante-huit<sup>fra</sup></td><td>ta.pan.tu.i</td><td>there is seventy-eight, 78 of the subject</td><td>verb</td></tr>
 				<tr><td>tapannu</td><td>septante-neuf<sup>fra</sup></td><td>ta.pam.bu</td><td>there is seventy-nine, 79 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>nitan</td><td>huitante<sup>fra</sup></td><td>Bi.taB</td><td>there is eighty, 80 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>nitantun</td><td>huitante-et-un<sup>fra</sup></td><td>Bi.tan.tuB</td><td>there is eighty-one, 81 of the subject</td><td>verb</td></tr>
 				<tr><td>nitantlu</td><td>huitante-deux<sup>fra</sup></td><td>Bi.tan.t͡ʃɹu</td><td>there is eighty-two, 82 of the subject</td><td>verb</td></tr>
 				<tr><td>nitantlua</td><td>huitante-trois<sup>fra</sup></td><td>Bi.tan.t͡ʃɹu.a</td><td>there is eighty-three, 83 of the subject</td><td>verb</td></tr>
@@ -1330,7 +1353,9 @@ words always fill the oldest break first
 				<tr><td>nitanta</td><td>huitante-sept<sup>fra</sup></td><td>Bi.tan.ta</td><td>there is eighty-seven, 87 of the subject</td><td>verb</td></tr>
 				<tr><td>nitantui</td><td>huitante-huit<sup>fra</sup></td><td>Bi.tan.tu.i</td><td>there is eighty-eight, 88 of the subject</td><td>verb</td></tr>
 				<tr><td>nitannu</td><td>huitante-neuf<sup>fra</sup></td><td>Bi.tam.bu</td><td>there is eighty-nine, 89 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>nunan</td><td>nonante<sup>fra</sup></td><td>Bu.BaB</td><td>there is ninety, 90 of the subject</td><td>verb</td></tr>
+				
 				<tr><td>nunantun</td><td>nonante-et-un<sup>fra</sup></td><td>Bu.Ban.tuB</td><td>there is ninety-one, 91 of the subject</td><td>verb</td></tr>
 				<tr><td>nunantlu</td><td>nonante-deux<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu</td><td>there is ninety-two, 92 of the subject</td><td>verb</td></tr>
 				<tr><td>nunantlua</td><td>nonante-trois<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu.a</td><td>there is ninety-three, 93 of the subject</td><td>verb</td></tr>
@@ -1339,12 +1364,26 @@ words always fill the oldest break first
 				<tr><td>nunanti</td><td>nonante-six<sup>fra</sup></td><td>Bu.Ban.ti</td><td>there is ninety-six, 96 of the subject</td><td>verb</td></tr>
 				<tr><td>nunanta</td><td>nonante-sept<sup>fra</sup></td><td>Bu.Ban.ta</td><td>there is ninety-seven, 97 of the subject</td><td>verb</td></tr>
 				<tr><td>nunantui</td><td>nonante-huit<sup>fra</sup></td><td>Bu.Ban.tu.i</td><td>there is ninety-eight, 98 of the subject</td><td>verb</td></tr>
-				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>Bu.Bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>-->
+				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>Bu.Bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>
+				<tr><td>unlliliun</td><td>unlli<sup>*</sup><hr>niliun<sup>*</sup></td><td>(ʔ)un.dɹi.Di.uB</td><td>one hundred million, 100,000,000 of something</td><td>noun</td></tr>
+				
+				<tr><td>nunanca</td><td>nonante-quatre<sup>fra</sup></td><td>Bu.Baŋ.ka</td><td>there is ninety-fou, 94 of the subject</td><td>verb</td></tr>
+				<tr><td>nitannu</td><td>huitante-neuf<sup>fra</sup></td><td>Bi.tam.bu</td><td>there is eighty-nine, 89 of the subject</td><td>verb</td></tr>
+				<tr><td>nitantui</td><td>huitante-huit<sup>fra</sup></td><td>Bi.tan.tu.i</td><td>there is eighty-eight, 88 of the subject</td><td>verb</td></tr>
+				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>Bu.Bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>
+				<tr><td>nunanta</td><td>nonante-sept<sup>fra</sup></td><td>Bu.Ban.ta</td><td>there is ninety-seven, 97 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantan</td><td>nonante-cinq<sup>fra</sup></td><td>Bu.Ban.taB</td><td>there is ninety-five, 95 of the subject</td><td>verb</td></tr>
+				<tr><td>nunanti</td><td>nonante-six<sup>fra</sup></td><td>Bu.Ban.ti</td><td>there is ninety-six, 96 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantlu</td><td>nonante-deux<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu</td><td>there is ninety-two, 92 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantlua</td><td>nonante-trois<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu.a</td><td>there is ninety-three, 93 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantui</td><td>nonante-huit<sup>fra</sup></td><td>Bu.Ban.tu.i</td><td>there is ninety-eight, 98 of the subject</td><td>verb</td></tr>
+				<tr><td>nunantun</td><td>nonante-et-un<sup>fra</sup></td><td>Bu.Ban.tuB</td><td>there is ninety-one, 91 of the subject</td><td>verb</td></tr>
+				<tr><td>nunan</td><td>nonante<sup>fra</sup></td><td>Bu.BaB</td><td>there is ninety, 90 of the subject</td><td>verb</td></tr>
+				-->
 				
 				<tr><td>unlli</td><td>hundred<sup>eng</sup></td><td>(ʔ)un.dɹi</td><td>one hundred, 100 of something</td><td>noun</td></tr>
 				<tr><td>tunan</td><td><span class="mnc">ᡨᡠᠮᡝᠨ</span><sup>mnc</sup></td><td>tu.BaB</td><td>ten thousand, 10,000 of something</td><td>noun</td></tr>
 				<tr><td>niliun</td><td>milione<sup>ita</sup></td><td>Bi.Di.uB</td><td>one million, 1,000,000 of something</td><td>noun</td></tr>
-				<tr><td>unlliliun</td><td>unlli<sup>*</sup><hr>niliun<sup>*</sup></td><td>(ʔ)un.dɹi.Di.uB</td><td>one hundred million, 100,000,000 of something</td><td>noun</td></tr>
 
 				<tr><td>an</td><td>and<sup>eng</sup></td><td>aB</td><td>and</td><td>conjunction</td></tr>
 				<tr><td>anti</td><td>ante<sup>tok</sup></td><td>an.ti</td><td>subject is not the one most obvious by context, is different, other</td><td>verb</td></tr>
@@ -1386,22 +1425,10 @@ words always fill the oldest break first
 				<tr><td>ni</td><td>ni<sup>tok</sup></td><td>bi</td><td>subject is identifiable by context given by object</td><td>verb</td></tr>
 				<tr><td>nina</td><td>veme<sup>spa</sup></td><td>bi.ba</td><td>you, y'all (imperative)</td><td>noun</td></tr>
 				<tr><td>nita</td><td>เมตตา<sup>tha</sup></td><td>bi.ta</td><td>mercy, kindness, empathy, compassion</td><td>noun</td></tr>
-				<tr><td>nitannu</td><td>huitante-neuf<sup>fra</sup></td><td>Bi.tam.bu</td><td>there is eighty-nine, 89 of the subject</td><td>verb</td></tr>
-				<tr><td>nitantui</td><td>huitante-huit<sup>fra</sup></td><td>Bi.tan.tu.i</td><td>there is eighty-eight, 88 of the subject</td><td>verb</td></tr>
 				<tr><td>nitlu</td><td>水<sup>jpn</sup></td><td>bi.t͡ʃɹu</td><td>water, typically drinkable</td><td>noun</td></tr>
 				<tr><td>niu</td><td>mi&nbsp;o<sup>tok</sup></td><td>bi.u</td><td>I, me, we, us (exclusive, deontic)</td><td>noun</td></tr>
 				<tr><td>nli</td><td>ndi<sup>gug</sup></td><td>bɹi</td><td>subject is with, in the company of object</td><td>verb</td></tr>
 				<tr><td>nui</td><td>mui<sup>dlm</sup></td><td>bu.i</td><td>subject defies expections, is unlike others, marks focus due to contrariness</td><td>verb</td></tr>
-				<tr><td>nunan</td><td>nonante<sup>fra</sup></td><td>Bu.BaB</td><td>there is ninety, 90 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanca</td><td>nonante-quatre<sup>fra</sup></td><td>Bu.Baŋ.ka</td><td>there is ninety-fou, 94 of the subject</td><td>verb</td></tr>
-				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>Bu.Bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanta</td><td>nonante-sept<sup>fra</sup></td><td>Bu.Ban.ta</td><td>there is ninety-seven, 97 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantan</td><td>nonante-cinq<sup>fra</sup></td><td>Bu.Ban.taB</td><td>there is ninety-five, 95 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanti</td><td>nonante-six<sup>fra</sup></td><td>Bu.Ban.ti</td><td>there is ninety-six, 96 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantlu</td><td>nonante-deux<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu</td><td>there is ninety-two, 92 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantlua</td><td>nonante-trois<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu.a</td><td>there is ninety-three, 93 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantui</td><td>nonante-huit<sup>fra</sup></td><td>Bu.Ban.tu.i</td><td>there is ninety-eight, 98 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantun</td><td>nonante-et-un<sup>fra</sup></td><td>Bu.Ban.tuB</td><td>there is ninety-one, 91 of the subject</td><td>verb</td></tr>
 				<tr><td>nuta</td><td>𐌼𐍉𐍄𐌰<sup>got</sup></td><td>bu.ta</td><td>tax, price, tribute, cost</td><td>noun</td></tr>
 				<tr><td>pana</td><td>פָּנָה<sup>heb</sup></td><td>pa.ba</td><td>subject faces, adresses, is turned to object</td><td>verb</td></tr>
 				<tr><td>patla</td><td>పచ్చ<sup>tel</sup></td><td>pa.t͡ʃɹa</td><td>subject is leaf colored, somewhere from green to yellow, chartreuse</td><td>verb</td></tr>
@@ -1416,7 +1443,7 @@ words always fill the oldest break first
 				<tr><td>taitu</td><td><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Taito_2.svg" alt="taito" style="display:inline;height:1em;margin-top:-.15em;"><sup>jpn</sup></td><td>ta.i.tu</td><td>subject is overdone, outlandish, lavish</td><td>verb</td></tr>
 				<tr><td>tan</td><td>tan<sup>tok</sup></td><td>tab</td><td>subject is caused by, works for the good of object</td><td>verb</td></tr>
 				<tr><td>tatli</td><td>tetszik<sup>hun</sup></td><td>ta.t͡ʃɹi</td><td>subject is liked, enjoyed, is pleasing</td><td>verb</td></tr>
-				<tr><td>tatu</td><td>*ta-tou<sup>PPn*</sup></td><td>ta.tu</td><td>us (inclusive)</td><td>noun</td></tr>
+				<tr><td>tatu</td><td>*ta-tou<sup>PPN*</sup></td><td>ta.tu</td><td>us (inclusive)</td><td>noun</td></tr>
 				<tr><td>ticu</td><td>使用<sup>yue</sup></td><td>ti.ku</td><td>subject uses object as a tool, a method, or philosphy</td><td>verb</td></tr>
 				<tr><td>tinci</td><td>thingy<sup>eng</sup></td><td>tiɲ.ci</td><td>something</td><td>noun</td></tr>
 				<tr><td>tlanu</td><td>ꓞꓽ ꓐꓳꓺ<sup>lis</sup></td><td>t͡ʃɹa.bu</td><td>subject is salted, salty</td><td>verb</td></tr>
@@ -1444,18 +1471,83 @@ words always fill the oldest break first
 				<tr><td>luti</td><td>roti<sup>abs</sup></td><td>un.di</td><td>bread, baked cereal based dough</td><td>noun</td></tr>
 				<tr><td>lapa</td><td>ལག་པ<sup>bod</sup></td><td>un.di</td><td>hand, tip of a grasping appendage</td><td>noun</td></tr>
 				<tr><td>plilu</td><td>ffriża<sup>mlt</sup></td><td>un.di</td><td>subject is cold, chilly, frigid</td><td>verb</td></tr>
-				<tr><td>nall</td><td>vorer<sup>lat</sup></td><td>un.di</td><td>subject is drunk(not intoxicated), eaten without utensils</td><td>verb</td></tr>
+				<tr><td>nalla</td><td>vorer<sup>lat</sup></td><td>un.di</td><td>subject is drunk(not intoxicated), eaten without utensils</td><td>verb</td></tr>
 				<tr><td>tupa</td><td>सूप<sup>san</sup></td><td>un.di</td><td>soup, broth, sauce</td><td>noun</td></tr>
 				<tr><td>cuatua</td><td>fish&nbsp;men<sup>*</sup></td><td>un.di</td><td>subject is imaginary, imaginined by object</td><td>verb</td></tr>
-				<tr><td>culna</td><td>ܩܘܪܡܐ<sup>syc</sup></td><td>un.di</td><td>torso, tree trunk, log, roughly cylindrical main body</td><td>noun</td></tr>
+				<tr><td>cunla</td><td>ܩܘܪܡܐ<sup>syc</sup></td><td>un.di</td><td>torso, tree trunk, log, roughly cylindrical main body</td><td>noun</td></tr>
 				<tr><td>nuplu</td><td>nope&nbsp;rope<sup>eng</sup></td><td>un.di</td><td>snake, serpent, limbless predator</td><td>noun</td></tr>
 				<tr><td>inlu</td><td>ilo<sup>tok</sup></td><td>un.di</td><td>tool, machine, technology</td><td>noun</td></tr>
-				<tr><td>inta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
 				<tr><td>citacalu</td><td>kijetesantakalu<sup>tok</sup></td><td>un.di</td><td>raccoon, red panda, raccoon dog, racoon like animals</td><td>noun</td></tr>
 				<tr><td>inta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
-				<tr><td>tlna</td><td>జ్ఞా <sup>tel*</sup></td><td>un.di</td><td>bug, glitch, crash, error</td><td>noun</td></tr>
+				<tr><td>tlana</td><td>జ్ఞా <sup>tel*</sup></td><td>un.di</td><td>bug, glitch, crash, error</td><td>noun</td></tr>
 				<tr><td>taci</td><td>탁<sup>kor</sup></td><td>un.di</td><td>subject is sticky, attractive (physcially), magnetic</td><td>verb</td></tr>
 				<tr><td>nuti</td><td>wuwojiti<sup>tok*</sup></td><td>un.di</td><td>rules, regulations</td><td>noun</td></tr>
+				<tr><td>cini</td><td>kiwi<sup>mri</sup></td><td>un.di</td><td>bird, feathered creature</td><td>noun</td></tr>
+				<tr><td>nannu</td><td>ಬಂಬು<sup>kan</sup></td><td>un.di</td><td>bamboo, fast growing stick like plant</td><td>noun</td></tr>
+				
+				<tr><td>nanlu</td><td>bandu<sup>jbo</sup></td><td>un.di</td><td>subject is defended, protected, watched over</td><td>verb</td></tr>
+				<tr><td>pinta</td><td>pinta<sup>jbo</sup></td><td>un.di</td><td>subject is flat, level, even, horizontal</td><td>verb</td></tr>
+				<tr><td>plinu</td><td>plibu<sup>jbo</sup></td><td>un.di</td><td>pubic area, genitalia</td><td>noun</td></tr>
+				<tr><td>plita</td><td>plita<sup>jbo</sup></td><td>un.di</td><td>plane, flat surface, face (of a shape)</td><td>noun</td></tr>
+				<tr><td>pluta</td><td>pluta<sup>jbo</sup></td><td>un.di</td><td>road, path, trail</td><td>noun</td></tr>
+				<tr><td>plali</td><td>prali<sup>jbo</sup></td><td>un.di</td><td>profit, gain</td><td>noun</td></tr>
+				<tr><td>plani</td><td>prami<sup>jbo</sup></td><td>un.di</td><td>subject loves, mutually wants good things to happen to each other, trusted to feel the same way with object</td><td>verb</td></tr>
+				<tr><td>plitu</td><td>pritu<sup>jbo</sup></td><td>un.di</td><td>subject is to the right</td><td>verb</td></tr>
+				<tr><td>lanla</td><td>randa<sup>jbo</sup></td><td>un.di</td><td>subject gives way, falls, yeilds to object</td><td>verb</td></tr>
+				<tr><td>lanti</td><td>ranti<sup>jbo</sup></td><td>un.di</td><td>subject moldable, malleable, weaky without breaking into peices</td><td>verb</td></tr>
+				<tr><td>lunta</td><td>runta<sup>jbo</sup></td><td>un.di</td><td>subject dissolves</td><td>verb</td></tr>
+				<tr><td>platu</td><td>platu<sup>jbo</sup></td><td>un.di</td><td>subject is planned, arranged, organized for</td><td>verb</td></tr>
+				<tr><td>tunta</td><td>tunta<sup>jbo</sup></td><td>un.di</td><td>subject is poked, stabbed, prodded</td><td>verb</td></tr>
+				<tr><td>nlipa</td><td>vlipa<sup>jbo</sup></td><td>un.di</td><td>subject can be completed, done by object</td><td>verb</td></tr>
+				<tr><td>canpu</td><td>kampu<sup>jbo</sup></td><td>un.di</td><td>subject is normal, typical, as expected</td><td>verb</td></tr>
+				<tr><td>canli</td><td>kandi<sup>jbo</sup></td><td>un.di</td><td>verb happens weakly, meakly, to a small amount</td><td>adverb</td></tr>
+				<tr><td>cantu</td><td>kantu<sup>jbo</sup></td><td>un.di</td><td>signle unit, atom, cell</td><td>noun</td></tr>
+				<tr><td>clacu</td><td>klaku<sup>jbo</sup></td><td>un.di</td><td>subject cries, weeps, emotionally outburts</td><td>verb</td></tr>
+				<tr><td>clana</td><td>klama<sup>jbo</sup></td><td>un.di</td><td>subject arrives</td><td>verb</td></tr>
+				<tr><td>clilu</td><td>kliru<sup>jbo</sup></td><td>un.di</td><td>acid, toxic material known for disolving</td><td>noun</td></tr>
+				<tr><td>cliti</td><td>kliti<sup>jbo</sup></td><td>un.di</td><td>clay, mud, structural dirt</td><td>noun</td></tr>
+				<tr><td>clula</td><td>kluza<sup>jbo</sup></td><td>un.di</td><td>subject is loose, unfastened</td><td>verb</td></tr>
+				<!--add units of measurment-->
+				<tr><td>clili</td><td>krili<sup>jbo</sup></td><td>un.di</td><td>crystal, gem, fancy rock</td><td>noun</td></tr>
+				<tr><td>cluni</td><td>kruvi<sup>jbo</sup></td><td>un.di</td><td>curve, turn, bend, spline</td><td>noun</td></tr>
+				<tr><td>cunti</td><td>kunti<sup>jbo</sup></td><td>un.di</td><td>subject is empty, vacant</td><td>verb</td></tr>
+				<tr><td>linli</td><td>lindi<sup>jbo</sup></td><td>un.di</td><td>lightning, electrical arc</td><td>noun</td></tr>
+				<tr><td>nanti</td><td>manti<sup>jbo</sup></td><td>un.di</td><td>ant, eusocial insect that move in groups and live in the ground</td><td>noun</td></tr>
+				<tr><td>nlani</td><td>blabi<sup>jbo</sup></td><td>un.di</td><td>subject is white, pale</td><td>verb</td></tr>
+				<tr><td>nlicu</td><td>bliku<sup>jbo</sup></td><td>un.di</td><td>block, cube, retangular prisim</td><td>noun</td></tr>
+				<tr><td>nlali</td><td>bradi<sup>jbo</sup></td><td>un.di</td><td>enemy, opponent, foe</td><td>noun</td></tr>
+				<tr><td>nlatu</td><td>bratu<sup>jbo</sup></td><td>un.di</td><td>hail, frozen rain, sleet</td><td>noun</td></tr>
+				<tr><td>lanna</td><td>damba<sup>jbo</sup></td><td>un.di</td><td>subject fights, struggles, comepetes with object</td><td>verb</td></tr>
+				<tr><td>lanlu</td><td>dandu<sup>jbo</sup></td><td>un.di</td><td>subject dangles, hangs</td><td>verb</td></tr>
+				<tr><td>lluli</td><td>drudi<sup>jbo</sup></td><td>un.di</td><td>roof, lid, top</td><td>noun</td></tr>
+				<tr><td>nluli</td><td>mruli<sup>jbo</sup></td><td>un.di</td><td>hammer, large headed tool for hitting things</td><td>noun</td></tr>
+				<tr><td>nlilu</td><td>mrilu<sup>jbo</sup></td><td>un.di</td><td>subject is mailed, posted</td><td>verb</td></tr>
+				<tr><td>panli</td><td>panzi<sup>jbo</sup></td><td>un.di</td><td>child, offspring, decendent</td><td>noun</td></tr>
+				<tr><td>lunti</td><td>zunti<sup>jbo</sup></td><td>un.di</td><td>subject is hindered, disrupted</td><td>verb</td></tr>
+				<tr><td>ninlu</td><td>vindu<sup>jbo</sup></td><td>un.di</td><td>subject is poisonous, venomous, toxic</td><td>verb</td></tr>
+				<tr><td>pinli</td><td>pindi<sup>jbo</sup></td><td>un.di</td><td>subject is poor, impoverished, lacking</td><td>verb</td></tr>
+				<tr><td>pinpau</td><td>pinpau<sup>jbo</sup></td><td>un.di</td><td>row, rank, horizontal placement</td><td>noun</td></tr>
+				<tr><td>cinpau</td><td>kinpau<sup>jbo</sup></td><td>un.di</td><td>episode, one unit of a numbered blocked timescale</td><td>noun</td></tr>
+				<tr><td>lanpanli</td><td>lanpanzi<sup>jbo</sup></td><td>un.di</td><td>sheep, lamb, ram, ewe</td><td>noun</td></tr>
+				<tr><td>nannau</td><td>banbau<sup>jbo</sup></td><td>un.di</td><td>language, dialect, manner of communication</td><td>noun</td></tr>
+				<tr><td>pinu</td><td>pimu<sup>jbo</sup></td><td>un.di</td><td>there is one half, ½ of the subject</td><td>verb</td></tr>
+				
+				<tr><td>anpa</td><td>anpa<sup>tok</sup></td><td>un.di</td><td>bottom, lower section, base</td><td>noun</td></tr>
+				<tr><td>calana</td><td>kalama<sup>tok</sup></td><td>un.di</td><td>subject is loud, noisy</td><td>verb</td></tr>
+				<tr><td>cili</td><td>kili<sup>tok</sup></td><td>un.di</td><td>fruit, vegetable, edible plantmatter</td><td>noun</td></tr>
+				<tr><td>culupu</td><td>kulupu<sup>tok</sup></td><td>un.di</td><td>group, gathering, club</td><td>noun</td></tr>
+				<tr><td>lana</td><td>lawa<sup>tok</sup></td><td>un.di</td><td>noggin, head, mind, leader</td><td>noun</td></tr>
+				<tr><td>lipu</td><td>lipu<sup>tok</sup></td><td>un.di</td><td>page, paper, webpage</td><td>noun</td></tr>
+				<tr><td>lucin</td><td>lukin<sup>tok</sup></td><td>un.di</td><td>vision, eye</td><td>noun</td></tr>
+				<tr><td>lupa</td><td>lupa<sup>tok</sup></td><td>un.di</td><td>hole, window</td><td>noun</td></tr>
+				<tr><td>nani</td><td>mani<sup>tok</sup></td><td>un.di</td><td>money, dollars, the local currency</td><td>noun</td></tr>
+				<tr><td>pacala</td><td>pakala<sup>tok</sup></td><td>un.di</td><td>subject is broken, destroyed</td><td>verb</td></tr>
+				<tr><td>pilin</td><td>pilin<sup>tok</sup></td><td>un.di</td><td>subject is feels (physcially or emotionally) object</td><td>verb</td></tr>
+				<tr><td>unpa</td><td>unpa<sup>tok</sup></td><td>un.di</td><td>subject is sexually pleased</td><td>verb</td></tr>
+				
+				<tr><td>luca</td><td>জকা<sup>asm</sup></td><td>un.di</td><td>skeleton, bone, structure for supporting weaker materials</td><td>noun</td></tr>
+				
+				<tr><td>ani</td><td>aby<sup>МЕД*</sup></td><td>un.di</td><td>so, therefore</td><td>conjuction</td></tr>
 				
 			</tbody>
 		</table>
@@ -1549,9 +1641,10 @@ words always fill the oldest break first
 			<tbody>
 				<tr><td>iinlu&nbsp;(embeded sentence)</td><td style="text-align:left">a tool for doing the event described by the sentence</td><td>noun</td></tr>
 				<tr><td>luunu&nbsp;(embeded sentence)</td><td style="text-align:left">the event described by the sentence</td><td>noun</td></tr>
+				<tr><td>(embeded sentence+reduplication)&nbsp;lan</td><td style="text-align:left">subject has task described by the sentence done to it by object</td><td>verb</td></tr>
 				<tr><td>taa&nbsp;(noun)</td><td style="text-align:left">verb happens towards the noun</td><td>adverb</td></tr>
-				<tr><td>tuun&nbsp;(noun)</td><td style="text-align:left">verb happens in a manner alike to how the noun behaves</td><td>adverb</td></tr>
-				<tr><td>tuunpu&nbsp;uci</td><td style="text-align:left">room for having people in, living room, front room</td><td>noun</td></tr>
+				<tr><td>tuun&nbsp;(embeded sentence)</td><td style="text-align:left">verb happens in a manner alike to how the noun behaves</td><td>adverb</td></tr>
+				<tr><td>tuunpu&nbsp;unci</td><td style="text-align:left">room for having people in, living room, front room</td><td>noun</td></tr>
 			</tbody>
 		</table>
 	</div>
@@ -1562,21 +1655,18 @@ words always fill the oldest break first
 		<p><b>cuatua</b> from a the name of an imaginary race of fish cultists, but legally distinct from the D&D equivalent.</p>
 		<p><b>cunu</b> orginated in a randomly generated placeholder vocabulary for the first version of Pantluci, at the time it was transcribed qúu
 		as the languages morphology and orthography was updated, this word was kept to use as an example of the letter "q" even past the language having the letter.</p>
-		<p><b>cutu</b> from *h₁oḱtṓw, a word from proto-indo-european which does not have an offical language code.</p>
 		<p><b>nau</b> partially orginated from a non-random vocabulary for a previous version of Pantluci, at the time it was transcribed bóo, and was used to
 		demonstrate that version's naming system.</p>
-		<p><b>naun</b> from *h₁néwn̥, a word from proto-indo-european which does not have an offical language code.</p>
 		<p><b>nuti</b> from wuwojiti, a joke words in toki pona that is entriely illegal syllables.</p>
 		<p><b>pantluci</b> partially orginated from a random example word used to show how the language could use reduplication, however small modifications 
 		were made due to changes in phonology and in order to maintain a tradition of the language being named using its most unique features compared to the
 		previous version, finally it was updated when the phonology was shrunken in order to have each letter exactly once.</p>
 		<p><b>piati</b> from Piet, the name of an esoteric programming language designed to mimic the appearance of the works of Piet Mondrian. It was the first
 		esoteric languages studied by Pantluci's creater who mispronounced it as [pʰi:.ʔɛtʰ] for far too long.</p>
-		<p><b>tatu</b> from *ta-tou, a word from proto-polynesian which does not have an offical language code.</p>
 		<p><b>tlna</b> from an iOS crash caused by the character జ్ఞా in febuary 2018. This character is read as [d͡ʒɲaː].</p>
-		<p><b>tuaci</b> from *swéḱs, a word from proto-indo-european which does not have an offical language code.</p>
-		<p><b>una</b> from *h₁óyneh₂, a word from proto-indo-european which does not have an offical language code.</p>
-		<p><b>unlliliun</b> from unlli and niliun, other words in Pantluci smashed together.</p>
+		<p>the unoffical language code <b>PPN</b> represents proto-polynesian which does not have an offical language code.</p>
+		<p>the unoffical language code <b>PIE</b> represents proto-indo-european which does not have an offical language code.</p>
+		<p>the unoffical language code <b>МЕД</b> represents interslavic which does not have an offical language code.</p>
 	</div>
 <script>
 function rom2ipa(word){
@@ -1606,19 +1696,18 @@ function rom2ipa(word){
 		if(!C.includes(V[v])){
 			RAM=RAM.replaceAll("l."+V[v],"l"+V[v])
 			RAM=RAM.replaceAll(".n."+V[v],".n"+V[v])
+			RAM=RAM.replaceAll(".n.l"+V[v],".nl"+V[v])
 			RAM=RAM.replaceAll(V[v]+".n.",V[v]+"n.")
 		}
 	}
 	RAM=RAM.replaceAll("l.n.","ln.")
 	RAM=RAM.replaceAll(".l.l.",".ll.")
+	RAM=RAM.replaceAll(".n.l.",".nl.")
 	RAM=RAM.replace(".","ˈ")
 	
 	for (var v = 0; v < V.length; v++) {
 		RAM=RAM.replaceAll("n."+V[v]+".",".n"+V[v]+".")
 	}
-	//if(word=="nnllplnplnn"){
-	//	console.log(RAM)
-	//}
 	
 	for (var v = 0; v < V.length; v++) {
 		RAM=RAM.replaceAll("ˈ"+V[v]+".n","ˈ"+V[v]+"n.")
@@ -1662,12 +1751,39 @@ function rom2ipa(word){
 	}
 	word=word.slice(0,-1)
 	**/
+	
+	if (RAM.includes("̩")|RAM.includes("̍")){
+		console.log(RAM)
+	}
 	RAM=RAM.slice(1,-1)
 	return RAM;
 }
-var total=13;
+var total=0;
 var countAbs={};
 var countRel={};
+var countLangs={};
+var presorted="anu jbo	ti jbo	unu jbo	inu jbo	cli ita	nilu lat	tu lat	lin wol	na yuf	nacu bcl	nu ewe	pala eng	pla ljt";
+presorted=presorted.split("	");
+for (var j = 0; j < presorted.length; j++) {
+	presorted[j]=presorted[j].split(" ")
+	for (var l = 0; l < presorted[j][0].length; l++) {
+		if(!(presorted[j][0][l] in countAbs)){
+			countAbs[presorted[j][0][l]]=0
+			countRel[presorted[j][0][l]]=0
+		}
+		countAbs[presorted[j][0][l]]++
+		countRel[presorted[j][0][l]]=countRel[presorted[j][0][l]]+1/presorted[j][0].length
+	}
+	if(!(presorted[j][1] in countLangs)){
+		countLangs[presorted[j][1]]=[]
+	}
+	//console.log(countLangs,presorted[j])
+	countLangs[presorted[j][1]].push(presorted[j][0]);
+	total++;
+	//console.log(presorted[j],countAbs,countRel,countLangs,total)
+}
+
+
 var toSort = document.getElementById("toSort").tBodies[0].children;
 for (var j = 0; j < toSort.length; j++) {
 	var td = toSort[j].children;
@@ -1701,6 +1817,25 @@ for (var j = 0; j < toSort.length; j++) {
 					}
 					countAbs[td[0].innerHTML[l]]++
 					countRel[td[0].innerHTML[l]]=countRel[td[0].innerHTML[l]]+1/td[0].innerHTML.length
+					
+					
+				}
+				
+				var sups = td[1].children;
+				for (var s = 0; s < sups.length; s++) {
+					if(sups[s].tagName=="SUP"){
+						var su = sups[s].innerHTML.replaceAll("*","")
+							if(!(su=="")){
+							if(!(su in countLangs)){
+								countLangs[su]=[];
+							}
+							//if(su=="jbo"){
+							//	console.log(td[0])
+							//}
+							countLangs[su].push(td[0].innerHTML);
+							//console.log(su)
+						}
+					}
 				}
 			}
 			found=true;
@@ -1716,19 +1851,59 @@ for (var j = 0; j < toSort.length; j++) {
 		}else{
 			var row = document.getElementById("dict"+firstLetter).insertRow(i+1);
 			row.innerHTML=toSort[j].innerHTML
+			total++;
+			for (var l = 0; l < td[0].innerHTML.length; l++) {
+				if(!(td[0].innerHTML[l] in countAbs)){
+					countAbs[td[0].innerHTML[l]]=0
+					countRel[td[0].innerHTML[l]]=0
+				}
+				countAbs[td[0].innerHTML[l]]++
+				countRel[td[0].innerHTML[l]]=countRel[td[0].innerHTML[l]]+1/td[0].innerHTML.length
+				
+				
+			}
+				
+			var sups = td[1].children;
+			for (var s = 0; s < sups.length; s++) {
+				if(sups[s].tagName=="SUP"){
+					var su = sups[s].innerHTML.replaceAll("*","")
+						if(!(su=="")){
+						if(!(su in countLangs)){
+							countLangs[su]=[];
+						}
+						//if(su=="jbo"){
+						//	console.log(td[0])
+						//}
+						countLangs[su].push(td[0].innerHTML);
+						//console.log(su)
+					}
+				}
+			}
 		}
 	}
 }
 document.getElementById("toSort").innerHTML="";
 console.log(total,"words")
 console.log("countAbs")
+t=0
+for (var key of Object.keys(Object.fromEntries(Object.entries(countAbs)))) { t=t+countAbs[key]; }
 for (var key of Object.keys(Object.fromEntries(Object.entries(countAbs).sort(([,a],[,b]) => a-b)))) {
-    console.log(key, countAbs[key])
+    console.log(key, countAbs[key],countAbs[key]/t*100)
 }
+t=0
 console.log("countRel")
+for (var key of Object.keys(Object.fromEntries(Object.entries(countRel)))) { t=t+countRel[key]; }
 for (var key of Object.keys(Object.fromEntries(Object.entries(countRel).sort(([,a],[,b]) => a-b)))) {
-    console.log(key, countRel[key])
+    console.log(key, countRel[key],countRel[key]/t*100)
 }
+t=0
+console.log("countLangs")
+for (var key of Object.keys(Object.fromEntries(Object.entries(countLangs)))) { t=t+countLangs[key].length; }
+for (var key of Object.keys(Object.fromEntries(Object.entries(countLangs).sort(([,a],[,b]) => a.length-b.length)))) {
+    console.log(key, countLangs[key].length,countLangs[key].length/t*100)
+}
+countLangs["jbo"].sort()
+console.log(countLangs["jbo"])
 </script>
 	
 	<div class="pageBreak"></div>
