@@ -1158,7 +1158,10 @@ morphology
 		- lexical phrases
 		- unevolvable compounding system - glue phonemes?
 		- new words
-		
+	
+roots have prefixal form either defined or remove final vowel if there is one then add l
+figure out to do with words that start with vowel
+
 heres what im considering atm
 there is a distinction between root words and compounds
 root words (or in some cases their shortened/modifified forms) get glued together to form compounds, the glue is any syllable non word non word intially, finally, or imediately after another glue that has a syllabic consonant
@@ -1240,9 +1243,15 @@ words always fill the oldest break first
 	</div>
 	
 	<div class="printBlock" id="Dictionary">
-		<h2>Pantlucian Dictionary</h2>
+		<h2>Pantlucian Roots Dictionary</h2>
 		<p>Some entries are marked with * to denote that they have a special note which can be found at the end of the chapter.</p>
 		<pre>IPA show mandatory allophony but not free variation</pre>
+		<pre>if unspecified the affix forms are its normal form, its normal form with the final vowel removed, then glues added in if needed, first try l then n</pre>
+		<pre>if a final l of an affix would not turn syllabic when compounding, replace it with n, if that wouldnt be syllabic ???</pre>
+		<pre>names are two root compounds where the first is a noun and the second is noun or verb. first half can be used in casual speech</pre>
+		<pre>naca + plutli = naclplutli</pre>
+		<pre>nanti + plutli = nantlplutli</pre>
+		<pre>compounds are not included</pre>
 		
 		<table style="text-align: left;" id="toSort">
 			<thead>
@@ -1250,16 +1259,11 @@ words always fill the oldest break first
 				<tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>una</td><td>*h₁óyneh₂<sup>PIE*</sup></td><td>(ʔ)uB.a</td><td>there is one, 1 of the subject</td><td>verb</td></tr>
-				<tr><td>lua</td><td>deus<sup>fro</sup></td><td>Du.a</td><td>there is two, 2 of the subject</td><td>verb</td></tr>
-				<tr><td>tlua</td><td>trois<sup>fra</sup></td><td>t͡ʃɹu.a</td><td>there is three, 3 of the subject</td><td>verb</td></tr>
-				<tr><td>catla</td><td>quatre<sup>fra</sup></td><td>ka.t͡ʃɹa</td><td>there is four, 4 of the subject</td><td>verb</td></tr>
-				<tr><td>cinca</td><td>quīnque<sup>lat</sup></td><td>ciŋ.ka</td><td>there is five, 5 of the subject</td><td>verb</td></tr>
-				<tr><td>tuaci</td><td>*swéḱs<sup>PIE*</sup></td><td>tu.a.ci</td><td>there is six, 6 of the subject</td><td>verb</td></tr>
-				<tr><td>tatan</td><td>septem<sup>lat</sup></td><td>ta.taB</td><td>there is seven, 7 of the subject</td><td>verb</td></tr>
-				<tr><td>cutu</td><td>*h₁oḱtṓw<sup>PIE*</sup></td><td>ku.tu</td><td>there is eight, 8 of the subject</td><td>verb</td></tr>
-				<tr><td>naun</td><td>*h₁néwn̥<sup>PIE*</sup></td><td>Ba.uB</td><td>there is nine, 9 of the subject</td><td>verb</td></tr>
-				<tr><td>lacan</td><td>decem<sup>lat</sup></td><td>Da.kaB</td><td>there is ten, 10 of the subject</td><td>verb</td></tr>
+				<!--
+				<tr><td>naclplutli</td><td>naca + plutli<sup>test</sup></td><td>cin.Da</td><td>test</td><td>test</td></tr>
+				<tr><td>nantlplutli</td><td>nanti + plutli<sup>test</sup></td><td>cin.Da</td><td>test</td><td>test</td></tr>
+				-->
+				
 				<!--<tr><td>untla</td><td>onze<sup>fro</sup></td><td>(ʔ)un.t͡ʃɹa</td><td>there is eleven, 11 of the subject</td><td>verb</td></tr>
 				<tr><td>lulatlin</td><td>duodecim<sup>lat</sup></td><td>Du.Da.t͡ʃɹiB</td><td>there is twelve, 12 of the subject</td><td>verb</td></tr>
 				<tr><td>tlala</td><td>treze<sup>fro</sup></td><td>t͡ʃɹa.Da</td><td>there is thirteen, 13 of the subject</td><td>verb</td></tr>
@@ -1381,14 +1385,21 @@ words always fill the oldest break first
 				<tr><td>nunan</td><td>nonante<sup>fra</sup></td><td>Bu.BaB</td><td>there is ninety, 90 of the subject</td><td>verb</td></tr>
 				-->
 				
+				<tr><td>una</td><td>*h₁óyneh₂<sup>PIE*</sup></td><td>(ʔ)uB.a</td><td>there is one, 1 of the subject</td><td>verb</td></tr>
+				<tr><td>tuaci</td><td>*swéḱs<sup>PIE*</sup></td><td>tu.a.ci</td><td>there is six, 6 of the subject</td><td>verb</td></tr>
+				<tr><td>cutu</td><td>*h₁oḱtṓw<sup>PIE*</sup></td><td>ku.tu</td><td>there is eight, 8 of the subject</td><td>verb</td></tr>
+				<tr><td>naun</td><td>*h₁néwn̥<sup>PIE*</sup></td><td>Ba.uB</td><td>there is nine, 9 of the subject</td><td>verb</td></tr>
+				<tr><td>lua</td><td>deus<sup>fro</sup></td><td>Du.a</td><td>there is two, 2 of the subject</td><td>verb</td></tr>
+				<tr><td>tlua</td><td>trois<sup>fra</sup></td><td>t͡ʃɹu.a</td><td>there is three, 3 of the subject</td><td>verb</td></tr>
+				<tr><td>catla</td><td>quatre<sup>fra</sup></td><td>ka.t͡ʃɹa</td><td>there is four, 4 of the subject</td><td>verb</td></tr>
+				<tr><td>cinca</td><td>quīnque<sup>lat</sup></td><td>ciŋ.ka</td><td>there is five, 5 of the subject</td><td>verb</td></tr>
+				<tr><td>tatan</td><td>septem<sup>lat</sup></td><td>ta.taB</td><td>there is seven, 7 of the subject</td><td>verb</td></tr>
+				<tr><td>lacan</td><td>decem<sup>lat</sup></td><td>Da.kaB</td><td>there is ten, 10 of the subject</td><td>verb</td></tr>
 				<tr><td>unlli</td><td>hundred<sup>eng</sup></td><td>(ʔ)un.dɹi</td><td>one hundred, 100 of something</td><td>noun</td></tr>
 				<tr><td>tunan</td><td><span class="mnc">ᡨᡠᠮᡝᠨ</span><sup>mnc</sup></td><td>tu.BaB</td><td>ten thousand, 10,000 of something</td><td>noun</td></tr>
 				<tr><td>niliun</td><td>milione<sup>ita</sup></td><td>Bi.Di.uB</td><td>one million, 1,000,000 of something</td><td>noun</td></tr>
-
 				<tr><td>an</td><td>and<sup>eng</sup></td><td>aB</td><td>and</td><td>conjunction</td></tr>
-				<tr><td>anti</td><td>ante<sup>tok</sup></td><td>an.ti</td><td>subject is not the one most obvious by context, is different, other</td><td>verb</td></tr>
 				<tr><td>cai</td><td>kay<sup>qwc</sup></td><td>ka.i</td><td>subject is equal, equivalent to, is the same as object</td><td>verb</td></tr>
-				<tr><td>cala</td><td>kala<sup>tok</sup></td><td>ka.Da</td><td>fish, animal with gills</td><td>noun</td></tr>
 				<tr><td>can</td><td>kam<sup>sqi</sup></td><td>kaB</td><td>subject is had, held, carried, contained, owned by object</td><td>verb</td></tr>
 				<tr><td>capu</td><td>kapı<sup>tur</sup></td><td>ka.pu</td><td>door, gate, curtains, things that have the primary function of either being open or closed</td><td>noun</td></tr>
 				<tr><td>catuna</td><td>Kasona<sup>*</sup></td><td>ka.tu.Ba</td><td>dolphin, fully aquatic mammal with a beaked nose</td><td>noun</td></tr>
@@ -1403,33 +1414,25 @@ words always fill the oldest break first
 				<tr><td>in</td><td>in<sup>lat</sup></td><td>ib</td><td>subject is in, on object</td><td>verb</td></tr>
 				<tr><td>lan</td><td>làm<sup>vie</sup></td><td>dab</td><td>subject is done, made, worked by<td>verb</td></tr>
 				<tr><td>latlu</td><td>let's<sup>eng</sup></td><td>da.t͡ʃɹu</td><td>us (inclusive, imperative)</td><td>noun</td></tr>
-				<tr><td>li</td><td>ji<sup>jbo</sup></td><td>di</td><td>connective question, which of the things</td><td>conjunction</td></tr>
 				<tr><td>lila</td><td>Lila<sup>deu</sup></td><td>di.da</td><td>subject is light purple</td><td>verb</td></tr>
 				<tr><td>lu</td><td>du<sup>fra</sup></td><td>du</td><td>subject is from, of object</td><td>verb</td></tr>
 				<tr><td>luci</td><td>luk<sup>tpi</sup><hr>looky<sup>eng</sup></td><td>du.ci</td><td>subject perceives with the eyes, sees object</td><td>verb</td></tr>
 				<tr><td>lula</td><td>lewd<sup>eng</sup></td><td>du.da</td><td>subject is sexually casual, suggestive</td><td>verb</td></tr>
 				<tr><td>luncu</td><td>ଉଲଙ୍ଗ<sup>ori</sup></td><td>duŋ.ku</td><td>subject is naked, uncovered, unprotected</td><td>verb</td></tr>
-				<tr><td>lunu</td><td>lo&nbsp;nu<sup>jbo</sup></td><td>du.bu</td><td>state, process, event, activity</td><td>noun</td></tr>
-				<tr><td>lui</td><td>doi<sup>jbo</sup></td><td>du.i</td><td>subject is the listener intended by object (default the speaker)</td><td>verb</td></tr>
 				<tr><td>naca</td><td>ᏩᎦ<sup>chr</sup></td><td>ba.ka</td><td>beef, steak, flesh of a hoofed grazing herbavore</td><td>noun</td></tr>
 				<tr><td>nacan</td><td>ᜊᜌᜈ᜔<sup>tgl</sup></td><td>ba.kab</td><td>nation, community, ingroup</td><td>noun</td></tr>
 				<tr><td>nacana</td><td>مَكْتَبَة<sup>ara</sup></td><td>ba.ka.ba</td><td>library, bookstore, bookcase, collection of books</td><td>noun</td></tr>
 				<tr><td>nai</td><td>by<sup>eng</sup></td><td>ba.i</td><td>swaps subject and object of the verb</td><td>adverb</td></tr>
 				<tr><td>naii</td><td>baíxi<sup>myp</sup></td><td>ba.i.i</td><td>parent, mother, father</td><td>noun</td></tr>
 				<tr><td>nala</td><td>മഴ<sup>mal</sup></td><td>ba.da</td><td>rain, a large amount of something</td><td>noun</td></tr>
-				<tr><td>nalu</td><td>cmalu<sup>jbo</sup></td><td>ba.du</td><td>subject is small, mini</td><td>verb</td></tr>
-				<tr><td>nanla</td><td>cmevla<sup>jbo</sup></td><td>nan.da</td><td>subject is a name, title used of object</td><td>verb</td></tr>
 				<tr><td>natuna</td><td>மதுவை<sup>tam</sup></td><td>ba.tu.ba</td><td>alcohol, alcoholic beverage</td><td>noun</td></tr>
 				<tr><td>nau</td><td>棒<sup>jpn</sup><hr>bo˦.o˨<sup>*</sup></td><td>na.u</td><td>staff, stick-like or long cylindrical item: pointer, pole, pencil, rod, etc</td><td>noun</td></tr>
 				<tr><td>nican</td><td>مِكْتَاب‎<sup>ara</sup></td><td>bi.kab</td><td>keyboard, typewritter</td><td>noun</td></tr>
-				<tr><td>ni</td><td>ni<sup>tok</sup></td><td>bi</td><td>subject is identifiable by context given by object</td><td>verb</td></tr>
 				<tr><td>nina</td><td>veme<sup>spa</sup></td><td>bi.ba</td><td>you, y'all (imperative)</td><td>noun</td></tr>
 				<tr><td>nita</td><td>เมตตา<sup>tha</sup></td><td>bi.ta</td><td>mercy, kindness, empathy, compassion</td><td>noun</td></tr>
 				<tr><td>nitlu</td><td>水<sup>jpn</sup></td><td>bi.t͡ʃɹu</td><td>water, typically drinkable</td><td>noun</td></tr>
-				<tr><td>niu</td><td>mi&nbsp;o<sup>tok</sup></td><td>bi.u</td><td>I, me, we, us (exclusive, deontic)</td><td>noun</td></tr>
 				<tr><td>nli</td><td>ndi<sup>gug</sup></td><td>bɹi</td><td>subject is with, in the company of object</td><td>verb</td></tr>
 				<tr><td>nui</td><td>mui<sup>dlm</sup></td><td>bu.i</td><td>subject defies expections, is unlike others, marks focus due to contrariness</td><td>verb</td></tr>
-				<tr><td>nuta</td><td>𐌼𐍉𐍄𐌰<sup>got</sup></td><td>bu.ta</td><td>tax, price, tribute, cost</td><td>noun</td></tr>
 				<tr><td>pana</td><td>פָּנָה<sup>heb</sup></td><td>pa.ba</td><td>subject faces, adresses, is turned to object</td><td>verb</td></tr>
 				<tr><td>patla</td><td>పచ్చ<sup>tel</sup></td><td>pa.t͡ʃɹa</td><td>subject is leaf colored, somewhere from green to yellow, chartreuse</td><td>verb</td></tr>
 				<tr><td>pantluci</td><td>t͡soci<sup>*</sup><hr>a, c, i, l,<br>n, p, t, u<sup>*</sup></td><td>pan.t͡ʃɹu.ci</td><td>the language described by this book and related offshoots</td><td>noun</td></tr>
@@ -1441,7 +1444,6 @@ words always fill the oldest break first
 				<tr><td>pula</td><td>pure<sup>eng</sup></td><td>pu.da</td><td>subject is cute, cuddlable, kind</td><td>verb</td></tr>
 				<tr><td>ta</td><td>to<sup>eng</sup></td><td>ta</td><td>subject goes towards object</td><td>verb</td></tr>
 				<tr><td>taitu</td><td><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Taito_2.svg" alt="taito" style="display:inline;height:1em;margin-top:-.15em;"><sup>jpn</sup></td><td>ta.i.tu</td><td>subject is overdone, outlandish, lavish</td><td>verb</td></tr>
-				<tr><td>tan</td><td>tan<sup>tok</sup></td><td>tab</td><td>subject is caused by, works for the good of object</td><td>verb</td></tr>
 				<tr><td>tatli</td><td>tetszik<sup>hun</sup></td><td>ta.t͡ʃɹi</td><td>subject is liked, enjoyed, is pleasing</td><td>verb</td></tr>
 				<tr><td>tatu</td><td>*ta-tou<sup>PPN*</sup></td><td>ta.tu</td><td>us (inclusive)</td><td>noun</td></tr>
 				<tr><td>ticu</td><td>使用<sup>yue</sup></td><td>ti.ku</td><td>subject uses object as a tool, a method, or philosphy</td><td>verb</td></tr>
@@ -1450,24 +1452,19 @@ words always fill the oldest break first
 				<tr><td>tlitlai</td><td>łį́į́ʼtsaʼii<sup>nav</sup></td><td>t͡ʃɹi.t͡ʃɹa.i</td><td>owned animal, livestock</td><td>noun</td></tr>
 				<tr><td>tluni</td><td>ꪋ꫁ꪮꪙ<sup>twh</sup></td><td>t͡ʃɹu.bi</td><td>subject is dripping, leaking, drooling</td><td>verb</td></tr>
 				<tr><td>tucin</td><td>token<sup>eng</sup></td><td>tu.cib</td><td>token, placeholder, something that lacks meaning without context</td><td>noun</td></tr>
-				<tr><td>tuli</td><td>suli<sup>tok</sup></td><td>tu.di</td><td>subject is big, large</td><td>verb</td></tr>
 				<tr><td>tun</td><td>som<sup>dan</sup></td><td>tub</td><td>subject is similar to, alike object</td><td>verb</td></tr>
 				<tr><td>tunpu</td><td>ツ゚ンプ<sup>ain</sup></td><td>tum.pu</td><td>room, compartment of space largely seperated from other rooms and the outside</td><td>noun</td></tr>
 				<tr><td>unci</td><td>հոգի<sup>xcl</sup></td><td>u.ci</td><td>person, alien, sapient being</td><td>noun</td></tr>
-				<tr><td>unli</td><td>xunre<sup>jbo</sup></td><td>un.di</td><td>subject is red/crimson/ruddy</td><td>verb</td></tr>
 				
 				<tr><td>nain</td><td>vibe<sup>eng</sup></td><td>un.di</td><td>conceptual motifs, atmosphere, quality</td><td>noun</td></tr>
 				<tr><td>paciu</td><td>facio<sup>lat</sup></td><td>un.di</td><td>subject is composed/made/consists of object</td><td>verb</td></tr>
-				<tr><td>tana</td><td>tawa<sup>tok</sup></td><td>un.di</td><td>subject moves/travels</td><td>verb</td></tr>
 				<tr><td>lanca</td><td>lenga<sup>oci</sup></td><td>un.di</td><td>tongue, mandibles, mouth manipulator</td><td>noun</td></tr>
 				<tr><td>napi</td><td>nape<sup>mri</sup></td><td>un.di</td><td>sinew, tendon, physical strength, muscle</td><td>noun</td></tr>
 				<tr><td>antu</td><td>anto<sup>pag</sup></td><td>un.di</td><td>nominal question, what thing</td><td>noun</td></tr>
 				<tr><td>laci</td><td>ܕܵܐܟ݂ܝܼ<sup>aii</sup></td><td>un.di</td><td>adverbial question, in what way</td><td>adverb</td></tr>
 				<tr><td>lunata</td><td>do&nbsp;what<sup>eng</sup></td><td>un.di</td><td>verbal question, what verb</td><td>verb</td></tr>
 				<tr><td>ancula</td><td>እንቁላል<sup>amh</sup></td><td>un.di</td><td>egg, container holding an embryo</td><td>noun</td></tr>
-				<tr><td>nanpa</td><td>nanpa<sup>tok</sup></td><td>un.di</td><td>number, id, version, count</td><td>noun</td></tr>
 				<tr><td>cancana</td><td>قَمْقَمَة<sup>ara</sup></td><td>un.di</td><td>subject grumbles, mumbles, mutters</td><td>verb</td></tr>
-				<tr><td>n</td><td>n<sup>tok</sup></td><td>m̩</td><td>umm, uhh, thinking noise</td><td>none</td></tr>
 				<tr><td>luti</td><td>roti<sup>abs</sup></td><td>un.di</td><td>bread, baked cereal based dough</td><td>noun</td></tr>
 				<tr><td>lapa</td><td>ལག་པ<sup>bod</sup></td><td>un.di</td><td>hand, tip of a grasping appendage</td><td>noun</td></tr>
 				<tr><td>plilu</td><td>ffriża<sup>mlt</sup></td><td>un.di</td><td>subject is cold, chilly, frigid</td><td>verb</td></tr>
@@ -1476,14 +1473,32 @@ words always fill the oldest break first
 				<tr><td>cuatua</td><td>fish&nbsp;men<sup>*</sup></td><td>un.di</td><td>subject is imaginary, imaginined by object</td><td>verb</td></tr>
 				<tr><td>cunla</td><td>ܩܘܪܡܐ<sup>syc</sup></td><td>un.di</td><td>torso, tree trunk, log, roughly cylindrical main body</td><td>noun</td></tr>
 				<tr><td>nuplu</td><td>nope&nbsp;rope<sup>eng</sup></td><td>un.di</td><td>snake, serpent, limbless predator</td><td>noun</td></tr>
-				<tr><td>inlu</td><td>ilo<sup>tok</sup></td><td>un.di</td><td>tool, machine, technology</td><td>noun</td></tr>
-				<tr><td>citacalu</td><td>kijetesantakalu<sup>tok</sup></td><td>un.di</td><td>raccoon, red panda, raccoon dog, racoon like animals</td><td>noun</td></tr>
-				<tr><td>inta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
 				<tr><td>tlana</td><td>జ్ఞా <sup>tel*</sup></td><td>un.di</td><td>bug, glitch, crash, error</td><td>noun</td></tr>
 				<tr><td>taci</td><td>탁<sup>kor</sup></td><td>un.di</td><td>subject is sticky, attractive (physcially), magnetic</td><td>verb</td></tr>
-				<tr><td>nuti</td><td>wuwojiti<sup>tok*</sup></td><td>un.di</td><td>rules, regulations</td><td>noun</td></tr>
 				<tr><td>cini</td><td>kiwi<sup>mri</sup></td><td>un.di</td><td>bird, feathered creature</td><td>noun</td></tr>
 				<tr><td>nannu</td><td>ಬಂಬು<sup>kan</sup></td><td>un.di</td><td>bamboo, fast growing stick like plant</td><td>noun</td></tr>
+				<tr><td>cuicli</td><td>quirky<sup>eng</sup></td><td>un.di</td><td>subject is random, strange, unpredicatble without benifiting from it</td><td>verb</td></tr>
+				<tr><td>luca</td><td>জকা<sup>asm</sup></td><td>un.di</td><td>skeleton, bone, structure for supporting weaker materials</td><td>noun</td></tr>
+				<tr><td>nuta</td><td>𐌼𐍉𐍄𐌰<sup>got</sup></td><td>bu.ta</td><td>tax, price, tribute, cost</td><td>noun</td></tr>
+				<!--add units of measurment-->
+				<!--toki pona, lojban, fith, laadan, speedwords, interslavic, ithkuil, kelen-->
+				<tr><td>palu</td><td>pʰal<sup>IŢK</sup></td><td>un.di</td><td>tree, branched leaved plant</td><td>noun</td></tr>
+				<tr><td>nlala</td><td>vlalêx<sup>IŢK</sup></td><td>un.di</td><td>open-topped container, cup, bowl</td><td>noun</td></tr>
+				<tr><td>anni</td><td>âmmit<sup>IŢK</sup></td><td>un.di</td><td>children, pre-adult people</td><td>noun</td></tr>
+				<tr><td>annala</td><td>amnadya<sup>IŢK</sup></td><td>un.di</td><td>subject is awe-inspiring</td><td>verb</td></tr>
+				<tr><td>anai</td><td>âbyeil<sup>IŢK</sup></td><td>un.di</td><td>dog, canine, predator known for loyalty</td><td>noun</td></tr>
+				<tr><td>inala</td><td>ivadya<sup>IŢK</sup></td><td>un.di</td><td>subject plays, is entertained</td><td>verb</td></tr>
+				<tr><td>inia</td><td>inyat<sup>IŢK</sup></td><td>un.di</td><td>subject is choosen, decided on</td><td>verb</td></tr>
+				<tr><td>nlatla</td><td>břatļ<sup>IŢK</sup></td><td>un.di</td><td>clown, professional fool</td><td>noun</td></tr>
+				<tr><td>anatlu</td><td>abjatļud<sup>IŢK</sup></td><td>un.di</td><td>eel, long finless fish</td><td>noun</td></tr>
+				
+				<tr><td>nlain</td><td>briemh<sup>FIT</sup></td><td>un.di</td><td>dipping sauce, salsa</td><td>noun</td></tr>
+				<tr><td>nuan</td><td>bwanh<sup>FIT</sup></td><td>un.di</td><td>subject is identified, discovered, found for the first time</td><td>verb</td></tr>
+				<tr><td>luain</td><td>zwiem<sup>FIT</sup></td><td>un.di</td><td>subject is discarded, abandoned, left to rot</td><td>verb</td></tr>
+				<tr><td>nuin</td><td>mwingh<sup>FIT</sup></td><td>un.di</td><td>subject is lazy, idle, stagnant</td><td>verb</td></tr>
+				<tr><td>luin</td><td>dwimh<sup>FIT</sup></td><td>un.di</td><td>cloth, fabric</td><td>verb</td></tr>
+				<tr><td>tiai</td><td>tyie<sup>FIT</sup></td><td>un.di</td><td>ball, sphere</td><td>verb</td></tr>
+				<tr><td>tlanlan</td><td>tranlomh<sup>FIT</sup></td><td>un.di</td><td>pepper (the seasoning), pepcorns</td><td>verb</td></tr>
 				
 				<tr><td>nanlu</td><td>bandu<sup>jbo</sup></td><td>un.di</td><td>subject is defended, protected, watched over</td><td>verb</td></tr>
 				<tr><td>pinta</td><td>pinta<sup>jbo</sup></td><td>un.di</td><td>subject is flat, level, even, horizontal</td><td>verb</td></tr>
@@ -1507,7 +1522,6 @@ words always fill the oldest break first
 				<tr><td>clilu</td><td>kliru<sup>jbo</sup></td><td>un.di</td><td>acid, toxic material known for disolving</td><td>noun</td></tr>
 				<tr><td>cliti</td><td>kliti<sup>jbo</sup></td><td>un.di</td><td>clay, mud, structural dirt</td><td>noun</td></tr>
 				<tr><td>clula</td><td>kluza<sup>jbo</sup></td><td>un.di</td><td>subject is loose, unfastened</td><td>verb</td></tr>
-				<!--add units of measurment-->
 				<tr><td>clili</td><td>krili<sup>jbo</sup></td><td>un.di</td><td>crystal, gem, fancy rock</td><td>noun</td></tr>
 				<tr><td>cluni</td><td>kruvi<sup>jbo</sup></td><td>un.di</td><td>curve, turn, bend, spline</td><td>noun</td></tr>
 				<tr><td>cunti</td><td>kunti<sup>jbo</sup></td><td>un.di</td><td>subject is empty, vacant</td><td>verb</td></tr>
@@ -1531,7 +1545,27 @@ words always fill the oldest break first
 				<tr><td>lanpanli</td><td>lanpanzi<sup>jbo</sup></td><td>un.di</td><td>sheep, lamb, ram, ewe</td><td>noun</td></tr>
 				<tr><td>nannau</td><td>banbau<sup>jbo</sup></td><td>un.di</td><td>language, dialect, manner of communication</td><td>noun</td></tr>
 				<tr><td>pinu</td><td>pimu<sup>jbo</sup></td><td>un.di</td><td>there is one half, ½ of the subject</td><td>verb</td></tr>
+				<tr><td>li</td><td>ji<sup>jbo</sup></td><td>di</td><td>connective question, which of the things</td><td>conjunction</td></tr>
+				<tr><td>lunu</td><td>lo&nbsp;nu<sup>jbo</sup></td><td>du.bu</td><td>state, process, event, activity</td><td>noun</td></tr>
+				<tr><td>lui</td><td>doi<sup>jbo</sup></td><td>du.i</td><td>subject is the listener intended by object (default the speaker)</td><td>verb</td></tr>
+				<tr><td>nalu</td><td>cmalu<sup>jbo</sup></td><td>ba.du</td><td>subject is small, mini</td><td>verb</td></tr>
+				<tr><td>ninla</td><td>cmevla<sup>jbo</sup></td><td>nan.da</td><td>subject is a name, title used of object</td><td>verb</td></tr>
+				<tr><td>unli</td><td>xunre<sup>jbo</sup></td><td>un.di</td><td>subject is red/crimson/ruddy</td><td>verb</td></tr>
+				<tr><td>tillu</td><td>tilju<sup>jbo</sup></td><td>un.di</td><td>subject is heavy, weighty, large in mass, weight</td><td>verb</td></tr>
 				
+				<tr><td>anti</td><td>ante<sup>tok</sup></td><td>an.ti</td><td>subject is not the one most obvious by context, is different, other</td><td>verb</td></tr>
+				<tr><td>cala</td><td>kala<sup>tok</sup></td><td>ka.Da</td><td>fish, animal with gills</td><td>noun</td></tr>
+				<tr><td>ni</td><td>ni<sup>tok</sup></td><td>bi</td><td>subject is identifiable by context given by object</td><td>verb</td></tr>
+				<tr><td>niu</td><td>mi&nbsp;o<sup>tok</sup></td><td>bi.u</td><td>I, me, we, us (exclusive, deontic)</td><td>noun</td></tr>
+				<tr><td>tan</td><td>tan<sup>tok</sup></td><td>tab</td><td>subject is caused by, works for the good of object</td><td>verb</td></tr>
+				<tr><td>tuli</td><td>suli<sup>tok</sup></td><td>tu.di</td><td>subject is big, large</td><td>verb</td></tr>
+				<tr><td>tana</td><td>tawa<sup>tok</sup></td><td>un.di</td><td>subject moves/travels</td><td>verb</td></tr>
+				<tr><td>nanpa</td><td>nanpa<sup>tok</sup></td><td>un.di</td><td>number, id, version, count</td><td>noun</td></tr>
+				<tr><td>n</td><td>n<sup>tok</sup></td><td>m̩</td><td>umm, uhh, thinking noise</td><td>none</td></tr>
+				<tr><td>inlu</td><td>ilo<sup>tok</sup></td><td>un.di</td><td>tool, machine, technology</td><td>noun</td></tr>
+				<tr><td>citacalu</td><td>kijetesantakalu<sup>tok</sup></td><td>un.di</td><td>raccoon, red panda, raccoon dog, racoon like animals</td><td>noun</td></tr>
+				<tr><td>inta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
+				<tr><td>nuti</td><td>wuwojiti<sup>tok*</sup></td><td>un.di</td><td>rules, regulations</td><td>noun</td></tr>
 				<tr><td>anpa</td><td>anpa<sup>tok</sup></td><td>un.di</td><td>bottom, lower section, base</td><td>noun</td></tr>
 				<tr><td>calana</td><td>kalama<sup>tok</sup></td><td>un.di</td><td>subject is loud, noisy</td><td>verb</td></tr>
 				<tr><td>cili</td><td>kili<sup>tok</sup></td><td>un.di</td><td>fruit, vegetable, edible plantmatter</td><td>noun</td></tr>
@@ -1544,10 +1578,22 @@ words always fill the oldest break first
 				<tr><td>pacala</td><td>pakala<sup>tok</sup></td><td>un.di</td><td>subject is broken, destroyed</td><td>verb</td></tr>
 				<tr><td>pilin</td><td>pilin<sup>tok</sup></td><td>un.di</td><td>subject is feels (physcially or emotionally) object</td><td>verb</td></tr>
 				<tr><td>unpa</td><td>unpa<sup>tok</sup></td><td>un.di</td><td>subject is sexually pleased</td><td>verb</td></tr>
+				<tr><td>culai</td><td>kule<sup>tok</sup></td><td>un.di</td><td>subject is has color, is colored</td><td>verb</td></tr>
 				
-				<tr><td>luca</td><td>জকা<sup>asm</sup></td><td>un.di</td><td>skeleton, bone, structure for supporting weaker materials</td><td>noun</td></tr>
+				<tr><td>ani</td><td>aby<sup>МЕД*</sup></td><td>un.di</td><td>in order to, as to</td><td>conjuction</td></tr>
+				<tr><td>lautluca</td><td>zautraka<sup>МЕД*</sup></td><td>un.di</td><td>breakfast, morning meal</td><td>noun</td></tr>
+				<tr><td>claua</td><td>kråva<sup>МЕД*</sup></td><td>un.di</td><td>cow, bovine, domesticated hoofed grazing herbavore</td><td>noun</td></tr>
+				<tr><td>nlinta</td><td>britva<sup>МЕД*</sup></td><td>un.di</td><td>knife, sword, razor, blade</td><td>noun</td></tr>
+				<tr><td>nanla</td><td>nazva<sup>МЕД*</sup></td><td>un.di</td><td>word, name, title</td><td>noun</td></tr>
+				<tr><td>pitinu</td><td>piśmo<sup>МЕД*</sup></td><td>un.di</td><td>script, writing system, orthography</td><td>noun</td></tr>
 				
-				<tr><td>ani</td><td>aby<sup>МЕД*</sup></td><td>un.di</td><td>so, therefore</td><td>conjuction</td></tr>
+				<tr><td>anla</td><td>anlā<sup>KĒL</sup></td><td>un.di</td><td>subject moves in place, idles, fidgets</td><td>verb</td></tr>
+				<tr><td>anna</td><td>anŋā<sup>KĒL</sup></td><td>un.di</td><td>subject is swollen, bulbous, unehealthily large</td><td>verb</td></tr>
+				<tr><td>antu</td><td>antū<sup>KĒL</sup></td><td>un.di</td><td>subject flies, moves in the air</td><td>verb</td></tr>
+				<tr><td>anuna</td><td>anūña<sup>KĒL</sup></td><td>un.di</td><td>subject is blue</td><td>verb</td></tr>
+				<tr><td>anula</td><td>anūra<sup>KĒL</sup></td><td>un.di</td><td>air, breathable gas</td><td>noun</td></tr>
+				
+				<tr><td>laini</td><td>rainy<sup>eng</sup></td><td>un.di</td><td>subject is wet, either currently or habitually</td><td>verb</td></tr>
 				
 			</tbody>
 		</table>
@@ -1555,7 +1601,7 @@ words always fill the oldest break first
 	
 		<h3>A</h3>
 		<table style="text-align: left;" id="dictA">
-			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td rowspan="2">anu</td><td rowspan="2">.abu<sup>jbo</sup></td><td rowspan="2">aB.u</td><td>refers to a noun starting with a</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is owned by a noun starting with a</td><td>verb</td></tr>
@@ -1564,7 +1610,7 @@ words always fill the oldest break first
 		
 		<h3>C</h3>
 		<table style="text-align: left;" id="dictC">
-			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td rowspan="2">cli</td><td rowspan="2">gli<sup>ita</sup></td><td rowspan="2">kɹi</td><td>refers to a noun starting with c</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is owned by a noun starting with c</td><td>verb</td></tr>
@@ -1573,7 +1619,7 @@ words always fill the oldest break first
 		
 		<h3>I</h3>
 		<table style="text-align: left;" id="dictI">
-			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td rowspan="2">inu</td><td rowspan="2">.ibu<sup>jbo</sup></td><td rowspan="2">iB.u</td><td>refers to a noun starting with i</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is owned by a noun starting with i</td><td>verb</td></tr>
@@ -1582,7 +1628,7 @@ words always fill the oldest break first
 		
 		<h3>L</h3>
 		<table style="text-align: left;" id="dictL">
-			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td rowspan="2">lin</td><td rowspan="2">leen<sup>wol</sup></td><td rowspan="2">DiB</td><td>refers to a noun starting with l</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is owned by a noun starting with l</td><td>verb</td></tr>
@@ -1591,7 +1637,7 @@ words always fill the oldest break first
 		
 		<h3>N</h3>
 		<table style="text-align: left;" id="dictN">
-			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td rowspan="2">na</td><td rowspan="2">nya<sup>yuf</sup></td><td rowspan="2">Ba</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is mine, our (exclusive)</td><td>verb</td></tr>
@@ -1606,7 +1652,7 @@ words always fill the oldest break first
 		
 		<h3>P</h3>
 		<table style="text-align: left;" id="dictP">
-			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td rowspan="2">pala</td><td rowspan="2">para-<sup>eng</sup></td><td rowspan="2">pa.Da</td><td>conceptional othogonal to the verb</td><td>adverb</td></tr>
 				<tr><td class="showLeft">subject is conceptually orthogonal to how it is described</td><td>verb</td></tr>
@@ -1617,7 +1663,7 @@ words always fill the oldest break first
 		
 		<h3>T</h3>
 		<table style="text-align: left;" id="dictT">
-			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td rowspan="2">ti</td><td rowspan="2">ti<sup>jbo</sup></td><td rowspan="2">ti</td><td>refers to a noun starting with t</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is owned by a noun starting with t</td><td>verb</td></tr>
@@ -1628,7 +1674,7 @@ words always fill the oldest break first
 		
 		<h3>U</h3>
 		<table style="text-align: left;" id="dictU">
-			<thead><tr style="text-align: center;"><th>word</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
+			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
 				<tr><td rowspan="2">unu</td><td rowspan="2">.ubu<sup>jbo</sup></td><td rowspan="2">uB.u</td><td>refers to a noun starting with u</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is owned by a noun starting with u</td><td>verb</td></tr>
@@ -1667,6 +1713,9 @@ words always fill the oldest break first
 		<p>the unoffical language code <b>PPN</b> represents proto-polynesian which does not have an offical language code.</p>
 		<p>the unoffical language code <b>PIE</b> represents proto-indo-european which does not have an offical language code.</p>
 		<p>the unoffical language code <b>МЕД</b> represents interslavic which does not have an offical language code.</p>
+		<p>the unoffical language code <b>IŢK</b> represents ithkuil iii which does not have an offical language code.</p>
+		<p>the unoffical language code <b>FIT</b> represents fith which does not have an offical language code.</p>
+		<p>the unoffical language code <b>KĒL</b> represents kēlen which does not have an offical language code.</p>
 	</div>
 <script>
 function rom2ipa(word){
@@ -1900,10 +1949,12 @@ t=0
 console.log("countLangs")
 for (var key of Object.keys(Object.fromEntries(Object.entries(countLangs)))) { t=t+countLangs[key].length; }
 for (var key of Object.keys(Object.fromEntries(Object.entries(countLangs).sort(([,a],[,b]) => a.length-b.length)))) {
-    console.log(key, countLangs[key].length,countLangs[key].length/t*100)
+	if(countLangs[key].length>1){
+		console.log(key, countLangs[key].length,countLangs[key].length/t*100)
+	}
 }
-countLangs["jbo"].sort()
-console.log(countLangs["jbo"])
+//countLangs["jbo"].sort()
+//console.log(countLangs["jbo"])
 </script>
 	
 	<div class="pageBreak"></div>
