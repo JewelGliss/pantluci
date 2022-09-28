@@ -401,6 +401,12 @@
 				padding-bottom:5px;
 				margin-right:-5px !important;
 			}
+			p{
+				text-indent: 50px;
+			}
+			.unindented{
+				text-indent: 0px;
+			}
 		}
 		
 		#notARealID #Dictionary tbody tr td:nth-child(1):not(.showLeft), .pantluci{
@@ -423,15 +429,13 @@
 	<div class="pageBreak" style="margin-top:-20px;"></div>
 	<div class="printBlock">
 <pre>
-3book
-✔️ - means chapter name finalized not that the chapter is done
-1. Introduction ✔️
-   1.1 What is This Book? ✔️
-   1.2 What is in Each Chapter? ✔️
-   1.3 Conventions Used in This Book ✔️
-   1.4 Acknowledgements ✔️
-   1.5 Legal Bits ✔️
-   1.6 Works Cited ✔️
+1. Introduction
+   1.1 What is This Book?
+   1.2 What is in Each Chapter?
+   1.3 Conventions Used in This Book
+   1.4 Acknowledgements
+   1.5 Legal Bits
+   1.6 Works Cited
 2. Islands
    2.1 valid langs
    2.1 paths
@@ -442,25 +446,21 @@
 5. implications
    5.1 'universal' theories as island maps
 6. conlangs as experiments
-7. Toki Pona ✔️
-   2.1 Toki Pona Overview ✔️
-   2.2 Toki Pona's Grammar ✔️
-   2.3 Toki Pona Dictionary ✔️
-   2.4 Productivity in Toki Pona ✔️
-8. Pantluci ✔️
-   2.1 Pantluci Overview ✔️
-   2.2 Pantlucian Phonology ✔️
-   2.3 Pantlucian Orthography ✔️
-   2.4 Pantlucian Morphology ✔️
-   2.5 Pantlucian Words ✔️
-   2.6 Pantlucian Lexicalization ✔️
-   2.7 Pantlucian Sentences ✔️
-   2.8 Pantlucian Sample Text ✔️
-   2.9 Pantlucian Dictionary ✔️
-
-islands of valid langs with no ability to cross between. A is valid, B is valid, A could never evolve into B
-toki pona smoll vocab as example
-Sign languages as real world example
+7. Toki Pona
+   2.1 Toki Pona Overview
+   2.2 Toki Pona's Grammar
+   2.3 Toki Pona Dictionary
+   2.4 Productivity in Toki Pona
+8. Pantluci
+   2.1 Pantluci Overview
+   2.2 Pantlucian Phonology
+   2.3 Pantlucian Orthography
+   2.4 Pantlucian Morphology
+   2.5 Pantlucian Words
+   2.6 Pantlucian Lexicalization
+   2.7 Pantlucian Sentences
+   2.8 Pantlucian Sample Text
+   2.9 Pantlucian Dictionary
 </pre>
 	</div>
 	
@@ -494,21 +494,15 @@ conlangs direct (Lojban, toki pona, Láadan)
 		</pre>
 		<p>
 			However, long before the direct influence of these languages, a couple of languages got me hooked on the potential of what a language could be.
-			The very first one I encountered is admittedly not a conlang in the traditional usage of the word is an esoteric programming language that not only
+			The very first one I encountered is admittedly not a conlang in the traditional usage of the word is an esoteric programming language, Piet, that not only
 			avoids using text but also operates using stack manipulation. This introduction of messing with assumed standards of language by using abnormal data
 			structures is probably what lead to my interest in a breadth-first language in the first place.
-	<br><span style="font-family:PantluciSans">tutu citi niilu puu plutli</span>
-	<br><span style="font-family:PantluciSans"> Tutu Citi Niilu Puu Plutli</span>
-	<br><span style="font-family:PantluciSerif"> Tutu Citi Niilu Puu Plutli</span>
-	<br><span>tutu citi niilu puu plutli</span>
-	<br><span style="font-family:PantluciSerif">tutu citi niilu puu plutli</span>
-	<br>T<span style="font-family:PantluciSans">utu</span>C<span style="font-family:PantluciSans">iti</span>N<span style="font-family:PantluciSans">iilu</span>P<span style="font-family:PantluciSans">uu</span>P<span style="font-family:PantluciSans">lutli</span>
 		</p>
 		<p>
 			From there I found my way to Frathwiki and discovered Fith and the concepts of arithmographic languages, breifscripts, and speedtalks.
 			Breifscripts and speedtalks are languages designed to either be written or spoken faster than normal. Through the years I have thoroughly explored these
-			concepts always determining that the bottleneck on communication speed is having something to say rather than language. So if this is a solvable problem,
-			someone else will have to be the one to solve it.
+			concepts always determining that the bottleneck on communication speed is having something to say or waiting for the listener to comprehend what has been said
+			rather than language. So if this is a solvable problem, someone else will have to be the one to solve it.
 			An arithmographic language is one where words can be unambiguously converted into integers where the prime factors of that integer suggest the meaning
 			of the word. Despite numerous attempts I have yet to come to any conclusions on the practicality of this concept, it is likely my next topic to explore after Tsohci.
 			Finally, Fith is a conlang based around a stack-based data structure. In many ways, despite stack-based and breadth-first being seemingly incongruent terms,
@@ -517,9 +511,11 @@ conlangs direct (Lojban, toki pona, Láadan)
 		<p>
 			Eventually, I found my way into the worlds of Lojban, toki pona, and r/Conlangs. From there I discovered languages with 18 tones, 4 vowels, and 6 consonants,
 			languages that were designed to compress language into bytes in order to more effectively store it, mixed spoken signed languages, languages written with koi fish,
-			and so much more. Throughout all of this, I played with different ideas for my own languages: lambda calculus turned into a human language, languages with the
-			fewest possible phonemes without violating proposed universals, languages with multiple parallel streams of information, etc. few of them lasted more than a week.
-			The ones that did never lasted more than a month. Pantluci is the first language I have been truly happy with. (THINGS) So, my final shoutout is to you, whoever you are
+			languages with "stances" that change how you talk depending on how authoritative you are on the topic, and so much more. Throughout all of this, I played with different ideas for my own languages: lambda calculus turned into a human language, languages with the
+			fewest possible phonemes without violating proposed universals, languages with multiple parallel streams of information, etc. Few of them lasted more than a week.
+			The ones that did never lasted more than a month. Pantluci is the first language I have been truly happy with. It has been the source of many long nights, rabbit holes, and debates, and 
+			has probably annoyed eveyone I am close to with my ramblings a great deal.
+			So, my final shoutout is to you, whoever you are
 			reading this for taking the time to learn about what brought me so much joy.
 		</p>
 	</div>
@@ -547,6 +543,10 @@ lojban as a failed example
 natrualization of esperanto
 sign languages as natrual example of seperate island
 lingustic universals are just a map of the island
+
+islands of valid langs with no ability to cross between. A is valid, B is valid, A could never evolve into B
+toki pona smoll vocab as example
+Sign languages as real world example
 		</pre>
 	</div>
 	
@@ -655,7 +655,8 @@ is
 			</tbody>
 		</table>
 		</div>
-		<p>[n] assimilates in place of articulation to the following consonant.</p>
+		<p class="unindented">[n] assimilates in place of articulation to the following consonant.</p>
+		<p class="unindented">/ji/, /nn/, /nm/, /ti/, /wo/, and /wu/ are illegal word internally.</p>
 	</div>
 	
 	<div class="printBlock">
@@ -668,7 +669,7 @@ is
 	
 	<div class="printBlock"  id="TPDictionary">
 		<h2>Toki Pona's Dictionary</h2>
-		<p>Some entries are marked with * to denote that they have a special note which can be found at the end of the chapter.</p>
+		<p class="unindented">Some entries are marked with * to denote that they have a special note which can be found at the end of the chapter.</p>
 		<h3>A</h3>
 		<table style="text-align: left;">
 			<thead><tr style="text-align: center;"><th>word</th><th>meaning</th><th>type</th></tr></thead>
@@ -920,12 +921,12 @@ is
 	<br>
 	<div class="printBlock">
 		<h3>Notes</h3>
-		<p><b>anu</b>'s grammatical function is highly debated. A proper analysis of this word is outside the scope of this book, so it will be treated as a preposition for simplicity</p>
-		<p><b>anu seme</b> is often described as an explicit grammatical rule rather than a lexicalized phrase.</p>
-		<p><b>kijetesantakalu</b> was originally an Apirl Fool's joke that gained actual usage.</p>
-		<p><b>nanpa</b> functions similarly to a preposition, but only occuring directly attached to a content phrase.</p>
-		<p><b>oko</b> is fading out of useage at the time of writing this, being replaced by lukin.</p>
-		<p><b>ona</b> is a pronoun but does not act like mi or sina, so it is more accurate to classify it as a contentive than a preposition.</p>
+		<p class="unindented"><b>anu</b>'s grammatical function is highly debated. A proper analysis of this word is outside the scope of this book, so it will be treated as a preposition for simplicity</p>
+		<p class="unindented"><b>anu seme</b> is often described as an explicit grammatical rule rather than a lexicalized phrase.</p>
+		<p class="unindented"><b>kijetesantakalu</b> was originally an Apirl Fool's joke that gained actual usage.</p>
+		<p class="unindented"><b>nanpa</b> functions similarly to a preposition, but only occuring directly attached to a content phrase.</p>
+		<p class="unindented"><b>oko</b> is fading out of useage at the time of writing this, being replaced by lukin.</p>
+		<p class="unindented"><b>ona</b> is a pronoun but does not act like mi or sina, so it is more accurate to classify it as a contentive than a preposition.</p>
 	</div>
 	
 	<div class="printBlock">
@@ -968,17 +969,16 @@ is
 		phonology in order to allow for less repetive forms and a greater focus on aesthetics. By July 2022,
 		the language expanded into a research project exploring esoteric languages in general, with the language relegated to an example.
 		Its phonology was once again scrapped and rebuilt with a focus on filling the same purpose as the grammar.
-        </p>
+        Over the course of its devolpment it went through the names Hýyban ([çə˦.ə˨.bä˨n]), Hoóban ([çoi̯˨˦.bä˨n]), Hoóba ([çoi̯˨˦.bä˨]), Tsohci ([t͜soː.cʰi]), and now Pantluci</p>
 		<pre>
 minimal phonology
 The smallest claimed consonant inventory of any natrual language doculect is the Proto-Lakes Plain Language with a meer five (Clouse).
 If reconstructions are ignored, the smallest one is a tie between Iau, Kirikiri, and Rotokas with six (SOURCES).
 Either way this should be suffienct to show that while odd, Pantluci's consonant inventory is not unreasonable.
-Three vowel systems are common enough that they need no justification.
+Three vowel systems are common enough that they should need no justification.
 Although the combination of a small consonant and small vowel inventory may seems strange, Pirahã shares this trait at eight consonants and three vowels (SOURCE).
 This reasonable but not impossible phonology is likely something that would never evolve natrually, as any mergers that would shrink an inventory to this point likely would destroy the lexicon to an irreprable state.
 </pre>
-		<p>It went through the names Hýyban ([çə˦.ə˨.bä˨n]), Hoóban ([çoi̯˨˦.bä˨n]), Hoóba ([çoi̯˨˦.bä˨]), Tsohci ([t͜soː.cʰi]), and now Pantluci</p>
 		<p>Pantluci is intended to explore many linguistic theories that claim some form of fundamental
 		or underlying genetic language or grammar and act as a language outside of the typical lingustic universals.
 		This language violates most if not all of their proposed
@@ -1246,12 +1246,14 @@ words always fill the oldest break first
 		<h2>Pantlucian Roots Dictionary</h2>
 		<p>Some entries are marked with * to denote that they have a special note which can be found at the end of the chapter.</p>
 		<pre>IPA show mandatory allophony but not free variation</pre>
-		<pre>if unspecified the affix forms are its normal form, its normal form with the final vowel removed, then glues added in if needed, first try l then n</pre>
+		<pre>if unspecified the affix forms are its normal form</pre>
+		<pre>delete all final vowels from affixes when non final in compounds</pre>
 		<pre>if a final l of an affix would not turn syllabic when compounding, replace it with n, if that wouldnt be syllabic ???</pre>
 		<pre>names are two root compounds where the first is a noun and the second is noun or verb. first half can be used in casual speech</pre>
 		<pre>naca + plutli = naclplutli</pre>
 		<pre>nanti + plutli = nantlplutli</pre>
 		<pre>compounds are not included</pre>
+		<pre>[∅] means that the word is not used in compounds</pre>
 		
 		<table style="text-align: left;" id="toSort">
 			<thead>
@@ -1460,9 +1462,9 @@ words always fill the oldest break first
 				<tr><td>paciu</td><td>facio<sup>lat</sup></td><td>un.di</td><td>subject is composed/made/consists of object</td><td>verb</td></tr>
 				<tr><td>lanca</td><td>lenga<sup>oci</sup></td><td>un.di</td><td>tongue, mandibles, mouth manipulator</td><td>noun</td></tr>
 				<tr><td>napi</td><td>nape<sup>mri</sup></td><td>un.di</td><td>sinew, tendon, physical strength, muscle</td><td>noun</td></tr>
-				<tr><td>antu</td><td>anto<sup>pag</sup></td><td>un.di</td><td>nominal question, what thing</td><td>noun</td></tr>
-				<tr><td>laci</td><td>ܕܵܐܟ݂ܝܼ<sup>aii</sup></td><td>un.di</td><td>adverbial question, in what way</td><td>adverb</td></tr>
-				<tr><td>lunata</td><td>do&nbsp;what<sup>eng</sup></td><td>un.di</td><td>verbal question, what verb</td><td>verb</td></tr>
+				<tr><td>anta<br>[∅]</td><td>anto<sup>pag</sup></td><td>un.di</td><td>nominal question, what thing</td><td>noun</td></tr>
+				<tr><td>laci<br>[∅]</td><td>ܕܵܐܟ݂ܝܼ<sup>aii</sup></td><td>un.di</td><td>adverbial question, in what way</td><td>adverb</td></tr>
+				<tr><td>lunata<br>[∅]</td><td>do&nbsp;what<sup>eng</sup></td><td>un.di</td><td>verbal question, what verb</td><td>verb</td></tr>
 				<tr><td>ancula</td><td>እንቁላል<sup>amh</sup></td><td>un.di</td><td>egg, container holding an embryo</td><td>noun</td></tr>
 				<tr><td>cancana</td><td>قَمْقَمَة<sup>ara</sup></td><td>un.di</td><td>subject grumbles, mumbles, mutters</td><td>verb</td></tr>
 				<tr><td>luti</td><td>roti<sup>abs</sup></td><td>un.di</td><td>bread, baked cereal based dough</td><td>noun</td></tr>
@@ -1482,23 +1484,23 @@ words always fill the oldest break first
 				<tr><td>nuta</td><td>𐌼𐍉𐍄𐌰<sup>got</sup></td><td>bu.ta</td><td>tax, price, tribute, cost</td><td>noun</td></tr>
 				<!--add units of measurment-->
 				<!--toki pona, lojban, fith, laadan, speedwords, interslavic, ithkuil, kelen-->
-				<tr><td>palu</td><td>pʰal<sup>IŢK</sup></td><td>un.di</td><td>tree, branched leaved plant</td><td>noun</td></tr>
-				<tr><td>nlala</td><td>vlalêx<sup>IŢK</sup></td><td>un.di</td><td>open-topped container, cup, bowl</td><td>noun</td></tr>
-				<tr><td>anni</td><td>âmmit<sup>IŢK</sup></td><td>un.di</td><td>children, pre-adult people</td><td>noun</td></tr>
-				<tr><td>annala</td><td>amnadya<sup>IŢK</sup></td><td>un.di</td><td>subject is awe-inspiring</td><td>verb</td></tr>
-				<tr><td>anai</td><td>âbyeil<sup>IŢK</sup></td><td>un.di</td><td>dog, canine, predator known for loyalty</td><td>noun</td></tr>
-				<tr><td>inala</td><td>ivadya<sup>IŢK</sup></td><td>un.di</td><td>subject plays, is entertained</td><td>verb</td></tr>
-				<tr><td>inia</td><td>inyat<sup>IŢK</sup></td><td>un.di</td><td>subject is choosen, decided on</td><td>verb</td></tr>
-				<tr><td>nlatla</td><td>břatļ<sup>IŢK</sup></td><td>un.di</td><td>clown, professional fool</td><td>noun</td></tr>
-				<tr><td>anatlu</td><td>abjatļud<sup>IŢK</sup></td><td>un.di</td><td>eel, long finless fish</td><td>noun</td></tr>
+				<tr><td>palu</td><td>pʰal<sup>IŢK*</sup></td><td>un.di</td><td>tree, branched leaved plant</td><td>noun</td></tr>
+				<tr><td>nlala</td><td>vlalêx<sup>IŢK*</sup></td><td>un.di</td><td>open-topped container, cup, bowl</td><td>noun</td></tr>
+				<tr><td>anni</td><td>âmmit<sup>IŢK*</sup></td><td>un.di</td><td>children, pre-adult people</td><td>noun</td></tr>
+				<tr><td>annala</td><td>amnadya<sup>IŢK*</sup></td><td>un.di</td><td>subject is awe-inspiring</td><td>verb</td></tr>
+				<tr><td>anai</td><td>âbyeil<sup>IŢK*</sup></td><td>un.di</td><td>dog, canine, predator known for loyalty</td><td>noun</td></tr>
+				<tr><td>inala</td><td>ivadya<sup>IŢK*</sup></td><td>un.di</td><td>subject plays, is entertained</td><td>verb</td></tr>
+				<tr><td>inia</td><td>inyat<sup>IŢK*</sup></td><td>un.di</td><td>subject is choosen, decided on</td><td>verb</td></tr>
+				<tr><td>nlatla</td><td>břatļ<sup>IŢK*</sup></td><td>un.di</td><td>clown, professional fool</td><td>noun</td></tr>
+				<tr><td>anatlu</td><td>abjatļud<sup>IŢK*</sup></td><td>un.di</td><td>eel, long finless fish</td><td>noun</td></tr>
 				
-				<tr><td>nlain</td><td>briemh<sup>FIT</sup></td><td>un.di</td><td>dipping sauce, salsa</td><td>noun</td></tr>
-				<tr><td>nuan</td><td>bwanh<sup>FIT</sup></td><td>un.di</td><td>subject is identified, discovered, found for the first time</td><td>verb</td></tr>
-				<tr><td>luain</td><td>zwiem<sup>FIT</sup></td><td>un.di</td><td>subject is discarded, abandoned, left to rot</td><td>verb</td></tr>
-				<tr><td>nuin</td><td>mwingh<sup>FIT</sup></td><td>un.di</td><td>subject is lazy, idle, stagnant</td><td>verb</td></tr>
-				<tr><td>luin</td><td>dwimh<sup>FIT</sup></td><td>un.di</td><td>cloth, fabric</td><td>verb</td></tr>
-				<tr><td>tiai</td><td>tyie<sup>FIT</sup></td><td>un.di</td><td>ball, sphere</td><td>verb</td></tr>
-				<tr><td>tlanlan</td><td>tranlomh<sup>FIT</sup></td><td>un.di</td><td>pepper (the seasoning), pepcorns</td><td>verb</td></tr>
+				<tr><td>nlain</td><td>briemh<sup>FIT*</sup></td><td>un.di</td><td>dipping sauce, salsa</td><td>noun</td></tr>
+				<tr><td>nuan</td><td>bwanh<sup>FIT*</sup></td><td>un.di</td><td>subject is identified, discovered, found for the first time</td><td>verb</td></tr>
+				<tr><td>luain</td><td>zwiem<sup>FIT*</sup></td><td>un.di</td><td>subject is discarded, abandoned, left to rot</td><td>verb</td></tr>
+				<tr><td>nuin</td><td>mwingh<sup>FIT*</sup></td><td>un.di</td><td>subject is lazy, idle, stagnant</td><td>verb</td></tr>
+				<tr><td>luin</td><td>dwimh<sup>FIT*</sup></td><td>un.di</td><td>cloth, fabric</td><td>verb</td></tr>
+				<tr><td>tiai</td><td>tyie<sup>FIT*</sup></td><td>un.di</td><td>ball, sphere</td><td>verb</td></tr>
+				<tr><td>tlanlan</td><td>tranlomh<sup>FIT*</sup></td><td>un.di</td><td>pepper (the seasoning), pepcorns</td><td>verb</td></tr>
 				
 				<tr><td>nanlu</td><td>bandu<sup>jbo</sup></td><td>un.di</td><td>subject is defended, protected, watched over</td><td>verb</td></tr>
 				<tr><td>pinta</td><td>pinta<sup>jbo</sup></td><td>un.di</td><td>subject is flat, level, even, horizontal</td><td>verb</td></tr>
@@ -1545,7 +1547,7 @@ words always fill the oldest break first
 				<tr><td>lanpanli</td><td>lanpanzi<sup>jbo</sup></td><td>un.di</td><td>sheep, lamb, ram, ewe</td><td>noun</td></tr>
 				<tr><td>nannau</td><td>banbau<sup>jbo</sup></td><td>un.di</td><td>language, dialect, manner of communication</td><td>noun</td></tr>
 				<tr><td>pinu</td><td>pimu<sup>jbo</sup></td><td>un.di</td><td>there is one half, ½ of the subject</td><td>verb</td></tr>
-				<tr><td>li</td><td>ji<sup>jbo</sup></td><td>di</td><td>connective question, which of the things</td><td>conjunction</td></tr>
+				<tr><td>li<br>[∅]</td><td>ji<sup>jbo</sup></td><td>di</td><td>connective question, which of the things</td><td>conjunction</td></tr>
 				<tr><td>lunu</td><td>lo&nbsp;nu<sup>jbo</sup></td><td>du.bu</td><td>state, process, event, activity</td><td>noun</td></tr>
 				<tr><td>lui</td><td>doi<sup>jbo</sup></td><td>du.i</td><td>subject is the listener intended by object (default the speaker)</td><td>verb</td></tr>
 				<tr><td>nalu</td><td>cmalu<sup>jbo</sup></td><td>ba.du</td><td>subject is small, mini</td><td>verb</td></tr>
@@ -1565,7 +1567,7 @@ words always fill the oldest break first
 				<tr><td>inlu</td><td>ilo<sup>tok</sup></td><td>un.di</td><td>tool, machine, technology</td><td>noun</td></tr>
 				<tr><td>citacalu</td><td>kijetesantakalu<sup>tok</sup></td><td>un.di</td><td>raccoon, red panda, raccoon dog, racoon like animals</td><td>noun</td></tr>
 				<tr><td>inta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
-				<tr><td>nuti</td><td>wuwojiti<sup>tok*</sup></td><td>un.di</td><td>rules, regulations</td><td>noun</td></tr>
+				<tr><td>nuti</td><td>wuwojiti*<sup>tok</sup></td><td>un.di</td><td>rules, regulations</td><td>noun</td></tr>
 				<tr><td>anpa</td><td>anpa<sup>tok</sup></td><td>un.di</td><td>bottom, lower section, base</td><td>noun</td></tr>
 				<tr><td>calana</td><td>kalama<sup>tok</sup></td><td>un.di</td><td>subject is loud, noisy</td><td>verb</td></tr>
 				<tr><td>cili</td><td>kili<sup>tok</sup></td><td>un.di</td><td>fruit, vegetable, edible plantmatter</td><td>noun</td></tr>
@@ -1586,12 +1588,13 @@ words always fill the oldest break first
 				<tr><td>nlinta</td><td>britva<sup>МЕД*</sup></td><td>un.di</td><td>knife, sword, razor, blade</td><td>noun</td></tr>
 				<tr><td>nanla</td><td>nazva<sup>МЕД*</sup></td><td>un.di</td><td>word, name, title</td><td>noun</td></tr>
 				<tr><td>pitinu</td><td>piśmo<sup>МЕД*</sup></td><td>un.di</td><td>script, writing system, orthography</td><td>noun</td></tr>
+				<tr><td>lania</td><td>zemja<sup>МЕД*</sup></td><td>un.di</td><td>ground, earth, soil, land</td><td>noun</td></tr>
 				
-				<tr><td>anla</td><td>anlā<sup>KĒL</sup></td><td>un.di</td><td>subject moves in place, idles, fidgets</td><td>verb</td></tr>
-				<tr><td>anna</td><td>anŋā<sup>KĒL</sup></td><td>un.di</td><td>subject is swollen, bulbous, unehealthily large</td><td>verb</td></tr>
-				<tr><td>antu</td><td>antū<sup>KĒL</sup></td><td>un.di</td><td>subject flies, moves in the air</td><td>verb</td></tr>
-				<tr><td>anuna</td><td>anūña<sup>KĒL</sup></td><td>un.di</td><td>subject is blue</td><td>verb</td></tr>
-				<tr><td>anula</td><td>anūra<sup>KĒL</sup></td><td>un.di</td><td>air, breathable gas</td><td>noun</td></tr>
+				<tr><td>anla</td><td>anlā<sup>KĒL*</sup></td><td>un.di</td><td>subject moves in place, idles, fidgets</td><td>verb</td></tr>
+				<tr><td>anna</td><td>anŋā<sup>KĒL*</sup></td><td>un.di</td><td>subject is swollen, bulbous, unehealthily large</td><td>verb</td></tr>
+				<tr><td>antu</td><td>antū<sup>KĒL*</sup></td><td>un.di</td><td>subject flies, moves in the air</td><td>verb</td></tr>
+				<tr><td>anuna</td><td>anūña<sup>KĒL*</sup></td><td>un.di</td><td>subject is blue</td><td>verb</td></tr>
+				<tr><td>anula</td><td>anūra<sup>KĒL*</sup></td><td>un.di</td><td>air, breathable gas</td><td>noun</td></tr>
 				
 				<tr><td>laini</td><td>rainy<sup>eng</sup></td><td>un.di</td><td>subject is wet, either currently or habitually</td><td>verb</td></tr>
 				
@@ -1639,7 +1642,7 @@ words always fill the oldest break first
 		<table style="text-align: left;" id="dictN">
 			<thead><tr style="text-align: center;"><th>word&nbsp;[affix]</th><th>from</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
-				<tr><td rowspan="2">na</td><td rowspan="2">nya<sup>yuf</sup></td><td rowspan="2">Ba</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
+				<tr><td rowspan="2">na<br>[∅]</td><td rowspan="2">nya<sup>yuf</sup></td><td rowspan="2">Ba</td><td>I, me, we, us (exclusive)</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is mine, our (exclusive)</td><td>verb</td></tr>
 				<tr><td rowspan="2">nacu</td><td rowspan="2">bako<sup>bcl</sup></td><td rowspan="2">Ba.ku</td><td>not</td><td>adverb</td></tr>
 				<tr><td class="showLeft">subject is not what the subject descibes, falsely described as confirmed by object</td><td>verb</td></tr>
@@ -1667,7 +1670,7 @@ words always fill the oldest break first
 			<tbody>
 				<tr><td rowspan="2">ti</td><td rowspan="2">ti<sup>jbo</sup></td><td rowspan="2">ti</td><td>refers to a noun starting with t</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is owned by a noun starting with t</td><td>verb</td></tr>
-				<tr><td rowspan="2">tu</td><td rowspan="2">tu<sup>lat</sup></td><td rowspan="2">tu</td><td>you, y'all</td><td>noun</td></tr>
+				<tr><td rowspan="2">tu<br>[∅]</td><td rowspan="2">tu<sup>lat</sup></td><td rowspan="2">tu</td><td>you, y'all</td><td>noun</td></tr>
 				<tr><td class="showLeft">subject is your, y'all's</td><td>verb</td></tr>
 			</tbody>
 		</table>
@@ -1719,6 +1722,9 @@ words always fill the oldest break first
 	</div>
 <script>
 function rom2ipa(word){
+	if(word.includes("<")){
+		word=word.slice(0,word.indexOf("<"))
+	}
 	var debug=0;
 	var RAM=word;
 	var options=[];
@@ -1812,9 +1818,14 @@ var countAbs={};
 var countRel={};
 var countLangs={};
 var presorted="anu jbo	ti jbo	unu jbo	inu jbo	cli ita	nilu lat	tu lat	lin wol	na yuf	nacu bcl	nu ewe	pala eng	pla ljt";
+var affix=[];
 presorted=presorted.split("	");
 for (var j = 0; j < presorted.length; j++) {
 	presorted[j]=presorted[j].split(" ")
+	
+	if(presorted[j][0].includes("<")){
+		presorted[j][0]=presorted[j][0].slice(0,presorted[j][0].indexOf("<"))
+	}
 	for (var l = 0; l < presorted[j][0].length; l++) {
 		if(!(presorted[j][0][l] in countAbs)){
 			countAbs[presorted[j][0][l]]=0
@@ -1837,7 +1848,11 @@ var toSort = document.getElementById("toSort").tBodies[0].children;
 for (var j = 0; j < toSort.length; j++) {
 	var td = toSort[j].children;
 	var firstLetter=td[0].innerHTML.charAt(0).toUpperCase();
-	var lettertest=td[0].innerHTML.replaceAll("a","").replaceAll("c","").replaceAll("i","").replaceAll("l","").replaceAll("n","").replaceAll("p","").replaceAll("t","").replaceAll("u","");
+	var lettertest=td[0].innerHTML
+	if(lettertest.includes("<")){
+		lettertest=lettertest.slice(0,lettertest.indexOf("<"))
+	}
+	lettertest=lettertest.replaceAll("a","").replaceAll("c","").replaceAll("i","").replaceAll("l","").replaceAll("n","").replaceAll("p","").replaceAll("t","").replaceAll("u","");
 	if(lettertest!=""){
 		console.log("illegal letter:", td[0].innerHTML,td[3].innerHTML)
 	}
@@ -1859,16 +1874,27 @@ for (var j = 0; j < toSort.length; j++) {
 				var row = document.getElementById("dict"+firstLetter).insertRow(i+1);
 				row.innerHTML=toSort[j].innerHTML
 				total++;
-				for (var l = 0; l < td[0].innerHTML.length; l++) {
+				var word=td[0].innerHTML
+				if(word.includes("<")){
+					word=word.slice(0,word.indexOf("<"))
+				}
+				for (var l = 0; l < word.length; l++) {
 					if(!(td[0].innerHTML[l] in countAbs)){
 						countAbs[td[0].innerHTML[l]]=0
 						countRel[td[0].innerHTML[l]]=0
 					}
 					countAbs[td[0].innerHTML[l]]++
 					countRel[td[0].innerHTML[l]]=countRel[td[0].innerHTML[l]]+1/td[0].innerHTML.length
-					
-					
 				}
+				/**var aff=td[0].innerHTML
+				while("aiu".includes(aff[-1])){
+					aff=aff.slice(0,-1)
+				}
+				if(aff in affix){
+					console.log("affix error:",td[0].innerHTML,aff)
+				}
+				affix.push(aff)**/
+					
 				
 				var sups = td[1].children;
 				for (var s = 0; s < sups.length; s++) {
@@ -1901,7 +1927,11 @@ for (var j = 0; j < toSort.length; j++) {
 			var row = document.getElementById("dict"+firstLetter).insertRow(i+1);
 			row.innerHTML=toSort[j].innerHTML
 			total++;
-			for (var l = 0; l < td[0].innerHTML.length; l++) {
+			var word=td[0].innerHTML
+			if(word.includes("<")){
+				word=word.slice(0,word.indexOf("<"))
+			}
+			for (var l = 0; l < word.length; l++) {
 				if(!(td[0].innerHTML[l] in countAbs)){
 					countAbs[td[0].innerHTML[l]]=0
 					countRel[td[0].innerHTML[l]]=0
