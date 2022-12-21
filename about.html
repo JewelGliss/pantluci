@@ -361,11 +361,19 @@
 		sup{
 			margin-left:2px !important;
 		}
+		#Dictionary thead tr th, #TPDictionary thead tr th{
+			text-align:center;
+			white-space: nowrap;
+		}
 		#Dictionary tbody tr td, #TPDictionary tbody tr td{
 			text-align:center;
+			white-space: nowrap;
+			padding-left:.3em;
+			padding-right:.3em;
 		}
 		#Dictionary tbody tr td:nth-child(4),#Dictionary .showLeft, #TPDictionary tbody tr td:nth-child(2),#TPDictionary .showLeft{
 			text-align:left !important;
+			white-space: normal;
 		}
 		#Dictionary hr,#TPDictionary hr{
 			border-top-color:#CFCFCF;
@@ -662,10 +670,10 @@ is "mi pi esun suli li kama" allowed?
 	
 	<div class="printBlock">
 		<h2>Toki Pona's Grammar</h2>
-		<pre>
-		content phrases may have pi phrases after them
-		pronouns may not take pi
-		a prepositional phrase may go at the end of sentences
+		<pre>	
+		content phrases may have pi phrases after them	
+		pronouns may not take pi	
+		a prepositional phrase may go at the end of sentences	
 		li is inserted before prepositions if there is no predicate
 		</pre>
 	</div>
@@ -943,7 +951,7 @@ is "mi pi esun suli li kama" allowed?
 	<div class="pageBreak"></div>
 	<h1 class="titleBlock">
 		<span>
-			Pantluci<small> 0.8</small><br>
+			Pantluci<small> 0.9</small><br>
 			<span style="margin-top:-30px;padding-top:0px;">
 				<small>an esoteric human language<br><img src="https://dummyimage.com/640x360/eee/aaa"></small>
 			</span>
@@ -1046,21 +1054,32 @@ global etymologies
 		</table>
 		</div>
 		<p>the same realization of a phoneme may not occur twice in a row.</p>
+		
+		<p>/p/ is realized as [pʼ] before stops.</p>
+		
+		<p>/t/ is realized as either [tʼ] or [s] before stops.</p>
 		<p>/t/ may be realized as either [t], [t͡ʃ], or [s] before /i/.</p>
 		<p>/t/ is realized as [t͡ʃ] before [ɹ] or [ɹ̍].</p>
+		<p>/t/ is realized as [s] before [t].</p>
 		<p>otherwise /t/ may be realized as either [t] or [s].</p>
+		<p>/t/ may not be realized as [s] before continuants.</p>
 		
-		<p>/k/ is realized as [c] before /i/.</p>
+		<p>/k/ is realized as [kʼ].</p>
+		<p>/k/ is realized as either [c] or [ɟ] before /i/.</p>
+		<p>otherwise /k/ may be realized as either [k] or [g].</p>
 		
 		<p>/B/ may be realized as a coda when after a vowel.</p>
 		<p>/B/ is realized as [m] or [m̩] before onsets.</p>
 		<p>otherwise /B/ may be realized as either [m], [m̩], or [b].</p>
 		<p>/B/ may not be realized as syllabic after a stressed vowel.</p>
 		<p>[m] and [m̩] assimilates in place of articulation to the following consonant.</p>
+		<p>[m] assimilates to [n] after [s].</p>
+		<p>[m] dissimilates to [n] after [pʼ].</p>
 		
 		<p>/D/ may be realized as a medial onset when before a vowel and after a consonant.</p>
 		<p>/D/ is realized as [ɹ], [ɹ̍], [l], or [l̩] after other consonants in the same syllable.</p>
 		<p>otherwise /D/ may be realized as either [d], [ɹ], [ɹ̍], [l], [l̩], or [z].</p>
+		<p>/D/ is realized as [d͡ʒ] before [ɹ] or [ɹ̍].</p>
 		<p>/D/ may not be realized as syllabic before a vowel that would be stressed if /D/ was not syllabic.</p>
 		
 		<p>/a/ may be realized as either [a] or [ɑ].</p>
@@ -1070,6 +1089,8 @@ global etymologies
 		
 		<p>/u/ may be reduced to [ʊ] in unstressed syllables.</p>
 		<p>/B/, and /D/ are written as capitals due to the wide range of potential variation.</p>
+		
+		<pre>when are what phonemes allowed in a sequence for example pppa = no definitely not but why</pre>
 	</div>
 	
 	<div class="printBlock" class="Introduction">
@@ -1078,13 +1099,13 @@ global etymologies
 		<table>
 			<tbody>
 				<tr><th>letter</th><th>IPA</th><th>description</th><th>english approximation</th></tr>
-				<tr><td>a</td><td>ə~a~ɑ</td><td>non-close vowel</td><td>c<b>u</b>p, c<b>a</b>p, c<b>o</b>p</td></tr>
-				<tr><td>c</td><td>k~g~c~ɟ</td><td>dorsal plosive</td><td><b>c</b>ar, <b>k</b>ey</td></tr>
+				<tr><td>a</td><td>ɐ~a~ɑ</td><td>non-close vowel</td><td>c<b>u</b>p, c<b>a</b>p, c<b>o</b>p</td></tr>
+				<tr><td>c</td><td>k⁽ʼ⁾~g~c~ɟ</td><td>dorsal plosive or ejective</td><td><b>c</b>ar, <b>k</b>ey</td></tr>
 				<tr><td>i</td><td>i~ɪ</td><td>front close vowel</td><td><b>ea</b>t, <b>i</b>t</td></tr>
 				<tr><td>l</td><td>d~ɹ~ɹ̍~l~l̩~z~z̩</td><td>voiced coronal</td><td><b>d</b>ent, <b>r</b>ent, p<b>er</b>, <b>l</b>ent, bott<b>le</b>, <b>z</b>ap, b<b>zzz</b></td></tr>
 				<tr><td>n</td><td>m~m̩~b</td><td>voiced labial stop</td><td><b>m</b>oat, rhyth<b>m</b>, <b>b</b>oat</td></tr>
-				<tr><td>p</td><td>p</td><td>voiceless labial plosive</td><td><b>p</b>ound</td></tr>
-				<tr><td>t</td><td>t~t͡ʃ~s</td><td>voiceless alveolar</td><td><b>t</b>alk, <b>ch</b>alk</td>, <b>s</b>ulk</td></tr>
+				<tr><td>p</td><td>p⁽ʼ⁾</td><td>voiceless labial plosive or ejective</td><td><b>p</b>ound</td></tr>
+				<tr><td>t</td><td>t⁽ʼ⁾~t͡ʃ~s</td><td>voiceless alveolar</td><td><b>t</b>alk, <b>ch</b>alk</td>, <b>s</b>ulk</td></tr>
 				<tr><td>u</td><td>u~ʊ</td><td>back close vowel</td><td>p<b>oo</b>l, p<b>u</b>ll</td></tr>
 			</tbody>
 		</table>
@@ -1105,12 +1126,13 @@ Finally, it would be weird to have ⟨r⟩ and contrast ⟨n⟩ in such a small 
 		<p>Syllables in Pantluci are of the form (C)V, i.e. an optional consonant optionally followed by followed by a vowel or syllabic consonant.
 		Allophonic rules previously disccused then complicate this shape slightly. Words may be any combination of syllables with the following restrictions:</p>
 		<ul>
-			<li>the first syllable may not be the same as the second syllable</li>
+			<li>words may not end with an ejective</li>
+			<li>the first syllable ignoring ejectives may not be the same as the second syllable</li>
 			<li>the second syllable may not both begin with a vowel and have the same vowel as the previous syllable</li>
 			<li>the first syllable of a word must have a consonant unless it is followed by a syllable consisting of just a /B/</li>
-			<li>if /B/ should first be interpreted as an onset, then a coda of the preceeding syllable, then a nucleus</li>
+			<li>/B/ should first be interpreted as an onset, then a coda of the preceeding syllable, then a nucleus</li>
 			<li>if /B/ may be pronounced as a nucleus when a coda to clairify that it is not on onset, but still behaves normally</li>
-			<li>if /D/ should first be interpreted as an intial onset, then a medial onset, then a nucleus</li>
+			<li>/D/ should first be interpreted as an intial onset, then a medial onset, then a nucleus</li>
 			<li>stress rests on the first syllable</li>
 		</ul>
 		<p>Words in Pantluci undergo a single morphological process in order to denote the gramatical structure of the sentence.
@@ -1119,6 +1141,7 @@ Finally, it would be weird to have ⟨r⟩ and contrast ⟨n⟩ in such a small 
 			<li>reduplicate the vowel of the first syllable immediately after it, then if it has a /b/ coda, move it to the new syllable.</li>
 			<li>undo the previous step and fully reduplicate the first syllable immediately after it</li>
 		</ol>
+		<pre>dont ignore (C(l))V(n) but ignore anything past that like the t in tna</pre>
 		<table class="gloss" style="width:100%">
 			<tbody>
 				<tr>
@@ -1243,12 +1266,13 @@ pronouns may either act like nouns, or verbs that denote possetion
 		<pre>IPA show mandatory allophony but not free variation</pre>
 		<pre>if unspecified the affix forms are its normal form</pre>
 		<pre>delete all final vowels from affixes when non final in compounds then add an "l"</pre>
-		<pre>if a final l of an affix would not turn syllabic or would cause the first two syllables to be the same when compounding, replace it with n, if that wouldnt be syllabic add p</pre>
+		<pre>if a final l of an affix would not turn syllabic or would cause the first two syllables to be the same when compounding, replace it with n, if that wouldnt be syllabic add p. if that would create a "VnnpV" sequence change it to "VnlpV"</pre>
 		<pre>names are two root compounds where the first is a noun and the second is noun or verb. first half can be used in casual speech</pre>
 		<pre>naca + plutli = naclplutli</pre>
 		<pre>nanti + plutli = nantlplutli</pre>
 		<pre>compounds are not included</pre>
 		<pre>[∅] means that the word is not used in compounds</pre>
+		<pre>numbers 11 - 99 are compounds bijective base 10, 0 = nacu</pre>
 		
 		<table style="text-align: left;" id="toSort">
 			<thead>
@@ -1259,127 +1283,6 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<!--
 				<tr><td>naclplutli</td><td>naca + plutli<sup>test</sup></td><td>cin.Da</td><td>test</td><td>test</td></tr>
 				<tr><td>nantlplutli</td><td>nanti + plutli<sup>test</sup></td><td>cin.Da</td><td>test</td><td>test</td></tr>
-				-->
-				
-				<!--<tr><td>untla</td><td>onze<sup>fro</sup></td><td>(ʔ)un.t͡ʃɹa</td><td>there is eleven, 11 of the subject</td><td>verb</td></tr>
-				<tr><td>lulatlin</td><td>duodecim<sup>lat</sup></td><td>Du.Da.t͡ʃɹiB</td><td>there is twelve, 12 of the subject</td><td>verb</td></tr>
-				<tr><td>tlala</td><td>treze<sup>fro</sup></td><td>t͡ʃɹa.Da</td><td>there is thirteen, 13 of the subject</td><td>verb</td></tr>
-				<tr><td>catu</td><td>quatorze<sup>fra</sup></td><td>ka.tu</td><td>there is fourteen, 14 of the subject</td><td>verb</td></tr>
-				<tr><td>cinla</td><td>quinze<sup>frm</sup></td><td>cin.Da</td><td>there is fifteen, 15 of the subject</td><td>verb</td></tr>
-				<tr><td>tala</td><td>seze<sup>frm</sup></td><td>ta.Da</td><td>there is sixteen, 16 of the subject</td><td>verb</td></tr>
-				<tr><td>lita</td><td>dix-sept<sup>fra</sup></td><td>Di.ta</td><td>there is seventeen, 17 of the subject</td><td>verb</td></tr>
-				<tr><td>lilui</td><td>dix-huit<sup>fra</sup></td><td>Di.Du.i</td><td>there is eightteen, 18 of the subject</td><td>verb</td></tr>
-				<tr><td>linlu</td><td>dix-neuf<sup>fra</sup></td><td>Din.Du</td><td>there is nineteen, 19 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>nitlinti</td><td>viginti<sup>lat</sup></td><td>Bi.t͡ʃɹin.ti</td><td>there is twenty, 20 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>nantun</td><td>vingt-et-un<sup>fra</sup></td><td>Ban.tun</td><td>there is twenty-one, 21 of the subject</td><td>verb</td></tr>
-				<tr><td>nantlu</td><td>vingt-deux<sup>fra</sup></td><td>Ban.t͡ʃɹu</td><td>there is twenty-two, 22 of the subject</td><td>verb</td></tr>
-				<tr><td>nantlua</td><td>vingt-trois<sup>fra</sup></td><td>Ban.t͡ʃɹu.a</td><td>there is twenty-three, 23 of the subject</td><td>verb</td></tr>
-				<tr><td>nanca</td><td>vingt-quatre<sup>fra</sup></td><td>Baŋ.ka</td><td>there is twenty-four, 24 of the subject</td><td>verb</td></tr>
-				<tr><td>nantan</td><td>vingt-cinq<sup>fra</sup></td><td>Ban.taB</td><td>there is twenty-five, 25 of the subject</td><td>verb</td></tr>
-				<tr><td>nanti</td><td>vingt-six<sup>fra</sup></td><td>Ban.ti</td><td>there is twenty-six, 26 of the subject</td><td>verb</td></tr>
-				<tr><td>nanta</td><td>vingt-sept<sup>fra</sup></td><td>Ban.ta</td><td>there is twenty-seven, 27 of the subject</td><td>verb</td></tr>
-				<tr><td>nantui</td><td>vingt-huit<sup>fra</sup></td><td>Ban.tu.i</td><td>there is twenty-eight, 28 of the subject</td><td>verb</td></tr>
-				<tr><td>nannu</td><td>vingt-neuf<sup>fra</sup></td><td>Bam.bu</td><td>there is twebty-nine, 29 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>tlicinta</td><td>triginta<sup>lat</sup></td><td>t͡ʃɹi.cin.ta</td><td>there is thirty, 30 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>tlantun</td><td>trente-et-un<sup>fra</sup></td><td>t͡ʃɹan.tuB</td><td>there is thirty-one, 31 of the subject</td><td>verb</td></tr>
-				<tr><td>tlantlu</td><td>trente-deux<sup>fra</sup></td><td>t͡ʃɹan.t͡ʃɹu</td><td>there is thirty-two, 32 of the subject</td><td>verb</td></tr>
-				<tr><td>tlantlua</td><td>trente-trois<sup>fra</sup></td><td>t͡ʃɹan.t͡ʃɹu.a</td><td>there is thirty-three, 33 of the subject</td><td>verb</td></tr>
-				<tr><td>tlanca</td><td>trente-quatre<sup>fra</sup></td><td>t͡ʃɹaŋ.ka</td><td>there is thirty-four, 34 of the subject</td><td>verb</td></tr>
-				<tr><td>tlantan</td><td>trente-cinq<sup>fra</sup></td><td>t͡ʃɹan.taB</td><td>there is thirty-five, 35 of the subject</td><td>verb</td></tr>
-				<tr><td>tlanti</td><td>trente-six<sup>fra</sup></td><td>t͡ʃɹan.ti</td><td>there is thirty-six, 36 of the subject</td><td>verb</td></tr>
-				<tr><td>tlanta</td><td>trente-sept<sup>fra</sup></td><td>t͡ʃɹan.ta</td><td>there is thirty-seven, 37 of the subject</td><td>verb</td></tr>
-				<tr><td>tlantui</td><td>trente-huit<sup>fra</sup></td><td>t͡ʃɹan.tu.i</td><td>there is thirty-eight, 38 of the subject</td><td>verb</td></tr>
-				<tr><td>tlannu</td><td>trente-neuf<sup>fra</sup></td><td>t͡ʃɹam.bu</td><td>there is thirty-nine, 39 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>callacinta</td><td>quadraginta<sup>lat</sup></td><td>ka.Dan.ta</td><td>there is fourty, 40 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>calantun</td><td>quarante-et-un<sup>fra</sup></td><td>ka.Dan.tuB</td><td>there is fourty-one, 41 of the subject</td><td>verb</td></tr>
-				<tr><td>calantlu</td><td>quarante-deux<sup>fra</sup></td><td>ka.Dan.t͡ʃɹu</td><td>there is fourty-two, 42 of the subject</td><td>verb</td></tr>
-				<tr><td>calantlua</td><td>quarante-trois<sup>fra</sup></td><td>ka.Dan.t͡ʃɹu.a</td><td>there is fourty-three, 43 of the subject</td><td>verb</td></tr>
-				<tr><td>calanca</td><td>quarante-quatre<sup>fra</sup></td><td>ka.Daŋ.ka</td><td>there is fourty-four, 44 of the subject</td><td>verb</td></tr>
-				<tr><td>calantan</td><td>quarante-cinq<sup>fra</sup></td><td>ka.Dan.taB</td><td>there is fourty-five, 45 of the subject</td><td>verb</td></tr>
-				<tr><td>calanti</td><td>quarante-six<sup>fra</sup></td><td>ka.Dan.ti</td><td>there is fourty-six, 46 of the subject</td><td>verb</td></tr>
-				<tr><td>calanta</td><td>quarante-sept<sup>fra</sup></td><td>ka.Dan.ta</td><td>there is fourty-seven, 47 of the subject</td><td>verb</td></tr>
-				<tr><td>calantui</td><td>quarante-huit<sup>fra</sup></td><td>ka.Dan.tu.i</td><td>there is fourty-eight, 48 of the subject</td><td>verb</td></tr>
-				<tr><td>calannu</td><td>quarante-neuf<sup>fra</sup></td><td>ka.Dam.bu</td><td>there is fourty-nine, 49 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>tancan</td><td>cinquante<sup>fra</sup></td><td>taŋ.kaB</td><td>there is fifty, 50 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>tancantun</td><td>cinquante-et-un<sup>fra</sup></td><td>taŋ.kan.tuB</td><td>there is fifty-one, 51 of the subject</td><td>verb</td></tr>
-				<tr><td>tancantlu</td><td>cinquante-deux<sup>fra</sup></td><td>taŋ.kan.t͡ʃɹu</td><td>there is fifty-two, 52 of the subject</td><td>verb</td></tr>
-				<tr><td>tancantlua</td><td>cinquante-trois<sup>fra</sup></td><td>taŋ.kan.t͡ʃɹu.a</td><td>there is fifty-three, 53 of the subject</td><td>verb</td></tr>
-				<tr><td>tancanca</td><td>cinquante-quatre<sup>fra</sup></td><td>taŋ.kaŋ.ka</td><td>there is fifty-four, 54 of the subject</td><td>verb</td></tr>
-				<tr><td>tancantan</td><td>cinquante-cinq<sup>fra</sup></td><td>taŋ.kan.taB</td><td>there is fifty-five, 55 of the subject</td><td>verb</td></tr>
-				<tr><td>tancanti</td><td>cinquante-six<sup>fra</sup></td><td>taŋ.kan.ti</td><td>there is fifty-six, 56 of the subject</td><td>verb</td></tr>
-				<tr><td>tancanta</td><td>cinquante-sept<sup>fra</sup></td><td>taŋ.kan.ta</td><td>there is fifty-seven, 57 of the subject</td><td>verb</td></tr>
-				<tr><td>tancantui</td><td>cinquante-huit<sup>fra</sup></td><td>taŋ.kan.tu.i</td><td>there is fifty-eight, 58 of the subject</td><td>verb</td></tr>
-				<tr><td>tancannu</td><td>cinquante-neuf<sup>fra</sup></td><td>taŋ.kam.bu</td><td>there is fifty-nine, 59 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>tuatan</td><td>soixante<sup>fra</sup></td><td>tu.a.taB</td><td>there is sixty, 60 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>tuatantun</td><td>soixante-et-un<sup>fra</sup></td><td>tu.a.tan.tuB</td><td>there is sixty-one, 61 of the subject</td><td>verb</td></tr>
-				<tr><td>tuatantlu</td><td>soixante-deux<sup>fra</sup></td><td>tu.a.tan.t͡ʃɹu</td><td>there is sixty-two, 62 of the subject</td><td>verb</td></tr>
-				<tr><td>tuatantlua</td><td>soixante-trois<sup>fra</sup></td><td>tu.a.t͡ʃɹu.a</td><td>there is sixty-three, 63 of the subject</td><td>verb</td></tr>
-				<tr><td>tuatanca</td><td>soixante-quatre<sup>fra</sup></td><td>tu.a.taŋ.ka</td><td>there is sixty-four, 64 of the subject</td><td>verb</td></tr>
-				<tr><td>tuatantan</td><td>soixante-cinq<sup>fra</sup></td><td>tu.a.tan.taB</td><td>there is sixty-five, 65 of the subject</td><td>verb</td></tr>
-				<tr><td>tuatanti</td><td>soixante-six<sup>fra</sup></td><td>tu.a.tan.ti</td><td>there is sixty-six, 66 of the subject</td><td>verb</td></tr>
-				<tr><td>tuatanta</td><td>soixante-sept<sup>fra</sup></td><td>tu.a.tan.ta</td><td>there is sixty-seven, 67 of the subject</td><td>verb</td></tr>
-				<tr><td>tuatantui</td><td>soixante-huit<sup>fra</sup></td><td>tu.a.tan.tu.i</td><td>there is sixty-eight, 68 of the subject</td><td>verb</td></tr>
-				<tr><td>tuatannu</td><td>soixante-neuf<sup>fra</sup></td><td>tu.a.tam.bu</td><td>there is sixty-nine, 69 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>tapan</td><td>septante<sup>fra</sup></td><td>ta.paB</td><td>there is seventy, 70 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>tapantun</td><td>septante-et-un<sup>fra</sup></td><td>ta.pan.tuB</td><td>there is seventy-one, 71 of the subject</td><td>verb</td></tr>
-				<tr><td>tapantlu</td><td>septante-deux<sup>fra</sup></td><td>ta.pan.t͡ʃɹu</td><td>there is seventy-two, 72 of the subject</td><td>verb</td></tr>
-				<tr><td>tapantlua</td><td>septante-trois<sup>fra</sup></td><td>ta.pan.t͡ʃɹu.a</td><td>there is seventy-three, 73 of the subject</td><td>verb</td></tr>
-				<tr><td>tapanca</td><td>septante-quatre<sup>fra</sup></td><td>ta.paŋ.ka</td><td>there is seventy-four, 74 of the subject</td><td>verb</td></tr>
-				<tr><td>tapantan</td><td>septante-cinq<sup>fra</sup></td><td>ta.pan.taB</td><td>there is seventy-five, 75 of the subject</td><td>verb</td></tr>
-				<tr><td>tapanti</td><td>septante-six<sup>fra</sup></td><td>ta.pan.ti</td><td>there is seventy-six, 76 of the subject</td><td>verb</td></tr>
-				<tr><td>tapanta</td><td>septante-sept<sup>fra</sup></td><td>ta.pan.ta</td><td>there is seventy-seven, 77 of the subject</td><td>verb</td></tr>
-				<tr><td>tapantui</td><td>septante-huit<sup>fra</sup></td><td>ta.pan.tu.i</td><td>there is seventy-eight, 78 of the subject</td><td>verb</td></tr>
-				<tr><td>tapannu</td><td>septante-neuf<sup>fra</sup></td><td>ta.pam.bu</td><td>there is seventy-nine, 79 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>nitan</td><td>huitante<sup>fra</sup></td><td>Bi.taB</td><td>there is eighty, 80 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>nitantun</td><td>huitante-et-un<sup>fra</sup></td><td>Bi.tan.tuB</td><td>there is eighty-one, 81 of the subject</td><td>verb</td></tr>
-				<tr><td>nitantlu</td><td>huitante-deux<sup>fra</sup></td><td>Bi.tan.t͡ʃɹu</td><td>there is eighty-two, 82 of the subject</td><td>verb</td></tr>
-				<tr><td>nitantlua</td><td>huitante-trois<sup>fra</sup></td><td>Bi.tan.t͡ʃɹu.a</td><td>there is eighty-three, 83 of the subject</td><td>verb</td></tr>
-				<tr><td>nitanca</td><td>huitante-quatre<sup>fra</sup></td><td>Bi.taŋ.ka</td><td>there is eighty-four, 84 of the subject</td><td>verb</td></tr>
-				<tr><td>nitantan</td><td>huitante-cinq<sup>fra</sup></td><td>Bi.tan.taB</td><td>there is eighty-five, 85 of the subject</td><td>verb</td></tr>
-				<tr><td>nitanti</td><td>huitante-six<sup>fra</sup></td><td>Bi.tan.ti</td><td>there is eighty-six, 86 of the subject</td><td>verb</td></tr>
-				<tr><td>nitanta</td><td>huitante-sept<sup>fra</sup></td><td>Bi.tan.ta</td><td>there is eighty-seven, 87 of the subject</td><td>verb</td></tr>
-				<tr><td>nitantui</td><td>huitante-huit<sup>fra</sup></td><td>Bi.tan.tu.i</td><td>there is eighty-eight, 88 of the subject</td><td>verb</td></tr>
-				<tr><td>nitannu</td><td>huitante-neuf<sup>fra</sup></td><td>Bi.tam.bu</td><td>there is eighty-nine, 89 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>nunan</td><td>nonante<sup>fra</sup></td><td>Bu.BaB</td><td>there is ninety, 90 of the subject</td><td>verb</td></tr>
-				
-				<tr><td>nunantun</td><td>nonante-et-un<sup>fra</sup></td><td>Bu.Ban.tuB</td><td>there is ninety-one, 91 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantlu</td><td>nonante-deux<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu</td><td>there is ninety-two, 92 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantlua</td><td>nonante-trois<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu.a</td><td>there is ninety-three, 93 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanca</td><td>nonante-quatre<sup>fra</sup></td><td>Bu.Baŋ.ka</td><td>there is ninety-four, 94 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantan</td><td>nonante-cinq<sup>fra</sup></td><td>Bu.Ban.taB</td><td>there is ninety-five, 95 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanti</td><td>nonante-six<sup>fra</sup></td><td>Bu.Ban.ti</td><td>there is ninety-six, 96 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanta</td><td>nonante-sept<sup>fra</sup></td><td>Bu.Ban.ta</td><td>there is ninety-seven, 97 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantui</td><td>nonante-huit<sup>fra</sup></td><td>Bu.Ban.tu.i</td><td>there is ninety-eight, 98 of the subject</td><td>verb</td></tr>
-				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>Bu.Bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>
-				<tr><td>unlliliun</td><td>unlli<sup>*</sup><hr>niliun<sup>*</sup></td><td>(ʔ)un.dɹi.Di.uB</td><td>one hundred million, 100,000,000 of something</td><td>noun</td></tr>
-				
-				<tr><td>nunanca</td><td>nonante-quatre<sup>fra</sup></td><td>Bu.Baŋ.ka</td><td>there is ninety-fou, 94 of the subject</td><td>verb</td></tr>
-				<tr><td>nitannu</td><td>huitante-neuf<sup>fra</sup></td><td>Bi.tam.bu</td><td>there is eighty-nine, 89 of the subject</td><td>verb</td></tr>
-				<tr><td>nitantui</td><td>huitante-huit<sup>fra</sup></td><td>Bi.tan.tu.i</td><td>there is eighty-eight, 88 of the subject</td><td>verb</td></tr>
-				<tr><td>nunannu</td><td>nonante-neuf<sup>fra</sup></td><td>Bu.Bam.bu</td><td>there is ninety-nine, 99 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanta</td><td>nonante-sept<sup>fra</sup></td><td>Bu.Ban.ta</td><td>there is ninety-seven, 97 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantan</td><td>nonante-cinq<sup>fra</sup></td><td>Bu.Ban.taB</td><td>there is ninety-five, 95 of the subject</td><td>verb</td></tr>
-				<tr><td>nunanti</td><td>nonante-six<sup>fra</sup></td><td>Bu.Ban.ti</td><td>there is ninety-six, 96 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantlu</td><td>nonante-deux<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu</td><td>there is ninety-two, 92 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantlua</td><td>nonante-trois<sup>fra</sup></td><td>Bu.Ban.t͡ʃɹu.a</td><td>there is ninety-three, 93 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantui</td><td>nonante-huit<sup>fra</sup></td><td>Bu.Ban.tu.i</td><td>there is ninety-eight, 98 of the subject</td><td>verb</td></tr>
-				<tr><td>nunantun</td><td>nonante-et-un<sup>fra</sup></td><td>Bu.Ban.tuB</td><td>there is ninety-one, 91 of the subject</td><td>verb</td></tr>
-				<tr><td>nunan</td><td>nonante<sup>fra</sup></td><td>Bu.BaB</td><td>there is ninety, 90 of the subject</td><td>verb</td></tr>
 				-->
 				
 				<tr><td>una</td><td>*h₁óyneh₂<sup>PIE*</sup></td><td>(ʔ)uB.a</td><td>there is one, 1 of the subject</td><td>verb</td></tr>
@@ -1396,7 +1299,7 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<tr><td>unlli</td><td>hundred<sup>eng</sup></td><td>(ʔ)un.dɹi</td><td>one hundred, 100 of something</td><td>noun</td></tr>
 				<tr><td>tunan</td><td><span class="mnc">ᡨᡠᠮᡝᠨ</span><sup>mnc</sup></td><td>tu.BaB</td><td>ten thousand, 10,000 of something</td><td>noun</td></tr>
 				<tr><td>niliun</td><td>milione<sup>ita</sup></td><td>Bi.Di.uB</td><td>one million, 1,000,000 of something</td><td>noun</td></tr>
-				<tr><td>an</td><td>and<sup>eng</sup></td><td>aB</td><td>and</td><td>conjunction</td></tr>
+				<tr><td>an<br>[∅]</td><td>and<sup>eng</sup></td><td>aB</td><td>and</td><td>conjunction</td></tr>
 				<tr><td>cai</td><td>kay<sup>qwc</sup></td><td>ka.i</td><td>subject is equal, equivalent to, is the same as object<br>used to nominalize or verbalize in compounds</td><td>verb</td></tr>
 				<tr><td>can</td><td>kam<sup>sqi</sup></td><td>kaB</td><td>subject is had, held, carried, contained, owned by object</td><td>verb</td></tr>
 				<tr><td>capu</td><td>kapı<sup>tur</sup></td><td>ka.pu</td><td>door, gate, curtains, things that have the primary function of either being open or closed</td><td>noun</td></tr>
@@ -1424,7 +1327,7 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<tr><td>nican</td><td>مِكْتَاب‎<sup>ara</sup></td><td>bi.kab</td><td>keyboard, typewritter</td><td>noun</td></tr>
 				<tr><td>nita</td><td>เมตตา<sup>tha</sup></td><td>bi.ta</td><td>mercy, kindness, empathy, compassion</td><td>noun</td></tr>
 				<tr><td>nitlu</td><td>水<sup>jpn</sup></td><td>bi.t͡ʃɹu</td><td>water, typically drinkable</td><td>noun</td></tr>
-				<tr><td>nli<br>[nuli]</td><td>ndi<sup>gug</sup></td><td>bɹi</td><td>subject is with, in the company of object</td><td>verb</td></tr>
+				<tr><td>nli<br>[nuli]</td><td>ndi<sup>gug</sup></td><td>bɹi</td><td>subject is with, beside, next to, in the company of object</td><td>verb</td></tr>
 				<tr><td>nui<br>[∅]</td><td>mui<sup>dlm</sup></td><td>bu.i</td><td>subject defies expections, is unlike others, marks focus due to contrariness</td><td>verb</td></tr>
 				<tr><td>pana</td><td>פָּנָה<sup>heb</sup></td><td>pa.ba</td><td>subject faces, adresses, is turned to object</td><td>verb</td></tr>
 				<tr><td>patla</td><td>పచ్చ<sup>tel</sup></td><td>pa.t͡ʃɹa</td><td>subject is leaf colored, somewhere from green to yellow, chartreuse</td><td>verb</td></tr>
@@ -1523,18 +1426,19 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<tr><td>nlilu</td><td>mrilu<sup>jbo</sup></td><td>un.di</td><td>subject is mailed, posted</td><td>verb</td></tr>
 				<tr><td>panli</td><td>panzi<sup>jbo</sup></td><td>un.di</td><td>child, offspring, decendent</td><td>noun</td></tr>
 				<tr><td>lunti</td><td>zunti<sup>jbo</sup></td><td>un.di</td><td>subject is hindered, disrupted</td><td>verb</td></tr>
-				<tr><td>pinli</td><td>pindi<sup>jbo</sup></td><td>un.di</td><td>subject is poor, impoverished, lacking</td><td>verb</td></tr>
+				<tr><td>llatlau</td><td>zdacau<sup>jbo</sup></td><td>un.di</td><td>subject is poor, impoverished, lacking</td><td>verb</td></tr>
 				<tr><td>pinpau</td><td>pinpau<sup>jbo</sup></td><td>un.di</td><td>row, rank, horizontal placement</td><td>noun</td></tr>
 				<tr><td>cinpau</td><td>kinpau<sup>jbo</sup></td><td>un.di</td><td>episode, one unit of a numbered blocked timescale</td><td>noun</td></tr>
 				<tr><td>lanpanli</td><td>lanpanzi<sup>jbo</sup></td><td>un.di</td><td>sheep, lamb, ram, ewe</td><td>noun</td></tr>
 				<tr><td>nannau</td><td>banbau<sup>jbo</sup></td><td>un.di</td><td>language, dialect, manner of communication</td><td>noun</td></tr>
-				<tr><td>pinu</td><td>pimu<sup>jbo</sup></td><td>un.di</td><td>there is one half, ½ of the subject</td><td>verb</td></tr>
+				<tr><td>piula</td><td>fi'ure<sup>jbo</sup></td><td>un.di</td><td>there is one half, ½ of the subject</td><td>verb</td></tr>
 				<tr><td>li<br>[∅]</td><td>ji<sup>jbo</sup></td><td>di</td><td>connective question, which of the things</td><td>conjunction</td></tr>
 				<tr><td>lunu</td><td>lo&nbsp;nu<sup>jbo</sup></td><td>du.bu</td><td>state, process, event, activity</td><td>noun</td></tr>
 				<tr><td>lui<br>[∅]</td><td>doi<sup>jbo</sup></td><td>du.i</td><td>subject is the listener intended by object (default the speaker)</td><td>verb</td></tr>
 				<tr><td>nalu</td><td>cmalu<sup>jbo</sup></td><td>ba.du</td><td>subject is small, mini</td><td>verb</td></tr>
 				<tr><td>unli</td><td>xunre<sup>jbo</sup></td><td>un.di</td><td>subject is red/crimson/ruddy</td><td>verb</td></tr>
-				<tr><td>tillu</td><td>tilju<sup>jbo</sup></td><td>un.di</td><td>subject is heavy, weighty, large in mass, weight</td><td>verb</td></tr>
+				<tr><td>tillu</td><td>tilju<sup>jbo</sup></td><td>un.di</td><td>subject is heavy, weighty, large in mass, weight</td>
+				<tr><td>latti</td><td>dacti<sup>jbo</sup></td><td>un.di</td><td>something physical, an object</td><td>noun</td></tr>
 				
 				<tr><td>inaci</td><td>jaki<sup>tok</sup></td><td>ci.Bu</td><td>trash, waste, non-useful byproduct</td><td>noun</td></tr>
 				<tr><td>cala</td><td>kala<sup>tok</sup></td><td>ka.Da</td><td>fish, animal with gills</td><td>noun</td></tr>
@@ -1546,7 +1450,7 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<tr><td>n<br>[∅]</td><td>n<sup>tok</sup></td><td>m̩</td><td>umm, uhh, thinking noise</td><td>none</td></tr>
 				<tr><td>inlu</td><td>ilo<sup>tok</sup></td><td>un.di</td><td>tool, machine, technology</td><td>noun</td></tr>
 				<tr><td>citacalu</td><td>kijetesantakalu<sup>tok</sup></td><td>un.di</td><td>raccoon, red panda, raccoon dog, racoon like animals</td><td>noun</td></tr>
-				<tr><td>inta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
+				<tr><td>intta</td><td>insa<sup>tok</sup></td><td>un.di</td><td>inside, internals, organs</td><td>noun</td></tr>
 				<tr><td>anpa</td><td>anpa<sup>tok</sup></td><td>un.di</td><td>bottom, lower section, base</td><td>noun</td></tr>
 				<tr><td>calana</td><td>kalama<sup>tok</sup></td><td>un.di</td><td>subject is loud, noisy</td><td>verb</td></tr>
 				<tr><td>cili</td><td>kili<sup>tok</sup></td><td>un.di</td><td>fruit, vegetable, edible plantmatter</td><td>noun</td></tr>
@@ -1570,7 +1474,6 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<tr><td>linia</td><td>zemja<sup>МЕД*</sup></td><td>un.di</td><td>ground, earth, soil, land</td><td>noun</td></tr>
 				<tr><td>llanu</td><td>zdrav<sup>МЕД*</sup></td><td>un.di</td><td>subject is greeted, welcome, farewelled</td><td>verb</td></tr>
 				
-				<tr><td>anla</td><td>anlā<sup>KĒL*</sup></td><td>un.di</td><td>subject moves in place, idles, fidgets</td><td>verb</td></tr>
 				<tr><td>anca</td><td>anŋā<sup>KĒL*</sup></td><td>un.di</td><td>subject is swollen, bulbous, unehealthily large</td><td>verb</td></tr>
 				<tr><td>antu</td><td>antū<sup>KĒL*</sup></td><td>un.di</td><td>subject flies, moves in the air</td><td>verb</td></tr>
 				<tr><td>anuna</td><td>anūña<sup>KĒL*</sup></td><td>un.di</td><td>subject is blue</td><td>verb</td></tr>
@@ -1606,11 +1509,11 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<tr><td>anta<br>[∅]</td><td>anto<sup>pag</sup></td><td>un.di</td><td>nominal question, what thing</td><td>pronoun</td></tr>
 				
 				<tr><td>pataca</td><td>fhtagn<sup>*</sup></td><td>un.di</td><td>subject is in statis, waits, dreams</td><td>verb</td></tr>
-				<!-->lexmber 2022<-->
-				<!-->freinds of the schwa<-->
+					
 				<tr><td>nacapu</td><td>makpu<sup>jbo</sup></td><td>un.di</td><td>hat, crown, headgear, helmet</td><td>noun</td></tr>
-				<!-->already have cili<-->
-				<!-->r/conlangs<-->
+				<tr><td>tnaila</td><td>snail<sup>eng</sup></td><td>un.di</td><td>boneless creature</td><td>noun</td></tr>
+				<tr><td>llicla</td><td>djigle<sup>jbo</sup></td><td>un.di</td><td>subject is lusted after by object</td><td>verb</td></tr>
+				
 			</tbody>
 		</table>
 				
@@ -1741,22 +1644,21 @@ function rom2ipa(word){
 	while("aiu".includes(affixCurr.slice(-1))&&affixCurr.length>0){
 		affixCurr=affixCurr.slice(0,-1)
 	}
-	if(affixCurr!="∅"){
-		if("aiu".includes(affixCurr.slice(0,1))&&affixCurr.length>0){
-			//affixCurr="p"+affixCurr
-			if(affixesSeen.includes("p"+affixCurr)){
-				console.log("ERR: seen affix",affixCurr)
-			}
-			affixesSeen.push("p"+affixCurr)
+	if(affixCurr!="∅"){	
+		if("aiu".includes(affixCurr.slice(0,1))&&affixCurr.length>0){	
+			//affixCurr="p"+affixCurr	
+			if(affixesSeen.includes("p"+affixCurr)){	
+				console.log("ERR: seen affix",affixCurr)	
+			}	
+			affixesSeen.push("p"+affixCurr)	
 		}
-		
 		if(affixesSeen.includes(affixCurr)){
 			console.log("ERR: seen affix",affixCurr)
-		}//else if(affixCurr.slice(-1)=="l"){
-		//	if(affixCurr.length>1&&"ptcnl".includes(affixCurr.slice(-2,-1))){
-		//		//console.log("idk",affixCurr)
-		//	}
-		//}
+		}else if(affixCurr.slice(-1)=="l"){
+			if(affixCurr.length>1&&"ptcnl".includes(affixCurr.slice(-2,-1))){
+				//console.log("idk",affixCurr)
+			}
+		}
 		affixesSeen.push(affixCurr)
 		//console.log(affixCurr,word)
 		if(true){
@@ -1857,6 +1759,16 @@ function rom2ipa(word){
 	//[m] and [m̩] assimilates in place of articulation to the following consonant.
 	RAM=RAM.replaceAll("m̩.p","m̩.p").replaceAll("m̩.t","n̩.t").replaceAll("m̩.k","ŋ̍.k").replaceAll("m̩.c","ɲ̩.c").replaceAll("m̩.B","m̩.b").replaceAll("m̩.D","n̩.D")
 	RAM=RAM.replaceAll("B.p","m.p").replaceAll("B.t","n.t").replaceAll("B.k","ŋ.k").replaceAll("B.c","ɲ.c").replaceAll("B.B","m.b").replaceAll("B.D","n.D").replaceAll("B.d","n.d")
+	
+	RAM=RAM.replaceAll("p.","pʼ")
+	RAM=RAM.replaceAll("t.","tʼ")
+	RAM=RAM.replaceAll("c.","cʼ")
+	
+	RAM=RAM.replaceAll("dɹ","d͡ʒɹ")
+	RAM=RAM.replaceAll("tt","st")
+	RAM=RAM.replaceAll("pʼB","pʼn")
+	
+	
 	/**word=word.replaceAll("c","k").replaceAll("n","B").replaceAll("l","D")
 	///k/ is realized as [c] before /i/.
 	word=word.replaceAll("ki","ci")
@@ -2051,13 +1963,17 @@ for (var key of Object.keys(Object.fromEntries(Object.entries(countRel).sort(([,
     console.log(key, countRel[key],countRel[key]/t*100)
 }
 t=0
+var otherLangs=0
 console.log("countLangs")
 for (var key of Object.keys(Object.fromEntries(Object.entries(countLangs)))) { t=t+countLangs[key].length; }
 for (var key of Object.keys(Object.fromEntries(Object.entries(countLangs).sort(([,a],[,b]) => a.length-b.length)))) {
 	if(countLangs[key].length>1){
 		console.log(key, countLangs[key].length,countLangs[key].length/t*100)
+	}else{
+		otherLangs++;
 	}
 }
+console.log("other", otherLangs,otherLangs/t*100)
 
 //compute rate of each type of glue consonants
 //if roughly a third of words are half affixes
@@ -2081,12 +1997,12 @@ for (var key of Object.keys(Object.fromEntries(Object.entries(writingCounter))))
 	}
 }
 //console.log(lStarts,nStarts,allStarts)
-t=0
-console.log("countwriting")
-for (var key of Object.keys(Object.fromEntries(Object.entries(writingCounter)))) { t=t+writingCounter[key]; }
-for (var key of Object.keys(Object.fromEntries(Object.entries(writingCounter).sort(([,a],[,b]) => a-b)))) {
-    console.log(key, writingCounter[key],writingCounter[key]/t*100)
-}
+//t=0
+//console.log("countwriting")
+//for (var key of Object.keys(Object.fromEntries(Object.entries(writingCounter)))) { t=t+writingCounter[key]; }
+//for (var key of Object.keys(Object.fromEntries(Object.entries(writingCounter).sort(([,a],[,b]) => a-b)))) {
+//    console.log(key, writingCounter[key],writingCounter[key]/t*100)
+//}
 //countLangs["jbo"].sort()
 //console.log(countLangs["jbo"])
 </script>
