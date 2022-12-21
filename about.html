@@ -663,6 +663,10 @@ is "mi pi esun suli li kama" allowed?
 	<div class="printBlock">
 		<h2>Toki Pona's Grammar</h2>
 		<pre>
+		content phrases may have pi phrases after them
+		pronouns may not take pi
+		a prepositional phrase may go at the end of sentences
+		li is inserted before prepositions if there is no predicate
 		</pre>
 	</div>
 	
@@ -1075,7 +1079,7 @@ global etymologies
 			<tbody>
 				<tr><th>letter</th><th>IPA</th><th>description</th><th>english approximation</th></tr>
 				<tr><td>a</td><td>ə~a~ɑ</td><td>non-close vowel</td><td>c<b>u</b>p, c<b>a</b>p, c<b>o</b>p</td></tr>
-				<tr><td>c</td><td>k~c</td><td>voiceless dorsal plosive</td><td><b>c</b>ar, <b>k</b>ey</td></tr>
+				<tr><td>c</td><td>k~g~c~ɟ</td><td>dorsal plosive</td><td><b>c</b>ar, <b>k</b>ey</td></tr>
 				<tr><td>i</td><td>i~ɪ</td><td>front close vowel</td><td><b>ea</b>t, <b>i</b>t</td></tr>
 				<tr><td>l</td><td>d~ɹ~ɹ̍~l~l̩~z~z̩</td><td>voiced coronal</td><td><b>d</b>ent, <b>r</b>ent, p<b>er</b>, <b>l</b>ent, bott<b>le</b>, <b>z</b>ap, b<b>zzz</b></td></tr>
 				<tr><td>n</td><td>m~m̩~b</td><td>voiced labial stop</td><td><b>m</b>oat, rhyth<b>m</b>, <b>b</b>oat</td></tr>
@@ -1239,7 +1243,7 @@ pronouns may either act like nouns, or verbs that denote possetion
 		<pre>IPA show mandatory allophony but not free variation</pre>
 		<pre>if unspecified the affix forms are its normal form</pre>
 		<pre>delete all final vowels from affixes when non final in compounds then add an "l"</pre>
-		<pre>if a final l of an affix would not turn syllabic or would cause the first two syllables to be the same when compounding, replace it with n, if that wouldnt be syllabic ???</pre>
+		<pre>if a final l of an affix would not turn syllabic or would cause the first two syllables to be the same when compounding, replace it with n, if that wouldnt be syllabic add p</pre>
 		<pre>names are two root compounds where the first is a noun and the second is noun or verb. first half can be used in casual speech</pre>
 		<pre>naca + plutli = naclplutli</pre>
 		<pre>nanti + plutli = nantlplutli</pre>
@@ -1485,7 +1489,6 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<tr><td>luain</td><td>zwiem<sup>FIT*</sup></td><td>un.di</td><td>subject is discarded, abandoned, left to rot</td><td>verb</td></tr>
 				<tr><td>nuin</td><td>mwingh<sup>FIT*</sup></td><td>un.di</td><td>subject is lazy, idle, stagnant</td><td>verb</td></tr>
 				<tr><td>luin</td><td>dwimh<sup>FIT*</sup></td><td>un.di</td><td>cloth, fabric</td><td>verb</td></tr>
-				<tr><td>tiai</td><td>tyie<sup>FIT*</sup></td><td>un.di</td><td>ball, sphere</td><td>verb</td></tr>
 				<tr><td>tlanlan</td><td>tranlomh<sup>FIT*</sup></td><td>un.di</td><td>pepper (the seasoning), pepcorns</td><td>verb</td></tr>
 				
 				<tr><td>pinta</td><td>pinta<sup>jbo</sup></td><td>un.di</td><td>subject is flat, level, even, horizontal</td><td>verb</td></tr>
@@ -1603,6 +1606,11 @@ pronouns may either act like nouns, or verbs that denote possetion
 				<tr><td>anta<br>[∅]</td><td>anto<sup>pag</sup></td><td>un.di</td><td>nominal question, what thing</td><td>pronoun</td></tr>
 				
 				<tr><td>pataca</td><td>fhtagn<sup>*</sup></td><td>un.di</td><td>subject is in statis, waits, dreams</td><td>verb</td></tr>
+				<!-->lexmber 2022<-->
+				<!-->freinds of the schwa<-->
+				<tr><td>nacapu</td><td>makpu<sup>jbo</sup></td><td>un.di</td><td>hat, crown, headgear, helmet</td><td>noun</td></tr>
+				<!-->already have cili<-->
+				<!-->r/conlangs<-->
 			</tbody>
 		</table>
 				
@@ -1687,7 +1695,7 @@ pronouns may either act like nouns, or verbs that denote possetion
 		were made due to changes in phonology and in order to maintain a tradition of the language being named using its most unique features compared to the
 		previous version, finally it was updated when the phonology was shrunken in order to have each letter exactly once.</p>
 		<p class="unindented"><b>piati</b> from Piet, the name of an esoteric programming language designed to mimic the appearance of the works of Piet Mondrian. It was the first
-		esoteric languages studied by Pantluci's creater who mispronounced it as [pʰi:.ʔɛtʰ] for far too long.</p>
+		esoteric languages studied by Pantluci's creater who mispronounced it as [pʰiː.ʔɛtʰ] for far too long.</p>
 		<p class="unindented"><b>tlina</b> from an iOS crash caused by the character జ్ఞా in febuary 2018. This character is read as [d͡ʒɲaː].</p>
 		<p class="unindented">the unoffical code <b>PPN</b> represents proto-polynesian which does not have an offical code.</p>
 		<p class="unindented">the unoffical code <b>PIE</b> represents proto-indo-european which does not have an offical code.</p>
@@ -1734,13 +1742,21 @@ function rom2ipa(word){
 		affixCurr=affixCurr.slice(0,-1)
 	}
 	if(affixCurr!="∅"){
+		if("aiu".includes(affixCurr.slice(0,1))&&affixCurr.length>0){
+			//affixCurr="p"+affixCurr
+			if(affixesSeen.includes("p"+affixCurr)){
+				console.log("ERR: seen affix",affixCurr)
+			}
+			affixesSeen.push("p"+affixCurr)
+		}
+		
 		if(affixesSeen.includes(affixCurr)){
 			console.log("ERR: seen affix",affixCurr)
-		}else if(affixCurr.slice(-1)=="l"){
-			if(affixCurr.length>1&&"ptcnl".includes(affixCurr.slice(-2,-1))){
-				//console.log("idk",affixCurr)
-			}
-		}
+		}//else if(affixCurr.slice(-1)=="l"){
+		//	if(affixCurr.length>1&&"ptcnl".includes(affixCurr.slice(-2,-1))){
+		//		//console.log("idk",affixCurr)
+		//	}
+		//}
 		affixesSeen.push(affixCurr)
 		//console.log(affixCurr,word)
 		if(true){
