@@ -421,6 +421,10 @@
 			font-family:var(--pantluci-font) !important;
 			text-transform:capitalize;
 		}
+		
+		.sc{
+			font-variant: small-caps;
+		}
 	</style>
 </head>
 
@@ -445,10 +449,10 @@
    1.5 Legal Bits
    1.6 Works Cited
 2. Islands
-   2.1 valid langs
-   2.1 paths
-   2.1 islands
-   2.1 (caveats, probability-based nature, rafting events, changes over time)
+   2.1 Definitions
+   2.2 Assumptions
+   2.3 Implications
+   2.4 Caveats
 3. analysis of commonly cared about languages
 4. (sign languages)
 5. implications
@@ -479,13 +483,16 @@
 	</div>
 	<div class="printBlock">
 		<h3>What is This Book?</h3>
+		<p>The goal is not to convince reader for or against any theories, only to convince them that some theories, especially
+		universal grammar are more testable than is commonly assumed.</p>
 		<pre>
-		goal is not to convince reader for or against any theories, only to convince that they are more testable than is commonly assumed
 		</pre>
 	</div>
 	<div class="printBlock">
 		<h3>What is in Each Chapter?</h3>
 		<pre>
+		This chapter describes the contents of the book
+		The next chapter, Islands, describes the basic assumptions this book makes and their imedite implications as well as introduces some concepts that will be expanded upon later in the book
 		</pre>
 	</div>
 	<div class="printBlock">
@@ -499,7 +506,7 @@ typographic format
 		<pre>
 mention communities (roljbohu'e, LLL, Freinds of the Schwa)
 people (Cesia, Mia, Emma)
-conlangs direct (Lojban, toki pona, Láadan)
+conlangs direct (Lojban, toki pona)
 		</pre>
 		<p>
 			However, long before the direct influence of these languages, a couple of languages got me hooked on the potential of what a language could be.
@@ -574,10 +581,47 @@ Sign languages as real world example
 	<div class="pageBreak"></div>
 	
 	<div class="printBlock">
-		<h2>???</h2>
+		<h2>Definitions</h2>
 		<pre>
-langs can make any finitely detailed contrast rather than express any concept
+definition of possible language:
+any set of rules pairing concepts to strings which could theoretically exist
+
+definition of functional language:
+any possible lang that can make any finitely detailed contrast (rather than express any concept)
 more concretely for any pair of non-identical concepts, some finite string can include one but exclude the other
+
+definition of practical language:
+functional language which is perfect system (exactly as complicated as it needs to be)
+
+definition of language family:
+not the same as normal, refers to every point on the contium of dialects as related rather than whole groups
+
+definition of island:
+shorter less scary term for "connected component" of a graph
+		</pre>
+	</div>
+	
+	<div class="printBlock">
+		<h2>Assumptions</h2>
+		<pre>
+		(add explination for why i think its exceptable)
+doesnt account for intentional medaling or exceptional circumstances
+assumes natrual languages are both functional and practical languages as defined earlier
+approximates actual language formation by assuming languages descend from other singular languages
+		</pre>
+	</div>
+	
+	<div class="printBlock">
+		<h2>Implications</h2>
+		<pre>
+if an island of langs exist, other islands may exist as well
+		</pre>
+	</div>
+	
+	<div class="printBlock">
+		<h2>Caveats</h2>
+		<pre>
+probability-based nature, rafting events, whats practical changes over time/space
 		</pre>
 	</div>
 	
@@ -601,8 +645,6 @@ content phrases
 can go at the end of phrases or sentences - prepostions - only sentences but get marked as verb if there is only subject
 en, li, e sota la family
 questions for jan sona pi toki pona
-is "mi pi esun suli li kama" allowed?
-
 		</pre>
 		<h3>Toki Pona's Phonology</h3>
 		<div style="overflow:hidden">
@@ -672,9 +714,12 @@ is "mi pi esun suli li kama" allowed?
 		<h2>Toki Pona's Grammar</h2>
 		<pre>	
 		content phrases may have pi phrases after them	
-		pronouns may not take pi	
-		a prepositional phrase may go at the end of sentences	
-		li is inserted before prepositions if there is no predicate
+		pronouns may not take pi
+		pi must have at least two content words after
+		a prepositional phrase may go at the end of sentences, if there is a predicate,
+		one of the following:
+			or act as a predicate
+			li is inserted before prepositions if there is no predicate
 		</pre>
 	</div>
 	
@@ -1063,6 +1108,7 @@ global etymologies
 		<p>/t/ is realized as [s] before [t].</p>
 		<p>otherwise /t/ may be realized as either [t] or [s].</p>
 		<p>/t/ may not be realized as [s] before continuants.</p>
+		<p>[s] assimilates to [ʃ] before [t͡ʃ].</p>
 		
 		<p>/k/ is realized as [kʼ] before stops.</p>
 		<p>/k/ is realized as either [c] or [ɟ] before /i/.</p>
@@ -1134,6 +1180,7 @@ Finally, it would be weird to have ⟨r⟩ and contrast ⟨n⟩ in such a small 
 			<li>/B/ should first be interpreted as an onset, then a coda of the preceeding syllable, then a nucleus</li>
 			<li>if /B/ may be pronounced as a nucleus when a coda to clairify that it is not on onset, but still behaves normally</li>
 			<li>/D/ should first be interpreted as an intial onset, then a medial onset, then a nucleus</li>
+			<li>/D/ may not be interpreted as a medial onset before a syllabic consonant nucleus</li>
 			<li>stress rests on the first syllable</li>
 			<li>the fist syllable may not start with ll</li>
 		</ul>
@@ -1170,23 +1217,20 @@ morphology
 		<p>Lexical items in Pantluci are not necessarily a single root, and may instead consist of any syntactically valid (ignoring types)
 		construction. These multi word lexical items may also have an equal number of empty spots in their construction and defintions that must be filled when used.</p>
 		<pre>
-		add compound system
 		four levels of producivity:
 		- normal gramar
 		- lexical phrases
-		- unevolvable compounding system - glue phonemes?
-		- new words
+		- glue phonemes
+		- new roots
 	
 roots have prefixal form either defined or remove final vowel if there is one then add l
 figure out to do with words that start with vowel
 
-heres what im considering atm
 there is a distinction between root words and compounds
-root words (or in some cases their shortened/modifified forms) get glued together to form compounds, the glue is any syllable non word non word intially, finally, or imediately after another glue that has a syllabic consonant
-the probem is this means that theres an extra syllable added in whenever two roots get compounded
-unless by default roots drop their final vowel
-may either use full root or shortended form in compounding
-must end with a i or u
+affixes (root word's shortened forms) get glued together to form compounds, the boundary can be seen by the syllabic consonant
+compounds must contain at least one volcaic syllable
+nonfinal must be affix
+final may be affix or root
 
 numbers start with
 nalu - 0
@@ -1228,33 +1272,38 @@ uununlli unlnaun an laatti tllnaun - 1939 objects
 		<a href="https://en.wikipedia.org/wiki/Thematic_relation#Experiencer">experiencer</a>,
 		<a href="https://en.wikipedia.org/wiki/Thematic_relation#Theme">theme</a>, or
 		<a href="https://en.wikipedia.org/wiki/Patient_(grammar)">patient</a>. This noun is refered to as the subject.</p>
+		
 		<p>verb noun ↦ verb: verb with the noun <a href="https://en.wikipedia.org/wiki/Incorporation_(linguistics)">incorporated</a>.
 		The noun is a typically but not always an <a href="https://en.wikipedia.org/wiki/Agent_(grammar)">agent</a>,
 		<a href="https://en.wikipedia.org/wiki/Thematic_relation#Stimulus">stimulus</a>, or
 		<a href="https://en.wikipedia.org/wiki/Thematic_relation#https://en.wikipedia.org/wiki/Thematic_relation#Force_or_natural_cause">force</a>.
 		This noun is refered to as the object.</p>
 		<p>(in defintions where the object is unspecified, it can be assumed to be one of these)</p>
+		
 		<p>conjunction, any type ↦ CP: used in the following rule.</p>
 		<p>any type, CP (must contain the same type) ↦ the same type: conjoins two of the same types.</p>
+		
 		<p>verb, adverb ↦ verb: verbs happens in a manner described by the adverb.</p>
 		<p>adverb, adverb ↦ adverb: 1st adverb is true in a manner described by the 2nd adverb.</p>
-		<p>At the top level of a sentence, as well as within some lexical phrases, the semantics of a clause change somewhat.</p>
+		
+		<p>postposition, ?? ↦ postposition: 1st adverb is true in a manner described by the 2nd adverb.</p>
+		<p>verb, postposition ↦ verb: verbs happens in a manner described by the postposition. postposition behaves like adverb.</p>
+		<p>noun, postposition ↦ noun: noun with the postposition attached as a relative clause. postposition behaves like verb.</p>
+		
+		<p>verb, pronoun ↦ verb: verb with the pronoun <a href="https://en.wikipedia.org/wiki/Incorporation_(linguistics)">incorporated</a>. pronoun behaves like noun.</p>
+		<p>noun, pronoun ↦ noun: noun with the verb attached as a relative clause meaning "subject is owned by [pronoun]". pronoun behaves like verb.</p>
+		
+		<p>At the top level of a sentence, as well as within some special contexts, the semantics of a clause change somewhat.</p>
 		<p>Nouns are asserted to either exist, be contextually relavent, or awnser a question.</p>
 		<p>Verbs are asserted to either happen, be contextually relavent, or awnser a question.</p>
 		<p>Other clause types are asserted to be a good addition to a previous sentence, or awnser a question.</p>
-		<pre>
-concept of breaks
-words always fill the oldest break first
-postpotional phrases act like either adverbs or verbs depending on if attached to verbs or nouns
-pronouns may either act like nouns, or verbs that denote possetion
-		</pre>
 	</div>
 	<div class="pageBreak"></div>
 	
 	<div class="printBlock">
-		<h2>Pantlucian Sample Text</h2>
+		<h2>Pantlucian Sample Text(s)</h2>
 		<pre>
-		here is how to format an example:
+		eventually will be public domain short story (color out of space?)
 		</pre>
 		<p>naa pula - I am cute</p>
 		<table class="gloss">
@@ -1264,39 +1313,135 @@ pronouns may either act like nouns, or verbs that denote possetion
 					<td>pula</td>
 				</tr>
 				<tr>
-					<td>&lt;<span style="font-variant: small-caps;">np</span>&gt;1</td>
+					<td>&lt;<span class="sc">np</span>&gt;1</td>
 					<td>cute</td>
 				</tr>
 			</tbody>
 		</table>
-		<p>aan na - and I</p>
+		
+		<p>ciili nalla - fruit is eaten</p>
 		<table class="gloss">
 			<tbody>
 				<tr>
-					<td>a&lt;a&gt;n</td>
+					<td>ci&lt;i&gt;li</td>
+					<td>nalla</td>
+				</tr>
+				<tr>
+					<td>&lt;<span class="sc">np</span>&gt;fruit</td>
+					<td>eaten</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p>nanalla cili na - my fruit is eaten</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>na&lt;na&gt;lla</td>
+					<td>cili</td>
 					<td>na</td>
 				</tr>
 				<tr>
-					<td>&lt;<span style="font-variant: small-caps;">cp</span>&gt;and</td>
+					<td>&lt;<span class="sc">np</span>&gt;&lt;<span class="sc">np</span>&gt;eaten</td>
+					<td>fruit</td>
 					<td>1</td>
 				</tr>
 			</tbody>
 		</table>
-	</div>
+		
+		<p>ciiciti tu pana na - your cat faces me</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>ci&lt;i&gt;&lt;ci&gt;ti</td>
+					<td>tu</td>
+					<td>pana</td>
+					<td>na</td>
+				</tr>
+				<tr>
+					<td>&lt;<span class="sc">np</span>&gt;&lt;<span class="sc">np.vp</span>&gt;cat</td>
+					<td>2</td>
+					<td>faces</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p>naa paana ciiti tu - I face your cat</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>na&lt;a&gt;</td>
+					<td>pa&lt;a&gt;na</td>
+					<td>ci&lt;i&gt;ti</td>
+					<td>tu</td>
+				</tr>
+				<tr>
+					<td>&lt;<span class="sc">np</span>&gt;1</td>
+					<td>&lt;<span class="sc">vp</span>&gt;faces</td>
+					<td>&lt;<span class="sc">np</span>&gt;cat</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p>ciiciti na nalla naanti aantu tu - my cat eats the ant that you make fly</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>ci&lt;i&gt;&lt;ci&gt;ti</td>
+					<td>na</td>
+					<td>nalla</td>
+					<td>na&lt;a&gt;nti</td>
+					<td>a&lt;a&gt;ntu</td>
+					<td>tu</td>
+				</tr>
+				<tr>
+					<td>&lt;<span class="sc">np</span>&gt;&lt;<span class="sc">np.vp</span>&gt;cat</td>
+					<td>1</td>
+					<td>eat</td>
+					<td>&lt;<span class="sc">np</span>&gt;ant</td>
+					<td>&lt;<span class="sc">vp</span>&gt;fly</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p>taatalan na pinta ttllalacan nau aan clili - thirty sticks and rocks flatten my ditch</p>
+		<table class="gloss">
+			<tbody>
+				<tr>
+					<td>ta&lt;a&gt;&lt;ta&gt;lan</td>
+					<td>na</td>
+					<td>pinta</td>
+					<td>ttl&lt;la&gt;lacan</td>
+					<td>nau</td>
+					<td>a&lt;a&gt;n</td>
+					<td>clili</td>
+				</tr>
+				<tr>
+					<td>&lt;<span class="sc">np</span>&gt;&lt;<span class="sc">np.vp</span>&gt;ditch</td>
+					<td>1</td>
+					<td>flat</td>
+					<td>&lt;<span class="sc">np.np</span>&gt;thirty</td>
+					<td>stick</td>
+					<td>&lt;<span class="sc">cp</span>&gt;and</td>
+					<td>rock</td>
+				</tr>
+			</tbody>
+		</table>
+		
 	
 	<div class="printBlock" id="Dictionary">
 		<h2>Pantlucian Roots Dictionary</h2>
 		<p>Some entries are marked with * to denote that they have a special note which can be found at the end of the chapter.</p>
-		<pre>IPA show mandatory allophony but not free variation</pre>
+		<p>The IPA in this section shows mandatory allophony but not free variation.</pre>
 		<pre>if unspecified the affix forms are its normal form</pre>
 		<pre>delete all final vowels from affixes when non final in compounds then add an "l"</pre>
 		<pre>if a final l of an affix would not turn syllabic or would cause the first two syllables to be the same when compounding, replace it with n, if that wouldnt be syllabic add p. if that would create a "VnnpV" sequence change it to "VnlpV"</pre>
 		<pre>names are two root compounds where the first is a noun and the second is noun or verb. first half can be used in casual speech</pre>
-		<pre>naca + plutli = naclplutli</pre>
-		<pre>nanti + plutli = nantlplutli</pre>
-		<pre>compounds are not included</pre>
-		<pre>[∅] means that the word is not used in compounds</pre>
-		<pre>numbers 11 - 99 are compounds bijective base 10, 0 = nacu</pre>
+		<pre>compounds are not included in this dictioary</pre>
+		<pre>[∅] means that the word is only allowed word finally in compounds</pre>
 		
 		<table style="text-align: left;" id="toSort">
 			<thead>
