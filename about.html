@@ -996,7 +996,7 @@ questions for jan sona pi toki pona
 	<div class="pageBreak"></div>
 	<h1 class="titleBlock">
 		<span>
-			Pantluci<small> 0.9</small><br>
+			Pantluci<small> 0.11</small><br>
 			<span style="margin-top:-30px;padding-top:0px;">
 				<small>an esoteric human language<br><img src="https://dummyimage.com/640x360/eee/aaa"></small>
 			</span>
@@ -1100,6 +1100,8 @@ global etymologies
 		</div>
 		<p>the same realization of a phoneme may not occur twice in a row.</p>
 		
+		<p>[ʔ] or [h] is inserted before word initial vowels.</p>
+		
 		<p>/p/ is realized as [pʼ] before stops.</p>
 		
 		<p>/t/ is realized as either [tʼ] or [s] before stops.</p>
@@ -1109,6 +1111,7 @@ global etymologies
 		<p>otherwise /t/ may be realized as either [t] or [s].</p>
 		<p>/t/ may not be realized as [s] before continuants.</p>
 		<p>[s] assimilates to [ʃ] before [t͡ʃ].</p>
+		<p>[s] assimilates to [z] before /D/.</p>
 		
 		<p>/k/ is realized as [kʼ] before stops.</p>
 		<p>/k/ is realized as either [c] or [ɟ] before /i/.</p>
@@ -1117,27 +1120,32 @@ global etymologies
 		<p>/B/ may be realized as a coda when after a vowel.</p>
 		<p>/B/ is realized as [m] or [m̩] before onsets.</p>
 		<p>otherwise /B/ may be realized as either [m], [m̩], or [b].</p>
-		<p>/B/ may not be realized as syllabic after a stressed vowel.</p>
 		<p>[m] and [m̩] assimilates in place of articulation to the following consonant.</p>
 		<p>[m] assimilates to [n] after [s].</p>
 		<p>[m] dissimilates to [n] after [pʼ].</p>
 		<p>[m̩] dissimilates to [n̩] after [m].</p>
 		
-		<p>/D/ may be realized as a medial onset when before a vowel and after a consonant.</p>
-		<p>/D/ is realized as [ɹ], [ɹ̍], [l], or [l̩] after other consonants in the same syllable.</p>
-		<p>otherwise /D/ may be realized as either [d], [ɹ], [ɹ̍], [l], [l̩], or [z].</p>
-		<p>/D/ is realized as [d͡ʒ] before [ɹ] or [ɹ̍].</p>
-		<p>/D/ may not be realized as syllabic before a vowel that would be stressed if /D/ was not syllabic.</p>
+		<p>/D/ may be realized as either [d], [ɹ], [ɹ̍], [l], [l̩], or [z].</p>
+		<p>/D/ is realized as [d͡ʒ] [ɹ̍].</p>
 		
 		<p>/a/ may be realized as either [a] or [ɑ].</p>
-		<p>/a/ may be reduced to either [ə] or [ɐ] in unstressed syllables.</p>
+		<p>/a/ may be realized as [ʕ] in between two vowels.</p>
+		<p>/a/ may be reduced to either [ə] or [ɐ] in syllables with coda.</p>
 		
 		<p>/i/ may be reduced to [ɪ] in unstressed syllables.</p>
+		<p>/i/ may be realized as [j] in between two vowels.</p>
+		
+		<p>/a.i/ may be realized as [aj].</p>
 		
 		<p>/u/ may be reduced to [ʊ] in unstressed syllables.</p>
+		<p>/u/ may be realized as [w] in between two vowels.</p>
+		
+		<p>/a.u/ may be realized as [aw].</p>
+		
+		<p>vowels are shortened in syllables with a coda.</p>
+		
 		<p>/B/, and /D/ are written as capitals due to the wide range of potential variation.</p>
 		
-		<pre>when are what phonemes allowed in a sequence for example pppa = no definitely not but why</pre>
 	</div>
 	
 	<div class="printBlock" class="Introduction">
@@ -1152,8 +1160,9 @@ global etymologies
 				<tr><td>l</td><td>d~ɹ~ɹ̍~l~l̩~z~z̩</td><td>voiced coronal</td><td><b>d</b>ent, <b>r</b>ent, p<b>er</b>, <b>l</b>ent, bott<b>le</b>, <b>z</b>ap, b<b>zzz</b></td></tr>
 				<tr><td>n</td><td>m~m̩~b</td><td>voiced labial stop</td><td><b>m</b>oat, rhyth<b>m</b>, <b>b</b>oat</td></tr>
 				<tr><td>p</td><td>p⁽ʼ⁾</td><td>voiceless labial plosive or ejective</td><td><b>p</b>ound</td></tr>
-				<tr><td>t</td><td>t⁽ʼ⁾~t͡ʃ~s</td><td>voiceless alveolar</td><td><b>t</b>alk, <b>ch</b>alk</td>, <b>s</b>ulk</td></tr>
+				<tr><td>t</td><td>t⁽ʼ⁾~t͡ʃ~s</td><td>voiceless alveolar</td><td><b>t</b>alk, <b>ch</b>alk, <b>s</b>ulk</td></tr>
 				<tr><td>u</td><td>u~ʊ</td><td>back close vowel</td><td>p<b>oo</b>l, p<b>u</b>ll</td></tr>
+				<tr><td>ꞌ</td><td>—</td><td>hiatus marker</td><td>—</td></tr>
 			</tbody>
 		</table>
 		<p>The thought process behind these spellings are fairly simple. Some of these only really one realistic option: p, t, a, i, and u.
@@ -1165,36 +1174,38 @@ Finally, it would be weird to have ⟨r⟩ and contrast ⟨n⟩ in such a small 
 		is unused, but the first letter of each sentence is capitalized?
 		consontal unversal #1 /p/ and /k/
 		consontal unversal #2 /p/ and /B/ vs /t/ and /D/
+		
+		explain the saltillo
 		</pre>
 	</div>
 	
 	<div class="printBlock">
 		<h2>Pantlucian Morphology</h2>
-		<p>Syllables in Pantluci are of the form (C)V, i.e. an optional consonant optionally followed by followed by a vowel or syllabic consonant.
-		Allophonic rules previously disccused then complicate this shape slightly. Words may be any combination of syllables with the following restrictions:</p>
+		<p>Syllables in Pantluci are of the form (C)V(n), i.e. an optional consonant followed by a vowel or syllabic consonant followed by a nasal coda.
+		Words may be any combination of syllables with the following restrictions:</p>
 		<ul>
-			<li>words may not end with an ejective</li>
-			<li>the first syllable ignoring ejectives may not be the same as the second syllable</li>
-			<li>the second syllable may not both begin with a vowel and have the same vowel as the previous syllable</li>
-			<li>the first syllable of a word must have a consonant unless it is followed by a syllable consisting of just a /B/</li>
+			<li>/p/, /t/, or /k/ may act as though they were syllables</li>
+			<li>syllables with syllabic consonants may not have a coda</li>
+			<li>words may not end with /p/, /t/, or /k/</li>
 			<li>/B/ should first be interpreted as an onset, then a coda of the preceeding syllable, then a nucleus</li>
-			<li>if /B/ may be pronounced as a nucleus when a coda to clairify that it is not on onset, but still behaves normally</li>
-			<li>/D/ should first be interpreted as an intial onset, then a medial onset, then a nucleus</li>
-			<li>/D/ may not be interpreted as a medial onset before a syllabic consonant nucleus</li>
-			<li>stress rests on the first syllable</li>
-			<li>the fist syllable may not start with ll</li>
+			<li>/D/ should first be interpreted as an intial onset, then a nucleus</li>
+			<li>stress rests on the first syllable containing a vowel</li>
+			<li>words must contain at least one vowel</li>
 		</ul>
-		<p>Words in Pantluci undergo a single morphological process in order to denote the gramatical structure of the sentence.
-		This process consists of two alternating stages:</p>
+		<pre>when are what phonemes allowed in a sequence for example pppa = no definitely not but why</pre>
+		<p>Words in Pantluci undergo a morphological process in order to denote the gramatical structure of the sentence.
+		This process consists of replacing the first vowel:</p>
 		<ol>
-			<li>reduplicate the vowel of the first syllable immediately after it, then if it has a /b/ coda, move it to the new syllable.</li>
-			<li>undo the previous step and fully reduplicate the first syllable immediately after it</li>
+			<li>with /a/ if there are 0 preceeding nodes.</li>
+			<li>with /i/ if there is 1 preceeding node.</li>
+			<li>with /u/ if there are 2 preceeding nodes.</li>
+			<li>with /ai/ if there are 3 preceeding nodes.</li>
+			<li>with /au/ if there are 4 preceeding nodes.</li>
 		</ol>
-		<pre>dont ignore (C(l))V(n) but ignore anything past that like the t in tna. actually first syllable with vowel?</pre>
 		<table class="gloss" style="width:100%">
 			<tbody>
 				<tr>
-					<td>pantluci → paantluci → panpantluci → paanpantluci → ...</td>
+					<td>pantluci → pintluci → puntluci → paintluci → ...</td>
 				</tr>
 			</tbody>
 		</table>
@@ -1209,6 +1220,7 @@ Finally, it would be weird to have ⟨r⟩ and contrast ⟨n⟩ in such a small 
 		<pre>
 word types
 morphology
+gismu system instead?
 		</pre>
 	</div>
 	
@@ -1223,13 +1235,13 @@ morphology
 		- glue phonemes
 		- new roots
 	
-roots have prefixal form either defined or remove final vowel if there is one then add l
+roots have first vowel either deleted if followed by /n/, otherwise replaced with /l/
 figure out to do with words that start with vowel
 
 there is a distinction between root words and compounds
 affixes (root word's shortened forms) get glued together to form compounds, the boundary can be seen by the syllabic consonant
 compounds must contain at least one volcaic syllable
-nonfinal must be affix
+noninital must be affix
 final may be affix or root
 
 numbers start with
@@ -1253,6 +1265,10 @@ ttlcinca - 25
 tatannlacan - 80
 after that powers of 100 that behave as nouns must be attached with "an"
 uununlli unlnaun an laatti tllnaun - 1939 objects
+
+
+lunu, sentence ↦ NP: nominalizes the sentence as an event.
+sentence, lan ↦ VP: subject has (sentence) done to it by object.
 		</pre>
 	</div>
 	
@@ -1434,6 +1450,7 @@ uununlli unlnaun an laatti tllnaun - 1939 objects
 	
 	<div class="printBlock" id="Dictionary">
 		<h2>Pantlucian Roots Dictionary</h2>
+		<pre>IN PROGRESS OF UPDATING</pre>
 		<p>Some entries are marked with * to denote that they have a special note which can be found at the end of the chapter.</p>
 		<p>The IPA in this section shows mandatory allophony but not free variation.</pre>
 		<pre>if unspecified the affix forms are its normal form</pre>
@@ -1458,6 +1475,10 @@ uununlli unlnaun an laatti tllnaun - 1939 objects
 				<tr><td>nantlplutli</td><td>nanti + plutli<sup>test</sup></td><td>cin.Da</td><td>test</td><td>test</td></tr>
 				-->
 				
+				<tr><td>tanca</td><td>tanke<sup>hrx</sup></td><td>(ʔ)uB.a</td><td>subject is thanked, appreciated, acknowledged</td><td>verb</td></tr>
+				<tr><td>inca</td><td>enkel<sup>nor</sup></td><td>un.di</td><td>subject is in easy, doable, only takes one try to complete</td><td>verb</td></tr>
+				<tr><td>nauclili</td><td>náʼoolkiłí<sup>nav</sup></td><td>un.di</td><td>clock, watch, timekeeper</td><td>noun</td></tr>
+		
 				<tr><td>una</td><td>*h₁óyneh₂<sup>PIE*</sup></td><td>(ʔ)uB.a</td><td>there is one, 1 of the subject</td><td>verb</td></tr>
 				<tr><td>tuaci</td><td>*swéḱs<sup>PIE*</sup></td><td>tu.a.ci</td><td>there is six, 6 of the subject</td><td>verb</td></tr>
 				<tr><td>cutu</td><td>*h₁oḱtṓw<sup>PIE*</sup></td><td>ku.tu</td><td>there is eight, 8 of the subject</td><td>verb</td></tr>
@@ -1747,18 +1768,6 @@ uununlli unlnaun an laatti tllnaun - 1939 objects
 			<tbody>
 			</tbody>
 		</table>
-		
-		<h3>Lexical Phrases</h3>
-		<table style="text-align: left;">
-			<thead><tr style="text-align: center;"><th>word</th><th>meaning</th><th>type</th></tr></thead>
-			<tbody>
-				<tr><td>luunu&nbsp;(embeded sentence)</td><td style="text-align:left">the event described by the sentence</td><td>noun</td></tr>
-				<tr><td>(embeded sentence+reduplication)&nbsp;lan</td><td style="text-align:left">subject has task described by the sentence done to it by object</td><td>verb</td></tr>
-			</tbody>
-		</table>
-		<pre>
-			turn these into grammar exceptions rather than phrases
-		</pre>
 	</div>
 	<br>
 	<div class="printBlock">
