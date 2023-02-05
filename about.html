@@ -563,7 +563,7 @@ https://mcgovern.mit.edu/2022/12/12/brains-on-conlangs/
 > One might call such things "Garden of Eden" languages, by analogy with "Garden of Eden states" in cellular automata
 - logan kearsly
 
-slands of valid langs with no ability to cross between. A is valid, B is valid, A could never evolve into B
+islands of valid langs with no ability to cross between. A is valid, B is valid, A could never evolve into B
 toki pona smoll vocab as example
 Sign languages as real world example
 		</pre>
@@ -1100,7 +1100,7 @@ simple grammar
 		</div>
 		<p>the same realization of a phoneme may not occur twice in a row.</p>
 		
-		<p>[ʔ] or [h] is inserted before word initial vowels.</p>
+		<p>[ʔ] or [h] is inserted before word initial vowels and vowels that follow nasal codas.</p>
 		
 		<p>/p/ is realized as [pʼ] before stops.</p>
 		
@@ -1470,7 +1470,6 @@ sentence, lan ↦ VP: subject has (sentence) done to it by object.
 	
 	<div class="printBlock" id="Dictionary">
 		<h2>Pantlucian Roots Dictionary</h2>
-		<pre>IN PROGRESS OF UPDATING TEMP PLACEHOLDER</pre>
 		<p class="unindented">Some entries are marked with * after their type to denote that they have a special note which can be found at the end of the chapter.</p>
 		<p class="unindented">The IPA in this section shows mandatory allophony but not free variation.</pre>
 		<pre>shows with 0 nodes.</pre>
@@ -1483,690 +1482,1052 @@ sentence, lan ↦ VP: subject has (sentence) done to it by object.
 			<tbody>
 			
 				<tr><td>pVntluci</td><td>ERROR</td><td>the language described by this book and related offshoots</td><td>noun</td></tr>
-				<tr><td>V</td><td>ERROR</td><td>subject is from, of object1</td><td>postposition</td></tr>
+				<tr><td>V</td><td>ERROR</td><td>swaps the subject and object</td><td>adverb</td></tr>
 				<tr><td>lV</td><td>ERROR</td><td>subject is in, on, while, when, at object1</td><td>postposition</td></tr>
 				<tr><td>tV</td><td>ERROR</td><td>subject is equal, equivalent to, is the same as object<br>used to nominalize or verbalize in compounds1</td><td>verb</td></tr>
 				<tr><td>nV</td><td>ERROR</td><td>subject is directed, going to, at object1</td><td>postposition</td></tr>
 				<tr><td>pV</td><td>ERROR</td><td>and1</td><td>conjunction</td></tr>
 				<tr><td>cV</td><td>ERROR</td><td>by, through, for, in order to</td><td>postposition</td></tr>
-				<tr><td>plV</td><td>ERROR</td><td>they, it, he, she</td><td>pronoun</td></tr>
-				<tr><td>Vn</td><td>ERROR</td><td>swaps the subject and object</td><td>adverb</td></tr>
+				<tr><td>clV</td><td>ERROR</td><td>they, it, he, she</td><td>pronoun</td></tr>
 				<tr><td>Vna</td><td>ERROR</td><td>subject is had, held, carried, contained, owned by object</td><td>verb</td></tr>
-				<tr><td>clV</td><td>ERROR</td><td>subject is with, beside, next to, in the company of object</td><td>verb</td></tr>
-				<tr><td>V.na</td><td>ERROR</td><td>I, me, we, us (exclusive)</td><td>pronoun</td></tr>
-				<tr><td>V.ti</td><td>ERROR</td><td>nominal question, what thing</td><td>pronoun</td></tr>
-				<tr><td>c.nV</td><td>ERROR</td><td>this, subject is identifiable by context given by object</td><td>verb</td></tr>
-				<tr><td>V.cu</td><td>ERROR</td><td>too, such a, subject is noteworthy example of what's described by object</td><td>verb</td></tr>
-				<tr><td>p.nV</td><td>ERROR</td><td>yet, except, but</td><td>conjunction</td></tr>
-				<tr><td>V.li</td><td>ERROR</td><td>subject is as, like, similar to object</td><td>postposition</td></tr>
-				<tr><td>V.pa</td><td>ERROR</td><td>you, ya'll</td><td>pronoun</td></tr>
-				<tr><td>p.tV</td><td>ERROR</td><td>subject is currently, now, already as described</td><td>adverb</td></tr>
-				<tr><td>c.pV</td><td>ERROR</td><td>subject is done, made, built, worked on</td><td>verb</td></tr>
-				<tr><td>c.tV</td><td>ERROR</td><td>subject is said, told of, described by object</td><td>verb</td></tr>
-				<tr><td>p.cV</td><td>ERROR</td><td>or</td><td>conjunction</td></tr>
+				<tr><td>plV</td><td>ERROR</td><td>subject is with, beside, next to, in the company of object</td><td>verb</td></tr>
+				<tr><td>Vpa</td><td>ERROR</td><td>I, me, we, us (exclusive)</td><td>pronoun</td></tr>
+				<tr><td>Vcu</td><td>ERROR</td><td>nominal question, what thing</td><td>pronoun</td></tr>
+				<tr><td>Vnha</td><td>ERROR</td><td>this, subject is identifiable by context given by object</td><td>verb</td></tr>
+				<tr><td>Vta</td><td>ERROR</td><td>too, such a, subject is noteworthy example of what's described by object</td><td>verb</td></tr>
+				<tr><td>Vni</td><td>ERROR</td><td>yet, except, but</td><td>conjunction</td></tr>
+				<tr><td>Vlu</td><td>ERROR</td><td>subject is as, like, similar to object</td><td>postposition</td></tr>
+				<tr><td>cnV</td><td>ERROR</td><td>you, ya'll</td><td>pronoun</td></tr>
+				<tr><td>ptV</td><td>ERROR</td><td>subject is currently, now, already as described</td><td>adverb</td></tr>
+				<tr><td>pnV</td><td>ERROR</td><td>subject is done, made, built, worked on</td><td>verb</td></tr>
+				<tr><td>ctV</td><td>ERROR</td><td>subject is said, told of, described by object</td><td>verb</td></tr>
+				<tr><td>pcV</td><td>ERROR</td><td>or</td><td>conjunction</td></tr>
 				<tr><td>plVn</td><td>ERROR</td><td>more, a larger number or quantity of something</td><td>?count?</td></tr>
 				<tr><td>clVn</td><td>ERROR</td><td>subject is possible, can be worked, completed by object</td><td>verb</td></tr>
-				<tr><td>V.tun</td><td>ERROR</td><td>subject is litteral, genuine, bona-fide, very, really</td><td>adverb</td></tr>
-				<tr><td>cV.cu</td><td>ERROR</td><td>subject goes, changes locations</td><td>verb</td></tr>
-				<tr><td>lV.ti</td><td>ERROR</td><td>us, our, we (inclusive)</td><td>pronoun</td></tr>
-				<tr><td>V.tci</td><td>ERROR</td><td>subject is not what the words descibes, negation, no, zero</td><td>adverb</td></tr>
-				<tr><td>V.plu</td><td>ERROR</td><td>time</td><td>noun</td></tr>
-				<tr><td>V.clu</td><td>ERROR</td><td>subject is put, got by object</td><td>verb</td></tr>
-				<tr><td>pV.ci</td><td>ERROR</td><td>also, subject is another thing worth noting</td><td>adverb</td></tr>
+				<tr><td>nVlu</td><td>ERROR</td><td>subject is litteral, genuine, bona-fide, very, really</td><td>adverb</td></tr>
+				<tr><td>nVnhi</td><td>ERROR</td><td>subject goes, changes locations</td><td>verb</td></tr>
+				<tr><td>Vplu</td><td>ERROR</td><td>us, our, we (inclusive)</td><td>pronoun</td></tr>
+				<tr><td>pVcu</td><td>ERROR</td><td>subject is not what the words descibes, negation, no, zero</td><td>adverb</td></tr>
+				<tr><td>nVnu</td><td>ERROR</td><td>time</td><td>noun</td></tr>
+				<tr><td>Vnpu</td><td>ERROR</td><td>subject is put, got by object</td><td>verb</td></tr>
+				<tr><td>Vtci</td><td>ERROR</td><td>also, subject is another thing worth noting</td><td>adverb</td></tr>
 				<tr><td>cVca</td><td>ERROR</td><td>there is much, many, a lot of the subject</td><td>verb</td></tr>
-				<tr><td>V.lan</td><td>ERROR</td><td>so, therefore</td><td>conjuction,</td></tr>
-				<tr><td>V.tni</td><td>ERROR</td><td>way, shape, manner, form</td><td>noun</td></tr>
-				<tr><td>pV.nu</td><td>ERROR</td><td>subject knows, finds out, discoveres, mentally preceives object</td><td>verb</td></tr>
-				<tr><td>pV.la</td><td>ERROR</td><td>subject is only, just, barely as described</td><td>adverb</td></tr>
-				<tr><td>tV.pa</td><td>ERROR</td><td>subject is given away, changes possession (temporary or permanent)</td><td>verb</td></tr>
-				<tr><td>cV.la</td><td>ERROR</td><td>year</td><td>noun</td></tr>
-				<tr><td>cV.nu</td><td>ERROR</td><td>some, a few</td><td>?count?</td></tr>
-				<tr><td>lV.na</td><td>ERROR</td><td>subject perceives with the eyes, sees object</td><td>verb</td></tr>
-				<tr><td>Vn.lu</td><td>ERROR</td><td>subject is taken, carried</td><td>verb</td></tr>
-				<tr><td>lV.pi</td><td>ERROR</td><td>all</td><td>?count?</td></tr>
-				<tr><td>tV.ti</td><td>ERROR</td><td>if, dependending on</td><td>conjuction</td></tr>
-				<tr><td>cV.ti</td><td>ERROR</td><td>subject is unlike others, marks focus due to contrariness, other, another</td><td>verb</td></tr>
-				<tr><td>nV.la</td><td>ERROR</td><td>subject is over, on top of, about object</td><td>?verb?</td></tr>
-				<tr><td>lV.la</td><td>ERROR</td><td>one</td><td>?count?</td></tr>
-				<tr><td>nV.nu</td><td>ERROR</td><td>subject is wanted, loved</td><td>verb</td></tr>
-				<tr><td>Vn.ta</td><td>ERROR</td><td>nothing, nobody</td><td>noun</td></tr>
-				<tr><td>V.nun</td><td>ERROR</td><td>subject is as described until, up to object</td><td>postposition</td></tr>
-				<tr><td>Vn.ni</td><td>ERROR</td><td>place, position</td><td>noun</td></tr>
-				<tr><td>tV.li</td><td>ERROR</td><td>is thought, believed</td><td>subject</td></tr>
-				<tr><td>V.pin</td><td>ERROR</td><td>law, justice, right</td><td>noun</td></tr>
-				<tr><td>pV.ti</td><td>ERROR</td><td>subject is a proper, well formed, complete as described</td><td>adverb</td></tr>
-				<tr><td>nV.ti</td><td>ERROR</td><td>subject is as described because of object</td><td>postposition</td></tr>
-				<tr><td>nV.ci</td><td>ERROR</td><td>subject works, toils, labors</td><td>verb</td></tr>
-				<tr><td>V.tti</td><td>ERROR</td><td>person, sentient being, someone</td><td>noun</td></tr>
-				<tr><td>tV.cu</td><td>ERROR</td><td>subject is owed, ought to happen, should be done</td><td>verb</td></tr>
-				<tr><td>cV.pu</td><td>ERROR</td><td>subject will be as described after, past object</td><td>postposition</td></tr>
-				<tr><td>V.tpa</td><td>ERROR</td><td>then, well then</td><td>conjunction</td></tr>
-				<tr><td>nV.pa</td><td>ERROR</td><td>subject is big, great, large</td><td>verb</td></tr>
-				<tr><td>lV.ci</td><td>ERROR</td><td>dot, point, period</td><td>noun</td></tr>
-				<tr><td>V.cun</td><td>ERROR</td><td>subject is left, let, allowed to contiue without interference</td><td>verb</td></tr>
-				<tr><td>c.tVn</td><td>ERROR</td><td>subject is the first</td><td>verb</td></tr>
-				<tr><td>tV.na</td><td>ERROR</td><td>there, over there</td><td>?pronoun?</td></tr>
-				<tr><td>Vn.pa</td><td>ERROR</td><td>subject is good</td><td>verb</td></tr>
-				<tr><td>pV.pi</td><td>ERROR</td><td>thing, something</td><td>noun</td></tr>
-				<tr><td>V.tli</td><td>ERROR</td><td>subject is started, starts a procdess, begins to do something</td><td>verb</td></tr>
-				<tr><td>c.pVn</td><td>ERROR</td><td>few, a little bit, little</td><td>?count?</td></tr>
-				<tr><td>p.cVn</td><td>ERROR</td><td>subject is watched, look at by object</td><td>verb</td></tr>
-				<tr><td>Vn.cu</td><td>ERROR</td><td>subject comes, arrives</td><td>verb</td></tr>
-				<tr><td>p.nVn</td><td>ERROR</td><td>day</td><td>noun</td></tr>
-				<tr><td>p.tVn</td><td>ERROR</td><td>subject is before, in the presence of object</td><td>verb</td></tr>
-				<tr><td>c.nVn</td><td>ERROR</td><td>people, village</td><td>noun</td></tr>
-				<tr><td>V.c.ta</td><td>ERROR</td><td>is passed, moved past, spent (time)</td><td>subject</td></tr>
-				<tr><td>V.c.nu</td><td>ERROR</td><td>adverbial or postpositional question, how, in what way</td><td>adverb</td></tr>
-				<tr><td>V.p.ci</td><td>ERROR</td><td>two</td><td>?count?</td></tr>
-				<tr><td>V.p.ti</td><td>ERROR</td><td>part, portion</td><td>noun</td></tr>
-				<tr><td>V.c.pa</td><td>ERROR</td><td>humanity</td><td>mankind,</td></tr>
-				<tr><td>V.p.ni</td><td>ERROR</td><td>subject is new, fresh, novel</td><td>verb</td></tr>
-				<tr><td>Vn.lun</td><td>ERROR</td><td>subject stays, remains, doesn't change</td><td>verb</td></tr>
-				<tr><td>tnV.na</td><td>ERROR</td><td>each, every</td><td>?count?</td></tr>
-				<tr><td>lV.lin</td><td>ERROR</td><td>subject is as described since, after object</td><td>postposition</td></tr>
-				<tr><td>ttV.ti</td><td>ERROR</td><td>anew, again</td><td>adverb</td></tr>
-				<tr><td>nV.nan</td><td>ERROR</td><td>end, extremus point</td><td>noun</td></tr>
-				<tr><td>tlV.ci</td><td>ERROR</td><td>subject is what becomes of object</td><td>verb</td></tr>
-				<tr><td>nVn.na</td><td>ERROR</td><td>subject is true, certain, sure</td><td>verb</td></tr>
-				<tr><td>tcV.pi</td><td>ERROR</td><td>subject is found</td><td>verb</td></tr>
-				<tr><td>cV.lin</td><td>ERROR</td><td>subject talks, speaks to object</td><td>verb</td></tr>
-				<tr><td>lV.plu</td><td>ERROR</td><td>subject is among, between object</td><td>postposition</td></tr>
-				<tr><td>lVn.nu</td><td>ERROR</td><td>state, status, condition</td><td>noun</td></tr>
-				<tr><td>ttV.pa</td><td>ERROR</td><td>type, kind</td><td>noun</td></tr>
-				<tr><td>Vn.tli</td><td>ERROR</td><td>subject waits, expects, hopes for object</td><td>verb</td></tr>
-				<tr><td>pV.ttu</td><td>ERROR</td><td>subject is last, final</td><td>verb</td></tr>
-				<tr><td>pV.tpi</td><td>ERROR</td><td>country</td><td>noun</td></tr>
-				<tr><td>nVn.pi</td><td>ERROR</td><td>noun, name</td><td>noun</td></tr>
-				<tr><td>cV.tla</td><td>ERROR</td><td>subject uses object</td><td>postposition</td></tr>
-				<tr><td>nV.tlu</td><td>ERROR</td><td>act, action, activity</td><td>noun</td></tr>
-				<tr><td>pV.tlu</td><td>ERROR</td><td>man, husband</td><td>noun</td></tr>
-				<tr><td>clV.tu</td><td>ERROR</td><td>wife, woman, girl</td><td>noun</td></tr>
-				<tr><td>pV.pan</td><td>ERROR</td><td>subject is without, lacking object</td><td>postposition</td></tr>
-				<tr><td>ttV.li</td><td>ERROR</td><td>subject is young, small</td><td>verb</td></tr>
-				<tr><td>tV.pla</td><td>ERROR</td><td>any, anyone</td><td>?count?</td></tr>
-				<tr><td>tlV.ta</td><td>ERROR</td><td>however, but</td><td>conjuction</td></tr>
-				<tr><td>lVn.ca</td><td>ERROR</td><td>life</td><td>noun</td></tr>
-				<tr><td>nVn.li</td><td>ERROR</td><td>subject is as described according to object</td><td>postposition</td></tr>
-				<tr><td>pV.cun</td><td>ERROR</td><td>plan, project</td><td>noun</td></tr>
-				<tr><td>pVn.la</td><td>ERROR</td><td>here</td><td>?pronoun?</td></tr>
-				<tr><td>tV.cli</td><td>ERROR</td><td>subject occurs, happens</td><td>verb</td></tr>
-				<tr><td>cVn.ca</td><td>ERROR</td><td>firm, venture, company</td><td>noun</td></tr>
-				<tr><td>tpV.na</td><td>ERROR</td><td>gentleman, miss, madam</td><td>mister,</td></tr>
-				<tr><td>nV.tin</td><td>ERROR</td><td>world</td><td>noun</td></tr>
-				<tr><td>cV.tpu</td><td>ERROR</td><td>self</td><td>noun</td></tr>
-				<tr><td>tV.ttu</td><td>ERROR</td><td>always, forever</td><td>adverb</td></tr>
-				<tr><td>plV.ta</td><td>ERROR</td><td>father, mother, parent</td><td>noun</td></tr>
-				<tr><td>lV.cin</td><td>ERROR</td><td>today, nowadays</td><td>noun</td></tr>
-				<tr><td>V.tlan</td><td>ERROR</td><td>business, transaction</td><td>noun</td></tr>
-				<tr><td>plV.na</td><td>ERROR</td><td>subject returns, re-experiences something</td><td>verb</td></tr>
-				<tr><td>cVn.pi</td><td>ERROR</td><td>side</td><td>noun</td></tr>
-				<tr><td>lV.pan</td><td>ERROR</td><td>half-way, middle</td><td>noun</td></tr>
-				<tr><td>lV.cli</td><td>ERROR</td><td>subject lives, is alive</td><td>verb</td></tr>
-				<tr><td>tcV.ta</td><td>ERROR</td><td>room, space</td><td>noun</td></tr>
-				<tr><td>tlV.la</td><td>ERROR</td><td>subject is present, is introduced by object</td><td>verb</td></tr>
-				<tr><td>tV.cin</td><td>ERROR</td><td>case, occasion, situation</td><td>noun</td></tr>
-				<tr><td>Vn.can</td><td>ERROR</td><td>subject changes, becomes diffrent</td><td>verb</td></tr>
-				<tr><td>cV.ttu</td><td>ERROR</td><td>subjects understands object</td><td>verb</td></tr>
-				<tr><td>nV.tti</td><td>ERROR</td><td>subject is against, opposite to object</td><td>verb</td></tr>
-				<tr><td>V.tnan</td><td>ERROR</td><td>group</td><td>noun</td></tr>
-				<tr><td>tV.nan</td><td>ERROR</td><td>road, route, path</td><td>noun</td></tr>
-				<tr><td>Vn.ttu</td><td>ERROR</td><td>less, fewer</td><td>?count?</td></tr>
-				<tr><td>cV.tci</td><td>ERROR</td><td>a little</td><td>?count?</td></tr>
-				<tr><td>tlV.pu</td><td>ERROR</td><td>subject is next, following</td><td>verb</td></tr>
-				<tr><td>Vn.nun</td><td>ERROR</td><td>order, class</td><td>noun</td></tr>
-				<tr><td>pV.lun</td><td>ERROR</td><td>subject is tall, high</td><td>verb</td></tr>
-				<tr><td>nV.pla</td><td>ERROR</td><td>later, afterwards</td><td>adverb</td></tr>
-				<tr><td>pVn.ca</td><td>ERROR</td><td>subject is separate, different, distinct</td><td>verb</td></tr>
-				<tr><td>tV.tpa</td><td>ERROR</td><td>non-gender conforming person, spouse</td><td>noun</td></tr>
-				<tr><td>Vn.tin</td><td>ERROR</td><td>subject is old, ancient, aged, former</td><td>verb</td></tr>
-				<tr><td>pV.pli</td><td>ERROR</td><td>subject is inside object</td><td>?verb?</td></tr>
-				<tr><td>nVn.ca</td><td>ERROR</td><td>story, history</td><td>noun</td></tr>
-				<tr><td>tV.pan</td><td>ERROR</td><td>subject is created, creatively produced</td><td>verb</td></tr>
-				<tr><td>nV.cla</td><td>ERROR</td><td>child</td><td>noun</td></tr>
-				<tr><td>cV.pli</td><td>ERROR</td><td>land, earth, ground</td><td>noun</td></tr>
-				<tr><td>tpV.ti</td><td>ERROR</td><td>moment</td><td>noun</td></tr>
-				<tr><td>tV.tlu</td><td>ERROR</td><td>city</td><td>noun</td></tr>
-				<tr><td>V.tcun</td><td>ERROR</td><td>subject is alone, lonely</td><td>verb</td></tr>
-				<tr><td>nV.tcu</td><td>ERROR</td><td>subject is playing</td><td>verb</td></tr>
-				<tr><td>tpV.lu</td><td>ERROR</td><td>various, several</td><td>?count?</td></tr>
-				<tr><td>lV.nan</td><td>ERROR</td><td>relation, relationship</td><td>noun</td></tr>
-				<tr><td>tlV.na</td><td>ERROR</td><td>government</td><td>noun</td></tr>
-				<tr><td>tpV.pa</td><td>ERROR</td><td>second, one sixtith of a minute</td><td>noun</td></tr>
-				<tr><td>lV.tpu</td><td>ERROR</td><td>cost, price</td><td>noun</td></tr>
-				<tr><td>pV.tcu</td><td>ERROR</td><td>never</td><td>adverb</td></tr>
-				<tr><td>tV.tcu</td><td>ERROR</td><td>subject is shown, displayed, demonstrated</td><td>verb</td></tr>
-				<tr><td>lVn.ti</td><td>ERROR</td><td>home, hearth</td><td>noun</td></tr>
-				<tr><td>Vn.tnu</td><td>ERROR</td><td>subject meets, gathers, collects</td><td>verb</td></tr>
-				<tr><td>ttV.na</td><td>ERROR</td><td>maybe, perhaps</td><td>adverb</td></tr>
-				<tr><td>clV.ni</td><td>ERROR</td><td>hour</td><td>noun</td></tr>
-				<tr><td>clV.la</td><td>ERROR</td><td>fact, data</td><td>noun</td></tr>
-				<tr><td>cV.pan</td><td>ERROR</td><td>subject is real, authentic, royal</td><td>verb</td></tr>
-				<tr><td>tV.tna</td><td>ERROR</td><td>subject appears</td><td>verb</td></tr>
-				<tr><td>tVn.pu</td><td>ERROR</td><td>subject is finished, done</td><td>verb</td></tr>
-				<tr><td>lVn.pi</td><td>ERROR</td><td>view, opinion, sight</td><td>verb</td></tr>
-				<tr><td>tcV.ni</td><td>ERROR</td><td>subject goes out</td><td>verb</td></tr>
-				<tr><td>lV.tla</td><td>ERROR</td><td>party, match</td><td>verb</td></tr>
-				<tr><td>tcV.ca</td><td>ERROR</td><td>?three</td><td>?count</td></tr>
-				<tr><td>pV.cla</td><td>ERROR</td><td>although, even though</td><td>adverb</td></tr>
-				<tr><td>tpV.cu</td><td>ERROR</td><td>hand</td><td>noun</td></tr>
-				<tr><td>lV.tan</td><td>ERROR</td><td>subject arrives</td><td>verb</td></tr>
-				<tr><td>pVn.nu</td><td>ERROR</td><td>question</td><td>noun</td></tr>
-				<tr><td>lVn.lu</td><td>ERROR</td><td>result, outcome</td><td>noun</td></tr>
-				<tr><td>V.clan</td><td>ERROR</td><td>sense, feeling</td><td>noun</td></tr>
-				<tr><td>V.ttan</td><td>ERROR</td><td>subject feels, regrets</td><td>verb</td></tr>
-				<tr><td>plV.la</td><td>ERROR</td><td>subject is above, in addition, on top</td><td>?verb?</td></tr>
-				<tr><td>tV.tin</td><td>ERROR</td><td>problem</td><td>noun</td></tr>
-				<tr><td>Vn.pin</td><td>ERROR</td><td>like this</td><td>adverb</td></tr>
-				<tr><td>pVn.pi</td><td>ERROR</td><td>subject is near, close</td><td>verb</td></tr>
-				<tr><td>nVn.ta</td><td>ERROR</td><td>principle, beginning, starting point</td><td>noun</td></tr>
-				<tr><td>cVn.na</td><td>ERROR</td><td>process, procedure</td><td>noun</td></tr>
-				<tr><td>tcV.lu</td><td>ERROR</td><td>house</td><td>noun</td></tr>
-				<tr><td>V.plun</td><td>ERROR</td><td>night, evening</td><td>noun</td></tr>
-				<tr><td>ttV.cu</td><td>ERROR</td><td>subject is hard, difficult</td><td>verb</td></tr>
-				<tr><td>tnV.ti</td><td>ERROR</td><td>subject is nearly, almost as described</td><td>adverb</td></tr>
-				<tr><td>pV.tan</td><td>ERROR</td><td>option, choice, election</td><td>noun</td></tr>
-				<tr><td>cVn.ti</td><td>ERROR</td><td>head</td><td>noun</td></tr>
-				<tr><td>tnV.ca</td><td>ERROR</td><td>subject hears, preceives with the ears object</td><td>verb</td></tr>
-				<tr><td>lV.ttu</td><td>ERROR</td><td>subject increases</td><td>verb</td></tr>
-				<tr><td>clV.cu</td><td>ERROR</td><td>system</td><td>noun</td></tr>
-				<tr><td>Vn.tpi</td><td>ERROR</td><td>word</td><td>noun</td></tr>
-				<tr><td>cVn.lu</td><td>ERROR</td><td>subject is like its own, typical, proper</td><td>verb</td></tr>
-				<tr><td>tVn.la</td><td>ERROR</td><td>son, child</td><td>daughter,</td></tr>
-				<tr><td>cV.can</td><td>ERROR</td><td>number</td><td>noun</td></tr>
-				<tr><td>tnV.pa</td><td>ERROR</td><td>subject is quick, fast</td><td>verb</td></tr>
-				<tr><td>tVn.na</td><td>ERROR</td><td>subject is held</td><td>verb</td></tr>
-				<tr><td>cV.cla</td><td>ERROR</td><td>subject is important</td><td>verb</td></tr>
-				<tr><td>Vn.cla</td><td>ERROR</td><td>topic, theme, subject</td><td>noun</td></tr>
-				<tr><td>Vn.tcu</td><td>ERROR</td><td>itself, themselves, oneself, myself, yourself</td><td>pronoun</td></tr>
-				<tr><td>cV.tan</td><td>ERROR</td><td>subject is the main one, larger, older</td><td>verb</td></tr>
-				<tr><td>tnV.li</td><td>ERROR</td><td>seems, looks like</td><td>adverb</td></tr>
-				<tr><td>V.tpun</td><td>ERROR</td><td>subject is necessary</td><td>verb</td></tr>
-				<tr><td>nV.pan</td><td>ERROR</td><td>subject is writen</td><td>verb</td></tr>
-				<tr><td>plV.ci</td><td>ERROR</td><td>service, helpfulness</td><td>noun</td></tr>
-				<tr><td>nV.lan</td><td>ERROR</td><td>president</td><td>noun</td></tr>
-				<tr><td>tVn.tu</td><td>ERROR</td><td>job, effort</td><td>noun</td></tr>
-				<tr><td>nV.tnu</td><td>ERROR</td><td>norm, standard, pattern, model</td><td>noun</td></tr>
-				<tr><td>pV.nan</td><td>ERROR</td><td>information</td><td>noun</td></tr>
-				<tr><td>nV.tpa</td><td>ERROR</td><td>water</td><td>noun</td></tr>
-				<tr><td>pV.tni</td><td>ERROR</td><td>level</td><td>noun</td></tr>
-				<tr><td>nV.cun</td><td>ERROR</td><td>subject is missed, lost</td><td>verb</td></tr>
-				<tr><td>tVn.cu</td><td>ERROR</td><td>subject is behind object</td><td>?verb?</td></tr>
-				<tr><td>tV.lan</td><td>ERROR</td><td>item, article, product</td><td>noun</td></tr>
-				<tr><td>pVn.ti</td><td>ERROR</td><td>reason, thought that supports an idea</td><td>noun</td></tr>
-				<tr><td>plV.pi</td><td>ERROR</td><td>subject is kept, maintained</td><td>verb</td></tr>
-				<tr><td>lV.tcu</td><td>ERROR</td><td>zone, area</td><td>noun</td></tr>
-				<tr><td>Vn.plu</td><td>ERROR</td><td>subject is open?</td><td>verb</td></tr>
-				<tr><td>cV.nin</td><td>ERROR</td><td>age</td><td>noun</td></tr>
-				<tr><td>cV.tni</td><td>ERROR</td><td>month</td><td>noun</td></tr>
-				<tr><td>clV.pi</td><td>ERROR</td><td>power</td><td>noun</td></tr>
-				<tr><td>lV.tnu</td><td>ERROR</td><td>aim, purpose</td><td>noun</td></tr>
-				<tr><td>V.p.cun</td><td>ERROR</td><td>photo, picture, image</td><td>noun</td></tr>
-				<tr><td>nV.p.nu</td><td>ERROR</td><td>subject is under, underneath object</td><td>?verb?</td></tr>
-				<tr><td>c.nV.ti</td><td>ERROR</td><td>eye</td><td>noun</td></tr>
-				<tr><td>V.pi.ca</td><td>ERROR</td><td>face</td><td>noun</td></tr>
-				<tr><td>V.nu.na</td><td>ERROR</td><td>policy, politics</td><td>noun</td></tr>
-				<tr><td>V.pun.i</td><td>ERROR</td><td>low-down, short, brief</td><td>???</td></tr>
-				<tr><td>Vn.c.pu</td><td>ERROR</td><td>force, strength</td><td>noun</td></tr>
-				<tr><td>V.na.pu</td><td>ERROR</td><td>body</td><td>noun</td></tr>
-				<tr><td>V.tu.li</td><td>ERROR</td><td>subject reminds, is remembered</td><td>verb</td></tr>
-				<tr><td>Vn.p.tu</td><td>ERROR</td><td>friend</td><td>noun</td></tr>
-				<tr><td>V.can.i</td><td>ERROR</td><td>chance, opportunity</td><td>noun</td></tr>
-				<tr><td>V.ti.ta</td><td>ERROR</td><td>idea</td><td>noun</td></tr>
-				<tr><td>cV.p.nu</td><td>ERROR</td><td>clearly, of course</td><td>adverb</td></tr>
-				<tr><td>c.nV.cu</td><td>ERROR</td><td>equipment, outfit</td><td>noun</td></tr>
-				<tr><td>cV.c.ni</td><td>ERROR</td><td>element, material</td><td>noun</td></tr>
-				<tr><td>V.ca.pa</td><td>ERROR</td><td>subject is political</td><td>verb</td></tr>
-				<tr><td>V.la.ta</td><td>ERROR</td><td>support, backing</td><td>noun</td></tr>
-				<tr><td>pV.p.tu</td><td>ERROR</td><td>subject is national</td><td>verb</td></tr>
-				<tr><td>tV.p.ta</td><td>ERROR</td><td>public</td><td>noun</td></tr>
-				<tr><td>V.ci.nu</td><td>ERROR</td><td>front</td><td>noun</td></tr>
-				<tr><td>p.cV.pa</td><td>ERROR</td><td>merely</td><td>adverb</td></tr>
-				<tr><td>nV.c.ta</td><td>ERROR</td><td>subject is social</td><td>verb</td></tr>
-				<tr><td>tV.p.ca</td><td>ERROR</td><td>money, dollar</td><td>noun</td></tr>
-				<tr><td>V.ni.ti</td><td>ERROR</td><td>subject is requested, asked for</td><td>verb</td></tr>
-				<tr><td>V.ca.ci</td><td>ERROR</td><td>subject is sent</td><td>verb</td></tr>
-				<tr><td>V.la.na</td><td>ERROR</td><td>week</td><td>noun</td></tr>
-				<tr><td>c.nV.pa</td><td>ERROR</td><td>subject is strange, foreign</td><td>verb</td></tr>
-				<tr><td>p.nV.nu</td><td>ERROR</td><td>subject is together</td><td>verb</td></tr>
-				<tr><td>V.ta.nu</td><td>ERROR</td><td>subject is followed, kept on</td><td>verb</td></tr>
-				<tr><td>c.pV.ci</td><td>ERROR</td><td>family</td><td>noun</td></tr>
-				<tr><td>lV.p.nu</td><td>ERROR</td><td>subject is safe, secured</td><td>verb</td></tr>
-				<tr><td>p.nV.ti</td><td>ERROR</td><td>game, sport</td><td>noun</td></tr>
-				<tr><td>nV.p.cu</td><td>ERROR</td><td>subject is seeked, looked for by object</td><td>verb</td></tr>
-				<tr><td>c.tV.lu</td><td>ERROR</td><td>forward</td><td>?noun?</td></tr>
-				<tr><td>V.cu.li</td><td>ERROR</td><td>subject is bad</td><td>verb</td></tr>
-				<tr><td>pV.c.ni</td><td>ERROR</td><td>subject is considered</td><td>verb</td></tr>
-				<tr><td>p.tV.pu</td><td>ERROR</td><td>meeting</td><td>noun</td></tr>
-				<tr><td>V.ca.tu</td><td>ERROR</td><td>address, direction</td><td>noun</td></tr>
-				<tr><td>V.p.nan</td><td>ERROR</td><td>subject is wrestled, fought, struggles</td><td>verb</td></tr>
-				<tr><td>Vn.p.nu</td><td>ERROR</td><td>subject is obtained, acquired</td><td>verb</td></tr>
-				<tr><td>V.c.tin</td><td>ERROR</td><td>subject develops</td><td>verb</td></tr>
-				<tr><td>V.pi.la</td><td>ERROR</td><td>cause</td><td>noun</td></tr>
-				<tr><td>tV.c.tu</td><td>ERROR</td><td>line</td><td>noun</td></tr>
-				<tr><td>V.pa.tu</td><td>ERROR</td><td>subject is reached, ccaught up with by object</td><td>noun</td></tr>
-				<tr><td>V.la.pa</td><td>ERROR</td><td>subject is clear</td><td>verb</td></tr>
-				<tr><td>lV.c.nu</td><td>ERROR</td><td>aspect, characteristic</td><td>noun</td></tr>
-				<tr><td>V.nu.la</td><td>ERROR</td><td>subject is controled by object</td><td>verb</td></tr>
-				<tr><td>lV.c.pa</td><td>ERROR</td><td>car, vehicle</td><td>noun</td></tr>
-				<tr><td>pV.c.ti</td><td>ERROR</td><td>society</td><td>noun</td></tr>
-				<tr><td>V.li.lu</td><td>ERROR</td><td>subject is asked</td><td>verb</td></tr>
-				<tr><td>p.nV.lu</td><td>ERROR</td><td>subject is long</td><td>verb</td></tr>
-				<tr><td>tV.c.nu</td><td>ERROR</td><td>subject is general</td><td>verb</td></tr>
-				<tr><td>V.lu.ci</td><td>ERROR</td><td>finally, in the end, at last</td><td>?adverb?</td></tr>
-				<tr><td>lV.p.tu</td><td>ERROR</td><td>reply, answer</td><td>noun</td></tr>
-				<tr><td>lV.p.ca</td><td>ERROR</td><td>sector, section</td><td>noun</td></tr>
-				<tr><td>p.cV.ni</td><td>ERROR</td><td>situation</td><td>noun</td></tr>
-				<tr><td>c.pV.ti</td><td>ERROR</td><td>manager, director</td><td>noun</td></tr>
-				<tr><td>V.tin.i</td><td>ERROR</td><td>book</td><td>noun</td></tr>
-				<tr><td>V.pu.ni</td><td>ERROR</td><td>death</td><td>noun</td></tr>
-				<tr><td>V.c.pin</td><td>ERROR</td><td>worth, value</td><td>noun</td></tr>
-				<tr><td>V.pi.pa</td><td>ERROR</td><td>teacher, professor</td><td>noun</td></tr>
-				<tr><td>cV.p.ca</td><td>ERROR</td><td>school</td><td>noun</td></tr>
-				<tr><td>c.pV.na</td><td>ERROR</td><td>subject is best, better</td><td>verb</td></tr>
-				<tr><td>pV.p.cu</td><td>ERROR</td><td>during</td><td>???</td></tr>
-				<tr><td>V.ti.pu</td><td>ERROR</td><td>field</td><td>noun</td></tr>
-				<tr><td>pV.c.pu</td><td>ERROR</td><td>subject is elected, choosen</td><td>verb</td></tr>
-				<tr><td>cV.c.pa</td><td>ERROR</td><td>common</td><td>???</td></tr>
-				<tr><td>c.pV.li</td><td>ERROR</td><td>subject walks, goes for a walk</td><td>verb</td></tr>
-				<tr><td>V.nu.cu</td><td>ERROR</td><td>matter</td><td>noun</td></tr>
-				<tr><td>c.nV.ni</td><td>ERROR</td><td>everything</td><td>?count?</td></tr>
-				<tr><td>V.lin.u</td><td>ERROR</td><td>program</td><td>noun</td></tr>
-				<tr><td>V.p.tun</td><td>ERROR</td><td>subject is included</td><td>verb</td></tr>
-				<tr><td>c.nV.la</td><td>ERROR</td><td>subject is brought</td><td>verb</td></tr>
-				<tr><td>c.tV.na</td><td>ERROR</td><td>truth</td><td>noun</td></tr>
-				<tr><td>p.tV.ta</td><td>ERROR</td><td>subject is carried out, fulfilled</td><td>verb</td></tr>
-				<tr><td>Vn.p.cu</td><td>ERROR</td><td>paper</td><td>noun</td></tr>
-				<tr><td>V.nan.a</td><td>ERROR</td><td>subject is payed</td><td>verb</td></tr>
-				<tr><td>cV.c.ta</td><td>ERROR</td><td>subject perceives, notices object</td><td>verb</td></tr>
-				<tr><td>Vn.c.ni</td><td>ERROR</td><td>million, fortune</td><td>noun</td></tr>
-				<tr><td>V.ti.ci</td><td>ERROR</td><td>market</td><td>noun</td></tr>
-				<tr><td>nV.p.tu</td><td>ERROR</td><td>light</td><td>noun</td></tr>
-				<tr><td>c.tV.ti</td><td>ERROR</td><td>language</td><td>noun</td></tr>
-				<tr><td>p.nV.ci</td><td>ERROR</td><td>subject is economic</td><td>verb</td></tr>
-				<tr><td>tV.c.pi</td><td>ERROR</td><td>is decided on</td><td>subject</td></tr>
-				<tr><td>tV.p.ni</td><td>ERROR</td><td>example</td><td>noun</td></tr>
-				<tr><td>V.c.nun</td><td>ERROR</td><td>total, entire</td><td>noun?</td></tr>
-				<tr><td>pV.p.nu</td><td>ERROR</td><td>everyone, everybody</td><td>noun</td></tr>
-				<tr><td>c.tV.ca</td><td>ERROR</td><td>region</td><td>noun</td></tr>
-				<tr><td>p.tV.ci</td><td>ERROR</td><td>issue, affair</td><td>noun</td></tr>
-				<tr><td>c.tV.pi</td><td>ERROR</td><td>core, heart</td><td>noun</td></tr>
-				<tr><td>lV.c.tu</td><td>ERROR</td><td>a lot of</td><td>?count?</td></tr>
-				<tr><td>cV.p.ta</td><td>ERROR</td><td>top</td><td>noun?</td></tr>
-				<tr><td>nV.c.pi</td><td>ERROR</td><td>subject is added</td><td>verb</td></tr>
-				<tr><td>p.tV.na</td><td>ERROR</td><td>handwriting, letter, lyrics</td><td>noun</td></tr>
-				<tr><td>p.cV.ta</td><td>ERROR</td><td>subject is medium, ordinary</td><td>verb</td></tr>
-				<tr><td>c.pV.pa</td><td>ERROR</td><td>the rest, remainder, leftover</td><td>noun</td></tr>
-				<tr><td>p.cV.ca</td><td>ERROR</td><td>interest</td><td>noun</td></tr>
-				<tr><td>p.tV.la</td><td>ERROR</td><td>means, resources</td><td>noun</td></tr>
-				<tr><td>p.nV.pi</td><td>ERROR</td><td>so much, so many</td><td>?count?</td></tr>
-				<tr><td>p.cV.lu</td><td>ERROR</td><td>film, movie</td><td>noun</td></tr>
-				<tr><td>Vn.c.ta</td><td>ERROR</td><td>subject is treated, dealt with, attempted</td><td>verb</td></tr>
-				<tr><td>nV.c.nu</td><td>ERROR</td><td>course</td><td>noun</td></tr>
-				<tr><td>tcVn.ta</td><td>ERROR</td><td>anyway, anyhow</td><td>???</td></tr>
-				<tr><td>plVn.nu</td><td>ERROR</td><td>especially</td><td>adverb</td></tr>
-				<tr><td>tpV.tpi</td><td>ERROR</td><td>amount, quantity</td><td>noun</td></tr>
-				<tr><td>lVn.tta</td><td>ERROR</td><td>subject is full, filled</td><td>verb</td></tr>
-				<tr><td>clVn.ni</td><td>ERROR</td><td>subject is strong</td><td>verb</td></tr>
-				<tr><td>tVn.tlu</td><td>ERROR</td><td>test, trial, proof</td><td>noun</td></tr>
-				<tr><td>tV.tlin</td><td>ERROR</td><td>rule</td><td>noun</td></tr>
-				<tr><td>tcVn.cu</td><td>ERROR</td><td>subject falls</td><td>verb</td></tr>
-				<tr><td>tnV.tpi</td><td>ERROR</td><td>aid, help</td><td>noun</td></tr>
-				<tr><td>lV.ttin</td><td>ERROR</td><td>need, necessity</td><td>noun</td></tr>
-				<tr><td>tnV.pli</td><td>ERROR</td><td>town, municipality</td><td>noun</td></tr>
-				<tr><td>nVn.tun</td><td>ERROR</td><td>subject is lifted, raised</td><td>verb</td></tr>
-				<tr><td>ttVn.li</td><td>ERROR</td><td>must</td><td>??</td></tr>
-				<tr><td>plVn.pa</td><td>ERROR</td><td>limb, member</td><td>noun</td></tr>
-				<tr><td>cV.tnun</td><td>ERROR</td><td>writer, author</td><td>noun</td></tr>
-				<tr><td>plVn.ca</td><td>ERROR</td><td>subject is explained</td><td>verb</td></tr>
-				<tr><td>Vn.tlin</td><td>ERROR</td><td>subject is led</td><td>verb</td></tr>
-				<tr><td>cVn.tnu</td><td>ERROR</td><td>subject is thrown</td><td>verb</td></tr>
-				<tr><td>lVn.tnu</td><td>ERROR</td><td>stick</td><td>verb</td></tr>
-				<tr><td>ttV.plu</td><td>ERROR</td><td>production</td><td>noun</td></tr>
-				<tr><td>tpV.clu</td><td>ERROR</td><td>stage, setting, scene</td><td>noun</td></tr>
-				<tr><td>tVn.tan</td><td>ERROR</td><td>tomorrow</td><td>noun</td></tr>
-				<tr><td>tnV.cun</td><td>ERROR</td><td>subject is tried, proved, tested</td><td>verb</td></tr>
-				<tr><td>plV.tlu</td><td>ERROR</td><td>leader</td><td>noun</td></tr>
-				<tr><td>tpV.lin</td><td>ERROR</td><td>subject is answered, responded to</td><td>verb</td></tr>
-				<tr><td>tnVn.pa</td><td>ERROR</td><td>contract, agreement</td><td>noun</td></tr>
-				<tr><td>tcV.tlu</td><td>ERROR</td><td>effect</td><td>noun</td></tr>
-				<tr><td>tnVn.tu</td><td>ERROR</td><td>meaning</td><td>noun</td></tr>
-				<tr><td>tlV.tcu</td><td>ERROR</td><td>subject is read</td><td>verb</td></tr>
-				<tr><td>tlVn.la</td><td>ERROR</td><td>subject is earned, won</td><td>verb</td></tr>
-				<tr><td>cVn.nin</td><td>ERROR</td><td>development</td><td>noun</td></tr>
-				<tr><td>plV.tcu</td><td>ERROR</td><td>voice</td><td>noun</td></tr>
-				<tr><td>ttVn.tu</td><td>ERROR</td><td>individual</td><td>noun</td></tr>
-				<tr><td>Vn.tcun</td><td>ERROR</td><td>subject is desired, wished for</td><td>verb</td></tr>
-				<tr><td>clV.pun</td><td>ERROR</td><td>subject dies</td><td>verb</td></tr>
-				<tr><td>pVn.tla</td><td>ERROR</td><td>type, flavor, sort, gender, species, genre</td><td>noun</td></tr>
-				<tr><td>ttV.tlu</td><td>ERROR</td><td>subect is round, around</td><td>verb</td></tr>
-				<tr><td>pVn.cla</td><td>ERROR</td><td>human</td><td>noun</td></tr>
-				<tr><td>lV.tlan</td><td>ERROR</td><td>subject is bought, purchased</td><td>verb</td></tr>
-				<tr><td>tlV.tna</td><td>ERROR</td><td>sleep, dream</td><td>noun</td></tr>
-				<tr><td>tlV.cin</td><td>ERROR</td><td>subect is usual, regular, normal</td><td>verb</td></tr>
-				<tr><td>tlV.tpu</td><td>ERROR</td><td>demand, petition</td><td>noun</td></tr>
-				<tr><td>pVn.nan</td><td>ERROR</td><td>current</td><td>?adverb?</td></tr>
-				<tr><td>nV.tlun</td><td>ERROR</td><td>late</td><td>?adverb?</td></tr>
-				<tr><td>tVn.lan</td><td>ERROR</td><td>four</td><td>?count?</td></tr>
-				<tr><td>clVn.ti</td><td>ERROR</td><td>subject is free, vacant</td><td>verb</td></tr>
-				<tr><td>tcV.cun</td><td>ERROR</td><td>subject is solemn, serious</td><td>verb</td></tr>
-				<tr><td>pVn.pli</td><td>ERROR</td><td>continue</td><td>?adverb?</td></tr>
-				<tr><td>plVn.li</td><td>ERROR</td><td>measure, to the extent</td><td>???</td></tr>
-				<tr><td>lVn.tun</td><td>ERROR</td><td>table, board</td><td>noun</td></tr>
-				<tr><td>cV.tlun</td><td>ERROR</td><td>war, warfare</td><td>noun</td></tr>
-				<tr><td>tlVn.ta</td><td>ERROR</td><td>out, away, outside</td><td>?noun?</td></tr>
-				<tr><td>tVn.ttu</td><td>ERROR</td><td>totally, completely</td><td>adverb</td></tr>
-				<tr><td>tcV.tti</td><td>ERROR</td><td>style</td><td>noun</td></tr>
-				<tr><td>tlV.cla</td><td>ERROR</td><td>figure</td><td>noun</td></tr>
-				<tr><td>tlV.tla</td><td>ERROR</td><td>air, wind</td><td>noun</td></tr>
-				<tr><td>tlV.nan</td><td>ERROR</td><td>sound</td><td>noun</td></tr>
-				<tr><td>Vn.ttan</td><td>ERROR</td><td>taste, preference, pleasure</td><td>noun</td></tr>
-				<tr><td>tlVn.ni</td><td>ERROR</td><td>subject is helped</td><td>verb</td></tr>
-				<tr><td>cVn.tun</td><td>ERROR</td><td>committee, commission</td><td>noun</td></tr>
-				<tr><td>ttV.clu</td><td>ERROR</td><td>third</td><td>?noun?</td></tr>
-				<tr><td>lV.plin</td><td>ERROR</td><td>center, downtown</td><td>noun</td></tr>
-				<tr><td>lVn.tlu</td><td>ERROR</td><td>mind</td><td>nounh</td></tr>
-				<tr><td>plV.tna</td><td>ERROR</td><td>base, basis</td><td>noun</td></tr>
-				<tr><td>lVn.plu</td><td>ERROR</td><td>enough, sufficient</td><td>?count?</td></tr>
-				<tr><td>nVn.pun</td><td>ERROR</td><td>decision</td><td>noun</td></tr>
-				<tr><td>pVn.tni</td><td>ERROR</td><td>health</td><td>noun</td></tr>
-				<tr><td>pV.tlan</td><td>ERROR</td><td>subject is beautiful</td><td>verb</td></tr>
-				<tr><td>nVn.cin</td><td>ERROR</td><td>factory, industry</td><td>noun</td></tr>
-				<tr><td>ttV.tcu</td><td>ERROR</td><td>subject stops</td><td>verb</td></tr>
-				<tr><td>tpVn.nu</td><td>ERROR</td><td>movement</td><td>noun</td></tr>
-				<tr><td>tcVn.pa</td><td>ERROR</td><td>turn</td><td>noun?</td></tr>
-				<tr><td>tlV.lun</td><td>ERROR</td><td>is worth the trouble</td><td>subject</td></tr>
-				<tr><td>lVn.tpa</td><td>ERROR</td><td>majority</td><td>?count?</td></tr>
-				<tr><td>tpV.tlu</td><td>ERROR</td><td>appearance</td><td>noun</td></tr>
-				<tr><td>clV.nan</td><td>ERROR</td><td>term</td><td>noun</td></tr>
-				<tr><td>tpVn.pu</td><td>ERROR</td><td>plot, discussion, argument</td><td>noun</td></tr>
-				<tr><td>nV.clan</td><td>ERROR</td><td>study, learning</td><td>noun</td></tr>
-				<tr><td>tcV.pli</td><td>ERROR</td><td>subject is easy</td><td>verb</td></tr>
-				<tr><td>plVn.ti</td><td>ERROR</td><td>management, negotiation</td><td>noun</td></tr>
-				<tr><td>nVn.tla</td><td>ERROR</td><td>operation</td><td>noun</td></tr>
-				<tr><td>tVn.can</td><td>ERROR</td><td>rate, levy</td><td>noun?</td></tr>
-				<tr><td>nVn.tta</td><td>ERROR</td><td>bank, bench</td><td>noun?</td></tr>
-				<tr><td>nV.ttan</td><td>ERROR</td><td>subject is eaten</td><td>verb</td></tr>
-				<tr><td>lVn.pin</td><td>ERROR</td><td>atmosphere, environment</td><td>noun</td></tr>
-				<tr><td>pVn.lin</td><td>ERROR</td><td>thousand</td><td>?count?</td></tr>
-				<tr><td>ttV.nin</td><td>ERROR</td><td>subject is handled, driven</td><td>verb</td></tr>
-				<tr><td>pV.tnan</td><td>ERROR</td><td>meal, nourishment, food</td><td>noun</td></tr>
-				<tr><td>cVn.cun</td><td>ERROR</td><td>subject is published</td><td>verb</td></tr>
-				<tr><td>ttV.tan</td><td>ERROR</td><td>foundation</td><td>noun</td></tr>
-				<tr><td>tlV.pan</td><td>ERROR</td><td>subject is complete</td><td>verb</td></tr>
-				<tr><td>tV.plin</td><td>ERROR</td><td>subject is special</td><td>verb</td></tr>
-				<tr><td>tlV.tti</td><td>ERROR</td><td>five</td><td>?count?</td></tr>
-				<tr><td>tV.ttun</td><td>ERROR</td><td>safety, security</td><td>noun</td></tr>
-				<tr><td>cV.plun</td><td>ERROR</td><td>subject is dead</td><td>verb</td></tr>
-				<tr><td>tcV.tin</td><td>ERROR</td><td>step, pace</td><td>noun</td></tr>
-				<tr><td>ttV.pan</td><td>ERROR</td><td>organization</td><td>noun</td></tr>
-				<tr><td>tcVn.lu</td><td>ERROR</td><td>sign</td><td>noun</td></tr>
-				<tr><td>plV.tpu</td><td>ERROR</td><td>brother, sibling, sister</td><td>noun</td></tr>
-				<tr><td>tVn.plu</td><td>ERROR</td><td>factor, influence</td><td>noun</td></tr>
-				<tr><td>clV.cun</td><td>ERROR</td><td>sun</td><td>noun</td></tr>
-				<tr><td>pVn.tti</td><td>ERROR</td><td>piece</td><td>noun</td></tr>
-				<tr><td>Vn.tnun</td><td>ERROR</td><td>break, interval, distance</td><td>noun</td></tr>
-				<tr><td>lV.tpan</td><td>ERROR</td><td>visitor, guest</td><td>noun</td></tr>
-				<tr><td>lVn.tca</td><td>ERROR</td><td>function</td><td>noun</td></tr>
-				<tr><td>Vn.plun</td><td>ERROR</td><td>subject is direct, straight</td><td>verb</td></tr>
-				<tr><td>tpV.nin</td><td>ERROR</td><td>experience</td><td>noun</td></tr>
-				<tr><td>cVn.tli</td><td>ERROR</td><td>care, carefulness</td><td>noun</td></tr>
-				<tr><td>cV.clin</td><td>ERROR</td><td>subject is sat on by object</td><td>verb</td></tr>
-				<tr><td>clV.tna</td><td>ERROR</td><td>quality</td><td>noun</td></tr>
-				<tr><td>ttV.tnu</td><td>ERROR</td><td>fear</td><td>noun</td></tr>
-				<tr><td>cV.tpin</td><td>ERROR</td><td>character</td><td>noun</td></tr>
-				<tr><td>tcV.cli</td><td>ERROR</td><td>disk, disc, sd-card, physical digital record</td><td>noun</td></tr>
-				<tr><td>pVn.tpa</td><td>ERROR</td><td>subject is natural</td><td>verb</td></tr>
-				<tr><td>tVn.nan</td><td>ERROR</td><td>subject is established</td><td>verb</td></tr>
-				<tr><td>lV.clun</td><td>ERROR</td><td>college, university</td><td>noun</td></tr>
-				<tr><td>tnV.tnu</td><td>ERROR</td><td>news</td><td>noun</td></tr>
-				<tr><td>cVn.tci</td><td>ERROR</td><td>event</td><td>noun</td></tr>
-				<tr><td>tVn.cla</td><td>ERROR</td><td>report</td><td>noun</td></tr>
-				<tr><td>nV.tcan</td><td>ERROR</td><td>subject is happy, fortunate</td><td>verb</td></tr>
-				<tr><td>nVn.cla</td><td>ERROR</td><td>thought, thinking</td><td>noun</td></tr>
-				<tr><td>cVn.tpa</td><td>ERROR</td><td>subject is accepted</td><td>verb</td></tr>
-				<tr><td>tnVn.li</td><td>ERROR</td><td>ghost, spirit</td><td>noun</td></tr>
-				<tr><td>tpV.cin</td><td>ERROR</td><td>connection</td><td>noun</td></tr>
-				<tr><td>pVn.cun</td><td>ERROR</td><td>street</td><td>noun</td></tr>
-				<tr><td>tnV.tca</td><td>ERROR</td><td>size, dimension</td><td>noun</td></tr>
-				<tr><td>clVn.ci</td><td>ERROR</td><td>population</td><td>noun</td></tr>
-				<tr><td>tlVn.cu</td><td>ERROR</td><td>minister, secretary</td><td>noun</td></tr>
-				<tr><td>pVn.tcu</td><td>ERROR</td><td>pair, couple</td><td>noun</td></tr>
-				<tr><td>pV.clan</td><td>ERROR</td><td>doctor</td><td>noun</td></tr>
-				<tr><td>tlVn.pu</td><td>ERROR</td><td>source, fountain</td><td>noun</td></tr>
-				<tr><td>tnVn.cu</td><td>ERROR</td><td>subject is personal</td><td>verb?</td></tr>
-				<tr><td>ttVn.cu</td><td>ERROR</td><td>subject grows</td><td>verb</td></tr>
-				<tr><td>pVn.pan</td><td>ERROR</td><td>weight, load</td><td>noun</td></tr>
-				<tr><td>cV.ttan</td><td>ERROR</td><td>subject is alive, bright</td><td>verb</td></tr>
-				<tr><td>tcV.lun</td><td>ERROR</td><td>method</td><td>noun</td></tr>
-				<tr><td>tlV.plu</td><td>ERROR</td><td>device, apparatus, mechanism</td><td>noun</td></tr>
-				<tr><td>nVn.tcu</td><td>ERROR</td><td>yesterday</td><td>noun</td></tr>
-				<tr><td>lVn.nin</td><td>ERROR</td><td>subject admits, recognizes object</td><td>verb</td></tr>
-				<tr><td>cVn.pan</td><td>ERROR</td><td>mere, simple, plain</td><td>?adverb?</td></tr>
-				<tr><td>Vn.clin</td><td>ERROR</td><td>peace</td><td>noun</td></tr>
-				<tr><td>ttV.cun</td><td>ERROR</td><td>music</td><td>noun</td></tr>
-				<tr><td>tcV.pin</td><td>ERROR</td><td>message</td><td>noun</td></tr>
-				<tr><td>tlV.tan</td><td>ERROR</td><td>far</td><td>?idk?</td></tr>
-				<tr><td>plV.nin</td><td>ERROR</td><td>sujbect is international</td><td>verb</td></tr>
-				<tr><td>tnV.cli</td><td>ERROR</td><td>nature</td><td>noun</td></tr>
-				<tr><td>clV.tin</td><td>ERROR</td><td>grade, degree</td><td>noun</td></tr>
-				<tr><td>tnVn.ni</td><td>ERROR</td><td>subject is correct, adequate, suitable</td><td>verb</td></tr>
-				<tr><td>tcV.nin</td><td>ERROR</td><td>bid, offer, supply</td><td>noun</td></tr>
-				<tr><td>cVn.lan</td><td>ERROR</td><td>subject is joined, united</td><td>verb</td></tr>
-				<tr><td>nV.tpan</td><td>ERROR</td><td>goal</td><td>noun</td></tr>
-				<tr><td>tpV.tin</td><td>ERROR</td><td>foot</td><td>noun</td></tr>
-				<tr><td>tcV.tna</td><td>ERROR</td><td>century</td><td>noun</td></tr>
-				<tr><td>tpV.tti</td><td>ERROR</td><td>subject is basic, essential</td><td>verb</td></tr>
-				<tr><td>lV.tnin</td><td>ERROR</td><td>worry, concern</td><td>noun</td></tr>
-				<tr><td>ttVn.pa</td><td>ERROR</td><td>page</td><td>noun</td></tr>
-				<tr><td>nVn.pli</td><td>ERROR</td><td>subject is white</td><td>verb</td></tr>
-				<tr><td>lVn.cin</td><td>ERROR</td><td>subject is taught</td><td>verb</td></tr>
-				<tr><td>tcV.tca</td><td>ERROR</td><td>police, police officer, police force</td><td>noun</td></tr>
-				<tr><td>ttV.lin</td><td>ERROR</td><td>subject is nice, pretty</td><td>verb</td></tr>
-				<tr><td>tnV.lun</td><td>ERROR</td><td>object</td><td>noun</td></tr>
-				<tr><td>tV.tpun</td><td>ERROR</td><td>education</td><td>noun</td></tr>
-				<tr><td>lVn.lan</td><td>ERROR</td><td>date</td><td>noun</td></tr>
-				<tr><td>tpV.pin</td><td>ERROR</td><td>future</td><td>noun</td></tr>
-				<tr><td>nVn.nun</td><td>ERROR</td><td>mark, trademark, brand</td><td>noun</td></tr>
-				<tr><td>tnV.tta</td><td>ERROR</td><td>journey, itinerary</td><td>noun</td></tr>
-				<tr><td>nV.plun</td><td>ERROR</td><td>authority</td><td>noun</td></tr>
-				<tr><td>tnV.tlu</td><td>ERROR</td><td>surroundings</td><td>noun</td></tr>
-				<tr><td>plV.tin</td><td>ERROR</td><td>subject is researched</td><td>verb</td></tr>
-				<tr><td>plV.pan</td><td>ERROR</td><td>subject is touched</td><td>verb</td></tr>
-				<tr><td>clVn.pu</td><td>ERROR</td><td>net, network</td><td>noun</td></tr>
-				<tr><td>tpVn.ti</td><td>ERROR</td><td>subject is liked</td><td>verb</td></tr>
-				<tr><td>nV.tnin</td><td>ERROR</td><td>text</td><td>noun</td></tr>
-				<tr><td>tpVn.la</td><td>ERROR</td><td>subject is produced</td><td>verb</td></tr>
-				<tr><td>clV.lan</td><td>ERROR</td><td>subject is forgeten</td><td>verb</td></tr>
-				<tr><td>ttV.tpu</td><td>ERROR</td><td>subject is local</td><td>verb</td></tr>
-				<tr><td>tcVn.nu</td><td>ERROR</td><td>minute</td><td>noun</td></tr>
-				<tr><td>tpV.tcu</td><td>ERROR</td><td>bill, account</td><td>noun</td></tr>
-				<tr><td>tVn.tci</td><td>ERROR</td><td>call, knock</td><td>???</td></tr>
-				<tr><td>tnV.pun</td><td>ERROR</td><td>strip, tongue</td><td>noun</td></tr>
-				<tr><td>nVn.tpu</td><td>ERROR</td><td>subject is sold</td><td>verb</td></tr>
-				<tr><td>tV.clan</td><td>ERROR</td><td>economy, thriftiness, economics</td><td>noun</td></tr>
-				<tr><td>cVn.pla</td><td>ERROR</td><td>chief, captain</td><td>noun</td></tr>
-				<tr><td>cV.tcun</td><td>ERROR</td><td>statement, declaration</td><td>noun</td></tr>
-				<tr><td>tpV.tni</td><td>ERROR</td><td>subject rises</td><td>verb</td></tr>
-				<tr><td>tVn.pin</td><td>ERROR</td><td>title, heading</td><td>noun</td></tr>
-				<tr><td>tpV.pli</td><td>ERROR</td><td>subject is pure, clean</td><td>verb</td></tr>
-				<tr><td>cVn.ttu</td><td>ERROR</td><td>no one</td><td>noun</td></tr>
-				<tr><td>pV.plun</td><td>ERROR</td><td>subject is black</td><td>verb</td></tr>
-				<tr><td>tnV.nin</td><td>ERROR</td><td>mouth, opening</td><td>noun</td></tr>
-				<tr><td>ttVn.ni</td><td>ERROR</td><td>tent, store, shop, workshop</td><td>noun</td></tr>
-				<tr><td>tV.tnan</td><td>ERROR</td><td>down, downward, below</td><td>???</td></tr>
-				<tr><td>lVn.cla</td><td>ERROR</td><td>worker, laborer</td><td>noun</td></tr>
-				<tr><td>nVn.lun</td><td>ERROR</td><td>rapidly, quickly</td><td>adverb</td></tr>
-				<tr><td>tV.tcan</td><td>ERROR</td><td>conduct, behavior</td><td>noun</td></tr>
-				<tr><td>clV.tpi</td><td>ERROR</td><td>echo, response</td><td>noun</td></tr>
-				<tr><td>clV.tli</td><td>ERROR</td><td>subject is offered</td><td>verb</td></tr>
-				<tr><td>clVn.lu</td><td>ERROR</td><td>regard, respect</td><td>noun</td></tr>
-				<tr><td>pV.tcun</td><td>ERROR</td><td>motion</td><td>noun</td></tr>
-				<tr><td>pV.ttun</td><td>ERROR</td><td>subject is responsible</td><td>verb</td></tr>
-				<tr><td>tVn.tni</td><td>ERROR</td><td>goods, property</td><td>noun</td></tr>
-				<tr><td>Vn.tpin</td><td>ERROR</td><td>subject is proposed</td><td>verb</td></tr>
-				<tr><td>plV.ttu</td><td>ERROR</td><td>subject is needed</td><td>verb</td></tr>
-				<tr><td>pV.tpin</td><td>ERROR</td><td>error, mistake</td><td>noun</td></tr>
-				<tr><td>tVn.tpi</td><td>ERROR</td><td>subject is to entered</td><td>verb?</td></tr>
-				<tr><td>plV.lin</td><td>ERROR</td><td>pupil, student</td><td>noun</td></tr>
-				<tr><td>pVn.tin</td><td>ERROR</td><td>for example</td><td>adverb</td></tr>
-				<tr><td>nVn.tni</td><td>ERROR</td><td>objective</td><td>noun</td></tr>
-				<tr><td>tcV.tpi</td><td>ERROR</td><td>proposal, proposition</td><td>noun</td></tr>
-				<tr><td>cVn.cli</td><td>ERROR</td><td>practice, exercise</td><td>noun</td></tr>
-				<tr><td>plV.cin</td><td>ERROR</td><td>structure</td><td>noun</td></tr>
-				<tr><td>clV.tca</td><td>ERROR</td><td>entrance, admission ticket</td><td>noun</td></tr>
-				<tr><td>ttV.tta</td><td>ERROR</td><td>attempt</td><td>noun</td></tr>
-				<tr><td>clV.tti</td><td>ERROR</td><td>court</td><td>noun</td></tr>
-				<tr><td>tnV.tun</td><td>ERROR</td><td>concept</td><td>noun</td></tr>
-				<tr><td>lV.tcan</td><td>ERROR</td><td>capital</td><td>noun</td></tr>
-				<tr><td>tpVn.cu</td><td>ERROR</td><td>will, willpower, intention</td><td>noun</td></tr>
-				<tr><td>V.tlu.ta</td><td>ERROR</td><td>branch, agency</td><td>noun</td></tr>
-				<tr><td>V.ti.tan</td><td>ERROR</td><td>responsibility</td><td>noun</td></tr>
-				<tr><td>V.pa.cin</td><td>ERROR</td><td>importance</td><td>noun</td></tr>
-				<tr><td>lV.la.tu</td><td>ERROR</td><td>subject is wide, ample, broad</td><td>verb</td></tr>
-				<tr><td>lV.pun.u</td><td>ERROR</td><td>reality, actuality</td><td>noun</td></tr>
-				<tr><td>tV.ca.tu</td><td>ERROR</td><td>subject is determined</td><td>verb</td></tr>
-				<tr><td>cV.lu.tu</td><td>ERROR</td><td>remark, comment</td><td>noun</td></tr>
-				<tr><td>V.tin.li</td><td>ERROR</td><td>difference</td><td>noun</td></tr>
-				<tr><td>p.tVn.nu</td><td>ERROR</td><td>harm, injury, damage</td><td>noun</td></tr>
-				<tr><td>V.ni.nan</td><td>ERROR</td><td>institution</td><td>noun</td></tr>
-				<tr><td>nV.ni.pu</td><td>ERROR</td><td>subject leans on, is supported, held up by</td><td>verb</td></tr>
-				<tr><td>V.pa.tan</td><td>ERROR</td><td>subject is official, authorized</td><td>verb</td></tr>
-				<tr><td>V.ta.tpu</td><td>ERROR</td><td>usually, generally</td><td>adverb</td></tr>
-				<tr><td>Vn.pan.a</td><td>ERROR</td><td>subject is cut</td><td>verb</td></tr>
-				<tr><td>lV.tun.i</td><td>ERROR</td><td>TV, television</td><td>noun</td></tr>
-				<tr><td>V.li.cun</td><td>ERROR</td><td>owner, patron saint, employer, landlord</td><td>noun</td></tr>
-				<tr><td>cV.lu.ca</td><td>ERROR</td><td>expression</td><td>noun</td></tr>
-				<tr><td>lV.na.ni</td><td>ERROR</td><td>personality</td><td>noun</td></tr>
-				<tr><td>pV.na.na</td><td>ERROR</td><td>newspaper, periodical</td><td>noun</td></tr>
-				<tr><td>V.na.tun</td><td>ERROR</td><td>memory, keepsake</td><td>noun</td></tr>
-				<tr><td>V.ca.tli</td><td>ERROR</td><td>subject walks</td><td>verb</td></tr>
-				<tr><td>V.ttun.i</td><td>ERROR</td><td>subject is powerful</td><td>verb</td></tr>
-				<tr><td>Vn.ni.lu</td><td>ERROR</td><td>subject is known, well known, famous</td><td>verb</td></tr>
-				<tr><td>nV.tu.pu</td><td>ERROR</td><td>subject progresses, advances</td><td>verb</td></tr>
-				<tr><td>cV.pa.lu</td><td>ERROR</td><td>often</td><td>adverb?</td></tr>
-				<tr><td>tV.ta.li</td><td>ERROR</td><td>hit, punch, strike</td><td>noun</td></tr>
-				<tr><td>pV.cu.ni</td><td>ERROR</td><td>color</td><td>noun</td></tr>
-				<tr><td>lV.pa.pu</td><td>ERROR</td><td>subject is served</td><td>verb</td></tr>
-				<tr><td>tVn.p.ci</td><td>ERROR</td><td>subject is received</td><td>verb</td></tr>
-				<tr><td>lV.nu.lu</td><td>ERROR</td><td>whole</td><td>?count?</td></tr>
-				<tr><td>Vn.lu.na</td><td>ERROR</td><td>subject runs</td><td>verb</td></tr>
-				<tr><td>Vn.ni.cu</td><td>ERROR</td><td>culture</td><td>noun</td></tr>
-				<tr><td>nV.ci.tu</td><td>ERROR</td><td>energy</td><td>noun</td></tr>
-				<tr><td>pV.li.ci</td><td>ERROR</td><td>success</td><td>noun</td></tr>
-				<tr><td>c.tV.tta</td><td>ERROR</td><td>up</td><td>??</td></tr>
-				<tr><td>lV.ci.ni</td><td>ERROR</td><td>subject is smart, clever</td><td>verb</td></tr>
-				<tr><td>pV.la.tu</td><td>ERROR</td><td>door</td><td>noun</td></tr>
-				<tr><td>lV.pi.tu</td><td>ERROR</td><td>fire, gunfire</td><td>noun</td></tr>
-				<tr><td>tV.pu.ca</td><td>ERROR</td><td>community</td><td>noun</td></tr>
-				<tr><td>pV.pa.ci</td><td>ERROR</td><td>knowledge</td><td>noun</td></tr>
-				<tr><td>pV.pa.li</td><td>ERROR</td><td>track, trace</td><td>noun</td></tr>
-				<tr><td>tV.ci.ci</td><td>ERROR</td><td>diary, agenda, timetable, schedule</td><td>noun</td></tr>
-				<tr><td>V.tcun.a</td><td>ERROR</td><td>joy, happiness</td><td>noun</td></tr>
-				<tr><td>V.pu.tni</td><td>ERROR</td><td>attention</td><td>noun</td></tr>
-				<tr><td>tV.nu.la</td><td>ERROR</td><td>fall, falling, drop</td><td>noun</td></tr>
-				<tr><td>tlV.c.tu</td><td>ERROR</td><td>subject is protected, defended</td><td>verb</td></tr>
-				<tr><td>Vn.pi.li</td><td>ERROR</td><td>subject is born</td><td>verb</td></tr>
-				<tr><td>V.tu.tca</td><td>ERROR</td><td>career</td><td>noun</td></tr>
-				<tr><td>nV.nu.cu</td><td>ERROR</td><td>subject is thanked</td><td>verb</td></tr>
-				<tr><td>tcV.c.pa</td><td>ERROR</td><td>song</td><td>noun</td></tr>
-				<tr><td>V.cu.tna</td><td>ERROR</td><td>drive</td><td>noun</td></tr>
-				<tr><td>cVn.p.cu</td><td>ERROR</td><td>fee, charge</td><td>noun</td></tr>
-				<tr><td>V.ta.tti</td><td>ERROR</td><td>count</td><td>noun</td></tr>
-				<tr><td>pV.p.nin</td><td>ERROR</td><td>phone, telephone</td><td>noun</td></tr>
-				<tr><td>tnV.p.ti</td><td>ERROR</td><td>solution</td><td>noun</td></tr>
-				<tr><td>Vn.pi.pu</td><td>ERROR</td><td>building</td><td>noun</td></tr>
-				<tr><td>pV.nun.a</td><td>ERROR</td><td>subject is interesting</td><td>verb</td></tr>
-				<tr><td>lV.tu.pi</td><td>ERROR</td><td>profit</td><td>noun</td></tr>
-				<tr><td>nV.ni.la</td><td>ERROR</td><td>trade, commerce</td><td>noun</td></tr>
-				<tr><td>pV.tun.u</td><td>ERROR</td><td>subject is worn</td><td>verb</td></tr>
-				<tr><td>pVn.p.na</td><td>ERROR</td><td>contest, competition</td><td>noun</td></tr>
-				<tr><td>lV.ni.pu</td><td>ERROR</td><td>foreigner</td><td>noun</td></tr>
-				<tr><td>tV.pa.ti</td><td>ERROR</td><td>fault, blame</td><td>noun</td></tr>
-				<tr><td>Vn.tin.i</td><td>ERROR</td><td>subject is provided, contributed</td><td>verb</td></tr>
-				<tr><td>V.ta.tna</td><td>ERROR</td><td>income, revenue</td><td>noun</td></tr>
-				<tr><td>pV.can.u</td><td>ERROR</td><td>dues, quota, share</td><td>noun</td></tr>
-				<tr><td>tV.lu.la</td><td>ERROR</td><td>season</td><td>noun</td></tr>
-				<tr><td>V.tpi.ti</td><td>ERROR</td><td>liberty, freedom</td><td>noun</td></tr>
-				<tr><td>cV.nun.a</td><td>ERROR</td><td>art</td><td>noun</td></tr>
-				<tr><td>cV.cu.ta</td><td>ERROR</td><td>exactly</td><td>adverb</td></tr>
-				<tr><td>pV.ca.lu</td><td>ERROR</td><td>trip, travel</td><td>noun</td></tr>
-				<tr><td>V.tcu.ti</td><td>ERROR</td><td>era, epoch</td><td>noun</td></tr>
-				<tr><td>ttV.c.na</td><td>ERROR</td><td>training, preparation</td><td>noun</td></tr>
-				<tr><td>ttV.p.ci</td><td>ERROR</td><td>in spite of</td><td>postposition?</td></tr>
-				<tr><td>c.nV.tlu</td><td>ERROR</td><td>subject is incited, moved emotionally</td><td>verb</td></tr>
-				<tr><td>ttV.p.ni</td><td>ERROR</td><td>subject spreads, extends</td><td>verb</td></tr>
-				<tr><td>V.na.pun</td><td>ERROR</td><td>subject is provoked, brought about, caused</td><td>verb</td></tr>
-				<tr><td>cV.ci.na</td><td>ERROR</td><td>probably</td><td>adverb</td></tr>
-				<tr><td>c.nV.lan</td><td>ERROR</td><td>content, contents</td><td>noun</td></tr>
-				<tr><td>V.ci.tci</td><td>ERROR</td><td>series</td><td>noun</td></tr>
-				<tr><td>p.cV.cin</td><td>ERROR</td><td>ten</td><td>?count?</td></tr>
-				<tr><td>pV.la.pa</td><td>ERROR</td><td>obstacle, difficulty</td><td>noun</td></tr>
-				<tr><td>V.nan.ci</td><td>ERROR</td><td>subject discovers</td><td>verb</td></tr>
-				<tr><td>V.pun.ca</td><td>ERROR</td><td>illness, sickness</td><td>noun</td></tr>
-				<tr><td>Vn.pa.tu</td><td>ERROR</td><td>press</td><td>noun</td></tr>
-				<tr><td>lV.cu.ci</td><td>ERROR</td><td>raid, attack</td><td>noun?</td></tr>
-				<tr><td>V.li.lun</td><td>ERROR</td><td>subject is prepared</td><td>verb</td></tr>
-				<tr><td>cV.pa.pu</td><td>ERROR</td><td>subject is cold</td><td>verb</td></tr>
-				<tr><td>pV.nu.ca</td><td>ERROR</td><td>early</td><td>??</td></tr>
-				<tr><td>Vn.lin.a</td><td>ERROR</td><td>representative</td><td>noun</td></tr>
-				<tr><td>V.lu.tca</td><td>ERROR</td><td>note</td><td>noun</td></tr>
-				<tr><td>pV.ca.pi</td><td>ERROR</td><td>subject is advertised, announced</td><td>verb</td></tr>
-				<tr><td>V.tpu.lu</td><td>ERROR</td><td>subject turns</td><td>verb</td></tr>
-				<tr><td>V.li.nun</td><td>ERROR</td><td>border, frontier</td><td>noun</td></tr>
-				<tr><td>pV.pin.a</td><td>ERROR</td><td>subject is focused, centered</td><td>verb</td></tr>
-				<tr><td>tpV.p.ci</td><td>ERROR</td><td>subject is rich in flavor, tasty</td><td>verb</td></tr>
-				<tr><td>lV.pi.cu</td><td>ERROR</td><td>advice, council, counsel</td><td>noun</td></tr>
-				<tr><td>cV.p.tan</td><td>ERROR</td><td>mass, crowd, bulk</td><td>noun</td></tr>
-				<tr><td>cV.c.pin</td><td>ERROR</td><td>blood</td><td>noun</td></tr>
-				<tr><td>cV.ta.la</td><td>ERROR</td><td>six</td><td>?count?</td></tr>
-				<tr><td>Vn.ti.ci</td><td>ERROR</td><td>possibility</td><td>noun</td></tr>
-				<tr><td>p.tVn.la</td><td>ERROR</td><td>subject is placed</td><td>verb</td></tr>
-				<tr><td>lV.c.tin</td><td>ERROR</td><td>resource</td><td>noun</td></tr>
-				<tr><td>V.tin.cu</td><td>ERROR</td><td>talent, ability</td><td>noun</td></tr>
-				<tr><td>lV.li.pa</td><td>ERROR</td><td>subject is assumed, supposed</td><td>verb</td></tr>
-				<tr><td>V.tci.li</td><td>ERROR</td><td>subject is calm, tranquil, relaxed</td><td>verb</td></tr>
-				<tr><td>p.nVn.ci</td><td>ERROR</td><td>surely, securely</td><td>adverb</td></tr>
-				<tr><td>cV.cu.ca</td><td>ERROR</td><td>wood</td><td>noun</td></tr>
-				<tr><td>V.nan.na</td><td>ERROR</td><td>exit, escape</td><td>noun</td></tr>
-				<tr><td>V.ci.tti</td><td>ERROR</td><td>limit</td><td>noun</td></tr>
-				<tr><td>nV.lu.la</td><td>ERROR</td><td>animal</td><td>noun</td></tr>
-				<tr><td>nV.tu.ca</td><td>ERROR</td><td>painting</td><td>noun</td></tr>
-				<tr><td>V.ca.lin</td><td>ERROR</td><td>subject is applied</td><td>verb</td></tr>
-				<tr><td>lV.pi.na</td><td>ERROR</td><td>vote</td><td>noun</td></tr>
-				<tr><td>c.pVn.la</td><td>ERROR</td><td>recently</td><td>adverb?</td></tr>
-				<tr><td>V.tnan.i</td><td>ERROR</td><td>outlay, investment</td><td>noun</td></tr>
-				<tr><td>lV.can.u</td><td>ERROR</td><td>past</td><td>noun?</td></tr>
-				<tr><td>tV.pa.lu</td><td>ERROR</td><td>growth</td><td>noun</td></tr>
-				<tr><td>V.tan.ni</td><td>ERROR</td><td>subject is learned</td><td>verb</td></tr>
-				<tr><td>V.tna.ta</td><td>ERROR</td><td>drug, medicine</td><td>noun</td></tr>
-				<tr><td>lV.nu.tu</td><td>ERROR</td><td>speech</td><td>noun</td></tr>
-				<tr><td>nV.p.cin</td><td>ERROR</td><td>subject is indicated</td><td>verb</td></tr>
-				<tr><td>pV.li.nu</td><td>ERROR</td><td>principal</td><td>noun</td></tr>
-				<tr><td>tV.pun.i</td><td>ERROR</td><td>subject is private</td><td>verb</td></tr>
-				<tr><td>V.tta.tu</td><td>ERROR</td><td>fur, skin, hide</td><td>noun</td></tr>
-				<tr><td>V.lu.tti</td><td>ERROR</td><td>subject is bought</td><td>verb</td></tr>
-				<tr><td>V.tla.na</td><td>ERROR</td><td>daily</td><td>adverb?</td></tr>
-				<tr><td>lV.pu.la</td><td>ERROR</td><td>floor</td><td>noun</td></tr>
-				<tr><td>cV.tin.a</td><td>ERROR</td><td>credit, reputation</td><td>noun</td></tr>
-				<tr><td>Vn.la.la</td><td>ERROR</td><td>district, neighborhood</td><td>noun</td></tr>
-				<tr><td>nV.ta.lu</td><td>ERROR</td><td>republic</td><td>noun</td></tr>
-				<tr><td>p.tV.tli</td><td>ERROR</td><td>subject stops, ceases</td><td>verb</td></tr>
-				<tr><td>V.pi.pan</td><td>ERROR</td><td>subject is divided</td><td>verb</td></tr>
-				<tr><td>V.can.ti</td><td>ERROR</td><td>reform, improvement</td><td>noun</td></tr>
-				<tr><td>tV.tu.ca</td><td>ERROR</td><td>attitude</td><td>noun</td></tr>
-				<tr><td>c.pV.tnu</td><td>ERROR</td><td>subject runs, scatters, flees</td><td>verb</td></tr>
-				<tr><td>pV.ti.tu</td><td>ERROR</td><td>existence</td><td>noun</td></tr>
-				<tr><td>tV.pi.nu</td><td>ERROR</td><td>lack, shortage</td><td>noun</td></tr>
-				<tr><td>lV.p.nan</td><td>ERROR</td><td>pay, salary, wages</td><td>noun</td></tr>
-				<tr><td>nV.lan.u</td><td>ERROR</td><td>sale</td><td>noun</td></tr>
-				<tr><td>V.can.nu</td><td>ERROR</td><td>suddenly</td><td>adverb?</td></tr>
-				<tr><td>V.tci.nu</td><td>ERROR</td><td>sometimes, now and then</td><td>adverb?</td></tr>
-				<tr><td>c.tVn.cu</td><td>ERROR</td><td>presentation, introduction</td><td>noun</td></tr>
-				<tr><td>cV.ca.pa</td><td>ERROR</td><td>origin</td><td>noun</td></tr>
-				<tr><td>tlV.c.nu</td><td>ERROR</td><td>subject sleeps</td><td>verb</td></tr>
-				<tr><td>lVn.c.ti</td><td>ERROR</td><td>decrease, reduction</td><td>noun</td></tr>
-				<tr><td>Vn.nin.a</td><td>ERROR</td><td>diet, regime</td><td>noun</td></tr>
-				<tr><td>V.ta.can</td><td>ERROR</td><td>application</td><td>noun</td></tr>
+				<tr><td>Vcun</td><td>ERROR</td><td>so, therefore</td><td>conjuction,</td></tr>
+				<tr><td>Vntu</td><td>ERROR</td><td>way, shape, manner, form</td><td>noun</td></tr>
+				<tr><td>lVca</td><td>ERROR</td><td>subject knows, finds out, discoveres, mentally preceives object</td><td>verb</td></tr>
+				<tr><td>tVnha</td><td>ERROR</td><td>subject is only, just, barely as described</td><td>adverb</td></tr>
+				<tr><td>Vtna</td><td>ERROR</td><td>subject is given away, changes possession (temporary or permanent)</td><td>verb</td></tr>
+				<tr><td>tVpi</td><td>ERROR</td><td>year</td><td>noun</td></tr>
+				<tr><td>cVci</td><td>ERROR</td><td>some, a few</td><td>?count?</td></tr>
+				<tr><td>pnVn</td><td>ERROR</td><td>subject perceives with the eyes, sees object</td><td>verb</td></tr>
+				<tr><td>pVlu</td><td>ERROR</td><td>subject is taken, carried</td><td>verb</td></tr>
+				<tr><td>Vtpu</td><td>ERROR</td><td>all</td><td>?count?</td></tr>
+				<tr><td>tVni</td><td>ERROR</td><td>if, dependending on</td><td>conjuction</td></tr>
+				<tr><td>pcVn</td><td>ERROR</td><td>subject is unlike others, marks focus due to contrariness, other, another</td><td>verb</td></tr>
+				<tr><td>pVpu</td><td>ERROR</td><td>subject is over, on top of, about object</td><td>?verb?</td></tr>
+				<tr><td>ptVn</td><td>ERROR</td><td>one</td><td>?count?</td></tr>
+				<tr><td>nVpa</td><td>ERROR</td><td>subject is wanted, loved</td><td>verb</td></tr>
+				<tr><td>Vtan</td><td>ERROR</td><td>nothing, nobody</td><td>noun</td></tr>
+				<tr><td>pVnu</td><td>ERROR</td><td>subject is as described until, up to object</td><td>postposition</td></tr>
+				<tr><td>Vncu</td><td>ERROR</td><td>place, position</td><td>noun</td></tr>
+				<tr><td>nVta</td><td>ERROR</td><td>is thought, believed</td><td>subject</td></tr>
+				<tr><td>nVcu</td><td>ERROR</td><td>law, justice, right</td><td>noun</td></tr>
+				<tr><td>cVpi</td><td>ERROR</td><td>subject is a proper, well formed, complete as described</td><td>adverb</td></tr>
+				<tr><td>Vtta</td><td>ERROR</td><td>subject is as described because of object</td><td>postposition</td></tr>
+				<tr><td>pVti</td><td>ERROR</td><td>subject works, toils, labors</td><td>verb</td></tr>
+				<tr><td>lVlu</td><td>ERROR</td><td>person, sentient being, someone</td><td>noun</td></tr>
+				<tr><td>Vtli</td><td>ERROR</td><td>subject is owed, ought to happen, should be done</td><td>verb</td></tr>
+				<tr><td>Vnni</td><td>ERROR</td><td>subject will be as described after, past object</td><td>postposition</td></tr>
+				<tr><td>cVlu</td><td>ERROR</td><td>then, well then</td><td>conjunction</td></tr>
+				<tr><td>tVta</td><td>ERROR</td><td>subject is big, great, large</td><td>verb</td></tr>
+				<tr><td>cVnu</td><td>ERROR</td><td>dot, point, period</td><td>noun</td></tr>
+				<tr><td>tVla</td><td>ERROR</td><td>subject is left, let, allowed to contiue without interference</td><td>verb</td></tr>
+				<tr><td>cVnhi</td><td>ERROR</td><td>subject is the first</td><td>verb</td></tr>
+				<tr><td>Vpin</td><td>ERROR</td><td>there, over there</td><td>?pronoun?</td></tr>
+				<tr><td>lVnu</td><td>ERROR</td><td>subject is good</td><td>verb</td></tr>
+				<tr><td>pVnhi</td><td>ERROR</td><td>thing, something</td><td>noun</td></tr>
+				<tr><td>Vlin</td><td>ERROR</td><td>subject is started, starts a procdess, begins to do something</td><td>verb</td></tr>
+				<tr><td>Vnan</td><td>ERROR</td><td>few, a little bit, little</td><td>?count?</td></tr>
+				<tr><td>Vnli</td><td>ERROR</td><td>subject is watched, look at by object</td><td>verb</td></tr>
+				<tr><td>lVti</td><td>ERROR</td><td>subject comes, arrives</td><td>verb</td></tr>
+				<tr><td>Vcla</td><td>ERROR</td><td>day</td><td>noun</td></tr>
+				<tr><td>lVpu</td><td>ERROR</td><td>subject is before, in the presence of object</td><td>verb</td></tr>
+				<tr><td>tVci</td><td>ERROR</td><td>people, village</td><td>noun</td></tr>
+				<tr><td>lVnhi</td><td>ERROR</td><td>is passed, moved past, spent (time)</td><td>subject</td></tr>
+				<tr><td>cVta</td><td>ERROR</td><td>adverbial or postpositional question, how, in what way</td><td>adverb</td></tr>
+				<tr><td>ctVn</td><td>ERROR</td><td>two</td><td>?count?</td></tr>
+				<tr><td>cnVn</td><td>ERROR</td><td>part, portion</td><td>noun</td></tr>
+				<tr><td>cpVn</td><td>ERROR</td><td>humanity</td><td>mankind,</td></tr>
+				<tr><td>Vpcu</td><td>ERROR</td><td>subject is new, fresh, novel</td><td>verb</td></tr>
+				<tr><td>Vctu</td><td>ERROR</td><td>subject stays, remains, doesn't change</td><td>verb</td></tr>
+				<tr><td>Vpni</td><td>ERROR</td><td>each, every</td><td>?count?</td></tr>
+				<tr><td>Vcni</td><td>ERROR</td><td>subject is as described since, after object</td><td>postposition</td></tr>
+				<tr><td>Vpta</td><td>ERROR</td><td>anew, again</td><td>adverb</td></tr>
+				<tr><td>Vcpa</td><td>ERROR</td><td>end, extremus point</td><td>noun</td></tr>
+				<tr><td>lVnpa</td><td>ERROR</td><td>subject is what becomes of object</td><td>verb</td></tr>
+				<tr><td>tpVcu</td><td>ERROR</td><td>subject is true, certain, sure</td><td>verb</td></tr>
+				<tr><td>nVncu</td><td>ERROR</td><td>subject is found</td><td>verb</td></tr>
+				<tr><td>Vtcin</td><td>ERROR</td><td>subject talks, speaks to object</td><td>verb</td></tr>
+				<tr><td>cVtni</td><td>ERROR</td><td>subject is among, between object</td><td>postposition</td></tr>
+				<tr><td>pVnun</td><td>ERROR</td><td>state, status, condition</td><td>noun</td></tr>
+				<tr><td>tVcan</td><td>ERROR</td><td>type, kind</td><td>noun</td></tr>
+				<tr><td>Vtlan</td><td>ERROR</td><td>subject waits, expects, hopes for object</td><td>verb</td></tr>
+				<tr><td>tnVnhi</td><td>ERROR</td><td>subject is last, final</td><td>verb</td></tr>
+				<tr><td>pVcan</td><td>ERROR</td><td>country</td><td>noun</td></tr>
+				<tr><td>cVclu</td><td>ERROR</td><td>noun, name</td><td>noun</td></tr>
+				<tr><td>lVnta</td><td>ERROR</td><td>subject uses object</td><td>postposition</td></tr>
+				<tr><td>nVnni</td><td>ERROR</td><td>act, action, activity</td><td>noun</td></tr>
+				<tr><td>Vntci</td><td>ERROR</td><td>man, husband</td><td>noun</td></tr>
+				<tr><td>clVlu</td><td>ERROR</td><td>wife, woman, girl</td><td>noun</td></tr>
+				<tr><td>nVtci</td><td>ERROR</td><td>subject is without, lacking object</td><td>postposition</td></tr>
+				<tr><td>ttVnha</td><td>ERROR</td><td>subject is young, small</td><td>verb</td></tr>
+				<tr><td>tnVnu</td><td>ERROR</td><td>any, anyone</td><td>?count?</td></tr>
+				<tr><td>Vntti</td><td>ERROR</td><td>however, but</td><td>conjuction</td></tr>
+				<tr><td>Vtnan</td><td>ERROR</td><td>life</td><td>noun</td></tr>
+				<tr><td>tVnci</td><td>ERROR</td><td>subject is as described according to object</td><td>postposition</td></tr>
+				<tr><td>tVnpa</td><td>ERROR</td><td>plan, project</td><td>noun</td></tr>
+				<tr><td>tVpan</td><td>ERROR</td><td>here</td><td>?pronoun?</td></tr>
+				<tr><td>nVtti</td><td>ERROR</td><td>subject occurs, happens</td><td>verb</td></tr>
+				<tr><td>cVnin</td><td>ERROR</td><td>firm, venture, company</td><td>noun</td></tr>
+				<tr><td>lVtun</td><td>ERROR</td><td>gentleman, miss, madam</td><td>mister,</td></tr>
+				<tr><td>lVtla</td><td>ERROR</td><td>world</td><td>noun</td></tr>
+				<tr><td>lVtpu</td><td>ERROR</td><td>self</td><td>noun</td></tr>
+				<tr><td>tlVni</td><td>ERROR</td><td>always, forever</td><td>adverb</td></tr>
+				<tr><td>ttVni</td><td>ERROR</td><td>father, mother, parent</td><td>noun</td></tr>
+				<tr><td>tnVpa</td><td>ERROR</td><td>today, nowadays</td><td>noun</td></tr>
+				<tr><td>ttVcu</td><td>ERROR</td><td>business, transaction</td><td>noun</td></tr>
+				<tr><td>lVncu</td><td>ERROR</td><td>subject returns, re-experiences something</td><td>verb</td></tr>
+				<tr><td>nVtla</td><td>ERROR</td><td>side</td><td>noun</td></tr>
+				<tr><td>nVpan</td><td>ERROR</td><td>half-way, middle</td><td>noun</td></tr>
+				<tr><td>pVtan</td><td>ERROR</td><td>subject lives, is alive</td><td>verb</td></tr>
+				<tr><td>Vntlu</td><td>ERROR</td><td>room, space</td><td>noun</td></tr>
+				<tr><td>cVtcu</td><td>ERROR</td><td>subject is present, is introduced by object</td><td>verb</td></tr>
+				<tr><td>clVtu</td><td>ERROR</td><td>case, occasion, situation</td><td>noun</td></tr>
+				<tr><td>pVclu</td><td>ERROR</td><td>subject changes, becomes diffrent</td><td>verb</td></tr>
+				<tr><td>tVtla</td><td>ERROR</td><td>subjects understands object</td><td>verb</td></tr>
+				<tr><td>cVtin</td><td>ERROR</td><td>subject is against, opposite to object</td><td>verb</td></tr>
+				<tr><td>nVtan</td><td>ERROR</td><td>group</td><td>noun</td></tr>
+				<tr><td>pVlin</td><td>ERROR</td><td>road, route, path</td><td>noun</td></tr>
+				<tr><td>tVttu</td><td>ERROR</td><td>less, fewer</td><td>?count?</td></tr>
+				<tr><td>plVta</td><td>ERROR</td><td>a little</td><td>?count?</td></tr>
+				<tr><td>tlVli</td><td>ERROR</td><td>subject is next, following</td><td>verb</td></tr>
+				<tr><td>nVnta</td><td>ERROR</td><td>order, class</td><td>noun</td></tr>
+				<tr><td>tVtin</td><td>ERROR</td><td>subject is tall, high</td><td>verb</td></tr>
+				<tr><td>pVnlu</td><td>ERROR</td><td>later, afterwards</td><td>adverb</td></tr>
+				<tr><td>lVnli</td><td>ERROR</td><td>subject is separate, different, distinct</td><td>verb</td></tr>
+				<tr><td>ttVpa</td><td>ERROR</td><td>non-gender conforming person, spouse</td><td>noun</td></tr>
+				<tr><td>pVtna</td><td>ERROR</td><td>subject is old, ancient, aged, former</td><td>verb</td></tr>
+				<tr><td>tVlin</td><td>ERROR</td><td>subject is inside object</td><td>?verb?</td></tr>
+				<tr><td>Vntun</td><td>ERROR</td><td>story, history</td><td>noun</td></tr>
+				<tr><td>tnVci</td><td>ERROR</td><td>subject is created, creatively produced</td><td>verb</td></tr>
+				<tr><td>lVnnu</td><td>ERROR</td><td>child</td><td>noun</td></tr>
+				<tr><td>cVtlu</td><td>ERROR</td><td>land, earth, ground</td><td>noun</td></tr>
+				<tr><td>tVnlu</td><td>ERROR</td><td>moment</td><td>noun</td></tr>
+				<tr><td>pVpun</td><td>ERROR</td><td>city</td><td>noun</td></tr>
+				<tr><td>Vclin</td><td>ERROR</td><td>subject is alone, lonely</td><td>verb</td></tr>
+				<tr><td>Vnlin</td><td>ERROR</td><td>subject is playing</td><td>verb</td></tr>
+				<tr><td>clVnha</td><td>ERROR</td><td>various, several</td><td>?count?</td></tr>
+				<tr><td>cVlin</td><td>ERROR</td><td>relation, relationship</td><td>noun</td></tr>
+				<tr><td>ttVta</td><td>ERROR</td><td>government</td><td>noun</td></tr>
+				<tr><td>nVtna</td><td>ERROR</td><td>second, one sixtith of a minute</td><td>noun</td></tr>
+				<tr><td>lVpin</td><td>ERROR</td><td>cost, price</td><td>noun</td></tr>
+				<tr><td>cVpla</td><td>ERROR</td><td>never</td><td>adverb</td></tr>
+				<tr><td>Vtpin</td><td>ERROR</td><td>subject is shown, displayed, demonstrated</td><td>verb</td></tr>
+				<tr><td>tcVta</td><td>ERROR</td><td>home, hearth</td><td>noun</td></tr>
+				<tr><td>pVtti</td><td>ERROR</td><td>subject meets, gathers, collects</td><td>verb</td></tr>
+				<tr><td>plVci</td><td>ERROR</td><td>maybe, perhaps</td><td>adverb</td></tr>
+				<tr><td>nVpla</td><td>ERROR</td><td>hour</td><td>noun</td></tr>
+				<tr><td>pVnpu</td><td>ERROR</td><td>fact, data</td><td>noun</td></tr>
+				<tr><td>tVtpi</td><td>ERROR</td><td>subject is real, authentic, royal</td><td>verb</td></tr>
+				<tr><td>tcVnhi</td><td>ERROR</td><td>subject appears</td><td>verb</td></tr>
+				<tr><td>nVclu</td><td>ERROR</td><td>subject is finished, done</td><td>verb</td></tr>
+				<tr><td>tcVca</td><td>ERROR</td><td>view, opinion, sight</td><td>verb</td></tr>
+				<tr><td>cVnlu</td><td>ERROR</td><td>subject goes out</td><td>verb</td></tr>
+				<tr><td>tlVpi</td><td>ERROR</td><td>party, match</td><td>verb</td></tr>
+				<tr><td>Vntpu</td><td>ERROR</td><td>?three</td><td>?count</td></tr>
+				<tr><td>nVnla</td><td>ERROR</td><td>although, even though</td><td>adverb</td></tr>
+				<tr><td>lVcun</td><td>ERROR</td><td>hand</td><td>noun</td></tr>
+				<tr><td>pVtlu</td><td>ERROR</td><td>subject arrives</td><td>verb</td></tr>
+				<tr><td>tpVna</td><td>ERROR</td><td>question</td><td>noun</td></tr>
+				<tr><td>tVclu</td><td>ERROR</td><td>result, outcome</td><td>noun</td></tr>
+				<tr><td>cVnti</td><td>ERROR</td><td>sense, feeling</td><td>noun</td></tr>
+				<tr><td>tVtci</td><td>ERROR</td><td>subject feels, regrets</td><td>verb</td></tr>
+				<tr><td>tVnna</td><td>ERROR</td><td>subject is above, in addition, on top</td><td>?verb?</td></tr>
+				<tr><td>nVtpi</td><td>ERROR</td><td>problem</td><td>noun</td></tr>
+				<tr><td>nVcan</td><td>ERROR</td><td>like this</td><td>adverb</td></tr>
+				<tr><td>lVnin</td><td>ERROR</td><td>subject is near, close</td><td>verb</td></tr>
+				<tr><td>pVpla</td><td>ERROR</td><td>principle, beginning, starting point</td><td>noun</td></tr>
+				<tr><td>Vttan</td><td>ERROR</td><td>process, procedure</td><td>noun</td></tr>
+				<tr><td>lVlun</td><td>ERROR</td><td>house</td><td>noun</td></tr>
+				<tr><td>Vnpla</td><td>ERROR</td><td>night, evening</td><td>noun</td></tr>
+				<tr><td>pVnnu</td><td>ERROR</td><td>subject is hard, difficult</td><td>verb</td></tr>
+				<tr><td>lVtci</td><td>ERROR</td><td>subject is nearly, almost as described</td><td>adverb</td></tr>
+				<tr><td>Vnclu</td><td>ERROR</td><td>option, choice, election</td><td>noun</td></tr>
+				<tr><td>tlVtu</td><td>ERROR</td><td>head</td><td>noun</td></tr>
+				<tr><td>pVncu</td><td>ERROR</td><td>subject hears, preceives with the ears object</td><td>verb</td></tr>
+				<tr><td>plVnha</td><td>ERROR</td><td>subject increases</td><td>verb</td></tr>
+				<tr><td>clVpu</td><td>ERROR</td><td>system</td><td>noun</td></tr>
+				<tr><td>tVpla</td><td>ERROR</td><td>word</td><td>noun</td></tr>
+				<tr><td>tlVci</td><td>ERROR</td><td>subject is like its own, typical, proper</td><td>verb</td></tr>
+				<tr><td>pVtcu</td><td>ERROR</td><td>son, child</td><td>daughter,</td></tr>
+				<tr><td>tcVnu</td><td>ERROR</td><td>number</td><td>noun</td></tr>
+				<tr><td>Vplin</td><td>ERROR</td><td>subject is quick, fast</td><td>verb</td></tr>
+				<tr><td>Vnpan</td><td>ERROR</td><td>subject is held</td><td>verb</td></tr>
+				<tr><td>plVnu</td><td>ERROR</td><td>subject is important</td><td>verb</td></tr>
+				<tr><td>pVtpa</td><td>ERROR</td><td>topic, theme, subject</td><td>noun</td></tr>
+				<tr><td>tpVli</td><td>ERROR</td><td>itself, themselves, oneself, myself, yourself</td><td>pronoun</td></tr>
+				<tr><td>cVtta</td><td>ERROR</td><td>subject is the main one, larger, older</td><td>verb</td></tr>
+				<tr><td>tVtni</td><td>ERROR</td><td>seems, looks like</td><td>adverb</td></tr>
+				<tr><td>tVnin</td><td>ERROR</td><td>subject is necessary</td><td>verb</td></tr>
+				<tr><td>tpVpi</td><td>ERROR</td><td>subject is writen</td><td>verb</td></tr>
+				<tr><td>tnVtu</td><td>ERROR</td><td>service, helpfulness</td><td>noun</td></tr>
+				<tr><td>lVcli</td><td>ERROR</td><td>president</td><td>noun</td></tr>
+				<tr><td>nVnpu</td><td>ERROR</td><td>job, effort</td><td>noun</td></tr>
+				<tr><td>cVnci</td><td>ERROR</td><td>norm, standard, pattern, model</td><td>noun</td></tr>
+				<tr><td>plVpa</td><td>ERROR</td><td>information</td><td>noun</td></tr>
+				<tr><td>Vncun</td><td>ERROR</td><td>water</td><td>noun</td></tr>
+				<tr><td>Vntnu</td><td>ERROR</td><td>level</td><td>noun</td></tr>
+				<tr><td>tlVnhi</td><td>ERROR</td><td>subject is missed, lost</td><td>verb</td></tr>
+				<tr><td>Vnnan</td><td>ERROR</td><td>subject is behind object</td><td>?verb?</td></tr>
+				<tr><td>tpVnha</td><td>ERROR</td><td>item, article, product</td><td>noun</td></tr>
+				<tr><td>cVnni</td><td>ERROR</td><td>reason, thought that supports an idea</td><td>noun</td></tr>
+				<tr><td>tVnti</td><td>ERROR</td><td>subject is kept, maintained</td><td>verb</td></tr>
+				<tr><td>ttVli</td><td>ERROR</td><td>zone, area</td><td>noun</td></tr>
+				<tr><td>nVnun</td><td>ERROR</td><td>subject is open?</td><td>verb</td></tr>
+				<tr><td>lVtnu</td><td>ERROR</td><td>age</td><td>noun</td></tr>
+				<tr><td>pVnti</td><td>ERROR</td><td>month</td><td>noun</td></tr>
+				<tr><td>tcVlu</td><td>ERROR</td><td>power</td><td>noun</td></tr>
+				<tr><td>cVcun</td><td>ERROR</td><td>aim, purpose</td><td>noun</td></tr>
+				<tr><td>cVnpa</td><td>ERROR</td><td>photo, picture, image</td><td>noun</td></tr>
+				<tr><td>tpVtu</td><td>ERROR</td><td>subject is under, underneath object</td><td>?verb?</td></tr>
+				<tr><td>tnVla</td><td>ERROR</td><td>eye</td><td>noun</td></tr>
+				<tr><td>cVtpu</td><td>ERROR</td><td>face</td><td>noun</td></tr>
+				<tr><td>plVla</td><td>ERROR</td><td>policy, politics</td><td>noun</td></tr>
+				<tr><td>tcVpi</td><td>ERROR</td><td>low-down, short, brief</td><td>???</td></tr>
+				<tr><td>clVcu</td><td>ERROR</td><td>force, strength</td><td>noun</td></tr>
+				<tr><td>clVni</td><td>ERROR</td><td>body</td><td>noun</td></tr>
+				<tr><td>cVpun</td><td>ERROR</td><td>subject reminds, is remembered</td><td>verb</td></tr>
+				<tr><td>lVpli</td><td>ERROR</td><td>friend</td><td>noun</td></tr>
+				<tr><td>lVtta</td><td>ERROR</td><td>chance, opportunity</td><td>noun</td></tr>
+				<tr><td>nVlun</td><td>ERROR</td><td>idea</td><td>noun</td></tr>
+				<tr><td>Vnatu</td><td>ERROR</td><td>clearly, of course</td><td>adverb</td></tr>
+				<tr><td>Vluli</td><td>ERROR</td><td>equipment, outfit</td><td>noun</td></tr>
+				<tr><td>Vnhutu</td><td>ERROR</td><td>element, material</td><td>noun</td></tr>
+				<tr><td>Vpapi</td><td>ERROR</td><td>subject is political</td><td>verb</td></tr>
+				<tr><td>Vtapa</td><td>ERROR</td><td>support, backing</td><td>noun</td></tr>
+				<tr><td>cnVca</td><td>ERROR</td><td>subject is national</td><td>verb</td></tr>
+				<tr><td>Vpita</td><td>ERROR</td><td>public</td><td>noun</td></tr>
+				<tr><td>Vlunu</td><td>ERROR</td><td>front</td><td>noun</td></tr>
+				<tr><td>Vlanhi</td><td>ERROR</td><td>merely</td><td>adverb</td></tr>
+				<tr><td>Vcuci</td><td>ERROR</td><td>subject is social</td><td>verb</td></tr>
+				<tr><td>pcVca</td><td>ERROR</td><td>money, dollar</td><td>noun</td></tr>
+				<tr><td>Vnhupu</td><td>ERROR</td><td>subject is requested, asked for</td><td>verb</td></tr>
+				<tr><td>Vpcin</td><td>ERROR</td><td>subject is sent</td><td>verb</td></tr>
+				<tr><td>Vnhacu</td><td>ERROR</td><td>week</td><td>noun</td></tr>
+				<tr><td>ctVla</td><td>ERROR</td><td>subject is strange, foreign</td><td>verb</td></tr>
+				<tr><td>Vctun</td><td>ERROR</td><td>subject is together</td><td>verb</td></tr>
+				<tr><td>Vtatu</td><td>ERROR</td><td>subject is followed, kept on</td><td>verb</td></tr>
+				<tr><td>Vtanhi</td><td>ERROR</td><td>family</td><td>noun</td></tr>
+				<tr><td>Vnici</td><td>ERROR</td><td>subject is safe, secured</td><td>verb</td></tr>
+				<tr><td>Vcnin</td><td>ERROR</td><td>game, sport</td><td>noun</td></tr>
+				<tr><td>Vninhu</td><td>ERROR</td><td>subject is seeked, looked for by object</td><td>verb</td></tr>
+				<tr><td>ptVli</td><td>ERROR</td><td>forward</td><td>?noun?</td></tr>
+				<tr><td>Vtani</td><td>ERROR</td><td>subject is bad</td><td>verb</td></tr>
+				<tr><td>Vtala</td><td>ERROR</td><td>subject is considered</td><td>verb</td></tr>
+				<tr><td>nVpci</td><td>ERROR</td><td>meeting</td><td>noun</td></tr>
+				<tr><td>ctVnu</td><td>ERROR</td><td>address, direction</td><td>noun</td></tr>
+				<tr><td>Vcila</td><td>ERROR</td><td>subject is wrestled, fought, struggles</td><td>verb</td></tr>
+				<tr><td>Vlutu</td><td>ERROR</td><td>subject is obtained, acquired</td><td>verb</td></tr>
+				<tr><td>cVcti</td><td>ERROR</td><td>subject develops</td><td>verb</td></tr>
+				<tr><td>Vnhani</td><td>ERROR</td><td>cause</td><td>noun</td></tr>
+				<tr><td>ctVpi</td><td>ERROR</td><td>line</td><td>noun</td></tr>
+				<tr><td>Vpinhu</td><td>ERROR</td><td>subject is reached, ccaught up with by object</td><td>noun</td></tr>
+				<tr><td>tVcpi</td><td>ERROR</td><td>subject is clear</td><td>verb</td></tr>
+				<tr><td>Vnupu</td><td>ERROR</td><td>aspect, characteristic</td><td>noun</td></tr>
+				<tr><td>Vncta</td><td>ERROR</td><td>subject is controled by object</td><td>verb</td></tr>
+				<tr><td>cnVnha</td><td>ERROR</td><td>car, vehicle</td><td>noun</td></tr>
+				<tr><td>Vpili</td><td>ERROR</td><td>society</td><td>noun</td></tr>
+				<tr><td>Vcapu</td><td>ERROR</td><td>subject is asked</td><td>verb</td></tr>
+				<tr><td>cpVlu</td><td>ERROR</td><td>subject is long</td><td>verb</td></tr>
+				<tr><td>pcVpa</td><td>ERROR</td><td>subject is general</td><td>verb</td></tr>
+				<tr><td>Vnpni</td><td>ERROR</td><td>finally, in the end, at last</td><td>?adverb?</td></tr>
+				<tr><td>lVpna</td><td>ERROR</td><td>reply, answer</td><td>noun</td></tr>
+				<tr><td>pnVta</td><td>ERROR</td><td>sector, section</td><td>noun</td></tr>
+				<tr><td>pVctu</td><td>ERROR</td><td>situation</td><td>noun</td></tr>
+				<tr><td>cnVlu</td><td>ERROR</td><td>manager, director</td><td>noun</td></tr>
+				<tr><td>lVpcu</td><td>ERROR</td><td>book</td><td>noun</td></tr>
+				<tr><td>cpVni</td><td>ERROR</td><td>death</td><td>noun</td></tr>
+				<tr><td>pcVnhi</td><td>ERROR</td><td>worth, value</td><td>noun</td></tr>
+				<tr><td>Vpinu</td><td>ERROR</td><td>teacher, professor</td><td>noun</td></tr>
+				<tr><td>pnVpu</td><td>ERROR</td><td>school</td><td>noun</td></tr>
+				<tr><td>tVptu</td><td>ERROR</td><td>subject is best, better</td><td>verb</td></tr>
+				<tr><td>Vcini</td><td>ERROR</td><td>during</td><td>???</td></tr>
+				<tr><td>Vcanhi</td><td>ERROR</td><td>field</td><td>noun</td></tr>
+				<tr><td>pVpta</td><td>ERROR</td><td>subject is elected, choosen</td><td>verb</td></tr>
+				<tr><td>Vnhili</td><td>ERROR</td><td>common</td><td>???</td></tr>
+				<tr><td>Vnuni</td><td>ERROR</td><td>subject walks, goes for a walk</td><td>verb</td></tr>
+				<tr><td>Vlipu</td><td>ERROR</td><td>matter</td><td>noun</td></tr>
+				<tr><td>ctVci</td><td>ERROR</td><td>everything</td><td>?count?</td></tr>
+				<tr><td>cVcpi</td><td>ERROR</td><td>program</td><td>noun</td></tr>
+				<tr><td>pcVtu</td><td>ERROR</td><td>subject is included</td><td>verb</td></tr>
+				<tr><td>Vncpa</td><td>ERROR</td><td>subject is brought</td><td>verb</td></tr>
+				<tr><td>nVpna</td><td>ERROR</td><td>truth</td><td>noun</td></tr>
+				<tr><td>cVpta</td><td>ERROR</td><td>subject is carried out, fulfilled</td><td>verb</td></tr>
+				<tr><td>ptVni</td><td>ERROR</td><td>paper</td><td>noun</td></tr>
+				<tr><td>nVpti</td><td>ERROR</td><td>subject is payed</td><td>verb</td></tr>
+				<tr><td>tVctu</td><td>ERROR</td><td>subject perceives, notices object</td><td>verb</td></tr>
+				<tr><td>cpVcu</td><td>ERROR</td><td>million, fortune</td><td>noun</td></tr>
+				<tr><td>pnVca</td><td>ERROR</td><td>market</td><td>noun</td></tr>
+				<tr><td>Vlici</td><td>ERROR</td><td>light</td><td>noun</td></tr>
+				<tr><td>cnVtu</td><td>ERROR</td><td>language</td><td>noun</td></tr>
+				<tr><td>pVcpu</td><td>ERROR</td><td>subject is economic</td><td>verb</td></tr>
+				<tr><td>cVpca</td><td>ERROR</td><td>is decided on</td><td>subject</td></tr>
+				<tr><td>ptVtu</td><td>ERROR</td><td>example</td><td>noun</td></tr>
+				<tr><td>Vtici</td><td>ERROR</td><td>total, entire</td><td>noun?</td></tr>
+				<tr><td>Vcuti</td><td>ERROR</td><td>everyone, everybody</td><td>noun</td></tr>
+				<tr><td>pnVna</td><td>ERROR</td><td>region</td><td>noun</td></tr>
+				<tr><td>Vnilu</td><td>ERROR</td><td>issue, affair</td><td>noun</td></tr>
+				<tr><td>cnVpi</td><td>ERROR</td><td>core, heart</td><td>noun</td></tr>
+				<tr><td>pVpnu</td><td>ERROR</td><td>a lot of</td><td>?count?</td></tr>
+				<tr><td>cVpna</td><td>ERROR</td><td>top</td><td>noun?</td></tr>
+				<tr><td>nVcpa</td><td>ERROR</td><td>subject is added</td><td>verb</td></tr>
+				<tr><td>lVcpa</td><td>ERROR</td><td>handwriting, letter, lyrics</td><td>noun</td></tr>
+				<tr><td>Vptin</td><td>ERROR</td><td>subject is medium, ordinary</td><td>verb</td></tr>
+				<tr><td>Vpnun</td><td>ERROR</td><td>the rest, remainder, leftover</td><td>noun</td></tr>
+				<tr><td>cpVti</td><td>ERROR</td><td>interest</td><td>noun</td></tr>
+				<tr><td>tVcna</td><td>ERROR</td><td>means, resources</td><td>noun</td></tr>
+				<tr><td>pcVna</td><td>ERROR</td><td>so much, so many</td><td>?count?</td></tr>
+				<tr><td>cpVnhi</td><td>ERROR</td><td>film, movie</td><td>noun</td></tr>
+				<tr><td>lVcnu</td><td>ERROR</td><td>subject is treated, dealt with, attempted</td><td>verb</td></tr>
+				<tr><td>pVpci</td><td>ERROR</td><td>course</td><td>noun</td></tr>
+				<tr><td>Vpuca</td><td>ERROR</td><td>anyway, anyhow</td><td>???</td></tr>
+				<tr><td>lVcta</td><td>ERROR</td><td>especially</td><td>adverb</td></tr>
+				<tr><td>Vncni</td><td>ERROR</td><td>amount, quantity</td><td>noun</td></tr>
+				<tr><td>tVpcu</td><td>ERROR</td><td>subject is full, filled</td><td>verb</td></tr>
+				<tr><td>cnVna</td><td>ERROR</td><td>subject is strong</td><td>verb</td></tr>
+				<tr><td>ptVca</td><td>ERROR</td><td>test, trial, proof</td><td>noun</td></tr>
+				<tr><td>nVcta</td><td>ERROR</td><td>rule</td><td>noun</td></tr>
+				<tr><td>Vnpca</td><td>ERROR</td><td>subject falls</td><td>verb</td></tr>
+				<tr><td>ctVta</td><td>ERROR</td><td>aid, help</td><td>noun</td></tr>
+				<tr><td>lVpti</td><td>ERROR</td><td>need, necessity</td><td>noun</td></tr>
+				<tr><td>ptVnhu</td><td>ERROR</td><td>town, municipality</td><td>noun</td></tr>
+				<tr><td>pnVnhu</td><td>ERROR</td><td>subject is lifted, raised</td><td>verb</td></tr>
+				<tr><td>Vcpun</td><td>ERROR</td><td>must</td><td>??</td></tr>
+				<tr><td>pnVla</td><td>ERROR</td><td>limb, member</td><td>noun</td></tr>
+				<tr><td>pVcni</td><td>ERROR</td><td>writer, author</td><td>noun</td></tr>
+				<tr><td>Vnptu</td><td>ERROR</td><td>subject is explained</td><td>verb</td></tr>
+				<tr><td>nVcni</td><td>ERROR</td><td>subject is led</td><td>verb</td></tr>
+				<tr><td>ctVnha</td><td>ERROR</td><td>subject is thrown</td><td>verb</td></tr>
+				<tr><td>pcVli</td><td>ERROR</td><td>stick</td><td>verb</td></tr>
+				<tr><td>cpVpu</td><td>ERROR</td><td>production</td><td>noun</td></tr>
+				<tr><td>tVpnu</td><td>ERROR</td><td>stage, setting, scene</td><td>noun</td></tr>
+				<tr><td>ptVpi</td><td>ERROR</td><td>tomorrow</td><td>noun</td></tr>
+				<tr><td>cVcna</td><td>ERROR</td><td>subject is tried, proved, tested</td><td>verb</td></tr>
+				<tr><td>tnVclu</td><td>ERROR</td><td>leader</td><td>noun</td></tr>
+				<tr><td>pVnpan</td><td>ERROR</td><td>subject is answered, responded to</td><td>verb</td></tr>
+				<tr><td>tnVpun</td><td>ERROR</td><td>contract, agreement</td><td>noun</td></tr>
+				<tr><td>nVtcan</td><td>ERROR</td><td>effect</td><td>noun</td></tr>
+				<tr><td>tlVncu</td><td>ERROR</td><td>meaning</td><td>noun</td></tr>
+				<tr><td>nVtlun</td><td>ERROR</td><td>subject is read</td><td>verb</td></tr>
+				<tr><td>pVntta</td><td>ERROR</td><td>subject is earned, won</td><td>verb</td></tr>
+				<tr><td>lVtpan</td><td>ERROR</td><td>development</td><td>noun</td></tr>
+				<tr><td>ttVtla</td><td>ERROR</td><td>voice</td><td>noun</td></tr>
+				<tr><td>tnVncu</td><td>ERROR</td><td>individual</td><td>noun</td></tr>
+				<tr><td>clVntu</td><td>ERROR</td><td>subject is desired, wished for</td><td>verb</td></tr>
+				<tr><td>clVlun</td><td>ERROR</td><td>subject dies</td><td>verb</td></tr>
+				<tr><td>tcVnpa</td><td>ERROR</td><td>type, flavor, sort, gender, species, genre</td><td>noun</td></tr>
+				<tr><td>tVntun</td><td>ERROR</td><td>subect is round, around</td><td>verb</td></tr>
+				<tr><td>ttVcla</td><td>ERROR</td><td>human</td><td>noun</td></tr>
+				<tr><td>tcVcin</td><td>ERROR</td><td>subject is bought, purchased</td><td>verb</td></tr>
+				<tr><td>pVnlun</td><td>ERROR</td><td>sleep, dream</td><td>noun</td></tr>
+				<tr><td>ttVnan</td><td>ERROR</td><td>subect is usual, regular, normal</td><td>verb</td></tr>
+				<tr><td>tcVpun</td><td>ERROR</td><td>demand, petition</td><td>noun</td></tr>
+				<tr><td>tVtpin</td><td>ERROR</td><td>current</td><td>?adverb?</td></tr>
+				<tr><td>nVnpan</td><td>ERROR</td><td>late</td><td>?adverb?</td></tr>
+				<tr><td>nVntli</td><td>ERROR</td><td>four</td><td>?count?</td></tr>
+				<tr><td>cVtcan</td><td>ERROR</td><td>subject is free, vacant</td><td>verb</td></tr>
+				<tr><td>tpVnti</td><td>ERROR</td><td>subject is solemn, serious</td><td>verb</td></tr>
+				<tr><td>nVntcu</td><td>ERROR</td><td>continue</td><td>?adverb?</td></tr>
+				<tr><td>tVnpan</td><td>ERROR</td><td>measure, to the extent</td><td>???</td></tr>
+				<tr><td>tVtlin</td><td>ERROR</td><td>table, board</td><td>noun</td></tr>
+				<tr><td>pVplun</td><td>ERROR</td><td>war, warfare</td><td>noun</td></tr>
+				<tr><td>tlVnti</td><td>ERROR</td><td>out, away, outside</td><td>?noun?</td></tr>
+				<tr><td>pVntla</td><td>ERROR</td><td>totally, completely</td><td>adverb</td></tr>
+				<tr><td>cVntpu</td><td>ERROR</td><td>style</td><td>noun</td></tr>
+				<tr><td>lVnpan</td><td>ERROR</td><td>figure</td><td>noun</td></tr>
+				<tr><td>lVntin</td><td>ERROR</td><td>air, wind</td><td>noun</td></tr>
+				<tr><td>nVncli</td><td>ERROR</td><td>sound</td><td>noun</td></tr>
+				<tr><td>lVtlun</td><td>ERROR</td><td>taste, preference, pleasure</td><td>noun</td></tr>
+				<tr><td>tlVpan</td><td>ERROR</td><td>subject is helped</td><td>verb</td></tr>
+				<tr><td>nVplun</td><td>ERROR</td><td>committee, commission</td><td>noun</td></tr>
+				<tr><td>plVtlu</td><td>ERROR</td><td>third</td><td>?noun?</td></tr>
+				<tr><td>tpVtla</td><td>ERROR</td><td>center, downtown</td><td>noun</td></tr>
+				<tr><td>pVntnu</td><td>ERROR</td><td>mind</td><td>nounh</td></tr>
+				<tr><td>tcVnti</td><td>ERROR</td><td>base, basis</td><td>noun</td></tr>
+				<tr><td>ttVlan</td><td>ERROR</td><td>enough, sufficient</td><td>?count?</td></tr>
+				<tr><td>tVntpi</td><td>ERROR</td><td>decision</td><td>noun</td></tr>
+				<tr><td>cVtlun</td><td>ERROR</td><td>health</td><td>noun</td></tr>
+				<tr><td>tcVnan</td><td>ERROR</td><td>subject is beautiful</td><td>verb</td></tr>
+				<tr><td>cVntli</td><td>ERROR</td><td>factory, industry</td><td>noun</td></tr>
+				<tr><td>clVnin</td><td>ERROR</td><td>subject stops</td><td>verb</td></tr>
+				<tr><td>tpVlin</td><td>ERROR</td><td>movement</td><td>noun</td></tr>
+				<tr><td>cVntna</td><td>ERROR</td><td>turn</td><td>noun?</td></tr>
+				<tr><td>pVnnan</td><td>ERROR</td><td>is worth the trouble</td><td>subject</td></tr>
+				<tr><td>nVncin</td><td>ERROR</td><td>majority</td><td>?count?</td></tr>
+				<tr><td>tpVnla</td><td>ERROR</td><td>appearance</td><td>noun</td></tr>
+				<tr><td>tlVnpu</td><td>ERROR</td><td>term</td><td>noun</td></tr>
+				<tr><td>tlVnun</td><td>ERROR</td><td>plot, discussion, argument</td><td>noun</td></tr>
+				<tr><td>tnVtli</td><td>ERROR</td><td>study, learning</td><td>noun</td></tr>
+				<tr><td>lVntlu</td><td>ERROR</td><td>subject is easy</td><td>verb</td></tr>
+				<tr><td>clVnnu</td><td>ERROR</td><td>management, negotiation</td><td>noun</td></tr>
+				<tr><td>lVclun</td><td>ERROR</td><td>operation</td><td>noun</td></tr>
+				<tr><td>tVnlun</td><td>ERROR</td><td>rate, levy</td><td>noun?</td></tr>
+				<tr><td>clVnli</td><td>ERROR</td><td>bank, bench</td><td>noun?</td></tr>
+				<tr><td>tVplan</td><td>ERROR</td><td>subject is eaten</td><td>verb</td></tr>
+				<tr><td>pVnclu</td><td>ERROR</td><td>atmosphere, environment</td><td>noun</td></tr>
+				<tr><td>tVclun</td><td>ERROR</td><td>thousand</td><td>?count?</td></tr>
+				<tr><td>cVntca</td><td>ERROR</td><td>subject is handled, driven</td><td>verb</td></tr>
+				<tr><td>lVntta</td><td>ERROR</td><td>meal, nourishment, food</td><td>noun</td></tr>
+				<tr><td>plVtti</td><td>ERROR</td><td>subject is published</td><td>verb</td></tr>
+				<tr><td>ttVtni</td><td>ERROR</td><td>foundation</td><td>noun</td></tr>
+				<tr><td>pVtnin</td><td>ERROR</td><td>subject is complete</td><td>verb</td></tr>
+				<tr><td>tpVpla</td><td>ERROR</td><td>subject is special</td><td>verb</td></tr>
+				<tr><td>pVclan</td><td>ERROR</td><td>five</td><td>?count?</td></tr>
+				<tr><td>tcVpla</td><td>ERROR</td><td>safety, security</td><td>noun</td></tr>
+				<tr><td>tnVtca</td><td>ERROR</td><td>subject is dead</td><td>verb</td></tr>
+				<tr><td>cVnpla</td><td>ERROR</td><td>step, pace</td><td>noun</td></tr>
+				<tr><td>tpVncu</td><td>ERROR</td><td>organization</td><td>noun</td></tr>
+				<tr><td>tpVnin</td><td>ERROR</td><td>sign</td><td>noun</td></tr>
+				<tr><td>tlVlin</td><td>ERROR</td><td>brother, sibling, sister</td><td>noun</td></tr>
+				<tr><td>plVtci</td><td>ERROR</td><td>factor, influence</td><td>noun</td></tr>
+				<tr><td>Vnclin</td><td>ERROR</td><td>sun</td><td>noun</td></tr>
+				<tr><td>tcVtlu</td><td>ERROR</td><td>piece</td><td>noun</td></tr>
+				<tr><td>pVttin</td><td>ERROR</td><td>break, interval, distance</td><td>noun</td></tr>
+				<tr><td>tVnpla</td><td>ERROR</td><td>visitor, guest</td><td>noun</td></tr>
+				<tr><td>plVpan</td><td>ERROR</td><td>function</td><td>noun</td></tr>
+				<tr><td>nVnttu</td><td>ERROR</td><td>subject is direct, straight</td><td>verb</td></tr>
+				<tr><td>ttVcan</td><td>ERROR</td><td>experience</td><td>noun</td></tr>
+				<tr><td>lVntni</td><td>ERROR</td><td>care, carefulness</td><td>noun</td></tr>
+				<tr><td>pVtlin</td><td>ERROR</td><td>subject is sat on by object</td><td>verb</td></tr>
+				<tr><td>ttVnpu</td><td>ERROR</td><td>quality</td><td>noun</td></tr>
+				<tr><td>lVncan</td><td>ERROR</td><td>fear</td><td>noun</td></tr>
+				<tr><td>tpVnpi</td><td>ERROR</td><td>character</td><td>noun</td></tr>
+				<tr><td>ttVnca</td><td>ERROR</td><td>disk, disc, sd-card, physical digital record</td><td>noun</td></tr>
+				<tr><td>Vntnun</td><td>ERROR</td><td>subject is natural</td><td>verb</td></tr>
+				<tr><td>tpVpin</td><td>ERROR</td><td>subject is established</td><td>verb</td></tr>
+				<tr><td>tVttan</td><td>ERROR</td><td>college, university</td><td>noun</td></tr>
+				<tr><td>nVnpla</td><td>ERROR</td><td>news</td><td>noun</td></tr>
+				<tr><td>ttVpla</td><td>ERROR</td><td>event</td><td>noun</td></tr>
+				<tr><td>tlVnni</td><td>ERROR</td><td>report</td><td>noun</td></tr>
+				<tr><td>lVnclu</td><td>ERROR</td><td>subject is happy, fortunate</td><td>verb</td></tr>
+				<tr><td>plVtan</td><td>ERROR</td><td>thought, thinking</td><td>noun</td></tr>
+				<tr><td>tcVnni</td><td>ERROR</td><td>subject is accepted</td><td>verb</td></tr>
+				<tr><td>tVtcin</td><td>ERROR</td><td>ghost, spirit</td><td>noun</td></tr>
+				<tr><td>pVntci</td><td>ERROR</td><td>connection</td><td>noun</td></tr>
+				<tr><td>tlVcin</td><td>ERROR</td><td>street</td><td>noun</td></tr>
+				<tr><td>tVntci</td><td>ERROR</td><td>size, dimension</td><td>noun</td></tr>
+				<tr><td>ttVtpu</td><td>ERROR</td><td>population</td><td>noun</td></tr>
+				<tr><td>tcVlun</td><td>ERROR</td><td>minister, secretary</td><td>noun</td></tr>
+				<tr><td>tVntni</td><td>ERROR</td><td>pair, couple</td><td>noun</td></tr>
+				<tr><td>tlVcli</td><td>ERROR</td><td>doctor</td><td>noun</td></tr>
+				<tr><td>Vntpun</td><td>ERROR</td><td>source, fountain</td><td>noun</td></tr>
+				<tr><td>plVtnu</td><td>ERROR</td><td>subject is personal</td><td>verb?</td></tr>
+				<tr><td>plVnlu</td><td>ERROR</td><td>subject grows</td><td>verb</td></tr>
+				<tr><td>clVtan</td><td>ERROR</td><td>weight, load</td><td>noun</td></tr>
+				<tr><td>tlVtca</td><td>ERROR</td><td>subject is alive, bright</td><td>verb</td></tr>
+				<tr><td>plVnin</td><td>ERROR</td><td>method</td><td>noun</td></tr>
+				<tr><td>Vntlun</td><td>ERROR</td><td>device, apparatus, mechanism</td><td>noun</td></tr>
+				<tr><td>tcVtnu</td><td>ERROR</td><td>yesterday</td><td>noun</td></tr>
+				<tr><td>clVnpa</td><td>ERROR</td><td>subject admits, recognizes object</td><td>verb</td></tr>
+				<tr><td>tpVtnu</td><td>ERROR</td><td>mere, simple, plain</td><td>?adverb?</td></tr>
+				<tr><td>cVclan</td><td>ERROR</td><td>peace</td><td>noun</td></tr>
+				<tr><td>lVntci</td><td>ERROR</td><td>music</td><td>noun</td></tr>
+				<tr><td>tlVtnu</td><td>ERROR</td><td>message</td><td>noun</td></tr>
+				<tr><td>tpVcun</td><td>ERROR</td><td>far</td><td>?idk?</td></tr>
+				<tr><td>tVtnun</td><td>ERROR</td><td>sujbect is international</td><td>verb</td></tr>
+				<tr><td>pVtpan</td><td>ERROR</td><td>nature</td><td>noun</td></tr>
+				<tr><td>clVtci</td><td>ERROR</td><td>grade, degree</td><td>noun</td></tr>
+				<tr><td>tnVtti</td><td>ERROR</td><td>subject is correct, adequate, suitable</td><td>verb</td></tr>
+				<tr><td>tlVpla</td><td>ERROR</td><td>bid, offer, supply</td><td>noun</td></tr>
+				<tr><td>nVnlan</td><td>ERROR</td><td>subject is joined, united</td><td>verb</td></tr>
+				<tr><td>lVnnun</td><td>ERROR</td><td>goal</td><td>noun</td></tr>
+				<tr><td>tcVcla</td><td>ERROR</td><td>foot</td><td>noun</td></tr>
+				<tr><td>clVtli</td><td>ERROR</td><td>century</td><td>noun</td></tr>
+				<tr><td>tVntta</td><td>ERROR</td><td>subject is basic, essential</td><td>verb</td></tr>
+				<tr><td>cVncun</td><td>ERROR</td><td>worry, concern</td><td>noun</td></tr>
+				<tr><td>pVntan</td><td>ERROR</td><td>page</td><td>noun</td></tr>
+				<tr><td>tnVnta</td><td>ERROR</td><td>subject is white</td><td>verb</td></tr>
+				<tr><td>tnVplu</td><td>ERROR</td><td>subject is taught</td><td>verb</td></tr>
+				<tr><td>ttVtin</td><td>ERROR</td><td>police, police officer, police force</td><td>noun</td></tr>
+				<tr><td>tlVnlu</td><td>ERROR</td><td>subject is nice, pretty</td><td>verb</td></tr>
+				<tr><td>tnVtun</td><td>ERROR</td><td>object</td><td>noun</td></tr>
+				<tr><td>nVtpun</td><td>ERROR</td><td>education</td><td>noun</td></tr>
+				<tr><td>tpVtti</td><td>ERROR</td><td>date</td><td>noun</td></tr>
+				<tr><td>tpVtcu</td><td>ERROR</td><td>future</td><td>noun</td></tr>
+				<tr><td>clVncu</td><td>ERROR</td><td>mark, trademark, brand</td><td>noun</td></tr>
+				<tr><td>tlVtin</td><td>ERROR</td><td>journey, itinerary</td><td>noun</td></tr>
+				<tr><td>tnVnan</td><td>ERROR</td><td>authority</td><td>noun</td></tr>
+				<tr><td>plVnni</td><td>ERROR</td><td>surroundings</td><td>noun</td></tr>
+				<tr><td>Vnttin</td><td>ERROR</td><td>subject is researched</td><td>verb</td></tr>
+				<tr><td>pVntpa</td><td>ERROR</td><td>subject is touched</td><td>verb</td></tr>
+				<tr><td>nVntun</td><td>ERROR</td><td>net, network</td><td>noun</td></tr>
+				<tr><td>tlVttu</td><td>ERROR</td><td>subject is liked</td><td>verb</td></tr>
+				<tr><td>tlVtli</td><td>ERROR</td><td>text</td><td>noun</td></tr>
+				<tr><td>nVntna</td><td>ERROR</td><td>subject is produced</td><td>verb</td></tr>
+				<tr><td>tcVtin</td><td>ERROR</td><td>subject is forgeten</td><td>verb</td></tr>
+				<tr><td>cVntta</td><td>ERROR</td><td>subject is local</td><td>verb</td></tr>
+				<tr><td>Vntcin</td><td>ERROR</td><td>minute</td><td>noun</td></tr>
+				<tr><td>lVntpi</td><td>ERROR</td><td>bill, account</td><td>noun</td></tr>
+				<tr><td>ttVnti</td><td>ERROR</td><td>call, knock</td><td>???</td></tr>
+				<tr><td>pVnpla</td><td>ERROR</td><td>strip, tongue</td><td>noun</td></tr>
+				<tr><td>clVtpi</td><td>ERROR</td><td>subject is sold</td><td>verb</td></tr>
+				<tr><td>tcVnlu</td><td>ERROR</td><td>economy, thriftiness, economics</td><td>noun</td></tr>
+				<tr><td>clVttu</td><td>ERROR</td><td>chief, captain</td><td>noun</td></tr>
+				<tr><td>plVnci</td><td>ERROR</td><td>statement, declaration</td><td>noun</td></tr>
+				<tr><td>tVncin</td><td>ERROR</td><td>subject rises</td><td>verb</td></tr>
+				<tr><td>cVnlan</td><td>ERROR</td><td>title, heading</td><td>noun</td></tr>
+				<tr><td>cVncla</td><td>ERROR</td><td>subject is pure, clean</td><td>verb</td></tr>
+				<tr><td>plVnta</td><td>ERROR</td><td>no one</td><td>noun</td></tr>
+				<tr><td>Vnplan</td><td>ERROR</td><td>subject is black</td><td>verb</td></tr>
+				<tr><td>cVntun</td><td>ERROR</td><td>mouth, opening</td><td>noun</td></tr>
+				<tr><td>ttVnli</td><td>ERROR</td><td>tent, store, shop, workshop</td><td>noun</td></tr>
+				<tr><td>tnVcun</td><td>ERROR</td><td>down, downward, below</td><td>???</td></tr>
+				<tr><td>tcVtpi</td><td>ERROR</td><td>worker, laborer</td><td>noun</td></tr>
+				<tr><td>lVttun</td><td>ERROR</td><td>rapidly, quickly</td><td>adverb</td></tr>
+				<tr><td>tpVtpa</td><td>ERROR</td><td>conduct, behavior</td><td>noun</td></tr>
+				<tr><td>plVnpa</td><td>ERROR</td><td>echo, response</td><td>noun</td></tr>
+				<tr><td>tcVtcu</td><td>ERROR</td><td>subject is offered</td><td>verb</td></tr>
+				<tr><td>plVlan</td><td>ERROR</td><td>regard, respect</td><td>noun</td></tr>
+				<tr><td>tlVtpu</td><td>ERROR</td><td>motion</td><td>noun</td></tr>
+				<tr><td>nVclun</td><td>ERROR</td><td>subject is responsible</td><td>verb</td></tr>
+				<tr><td>pVncun</td><td>ERROR</td><td>goods, property</td><td>noun</td></tr>
+				<tr><td>tnVtpi</td><td>ERROR</td><td>subject is proposed</td><td>verb</td></tr>
+				<tr><td>plVcan</td><td>ERROR</td><td>subject is needed</td><td>verb</td></tr>
+				<tr><td>ttVnnu</td><td>ERROR</td><td>error, mistake</td><td>noun</td></tr>
+				<tr><td>cVnpan</td><td>ERROR</td><td>subject is to entered</td><td>verb?</td></tr>
+				<tr><td>ttVpin</td><td>ERROR</td><td>pupil, student</td><td>noun</td></tr>
+				<tr><td>plVtpu</td><td>ERROR</td><td>for example</td><td>adverb</td></tr>
+				<tr><td>lVtnun</td><td>ERROR</td><td>objective</td><td>noun</td></tr>
+				<tr><td>lVplin</td><td>ERROR</td><td>proposal, proposition</td><td>noun</td></tr>
+				<tr><td>tcVnci</td><td>ERROR</td><td>practice, exercise</td><td>noun</td></tr>
+				<tr><td>nVttin</td><td>ERROR</td><td>structure</td><td>noun</td></tr>
+				<tr><td>ttVtci</td><td>ERROR</td><td>entrance, admission ticket</td><td>noun</td></tr>
+				<tr><td>nVntpa</td><td>ERROR</td><td>attempt</td><td>noun</td></tr>
+				<tr><td>pVtcin</td><td>ERROR</td><td>court</td><td>noun</td></tr>
+				<tr><td>tVncla</td><td>ERROR</td><td>concept</td><td>noun</td></tr>
+				<tr><td>nVtnan</td><td>ERROR</td><td>capital</td><td>noun</td></tr>
+				<tr><td>ttVtta</td><td>ERROR</td><td>will, willpower, intention</td><td>noun</td></tr>
+				<tr><td>cVttin</td><td>ERROR</td><td>branch, agency</td><td>noun</td></tr>
+				<tr><td>tcVttu</td><td>ERROR</td><td>responsibility</td><td>noun</td></tr>
+				<tr><td>tnVlin</td><td>ERROR</td><td>importance</td><td>noun</td></tr>
+				<tr><td>lVnpli</td><td>ERROR</td><td>subject is wide, ample, broad</td><td>verb</td></tr>
+				<tr><td>clVpin</td><td>ERROR</td><td>reality, actuality</td><td>noun</td></tr>
+				<tr><td>clVtna</td><td>ERROR</td><td>subject is determined</td><td>verb</td></tr>
+				<tr><td>tpVclu</td><td>ERROR</td><td>remark, comment</td><td>noun</td></tr>
+				<tr><td>cVtnin</td><td>ERROR</td><td>difference</td><td>noun</td></tr>
+				<tr><td>cVtpun</td><td>ERROR</td><td>harm, injury, damage</td><td>noun</td></tr>
+				<tr><td>tnVnli</td><td>ERROR</td><td>institution</td><td>noun</td></tr>
+				<tr><td>lVnlun</td><td>ERROR</td><td>subject leans on, is supported, held up by</td><td>verb</td></tr>
+				<tr><td>cVplun</td><td>ERROR</td><td>subject is official, authorized</td><td>verb</td></tr>
+				<tr><td>tVntli</td><td>ERROR</td><td>usually, generally</td><td>adverb</td></tr>
+				<tr><td>tpVtan</td><td>ERROR</td><td>subject is cut</td><td>verb</td></tr>
+				<tr><td>nVnnan</td><td>ERROR</td><td>TV, television</td><td>noun</td></tr>
+				<tr><td>cVnnun</td><td>ERROR</td><td>owner, patron saint, employer, landlord</td><td>noun</td></tr>
+				<tr><td>tnVtni</td><td>ERROR</td><td>expression</td><td>noun</td></tr>
+				<tr><td>lVtcun</td><td>ERROR</td><td>personality</td><td>noun</td></tr>
+				<tr><td>tnVnnu</td><td>ERROR</td><td>newspaper, periodical</td><td>noun</td></tr>
+				<tr><td>tnVnpa</td><td>ERROR</td><td>memory, keepsake</td><td>noun</td></tr>
+				<tr><td>clVcan</td><td>ERROR</td><td>subject walks</td><td>verb</td></tr>
+				<tr><td>tpVnnu</td><td>ERROR</td><td>subject is powerful</td><td>verb</td></tr>
+				<tr><td>tVnnun</td><td>ERROR</td><td>subject is known, well known, famous</td><td>verb</td></tr>
+				<tr><td>cnVtta</td><td>ERROR</td><td>subject progresses, advances</td><td>verb</td></tr>
+				<tr><td>tVlila</td><td>ERROR</td><td>often</td><td>adverb?</td></tr>
+				<tr><td>Vpatpa</td><td>ERROR</td><td>hit, punch, strike</td><td>noun</td></tr>
+				<tr><td>tVnunhi</td><td>ERROR</td><td>color</td><td>noun</td></tr>
+				<tr><td>nVcilu</td><td>ERROR</td><td>subject is served</td><td>verb</td></tr>
+				<tr><td>pnVtlu</td><td>ERROR</td><td>subject is received</td><td>verb</td></tr>
+				<tr><td>pVtula</td><td>ERROR</td><td>whole</td><td>?count?</td></tr>
+				<tr><td>Vncanha</td><td>ERROR</td><td>subject runs</td><td>verb</td></tr>
+				<tr><td>cVnula</td><td>ERROR</td><td>culture</td><td>noun</td></tr>
+				<tr><td>Vtcinha</td><td>ERROR</td><td>energy</td><td>noun</td></tr>
+				<tr><td>Vncica</td><td>ERROR</td><td>success</td><td>noun</td></tr>
+				<tr><td>cpVnnu</td><td>ERROR</td><td>up</td><td>??</td></tr>
+				<tr><td>pVninhu</td><td>ERROR</td><td>subject is smart, clever</td><td>verb</td></tr>
+				<tr><td>cpVnci</td><td>ERROR</td><td>door</td><td>noun</td></tr>
+				<tr><td>tVpica</td><td>ERROR</td><td>fire, gunfire</td><td>noun</td></tr>
+				<tr><td>pVlina</td><td>ERROR</td><td>community</td><td>noun</td></tr>
+				<tr><td>pVnipi</td><td>ERROR</td><td>knowledge</td><td>noun</td></tr>
+				<tr><td>Vnpili</td><td>ERROR</td><td>track, trace</td><td>noun</td></tr>
+				<tr><td>Vcutin</td><td>ERROR</td><td>diary, agenda, timetable, schedule</td><td>noun</td></tr>
+				<tr><td>lVnhuli</td><td>ERROR</td><td>joy, happiness</td><td>noun</td></tr>
+				<tr><td>pnVtpi</td><td>ERROR</td><td>attention</td><td>noun</td></tr>
+				<tr><td>Vcinli</td><td>ERROR</td><td>fall, falling, drop</td><td>noun</td></tr>
+				<tr><td>cVlacu</td><td>ERROR</td><td>subject is protected, defended</td><td>verb</td></tr>
+				<tr><td>Vtninha</td><td>ERROR</td><td>subject is born</td><td>verb</td></tr>
+				<tr><td>tVncnu</td><td>ERROR</td><td>career</td><td>noun</td></tr>
+				<tr><td>Vlicun</td><td>ERROR</td><td>subject is thanked</td><td>verb</td></tr>
+				<tr><td>pVpunha</td><td>ERROR</td><td>song</td><td>noun</td></tr>
+				<tr><td>Vnnacu</td><td>ERROR</td><td>drive</td><td>noun</td></tr>
+				<tr><td>nVnhana</td><td>ERROR</td><td>fee, charge</td><td>noun</td></tr>
+				<tr><td>nVtinhi</td><td>ERROR</td><td>count</td><td>noun</td></tr>
+				<tr><td>Vninli</td><td>ERROR</td><td>phone, telephone</td><td>noun</td></tr>
+				<tr><td>Vlinna</td><td>ERROR</td><td>solution</td><td>noun</td></tr>
+				<tr><td>nVcanhu</td><td>ERROR</td><td>building</td><td>noun</td></tr>
+				<tr><td>lVncna</td><td>ERROR</td><td>subject is interesting</td><td>verb</td></tr>
+				<tr><td>Vlupun</td><td>ERROR</td><td>profit</td><td>noun</td></tr>
+				<tr><td>tpVpni</td><td>ERROR</td><td>trade, commerce</td><td>noun</td></tr>
+				<tr><td>lVnunhu</td><td>ERROR</td><td>subject is worn</td><td>verb</td></tr>
+				<tr><td>tVnanu</td><td>ERROR</td><td>contest, competition</td><td>noun</td></tr>
+				<tr><td>Vnluta</td><td>ERROR</td><td>foreigner</td><td>noun</td></tr>
+				<tr><td>ptVlan</td><td>ERROR</td><td>fault, blame</td><td>noun</td></tr>
+				<tr><td>Vnlapi</td><td>ERROR</td><td>subject is provided, contributed</td><td>verb</td></tr>
+				<tr><td>nVtuci</td><td>ERROR</td><td>income, revenue</td><td>noun</td></tr>
+				<tr><td>cnVtlu</td><td>ERROR</td><td>dues, quota, share</td><td>noun</td></tr>
+				<tr><td>cVtacu</td><td>ERROR</td><td>season</td><td>noun</td></tr>
+				<tr><td>cVpipa</td><td>ERROR</td><td>liberty, freedom</td><td>noun</td></tr>
+				<tr><td>cpVtan</td><td>ERROR</td><td>art</td><td>noun</td></tr>
+				<tr><td>Vlitan</td><td>ERROR</td><td>exactly</td><td>adverb</td></tr>
+				<tr><td>Vttulu</td><td>ERROR</td><td>trip, travel</td><td>noun</td></tr>
+				<tr><td>lVnuci</td><td>ERROR</td><td>era, epoch</td><td>noun</td></tr>
+				<tr><td>tVnhila</td><td>ERROR</td><td>training, preparation</td><td>noun</td></tr>
+				<tr><td>nVnhipa</td><td>ERROR</td><td>in spite of</td><td>postposition?</td></tr>
+				<tr><td>pVncta</td><td>ERROR</td><td>subject is incited, moved emotionally</td><td>verb</td></tr>
+				<tr><td>cVnanhu</td><td>ERROR</td><td>subject spreads, extends</td><td>verb</td></tr>
+				<tr><td>nVtunu</td><td>ERROR</td><td>subject is provoked, brought about, caused</td><td>verb</td></tr>
+				<tr><td>lVcanhu</td><td>ERROR</td><td>probably</td><td>adverb</td></tr>
+				<tr><td>cVpatu</td><td>ERROR</td><td>content, contents</td><td>noun</td></tr>
+				<tr><td>Vlitcu</td><td>ERROR</td><td>series</td><td>noun</td></tr>
+				<tr><td>tVnica</td><td>ERROR</td><td>ten</td><td>?count?</td></tr>
+				<tr><td>Vtlupi</td><td>ERROR</td><td>obstacle, difficulty</td><td>noun</td></tr>
+				<tr><td>ctVtun</td><td>ERROR</td><td>subject discovers</td><td>verb</td></tr>
+				<tr><td>Vnatnu</td><td>ERROR</td><td>illness, sickness</td><td>noun</td></tr>
+				<tr><td>Vlunli</td><td>ERROR</td><td>press</td><td>noun</td></tr>
+				<tr><td>Vputan</td><td>ERROR</td><td>raid, attack</td><td>noun?</td></tr>
+				<tr><td>ctVnni</td><td>ERROR</td><td>subject is prepared</td><td>verb</td></tr>
+				<tr><td>pcVtla</td><td>ERROR</td><td>subject is cold</td><td>verb</td></tr>
+				<tr><td>nVninhu</td><td>ERROR</td><td>early</td><td>??</td></tr>
+				<tr><td>Vtlinha</td><td>ERROR</td><td>representative</td><td>noun</td></tr>
+				<tr><td>nVpunu</td><td>ERROR</td><td>note</td><td>noun</td></tr>
+				<tr><td>lVptin</td><td>ERROR</td><td>subject is advertised, announced</td><td>verb</td></tr>
+				<tr><td>Vtapin</td><td>ERROR</td><td>subject turns</td><td>verb</td></tr>
+				<tr><td>Vnpitu</td><td>ERROR</td><td>border, frontier</td><td>noun</td></tr>
+				<tr><td>Vninpi</td><td>ERROR</td><td>subject is focused, centered</td><td>verb</td></tr>
+				<tr><td>nVpupa</td><td>ERROR</td><td>subject is rich in flavor, tasty</td><td>verb</td></tr>
+				<tr><td>lVlinhu</td><td>ERROR</td><td>advice, council, counsel</td><td>noun</td></tr>
+				<tr><td>lVluli</td><td>ERROR</td><td>mass, crowd, bulk</td><td>noun</td></tr>
+				<tr><td>lVnhicu</td><td>ERROR</td><td>blood</td><td>noun</td></tr>
+				<tr><td>Vtutla</td><td>ERROR</td><td>six</td><td>?count?</td></tr>
+				<tr><td>lVnina</td><td>ERROR</td><td>possibility</td><td>noun</td></tr>
+				<tr><td>Vtcapu</td><td>ERROR</td><td>subject is placed</td><td>verb</td></tr>
+				<tr><td>Vtpunha</td><td>ERROR</td><td>resource</td><td>noun</td></tr>
+				<tr><td>nVlula</td><td>ERROR</td><td>talent, ability</td><td>noun</td></tr>
+				<tr><td>pVnitu</td><td>ERROR</td><td>subject is assumed, supposed</td><td>verb</td></tr>
+				<tr><td>nVcica</td><td>ERROR</td><td>subject is calm, tranquil, relaxed</td><td>verb</td></tr>
+				<tr><td>cVcapa</td><td>ERROR</td><td>surely, securely</td><td>adverb</td></tr>
+				<tr><td>tVtupi</td><td>ERROR</td><td>wood</td><td>noun</td></tr>
+				<tr><td>pVcili</td><td>ERROR</td><td>exit, escape</td><td>noun</td></tr>
+				<tr><td>ttVctu</td><td>ERROR</td><td>limit</td><td>noun</td></tr>
+				<tr><td>cVncpa</td><td>ERROR</td><td>animal</td><td>noun</td></tr>
+				<tr><td>Vncita</td><td>ERROR</td><td>painting</td><td>noun</td></tr>
+				<tr><td>lVnhata</td><td>ERROR</td><td>subject is applied</td><td>verb</td></tr>
+				<tr><td>pVcina</td><td>ERROR</td><td>vote</td><td>noun</td></tr>
+				<tr><td>Vcinnu</td><td>ERROR</td><td>recently</td><td>adverb?</td></tr>
+				<tr><td>lVcupa</td><td>ERROR</td><td>outlay, investment</td><td>noun</td></tr>
+				<tr><td>lVcati</td><td>ERROR</td><td>past</td><td>noun?</td></tr>
+				<tr><td>Vnhanun</td><td>ERROR</td><td>growth</td><td>noun</td></tr>
+				<tr><td>tVtinhi</td><td>ERROR</td><td>subject is learned</td><td>verb</td></tr>
+				<tr><td>Vpuntu</td><td>ERROR</td><td>drug, medicine</td><td>noun</td></tr>
+				<tr><td>cVtatu</td><td>ERROR</td><td>speech</td><td>noun</td></tr>
+				<tr><td>Vnhittu</td><td>ERROR</td><td>subject is indicated</td><td>verb</td></tr>
+				<tr><td>Vluttu</td><td>ERROR</td><td>principal</td><td>noun</td></tr>
+				<tr><td>Vnlinha</td><td>ERROR</td><td>subject is private</td><td>verb</td></tr>
+				<tr><td>tcVcpa</td><td>ERROR</td><td>fur, skin, hide</td><td>noun</td></tr>
+				<tr><td>tVpulu</td><td>ERROR</td><td>subject is bought</td><td>verb</td></tr>
+				<tr><td>cVnhata</td><td>ERROR</td><td>daily</td><td>adverb?</td></tr>
+				<tr><td>cVniti</td><td>ERROR</td><td>floor</td><td>noun</td></tr>
+				<tr><td>pVlanha</td><td>ERROR</td><td>credit, reputation</td><td>noun</td></tr>
+				<tr><td>ttVcnu</td><td>ERROR</td><td>district, neighborhood</td><td>noun</td></tr>
+				<tr><td>cpVntu</td><td>ERROR</td><td>republic</td><td>noun</td></tr>
+				<tr><td>Vttipu</td><td>ERROR</td><td>subject stops, ceases</td><td>verb</td></tr>
+				<tr><td>pVtata</td><td>ERROR</td><td>subject is divided</td><td>verb</td></tr>
+				<tr><td>tVlucu</td><td>ERROR</td><td>reform, improvement</td><td>noun</td></tr>
+				<tr><td>nVpnun</td><td>ERROR</td><td>attitude</td><td>noun</td></tr>
+				<tr><td>lVtali</td><td>ERROR</td><td>subject runs, scatters, flees</td><td>verb</td></tr>
+				<tr><td>nVlunha</td><td>ERROR</td><td>existence</td><td>noun</td></tr>
+				<tr><td>lVnhupa</td><td>ERROR</td><td>lack, shortage</td><td>noun</td></tr>
+				<tr><td>lVpanhi</td><td>ERROR</td><td>pay, salary, wages</td><td>noun</td></tr>
+				<tr><td>cVnhuca</td><td>ERROR</td><td>sale</td><td>noun</td></tr>
+				<tr><td>Vntati</td><td>ERROR</td><td>suddenly</td><td>adverb?</td></tr>
+				<tr><td>nVcapu</td><td>ERROR</td><td>sometimes, now and then</td><td>adverb?</td></tr>
+				<tr><td>Vnatcu</td><td>ERROR</td><td>presentation, introduction</td><td>noun</td></tr>
+				<tr><td>Vlinpu</td><td>ERROR</td><td>origin</td><td>noun</td></tr>
+				<tr><td>tlVpta</td><td>ERROR</td><td>subject sleeps</td><td>verb</td></tr>
+				<tr><td>Vninca</td><td>ERROR</td><td>decrease, reduction</td><td>noun</td></tr>
+				<tr><td>ptVpan</td><td>ERROR</td><td>diet, regime</td><td>noun</td></tr>
+				<tr><td>tVnuta</td><td>ERROR</td><td>application</td><td>noun</td></tr>
+				<tr><td>ptVnla</td><td>ERROR</td><td>subject is financial</td><td>verb</td></tr>
+				<tr><td>Vnnapu</td><td>ERROR</td><td>crime, offense</td><td>noun</td></tr>
+				<tr><td>Vttana</td><td>ERROR</td><td>subject is red</td><td>verb</td></tr>
+				<tr><td>Vcutcu</td><td>ERROR</td><td>apartment, department</td><td>noun</td></tr>
+				<tr><td>nVlanu</td><td>ERROR</td><td>subject is closed</td><td>verb</td></tr>
+				<tr><td>Vnlana</td><td>ERROR</td><td>glass</td><td>noun</td></tr>
+				<tr><td>cVtunhu</td><td>ERROR</td><td>subject is occupied by object</td><td>verb</td></tr>
+				<tr><td>Vpitni</td><td>ERROR</td><td>subject undergoes, suffers through object</td><td>verb</td></tr>
+				<tr><td>cnVnpi</td><td>ERROR</td><td>plant</td><td>noun</td></tr>
+				<tr><td>cVpinha</td><td>ERROR</td><td>benefit</td><td>noun</td></tr>
+				<tr><td>pVtanha</td><td>ERROR</td><td>task</td><td>noun</td></tr>
+				<tr><td>Vpatlu</td><td>ERROR</td><td>subject is affected</td><td>verb</td></tr>
+				<tr><td>tVpnin</td><td>ERROR</td><td>fine</td><td>???</td></tr>
+				<tr><td>Vpunca</td><td>ERROR</td><td>bottom</td><td>???</td></tr>
+				<tr><td>pVnhali</td><td>ERROR</td><td>?guy, uncle</td><td>noun</td></tr>
+				<tr><td>Vnilun</td><td>ERROR</td><td>odor, smell, fragrance</td><td>noun</td></tr>
+				<tr><td>lVtiti</td><td>ERROR</td><td>indeed, certainly</td><td>adverb</td></tr>
+				<tr><td>tVcunu</td><td>ERROR</td><td>dog</td><td>noun</td></tr>
+				<tr><td>Vputtu</td><td>ERROR</td><td>prize, reward</td><td>noun</td></tr>
+				<tr><td>lVnalu</td><td>ERROR</td><td>subject is defined</td><td>verb</td></tr>
+				<tr><td>Vtcana</td><td>ERROR</td><td>subject is able, capable</td><td>verb</td></tr>
+				<tr><td>nVnilu</td><td>ERROR</td><td>sum, summary</td><td>noun</td></tr>
+				<tr><td>Vlatlu</td><td>ERROR</td><td>including</td><td>postposition</td></tr>
+				<tr><td>tVnipu</td><td>ERROR</td><td>subject is upper, superior</td><td>verb</td></tr>
+				<tr><td>pVlatu</td><td>ERROR</td><td>subject is represented by object</td><td>verb</td></tr>
+				<tr><td>pVtuci</td><td>ERROR</td><td>capacity</td><td>noun</td></tr>
+				<tr><td>Vtlica</td><td>ERROR</td><td>subject is forecasted, anticipated, foreseen</td><td>verb</td></tr>
+				<tr><td>tVtiti</td><td>ERROR</td><td>subject is fair</td><td>verb</td></tr>
+				<tr><td>Vnnitu</td><td>ERROR</td><td>subject is settled, resolved, worked out</td><td>verb</td></tr>
+				<tr><td>cVnuca</td><td>ERROR</td><td>subject is peculiar, particular</td><td>verb</td></tr>
+				<tr><td>Vncapu</td><td>ERROR</td><td>technology</td><td>noun</td></tr>
+				<tr><td>lVnapa</td><td>ERROR</td><td>unit, unity</td><td>noun</td></tr>
+				<tr><td>cVlita</td><td>ERROR</td><td>both</td><td>?count?</td></tr>
+				<tr><td>Vculin</td><td>ERROR</td><td>loss</td><td>noun</td></tr>
+				<tr><td>cVtila</td><td>ERROR</td><td>rod, rail, bar, café</td><td>noun</td></tr>
+				<tr><td>tVpapi</td><td>ERROR</td><td>window</td><td>noun</td></tr>
+				<tr><td>lVtinha</td><td>ERROR</td><td>entirely</td><td>adverb</td></tr>
+				<tr><td>Vttita</td><td>ERROR</td><td>order, method of sorting, inducing sequencing and religious orders</td><td>noun</td></tr>
+				<tr><td>lVtina</td><td>ERROR</td><td>client, customer</td><td>noun</td></tr>
+				<tr><td>cVpacu</td><td>ERROR</td><td>subject is average</td><td>verb</td></tr>
+				<tr><td>Vtucan</td><td>ERROR</td><td>investigation</td><td>noun</td></tr>
+				<tr><td>lVtici</td><td>ERROR</td><td>height, altitude</td><td>noun</td></tr>
+				<tr><td>cpVtti</td><td>ERROR</td><td>pain, sorrow, ache</td><td>noun</td></tr>
+				<tr><td>Vcicun</td><td>ERROR</td><td>subject is caught</td><td>verb</td></tr>
+				<tr><td>ctVtlu</td><td>ERROR</td><td>subject is testifed, declared</td><td>verb</td></tr>
+				<tr><td>pVnpta</td><td>ERROR</td><td>rock, stone</td><td>noun</td></tr>
+				<tr><td>tVpanha</td><td>ERROR</td><td>crisis</td><td>noun</td></tr>
+				<tr><td>cVcanha</td><td>ERROR</td><td>camera, chamber, room</td><td>noun</td></tr>
+				<tr><td>Vninun</td><td>ERROR</td><td>deputy</td><td>noun</td></tr>
+				<tr><td>Vpinpi</td><td>ERROR</td><td>subject is contrary</td><td>verb?</td></tr>
+				<tr><td>Vnnana</td><td>ERROR</td><td>communication</td><td>noun</td></tr>
+				<tr><td>Vnpucu</td><td>ERROR</td><td>entry, access</td><td>noun</td></tr>
+				<tr><td>pVpipa</td><td>ERROR</td><td>science</td><td>noun</td></tr>
+				<tr><td>tVlita</td><td>ERROR</td><td>teaching, instruction</td><td>noun</td></tr>
+				<tr><td>Vnucan</td><td>ERROR</td><td>vision</td><td>noun</td></tr>
+				<tr><td>ttVpcu</td><td>ERROR</td><td>military</td><td>noun</td></tr>
+				<tr><td>Vnpanhi</td><td>ERROR</td><td>subject is rescued, saved</td><td>verb</td></tr>
+				<tr><td>nVnhalu</td><td>ERROR</td><td>subject is technical</td><td>verb</td></tr>
+				<tr><td>Vtpana</td><td>ERROR</td><td>tax</td><td>noun</td></tr>
+				<tr><td>pcVtti</td><td>ERROR</td><td>square, marketplace</td><td>noun</td></tr>
+				<tr><td>Vtitca</td><td>ERROR</td><td>yield, output, efficiency</td><td>noun</td></tr>
+				<tr><td>pVnulu</td><td>ERROR</td><td>extent, magnitude</td><td>noun</td></tr>
+				<tr><td>Vntanhu</td><td>ERROR</td><td>subject is reduced</td><td>verb</td></tr>
+				<tr><td>Vtpapu</td><td>ERROR</td><td>document</td><td>noun</td></tr>
+				<tr><td>pVpaca</td><td>ERROR</td><td>equal</td><td>noun</td></tr>
+				<tr><td>lVcula</td><td>ERROR</td><td>subject is affected, influenced</td><td>verb</td></tr>
+				<tr><td>pVnhipa</td><td>ERROR</td><td>edge</td><td>noun</td></tr>
+				<tr><td>Vtitpa</td><td>ERROR</td><td>mine</td><td>noun</td></tr>
+				<tr><td>tVlana</td><td>ERROR</td><td>subject is dark, obscure</td><td>verb</td></tr>
+				<tr><td>lVnpta</td><td>ERROR</td><td>transfer</td><td>noun</td></tr>
+				<tr><td>nVtali</td><td>ERROR</td><td>subject is civil</td><td>verb</td></tr>
+				<tr><td>Vnnula</td><td>ERROR</td><td>hair</td><td>noun</td></tr>
+				<tr><td>pVnhana</td><td>ERROR</td><td>above all, in particular</td><td>adverb?</td></tr>
+				<tr><td>tVcila</td><td>ERROR</td><td>construction</td><td>noun</td></tr>
+				<tr><td>pnVcin</td><td>ERROR</td><td>weapon</td><td>noun</td></tr>
+				<tr><td>pVncpa</td><td>ERROR</td><td>sea</td><td>noun</td></tr>
+				<tr><td>tVnilu</td><td>ERROR</td><td>player, gambler</td><td>noun</td></tr>
+				<tr><td>pVnacu</td><td>ERROR</td><td>subject is deep, profound</td><td>verb</td></tr>
+				<tr><td>cnVnca</td><td>ERROR</td><td>subject is original</td><td>verb</td></tr>
+				<tr><td>tVlupu</td><td>ERROR</td><td>dish, plate</td><td>noun</td></tr>
+				<tr><td>tVnhina</td><td>ERROR</td><td>trust, confidence</td><td>noun</td></tr>
+				<tr><td>cVnhupa</td><td>ERROR</td><td>subject observes object</td><td>verb</td></tr>
+				<tr><td>Vnnanhu</td><td>ERROR</td><td>wall</td><td>noun</td></tr>
+				<tr><td>Vlutna</td><td>ERROR</td><td>nation</td><td>noun</td></tr>
+				<tr><td>Vcupin</td><td>ERROR</td><td>soul</td><td>noun</td></tr>
+				<tr><td>Vtunni</td><td>ERROR</td><td>subject ends, is finalized</td><td>verb</td></tr>
+				<tr><td>cnVnlu</td><td>ERROR</td><td>subject is signaled, pointed out</td><td>verb</td></tr>
+				<tr><td>nVlati</td><td>ERROR</td><td>ministry</td><td>noun</td></tr>
+				<tr><td>tnVpci</td><td>ERROR</td><td>post, mail</td><td>noun</td></tr>
+				<tr><td>Vtunun</td><td>ERROR</td><td>drink</td><td>noun</td></tr>
+				<tr><td>Vpanla</td><td>ERROR</td><td>resistance, opposition</td><td>noun</td></tr>
+				<tr><td>Vtilan</td><td>ERROR</td><td>claim, complaint</td><td>noun</td></tr>
+				<tr><td>Vntuni</td><td>ERROR</td><td>luck</td><td>noun</td></tr>
+				<tr><td>nVnhati</td><td>ERROR</td><td>exam, examination</td><td>noun</td></tr>
+				<tr><td>pVcanhi</td><td>ERROR</td><td>sash, band</td><td>noun</td></tr>
+				<tr><td>lVtipa</td><td>ERROR</td><td>formation</td><td>noun</td></tr>
+				<tr><td>tlVctu</td><td>ERROR</td><td>subject is filled</td><td>verb</td></tr>
+				<tr><td>Vnutti</td><td>ERROR</td><td>subject is obvious, evident</td><td>verb</td></tr>
+				<tr><td>Vcutnu</td><td>ERROR</td><td>subject is delivered, distributed</td><td>verb</td></tr>
+				<tr><td>tVlunha</td><td>ERROR</td><td>subject is central</td><td>verb</td></tr>
+				<tr><td>tVtila</td><td>ERROR</td><td>spring</td><td>noun</td></tr>
+				<tr><td>pnVnan</td><td>ERROR</td><td>marriage, married couple</td><td>noun</td></tr>
+				<tr><td>Vnitan</td><td>ERROR</td><td>subject is professional</td><td>verb?</td></tr>
+				<tr><td>tlVpca</td><td>ERROR</td><td>usage, custom, habit</td><td>noun</td></tr>
+				<tr><td>Vtculi</td><td>ERROR</td><td>subject is dear, expensive</td><td>verb</td></tr>
+				<tr><td>Vncinu</td><td>ERROR</td><td>subject vanishes, disappears</td><td>verb</td></tr>
+				<tr><td>Vcanca</td><td>ERROR</td><td>roll, roster, list</td><td>noun</td></tr>
+				<tr><td>Vpitcu</td><td>ERROR</td><td>doubt</td><td>noun</td></tr>
+				<tr><td>Vncila</td><td>ERROR</td><td>deadline, installment</td><td>noun</td></tr>
+				<tr><td>Vcitta</td><td>ERROR</td><td>subject is hiden, concealed</td><td>verb</td></tr>
+				<tr><td>nVninu</td><td>ERROR</td><td>tree</td><td>noun</td></tr>
+				<tr><td>ptVnan</td><td>ERROR</td><td>directly, straight away</td><td>adverb</td></tr>
+				<tr><td>pcVlan</td><td>ERROR</td><td>subject is popular</td><td>verb</td></tr>
+				<tr><td>lVncpu</td><td>ERROR</td><td>subject is specific</td><td>verb</td></tr>
+				<tr><td>Vtunpi</td><td>ERROR</td><td>risk</td><td>noun</td></tr>
+				<tr><td>cpVnla</td><td>ERROR</td><td>office</td><td>noun</td></tr>
+				<tr><td>Vlulun</td><td>ERROR</td><td>essence, substance</td><td>noun</td></tr>
+				<tr><td>Vnhatlu</td><td>ERROR</td><td>treatment, processing</td><td>noun</td></tr>
+				<tr><td>lVcucu</td><td>ERROR</td><td>analysis</td><td>noun</td></tr>
+				<tr><td>nVlipi</td><td>ERROR</td><td>technique</td><td>noun</td></tr>
+				<tr><td>Vnpipi</td><td>ERROR</td><td>subject is built, constructed</td><td>verb</td></tr>
+				<tr><td>cVnpna</td><td>ERROR</td><td>sky, heaven, ceiling</td><td>noun</td></tr>
+				<tr><td>cVlapi</td><td>ERROR</td><td>duty</td><td>noun</td></tr>
+				<tr><td>ctVnla</td><td>ERROR</td><td>personally, particularly</td><td>adverb?</td></tr>
+				<tr><td>pVcapu</td><td>ERROR</td><td>station</td><td>noun</td></tr>
+				<tr><td>cVnhili</td><td>ERROR</td><td>despite</td><td>adverb?</td></tr>
+				<tr><td>pVpuli</td><td>ERROR</td><td>subject is flat</td><td>verb</td></tr>
+				<tr><td>Vttuci</td><td>ERROR</td><td>subject is excused, to justified</td><td>verb</td></tr>
+				<tr><td>tnVcpi</td><td>ERROR</td><td>subject is previous, preceding</td><td>verb</td></tr>
+				<tr><td>cVlanu</td><td>ERROR</td><td>subject is arranged</td><td>verb</td></tr>
+				<tr><td>cVcili</td><td>ERROR</td><td>subject is novel</td><td>verb</td></tr>
+				<tr><td>Vcutla</td><td>ERROR</td><td>subject is joint, collective</td><td>verb</td></tr>
+				<tr><td>tpVcna</td><td>ERROR</td><td>seven</td><td>?count?</td></tr>
+				<tr><td>tVcanha</td><td>ERROR</td><td>club</td><td>noun</td></tr>
+				<tr><td>lVcpan</td><td>ERROR</td><td>subject is modern</td><td>verb</td></tr>
+				<tr><td>cVpila</td><td>ERROR</td><td>companion, classmate</td><td>noun</td></tr>
+				<tr><td>nVpula</td><td>ERROR</td><td>subject is revised, double-checked, inspected</td><td>verb</td></tr>
+				<tr><td>Vntapa</td><td>ERROR</td><td>subject is interested</td><td>verb</td></tr>
+				<tr><td>cVnpca</td><td>ERROR</td><td>subject is imagined</td><td>verb</td></tr>
+				<tr><td>Vnpnin</td><td>ERROR</td><td>left</td><td>???</td></tr>
+				<tr><td>lVluti</td><td>ERROR</td><td>computer</td><td>noun</td></tr>
+				<tr><td>tVcipa</td><td>ERROR</td><td>edition, publication</td><td>noun</td></tr>
+				<tr><td>pVlaca</td><td>ERROR</td><td>subject consists of, is constituted of object</td><td>verb</td></tr>
+				<tr><td>Vcinpi</td><td>ERROR</td><td>administration</td><td>noun</td></tr>
+				<tr><td>cnVnnu</td><td>ERROR</td><td>union</td><td>noun</td></tr>
+				<tr><td>nVpanha</td><td>ERROR</td><td>gold</td><td>noun</td></tr>
+				<tr><td>tcVcnu</td><td>ERROR</td><td>rank, ladder, scale</td><td>noun</td></tr>
+				<tr><td>Vlutpa</td><td>ERROR</td><td>forest</td><td>noun</td></tr>
+				<tr><td>lVpuli</td><td>ERROR</td><td>south</td><td>noun</td></tr>
+				<tr><td>lVctin</td><td>ERROR</td><td>stress</td><td>noun</td></tr>
+				<tr><td>lVnpna</td><td>ERROR</td><td>canal, channel</td><td>noun</td></tr>
+				<tr><td>Vnunti</td><td>ERROR</td><td>subject is cultural</td><td>verb</td></tr>
+				<tr><td>Vnitpi</td><td>ERROR</td><td>candidate</td><td>noun</td></tr>
+				<tr><td>Vnhitcu</td><td>ERROR</td><td>ship, boat</td><td>noun</td></tr>
+				<tr><td>Vtlatu</td><td>ERROR</td><td>subject is soft, gentle, mild</td><td>verb</td></tr>
+				<tr><td>nVncni</td><td>ERROR</td><td>hospital</td><td>noun</td></tr>
+				<tr><td>nVnata</td><td>ERROR</td><td>paw, leg</td><td>noun</td></tr>
+				<tr><td>Vtnuca</td><td>ERROR</td><td>initiative</td><td>noun</td></tr>
+				<tr><td>lVpiti</td><td>ERROR</td><td>speed, velocity</td><td>noun</td></tr>
+				<tr><td>Vtatan</td><td>ERROR</td><td>dialogue, conversation</td><td>noun</td></tr>
+				<tr><td>cVnhani</td><td>ERROR</td><td>pressure</td><td>noun</td></tr>
+				<tr><td>Vtanci</td><td>ERROR</td><td>subject is removed, taken away</td><td>verb</td></tr>
+				<tr><td>Vpinni</td><td>ERROR</td><td>subject is expense</td><td>verb</td></tr>
+				<tr><td>nVpuci</td><td>ERROR</td><td>subject is invited</td><td>verb</td></tr>
+				<tr><td>nVcnin</td><td>ERROR</td><td>subject is fundamental</td><td>verb</td></tr>
+				<tr><td>pVnhatu</td><td>ERROR</td><td>subject is scientific</td><td>verb</td></tr>
+				<tr><td>pVnhuci</td><td>ERROR</td><td>meat, flesh</td><td>noun</td></tr>
+				<tr><td>pVtipu</td><td>ERROR</td><td>master</td><td>noun</td></tr>
+				<tr><td>lVpapa</td><td>ERROR</td><td>subject is organized</td><td>verb</td></tr>
+				<tr><td>cVtana</td><td>ERROR</td><td>subject is meant</td><td>verb</td></tr>
+				<tr><td>tVnhata</td><td>ERROR</td><td>subject exists</td><td>verb</td></tr>
+				<tr><td>nVnipa</td><td>ERROR</td><td>consequence</td><td>noun</td></tr>
+				<tr><td>Vnlila</td><td>ERROR</td><td>farming, agriculture, agricultural</td><td>noun</td></tr>
+				<tr><td>nVnpca</td><td>ERROR</td><td>subject is green</td><td>verb</td></tr>
+				<tr><td>tVputa</td><td>ERROR</td><td>conflict</td><td>noun</td></tr>
+				<tr><td>tVnpni</td><td>ERROR</td><td>transport, transportation</td><td>noun</td></tr>
+				<tr><td>lVcnun</td><td>ERROR</td><td>subject is poor</td><td>verb</td></tr>
+				<tr><td>ptVtci</td><td>ERROR</td><td>absolutely</td><td>adverb?</td></tr>
+				<tr><td>pVnpci</td><td>ERROR</td><td>component, ingredient</td><td>noun</td></tr>
+				<tr><td>lVpaci</td><td>ERROR</td><td>display, exhibition</td><td>noun</td></tr>
+				<tr><td>tnVpnu</td><td>ERROR</td><td>secret</td><td>noun</td></tr>
+				<tr><td>tpVpti</td><td>ERROR</td><td>army</td><td>noun</td></tr>
+				<tr><td>ctVtni</td><td>ERROR</td><td>subject is required</td><td>verb</td></tr>
+				<tr><td>Vtnupa</td><td>ERROR</td><td>range, autonomy</td><td>noun</td></tr>
+				<tr><td>tVcati</td><td>ERROR</td><td>employee</td><td>noun</td></tr>
+				<tr><td>tVcacu</td><td>ERROR</td><td>artist, performer</td><td>noun</td></tr>
+				<tr><td>pcVnni</td><td>ERROR</td><td>subject is hot, spirited, warm</td><td>verb</td></tr>
+				<tr><td>pVlupu</td><td>ERROR</td><td>search</td><td>noun</td></tr>
+				<tr><td>Vnctin</td><td>ERROR</td><td>subject is btoken</td><td>verb</td></tr>
+				<tr><td>pVnanu</td><td>ERROR</td><td>conscience, consciousness</td><td>noun</td></tr>
+				<tr><td>Vtputi</td><td>ERROR</td><td>cinema, movie theater</td><td>noun</td></tr>
+				<tr><td>pVpana</td><td>ERROR</td><td>prospect, expectation</td><td>noun</td></tr>
+				<tr><td>tnVcni</td><td>ERROR</td><td>enterprise</td><td>noun</td></tr>
+				<tr><td>cnVtna</td><td>ERROR</td><td>disposal, disposition</td><td>???</td></tr>
+				<tr><td>Vnlaci</td><td>ERROR</td><td>ease, facility</td><td>noun</td></tr>
+				<tr><td>pVtanu</td><td>ERROR</td><td>poem, poetry</td><td>noun</td></tr>
+				<tr><td>ctVnpi</td><td>ERROR</td><td>subject is thin, skinny</td><td>verb</td></tr>
+				<tr><td>Vtinlu</td><td>ERROR</td><td>subject is pleasant</td><td>verb</td></tr>
+				<tr><td>lVlipa</td><td>ERROR</td><td>September</td><td>noun</td></tr>
+				<tr><td>lVpina</td><td>ERROR</td><td>journal, magazine</td><td>noun</td></tr>
+				<tr><td>Vtatta</td><td>ERROR</td><td>subject is repeated</td><td>verb</td></tr>
+				<tr><td>ctVnun</td><td>ERROR</td><td>January</td><td>noun</td></tr>
+				<tr><td>cnVtpa</td><td>ERROR</td><td>subject is complex, complicated</td><td>verb</td></tr>
+				<tr><td>cnVnin</td><td>ERROR</td><td>subject is protected</td><td>verb</td></tr>
+				<tr><td>pnVtnu</td><td>ERROR</td><td>?hop, jump, to jump, leap, skip</td><td>verb</td></tr>
+				<tr><td>ptVtpa</td><td>ERROR</td><td>bed</td><td>noun</td></tr>
+				<tr><td>Vtciti</td><td>ERROR</td><td>leaf, sheet</td><td>noun</td></tr>
+				<tr><td>Vnhutni</td><td>ERROR</td><td>subject is alleged, declared, affirmed</td><td>verb</td></tr>
+				<tr><td>nVpiti</td><td>ERROR</td><td>violence</td><td>noun</td></tr>
+				<tr><td>cnVtan</td><td>ERROR</td><td>mountain</td><td>noun</td></tr>
+				<tr><td>tlVcpi</td><td>ERROR</td><td>simply</td><td>adverb</td></tr>
+				<tr><td>Vtnatu</td><td>ERROR</td><td>sentence</td><td>noun</td></tr>
+				<tr><td>pnVntu</td><td>ERROR</td><td>citizen</td><td>noun</td></tr>
+				<tr><td>pnVtan</td><td>ERROR</td><td>wrong</td><td>noun</td></tr>
+				<tr><td>Vnhipun</td><td>ERROR</td><td>intervention</td><td>noun</td></tr>
+				<tr><td>lVnita</td><td>ERROR</td><td>island</td><td>noun</td></tr>
+				<tr><td>cpVtpi</td><td>ERROR</td><td>subject is crossed</td><td>verb</td></tr>
+				<tr><td>Vlanun</td><td>ERROR</td><td>subject is confirmed</td><td>verb</td></tr>
+				<tr><td>cVlunhi</td><td>ERROR</td><td>subject is improved, gets better</td><td>verb</td></tr>
+				<tr><td>pVlula</td><td>ERROR</td><td>subject is heavy, tiresome, boring</td><td>verb</td></tr>
+				<tr><td>tVctin</td><td>ERROR</td><td>critique, criticism</td><td>noun</td></tr>
+				<tr><td>cVcutu</td><td>ERROR</td><td>subject is independent, self-sufficient</td><td>verb</td></tr>
+				<tr><td>Vcatpa</td><td>ERROR</td><td>contact</td><td>nv?</td></tr>
+				<tr><td>pcVtin</td><td>ERROR</td><td>subject is vital, lively</td><td>verb</td></tr>
+				<tr><td>lVnhanu</td><td>ERROR</td><td>menace, danger</td><td>noun</td></tr>
+				<tr><td>Vtpuli</td><td>ERROR</td><td>subject is described</td><td>verb</td></tr>
+				<tr><td>Vtlini</td><td>ERROR</td><td>agent</td><td>noun</td></tr>
+				<tr><td>cpVnin</td><td>ERROR</td><td>subject is ill, sick</td><td>verb</td></tr>
+				<tr><td>Vttinha</td><td>ERROR</td><td>subject is enforced, imposed</td><td>verb</td></tr>
+				<tr><td>pVcita</td><td>ERROR</td><td>star</td><td>noun</td></tr>
+				<tr><td>pVctin</td><td>ERROR</td><td>association</td><td>noun</td></tr>
+				<tr><td>nVlici</td><td>ERROR</td><td>oil, petroleum</td><td>noun</td></tr>
+				<tr><td>Vcunun</td><td>ERROR</td><td>north</td><td>noun?</td></tr>
+				<tr><td>lVlana</td><td>ERROR</td><td>partner</td><td>noun</td></tr>
+				<tr><td>tnVpti</td><td>ERROR</td><td>wish</td><td>noun</td></tr>
+				<tr><td>lVcinu</td><td>ERROR</td><td>subject is reduced, goes down, comes down</td><td>verb</td></tr>
+				<tr><td>cpVcin</td><td>ERROR</td><td>involvement, participation</td><td>noun</td></tr>
+				<tr><td>ctVcun</td><td>ERROR</td><td>subject is released</td><td>verb</td></tr>
+				<tr><td>pVcpin</td><td>ERROR</td><td>mission</td><td>noun</td></tr>
+				<tr><td>tVptun</td><td>ERROR</td><td>soil</td><td>noun</td></tr>
+				<tr><td>ctVttu</td><td>ERROR</td><td>subject is sole, unique</td><td>verb</td></tr>
+				<tr><td>tVnpcu</td><td>ERROR</td><td>subject is delivered</td><td>verb</td></tr>
+				<tr><td>ptVcun</td><td>ERROR</td><td>tie</td><td>noun?</td></tr>
+				<tr><td>Vlunci</td><td>ERROR</td><td>conclusion</td><td>noun</td></tr>
+				<tr><td>Vpanun</td><td>ERROR</td><td>surface</td><td>noun</td></tr>
+				<tr><td>cVnupu</td><td>ERROR</td><td>judgment</td><td>noun</td></tr>
+				<tr><td>tVnhici</td><td>ERROR</td><td>length, throughout</td><td>???</td></tr>
+				<tr><td>nVptin</td><td>ERROR</td><td>journalist</td><td>noun</td></tr>
+				<tr><td>Vnhutin</td><td>ERROR</td><td>subject is expressed</td><td>verb</td></tr>
+				<tr><td>Vtuntu</td><td>ERROR</td><td>summer</td><td>noun</td></tr>
+				<tr><td>cVlula</td><td>ERROR</td><td>printing, impression</td><td>noun</td></tr>
+				<tr><td>Vtcaci</td><td>ERROR</td><td>territory</td><td>noun</td></tr>
+				<tr><td>cVnanu</td><td>ERROR</td><td>evidence, certainty</td><td>noun</td></tr>
+				<tr><td>ptVnna</td><td>ERROR</td><td>acting, performance</td><td>noun</td></tr>
+				<tr><td>cnVlan</td><td>ERROR</td><td>subject is permited, allowed</td><td>verb</td></tr>
+				<tr><td>Vpacun</td><td>ERROR</td><td>selection</td><td>noun</td></tr>
+				<tr><td>tcVpcu</td><td>ERROR</td><td>subject is admited</td><td>verb</td></tr>
+				<tr><td>Vtlilu</td><td>ERROR</td><td>eight</td><td>?count?</td></tr>
+				<tr><td>cVtupi</td><td>ERROR</td><td>subject lasts</td><td>verb</td></tr>
+				<tr><td>cVcuca</td><td>ERROR</td><td>protection</td><td>noun</td></tr>
+				<tr><td>Vnhacin</td><td>ERROR</td><td>subject is interviewed</td><td>verb</td></tr>
+				<tr><td>tlVcni</td><td>ERROR</td><td>trait, speciality, feature</td><td>noun</td></tr>
+				<tr><td>Vnpcan</td><td>ERROR</td><td>failure, collapse</td><td>noun</td></tr>
+				<tr><td>pVcnun</td><td>ERROR</td><td>subject is effective</td><td>verb</td></tr>
+				<tr><td>pcVntu</td><td>ERROR</td><td>wave, ripple, billow</td><td>noun</td></tr>
+				<tr><td>Vnhalun</td><td>ERROR</td><td>subject laughs</td><td>verb</td></tr>
+				<tr><td>Vpilin</td><td>ERROR</td><td>victim, casualty</td><td>noun</td></tr>
+				<tr><td>tpVcpa</td><td>ERROR</td><td>?gain</td><td>verb?</td></tr>
+				<tr><td>cpVtcu</td><td>ERROR</td><td>subject approaches</td><td>verb</td></tr>
+				<tr><td>tVncpa</td><td>ERROR</td><td>subject is counted</td><td>verb</td></tr>
+				<tr><td>Vpipan</td><td>ERROR</td><td>ball</td><td>noun</td></tr>
+				<tr><td>pcVtcu</td><td>ERROR</td><td>subject is cryied, screamed, shouted</td><td>verb</td></tr>
+				<tr><td>cVcani</td><td>ERROR</td><td>farmer, peasant</td><td>noun</td></tr>
+				<tr><td>Vtpici</td><td>ERROR</td><td>traffic</td><td>noun</td></tr>
+				<tr><td>Vlunta</td><td>ERROR</td><td>accident, irregularity</td><td>noun</td></tr>
+				<tr><td>Vcuntu</td><td>ERROR</td><td>noise</td><td>noun</td></tr>
+				<tr><td>tVnpti</td><td>ERROR</td><td>garden</td><td>noun</td></tr>
+				<tr><td>nVcina</td><td>ERROR</td><td>subject is medical</td><td>verb</td></tr>
+				<tr><td>cVnpti</td><td>ERROR</td><td>lane, fare, passage</td><td>noun</td></tr>
+				<tr><td>tVtaci</td><td>ERROR</td><td>drama, theater</td><td>noun</td></tr>
+				<tr><td>pnVnpa</td><td>ERROR</td><td>announcement, advertisement</td><td>noun</td></tr>
+				<tr><td>tcVptu</td><td>ERROR</td><td>subject is judged</td><td>verb</td></tr>
+				<tr><td>pVpnin</td><td>ERROR</td><td>destiny, destination</td><td>noun</td></tr>
+				<tr><td>lVnpca</td><td>ERROR</td><td>flow</td><td>noun?</td></tr>
+				<tr><td>pnVlan</td><td>ERROR</td><td>assembly</td><td>noun</td></tr>
+				<tr><td>cVptan</td><td>ERROR</td><td>subject is ruined, destroyed</td><td>verb</td></tr>
+				<tr><td>Vtnina</td><td>ERROR</td><td>subject is separated</td><td>verb</td></tr>
+				<tr><td>ttVcpu</td><td>ERROR</td><td>subject is discussed, argued</td><td>verb</td></tr>
+				<tr><td>Vntica</td><td>ERROR</td><td>subject is huge, immense</td><td>verb</td></tr>
+				<tr><td>cVcnun</td><td>ERROR</td><td>burden</td><td>noun</td></tr>
+				<tr><td>lVpcan</td><td>ERROR</td><td>tendency</td><td>noun</td></tr>
+				<tr><td>Vntula</td><td>ERROR</td><td>subject is limited</td><td>verb</td></tr>
+				<tr><td>tlVpnu</td><td>ERROR</td><td>nook, corner</td><td>noun</td></tr>
+				<tr><td>nVnica</td><td>ERROR</td><td>creation</td><td>noun</td></tr>
+				<tr><td>pnVtca</td><td>ERROR</td><td>soldier</td><td>noun</td></tr>
+				<tr><td>ptVtti</td><td>ERROR</td><td>occupation</td><td>noun</td></tr>
+				<tr><td>ttVpni</td><td>ERROR</td><td>subject is adopted</td><td>verb</td></tr>
+				<tr><td>lVlaci</td><td>ERROR</td><td>toe, finger, digit</td><td>noun</td></tr>
+				<tr><td>Vnutla</td><td>ERROR</td><td>concerning</td><td>postposition</td></tr>
+				<tr><td>cVpini</td><td>ERROR</td><td>fish</td><td>noun</td></tr>
+				<tr><td>tVnhapi</td><td>ERROR</td><td>understanding</td><td>noun</td></tr>
+				<tr><td>Vnpunu</td><td>ERROR</td><td>subject crys</td><td>verb</td></tr>
+				<tr><td>tpVpci</td><td>ERROR</td><td>writing, scripture</td><td>noun</td></tr>
+				<tr><td>nVncti</td><td>ERROR</td><td>immediately</td><td>adverb?</td></tr>
+				<tr><td>pcVtpi</td><td>ERROR</td><td>subject is taken on, assumed</td><td>verb</td></tr>
+				<tr><td>pnVnni</td><td>ERROR</td><td>desk, bureau</td><td>noun</td></tr>
+				<tr><td>tnVctu</td><td>ERROR</td><td>subject is removed, detached</td><td>verb</td></tr>
+				<tr><td>pcVpin</td><td>ERROR</td><td>church</td><td>noun</td></tr>
+				<tr><td>cpVlan</td><td>ERROR</td><td>subject is positive</td><td>verb</td></tr>
+				<tr><td>Vtnila</td><td>ERROR</td><td>subject is pushed, promoted</td><td>verb</td></tr>
+				<tr><td>nVncpi</td><td>ERROR</td><td>how much</td><td>?count?</td></tr>
+				<tr><td>cpVtla</td><td>ERROR</td><td>subject is joined, deposited</td><td>verb</td></tr>
+				<tr><td>pnVttu</td><td>ERROR</td><td>flower</td><td>noun</td></tr>
+				<tr><td>cVcpan</td><td>ERROR</td><td>subject is contributed</td><td>verb</td></tr>
+				<tr><td>ctVncu</td><td>ERROR</td><td>subject is a stretch, is stretched</td><td>verb</td></tr>
+				<tr><td>ptVtla</td><td>ERROR</td><td>subject is mutually agreed upon</td><td>verb</td></tr>
+				<!--
+				<tr><td>ptVtin</td><td>ERROR</td><td>frame</td><td>noun</td></tr>
+				<tr><td>Vninna</td><td>ERROR</td><td>boss</td><td>noun</td></tr>
+				<tr><td>pcVnpa</td><td>ERROR</td><td>afternoon</td><td>?noun?</td></tr>
+				<tr><td>pcVnlu</td><td>ERROR</td><td>relative</td><td>noun?</td></tr>
+				<tr><td>cVncni</td><td>ERROR</td><td>heat, warmth</td><td>noun</td></tr>
+				<tr><td>nVtutu</td><td>ERROR</td><td>subject is checked</td><td>verb</td></tr>
+				<tr><td>pVputa</td><td>ERROR</td><td>machine</td><td>noun</td></tr>
+				<tr><td>nVcati</td><td>ERROR</td><td>subject is impossible</td><td>verb</td></tr>
+				<tr><td>Vtutna</td><td>ERROR</td><td>evaluation, assessment</td><td>noun</td></tr>
+				<tr><td>tVpcun</td><td>ERROR</td><td>arrival</td><td>noun</td></tr>
+				<tr><td>Vnhutpu</td><td>ERROR</td><td>advantage</td><td>noun</td></tr>
+				<tr><td>cnVpin</td><td>ERROR</td><td>subject is hindered, prevented</td><td>verb</td></tr>
+				<tr><td>Vnipin</td><td>ERROR</td><td>establishment</td><td>noun</td></tr>
+				<tr><td>tVpana</td><td>ERROR</td><td>subject is mounted, assembled, riden, stacked</td><td>verb</td></tr>
+				<tr><td>lVpnin</td><td>ERROR</td><td>internal</td><td>???</td></tr>
+				<tr><td>nVpcan</td><td>ERROR</td><td>presence</td><td>noun</td></tr>
+				<tr><td>tVtinu</td><td>ERROR</td><td>subject is attacked</td><td>verb</td></tr>
+				<tr><td>Vncnun</td><td>ERROR</td><td>subject is weak</td><td>verb</td></tr>
+				<tr><td>ptVtna</td><td>ERROR</td><td>subject is blue</td><td>verb</td></tr>
+				<tr><td>nVnhaca</td><td>ERROR</td><td>ruler, regulation</td><td>noun</td></tr>
+				<tr><td>cVctun</td><td>ERROR</td><td>subject is drunk (not intoxicated)</td><td>verb</td></tr>
+				<tr><td>pnVpun</td><td>ERROR</td><td>subject is relevant, significant, pertinent, meaningful</td><td>verb</td></tr>
+				<tr><td>cnVcin</td><td>ERROR</td><td>settlement, adjustment</td><td>noun</td></tr>
+				<tr><td>tVncti</td><td>ERROR</td><td>favor</td><td>noun</td></tr>
+				<tr><td>tcVcti</td><td>ERROR</td><td>subject is treated</td><td>verb</td></tr>
+				<tr><td>pcVnci</td><td>ERROR</td><td>link, bond</td><td>noun</td></tr>
+				<tr><td>pnVnci</td><td>ERROR</td><td>victory, triumph</td><td>noun</td></tr>
+				<tr><td>Vnptin</td><td>ERROR</td><td>subject is industrial</td><td>verb</td></tr>
+				<tr><td>tVcpan</td><td>ERROR</td><td>wound</td><td>noun</td></tr>
+				<tr><td>cpVtni</td><td>ERROR</td><td>chest, cavity, breast, bosom</td><td>noun</td></tr>
+				<tr><td>Vncpun</td><td>ERROR</td><td>budget</td><td>noun</td></tr>
+				<tr><td>tpVcti</td><td>ERROR</td><td>absolute</td><td>adverb</td></tr>
+				<tr><td>ctVntu</td><td>ERROR</td><td>tool</td><td>noun</td></tr>
+				<tr><td>cnVtcu</td><td>ERROR</td><td>plane, aircraft, airplane</td><td>noun</td></tr>
+				<tr><td>pVpcan</td><td>ERROR</td><td>subject is perfect</td><td>verb</td></tr>
+				<tr><td>cVnctu</td><td>ERROR</td><td>contribution</td><td>noun</td></tr>
+				<tr><td>ctVtca</td><td>ERROR</td><td>instant</td><td>noun</td></tr>
+				<tr><td>ptVnpa</td><td>ERROR</td><td>neighbor</td><td>noun</td></tr>
+				<tr><td>pcVcun</td><td>ERROR</td><td>subject is marked</td><td>verb</td></tr>
+				<tr><td>ctVpun</td><td>ERROR</td><td>hotel</td><td>noun</td></tr>
+				<tr><td>cVpnin</td><td>ERROR</td><td>subject is gone in</td><td>verb</td></tr>
+				<tr><td>pVcicu</td><td>ERROR</td><td>subject smiles</td><td>verb</td></tr>
+				<tr><td>cnVnti</td><td>ERROR</td><td>reaction</td><td>noun</td></tr>
+				<tr><td>pVptin</td><td>ERROR</td><td>revolution</td><td>noun</td></tr>
+				<tr><td>ttVptu</td><td>ERROR</td><td>subject is permanent</td><td>verb</td></tr>
+				-->
 				
 				
 				<!--
@@ -2553,6 +2914,7 @@ function rom2ipa(word){
 	
 	//[ʔ] or [h] is inserted before word initial vowels.
 	RAM=("[START OF WORD]"+RAM).replaceAll("[START OF WORD]a","ʔa").replaceAll("[START OF WORD]i","ʔi").replaceAll("[START OF WORD]u","ʔu").replaceAll("[START OF WORD]","")
+	RAM=RAM.replaceAll("B.a","B.ʔa").replaceAll("B.i","B.ʔi").replaceAll("B.u","B.ʔu")
 	
 	///p/ is realized as [pʼ] before stops.
 	RAM=RAM.replaceAll("p.","pʼ")
