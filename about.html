@@ -2945,6 +2945,7 @@ function rom2ipa(word){
 	RAM=RAM.replaceAll("B.","m̩.").replaceAll("am̩","am").replaceAll("im̩","im").replaceAll("um̩","um")
 	
 	//otherwise /B/ may be realized as either [m], [m̩], or [b].
+	RAM=RAM.replaceAll("m.B","m.b")
 	
 	//[m] and [m̩] assimilates in place of articulation to the following consonant.
 	
