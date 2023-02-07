@@ -463,6 +463,7 @@
    2.2 Toki Pona's Grammar
    2.3 Toki Pona Dictionary
    2.4 Productivity in Toki Pona
+   2.5 Tuki Tiki
 8. Pantluci
    2.1 Pantluci Overview
    2.2 Pantlucian Phonology
@@ -1005,7 +1006,7 @@ questions for jan sona pi toki pona
 	
 	<div class="printBlock">
 		<h2>Pantluci Overview</h2>
-		<p><b>Pantluci</b> ([păn.t͡ʃɹu.ci]) is an <a href="https://en.wikipedia.org/wiki/Experimental_language">experimental</a>
+		<p><b>Pantluci</b> ([păn.tlu.ci]) is an <a href="https://en.wikipedia.org/wiki/Experimental_language">experimental</a>
 		<a href="https://en.wikipedia.org/wiki/Constructed_language">constructed
         	language</a> designed to explore the bounds of what a human-usable language can be by using a
 		<a href="https://en.wikipedia.org/wiki/Breadth-first_search">breadth-first inspired</a> 
@@ -2962,7 +2963,7 @@ function rom2ipa(word){
 	RAM=RAM.replaceAll("sd","zd")
 	
 	// /D/ may be realized as either [ɹ], or [l] after /p/, /t/, or /k/.
-	RAM=RAM.replaceAll("ʼD","ɹ")
+	RAM=RAM.replaceAll("ʼD","l")
 	
 	///a/ may be realized as either [a] or [ɑ].
 	///t/ is realized as [t͡ʃ] before [ɹ] or [ɹ̍].
@@ -3022,6 +3023,7 @@ function rom2ipa(word){
 	RAM=RAM.replaceAll("m.D","n.D")
 	RAM=RAM.replaceAll("m.s","n.s")
 	RAM=RAM.replaceAll("m.ɹ","n.ɹ")
+	RAM=RAM.replaceAll("m.l","n.l")
 	
 	RAM=RAM.replaceAll("m̩.t","n̩.t")
 	RAM=RAM.replaceAll("m̩.k","ŋ̩.k")
@@ -3029,6 +3031,7 @@ function rom2ipa(word){
 	RAM=RAM.replaceAll("m̩.D","n̩.D")
 	RAM=RAM.replaceAll("m̩.s","n̩.s")
 	RAM=RAM.replaceAll("m̩.ɹ","n̩.ɹ")
+	RAM=RAM.replaceAll("m̩.l","n̩.l")
 	
 	return RAM;
 }
