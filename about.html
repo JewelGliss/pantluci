@@ -1303,7 +1303,7 @@ sentence, lan ↦ VP: subject has (sentence) done to it by object.
             <li>Words always fill the <u><b style="font-size:1.25em;">oldest</b></u> unfilled argument slot.</li>
             <li>Only certain combinations of word types may legally fill the slots of a node.</li>
         </ul>
-		<p>Lexical items may be adverbs, conjunctions, nouns, verbs, or postpositions.</p>
+		<p>Lexical items may be adverbs, conjunctions, nouns, pronouns, verbs, or postpositions.</p>
 		<p>Below are possible combinations of types the arguments of "node" may be, followed by "↦", the type it acts as, ":", and a description of the semantics.</p>
 		<p>noun, verb ↦ noun: noun with the verb attached as a relative clause. The noun is a typically but not always an
 		<a href="https://en.wikipedia.org/wiki/Thematic_relation#Experiencer">experiencer</a>,
@@ -1322,18 +1322,19 @@ sentence, lan ↦ VP: subject has (sentence) done to it by object.
 		
 		<p>verb, adverb ↦ verb: verbs happens in a manner described by the adverb.</p>
 		<p>adverb, adverb ↦ adverb: 1st adverb is true in a manner described by the 2nd adverb.</p>
+		<p>noun, adverb ↦ adverb: noun is as described in a manner described by the adverb.</p>
 		
-		<p>postposition, ?? ↦ postposition: 1st adverb is true in a manner described by the 2nd adverb.</p>
+		<p>postposition, noun ↦ postposition: postposition with the noun incorporated in a manner described by its definition.</p>
 		<p>verb, postposition ↦ verb: verbs happens in a manner described by the postposition. postposition behaves like adverb.</p>
 		<p>noun, postposition ↦ noun: noun with the postposition attached as a relative clause. postposition behaves like verb.</p>
 		
-		<p>verb, pronoun ↦ verb: verb with the pronoun <a href="https://en.wikipedia.org/wiki/Incorporation_(linguistics)">incorporated</a>. pronoun behaves like noun.</p>
 		<p>noun, pronoun ↦ noun: noun with the verb attached as a relative clause meaning "subject is owned by [pronoun]". pronoun behaves like verb.</p>
+		<p>pronouns otherwise behave as nouns.</p>
 		
 		<p>At the top level of a sentence, as well as within some special contexts, the semantics of a clause change somewhat.</p>
 		<p>Nouns are asserted to either exist, be contextually relavent, or awnser a question.</p>
 		<p>Verbs are asserted to either happen, be contextually relavent, or awnser a question.</p>
-		<p>Other clause types are asserted to be a good addition to a previous sentence, or awnser a question.</p>
+		<p>Other clause types are asserted to clairfy or correct a previous sentence, or awnser a question.</p>
 	</div>
 	<div class="pageBreak"></div>
 	
@@ -1497,7 +1498,7 @@ sentence, lan ↦ VP: subject has (sentence) done to it by object.
 		
 	
 	<div class="printBlock" id="Dictionary">
-		<h2>Pantlucian Roots Dictionary</h2>
+		<h2>Pantlucian Proto-Dictionary</h2>
 		<p class="unindented">Some entries are marked with * after their type to denote that they have a special note which can be found at the end of the chapter.</p>
 		<p class="unindented">The IPA in this section shows mandatory allophony but not free variation.</pre>
 		<pre>shows with 0 nodes.
@@ -1564,7 +1565,7 @@ sentence, lan ↦ VP: subject has (sentence) done to it by object.
 				<tr><td>cVca</td><td>ERROR</td><td>there is much, many, a lot of the subject</td><td>verb</td></tr>
 				<tr><td>tVci</td><td>ERROR</td><td>subject is said, claimed, thought</td><td>verb</td></tr>
 				<tr><td>ttVna</td><td>ERROR</td><td>subject is knowledgeable, knows object</td><td>verb</td></tr>
-				<tr><td>pVlin</td><td>ERROR</td><td>subject feels, emotes, precives object</td><td>verb</td></tr>
+				<tr><td>pVlin</td><td>ERROR</td><td>subject feels, emotes, perceives object</td><td>verb</td></tr>
 				<tr><td>lVcin</td><td>ERROR</td><td>subject sees object</td><td>verb</td></tr>
 				<tr><td>tVli</td><td>ERROR</td><td>subject is warm, hot, energetic</td><td>verb</td></tr>
 				<tr><td>cVtni</td><td>ERROR</td><td>subject glows, emits light</td><td>verb</td></tr>
@@ -1574,8 +1575,10 @@ sentence, lan ↦ VP: subject has (sentence) done to it by object.
 				<tr><td>plVnu</td><td>ERROR</td><td>type, flavor, sort, gender, species, genre</td><td>noun</td></tr>
 				<tr><td>lVnu</td><td>ERROR</td><td>event, happening</td><td>noun</td></tr>
 				<tr><td>pVni</td><td>ERROR</td><td>subject is repulsed, scared, opposed to object</td><td>verb</td></tr>
-				<tr><td>Vlin</td><td>ERROR</td><td>subject is attracted by, loves, supporting of object</td><td>verb</td></tr>
+				<tr><td>Vlin</td><td>ERROR</td><td>subject loves, is supporting of object</td><td>verb</td></tr>
 				<tr><td>pVncu</td><td>ERROR</td><td>part, component, bit of a larger whole</td><td>noun</td></tr>
+				
+				<tr><td>tcVn</td><td>ERROR</td><td>number, count, amount, numeric equivalent</td><td>noun</td></tr>
 				
 				<!--
 				<tr><td>Vna</td><td>ERROR</td><td>subject is had, held, carried, contained, owned by object</td><td>verb</td></tr>
@@ -2915,43 +2918,13 @@ sentence, lan ↦ VP: subject has (sentence) done to it by object.
 		<table style="text-align: left;" id="dictT">
 			<thead><tr style="text-align: center;"><th>word</th><th></th><th>meaning</th><th>type</th></tr></thead>
 			<tbody>
+				<tr><td>[noun]+tcn</td><td></td><td>convers word to number</td><td>???</td></tr>
 				<tr><td>ta+[verb]</td><td></td><td>typical subject of [verb]</td><td>noun</td></tr>
 				<tr><td>[verb]+tl</td><td></td><td>typical object of [verb]</td><td>noun</td></tr>
 				<tr><td>cla+[verb]</td><td></td><td>verb with subject and object swapped</td><td>verb</td></tr>
 				<tr><td>cla+[noun]</td><td></td><td>subject is [noun], to be [noun]</td><td>verb</td></tr>
 				<tr><td>[noun]+[verb]</td><td></td><td>a type of [noun] noteable for [verb]</td><td>noun</td></tr>
 				<tr><td>[postposition]+[verb]</td><td></td><td>typical [postposition]'s argument of [verb]</td><td>noun</td></tr>
-			</tbody>
-		</table>
-		<h3>Days of the week</h3>
-		<table style="text-align: left;" id="dictT">
-			<thead><tr style="text-align: center;"><th>word</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
-			<tbody>
-				<tr><td>acla???</td><td>ERROR</td><td>Monday</td><td>noun</td></tr>
-				<tr><td>acla???</td><td>ERROR</td><td>Tuesday</td><td>noun</td></tr>
-				<tr><td>aclanlpan</td><td>ʔa.kla.nɹ̍.paB</td><td>Wednesday</td><td>noun</td></tr>
-				<tr><td>acla???</td><td>ERROR</td><td>Thursday</td><td>noun</td></tr>
-				<tr><td>acla???</td><td>ERROR</td><td>Friday</td><td>noun</td></tr>
-				<tr><td>acla???</td><td>ERROR</td><td>Saturday</td><td>noun</td></tr>
-				<tr><td>acla???</td><td>ERROR</td><td>Sunday</td><td>noun</td></tr>
-			</tbody>
-		</table>
-		<h3>Months</h3>
-		<table style="text-align: left;" id="dictT">
-			<thead><tr style="text-align: center;"><th>word</th><th>IPA</th><th>meaning</th><th>type</th></tr></thead>
-			<tbody>
-				<tr><td>panti???</td><td>ERROR</td><td>January</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>Febuary</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>March</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>April</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>May</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>June</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>July</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>August</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>September</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>October</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>Novemnber</td><td>noun</td></tr>
-				<tr><td>panti???</td><td>ERROR</td><td>December</td><td>noun</td></tr>
 			</tbody>
 		</table>
 	</div>
