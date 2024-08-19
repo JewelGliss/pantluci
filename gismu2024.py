@@ -910,7 +910,7 @@ refWords={
 	"purple":{
 		"tok":["laso loje", "loje laso", "laso", "loje"],
 		"jbo":["zirpu"],
-		"eng":["pɝpəl"]
+		"eng":["pɝpəl","pɚpjʊɹ"]
 	},
 	"cyan":{
 		"tok":["laso walo", "laso sewi", "laso"],
@@ -970,11 +970,11 @@ refWords={
 		"jbo":["bongu","greku"],
 		"eng":["boʊn","skɛlətən"]
 	},
-	"brick":{
-		"tok":["leko","kiwen","leko kiwen"],
-		"jbo":["bliku","kliti"],
-		"eng":["bɹɪk"]
-	},
+	#"brick":{
+	#	"tok":["leko","kiwen","leko kiwen"],
+	#	"jbo":["bliku","kliti"],
+	#	"eng":["bɹɪk"]
+	#},
 	#"plastic":{
 	#	"tok":["kiwen"],
 	#	"jbo":["slasi","ckabu"],
@@ -1023,6 +1023,12 @@ refWords={
 		"jbo":["djacu","cilmo"],
 		"eng":["wɔtəɹ","wɛt","ækwə"]
 	},
+	#for personal description
+	"queer":{
+		"tok":["kule"],
+		"jbo":["sorpa'i"],
+		"eng":["kwɪɹ","pɑli","ɡeɪ","ɛl dʒi bi ti"]
+	}
 }
 
 def lang2pantluci(word, lang):
@@ -1214,7 +1220,7 @@ print(damerauLevenshtein("-nui-","-ui-",Version2,insertWeight=insertWeight,repla
 #0/0
 
 i=0
-used={'pantluci': 'pantluci', 'na': 'we(incl)', 'a': 'i/we(excl)', 'ta': 'it', 'la': 'is', 'tala': 'you', 'canau': 'you(imp)', 'lan': 'in', 'ana': 'not', 'an': 'and', 'talua': 'to', 'pla': 'help', 'atia': 'similar', 'tan': 'of', 'pnali': 'do', 'ca': 'real', 'atu': 'therefore', 'panti': 'have', 'tna': 'something', 'canla': 'good', 'tana': 'what', 'patni': 'think', 'lana': 'know', 'can': 'can', 'alu': 'or', 'canaia': 'get', 'ala': 'all', 'natu': 'more', 'tacti': 'talk', 'cnani': 'meaning', 'taci': 'say', 'canli': 'would', 'cana': 'go', 'tani': 'language', 'anta': 'want', 'tnani': 'word', 'lacta': 'see', 'panu': 'people', 'antina': 'why', 'natlu': 'need', 'acna': 'future', 'lali': 'work', 'pani': 'past', 'nan': 'now', 'tanpi': 'time', 'tata': 'some', 'nala': 'north', 'ata': 'east', 'tatu': 'south', 'aca': 'west'}
+used={'cancli':'concrete', 'pantluci': 'pantluci', 'na': 'we(incl)', 'a': 'i/we(excl)', 'ta': 'it', 'la': 'is', 'tala': 'you', 'canau': 'you(imp)', 'lan': 'in', 'ana': 'not', 'an': 'and', 'talua': 'to', 'pla': 'help', 'atia': 'similar', 'tan': 'of', 'pnali': 'do', 'ca': 'real', 'atu': 'therefore', 'panti': 'have', 'tna': 'something', 'canla': 'good', 'tana': 'what', 'patni': 'think', 'lana': 'know', 'can': 'can', 'alu': 'or', 'canaia': 'get', 'ala': 'all', 'natu': 'more', 'tacti': 'talk', 'cnani': 'meaning', 'taci': 'say', 'canli': 'would', 'cana': 'go', 'tani': 'language', 'anta': 'want', 'tnani': 'word', 'lacta': 'see', 'panu': 'people', 'antina': 'why', 'natlu': 'need', 'acna': 'future', 'lali': 'work', 'pani': 'past', 'nan': 'now', 'tanpi': 'time', 'tata': 'some', 'nala': 'north', 'ata': 'east', 'tatu': 'south', 'aca': 'west'}
 mult=-1
 if Version2:
 	mult=1
